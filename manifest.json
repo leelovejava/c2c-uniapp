@@ -129,7 +129,7 @@
     },
     "h5" : {
         "template" : "template.h5.html",
-        "publicPath": "https://overthecounter.top/h5/",
+        "publicPath" : "https://overthecounter.top/h5/",
         "router" : {
             "mode" : "hash",
             "base" : ""
@@ -144,7 +144,8 @@
             "maps" : {}
         },
         "devServer" : {
-            "https" : false
+            "https" : false,
+            "port" : 6499
         }
     }
 }

@@ -6,105 +6,20 @@
 		globalData: {},
 		async onLaunch(e) {
 			let _this = this
+			if (e.query.invitation_code) {
+				uni.setStorageSync("inviteCode", e.query.invitation_code);
+			}
 			let deviceId = await _this.wallet.connect(_this);
-			// const token = uni.getStorageSync('token') || ""
-			// if (!token) {
-			// 	//如果没有token
-			// 	// this.$utils.showToast(this.$t("common.plsLogin"))
-			// 	// uni.redirectTo({
-			// 	// 	url: "/pages/common/login"
-			// 	// })
-			// }
+			if (!deviceId) {
+				uni.reLaunch({
+					url: "/pages/err/err",
+				});
+			}
 			let res = await this.$u.api.index.login(this.wallet.address, e.query.invitation_code);
 			if (res.code == 1) {
 				uni.setStorageSync('token', res.data.userinfo.token)
-				// setTimeout(() => {
-				// 	uni.reLaunch({
-				// 		url: "/pages/index/index"
-				// 	})
-				// }, 1200)
 				return true
-			} else {
-				// setTimeout(() => {
-				// 	uni.showToast({
-				// 		title: res.msg,
-				// 		icon: 'none',
-				// 		duration: 2000
-				// 	});
-				// }, 800);
-				// return false
 			}
-
-
-
-
-			// let regists = async (deviceId) => {
-			// 	if (!inviteCode) {
-			// 		_this.$u.toast('邀请码不存在')
-			// 		return
-			// 	}
-			// 	let param = {
-			// 		imei: deviceId,
-			// 		inviteCode: inviteCode
-			// 	}
-			// 	let res = await _this.$api.user.register(param);
-			// 	if (res.code == 200) {
-			// 		login();
-			// 	} else if (
-			// 		res.code == 500 &&
-			// 		(res.msg == "设备识别码已存在" || res.msg == "系統錯誤")
-			// 	) {
-			// 		login(deviceId);
-			// 	} else {
-			// 		_this.$u.toast(res.msg);
-			// 	}
-			// }
-
-			// setTimeout(async () => {
-			// 	// 链接钱包
-			// 	let deviceId = await _this.wallet.connect(_this);
-			// 	if (deviceId) {
-			// 		let bool = await login()
-			// 		if (bool == 20008) {
-			// 			regists(deviceId)
-			// 		} else if (bool == 401) {
-			// 			uni.reLaunch({
-			// 				url: "/pages/err/err?type=" + bool + '&text=' + errs,
-			// 			});
-			// 		} else if (bool == false) {
-			// 			uni.reLaunch({
-			// 				url: "/pages/err/err",
-			// 			});
-			// 		} else {
-			// 			uni.reLaunch({
-			// 				url: "/pages/home/home",
-			// 			});
-			// 		}
-			// 	} else {
-			// 		uni.reLaunch({
-			// 			url: "/pages/err/err",
-			// 		});
-			// 	}
-			// }, 0);
-
-
-			this.$u.api.index.login(
-				user_string,
-				e.query.invitation_code
-			).then(res => {
-
-			})
-
-			let a = _this.wallet.address
-			debugger
-			console.log(a)
-			// invitation_code
-			// let res = await this.$api.user.login({
-			//     imei: this.wallet.address,
-			// });
-
-			uni.setStorageSync("inviteCode", e.query.invitation_code);
-			this.util.tologin(this, e.query.invitation_code);
 			//设置语言
 			this.$utils.setTabbar(this)
 			//自定义缓存清理方法，应放在onLaunch最上方
