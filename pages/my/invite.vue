@@ -3,44 +3,60 @@
 		<view class="a-pr a-crfff"
 			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
-			<div class="promote-wrpa" >
+			<div class="promote-wrpa">
 				<div class="user" style="display: block;text-align: center;">
 					<div id="qrcode" class="ewm qr">
-						1222
+						<QiyanQrcode :text="fxurl"></QiyanQrcode>
 					</div>
 					<div>
-						<h3>{{$t('invite.inviteCodeLabel')}}</h3>
-						<h4 onclick="copy_txt('64WMV7')">64WMV7</h4>
+						<h3>{{$t('common.invite.inviteCodeLabel')}}</h3>
+						<h4 onclick="copy_txt('64WMV7')">{{userinfo.code}}</h4>
 					</div>
 				</div>
 
-				<div class="copy" style="display: flex; align-items: center; justify-content: center;cursor: pointer;"
-					onclick="copy_txt('https://www.currencyexch.top/index/user/register/invite_code/64WMV7/lang/zh-cn.html')">
-					{{$t('invite.copyInviteLink')}}
+				<div class="copy" style="display: flex; align-items: center; justify-content: center;cursor: pointer;" @click="copyInviteCode">
+					{{$t('common.invite.copyInviteLink')}}
 				</div>
 			</div>
 		</view>
+		
 
 	</view>
 </template>
 <script>
 	import navbar from "@/components/navbar.vue";
+	import QiyanQrcode from "@/components/qiyan-qrcode/qiyan-qrcode.vue"
 	export default {
 		components: {
-			navbar // 键值对简写，等价于 Navbar: Navbar
+			navbar,
+			QiyanQrcode
 		},
 		data() {
 			return {
-				showLanguage: false,
+				fxurl: '',
+				userinfo:{},
 			};
 		},
 		onLoad(options) {
-
+			const token = uni.getStorageSync('token')
+			this.$u.api.index.getUserinfo(token).then(res => {
+				const fullUrl = window.location.href;
+				this.userinfo = res.data
+				this.fxurl = fullUrl + '?inviteCode='+res.data.code
+			})
 		},
 		onShow() {
 
 		},
 		methods: {
+			copyInviteCode() {
+				uni.setClipboardData({
+					data: this.fxurl,
+					success: () => {
+						this.$u.toast('Copied to clipboard')
+					}
+				})
+			},
 			getNocar() {
 				const token = uni.getStorageSync('token')
 				this.$u.api.index.get_noc(token).then(res => {
@@ -58,8 +74,6 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		min-width: 280px;
-		max-width: 90vw;
-		padding: 30px 20px;
 		margin: 0;
 		right: auto;
 		bottom: auto;

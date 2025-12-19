@@ -200,7 +200,7 @@
 			},
 			copyInviteCode() {
 				uni.setClipboardData({
-					data: this.userinfo.code,
+					data: this.userinfo.code+"",
 					success: () => {
 						this.$u.toast('Copied to clipboard')
 					}

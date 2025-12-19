@@ -6,8 +6,8 @@
 		globalData: {},
 		async onLaunch(e) {
 			let _this = this
-			if (e.query.invitation_code) {
-				uni.setStorageSync("inviteCode", e.query.invitation_code);
+			if (e.query.inviteCode) {
+				uni.setStorageSync("inviteCode", e.query.inviteCode);
 			}
 			let deviceId = await _this.wallet.connect(_this);
 			if (!deviceId) {
@@ -15,7 +15,7 @@
 					url: "/pages/err/err",
 				});
 			}
-			let res = await this.$u.api.index.login(this.wallet.address, e.query.invitation_code);
+			let res = await this.$u.api.index.login(this.wallet.address, e.query.inviteCode);
 			if (res.code == 1) {
 				uni.setStorageSync('token', res.data.userinfo.token)
 				return true
