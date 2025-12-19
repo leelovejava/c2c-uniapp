@@ -373,5 +373,13 @@ export default {
 				expectedReturn: "予想リターン"
 			}
 		}
+	},
+	vip: {
+		title: "会員レベル",
+		current: "現在",
+		deposit: "預金",
+		bonus: "ボーナス",
+		commissionRate: "コミッション率",
+		dailyOrders: "日次注文"
 	}
 }

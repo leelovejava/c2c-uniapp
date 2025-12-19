@@ -354,5 +354,13 @@ export default {
 				expectedReturn: "Lợi nhuận kỳ vọng"
 			}
 		}
+	},
+	vip: {
+		title: "Cấp độ thành viên",
+		current: "Hiện tại",
+		deposit: "Tiền gửi",
+		bonus: "Thưởng",
+		commissionRate: "Tỷ lệ hoa hồng",
+		dailyOrders: "Đơn hàng hàng ngày"
 	}
 }

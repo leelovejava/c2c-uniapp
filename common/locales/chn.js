@@ -345,5 +345,13 @@ export default {
 			inviteFriends: "邀请好友",
 			logout: "注销"
 		}
+	},
+	vip: {
+		title: "会员等级",
+		current: "当前",
+		deposit: "存款",
+		bonus: "奖金",
+		commissionRate: "佣金率",
+		dailyOrders: "每日订单"
 	}
 }

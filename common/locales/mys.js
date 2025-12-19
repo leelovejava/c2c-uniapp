@@ -271,5 +271,13 @@ export default {
 			exchangeEarnings: "Pendapatan Pertukaran",
 			expectedReturn: "Pulangan Dijangka"
 		}
+	},
+		vip: {
+			title: "Tahap Keahlian",
+			current: "Semasa",
+			deposit: "Deposit",
+			bonus: "Bonus",
+			commissionRate: "Kadar Komisen",
+			dailyOrders: "Pesanan Harian"
+		}
 	}
-}

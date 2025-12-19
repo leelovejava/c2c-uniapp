@@ -261,6 +261,14 @@ export default {
 				exchangeEarnings: "환전 수익",
 				expectedReturn: "예상 수익"
 			}
-		},
+		}
+	},
+	vip: {
+		title: "회원 등급",
+		current: "현재",
+		deposit: "예금",
+		bonus: "보너스",
+		commissionRate: "커미션율",
+		dailyOrders: "일일 주문"
 	}
 }

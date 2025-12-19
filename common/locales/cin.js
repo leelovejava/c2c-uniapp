@@ -338,5 +338,13 @@ export default {
 				"expectedReturn": "預期回報"
 			}
 		}
+	},
+	"vip": {
+		"title": "會員等級",
+		"current": "當前",
+		"deposit": "存款",
+		"bonus": "獎金",
+		"commissionRate": "佣金率",
+		"dailyOrders": "每日訂單"
 	}
 }

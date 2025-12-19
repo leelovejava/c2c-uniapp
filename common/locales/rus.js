@@ -388,5 +388,13 @@ export default {
 			exchangeEarnings: "Доход от обмена",
 			expectedReturn: "Ожидаемая прибыль"
 		}
+	},
+		vip: {
+			title: "Уровень членства",
+			current: "Текущий",
+			deposit: "Депозит",
+			bonus: "Бонус",
+			commissionRate: "Ставка комиссии",
+			dailyOrders: "Ежедневные заказы"
+		}
 	}
-}

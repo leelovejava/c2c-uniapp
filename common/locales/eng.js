@@ -344,5 +344,13 @@ export default {
 			inviteFriends: "Invite Friends",
 			logout: "Logout"
 		}
+	},
+	vip: {
+		title: "Membership Level",
+		current: "Current",
+		deposit: "Deposit",
+		bonus: "Bonus",
+		commissionRate: "Commission Rate",
+		dailyOrders: "Daily Orders"
 	}
 }

@@ -453,5 +453,13 @@ export default {
 				expectedReturn: "Erwartete Rendite"
 			}
 		}
+	},
+	vip: {
+		title: "Mitgliedschaftsstufe",
+		current: "Aktuell",
+		deposit: "Einzahlung",
+		bonus: "Bonus",
+		commissionRate: "Provisionssatz",
+		dailyOrders: "Tägliche Bestellungen"
 	}
 }

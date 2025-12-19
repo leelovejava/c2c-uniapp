@@ -268,5 +268,13 @@ export default {
 			exchangeEarnings: "विनिमय लाभ",
 			expectedReturn: "अपेक्षित रिटर्न"
 		}
+	},
+		vip: {
+			title: "सदस्यता स्तर",
+			current: "वर्तमान",
+			deposit: "जमा राशि",
+			bonus: "बोनस",
+			commissionRate: "कमीशन दर",
+			dailyOrders: "दैनिक आदेश"
+		}
 	}
-}

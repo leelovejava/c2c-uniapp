@@ -299,5 +299,13 @@ bind: [
 				expectedReturn: "Retorno Esperado"
 			}
 		}
+	},
+	vip: {
+		title: "Nível de Associação",
+		current: "Atual",
+		deposit: "Depósito",
+		bonus: "Bônus",
+		commissionRate: "Taxa de Comissão",
+		dailyOrders: "Pedidos Diários"
 	}
 }

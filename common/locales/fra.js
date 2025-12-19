@@ -472,5 +472,13 @@ export default {
 				expectedReturn: "Retour attendu"
 			}
 		}
+	},
+	vip: {
+		title: "Niveau d'adhésion",
+		current: "Actuel",
+		deposit: "Dépôt",
+		bonus: "Bonus",
+		commissionRate: "Taux de commission",
+		dailyOrders: "Commandes quotidiennes"
 	}
 }

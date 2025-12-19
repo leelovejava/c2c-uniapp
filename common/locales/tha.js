@@ -357,5 +357,13 @@ export default {
 			exchangeEarnings: "รายได้จากการแลกเปลี่ยน",
 			expectedReturn: "ผลตอบแทนที่คาดหวัง"
 		}
+	},
+		vip: {
+			title: "ระดับสมาชิก",
+			current: "ปัจจุบัน",
+			deposit: "เงินฝาก",
+			bonus: "โบนัส",
+			commissionRate: "อัตราค่าคอมมิชชั่น",
+			dailyOrders: "คำสั่งซื้อรายวัน"
+		}
 	}
-}

@@ -249,5 +249,13 @@ export default {
 			contactUs: "聯繫我們",
 			inviteFriends: "邀請好友",
 			logout: "退出登錄"
+		},
+		vip: {
+			title: "會員等級",
+			current: "當前",
+			deposit: "存款",
+			bonus: "獎金",
+			commissionRate: "佣金率",
+			dailyOrders: "每日訂單"
 		}
-}
+	}

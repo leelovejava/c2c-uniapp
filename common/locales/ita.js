@@ -296,5 +296,13 @@ export default {
 				expectedReturn: "Ritorno previsto"
 			}
 		}
+	},
+	vip: {
+		title: "Livello di membership",
+		current: "Attuale",
+		deposit: "Deposito",
+		bonus: "Bonus",
+		commissionRate: "Tasso di commissione",
+		dailyOrders: "Ordini giornalieri"
 	}
 }
