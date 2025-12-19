@@ -50,7 +50,7 @@ export default {
 			list: ["Số lượng", "Đơn giá", "Đơn giá", "Bán ra USDT", "Vui lòng điền số lượng USDT", "Số tiền nhận được",
 				"Mức tiền", "mua vào USDT", "số tiền tiêu hao"
 			],
-			kbip: ["bãi bỏ", "vượt qua số tiền", "nhất định phải trong số tiền quy định"]
+			kbip: ["bãi bỏ", "vượt quá số tiền", "nhất định phải trong số tiền quy định"]
 		},
 		msglist: ["danh sách thông tin"],
 		sell: {
@@ -355,6 +355,62 @@ export default {
 			}
 		}
 	},
+	faqs: {
+		pageHeader: {
+			title: "Luật lệ và Quy định",
+			description: "Hướng dẫn Nền tảng và Thông tin Giao dịch"
+		},
+		basicRules: {
+			title: "Quy tắc Cơ bản",
+			rules: [
+				"Mỗi tài khoản chỉ sử dụng một số điện thoại di động để đăng ký.",
+				"Theo quy định của FinCEN, mỗi người dùng phải có ít nhất $100 trong tài khoản của họ để thực hiện đơn hàng.",
+				"Mỗi nhóm nhiệm vụ có thể chứa từ 0-4 lệnh giới hạn, và mỗi lệnh giới hạn có thể chứa tối đa 2 lệnh hoán đổi (tức là 1 lệnh hoán đổi 2 lần). Mỗi nhóm chỉ cho phép thực hiện 1 nhiệm vụ chứa 2 lần hoán đổi.",
+				"Tài khoản vượt quá một số tiền gửi nhất định sẽ tự động nâng cấp lên thành viên SVIP. Thành viên nâng cấp có thể hoàn thành 40 đơn hàng mỗi vòng."
+			]
+		},
+		platformOperation: {
+			title: "Hoạt động Nền tảng",
+			rules: [
+				"Nền tảng mở cửa hàng ngày từ 10:00 đến 23:00. Thành viên chỉ có thể đặt hàng trong khoảng thời gian này.",
+				"Nếu tài khoản của bạn bị bên thứ ba lạm dụng, vui lòng liên hệ với dịch vụ khách hàng ngay lập tức.",
+				"Rút tiền vượt quá $30000 cần thông báo trước cho dịch vụ khách hàng.",
+				"Điểm tín dụng được cập nhật sau 22:30 mỗi tối. Không thể rút tiền khi điểm tín dụng dưới 95 điểm."
+			]
+		},
+		orderTypes: {
+			title: "Loại Đơn hàng",
+			marketOrder: {
+				title: "Lệnh Thị trường",
+				description: "Người dùng nền tảng giao dịch ngoại hối chấp nhận tỷ giá hối đoái tốt nhất hiện có trên thị trường và hoàn thành việc hoán đổi ngay lập tức. Hệ thống tự động phân bổ đơn hàng dựa trên số dư khả dụng của tài khoản thành viên. Phí hoa hồng cho loại đơn hàng này là 1% giá trị đơn hàng."
+			},
+			limitOrder: {
+				title: "Lệnh Giới hạn",
+				description: "Người dùng nền tảng giao dịch ngoại hối có thể đặt tỷ giá hối đoái mục tiêu. Khi tỷ giá thị trường đạt đến giá trị được chỉ định, hệ thống sẽ tự động khớp lệnh và thực hiện hoán đổi. Những đơn hàng này thường vượt quá số dư tài khoản hiện tại của đại lý nhưng mang lại tiềm năng lợi nhuận cao hơn. Phí hoa hồng cho loại đơn hàng này là từ 5%-60% giá trị đơn hàng."
+			}
+		},
+		giftPackage: {
+			title: "Gói Quà tặng",
+			description: [
+				"Gói quà tặng là các ưu đãi độc quyền dành cho các thành viên quý giá của chúng tôi. Chúng bao gồm một đơn hàng ngẫu nhiên liên quan đến các lệnh giới hạn hoặc tiền mặt được các đối tác của chúng tôi hào phóng cung cấp. Ưu đãi đặc biệt này áp dụng cho các thành viên đã tích lũy một số tiền nhất định trong tài khoản. Gói quà tặng chỉ được cung cấp từ 0-4 lần mỗi vòng.",
+				"Gói quà tặng được thiết kế để thưởng cho cộng đồng trung thành của chúng tôi và nâng cao trải nghiệm của bạn với chúng tôi. Việc đạt đến ngưỡng này không chỉ cho phép bạn nhận được những phần thưởng hấp dẫn mà còn giúp bạn trở thành một phần của nhóm độc quyền với các lợi ích bổ sung."
+			]
+		},
+		deposits: {
+			title: "Tiền gửi",
+			description: [
+				"Tất cả các khoản tiền gửi phải được điều phối thông qua dịch vụ khách hàng trực tuyến của nền tảng. Sau khi chuyển tiền vào tài khoản được chỉ định bởi dịch vụ khách hàng, vui lòng gửi phiếu thanh toán để đảm bảo xử lý kịp thời.",
+				"Để tránh chậm trễ, vui lòng xác nhận chi tiết tài khoản của bạn trực tiếp trên nền tảng trước mỗi giao dịch, vì những thông tin này có thể thay đổi định kỳ. Nếu bạn gặp bất kỳ vấn đề nào trong quá trình gửi tiền, vui lòng liên hệ với dịch vụ khách hàng ngay lập tức."
+			]
+		},
+		withdrawals: {
+			title: "Rút tiền",
+			description: [
+				"Thành viên chỉ có thể yêu cầu rút tiền sau khi hoàn thành tất cả các nhiệm vụ hàng ngày được chỉ định. Tiền kiếm được trên nền tảng có thể được rút khi đáp ứng các điều kiện rút tiền của nền tảng. Trước khi yêu cầu rút tiền, vui lòng đảm bảo rằng tài khoản nền tảng của bạn chứa địa chỉ ví hợp lệ.",
+				"Lưu ý: Có thể rút tiền hàng ngày từ 10:00 đến 23:00."
+			]
+		}
+	},
 	vip: {
 		title: "Cấp độ thành viên",
 		current: "Hiện tại",
@@ -362,5 +418,62 @@ export default {
 		bonus: "Thưởng",
 		commissionRate: "Tỷ lệ hoa hồng",
 		dailyOrders: "Đơn hàng hàng ngày"
+	},
+	about: {
+		title: "Về chúng tôi",
+		companyDescription: "Được thành lập vào năm 2001, OFX là một công ty công nghệ tài chính đa quốc gia tập trung vào việc chuyển tiền vốn toàn cầu và dịch vụ ngoại hối. Công ty bắt nguồn từ một khái niệm rõ ràng: cung cấp các giải pháp vốn xuyên biên giới tốt hơn, công bằng hơn và hiệu quả hơn cho khách hàng toàn cầu. Kể từ khi thành lập, OFX đã phục vụ hơn 1 triệu khách hàng, hỗ trợ hơn 50 loại tiền tệ, bao phủ hơn 170 quốc gia và thị trường, và xử lý hơn 1,48 nghìn tỷ đô la Mỹ trong các khoản tiền tích lũy.",
+		globalNetworkTitle: "Bố cục mạng lưới toàn cầu",
+		globalNetworkDesc: "Công ty có văn phòng tại London, Dublin, Sydney, Auckland, Hồng Kông, Singapore, Toronto và San Francisco, với hơn 700 nhân viên trên toàn thế giới, và có mạng lưới vận hành vững chắc cùng khả năng cung cấp dịch vụ địa phương hóa.",
+		regulatoryAdvantageTitle: "Ưu thế quy định mạnh mẽ",
+		regulatoryAdvantageDesc: "Công ty được giám sát bởi hơn 50 cơ quan quản lý trên toàn thế giới và tuân theo các tiêu chuẩn kiểm toán tài chính và tuân thủ nghiêm ngặt. Kể từ khi niêm yết, không có bất kỳ hình phạt quy định nào hay hành động thực thi pháp luật, và khả năng quản lý rủi ro rất vững chắc.",
+		corporateGovernanceTitle: "Quản trị doanh nghiệp và điều hành",
+		corporateGovernanceDesc1: "Hội đồng quản trị gồm các nhà lãnh đạo doanh nghiệp có kinh nghiệm phong phú trong lĩnh vực ngân hàng, tài chính và công nghệ để đảm bảo cấu trúc quản trị doanh nghiệp lành mạnh.",
+		corporateGovernanceDesc2: "Đội ngũ quản lý gồm các nhà quản lý cấp cao từ các ngân hàng quốc tế lớn, các nhà cung cấp dịch vụ thanh toán và công ty công nghệ, dưới sự dẫn dắt của CEO Skander Malcolm, và tiếp tục thúc đẩy sự mở rộng chiến lược và đổi mới kỹ thuật số của OFX.",
+		listingStatusTitle: "Tình trạng niêm yết và thuộc tính ngành",
+		listingStatusDesc: "OFX được niêm yết trên Sở giao dịch chứng khoán Úc (ASX) vào năm 2013 (mã cổ phiếu: OFX) và được phân loại là \"Tài chính Đa dạng hóa\". Công ty duy trì khả năng cạnh tranh mạnh mẽ trong ngành công nghệ tài chính xuyên biên giới với khung tuân thủ ổn định, bố cục quốc tế và mô hình lợi nhuận bền vững.",
+		aboutDexOfxTitle: "Về \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Kể từ ngày 10 tháng 3 năm 2023, một số nền tảng thông tin tài chính đã hiển thị nhãn \"DEX:OFX\".",
+		aboutDexOfxDesc2: "Cần làm rõ rằng:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" không phải là mã giao dịch thực tế. Đây là một định danh ánh xạ liên thị trường được tạo ra tự động trong quá trình cập nhật hệ thống trên một số nền tảng dữ liệu.",
+		aboutDexOfxDesc4: "Định danh này được tạo ra như một phần của kiểm tra hệ thống nội bộ để xác minh khả năng của nền tảng trong việc liên kết chính xác thông tin công ty ở các thị trường khác nhau. Do đó, nhãn chỉ được sử dụng cho mục đích lập chỉ mục và kiểm tra dữ liệu, và không có nghĩa là OFX được niêm yết trên DEX hoặc bất kỳ sở giao dịch nào khác.",
+		aboutDexOfxDesc5: "Danh sách hợp lệ duy nhất của OFX là: Sở giao dịch chứng khoán Úc (ASX) Mã cổ phiếu: OFX",
+		aboutDexOfxDesc6: "Tất cả các định danh khác (bao gồm \"DEX:OFX\") đều là các mục ánh xạ được tạo ra bởi hệ thống, không được sử dụng cho các giao dịch thực tế và chỉ nhằm cung cấp dịch vụ tốt hơn cho người dùng.",
+		headquartersTitle: "Địa chỉ trụ sở chính của Tập đoàn OFX",
+		headquartersDesc: "Tầng 19, số 60 Đường Margaret, Sydney NSW 2000, Úc"
+	},
+		
+		bindTrc20: {
+			formTitle: "Thông tin nạp tiền",
+			moneyLabel: "Số tiền nạp",
+			moneyPlaceholder: "Vui lòng nhập số tiền nạp",
+			addressLabel: "Địa chỉ nạp tiền",
+			addressPlaceholder: "Vui lòng nhập địa chỉ nạp tiền",
+			hashLabel: "Mã hash nạp tiền",
+			hashPlaceholder: "Vui lòng nhập mã hash nạp tiền",
+			submitButton: "Gửi nạp tiền",
+			successMessage: "Gửi nạp tiền thành công",
+			failMessage: "Gửi thất bại",
+			networkErrorMessage: "Lỗi mạng"
+		},
+		
+		bankCardList: {
+			formTitle: "Thông tin ngân hàng",
+			accountNameLabel: "Tên chủ tài khoản",
+			accountNamePlaceholder: "Vui lòng nhập tên chủ tài khoản",
+			accountNumberLabel: "Số tài khoản",
+			accountNumberPlaceholder: "Vui lòng nhập số tài khoản",
+			bankNameLabel: "Tên ngân hàng",
+			bankNamePlaceholder: "Vui lòng nhập tên ngân hàng",
+			countryLabel: "Quốc gia",
+			countryPlaceholder: "Vui lòng chọn quốc gia",
+			routingNumberLabel: "Số định tuyến",
+			routingNumberPlaceholder: "Vui lòng nhập số định tuyến",
+			swiftCodeLabel: "Mã SWIFT",
+			swiftCodePlaceholder: "Vui lòng nhập mã SWIFT",
+			bankAddressLabel: "Địa chỉ ngân hàng",
+			bankAddressPlaceholder: "Vui lòng nhập địa chỉ ngân hàng",
+			submitButtonText: "Lưu thông tin",
+			bindSuccess: "Liên kết thành công",
+			updateSuccess: "Cập nhật thành công"
+		}
 	}
-}

@@ -5,47 +5,47 @@
             <navbar />
             <div class="main-container">
                 <div class="bank-card-form">
-                    <h2 class="form-title">银行信息</h2>
+                    <h2 class="form-title">{{$t('bankCardList.formTitle')}}</h2>
 
                     <div class="form-group">
-                        <label class="form-label">账户名称</label>
-                        <input type="text" v-model="form.account_name" class="form-input" placeholder="请输入账户名称">
+                        <label class="form-label">{{$t('bankCardList.accountNameLabel')}}</label>
+                        <input type="text" v-model="form.account_name" class="form-input" :placeholder="$t('bankCardList.accountNamePlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">账号</label>
-                        <input type="text" v-model="form.account_number" class="form-input" placeholder="请输入账号">
+                        <label class="form-label">{{$t('bankCardList.accountNumberLabel')}}</label>
+                        <input type="text" v-model="form.account_number" class="form-input" :placeholder="$t('bankCardList.accountNumberPlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">银行名称</label>
-                        <input type="text" v-model="form.bank_name" class="form-input" placeholder="请输入银行名称">
+                        <label class="form-label">{{$t('bankCardList.bankNameLabel')}}</label>
+                        <input type="text" v-model="form.bank_name" class="form-input" :placeholder="$t('bankCardList.bankNamePlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">国家</label>
+                        <label class="form-label">{{$t('bankCardList.countryLabel')}}</label>
                         <select v-model="form.country" class="form-input">
-                            <option value="">请选择国家</option>
+                            <option value="">{{$t('bankCardList.countryPlaceholder')}}</option>
                             <option v-for="country in countries" :key="country" :value="country">{{ country }}</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">路由号码</label>
-                        <input type="text" v-model="form.routing_number" class="form-input" placeholder="请输入路由号码">
+                        <label class="form-label">{{$t('bankCardList.routingNumberLabel')}}</label>
+                        <input type="text" v-model="form.routing_number" class="form-input" :placeholder="$t('bankCardList.routingNumberPlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">SWIFT代码</label>
-                        <input type="text" v-model="form.swift_code" class="form-input" placeholder="请输入SWIFT代码">
+                        <label class="form-label">{{$t('bankCardList.swiftCodeLabel')}}</label>
+                        <input type="text" v-model="form.swift_code" class="form-input" :placeholder="$t('bankCardList.swiftCodePlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">银行地址</label>
-                        <textarea v-model="form.bank_address" class="form-textarea" placeholder="请输入银行地址"></textarea>
+                        <label class="form-label">{{$t('bankCardList.bankAddressLabel')}}</label>
+                        <textarea v-model="form.bank_address" class="form-textarea" :placeholder="$t('bankCardList.bankAddressPlaceholder')"></textarea>
                     </div>
 
-                    <button class="submit-button" @click="submitBankInfo">保存信息</button>
+                    <button class="submit-button" @click="submitBankInfo">{{$t('bankCardList.submitButtonText')}}</button>
                 </div>
             </div>
         </view>
@@ -128,7 +128,7 @@ export default {
                 this.$u.api.setting.bind_bank2(token, this.form).then(res => {
                     if (res.code == 200) {
                         uni.showToast({
-                            title: '绑定成功',
+                            title: this.$t('bankCardList.bindSuccess'),
                             icon: 'success'
                         })
                     }
@@ -137,7 +137,7 @@ export default {
                 this.$u.api.setting.update_bank(token, this.form).then(res => {
                     if (res.code == 200) {
                         uni.showToast({
-                            title: '修改成功',
+                            title: this.$t('bankCardList.updateSuccess'),
                             icon: 'success'
                         })
                     }

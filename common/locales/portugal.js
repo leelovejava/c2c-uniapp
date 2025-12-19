@@ -300,6 +300,62 @@ bind: [
 			}
 		}
 	},
+	faqs: {
+		pageHeader: {
+			title: "Regras e Regulamentos",
+			description: "Guia da Plataforma e Informações de Negociação"
+		},
+		basicRules: {
+			title: "Regras Básicas",
+			rules: [
+				"Cada conta utiliza apenas um número de celular para registro.",
+				"De acordo com as regulamentações da FinCEN, cada usuário deve ter pelo menos $100 em sua conta para executar pedidos.",
+				"Cada grupo de tarefas pode conter de 0 a 4 ordens limitadas, e cada ordem limitada pode conter até 2 ordens de troca (ou seja, 1 ordem troca 2 vezes). Apenas 1 tarefa contendo 2 trocas é permitida por grupo.",
+				"Contas que excedam um determinado valor de depósito serão automaticamente atualizadas para associação SVIP. Membros atualizados podem completar 40 pedidos por rodada."
+			]
+		},
+		platformOperation: {
+			title: "Operação da Plataforma",
+			rules: [
+				"A plataforma está aberta diariamente das 10:00 às 23:00. Membros só podem fazer pedidos nestes horários.",
+				"Se sua conta for abusada por terceiros, entre em contato com o atendimento ao cliente imediatamente.",
+				"Retiradas acima de $30.000 requerem aviso prévio ao atendimento ao cliente.",
+				"As pontuações de crédito são atualizadas após as 22:30 todos os dias. Retiradas não são possíveis quando a pontuação de crédito está abaixo de 95 pontos."
+			]
+		},
+		orderTypes: {
+			title: "Tipos de Pedido",
+			marketOrder: {
+				title: "Ordem de Mercado",
+				description: "Os usuários da plataforma de câmbio aceitam a melhor taxa de câmbio disponível no mercado atual e completam a troca imediatamente. O sistema aloca automaticamente pedidos com base no saldo disponível da conta do membro. A comissão para este tipo de pedido é de 1% do valor do pedido."
+			},
+			limitOrder: {
+				title: "Ordem Limitada",
+				description: "Os usuários da plataforma de câmbio podem definir uma taxa de câmbio alvo. Uma vez que a taxa de mercado atinja o valor especificado, o sistema faz a correspondência automaticamente e executa a troca. Esses pedidos geralmente excedem o saldo atual da conta do agente, mas oferecem maior potencial de retorno. A comissão para este tipo de pedido é de 5%-60% do valor do pedido."
+			}
+		},
+		giftPackage: {
+			title: "Pacote de Presentes",
+			description: [
+				"Os pacotes de presentes são ofertas exclusivas para nossos membros valiosos. Eles contêm um pedido aleatório associado a ordens limitadas ou dinheiro generosamente fornecido por nossos parceiros. Esta oferta especial se aplica aos membros que acumularam uma certa quantia em sua conta. Os pacotes de presentes são oferecidos apenas de 0 a 4 vezes por rodada.",
+				"Os pacotes de presentes são projetados para recompensar nossa comunidade fiel e aprimorar sua experiência conosco. Alcançar este limiar não apenas permite que você ganhe recompensas atrativas, mas também o torna parte de um grupo exclusivo com benefícios adicionais."
+			]
+		},
+		deposits: {
+			title: "Depósitos",
+			description: [
+				"Todos os depósitos devem ser coordenados através do atendimento ao cliente online da plataforma. Após transferir fundos para a conta designada pelo atendimento ao cliente, envie comprovantes de pagamento para garantir processamento oportuno.",
+				"Para evitar atrasos, confirme seus detalhes de conta diretamente na plataforma antes de cada transação, pois estes podem mudar periodicamente. Se encontrar problemas durante o processo de depósito, entre em contato com o atendimento ao cliente imediatamente."
+			]
+		},
+		withdrawals: {
+			title: "Retiradas",
+			description: [
+				"Membros só podem solicitar retiradas após completar todas as tarefas diárias designadas. Fundos ganhos na plataforma podem ser retirados quando as condições de retirada da plataforma forem cumpridas. Antes de solicitar uma retirada, certifique-se de que sua conta na plataforma contenha um endereço de carteira válido.",
+				"Nota: Retiradas podem ser feitas diariamente das 10:00 às 23:00."
+			]
+		}
+	},
 	vip: {
 		title: "Nível de Associação",
 		current: "Atual",
@@ -307,5 +363,61 @@ bind: [
 		bonus: "Bônus",
 		commissionRate: "Taxa de Comissão",
 		dailyOrders: "Pedidos Diários"
+	},
+	about: {
+		title: "Sobre Nós",
+		companyDescription: "Fundada em 2001, a OFX é uma empresa multinacional de tecnologia financeira focada em transferências de capital globais e serviços cambiais. A empresa nasce de um conceito claro: fornecer soluções de capital transfronteiriças melhores, mais justas e eficientes para clientes globais. Desde sua fundação, a OFX serviu mais de 1 milhão de clientes, suportou mais de 50 moedas, cobriu mais de 170 países e mercados e processou mais de 1,48 trilhões de dólares americanos em fundos acumulados.",
+		globalNetworkTitle: "Disposição da rede global",
+		globalNetworkDesc: "Possui escritórios em Londres, Dublin, Sydney, Auckland, Hong Kong, Singapura, Toronto e São Francisco, com mais de 700 funcionários em todo o mundo, e tem uma rede operacional sólida e capacidades de serviço localizadas.",
+		regulatoryAdvantageTitle: "Forte vantagem regulatória",
+		regulatoryAdvantageDesc: "É supervisionada por mais de 50 agências reguladoras ao redor do mundo e segue padrões rigorosos de auditoria financeira e conformidade. Desde a listagem, não houve punições regulatórias nem ações de aplicação da lei, e a capacidade de gestão de riscos é sólida.",
+		corporateGovernanceTitle: "Governança corporativa e gestão",
+		corporateGovernanceDesc1: "O conselho de administração é composto por líderes empresariais com rica experiência em bancos, finanças e tecnologia para garantir uma estrutura de governança corporativa sólida.",
+		corporateGovernanceDesc2: "A equipe de gestão é composta por executivos seniores de grandes bancos internacionais, fornecedores de serviços de pagamento e empresas de tecnologia, liderados pelo CEO Skander Malcolm, e continua promovendo a expansão estratégica e inovação digital da OFX.",
+		listingStatusTitle: "Status de listagem e atributos industriais",
+		listingStatusDesc: "A OFX foi listada na Bolsa Australiana (ASX) em 2013 (código de ação: OFX) e classificada como \"Finanças Diversificadas\". A empresa mantém forte competitividade na indústria de fintech transfronteiriça com um quadro de conformidade estável, disposição internacional e modelo de lucro sustentável.",
+		aboutDexOfxTitle: "Sobre \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Desde 10 de março de 2023, algumas plataformas de informação financeira exibiram o rótulo \"DEX:OFX\".",
+		aboutDexOfxDesc2: "Deve ser esclarecido que:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" não é um código de transação real. É um identificador de mapeamento entre mercados que é gerado automaticamente durante a atualização do sistema em algumas plataformas de dados.",
+		aboutDexOfxDesc4: "O identificador foi gerado como parte dos testes internos do sistema para verificar a capacidade da plataforma de associar corretamente as informações da empresa em diferentes mercados. Portanto, o rótulo é usado apenas para fins de indexação e teste de dados e não significa que a OFX esteja listada na DEX ou qualquer outra bolsa.",
+		aboutDexOfxDesc5: "A única lista oficial válida da OFX é: Bolsa Australiana (ASX) Código de ação: OFX",
+		aboutDexOfxDesc6: "Todos os outros identificadores (incluindo \"DEX:OFX\") são entradas de mapeamento geradas pelo sistema, que não são usadas para transações reais e apenas fornecem melhores serviços para usuários.",
+		headquartersTitle: "Endereço da sede do Grupo OFX",
+		headquartersDesc: "Andar 19, 60 Margaret Street, Sydney NSW 2000, Austrália"
+	},
+	bindTrc20: {
+		formTitle: "Informações de recarga",
+		moneyLabel: "Valor da recarga",
+		moneyPlaceholder: "Por favor, insira o valor da recarga",
+		addressLabel: "Endereço de recarga",
+		addressPlaceholder: "Por favor, insira o endereço de recarga",
+		hashLabel: "Hash da recarga",
+		hashPlaceholder: "Por favor, insira o hash da recarga",
+		submitButton: "Enviar recarga",
+		successMessage: "Recarga enviada com sucesso",
+		failMessage: "Falha no envio",
+		networkErrorMessage: "Erro de rede"
+	},
+		
+		bankCardList: {
+			formTitle: "Informações Bancárias",
+			accountNameLabel: "Nome do Titular da Conta",
+			accountNamePlaceholder: "Por favor, insira o nome do titular da conta",
+			accountNumberLabel: "Número da Conta",
+			accountNumberPlaceholder: "Por favor, insira o número da conta",
+			bankNameLabel: "Nome do Banco",
+			bankNamePlaceholder: "Por favor, insira o nome do banco",
+			countryLabel: "País",
+			countryPlaceholder: "Por favor, selecione o país",
+			routingNumberLabel: "Número de Roteamento",
+			routingNumberPlaceholder: "Por favor, insira o número de roteamento",
+			swiftCodeLabel: "Código SWIFT",
+			swiftCodePlaceholder: "Por favor, insira o código SWIFT",
+			bankAddressLabel: "Endereço do Banco",
+			bankAddressPlaceholder: "Por favor, insira o endereço do banco",
+			submitButtonText: "Salvar Informações",
+			bindSuccess: "Vinculação bem-sucedida",
+			updateSuccess: "Atualização bem-sucedida"
+		}
 	}
-}

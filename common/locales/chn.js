@@ -120,7 +120,7 @@ export default {
 		},
 		common2: ["新手教程", "联系客服", "服务条款，查看详情", "客服1", "客服2"],
 		common3: ["成功", "平台介绍"],
-		invite: ["分享推广", "我的邀请码", "复制邀请码，邀请更多好友加入", "复制", "暫時無法邀請會員"],
+		invite: ["分享推广", "我的邀请码", "复制邀请码，邀请更多好友加入", "复制", "暫時無法邀請會員註冊"],
 		common4: ["实名认证", "提交成功", "注意事项", "事项内容", "缴纳金额", "身份证", "财务证明", "请先去完成账号绑定", "请先完成实名认证"],
 		common5: ["卖出", "分钟", "前", "保存二维码", "打开", "账号冻结,暂时无法交易", "APP下载"],
 		common6: ["充值订单", "订单号", "金额", "时间", "状态"],
@@ -346,6 +346,62 @@ export default {
 			logout: "注销"
 		}
 	},
+	faqs: {
+		pageHeader: {
+			title: "规则和条例",
+			description: "平台指南和交易信息"
+		},
+		basicRules: {
+			title: "基本规则",
+			rules: [
+				"每个账户仅使用一个手机号码注册。",
+				"根据FinCEN法规，每位用户必须在账户中至少拥有$100才能执行订单。",
+				"每个任务组组多包含0-4个限价单，每个限价单内最多包含2次兑换单（即1单兑换2次）。每组任务仅允许执行1个包含2次兑换的任务。",
+				"超过一定存款金额的账户将自动升级为SVIP会员。升级会员每轮可完成40个订单。"
+			]
+		},
+		platformOperation: {
+			title: "平台运营",
+			rules: [
+				"平台每日 10:00 至 23:00 开放。会员只能在这些时间内下单。",
+				"如果您的账户被第三方滥用，请立即联系客服。",
+				"提取超过$30000需要事先通知客服。",
+				"信用分数每日晚上22:30后更新。信用分数低于95分时无法提现。"
+			]
+		},
+		orderTypes: {
+			title: "订单类型",
+			marketOrder: {
+				title: "Market Order",
+				description: "外汇平台用户接受当前市场最佳可用汇率并立即完成兑换。系统根据会员账户的可用余额自动分配订单。此订单类型的佣金为订单金额的1%。"
+			},
+			limitOrder: {
+				title: "Limit Order",
+				description: "外汇平台用户可以设定目标汇率。一旦市场汇率达到指定值，系统会自动匹配并执行兑换。这些订单通常超过代理商当前的账户余额，但提供更高的回报潜力。此订单类型的佣金为订单金额的5%-60%。"
+			}
+		},
+		giftPackage: {
+			title: "Gift Package",
+			description: [
+				"礼品包是为我们尊贵会员提供的专属优惠。它包含一个随机订单，与限价订单或我们合作伙伴慷慨提供的现金相关联。此特别优惠适用于在账户中累积一定金额的会员。礼品包每轮仅提供0-4次。",
+				"礼品包旨在奖励我们忠诚的社区并增强您与我们的体验。达到此门槛不仅可以让您获得有吸引力的奖励，还可以让您成为享有额外福利的专群体的一部分。"
+			]
+		},
+		deposits: {
+			title: "Deposits",
+			description: [
+				"所有存款必须通过平台的在线客服协调。将资金转入客服指定的账户后，请提交付款凭证以确保及时处理。",
+				"为避免延误，请在每次交易前直接在平台上确认您的账户详情，因为这些可能会定期更改。如果您在存款过程中遇到任何问题，请立即联系客服。"
+			]
+		},
+		withdrawals: {
+			title: "Withdrawals",
+			description: [
+				"会员只能在完成所有指定的日常任务后申请提现。在满足平台提现条件的情况下，可以提取在平台上赚取的资金。在申请提现之前，请确保您的平台账户包含有效的钱包地址。",
+				"注意:每日10:00 至 23:00 可进行提现。"
+			]
+		}
+	},
 	vip: {
 		title: "会员等级",
 		current: "当前",
@@ -353,5 +409,60 @@ export default {
 		bonus: "奖金",
 		commissionRate: "佣金率",
 		dailyOrders: "每日订单"
+	},
+	about: {
+		title: "关于我们",
+		companyDescription: "OFX成立于2001年，是一家专注于全球资本转移和外汇服务的跨国金融科技公司。公司源于一个清晰的概念：为全球客户提供更好、更公平、更高效的跨境资本解决方案。自成立以来，OFX已为超过100万客户提供了服务，支持50多种货币，覆盖170多个国家和市场，累计处理资金超过1.48万亿美元。",
+		globalNetworkTitle: "全球网络布局",
+		globalNetworkDesc: "公司在伦敦、都柏林、悉尼、奥克兰、香港、新加坡、多伦多和旧金山设有办事处，全球员工超过700人，拥有坚实的运营网络和本地化服务能力。",
+		regulatoryAdvantageTitle: "强大的监管优势",
+		regulatoryAdvantageDesc: "公司受到全球50多个监管机构的监督，遵循严格的财务审计和合规标准。自上市以来，没有任何监管处罚或执法行动，风险管理能力健全。",
+		corporateGovernanceTitle: "公司治理与管理",
+		corporateGovernanceDesc1: "董事会由在银行、金融和技术领域拥有丰富经验的商业领袖组成，确保健全的公司治理结构。",
+		corporateGovernanceDesc2: "管理团队由来自主要国际银行、支付服务提供商和技术公司的高级管理人员组成，由首席执行官Skander Malcolm领导，持续推进OFX的战略扩张和数字创新。",
+		listingStatusTitle: "上市地位与行业属性",
+		listingStatusDesc: "OFX于2013年在澳大利亚证券交易所(ASX)上市(股票代码：OFX)，被归类为\"多元化金融\"。公司凭借稳定的合规框架、国际化布局和可持续的盈利模式，在跨境金融科技行业中保持着强大的竞争力。",
+		aboutDexOfxTitle: "关于\"DEX:OFX\"",
+		aboutDexOfxDesc1: "自2023年3月10日起，一些金融信息平台显示了\"DEX:OFX\"标签。",
+		aboutDexOfxDesc2: "必须澄清的是：",
+		aboutDexOfxDesc3: "\"Dex: OFX\"并非实际交易代码。它是在某些数据平台上系统更新期间自动生成的跨市场映射标识符。",
+		aboutDexOfxDesc4: "该标识符作为内部系统测试的一部分生成，用于验证平台在不同市场中正确关联公司信息的能力。因此，该标签仅用于数据索引和测试目的，并不意味着OFX在DEX或其他任何交易所上市。",
+		aboutDexOfxDesc5: "OFX唯一有效的官方上市是：澳大利亚证券交易所(ASX) 股票代码：OFX",
+		aboutDexOfxDesc6: "所有其他标识符（包括\"DEX:OFX\"）都是系统生成的映射条目，不用于实际交易，仅为用户提供更好的服务。",
+		headquartersTitle: "OFX集团总部地址",
+		headquartersDesc: "澳大利亚新南威尔士州悉尼玛格丽特街60号19层，邮编2000"
+	},
+	
+	bindTrc20: {
+		formTitle: "充值信息",
+		moneyLabel: "充值金额",
+		moneyPlaceholder: "请输入充值金额",
+		addressLabel: "充值地址",
+		addressPlaceholder: "请输入充值地址",
+		hashLabel: "充值hash",
+		hashPlaceholder: "请输入充值hash",
+		submitButton: "提交充值",
+		successMessage: "充值提交成功",
+		failMessage: "提交失败",
+		networkErrorMessage: "网络错误"
+	},
+		
+		bankCardList: {
+			formTitle: "银行信息",
+			accountNameLabel: "账户名称",
+			accountNamePlaceholder: "请输入账户名称",
+			accountNumberLabel: "账号",
+			accountNumberPlaceholder: "请输入账号",
+			bankNameLabel: "银行名称",
+			bankNamePlaceholder: "请输入银行名称",
+			countryLabel: "国家",
+			countryPlaceholder: "请选择国家",
+			routingNumberLabel: "路由号码",
+			routingNumberPlaceholder: "请输入路由号码",
+			swiftCodeLabel: "SWIFT代码",
+			swiftCodePlaceholder: "请输入SWIFT代码",
+			bankAddressLabel: "银行地址",
+			bankAddressPlaceholder: "请输入银行地址",
+			submitButtonText: "保存信息"
+		}
 	}
-}

@@ -297,6 +297,62 @@ export default {
 			}
 		}
 	},
+	faqs: {
+		pageHeader: {
+			title: "Regole e Regolamenti",
+			description: "Guida alla Piattaforma e Informazioni sul Trading"
+		},
+		basicRules: {
+			title: "Regole di Base",
+			rules: [
+				"Ogni account utilizza un solo numero di cellulare per la registrazione.",
+				"Secondo le normative FinCEN, ogni utente deve avere almeno $100 nel proprio account per eseguire ordini.",
+				"Ogni gruppo di attività può contenere da 0 a 4 ordini limite, e ogni ordine limite può contenere fino a 2 ordini di cambio (cioè 1 ordine cambia 2 volte). Solo 1 attività contenente 2 cambi è consentita per gruppo.",
+				"Gli account che superano un certo importo di deposito saranno automaticamente aggiornati al livello di membership SVIP. I membri aggiornati possono completare 40 ordini per turno."
+			]
+		},
+		platformOperation: {
+			title: "Funzionamento della Piattaforma",
+			rules: [
+				"La piattaforma è aperta ogni giorno dalle 10:00 alle 23:00. I membri possono effettuare ordini solo in questi orari.",
+				"Se il tuo account viene abusato da terzi, contatta immediatamente il servizio clienti.",
+				"I prelievi superiori a $30000 richiedono una notifica preventiva al servizio clienti.",
+				"I punteggi di credito vengono aggiornati dopo le 22:30 ogni sera. I prelievi non sono possibili quando il punteggio di credito è inferiore a 95 punti."
+			]
+		},
+		orderTypes: {
+			title: "Tipi di Ordine",
+			marketOrder: {
+				title: "Ordine a Mercato",
+				description: "Gli utenti della piattaforma di cambio valuta accettano il miglior tasso di cambio disponibile sul mercato corrente e completano immediatamente lo scambio. Il sistema assegna automaticamente gli ordini in base al saldo disponibile dell'account del membro. La commissione per questo tipo di ordine è pari all'1% dell'importo dell'ordine."
+			},
+			limitOrder: {
+				title: "Ordine Limite",
+				description: "Gli utenti della piattaforma di cambio valuta possono impostare un tasso di cambio obiettivo. Una volta che il tasso di mercato raggiunge il valore specificato, il sistema abbina automaticamente ed esegue lo scambio. Questi ordini di solito superano il saldo corrente dell'account dell'agente ma offrono un potenziale di rendimento più elevato. La commissione per questo tipo di ordine è compresa tra il 5% e il 60% dell'importo dell'ordine."
+			}
+		},
+		giftPackage: {
+			title: "Pacchetto Regalo",
+			description: [
+				"I pacchetti regalo sono offerte esclusive per i nostri preziosi membri. Contengono un ordine casuale associato a ordini limite o denaro generosamente fornito dai nostri partner. Questa offerta speciale si applica ai membri che hanno accumulato un certo importo nel loro account. I pacchetti regalo sono offerti solo da 0 a 4 volte per turno.",
+				"I pacchetti regalo sono progettati per premiare la nostra comunità fedele e migliorare la tua esperienza con noi. Raggiungere questa soglia ti consente non solo di ottenere premi attraenti ma anche di far parte di un gruppo esclusivo con benefici aggiuntivi."
+			]
+		},
+		deposits: {
+			title: "Depositi",
+			description: [
+				"Tutti i depositi devono essere coordinati tramite il servizio clienti online della piattaforma. Dopo aver trasferito i fondi sull'account designato dal servizio clienti, inviare le ricevute di pagamento per garantire un'elaborazione tempestiva.",
+				"Per evitare ritardi, confermare i dettagli del proprio account direttamente sulla piattaforma prima di ogni transazione, poiché questi possono cambiare periodicamente. Se si incontrano problemi durante il processo di deposito, contattare immediatamente il servizio clienti."
+			]
+		},
+		withdrawals: {
+			title: "Prelievi",
+			description: [
+				"I membri possono richiedere prelievi solo dopo aver completato tutte le attività quotidiane designate. I fondi guadagnati sulla piattaforma possono essere prelevati quando vengono soddisfatte le condizioni di prelievo della piattaforma. Prima di richiedere un prelievo, assicurarsi che l'account della piattaforma contenga un indirizzo wallet valido.",
+				"Nota: I prelievi possono essere effettuati quotidianamente dalle 10:00 alle 23:00."
+			]
+		}
+	},
 	vip: {
 		title: "Livello di membership",
 		current: "Attuale",
@@ -304,5 +360,61 @@ export default {
 		bonus: "Bonus",
 		commissionRate: "Tasso di commissione",
 		dailyOrders: "Ordini giornalieri"
+	},
+	about: {
+		title: "Chi siamo",
+		companyDescription: "Fondata nel 2001, OFX è un'azienda multinazionale di tecnologia finanziaria che si concentra sui trasferimenti di capitale globale e sui servizi valutari. L'azienda nasce da un concetto chiaro: fornire soluzioni di capitale transfrontaliere migliori, più eque ed efficienti per i clienti globali. Dalla sua fondazione, OFX ha servito oltre 1 milione di clienti, ha supportato oltre 50 valute, ha coperto oltre 170 paesi e mercati ed ha gestito oltre 1,48 bilioni di dollari statunitensi in fondi accumulati.",
+		globalNetworkTitle: "Struttura della rete globale",
+		globalNetworkDesc: "Possiede uffici a Londra, Dublino, Sydney, Auckland, Hong Kong, Singapore, Toronto e San Francisco, con oltre 700 dipendenti in tutto il mondo, e dispone di una solida rete operativa e capacità di servizio localizzate.",
+		regulatoryAdvantageTitle: "Vantaggio regolatorio forte",
+		regulatoryAdvantageDesc: "È supervisionata da oltre 50 agenzie di regolamentazione in tutto il mondo e segue rigorosi standard di revisione finanziaria e conformità. Dalla quotazione in borsa, non vi sono state sanzioni regolatorie né azioni di applicazione della legge, e la capacità di gestione del rischio è solida.",
+		corporateGovernanceTitle: "Governance aziendale e gestione",
+		corporateGovernanceDesc1: "Il consiglio di amministrazione è composto da leader aziendali con ricca esperienza nel settore bancario, finanziario e tecnologico per garantire una struttura di governance aziendale solida.",
+		corporateGovernanceDesc2: "Il team manageriale è composto da dirigenti senior di importanti banche internazionali, fornitori di servizi di pagamento e aziende tecnologiche, guidati dall'amministratore delegato Skander Malcolm, e continua a promuovere l'espansione strategica e l'innovazione digitale di OFX.",
+		listingStatusTitle: "Stato di quotazione e attributi industriali",
+		listingStatusDesc: "OFX è stata quotata alla Borsa Australiana (ASX) nel 2013 (codice azionario: OFX) ed è stata classificata come \"Finanza Diversificata\". L'azienda mantiene una forte competitività nell'industria della fintech transfrontaliera con un quadro di conformità stabile, una struttura internazionale e un modello di profitto sostenibile.",
+		aboutDexOfxTitle: "Informazioni su \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Dal 10 marzo 2023, alcune piattaforme di informazione finanziaria hanno visualizzato l'etichetta \"DEX:OFX\".",
+		aboutDexOfxDesc2: "È necessario chiarire che:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" non è un codice di transazione reale. È un identificatore di mappatura tra mercati che viene generato automaticamente durante l'aggiornamento del sistema su alcune piattaforme dati.",
+		aboutDexOfxDesc4: "L'identificatore è stato generato come parte dei test interni del sistema per verificare la capacità della piattaforma di associare correttamente le informazioni dell'azienda in diversi mercati. Pertanto, l'etichetta viene utilizzata solo per scopi di indicizzazione e test dei dati e non significa che OFX sia quotata su DEX o qualsiasi altra borsa.",
+		aboutDexOfxDesc5: "L'unica quotazione ufficiale valida di OFX è: Borsa Australiana (ASX) Codice azionario: OFX",
+		aboutDexOfxDesc6: "Tutti gli altri identificatori (incluso \"DEX:OFX\") sono voci di mappatura generate dal sistema, che non vengono utilizzate per transazioni reali e forniscono solo servizi migliori per gli utenti.",
+		headquartersTitle: "Indirizzo della sede del Gruppo OFX",
+		headquartersDesc: "Piano 19, 60 Margaret Street, Sydney NSW 2000, Australia"
+	},
+	bindTrc20: {
+		formTitle: "Informazioni di ricarica",
+		moneyLabel: "Importo della ricarica",
+		moneyPlaceholder: "Inserisci l'importo della ricarica",
+		addressLabel: "Indirizzo di ricarica",
+		addressPlaceholder: "Inserisci l'indirizzo di ricarica",
+		hashLabel: "Hash della ricarica",
+		hashPlaceholder: "Inserisci l'hash della ricarica",
+		submitButton: "Invia ricarica",
+		successMessage: "Ricarica inviata con successo",
+		failMessage: "Invio fallito",
+		networkErrorMessage: "Errore di rete"
+	},
+		
+		bankCardList: {
+			formTitle: "Informazioni Bancarie",
+			accountNameLabel: "Nome del Titolare del Conto",
+			accountNamePlaceholder: "Inserisci il nome del titolare del conto",
+			accountNumberLabel: "Numero del Conto",
+			accountNumberPlaceholder: "Inserisci il numero del conto",
+			bankNameLabel: "Nome della Banca",
+			bankNamePlaceholder: "Inserisci il nome della banca",
+			countryLabel: "Paese",
+			countryPlaceholder: "Seleziona il paese",
+			routingNumberLabel: "Numero di Routing",
+			routingNumberPlaceholder: "Inserisci il numero di routing",
+			swiftCodeLabel: "Codice SWIFT",
+			swiftCodePlaceholder: "Inserisci il codice SWIFT",
+			bankAddressLabel: "Indirizzo della Banca",
+			bankAddressPlaceholder: "Inserisci l'indirizzo della banca",
+			submitButtonText: "Salva Informazioni",
+			bindSuccess: "Collegamento riuscito",
+			updateSuccess: "Aggiornamento riuscito"
+		}
 	}
-}

@@ -5,24 +5,24 @@
             <navbar />
             <div class="main-container">
                 <div class="bank-card-form">
-                    <h2 class="form-title">充值信息</h2>
+                    <h2 class="form-title">{{$t('bindTrc20.formTitle')}}</h2>
 
                     <div class="form-group">
-                        <label class="form-label">充值金额</label>
-                        <input type="number" v-model="form.money" class="form-input" placeholder="请输入充值金额" step="0.01">
+                        <label class="form-label">{{$t('bindTrc20.moneyLabel')}}</label>
+                        <input type="number" v-model="form.money" class="form-input" :placeholder="$t('bindTrc20.moneyPlaceholder')" step="0.01">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">充值地址</label>
-                        <input type="text" v-model="form.recharge_address" class="form-input" placeholder="请输入充值地址">
+                        <label class="form-label">{{$t('bindTrc20.addressLabel')}}</label>
+                        <input type="text" v-model="form.recharge_address" class="form-input" :placeholder="$t('bindTrc20.addressPlaceholder')">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">充值hash</label>
-                        <input type="text" v-model="form.recharge_hash" class="form-input" placeholder="请输入充值hash">
+                        <label class="form-label">{{$t('bindTrc20.hashLabel')}}</label>
+                        <input type="text" v-model="form.recharge_hash" class="form-input" :placeholder="$t('bindTrc20.hashPlaceholder')">
                     </div>
 
-                    <button class="submit-button" @click="submitRecharge">提交充值</button>
+                    <button class="submit-button" @click="submitRecharge">{{$t('bindTrc20.submitButton')}}</button>
                 </div>
             </div>
         </view>
@@ -56,18 +56,18 @@ export default {
             this.$u.api.index.add_Recharge(token, this.form).then(res => {
                 if (res.code == 1) {
                     uni.showToast({
-                        title: '充值提交成功',
+                        title: this.$t('bindTrc20.successMessage'),
                         icon: 'success'
                     })
                 } else {
                     uni.showToast({
-                        title: res.msg || '提交失败',
+                        title: res.msg || this.$t('bindTrc20.failMessage'),
                         icon: 'error'
                     })
                 }
             }).catch(err => {
                 uni.showToast({
-                    title: '网络错误',
+                    title: this.$t('bindTrc20.networkErrorMessage'),
                     icon: 'error'
                 })
             })

@@ -448,5 +448,61 @@ export default {
 		bonus: "Bono",
 		commissionRate: "Tasa de comisión",
 		dailyOrders: "Órdenes diarias"
+	},
+	about: {
+		title: "Acerca de nosotros",
+		companyDescription: "Fundada en 2001, OFX es una empresa multinacional de tecnología financiera enfocada en transferencias de capital globales y servicios de divisas. La empresa surge de un concepto claro: proporcionar soluciones de capital transfronterizas mejores, más justas y eficientes para clientes globales. Desde su establecimiento, OFX ha servido a más de 1 millón de clientes, ha soportado más de 50 monedas, ha cubierto más de 170 países y mercados, y ha manejado más de 1.48 billones de dólares estadounidenses en fondos acumulados.",
+		globalNetworkTitle: "Disposición de red global",
+		globalNetworkDesc: "Tiene oficinas en Londres, Dublín, Sídney, Auckland, Hong Kong, Singapur, Toronto y San Francisco, con más de 700 empleados en todo el mundo, y posee una red operativa sólida y capacidades de servicio localizadas.",
+		regulatoryAdvantageTitle: "Fuerte ventaja regulatoria",
+		regulatoryAdvantageDesc: "Está supervisada por más de 50 agencias reguladoras alrededor del mundo y sigue estándares estrictos de auditoría financiera y cumplimiento. Desde su cotización, no ha habido sanciones regulatorias ni acciones de aplicación, y la capacidad de gestión de riesgos es sólida.",
+		corporateGovernanceTitle: "Gobernanza corporativa y gestión",
+		corporateGovernanceDesc1: "La junta directiva está compuesta por líderes empresariales con rica experiencia en banca, finanzas y tecnología para garantizar una estructura de gobernanza corporativa sólida.",
+		corporateGovernanceDesc2: "El equipo directivo está compuesto por ejecutivos senior de importantes bancos internacionales, proveedores de servicios de pago y empresas tecnológicas, liderados por el director ejecutivo Skander Malcolm, y continúa promoviendo la expansión estratégica e innovación digital de OFX.",
+		listingStatusTitle: "Estado de cotización y atributos industriales",
+		listingStatusDesc: "OFX se cotizó en la Bolsa Australiana (ASX) en 2013 (código de acción: OFX) y fue clasificada como \"Finanzas Diversificadas\". La empresa mantiene una fuerte competitividad en la industria de tecnología financiera transfronteriza con un marco de cumplimiento estable, disposición internacional y modelo de ganancia sostenible.",
+		aboutDexOfxTitle: "Acerca de \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Desde el 10 de marzo de 2023, algunas plataformas de información financiera han mostrado la etiqueta \"DEX:OFX\".",
+		aboutDexOfxDesc2: "Debe aclararse que:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" no es un código de transacción real. Es un identificador de mapeo entre mercados que se genera automáticamente durante la actualización del sistema en algunas plataformas de datos.",
+		aboutDexOfxDesc4: "El identificador se generó como parte de pruebas internas del sistema para verificar la capacidad de la plataforma de asociar correctamente la información de la empresa en diferentes mercados. Por lo tanto, la etiqueta solo se usa para fines de indexación y prueba de datos, y no significa que OFX esté cotizada en DEX o cualquier otra bolsa.",
+		aboutDexOfxDesc5: "La única lista oficial válida de OFX es: Bolsa Australiana (ASX) Código de acción: OFX",
+		aboutDexOfxDesc6: "Todos los demás identificadores (incluyendo \"DEX:OFX\") son entradas de mapeo generadas por el sistema, que no se utilizan para transacciones reales y solo proporcionan mejores servicios para usuarios.",
+		headquartersTitle: "Dirección de la sede del Grupo OFX",
+		headquartersDesc: "Piso 19, 60 Calle Margaret, Sídney NSW 2000, Australia"
+	},
+	bindTrc20: {
+		formTitle: "Información de recarga",
+		moneyLabel: "Monto de recarga",
+		moneyPlaceholder: "Por favor, ingrese el monto de recarga",
+		addressLabel: "Dirección de recarga",
+		addressPlaceholder: "Por favor, ingrese la dirección de recarga",
+		hashLabel: "Hash de recarga",
+		hashPlaceholder: "Por favor, ingrese el hash de recarga",
+		submitButton: "Enviar recarga",
+		successMessage: "Recarga enviada correctamente",
+		failMessage: "Error al enviar",
+		networkErrorMessage: "Error de red"
+	},
+		
+		bankCardList: {
+			formTitle: "Información bancaria",
+			accountNameLabel: "Nombre del titular de la cuenta",
+			accountNamePlaceholder: "Por favor, ingrese el nombre del titular de la cuenta",
+			accountNumberLabel: "Número de cuenta",
+			accountNumberPlaceholder: "Por favor, ingrese el número de cuenta",
+			bankNameLabel: "Nombre del banco",
+			bankNamePlaceholder: "Por favor, ingrese el nombre del banco",
+			countryLabel: "País",
+			countryPlaceholder: "Por favor, seleccione el país",
+			routingNumberLabel: "Número de ruta",
+			routingNumberPlaceholder: "Por favor, ingrese el número de ruta",
+			swiftCodeLabel: "Código SWIFT",
+			swiftCodePlaceholder: "Por favor, ingrese el código SWIFT",
+			bankAddressLabel: "Dirección del banco",
+			bankAddressPlaceholder: "Por favor, ingrese la dirección del banco",
+			submitButtonText: "Guardar información",
+			bindSuccess: "Vinculación exitosa",
+			updateSuccess: "Actualización exitosa"
+		}
 	}
-}

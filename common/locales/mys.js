@@ -232,11 +232,13 @@ export default {
 			]
 		},
 		navbar: {
-			inviteCode: "Kod Undangan",
+			inviteCode: "Kod Jemputan",
 			copy: "Salin",
-			creditScore: "Skor Kredit",
-			totalBalance: "Jumlah Baki",
-			currencyExchange: "Tukar Wang",
+			home: "Laman Utama",
+			market: "Pasaran",
+			trade: "Dagangan",
+			wallet: "Dompet",
+			profile: "Profil",
 			memberLevel: "Aras Ahli",
 			promotions: "Promosi",
 			aboutUs: "Tentang Kami",
@@ -249,35 +251,40 @@ export default {
 			contactUs: "Hubungi Kami",
 			inviteFriends: "Jemput Rakan",
 			logout: "Log Keluar"
-		}
-	},
-	order: {
-		recordsTitle: "Rekod",
-		tabs: {
-			all: "Semua",
-			pending: "Tertunda",
-			completed: "Selesai",
-			limitOrder: "Arahan Had"
 		},
-		status: {
-			completed: "Selesai",
-			pending: "Tertunda",
-			processing: "Memproses"
-		},
-		details: {
-			orderId: "ID Pesanan",
-			orderType: "Jenis Pesanan",
-			exchangeCurrency: "Mata Wang Pertukaran",
-			exchangeEarnings: "Pendapatan Pertukaran",
-			expectedReturn: "Pulangan Dijangka"
-		}
+	bindTrc20: {
+		formTitle: "Maklumat Tambahan",
+		moneyLabel: "Jumlah Tambahan",
+		moneyPlaceholder: "Sila masukkan jumlah tambahan",
+		addressLabel: "Alamat Tambahan",
+		addressPlaceholder: "Sila masukkan alamat tambahan",
+		hashLabel: "Hash Tambahan",
+		hashPlaceholder: "Sila masukkan hash tambahan",
+		submitButton: "Hantar Tambahan",
+		successMessage: "Berjaya menghantar tambahan",
+		failMessage: "Gagal menghantar",
+		networkErrorMessage: "Ralat rangkaian"
 	},
-		vip: {
-			title: "Tahap Keahlian",
-			current: "Semasa",
-			deposit: "Deposit",
-			bonus: "Bonus",
-			commissionRate: "Kadar Komisen",
-			dailyOrders: "Pesanan Harian"
+		
+		bankCardList: {
+			formTitle: "Maklumat Bank",
+			accountNameLabel: "Nama Pemilik Akaun",
+			accountNamePlaceholder: "Sila masukkan nama pemilik akaun",
+			accountNumberLabel: "Nombor Akaun",
+			accountNumberPlaceholder: "Sila masukkan nombor akaun",
+			bankNameLabel: "Nama Bank",
+			bankNamePlaceholder: "Sila masukkan nama bank",
+			countryLabel: "Negara",
+			countryPlaceholder: "Sila pilih negara",
+			routingNumberLabel: "Nombor Routing",
+			routingNumberPlaceholder: "Sila masukkan nombor routing",
+			swiftCodeLabel: "Kod SWIFT",
+			swiftCodePlaceholder: "Sila masukkan kod SWIFT",
+			bankAddressLabel: "Alamat Bank",
+			bankAddressPlaceholder: "Sila masukkan alamat bank",
+			submitButtonText: "Simpan Maklumat",
+			bindSuccess: "Berjaya mengikat",
+			updateSuccess: "Berjaya dikemas kini"
 		}
 	}
+};

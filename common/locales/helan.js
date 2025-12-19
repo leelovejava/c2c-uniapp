@@ -374,4 +374,105 @@ export default {
 			logout: "Uitloggen"
 		}
 	},
-}
+	faqs: {
+	  pageHeader: {
+		title: "Regels en voorschriften",
+		description: "Platformgids en handelsinformatie"
+	  },
+	  basicRules: {
+		title: "Basisregels",
+		rules: [
+		  "Gebruikers moeten hun identiteit verifiëren voordat ze transacties kunnen uitvoeren",
+		  "Elke gebruiker mag slechts één account registreren en gebruiken",
+		  "De minimale transactiehoeveelheid is 100 USDT",
+		  "Gebruikers moeten strikt handelen volgens de platformtransactieprocedure",
+		  "Het is verboden om andere gebruikers te misleiden of oplichting te plegen"
+		]
+	  },
+	  platformOperation: {
+		title: "Platformbediening",
+		rules: [
+		  "De platvorm heft een transactiekosten van 0,5% in op elke transactie",
+		  "Het bedrag wordt binnen 24 uur na succesvolle transactie vrijgegeven",
+		  "Transacties zijn beschikbaar van 08:00 tot 24:00 GMT+1",
+		  "Het platform behoudt het recht om verdachte transacties te controleren",
+		  "Gebruikers moeten de transactie-instructies nauwkeurig volgen"
+		]
+	  },
+	  orderTypes: {
+		title: "Soorten bestellingen",
+		marketOrder: {
+		  title: "Marktorder",
+		  description: "Een marktorder wordt onmiddellijk uitgevoerd tegen de beste beschikbare prijs. Deze bestelling garandeert uitvoering maar niet de prijs. Geschikt voor gebruikers die prioriteit geven aan snelheid boven exacte prijs."
+		},
+		limitOrder: {
+		  title: "Limietorder",
+		  description: "Een limietorder geeft een specifieke prijs op waartegen u bereid bent te kopen of verkopen. De uitvoering wordt alleen gegarandeerd als de marktprijs deze prijs bereikt of overschrijdt. Ideaal voor gebruikers die een voorkeur hebben voor prijs."
+		}
+	  },
+	  giftPackage: {
+		title: "Cadeaupakket",
+		description: [
+		  "Nieuwe gebruikers ontvangen een welkomstcadeaupakket ter waarde van 10 USDT",
+		  "Nodig vrienden uit en ontvang 5 USDT voor elk succesvolle registratie",
+		  "Speciale cadeaupakketten zijn beschikbaar tijdens feestdagen",
+		  "VIP-leden hebben toegang tot exclusieve cadeaupakketten"
+		]
+	  },
+	  deposits: {
+		title: "Stortingen",
+		description: [
+		  "Stortingen zijn beschikbaar via bankoverschrijving of cryptomunten",
+		  "De minimale stortingslimiet is 50 USDT",
+		  "Stortingen via bankoverschrijving kunnen 1-3 werkdagen duren",
+		  "Cryptomuntstortingen worden binnen 30 minuten verwerkt",
+		  "Alle stortingen zijn onderhevig aan KYC-verificatie"
+		]
+	  },
+	  withdrawals: {
+		title: "Opnames",
+		description: [
+		  "Opnames zijn beschikbaar van maandag tot vrijdag van 09:00 tot 18:00",
+		  "De minimale opnamelimiet is 100 USDT",
+		  "Opnames worden binnen 24 uur na aanvraag verwerkt",
+		  "KYC-verificatie is vereist voor alle opnames",
+		  "Er kunnen opnamekosten van toepassing zijn afhankelijk van de methode"
+		]
+	  }
+	},
+	bindTrc20: {
+		formTitle: "Herlaad Informatie",
+		moneyLabel: "Herlaad Bedrag",
+		moneyPlaceholder: "Voer herlaad bedrag in",
+		addressLabel: "Herlaad Adres",
+		addressPlaceholder: "Voer herlaad adres in",
+		hashLabel: "Herlaad Hash",
+		hashPlaceholder: "Voer herlaad hash in",
+		submitButton: "Verstuur Herlaad",
+		successMessage: "Herlaad succesvol ingediend",
+		failMessage: "Indiening mislukt",
+		networkErrorMessage: "Netwerkfout"
+	},
+		
+		bankCardList: {
+			formTitle: "Bankgegevens",
+			accountNameLabel: "Naam van de rekeninghouder",
+			accountNamePlaceholder: "Voer de naam van de rekeninghouder in",
+			accountNumberLabel: "Rekeningnummer",
+			accountNumberPlaceholder: "Voer het rekeningnummer in",
+			bankNameLabel: "Banknaam",
+			bankNamePlaceholder: "Voer de banknaam in",
+			countryLabel: "Land",
+			countryPlaceholder: "Selecteer een land",
+			routingNumberLabel: "Routeringsnummer",
+			routingNumberPlaceholder: "Voer het routeringsnummer in",
+			swiftCodeLabel: "SWIFT-code",
+			swiftCodePlaceholder: "Voer de SWIFT-code in",
+			bankAddressLabel: "Bankadres",
+			bankAddressPlaceholder: "Voer het bankadres in",
+			submitButtonText: "Informatie opslaan",
+			bindSuccess: "Binding succesvol",
+			updateSuccess: "Update succesvol"
+		}
+	}
+};

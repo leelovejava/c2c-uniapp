@@ -345,6 +345,62 @@ export default {
 			logout: "Logout"
 		}
 	},
+	faqs: {
+		pageHeader: {
+			title: "Rules and Regulations",
+			description: "Platform Guide and Trading Information"
+		},
+		basicRules: {
+			title: "Basic Rules",
+			rules: [
+				"Each account uses only one mobile number for registration.",
+				"According to FinCEN regulations, each user must have at least $100 in their account to execute orders.",
+				"Each task group can contain 0-4 limit orders, and each limit order can contain up to 2 exchange orders (i.e., 1 order exchanges 2 times). Only 1 task containing 2 exchanges is allowed to be executed per group.",
+				"Accounts that exceed a certain deposit amount will be automatically upgraded to SVIP membership. Upgraded members can complete 40 orders per round."
+			]
+		},
+		platformOperation: {
+			title: "Platform Operation",
+			rules: [
+				"The platform is open daily from 10:00 to 23:00. Members can only place orders during these hours.",
+				"If your account is abused by a third party, please contact customer service immediately.",
+				"Withdrawals exceeding $30000 require prior notification to customer service.",
+				"Credit scores are updated after 22:30 every evening. Withdrawals are not possible when credit score is below 95 points."
+			]
+		},
+		orderTypes: {
+			title: "Order Types",
+			marketOrder: {
+				title: "Market Order",
+				description: "Foreign exchange platform users accept the current market's best available exchange rate and complete the exchange immediately. The system automatically allocates orders based on the member account's available balance. The commission for this order type is 1% of the order amount."
+			},
+			limitOrder: {
+				title: "Limit Order",
+				description: "Foreign exchange platform users can set a target exchange rate. Once the market rate reaches the specified value, the system automatically matches and executes the exchange. These orders usually exceed the agent's current account balance but offer higher return potential. The commission for this order type is 5%-60% of the order amount."
+			}
+		},
+		giftPackage: {
+			title: "Gift Package",
+			description: [
+				"Gift packages are exclusive offers for our valued members. They contain a random order associated with limit orders or cash generously provided by our partners. This special offer applies to members who have accumulated a certain amount in their account. Gift packages are only offered 0-4 times per round.",
+				"Gift packages are designed to reward our loyal community and enhance your experience with us. Reaching this threshold not only allows you to gain attractive rewards but also makes you part of an exclusive group with additional benefits."
+			]
+		},
+		deposits: {
+			title: "Deposits",
+			description: [
+				"All deposits must be coordinated through the platform's online customer service. After transferring funds to the account designated by customer service, please submit payment vouchers to ensure timely processing.",
+				"To avoid delays, please confirm your account details directly on the platform before each transaction, as these may change periodically. If you encounter any issues during the deposit process, please contact customer service immediately."
+			]
+		},
+		withdrawals: {
+			title: "Withdrawals",
+			description: [
+				"Members can only apply for withdrawals after completing all designated daily tasks. Funds earned on the platform can be withdrawn when meeting the platform's withdrawal conditions. Before applying for a withdrawal, please ensure your platform account contains a valid wallet address.",
+				"Note: Withdrawals can be made daily from 10:00 to 23:00."
+			]
+		}
+	},
 	vip: {
 		title: "Membership Level",
 		current: "Current",
@@ -352,5 +408,60 @@ export default {
 		bonus: "Bonus",
 		commissionRate: "Commission Rate",
 		dailyOrders: "Daily Orders"
+	},
+	about: {
+		title: "About Us",
+		companyDescription: "Founded in 2001, OFX is a multinational financial technology company focusing on global capital transfer and foreign exchange services. The company comes from a clear concept: to provide better, fairer and more efficient cross-border capital solutions for global customers. Since its establishment, OFX has served more than 1 million customers, supported 50+ currencies, covered more than 170 countries and markets, and handled more than 1.48 trillion US dollars in accumulated funds.",
+		globalNetworkTitle: "Global network layout",
+		globalNetworkDesc: "It has offices in London, Dublin, Sydney, Auckland, Hong Kong, Singapore, Toronto and San Francisco, with more than 700 employees worldwide, and has a solid operating network and localization service capabilities.",
+		regulatoryAdvantageTitle: "Strong regulatory advantage",
+		regulatoryAdvantageDesc: "It is supervised by more than 50 regulatory agencies around the world and follows strict financial auditing and compliance standards. Since listing, there has been no regulatory punishment or law enforcement action, and the risk management ability is sound.",
+		corporateGovernanceTitle: "Corporate governance and management",
+		corporateGovernanceDesc1: "The board of directors is composed of business leaders with rich experience in banking, finance and technology to ensure a sound corporate governance structure.",
+		corporateGovernanceDesc2: "The management team is composed of senior executives from major international banks, payment service providers and technology companies, led by CEO Skander Malcolm, and continues to promote OFX's strategic expansion and digital innovation.",
+		listingStatusTitle: "Listing status and industry attributes",
+		listingStatusDesc: "OFX was listed on the Australian Stock Exchange (ASX) in 2013 (stock code: OFX) and classified as \"Diversified Financials\". The company maintains strong competitiveness in the cross-border financial technology industry with a stable compliance framework, international layout and sustainable profit model.",
+		aboutDexOfxTitle: "About \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Since March 10th, 2023, some financial information platforms have displayed the label \"DEX:OFX\".",
+		aboutDexOfxDesc2: "It must be clarified that:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" is not an actual transaction code. It is a cross-market mapping identifier that is automatically generated during the system update on some data platforms.",
+		aboutDexOfxDesc4: "The identifier was generated as part of internal system testing to verify the platform's ability to correctly associate company information in different markets. Therefore, the label is only used for data indexing and testing purposes, and does not mean that OFX is listed on DEX or any other exchange.",
+		aboutDexOfxDesc5: "The only official valid list of OFX is: Australian Stock Exchange (ASX) Stock code: OFX",
+		aboutDexOfxDesc6: "All other identifiers (including \"DEX:OFX\") are system-generated mapping entries, which are not used for actual transactions and only provide better services for users.",
+		headquartersTitle: "OFX Group headquarters address",
+		headquartersDesc: "Level 19, 60 Margaret Street, Sydney NSW 2000, Australia"
+	},
+	
+	bindTrc20: {
+		formTitle: "Recharge Information",
+		moneyLabel: "Recharge Amount",
+		moneyPlaceholder: "Please enter recharge amount",
+		addressLabel: "Recharge Address",
+		addressPlaceholder: "Please enter recharge address",
+		hashLabel: "Recharge Hash",
+		hashPlaceholder: "Please enter recharge hash",
+		submitButton: "Submit Recharge",
+		successMessage: "Recharge submission successful",
+		failMessage: "Submission failed",
+		networkErrorMessage: "Network error"
+	},
+		
+	bankCardList: {
+		formTitle: "Bank Information",
+		accountNameLabel: "Account Name",
+		accountNamePlaceholder: "Please enter account name",
+		accountNumberLabel: "Account Number",
+		accountNumberPlaceholder: "Please enter account number",
+		bankNameLabel: "Bank Name",
+		bankNamePlaceholder: "Please enter bank name",
+		countryLabel: "Country",
+		countryPlaceholder: "Please select country",
+		routingNumberLabel: "Routing Number",
+		routingNumberPlaceholder: "Please enter routing number",
+		swiftCodeLabel: "SWIFT Code",
+		swiftCodePlaceholder: "Please enter SWIFT code",
+		bankAddressLabel: "Bank Address",
+		bankAddressPlaceholder: "Please enter bank address",
+		submitButtonText: "Save Information"
 	}
 }

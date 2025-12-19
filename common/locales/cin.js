@@ -339,6 +339,62 @@ export default {
 			}
 		}
 	},
+	"faqs": {
+		"pageHeader": {
+			"title": "規則和條例",
+			"description": "平台指南和交易信息"
+		},
+		"basicRules": {
+			"title": "基本規則",
+			"rules": [
+				"每個賬戶僅使用一個手機號碼註冊。",
+				"根據FinCEN法規，每位用戶必須在賬戶中至少擁有$100才能執行訂單。",
+				"每個任務組組多包含0-4個限價單，每個限價單內最多包含2次兌換單（即1單兌換2次）. 每組任務僅允許執行1個包含2次兌換的任務。",
+				"超過一定存款金額的賬戶將自動升級為SVIP會員。升級會員每輪可完成40個訂單。"
+			]
+		},
+		"platformOperation": {
+			"title": "平台運營",
+			"rules": [
+				"平台每日 10:00 至 23:00 開放。會員只能在這些時間內下單。",
+				"如果您的賬戶被第三方濫用，請立即聯繫客服。",
+				"提取超過$30000需要事先通知客服。",
+				"信用分數每日晚上22:30後更新。信用分數低於95分時無法提現。"
+			]
+		},
+		"orderTypes": {
+			"title": "訂單類型",
+			"marketOrder": {
+				"title": "Market Order",
+				"description": "外匯平台用戶接受當前市場最佳可用匯率並立即完成兌換。系統根據會員賬戶的可用餘額自動分配訂單。此訂單類型的佣金為訂單金額的1%。"
+			},
+			"limitOrder": {
+				"title": "Limit Order",
+				"description": "外匯平台用戶可以設定目標匯率。一旦市場匯率達到指定值，系統會自動匹配並執行兌換。這些訂單通常超過代理商當前的賬戶餘額，但提供更高的回報潛力。此訂單類型的佣金為訂單金額的5%-60%。"
+			}
+		},
+		"giftPackage": {
+			"title": "Gift Package",
+			"description": [
+				"禮品包是為我們尊貴會員提供的專屬優惠。它包含一個隨機訂單，與限價訂單或我們合作夥伴慷慨提供的現金相關聯。此特別優惠適用於在賬戶中累積一定金額的會員。禮品包每輪僅提供0-4次。",
+				"禮品包旨在獎勵我們忠誠的社區並增強您與我們的體驗。達到此門檻不僅可以讓您獲得有吸引力的獎勵，還可以讓您成為享有額外福利的專屬群體的一部分。"
+			]
+		},
+		"deposits": {
+			"title": "Deposits",
+			"description": [
+				"所有存款必須通過平台的在線客服協調。將資金轉入客服指定的賬戶後，請提交付款憑證以確保及時處理。",
+				"為避免延誤，請在每次交易前直接在平台上確認您的賬戶詳情，因為這些可能會定期更改。如果您在存款過程中遇到任何問題，請立即聯繫客服。"
+			]
+		},
+		"withdrawals": {
+			"title": "Withdrawals",
+			"description": [
+				"會員只能在完成所有指定的日常任務後申請提現。在滿足平台提現條件的情況下，可以提取在平台上賺取的資金。在申請提現之前，請確保您的平台賬戶包含有效的錢包地址。",
+				"注意:每日10:00 至 23:00 可進行提現。"
+			]
+		}
+	},
 	"vip": {
 		"title": "會員等級",
 		"current": "當前",
@@ -346,5 +402,62 @@ export default {
 		"bonus": "獎金",
 		"commissionRate": "佣金率",
 		"dailyOrders": "每日訂單"
+	},
+	"about": {
+		"title": "關於我們",
+		"companyDescription": "OFX成立於2001年，是一家專注於全球資本轉移和外匯服務的跨國金融科技公司。公司源於一個清晰的概念：為全球客戶提供更好、更公平、更高效的跨境資本解決方案。自成立以來，OFX已為超過100萬客戶提供了服務，支持50多種貨幣，覆蓋170多個國家和市場，累計處理資金超過1.48萬億美元。",
+		"globalNetworkTitle": "全球網絡佈局",
+		"globalNetworkDesc": "公司在倫敦、都柏林、悉尼、奧克蘭、香港、新加坡、多倫多和舊金山設有辦事處，全球員工超過700人，擁有堅實的運營網絡和本地化服務能力。",
+		"regulatoryAdvantageTitle": "強大的監管優勢",
+		"regulatoryAdvantageDesc": "公司受到全球50多個監管機構的監督，遵循嚴格的財務審計和合規標準。自上市以來，沒有任何監管處罰或執法行動，風險管理能力健全。",
+		"corporateGovernanceTitle": "公司治理與管理",
+		"corporateGovernanceDesc1": "董事會由在銀行、金融和技術領域擁有豐富經驗的商業領袖組成，確保健全的公司治理結構。",
+		"corporateGovernanceDesc2": "管理團隊由來自主要國際銀行、支付服務提供商和技術公司的高級管理人員組成，由首席執行官Skander Malcolm領導，持續推進OFX的戰略擴張和數字創新。",
+		"listingStatusTitle": "上市地位與行業屬性",
+		"listingStatusDesc": "OFX於2013年在澳洲證券交易所(ASX)上市(股票代碼：OFX)，被歸類為\"多元化金融\"。公司憑藉穩定的合規框架、國際化佈局和可持續的盈利模式，在跨境金融科技行業中保持著強大的競爭力。",
+		"aboutDexOfxTitle": "關於\"DEX:OFX\"",
+		"aboutDexOfxDesc1": "自2023年3月10日起，一些金融信息平台顯示了\"DEX:OFX\"標籤。",
+		"aboutDexOfxDesc2": "必須澄清的是：",
+		"aboutDexOfxDesc3": "\"Dex: OFX\"並非實際交易代碼。它是某些數據平台上系統更新期間自動生成的跨市場映射標識符。",
+		"aboutDexOfxDesc4": "該標識符作為內部系統測試的一部分生成，用於驗證平台在不同市場中正確關聯公司信息的能力。因此，該標籤僅用於數據索引和測試目的，並不意味著OFX在DEX或其他任何交易所上市。",
+		"aboutDexOfxDesc5": "OFX唯一有效的官方上市是：澳洲證券交易所(ASX) 股票代碼：OFX",
+		"aboutDexOfxDesc6": "所有其他標識符（包括\"DEX:OFX\"）都是系統生成的映射條目，不用於實際交易，僅為用戶提供更好的服務。",
+		"headquartersTitle": "OFX集團總部地址",
+		"headquartersDesc": "澳洲新南威爾士州悉尼瑪格麗特街60號19層，郵編2000"
+	},
+	
+	bindTrc20: {
+		formTitle: "充值信息",
+		moneyLabel: "充值金額",
+		moneyPlaceholder: "請輸入充值金額",
+		addressLabel: "充值地址",
+		addressPlaceholder: "請輸入充值地址",
+		hashLabel: "充值hash",
+		hashPlaceholder: "請輸入充值hash",
+		submitButton: "提交充值",
+		successMessage: "充值提交成功",
+		failMessage: "提交失敗",
+		networkErrorMessage: "網絡錯誤"
+	},
+		
+	bankCardList: {
+		formTitle: "銀行信息",
+		accountNameLabel: "賬戶名稱",
+		accountNamePlaceholder: "請輸入賬戶名稱",
+		accountNumberLabel: "賬號",
+		accountNumberPlaceholder: "請輸入賬號",
+		bankNameLabel: "銀行名稱",
+		bankNamePlaceholder: "請輸入銀行名稱",
+		countryLabel: "國家",
+		countryPlaceholder: "請選擇國家",
+		routingNumberLabel: "路由號碼",
+		routingNumberPlaceholder: "請輸入路由號碼",
+		swiftCodeLabel: "SWIFT代碼",
+		swiftCodePlaceholder: "請輸入SWIFT代碼",
+		bankAddressLabel: "銀行地址",
+		bankAddressPlaceholder: "請輸入銀行地址",
+		submitButtonText: "保存信息",
+		bindSuccess: "綁定成功",
+		updateSuccess: "修改成功"
 	}
 }

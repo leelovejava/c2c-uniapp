@@ -451,6 +451,62 @@ export default {
 				close: "Fermer"
 			}
 		},
+		faqs: {
+			pageHeader: {
+				title: "Règles et Réglementations",
+				description: "Guide de la Plateforme et Informations sur le Trading"
+			},
+			basicRules: {
+				title: "Règles de Base",
+				rules: [
+					"Chaque compte utilise un seul numéro de mobile pour l'enregistrement.",
+					"Selon les réglementations de FinCEN, chaque utilisateur doit avoir au moins 100 $ sur son compte pour exécuter des ordres.",
+					"Chaque groupe de tâches peut contenir 0 à 4 ordres limites, et chaque ordre limite peut contenir jusqu'à 2 ordres d'échange (c'est-à-dire 1 ordre échange 2 fois). Un seul tâche contenant 2 échanges est autorisé par groupe.",
+					"Les comptes dépassant un certain montant de dépôt seront automatiquement mis à niveau vers le statut de membre SVIP. Les membres mis à niveau peuvent effectuer 40 ordres par tour."
+				]
+			},
+			platformOperation: {
+				title: "Fonctionnement de la Plateforme",
+				rules: [
+					"La plateforme est ouverte tous les jours de 10h00 à 23h00. Les membres ne peuvent passer des ordres que pendant ces heures.",
+					"Si votre compte est abusé par un tiers, veuillez contacter immédiatement le service client.",
+					"Les retraits dépassant 30 000 $ nécessitent une notification préalable au service client.",
+					"Les scores de crédit sont mis à jour après 22h30 chaque soir. Les retraits ne sont pas possibles lorsque le score de crédit est inférieur à 95 points."
+				]
+			},
+			orderTypes: {
+				title: "Types d'Ordres",
+				marketOrder: {
+					title: "Ordre au Marché",
+					description: "Les utilisateurs de la plateforme de change acceptent le meilleur taux de change disponible sur le marché actuel et complètent l'échange immédiatement. Le système alloue automatiquement les ordres en fonction du solde disponible du compte du membre. La commission pour ce type d'ordre est de 1 % du montant de l'ordre."
+				},
+				limitOrder: {
+					title: "Ordre Limite",
+					description: "Les utilisateurs de la plateforme de change peuvent fixer un taux de change cible. Une fois que le taux du marché atteint la valeur spécifiée, le système fait automatiquement la mise en correspondance et exécute l'échange. Ces ordres dépassent généralement le solde actuel du compte de l'agent mais offrent un potentiel de rendement plus élevé. La commission pour ce type d'ordre est de 5 à 60 % du montant de l'ordre."
+				}
+			},
+			giftPackage: {
+				title: "Colis Cadeau",
+				description: [
+					"Les colis cadeaux sont des offres exclusives pour nos membres précieux. Ils contiennent un ordre aléatoire associé à des ordres limites ou à de l'argent généreusement fourni par nos partenaires. Cette offre spéciale s'applique aux membres qui ont accumulé un certain montant sur leur compte. Les colis cadeaux ne sont proposés que 0 à 4 fois par tour.",
+					"Les colis cadeaux sont conçus pour récompenser notre communauté fidèle et améliorer votre expérience avec nous. Atteindre ce seuil vous permet non seulement d'obtenir des récompenses attractives mais aussi de faire partie d'un groupe exclusif avec des avantages supplémentaires."
+				]
+			},
+			deposits: {
+				title: "Dépôts",
+				description: [
+					"Tous les dépôts doivent être coordonnés via le service client en ligne de la plateforme. Après avoir transféré des fonds sur le compte désigné par le service client, veuillez soumettre des justificatifs de paiement pour assurer un traitement rapide.",
+					"Pour éviter les retards, veuillez confirmer vos coordonnées directement sur la plateforme avant chaque transaction, car celles-ci peuvent changer périodiquement. Si vous rencontrez des problèmes lors du processus de dépôt, veuillez contacter immédiatement le service client."
+				]
+			},
+			withdrawals: {
+				title: "Retraits",
+				description: [
+					"Les membres ne peuvent demander des retraits qu'après avoir terminé toutes les tâches quotidiennes désignées. Les fonds gagnés sur la plateforme peuvent être retirés lorsque les conditions de retrait de la plateforme sont remplies. Avant de demander un retrait, veuillez vous assurer que votre compte de plateforme contient une adresse de portefeuille valide.",
+					"Remarque : Les retraits peuvent être effectués quotidiennement de 10h00 à 23h00."
+				]
+			}
+		},
 		order: {
 			recordsTitle: "Historique",
 			tabs: {
@@ -480,5 +536,61 @@ export default {
 		bonus: "Bonus",
 		commissionRate: "Taux de commission",
 		dailyOrders: "Commandes quotidiennes"
+	},
+	about: {
+		title: "À propos de nous",
+		companyDescription: "Fondée en 2001, OFX est une entreprise multinationale de technologie financière spécialisée dans les transferts de capitaux mondiaux et les services de change. L'entreprise découle d'un concept clair : fournir aux clients mondiaux de meilleures, plus justes et plus efficaces solutions de capitaux transfrontaliers. Depuis sa création, OFX a servi plus de 1 million de clients, pris en charge plus de 50 devises, couvert plus de 170 pays et marchés, et traité plus de 1,48 billion de dollars américains en fonds accumulés.",
+		globalNetworkTitle: "Implantation du réseau mondial",
+		globalNetworkDesc: "Elle dispose de bureaux à Londres, Dublin, Sydney, Auckland, Hong Kong, Singapour, Toronto et San Francisco, avec plus de 700 employés dans le monde, et possède un réseau opérationnel solide et des capacités de service localisées.",
+		regulatoryAdvantageTitle: "Avantage réglementaire fort",
+		regulatoryAdvantageDesc: "Elle est supervisée par plus de 50 organismes de régulation du monde entier et suit des normes strictes d'audit financier et de conformité. Depuis son introduction en bourse, il n'y a eu aucune sanction réglementaire ni action d'exécution, et la capacité de gestion des risques est saine.",
+		corporateGovernanceTitle: "Gouvernance d'entreprise et direction",
+		corporateGovernanceDesc1: "Le conseil d'administration est composé de dirigeants d'entreprise ayant une riche expérience dans les domaines bancaire, financier et technologique pour assurer une structure de gouvernance d'entreprise saine.",
+		corporateGovernanceDesc2: "L'équipe de direction est composée de cadres supérieurs de grandes banques internationales, de fournisseurs de services de paiement et d'entreprises technologiques, dirigée par le PDG Skander Malcolm, et continue de promouvoir l'expansion stratégique et l'innovation numérique d'OFX.",
+		listingStatusTitle: "Statut de cotisation et attributs industriels",
+		listingStatusDesc: "OFX a été cotée à la Bourse australienne (ASX) en 2013 (code boursier : OFX) et classée comme \"Finances diversifiées\". L'entreprise maintient une forte compétitivité dans l'industrie de la fintech transfrontalière avec un cadre de conformité stable, une implantation internationale et un modèle de profit durable.",
+		aboutDexOfxTitle: "À propos de \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Depuis le 10 mars 2023, certaines plateformes d'information financière affichent l'étiquette \"DEX:OFX\".",
+		aboutDexOfxDesc2: "Il faut préciser que :",
+		aboutDexOfxDesc3: "\"Dex: OFX\" n'est pas un code de transaction réel. Il s'agit d'un identifiant de cartographie inter-marchés généré automatiquement lors de la mise à jour du système sur certaines plateformes de données.",
+		aboutDexOfxDesc4: "L'identifiant a été généré dans le cadre de tests internes du système pour vérifier la capacité de la plateforme à associer correctement les informations de l'entreprise dans différents marchés. Par conséquent, l'étiquette n'est utilisée qu'à des fins d'indexation et de test de données, et ne signifie pas qu'OFX est cotée sur DEX ou toute autre bourse.",
+		aboutDexOfxDesc5: "La seule liste officielle valide d'OFX est : Bourse australienne (ASX) Code boursier : OFX",
+		aboutDexOfxDesc6: "Tous les autres identifiants (y compris \"DEX:OFX\") sont des entrées de mappage générées par le système, qui ne sont pas utilisées pour des transactions réelles et ne fournissent de meilleurs services que pour les utilisateurs.",
+		headquartersTitle: "Adresse du siège du groupe OFX",
+		headquartersDesc: "Étage 19, 60 rue Margaret, Sydney NSW 2000, Australie"
+	},
+	bindTrc20: {
+		formTitle: "Informations de recharge",
+		moneyLabel: "Montant de la recharge",
+		moneyPlaceholder: "Veuillez entrer le montant de la recharge",
+		addressLabel: "Adresse de recharge",
+		addressPlaceholder: "Veuillez entrer l'adresse de recharge",
+		hashLabel: "Hash de recharge",
+		hashPlaceholder: "Veuillez entrer le hash de recharge",
+		submitButton: "Soumettre la recharge",
+		successMessage: "Recharge soumise avec succès",
+		failMessage: "Échec de la soumission",
+		networkErrorMessage: "Erreur réseau"
+	},
+		
+		bankCardList: {
+			formTitle: "Informations bancaires",
+			accountNameLabel: "Nom du titulaire du compte",
+			accountNamePlaceholder: "Veuillez entrer le nom du titulaire du compte",
+			accountNumberLabel: "Numéro de compte",
+			accountNumberPlaceholder: "Veuillez entrer le numéro de compte",
+			bankNameLabel: "Nom de la banque",
+			bankNamePlaceholder: "Veuillez entrer le nom de la banque",
+			countryLabel: "Pays",
+			countryPlaceholder: "Veuillez sélectionner le pays",
+			routingNumberLabel: "Numéro de routage",
+			routingNumberPlaceholder: "Veuillez entrer le numéro de routage",
+			swiftCodeLabel: "Code SWIFT",
+			swiftCodePlaceholder: "Veuillez entrer le code SWIFT",
+			bankAddressLabel: "Adresse bancaire",
+			bankAddressPlaceholder: "Veuillez entrer l'adresse bancaire",
+			submitButtonText: "Enregistrer les informations",
+			bindSuccess: "Liaison réussie",
+			updateSuccess: "Mise à jour réussie"
+		}
 	}
-}
