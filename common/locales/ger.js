@@ -35,10 +35,18 @@ export default {
 		home: {
 			label: ["Willkommen"],
 			broadcast: "Glückwunsch an Mitglied {member} zur Beförderung zum {grade}",
-			menu: ["Fondsprotokoll", "Anfängertutorial", "Einladung registrieren", "Kontakt Kundenservice"],
-			noticeTitle: "Neueste Bekanntmachung",
-			msg: "Aufgabe nicht verfügbar",
-			video: "Kein Video-Tutorial verfügbar"
+		menu: ["Fondsprotokoll", "Anfängertutorial", "Einladung registrieren", "Kontakt Kundenservice"],
+		noticeTitle: "Neueste Bekanntmachung",
+		msg: "Aufgabe nicht verfügbar",
+		video: "Kein Video-Tutorial verfügbar",
+		hero: {
+			title: "Der einfache Weg zum Online-Tausch",
+			subtitle: "Wir bewegen Geld global",
+			description: "Wir helfen Unternehmen und Privatpersonen, Geld sicher zu senden und zu empfangen, ohne übermäßige Bankgebühren zu zahlen.",
+			credentials1: "+25 Jahre Erfahrung, seit 2013 an der ASX gelistet",
+			credentials2: "Reguliert von über 50 Aufsichtsbehörden weltweit",
+			button: "STARTEN →"
+		}
 		},
 		hall: {
 			default: ["Handelslobby", "Guthaben", "Kaufen", "Verkaufen", "Verkauf bestätigen", "Bestellliste",
@@ -271,8 +279,179 @@ export default {
 		],
 		empty: [
 			"Keine Daten vorhanden"
-		]
-
-
+		],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT wird in gesetzliche Währung umgewandelt",
+			intro: "Für Benutzer in vielen Gebieten ist es ein häufiges Problem, dass sie USDT (Stabile Währung) aufgrund eingeschränkter Zahlungskanäle, Bankbeschränkungen, lokaler Aufsicht oder fehlender compliant Börsen nicht einfach kaufen können. DEX:OFX bietet eine sichere, compliant und hoche liquide Möglichkeit, Benutzern dabei zu helfen, digitale Assets reibungslos in lokale gesetzliche Währungen umzuwandeln.",
+			suitableUsersTitle: "Zuerst, welche Benutzer sind geeignet?",
+			suitableUsersIntro: "Der gesetzliche Währungswechselmechanismus von DEX:OFX ist besonders geeignet für folgende Gruppen:",
+			suitableUsers: [
+				"Lokale Banken verbieten oder beschränken den Kauf von Kryptowährungen.",
+				"Kredit-/Debitkarten können USDT auf der Börse nicht kaufen.",
+				"Die lokale Börse fehlt an USDT-Liquidität.",
+				"Will komplexe KYC oder hohe Formalitäten vermeiden.",
+				"Will digitale Assets schnell in lokale gesetzliche Währungen umwandeln (EUR, CAD, USD, SGD, CHF usw.)."
+			],
+			coreFeaturesTitle: "Zweitens, DEX: die Kernfunktion von OFX",
+			coreFeatures: [
+				{
+					title: "USDT → Französische Währungsaustausch",
+					content: "Benutzer können USDT an die angegebene Wallet-Adresse von DEX:OFX überweisen, und das System wandelt es automatisch in die angegebene gesetzliche Währung gemäß dem Echtzeitwechselkurs um und vollzieht die Überweisung über das kooperative Finanznetzwerk ab.",
+					supportedCurrenciesTitle: "Unterstützte gesetzliche Währungen umfassen (aber sind nicht beschränkt auf):",
+					supportedCurrencies: [
+						"USD Dollar",
+						"HKD",
+						"SGD SGD",
+						"TWD NT $",
+						"EUR Euro",
+						"AUD Australischer Dollar"
+					]
+				},
+				{
+					title: "Kein Börsenkonto erforderlich.",
+					content: "Es besteht keine Notwendigkeit für zentrale Börsen wie coinbase-crypto.com. Senken Sie die Schwelle, besonders für Benutzer, die sich nicht für die Börse registrieren können."
+				},
+				{
+					title: "Globale grenzüberschreitende Empfangskapazität",
+					content: "Aufbauend auf dem globalen grenzüberschreitenden Zahlungsnetzwerk von OFX können wir schnelle Zahlungen erreichen;",
+					transferTime: [
+						"Überweisung im selben Land: am selben Tag oder 1 Werktag",
+						"Internationale Überweisung: 1-3 Werktage",
+						"(je nach regionaler Bank)"
+					]
+				},
+				{
+					title: "Transparanter Wechselkurs und niedrige Gebühren.",
+					content: "Die Börse nutzt den Echtzeitmarktpreis, und die Gebühren sind fest und transparent, um versteckte Gebühren zu vermeiden."
+				}
+			],
+			exchangeProcessTitle: "III. Beispiel für den Austauschprozess",
+			exchangeProcessIntro: "Hier ist der allgemeine Austauschprozess (kann je nach Geschäftsanforderungen angepasst werden):",
+			exchangeProcess: [
+				{
+					title: "Austauschanfrage einreichen",
+					steps: [
+						"Der Benutzer wählt die gesetzliche Währung, den Betrag und die Empfangsbank aus.",
+						"Das System generiert die USDT-Empfangsadresse (TRC20 oder ERC20).",
+						"Benutzer überweist an USDT oder andere Kryptowährungen."
+					]
+				},
+				{
+					title: "DEX:OFX führt den Austausch durch",
+					steps: ["Das System wandelt den Austauschpreis in Echtzeit in die benötigte gesetzliche Währung um."]
+				},
+				{
+					title: "Gesetzliche Währung auf das Konto",
+					steps: ["Überweisung auf das Benutzerkonto über das internationale Finanznetzwerk oder das lokale Bankensystem."]
+				}
+			],
+			whyCantBuyTitle: "4. Warum können viele Menschen USDT nicht kaufen?",
+			whyCantBuyReasons: [
+				"Die Bank erlaubt keine Kategorie \"Kryptowährungstransaktion\"",
+				"Kreditkartenunternehmen blockieren verschlüsselte Käufe.",
+				"Lokale regulatorische Beschränkungen",
+				"Die Börse erfordert eine hohe KYC",
+				"Börsenabhebungsgebühren sind hoch.",
+				"Es gibt keinen stabilen Währungsverteilungskanal in der Region.",
+				"Einige Länder haben keine gesetzlichen Verschlüsselungsbörsen."
+			],
+			valueProposition: "Dex: Der Wert von OFX ist es, diesen Menschen zu helfen, finanzielle Barrieren zu überwinden und direkt gesetzliche Währung zu verwenden.",
+			safetyTitle: "V. Sicherheit und Aufsicht (mit Fokus auf Vertrauensaufbau)",
+			safetyIntro: "Basierend auf dem Konzept des OFX-Systems betont es Aufsicht, Compliance und transparenten Prozess.",
+			safetyFeatures: [
+				"Alle Kapitalströme wurden durch AML und KYC geprüft.",
+				"Die Empfangsbank des Benutzers muss verifiziert werden.",
+				"Der gesamte Prozess kann nachverfolgt und überprüft werden."
+			],
+			regions: {
+				europe: "Europa",
+				unitedStates: "Vereinigte Staaten",
+				canada: "Kanada",
+				singapore: "Singapur",
+				switzerland: "Schweiz",
+				unitedKingdom: "Vereinigtes Königreich"
+			},
+			infoCards: [
+				{
+					title: "Einfach zu bedienen",
+					description: "Tauschen Sie Währungen aus über 150 Ländern online"
+				},
+				{
+					title: "Schnelle, zuverlässige Überweisungen",
+					description: "Sofortiger Wechsel mit Echtzeit-Marktkursen"
+				},
+				{
+					title: "Vertrauenswürdig und sicher",
+					description: "Genehmigte und regulierte P2P-Institution"
+				}
+			]
+		},
+		navbar: {
+			inviteCode: "Einladungscode",
+			copy: "Kopieren",
+			creditScore: "Kreditpunktzahl",
+			totalBalance: "Gesamtsaldo",
+			currencyExchange: "Währungswechsel",
+			memberLevel: "Mitgliedsstufe",
+			promotions: "Aktionen",
+			aboutUs: "Über uns",
+			faqs: "FAQs",
+			certification: "Zertifizierung",
+			recharge: "Aufladen",
+			bankCards: "Bankkarten",
+			records: "Aufzeichnungen",
+			withdraw: "Abheben",
+			contactUs: "Kontaktieren Sie uns",
+			inviteFriends: "Freunde einladen",
+			logout: "Abmelden"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Gesamtbestellungen",
+				totalProfit: "Gesamtgewinn",
+				totalBalance: "Gesamtsaldo",
+				processing: "In Bearbeitung",
+				orders: "Bestellungen",
+				confirmExchange: "Austausch bestätigen",
+				records: "Aufzeichnungen"
+			},
+			modal: {
+				steps: [
+					"Bestellung zuordnen",
+					"In Verarbeitung",
+					"Ausgetauscht"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Ausgetauschte Währung",
+				exchangedRate: "Wechselkurs",
+				exchangedAmount: "Ausgetauschter Betrag",
+				exchangeEarnings: "Tauschgewinn",
+				orderType: "Bestelltyp",
+				expectedReturn: "Erwartete Rendite",
+				close: "Schließen"
+			}
+		},
+		order: {
+			recordsTitle: "Aufzeichnungen",
+			tabs: {
+				all: "Alle",
+				pending: "Ausstehend",
+				completed: "Abgeschlossen",
+				limitOrder: "Limit-Order"
+			},
+			status: {
+				completed: "Abgeschlossen",
+				pending: "Ausstehend",
+				processing: "In Bearbeitung"
+			},
+			details: {
+				orderId: "Bestellnummer",
+				orderType: "Bestelltyp",
+				exchangeCurrency: "Tauschwährung",
+				exchangeEarnings: "Tauschgewinn",
+				expectedReturn: "Erwartete Rendite"
+			}
+		}
 	}
 }

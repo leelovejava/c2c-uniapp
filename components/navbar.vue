@@ -54,11 +54,11 @@
 								</view>
 								<view class="a-rowC" style="color: #ccc;">
 									<view class="a-mr10 a-f28">
-										邀请码: {{userinfo.code}}
+										{{ $t('common.navbar.inviteCode') }}: {{userinfo.code}}
 									</view>
 									<view class="a-tc a-f24 a-borr5 a-crfff"
 										style="background: #1E90FF;padding:4rpx 16rpx;">
-										copy
+										{{ $t('common.navbar.copy') }}
 									</view>
 								</view>
 							</view>
@@ -69,7 +69,7 @@
 						<view class="a-mb15">
 							<view class="a-between a-mb3">
 								<view>
-									信誉分
+									{{ $t('common.navbar.creditScore') }}
 								</view>
 								<view>
 									{{userinfo.credit_score-0}}%
@@ -80,14 +80,14 @@
 						</view>
 						<view class="a-mb15">
 							<view class="a-center2 a-mb5">
-								总余额
+								{{ $t('common.navbar.totalBalance') }}
 							</view>
 							<view class="a-center2 a-mb10 a-fw a-f38">
 								{{userinfo.money}} USD
 							</view>
 							<view class="a-center2">
 								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"  @tap="$u.route('/pages/my/exchange')">
-									Currency Exchange
+									{{ $t('common.navbar.currencyExchange') }}
 								</view>
 							</view>
 						</view>
@@ -96,7 +96,7 @@
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/vip')">
 									<image src="/static/image/fz/hydj.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">会员等级</view>
+									<view class="grid-text">{{ $t('common.navbar.memberLevel') }}</view>
 								</u-grid-item>
 								<!-- <u-grid-item bg-color="none" @click="$u.route('/pages/my/checkin')">
 									<image src="/static/image/fz/mrqd.png" style="width: 46rpx;height: 46rpx;"
@@ -106,42 +106,42 @@
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/event')">
 									<image src="/static/image/fz/yhhd.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">优惠活动</view>
+									<view class="grid-text">{{ $t('common.navbar.promotions') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/about')">
 									<image src="/static/image/fz/gywm.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">关于我们</view>
+									<view class="grid-text">{{ $t('common.navbar.aboutUs') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/faqs')">
 									<image src="/static/image/fz/cjwt.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">常见问题</view>
+									<view class="grid-text">{{ $t('common.navbar.faqs') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/cert')">
 									<image src="/static/image/fz/zizhi.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">资质</view>
+									<view class="grid-text">{{ $t('common.navbar.certification') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bind_trc20')">
 									<image src="/static/image/fz/bdym.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">充值</view>
+									<view class="grid-text">{{ $t('common.navbar.recharge') }}</view>
 								</u-grid-item>
 									<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
 									<image src="/static/image/fz/bdym.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">银行卡</view>
+									<view class="grid-text">{{ $t('common.navbar.bankCards') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/order')">
 									<image src="/static/image/fz/jilu.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">记录</view>
+									<view class="grid-text">{{ $t('common.navbar.records') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/deposit')">
 									<image src="/static/image/fz/tixian.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">提现</view>
+									<view class="grid-text">{{ $t('common.navbar.withdraw') }}</view>
 								</u-grid-item>
 							</u-grid>
 						</view>
@@ -150,7 +150,7 @@
 						<view class="a-between" @click="$u.route('/pages/my/support')"
 							style=" border-top: 1px solid #444; padding: 15px 25px;">
 							<view class="a-rowC">
-								联系我们
+								{{ $t('common.navbar.contactUs') }}
 							</view>
 							<view class="a-rowC">
 								<u-icon name="arrow-right" color="#fff" size="28"></u-icon>
@@ -160,7 +160,7 @@
 						<view class="a-between" @click="$u.route('/pages/my/invite')"
 							style=" border-top: 1px solid #444; padding: 15px 25px;">
 							<view class="a-rowC">
-								邀请好友
+								{{ $t('common.navbar.inviteFriends') }}
 							</view>
 							<view class="a-rowC">
 								<u-icon name="arrow-right" color="#fff" size="28"></u-icon>
@@ -169,7 +169,7 @@
 
 						<view class="a-p15">
 							<view style="background:#fff;color: #333; " class="a-f32 a-p10 a-w a-tc a-borr100">
-								注销
+								{{ $t('common.navbar.logout') }}
 							</view>
 						</view>
 

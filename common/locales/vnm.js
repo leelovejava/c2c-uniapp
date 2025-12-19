@@ -33,7 +33,15 @@ export default {
 			menu: ["nhật ký tiền vốn", "Hướng dẫn", "Mời đăng ký", "Hỗ trợ"],
 			noticeTitle: "Thông báo mới nhất",
 			msg: "nhiệm vụ chưa mở",
-			video: "tạm thời chưa có video hướng dẫn"
+			video: "tạm thời chưa có video hướng dẫn",
+			hero: {
+				title: "Cách dễ dàng để trao đổi trực tuyến",
+				subtitle: "Di chuyển tiền trên toàn cầu là những gì chúng tôi làm",
+				description: "Chúng tôi giúp doanh nghiệp và cá nhân gửi và nhận tiền một cách an toàn mà không cần chi phí ngân hàng quá cao.",
+				credentials1: "Hơn 25 năm kinh nghiệm, niêm yết trên ASX từ năm 2013",
+				credentials2: "Được quản lý bởi hơn 50 cơ quan quản lý trên toàn thế giới",
+				button: "BẮT ĐẦU →"
+			}
 		},
 		hall: {
 			default: ["Sảnh giao dịch", "Số dư", "Tôi muốn mua", "Tôi muốn bán", "Xác nhận bán ra",
@@ -204,7 +212,147 @@ export default {
 			"Để đảm bảo an toàn cho tài khoản của bạn,sau khi chuyển thành công.Vui lòng tải hình ảnh rút tiền thành công lên"
 		],
 		resetpwd2: ["Email", "Số điện thoại",
-			"Ghi chú: mật khẩu được tạo ra bởi 6~16 và không phải trường hợp nhạy cảm."
-		]
-	},
+		"Ghi chú: mật khẩu được tạo ra bởi 6~16 và không phải trường hợp nhạy cảm."
+	],
+	index: {
+			title: "DEX:OFX",
+			subtitle: "USDT chuyển đổi sang tiền tệ chính thức",
+			intro: "Đối với người dùng ở nhiều khu vực, việc không thể dễ dàng mua USDT (tiền tệ ổn định) là một vấn đề phổ biến do các hạn chế về kênh thanh toán, hạn chế ngân hàng, quản lý địa phương hoặc thiếu sàn giao dịch tuân thủ. DEX:OFX cung cấp một cách an toàn, tuân thủ và có tính thanh khoản cao để giúp người dùng đổi thành công tài sản số sang tiền tệ chính thức địa phương.",
+			suitableUsersTitle: "1. Người dùng nào thích hợp?",
+			suitableUsersIntro: "Cơ chế đổi tiền tệ chính thức của DEX:OFX đặc biệt phù hợp cho những nhóm người sau:",
+			suitableUsers: [
+				"Ngân hàng địa phương cấm hoặc hạn chế mua tiền mã hóa.",
+				"Thẻ tín dụng/thẻ ghi nợ không thể mua USDT trên sàn giao dịch.",
+				"Sàn giao dịch địa phương thiếu tính thanh khoản USDT.",
+				"Muốn tránh KYC phức tạp hoặc phí dịch vụ cao.",
+				"Muốn nhanh chóng chuyển đổi tài sản số sang tiền tệ chính thức địa phương (euro, đô la Canada, đô la Mỹ, đô la Singapore, franc Thụy Sĩ, v.v.)."
+			],
+			coreFeaturesTitle: "2. Chức năng cốt lõi của DEX:OFX",
+			coreFeatures: [
+				{
+					title: "Chuyển đổi USDT sang tiền tệ chính thức",
+					content: "Người dùng có thể chuyển USDT đến địa chỉ ví chỉ định của DEX:OFX, hệ thống sẽ tự động chuyển đổi sang tiền tệ chính thức được chỉ định theo tỷ giá thực thời và hoàn tất chuyển tiền thông qua mạng lưới tài chính hợp tác.",
+					supportedCurrenciesTitle: "Tiền tệ chính thức được hỗ trợ bao gồm (nhưng không giới hạn ở):",
+					supportedCurrencies: [
+						"Đô la Mỹ USD",
+						"Đô la Hồng Kông HKD",
+						"Đô la Singapore SGD",
+						"Đô la Đài Loan TWD",
+						"Euro EUR",
+						"Đô la Úc AUD"
+					]
+				},
+				{
+					title: "Không cần tài khoản sàn giao dịch",
+					content: "Không cần tài khoản sàn giao dịch tập trung như coinbase-crypto.com. Giảm ngưỡng, đặc biệt là đối với những người dùng không thể đăng ký sàn giao dịch."
+				},
+				{
+					title: "Khả năng nhận tiền xuyên biên giới toàn cầu",
+					content: "Dựa trên mạng lưới thanh toán xuyên biên giới toàn cầu của OFX, chúng tôi có thể thực hiện thanh toán nhanh chóng;",
+					transferTime: [
+						"Chuyển tiền trong cùng một quốc gia: trong ngày hoặc 1 ngày làm việc",
+						"Chuyển tiền quốc tế: 1-3 ngày làm việc",
+						"(tùy thuộc vào ngân hàng khu vực)"
+					]
+				},
+				{
+					title: "Tỷ giá minh bạch, phí dịch vụ thấp",
+					content: "Sử dụng giá thị trường thực thời để đổi, phí dịch vụ cố định và minh bạch, tránh phí ẩn."
+				}
+			],
+			exchangeProcessTitle: "3. Ví dụ quy trình đổi",
+			exchangeProcessIntro: "Dưới đây là quy trình đổi chung (có thể điều chỉnh theo nhu cầu kinh doanh của bạn):",
+			exchangeProcess: [
+				{
+					title: "Gửi yêu cầu đổi",
+					steps: [
+						"Người dùng chọn tiền tệ chính thức, số tiền và ngân hàng nhận tiền.",
+						"Hệ thống tạo địa chỉ nhận USDT (TRC20 hoặc ERC20).",
+						"Người dùng chuyển tiền đến USDT hoặc tiền mã hóa khác."
+					]
+				},
+				{
+					title: "DEX:OFX thực hiện đổi",
+					steps: ["Hệ thống chuyển đổi giá đổi thành tiền tệ chính thức cần thiết theo thời gian thực."]
+				},
+				{
+					title: "Tiền tệ chính thức đến tài khoản",
+					steps: ["Chuyển tiền đến tài khoản người dùng thông qua mạng lưới tài chính quốc tế hoặc hệ thống ngân hàng địa phương."]
+				}
+			],
+			whyCantBuyTitle: "4. Tại sao nhiều người không thể mua USDT?",
+			whyCantBuyReasons: [
+				"Ngân hàng không cho phép loại giao dịch tiền mã hóa",
+				"Các công ty thẻ tín dụng chặn mua tiền mã hóa.",
+				"Hạn chế quản lý địa phương",
+				"Sàn giao dịch yêu cầu KYC cao",
+				"Phí rút tiền của sàn giao dịch cao.",
+				"Khu vực đó không có kênh phân phối tiền ổn định.",
+				"Một số quốc gia không có sàn giao dịch tiền mã hóa hợp pháp."
+			],
+			valueProposition: "Giá trị của Dex:OFX là giúp những người này vượt qua rào cản tài chính và sử dụng trực tiếp tiền tệ chính thức.",
+			safetyTitle: "5. An toàn và quản lý (tập trung vào tăng cường tin tưởng)",
+			safetyIntro: "Dựa trên triết lý của hệ thống OFX, nhấn mạnh quản lý, tuân thủ và quy trình minh bạch.",
+			safetyFeatures: [
+				"Tất cả luồng tiền đều được kiểm tra AML và KYC.",
+				"Ngân hàng nhận tiền của người dùng cần được xác minh.",
+				"Toàn bộ quá trình có thể theo dõi và kiểm toán."
+			]
+		},
+		navbar: {
+			title: "DEX:OFX",
+			home: "Trang chủ",
+			market: "Tình hình",
+			trade: "Giao dịch",
+			wallet: "Ví tiền",
+			profile: "Hồ sơ"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Tổng số đơn hàng",
+				totalProfit: "Tổng lợi nhuận",
+				totalBalance: "Tổng số dư",
+				processing: "Đang xử lý",
+				orders: "Đơn hàng",
+				confirmExchange: "Xác nhận trao đổi",
+				records: "Hồ sơ"
+			},
+			modal: {
+				steps: [
+					"Gửi đơn",
+					"Đang xử lý",
+					"Đã trao đổi"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Tiền tệ đã trao đổi",
+				exchangedRate: "Tỷ giá trao đổi",
+				exchangedAmount: "Số tiền trao đổi",
+				exchangeEarnings: "Thu nhập từ trao đổi",
+				orderType: "Loại đơn hàng",
+				expectedReturn: "Lợi nhuận kỳ vọng",
+				close: "Đóng"
+			}
+		},
+		order: {
+			recordsTitle: "Hồ sơ",
+			tabs: {
+				all: "Tất cả",
+				pending: "Đang chờ xử lý",
+				completed: "Đã hoàn thành",
+				limitOrder: "Lệnh giới hạn"
+			},
+			status: {
+				completed: "Đã hoàn thành",
+				pending: "Đang chờ xử lý",
+				processing: "Đang xử lý"
+			},
+			details: {
+				orderId: "ID đơn hàng",
+				orderType: "Loại đơn hàng",
+				exchangeCurrency: "Tiền tệ đã trao đổi",
+				exchangeEarnings: "Thu nhập từ trao đổi",
+				expectedReturn: "Lợi nhuận kỳ vọng"
+			}
+		}
+	}
 }

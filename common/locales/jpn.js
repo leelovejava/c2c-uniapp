@@ -28,7 +28,15 @@ export default {
 			menu: ["資金履歴", "初心者向けガイド", "招待を受ける", "カスタマーサポートに連絡する"],
 			noticeTitle: "最新のお知らせ",
 			msg: "タスクはまだ開始されていません",
-			video: "ビデオチュートリアルはありません"
+		video: "ビデオチュートリアルはありません",
+		hero: {
+			title: "オンライン交換の簡単な方法",
+			subtitle: "世界中でお金を移動させるのが私たちの仕事です",
+			description: "私たちは、高額な銀行手数料なしで、企業や個人が安全にお金を送受信できるよう支援しています。",
+			credentials1: "25年以上の経験、2013年以来ASXに上場",
+			credentials2: "世界中の50以上の規制当局によって規制",
+			button: "スタート →"
+		}
 		},
 		hall: {
 			default: ["取引ホール", "残高", "購入", "売却", "売却確認", "注文リスト", "売却注文", "商人に売る", "オーダー中", "購入", "売却へ"],
@@ -161,6 +169,133 @@ export default {
 		hall4: ["あなたのアイデンティティ", "会員", "アカウント情報", "取引が成功しました", "あなたは正常に完了しました", "合計金額", "求む", "売る"],
 		task3: ["すべて", "未払い", "支払済み"],
 		my: ["アカウントをログアウトしますか？"],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDTを法定通貨に変換",
+			intro: "多くの地域のユーザーにとって、支払いチャネルの制限、銀行の制限、地域の監督、またはコンプライアンス交換所の不足により、USDT（ステーブルコイン）を簡単に購入できないことは一般的な問題です。 DEX:OFXは安全で、コンプライアンスで高流動性の方法を提供し、ユーザーがデジタル資産をローカル法定通貨にスムーズに変換できるように支援します。",
+			suitableUsersTitle: "まず、どのユーザーに適していますか？",
+			suitableUsersIntro: "DEX:OFXの法定通貨交換メカニズムは、特に次のグループに適しています：",
+			suitableUsers: [
+				"地元の銀行は、暗号通貨の購入を禁止または制限しています。",
+				"クレジット/デビットカードは、取引所でUSDTを購入できません。",
+				"地元の取引所はUSDTの流動性が不足しています。",
+				"複雑なKYCまたは高い手続きを避けたい。",
+				"デジタル資産を迅速にローカル法定通貨（EUR、CAD、USD、SGD、CHFなど）に変換したい。"
+			],
+			regions: {
+				europe: "ヨーロッパ",
+				unitedStates: "アメリカ合衆国",
+				canada: "カナダ",
+				singapore: "シンガポール",
+				switzerland: "スイス",
+				unitedKingdom: "イギリス"
+			},
+			infoCards: [
+				{
+					title: "使いやすさ",
+					description: "シンプルなインターフェースで、数ステップで通貨を交換できます。"
+				},
+				{
+					title: "高速な送金",
+					description: "リアルタイム為替レートと迅速な処理で、お金をすぐに受け取れます。"
+				},
+				{
+					title: "安全な取引",
+					description: "規制を受けたP2Pプラットフォームで、資金の安全を保証します。"
+				}
+			],
+			coreFeaturesTitle: "第二に、DEX：OFXのコア機能",
+			coreFeatures: [
+				{
+					title: "USDT → 法定通貨交換",
+					content: "ユーザーはUSDTをDEX:OFXの指定されたウォレットアドレスに転送でき、システムはリアルタイム為替レートに基づいて指定された法定通貨に自動的に変換し、協力金融ネットワークを通じて転送を完了します。",
+					supportedCurrenciesTitle: "サポートされている法定通貨には次のものが含まれます（これらに限定されません）：",
+					supportedCurrencies: [
+						"米ドル USD",
+						"香港ドル HKD",
+						"シンガポールドル SGD",
+						"台湾ドル TWD",
+						"ユーロ EUR",
+						"豪ドル AUD"
+					]
+				},
+				{
+					title: "取引所アカウントは必要ありません。",
+					content: "coinbase-crypto.comなどの中央集権型取引所は必要ありません。特に取引所に登録できないユーザーにとって、閾値を下げます。"
+				},
+				{
+					title: "グローバルなクロスボーダー受け取り能力",
+					content: "OFXのグローバルクロスボーダー決済ネットワークに依存して、迅速な決済を実現できます。",
+					transferTime: [
+						"同じ国での送金：同日または1営業日",
+						"国際送金：1-3営業日",
+						"（地域の銀行によって異なります）"
+					]
+				},
+				{
+					title: "透明な為替レートと低手数料。",
+					content: "交換はリアルタイム相場を採用し、手数料は固定かつ透明であるため、手数料を隠すことを回避します。"
+				}
+			],
+			exchangeProcessTitle: "第三に、交換プロセスの例",
+			exchangeProcessIntro: "以下は一般的な交換プロセスです（ビジネスニーズに応じて調整できます）：",
+			exchangeProcess: [
+				{
+					title: "交換申請を提出",
+					steps: [
+						"ユーザーは法定通貨、金額、受取銀行を選択します。",
+						"システムはUSDT収受アドレス（TRC20またはERC20）を生成します。",
+						"ユーザーはUSDTまたはその他の暗号通貨を転送します。"
+					]
+				},
+				{
+					title: "DEX:OFXが交換を実行",
+					steps: ["システムはリアルタイムで交換価格を必要な法定通貨に変換します。"]
+				},
+				{
+					title: "法定通貨の入金",
+					steps: ["国際金融ネットワークまたは地元の銀行システムを通じてユーザーアカウントに送金します。"]
+				}
+			],
+			whyCantBuyTitle: "4. 多くの人がUSDTを購入できないのはなぜですか？",
+			whyCantBuyReasons: [
+				"銀行は「暗号通貨取引」のカテゴリを許可していません",
+				"クレジットカード会社は暗号購入をブロックします。",
+				"地元の規制の制限",
+				"取引所は高いKYCを要求します",
+				"取引所の出金手数料が高いです。",
+				"地元には安定した通貨流通チャネルがありません。",
+				"一部の国には合法的な暗号取引所がありません。"
+			],
+			valueProposition: "Dex：OFXの価値は、これらの人々が金融の壁を越えて直接法定通貨を使用できるように支援することです。",
+			safetyTitle: "5. 安全性と監督（信頼性を高めることに焦点）",
+			safetyIntro: "OFXシステムのコンセプトに基づいて、監督、コンプライアンス、透明なプロセスを強調します。",
+			safetyFeatures: [
+				"すべての資金フローはAMLとKYCによって監査されています。",
+				"ユーザーの受取銀行は検証する必要があります。",
+				"プロセス全体を追跡および監査できます。"
+			]
+		},
+
+		navbar: {
+			inviteCode: "招待コード",
+			copy: "コピー",
+			creditScore: "クレジットスコア",
+			totalBalance: "総残高",
+			currencyExchange: "通貨交換",
+			memberLevel: "メンバーレベル",
+			promotions: "プロモーション",
+			aboutUs: "私たちについて",
+			faqs: "よくある質問",
+			certification: "認証",
+			recharge: "チャージ",
+			bankCards: "銀行カード",
+			records: "レコード",
+			withdraw: "引き出し",
+			contactUs: "お問い合わせ",
+			inviteFriends: "友達を招待",
+			logout: "ログアウト"
+		},
 
 		bind: [
 			'アカウントバインディング',
@@ -184,13 +319,59 @@ export default {
 		],
 
 		setting: [
-			'私のパブリッシュ履歴',
-			'買い入れオーダー',
-			'売り出しオーダー',
+			'My Publish Records',
+			'Buy Orders',
+			'Sell Orders',
 		],
 		empty: [
-			'データがありません'
-		]
-
+			'No Data'
+		],
+		exchange: {
+			infoCard: {
+				totalOrders: "総注文数",
+				totalProfit: "総利益",
+				totalBalance: "総残高",
+				processing: "処理中",
+				orders: "注文",
+				confirmExchange: "交換を確認",
+				records: "記録"
+			},
+			modal: {
+				steps: [
+					"送信",
+					"処理",
+					"完了"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "交換通貨",
+				exchangedRate: "交換レート",
+				exchangedAmount: "交換金額",
+				exchangeEarnings: "交換収益",
+				orderType: "注文タイプ",
+				expectedReturn: "予想リターン",
+				close: "閉じる"
+			}
+		},
+		order: {
+			recordsTitle: "記録",
+			tabs: {
+				all: "すべて",
+				pending: "保留中",
+				completed: "完了済み",
+				limitOrder: "指値注文"
+			},
+			status: {
+				completed: "完了済み",
+				pending: "保留中",
+				processing: "処理中"
+			},
+			details: {
+				orderId: "注文ID",
+				orderType: "注文タイプ",
+				exchangeCurrency: "交換通貨",
+				exchangeEarnings: "交換収益",
+				expectedReturn: "予想リターン"
+			}
+		}
 	}
 }

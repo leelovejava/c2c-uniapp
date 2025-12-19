@@ -40,12 +40,6 @@
 			back(){
 				uni.navigateBack()
 			},
-			// setLangyanBtn(value){
-			// 	uni.setStorageSync('lang', value)
-			// 	uni.reLaunch('/pages/setting/language')
-			// 	uni.navigateBack()
-			// },
-			
 			//设置语言
 			setLangyanBtn(item) {
 				let langs = this.langs.map(el => {

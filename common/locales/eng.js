@@ -26,7 +26,15 @@ export default {
 		menu: ["Capital Log", "Beginner's Tutorial", "Invite Registration", "Contact Customer Service"],
 		noticeTitle: "Latest Announcement",
 		msg: "Task not available",
-		video: "No video tutorial available"
+		video: "No video tutorial available",
+		hero: {
+			title: "The Easy Way to Exchange Online",
+			subtitle: "Moving money globally is what we do",
+			description: "We help businesses and individuals to securely send and receive money, without the excessive bank fees.",
+			credentials1: "25+ years' experience, ASX listed since 2013",
+			credentials2: "Regulated by 50+ regulators globally",
+			button: "GET START →"
+		}
 		},
 		hall: {
 		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Go to Sell"],
@@ -161,8 +169,180 @@ export default {
 		"Sell Orders",
 		],
 		empty: [
-		"No Data"
-		]
-			
+			"No Data"
+		],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT is converted into legal tender",
+			intro: "For users in many areas, it is a common problem that they can't easily buy USDT (stable currency) due to limited payment channels, bank restrictions, local supervision, or lack of compliance exchanges. DEX:OFX provides a safe, compliant and highly liquid way to help users smoothly convert digital assets into local legal tender.",
+			suitableUsersTitle: "First, which users are suitable?",
+			suitableUsersIntro: "DEX:OFX's legal currency exchange mechanism is especially suitable for the following groups:",
+			suitableUsers: [
+				"Local banks prohibit or restrict the purchase of cryptocurrencies.",
+				"Credit/debit cards cannot purchase USDT on the exchange.",
+				"The local exchange lacks USDT liquidity.",
+				"Want to avoid complicated KYC or high formalities.",
+				"Want to quickly convert digital assets into local legal tender (EUR, CAD ,USD ,SGD, CHF, etc.)."
+			],
+			coreFeaturesTitle: "Second, DEX: the core function of OFX",
+			coreFeatures: [
+				{
+					title: "USDT → French currency exchange",
+					content: "Users can transfer USDT to the designated wallet address of DEX:OFX, and the system will automatically convert it into designated legal tender according to the real-time exchange rate, and complete the transfer through the cooperative financial network.",
+					supportedCurrenciesTitle: "Supported legal tender includes (but is not limited to):",
+					supportedCurrencies: [
+						"USD dollars",
+						"HKD",
+						"SGD SGD",
+						"TWD nt $",
+						"EUR euro",
+						"AUD Australian dollar"
+					]
+				},
+				{
+					title: "No exchange account is required.",
+					content: "There is no need for centralized exchanges such as coinbase-crypto.com. Lower the threshold, especially for users who can't register for the exchange."
+				},
+				{
+					title: "Global cross-border receipt capacity",
+					content: "Relying on OFX's global cross-border payment network, we can achieve fast payment;",
+					transferTime: [
+						"Transfer in the same country: same day or 1 working day",
+						"International remittance: 1-3 working days",
+						"(depending on the regional bank)"
+					]
+				},
+				{
+					title: "Transparent exchange rate and low handling fee.",
+					content: "The exchange adopts real-time market price, and the fee is fixed and transparent, so as to avoid hiding the handling fee."
+				}
+			],
+			exchangeProcessTitle: "III. Example of Exchange Process",
+			exchangeProcessIntro: "The following is the general exchange process (which can be adjusted according to your business needs):",
+			exchangeProcess: [
+				{
+					title: "Submit an exchange application",
+					steps: [
+						"The user selects the legal tender, amount and receiving bank.",
+						"The system generates the USDT collection address (TRC20 or ERC20).",
+						"User transfers to USDT or other cryptocurrency."
+					]
+				},
+				{
+					title: "DEX:OFX performs exchange",
+					steps: ["The system converts the exchange price into the required legal tender in real time."]
+				},
+				{
+					title: "Legal tender to account",
+					steps: ["Remittance to user account through international financial network or local banking system."]
+				}
+			],
+			whyCantBuyTitle: "4. Why can't many people buy USDT?",
+			whyCantBuyReasons: [
+				"The bank does not allow the category of \"cryptocurrency transaction\"",
+				"Credit card companies block encrypted purchases.",
+				"Local regulatory restrictions",
+				"The exchange requires a high KYC",
+				"Exchange withdrawal fees are high.",
+				"There is no stable currency distribution channel in the local area.",
+				"Some countries do not have legal encryption exchanges."
+			],
+			valueProposition: "Dex: The value of OFX is to help these people cross financial barriers and use French currency directly.",
+			safetyTitle: "V. Safety and supervision (focusing on increasing trust)",
+			safetyIntro: "Based on the concept of OFX system, it emphasizes supervision, compliance and transparent process.",
+			safetyFeatures: [
+				"All capital flows have been audited by AML and KYC.",
+				"The user's receiving bank needs to be verified.",
+				"The whole process can be traced and audited."
+			],
+			regions: {
+				europe: "Europe",
+				unitedStates: "United States",
+				canada: "Canada",
+				singapore: "Singapore",
+				switzerland: "Switzerland",
+				unitedKingdom: "United Kingdom"
+			},
+			infoCards: [
+				{
+					title: "Easy to use",
+					description: "Exchange currencies from over 150 countries online"
+				},
+				{
+					title: "Fast, reliable transfers",
+					description: "Instant exchange with real-time market rates"
+				},
+				{
+					title: "Trusted and secure",
+					description: "Authorized and regulated P2P institution"
+				}
+			]
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Total Orders",
+				totalProfit: "Total Profit",
+				totalBalance: "Total Balance",
+				processing: "Processing",
+				orders: "Orders",
+				confirmExchange: "Confirm Exchange",
+				records: "Records"
+			},
+			modal: {
+				steps: [
+					"Match Order",
+					"Pending",
+					"Exchanged"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Exchanged Currency",
+				exchangedRate: "Exchanged Rate",
+				exchangedAmount: "Exchanged Amount",
+				exchangeEarnings: "Exchange Earnings",
+				orderType: "Order Type",
+				expectedReturn: "Expected Return",
+				close: "Close"
+			}
+		},
+		order: {
+			recordsTitle: "Records",
+			tabs: {
+				all: "All",
+				pending: "Pending",
+				completed: "Completed",
+				limitOrder: "Limit Order"
+			},
+			status: {
+				completed: "Completed",
+				pending: "Pending",
+				processing: "Processing"
+			},
+			details: {
+				orderId: "Order ID",
+				orderType: "Order Type",
+				exchangeCurrency: "Exchange Currency",
+				exchangeEarnings: "Exchange Earnings",
+				expectedReturn: "Expected Return"
+			}
+		},
+		navbar: {
+			inviteCode: "Invite Code",
+			copy: "Copy",
+			creditScore: "Credit Score",
+			totalBalance: "Total Balance",
+			currencyExchange: "Currency Exchange",
+			memberLevel: "Member Level",
+			promotions: "Promotions",
+			aboutUs: "About Us",
+			faqs: "FAQs",
+			certification: "Certification",
+			recharge: "Recharge",
+			bankCards: "Bank Cards",
+			records: "Records",
+			withdraw: "Withdraw",
+			contactUs: "Contact Us",
+			inviteFriends: "Invite Friends",
+			logout: "Logout"
+		}
 	}
 }

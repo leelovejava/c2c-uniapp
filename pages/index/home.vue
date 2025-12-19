@@ -13,13 +13,12 @@
                     </view>
                 </view>
                 <view class="hero-content">
-                    <h1>The Easy Way to Exchange Online</h1>
-                    <p class="subtitle">Moving money globally is what we do</p>
-                    <p class="description">We help businesses and individuals to securely send and receive money,
-                        without the excessive bank fees.</p>
-                    <p class="credentials">25+ years' experience, ASX listed since 2013</p>
-                    <p class="credentials">Regulated by 50+ regulators globally</p>
-                    <button class="get-started-btn" @click="$u.route('/pages/index/index')">GET START →</button>
+                    <h1>{{ i18n.home.hero.title }}</h1>
+                    <p class="subtitle">{{ i18n.home.hero.subtitle }}</p>
+                    <p class="description">{{ i18n.home.hero.description }}</p>
+                    <p class="credentials">{{ i18n.home.hero.credentials1 }}</p>
+                    <p class="credentials">{{ i18n.home.hero.credentials2 }}</p>
+                    <button class="get-started-btn" @click="$u.route('/pages/index/index')">{{ i18n.home.hero.button }}</button>
                 </view>
 
             </view>

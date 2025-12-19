@@ -26,8 +26,16 @@ export default {
 					menu: ["Log Kewangan", "Tutorial Pemula", "Daftar Jemputan", "Hubungi Perkhidmatan Pelanggan"],
 					noticeTitle: "Pengumuman Terkini",
 					msg: "Tugas belum dibuka",
-					video: "Tiada tutorial video buat masa ini"
-				},
+								video: "Tiada tutorial video buat masa ini",
+								hero: {
+									title: "Cara Mudah Bertukar Wang Secara Dalam Talian",
+									subtitle: "Memindahkan wang di peringkat global adalah apa yang kami lakukan",
+									description: "Kami membantu perniagaan dan individu menghantar dan menerima wang dengan selamat, tanpa caj bank yang tinggi.",
+									credentials1: "Lebih daripada 25 tahun pengalaman, disenaraikan di ASX sejak 2013",
+									credentials2: "Diperaturi oleh lebih 50 pihak pengawal di seluruh dunia",
+									button: "MULAKAN →"
+								}
+							},
 				hall: {
 					default: ["Lobi Perdagangan", "Baki", "Saya Mahu Beli", "Saya Mahu Jual", "Sahkan Jualan", "Senarai Pesanan", "Pesanan Jualan", "Jualan kepada Peniaga", "Pesanan Ditampal", "Beli", "Pergi Jual"],
 					list: ["Kuantiti", "Harga Seunit", "Belum Ditunaikan", "Jual USDT", "Sila masukkan kuantiti USDT", "Jumlah Diterima", "Had", "Beli USDT", "Jumlah yang Dikeluarkan"],
@@ -115,6 +123,153 @@ export default {
 				common7: ["If your issue is not resolved, please contact online customer service", "Service", "Click to Consult", "Settings", "All", "Invite Friends", "Team Size", "Newly Added This Month", "Registration Time", "Subordinates"],
 				hall4: ["Your Identity", "Member", "Your Account Information", "Transaction Successful", "You Have Successfully Completed", "Total Price", "Buy", "Sell"],
 				task3: ["All", "Unpaid", "Paid"],
-				my: ["Are you sure you want to log out?"]
+				my: ["Adakah anda pasti mahu log keluar?"],
+			index: {
+				title: "DEX:OFX",
+				subtitle: "USDT ditukar kepada wang legal",
+				intro: "Bagi pengguna di banyak kawasan, ia adalah masalah biasa bahawa mereka tidak dapat membeli USDT (matawang stabil) dengan mudah kerana saluran pembayaran terhad, sekatan bank, pengawasan tempatan, atau kekurangan pertukaran pematuhan. DEX:OFX menyediakan cara yang selamat, mematuhi dan mempunyai kecairan tinggi untuk membantu pengguna menukar aset digital kepada wang legal tempatan dengan lancar.",
+				suitableUsersTitle: "Pertama, pengguna yang manakah sesuai?",
+				suitableUsersIntro: "Mekanisme pertukaran wang legal DEX:OFX amat sesuai untuk kumpulan berikut:",
+				suitableUsers: [
+					"Bank tempatan melarang atau mengehadkan pembelian kripto matawang.",
+					"Kad kredit/debit tidak boleh membeli USDT di pertukaran.",
+					"Pertukaran tempatan kekurangan kecairan USDT.",
+					"Ingin mengelakkan KYC yang rumit atau peraturan yang tinggi.",
+					"Ingin menukar aset digital kepada wang legal tempatan (EUR, CAD, USD, SGD, CHF, dsb.) dengan cepat."
+				],
+				coreFeaturesTitle: "Kedua, DEX: fungsi teras OFX",
+				coreFeatures: [
+					{
+						title: "Pertukaran USDT → wang legal",
+						content: "Pengguna boleh memindahkan USDT ke alamat dompet yang ditetapkan oleh DEX:OFX, dan sistem akan menukarnya kepada wang legal yang ditetapkan mengikut kadar pertukaran masa nyata, dan melengkapkan pemindahan melalui rangkaian kewangan yang bekerjasama.",
+						supportedCurrenciesTitle: "Wang legal yang disokong termasuk (tetapi tidak terhad kepada):",
+						supportedCurrencies: [
+							"Dolar USD",
+							"HKD",
+							"SGD Singapura",
+							"TWD dolar Taiwan",
+							"Euro EUR",
+							"Dolar Australia AUD"
+						]
+					},
+					{
+						title: "Tidak memerlukan akaun pertukaran.",
+						content: "Tidak diperlukan pertukaran berpusat seperti coinbase-crypto.com. Menurunkan ambang, terutamanya untuk pengguna yang tidak dapat mendaftar pertukaran."
+					},
+					{
+						title: "Keupayaan penerimaan merentasi sempadan global",
+						content: "Bergantung pada rangkaian pembayaran merentasi sempadan global OFX, kita boleh mencapai pembayaran pantas;",
+						transferTime: [
+							"Pemindahan dalam negara yang sama: hari yang sama atau 1 hari bekerja",
+							"Hantar wang antarabangsa: 1-3 hari bekerja",
+							"(bergantung kepada bank wilayah)"
+						]
+					},
+					{
+						title: "Kadar pertukaran jelas dan yuran pengendalian rendah.",
+						content: "Pertukaran menggunakan harga pasaran masa nyata, dan yuran tetap dan jelas, untuk mengelakkan menyembunyikan yuran pengendalian."
+					}
+				],
+				exchangeProcessTitle: "III. Contoh Proses Pertukaran",
+				exchangeProcessIntro: "Berikut adalah proses pertukaran am (boleh disesuaikan mengikut keperluan perniagaan anda):",
+				exchangeProcess: [
+					{
+						title: "Hantar permohonan pertukaran",
+						steps: [
+							"Pengguna memilih wang legal, jumlah dan bank penerima.",
+							"Sistem menjana alamat penerimaan USDT (TRC20 atau ERC20).",
+							"Pengguna memindahkan kepada USDT atau kripto matawang lain."
+						]
+					},
+					{
+						title: "DEX:OFX melakukan pertukaran",
+						steps: ["Sistem menukar harga pertukaran kepada wang legal yang diperlukan secara masa nyata."]
+					},
+					{
+						title: "Wang legal ke akaun",
+						steps: ["Hantar wang ke akaun pengguna melalui rangkaian kewangan antarabangsa atau sistem perbankan tempatan."]
+					}
+				],
+				whyCantBuyTitle: "4. Mengapa ramai orang tidak boleh membeli USDT?",
+				whyCantBuyReasons: [
+					"Bank tidak membenarkan kategori \"transaksi kripto matawang\"",
+					"Syarikat kad kredit menyekat pembelian enkripsi.",
+					"Sekatan pengawasan tempatan",
+					"Pertukaran memerlukan KYC yang tinggi",
+					"Yuran penarikan pertukaran tinggi.",
+					"Tiada saluran pengedaran matawang stabil di tempatan.",
+					"Sesetengah negara tidak mempunyai pertukaran enkripsi yang sah."
+				],
+				valueProposition: "Nilai Dex:OFX adalah untuk membantu orang ini melepasi halangan kewangan dan menggunakan wang legal terus terang.",
+				safetyTitle: "V. Keselamatan dan pengawasan (menumpukan pada peningkatan kepercayaan)",
+				safetyIntro: "Berdasarkan konsep sistem OFX, ia menekankan pengawasan, pematuhan dan proses yang jelas.",
+				safetyFeatures: [
+				"Semua aliran modal telah diaudit oleh AML dan KYC.",
+				"Bank penerima pengguna perlu disahkan.",
+				"Seluruh proses boleh dikesan dan diaudit."
+			],
+			regions: {
+				europe: "Eropah",
+				unitedStates: "Amerika Syarikat",
+				canada: "Kanada",
+				singapore: "Singapura",
+				switzerland: "Switzerland",
+				unitedKingdom: "United Kingdom"
+			},
+			infoCards: [
+				{
+					title: "Mudah Digunakan",
+					description: "Anda boleh menukar wang secara dalam talian di lebih daripada 150 negara di seluruh dunia"
+				},
+				{
+					title: "Hantar Wang dengan Pantas dan Dipercayai",
+					description: "Menukar secara automatik dengan kadar pasaran masa nyata"
+				},
+				{
+					title: "Dipercayai dan Selamat",
+					description: "Lembaga P2P yang diperakui"
+				}
+			]
+		},
+		navbar: {
+			inviteCode: "Kod Undangan",
+			copy: "Salin",
+			creditScore: "Skor Kredit",
+			totalBalance: "Jumlah Baki",
+			currencyExchange: "Tukar Wang",
+			memberLevel: "Aras Ahli",
+			promotions: "Promosi",
+			aboutUs: "Tentang Kami",
+			faqs: "Soalan Lazim",
+			certification: "Pengesahan",
+			recharge: "Topup",
+			bankCards: "Kad Bank",
+			records: "Rekod",
+			withdraw: "Tarik Tunai",
+			contactUs: "Hubungi Kami",
+			inviteFriends: "Jemput Rakan",
+			logout: "Log Keluar"
+		}
+	},
+	order: {
+		recordsTitle: "Rekod",
+		tabs: {
+			all: "Semua",
+			pending: "Tertunda",
+			completed: "Selesai",
+			limitOrder: "Arahan Had"
+		},
+		status: {
+			completed: "Selesai",
+			pending: "Tertunda",
+			processing: "Memproses"
+		},
+		details: {
+			orderId: "ID Pesanan",
+			orderType: "Jenis Pesanan",
+			exchangeCurrency: "Mata Wang Pertukaran",
+			exchangeEarnings: "Pendapatan Pertukaran",
+			expectedReturn: "Pulangan Dijangka"
+		}
 	}
 }

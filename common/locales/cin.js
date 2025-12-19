@@ -26,7 +26,15 @@ export default {
 			menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],
 			noticeTitle: "最新公告",
 			msg: "任務未開放",
-			video: "暫無視頻教程"
+			video: "暫無視頻教程",
+			hero: {
+				title: "簡單便捷的線上兌換方式",
+				subtitle: "我們專注於全球資金轉移",
+				description: "我們協助企業和個人安全地發送和接收資金，無需支付高額銀行費用。",
+				credentials1: "25+年經驗，自2013年在ASX上市",
+				credentials2: "受全球50+監管機構監管",
+				button: "開始使用 →"
+			}
 		},
 		hall: {
 			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "賣出訂單", "賣給商家", "掛單中", "買入", "去出售"],
@@ -167,6 +175,168 @@ export default {
 		],
 		"empty": [
 			"暫無數據"
-		]
+		],
+		"index": {
+			"title": "DEX:OFX",
+			"subtitle": "USDT兌換法定貨幣",
+			"intro": "對於許多地區的用戶來說，由於支付渠道有限、銀行限制、當地監管或缺乏合規交易所等原因，無法輕鬆購買USDT（穩定幣）是一個普遍問題。DEX:OFX提供了一種安全、合規且高流動性的方式，幫助用戶將數字資產順利兌換為當地法定貨幣。",
+			"suitableUsersTitle": "一、哪些用戶適合？",
+			"suitableUsersIntro": "DEX:OFX的法幣兌換機制特別適合以下人群：",
+			"suitableUsers": [
+				"當地銀行禁止或限制購買加密貨幣。",
+				"信用卡/借記卡無法在交易所購買USDT。",
+				"當地交易所USDT流動性不足。",
+				"想要避免複雜的KYC或高額手續費。",
+				"想要快速將數字資產轉換為當地法定貨幣（歐元、加元、美元、新加坡元、瑞士法郎等）。"
+			],
+			"coreFeaturesTitle": "二、DEX:OFX的核心功能",
+			"coreFeatures": [
+				{
+					"title": "USDT → 法幣兌換",
+					"content": "用戶可以將USDT轉賬到DEX:OFX的指定錢包地址，系統會根據實時匯率自動轉換為指定法定貨幣，並通過合作金融網絡完成轉賬。",
+					"supportedCurrenciesTitle": "支持的法定貨幣包括（但不限於）：",
+					"supportedCurrencies": [
+						"美元 USD",
+						"港幣 HKD",
+						"新加坡元 SGD",
+						"新台幣 TWD",
+						"歐元 EUR",
+						"澳大利亞元 AUD"
+					]
+				},
+				{
+					"title": "無需交易所賬戶",
+					"content": "無需coinbase-crypto.com等中心化交易所賬戶。降低門檻，特別是針對無法註冊交易所的用戶。"
+				},
+				{
+					"title": "全球跨境收款能力",
+					"content": "依托OFX的全球跨境支付網絡，實現快速到賬；",
+					"transferTime": [
+						"同一國家轉賬：當天或1個工作日",
+						"國際匯款：1-3個工作日",
+						"（取決於地區銀行）"
+					]
+				},
+				{
+					"title": "透明匯率，低手續費",
+					"content": "採用實時市場價進行兌換，費用固定透明，避免隱藏手續費。"
+				}
+			],
+			"exchangeProcessTitle": "三、兌換流程示例",
+			"exchangeProcessIntro": "以下是一般兌換流程（可根據業務需求調整）：",
+			"exchangeProcess": [
+				{
+					"title": "提交兌換申請",
+					"steps": [
+						"用戶選擇法定貨幣、金額和收款銀行。",
+						"系統生成USDT收款地址（TRC20或ERC20）。",
+						"用戶向USDT或其他加密貨幣轉賬。"
+					]
+				},
+				{
+					"title": "DEX:OFX執行兌換",
+					"steps": ["系統實時將兌換價格轉換為所需法定貨幣。"]
+				},
+				{
+					"title": "法定貨幣到賬",
+					"steps": ["通過國際金融網絡或當地銀行系統匯款到用戶賬戶。"]
+				}
+			],
+			"whyCantBuyTitle": "四、為什麼很多人買不到USDT？",
+			"whyCantBuyReasons": [
+				"銀行不允許\"加密貨幣交易\"類別",
+				"信用卡公司阻止加密購買。",
+				"當地監管限制",
+				"交易所要求高KYC",
+				"交易所提款費用高。",
+				"當地沒有穩定幣分發渠道。",
+				"一些國家沒有合法的加密交易所。"
+			],
+			"valueProposition": "Dex:OFX的價值在於幫助這些人跨越金融障礙，直接使用法幣。",
+			"safetyTitle": "五、安全與監管（重點增加信任）",
+			"safetyIntro": "基於OFX系統的理念，強調監管、合規和透明流程。",
+			"safetyFeatures": [
+				"所有資金流動都經過AML和KYC審核。",
+				"用戶的收款銀行需要進行驗證。",
+				"整個過程可追溯、可審計。"
+			],
+			"regions": {
+				"europe": "歐洲",
+				"unitedStates": "美國",
+				"canada": "加拿大",
+				"singapore": "新加坡",
+				"switzerland": "瑞士",
+				"unitedKingdom": "英國"
+			},
+			"infoCards": [
+				{
+					"title": "易於使用",
+					"description": "在線兌換來自150多個國家的貨幣"
+				},
+				{
+					"title": "快速、可靠的轉賬",
+					"description": "實時市場利率的即時兌換"
+				},
+				{
+					"title": "值得信賴且安全",
+					"description": "獲得授權和監管的P2P機構"
+				}
+			]
+		},
+		"navbar": {
+			"title": "Dex:OFX",
+			"home": "首頁",
+			"market": "行情",
+			"trade": "交易",
+			"wallet": "錢包",
+			"profile": "我的"
+		},
+		"exchange": {
+			"infoCard": {
+				"totalOrders": "總訂單數",
+				"totalProfit": "總利潤",
+				"totalBalance": "總餘額",
+				"processing": "處理中",
+				"orders": "訂單",
+				"confirmExchange": "確認兌換",
+				"records": "記錄"
+			},
+			"modal": {
+				"steps": [
+					"匹配訂單",
+					"處理中",
+					"已兌換"
+				],
+				"percentage": "(100%)",
+				"exchangedCurrency": "已兌換貨幣",
+				"exchangedRate": "兌換匯率",
+				"exchangedAmount": "兌換金額",
+				"exchangeEarnings": "兌換收益",
+				"orderType": "訂單類型",
+				"expectedReturn": "預期收益",
+				"close": "關閉"
+			}
+		},
+		"order": {
+			"recordsTitle": "記錄",
+			"tabs": {
+				"all": "全部",
+				"pending": "待處理",
+				"completed": "已完成",
+				"limitOrder": "限價訂單"
+			},
+			"status": {
+				"completed": "已完成",
+				"pending": "待處理",
+				"processing": "處理中"
+			},
+			"details": {
+				"orderId": "訂單號",
+				"orderType": "訂單類型",
+				"exchangeCurrency": "兌換貨幣",
+				"exchangeEarnings": "兌換收益",
+				"expectedReturn": "預期回報"
+			}
+		}
 	}
 }

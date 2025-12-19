@@ -5,135 +5,83 @@
 
 			<view class="a-p15 a-crfff">
 				<div class="main-content" style="max-width: 750px;margin: 0 auto;">
-					<h2 style="margin: 16px 0 8px; font-size: 24px; font-weight: 900;">DEX:OFX</h2>
-					<p class="intro-paragraph"
-						style="margin: 0 0 16px; font-size: 20px; line-height: 1.6; font-weight: 600;">USDT is converted
-						into legal tender</p>
+					<h2 style="margin: 16px 0 8px; font-size: 24px; font-weight: 900;">{{ $t('common.index.title') }}</h2>
+				<p class="intro-paragraph"
+					style="margin: 0 0 16px; font-size: 20px; line-height: 1.6; font-weight: 600;">
+					{{ $t('common.index.subtitle') }}
+				</p>
 					<p style="margin: 6px 0; font-size: 16px; line-height: 1.8;">
-						For users in many areas, it is a common problem that they can't easily buy USDT (stable
-						currency) due to limited payment channels, bank restrictions, local supervision, or lack of
-						compliance exchanges. DEX:OFX provides a safe, compliant and highly liquid way to help users
-						smoothly convert digital assets into local legal tender.
+						{{ $t('common.index.intro') }}
 					</p>
-					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">First, which
-						users are suitable?</p>
+					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">{{ $t('common.index.suitableUsersTitle') }}</p>
 					<p style="margin: 6px 0; font-size: 16px; line-height: 1.8;">
-						DEX:OFX's legal currency exchange mechanism is especially suitable for the following groups:
+						{{ $t('common.index.suitableUsersIntro') }}
 					</p>
 					<ul style="margin: 10px 0 20px; padding-left: 20px; font-size: 16px; line-height: 1.8;">
-						<li>Local banks prohibit or restrict the purchase of cryptocurrencies.</li>
-						<li>Credit/debit cards cannot purchase USDT on the exchange.</li>
-						<li>The local exchange lacks USDT liquidity.</li>
-						<li>Want to avoid complicated KYC or high formalities.</li>
-						<li>Want to quickly convert digital assets into local legal tender (EUR, CAD ,USD ,SGD, CHF,
-							etc.).</li>
+						<li v-for="(user, index) in $t('common.index.suitableUsers')" :key="index">{{ user }}</li>
 					</ul>
-					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">Second, DEX: the
-						core function of OFX</p>
+					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">{{ $t('common.index.coreFeaturesTitle') }}</p>
 					<ol style="margin: 10px 0 20px; padding-left: 20px; font-size: 16px; line-height: 1.8;">
-						<li><strong>USDT → French currency exchange</strong><br>
-							Users can transfer USDT to the designated wallet address of DEX:OFX, and the system will
-							automatically convert it into designated legal tender according to the real-time exchange
-							rate, and complete the transfer through the cooperative financial network.<br>
-							Supported legal tender includes (but is not limited to):
-							<ul style="margin: 5px 0 15px; padding-left: 20px;">
-								<li>USD dollars</li>
-								<li>HKD</li>
-								<li>SGD SGD</li>
-								<li>TWD nt $</li>
-								<li>EUR euro</li>
-								<li>AUD Australian dollar</li>
-							</ul>
-						</li>
-						<li><strong>No exchange account is required.</strong><br>
-							There is no need for centralized exchanges such as coinbase-crypto.com.<br>
-							Lower the threshold, especially for users who can't register for the exchange.
-						</li>
-						<li><strong>Global cross-border receipt capacity</strong><br>
-							Relying on OFX's global cross-border payment network, we can achieve fast payment;<br>
-							Transfer in the same country: same day or 1 working day<br>
-							International remittance: 1-3 working days<br>
-							(depending on the regional bank)
-						</li>
-						<li><strong>Transparent exchange rate and low handling fee.</strong><br>
-							The exchange adopts real-time market price, and the fee is fixed and transparent, so as to
-							avoid hiding the handling fee.
+						<li v-for="(feature, index) in $t('common.index.coreFeatures')" :key="index">
+							<strong>{{ feature.title }}</strong><br>
+							{{ feature.content }}<br>
+							<template v-if="feature.supportedCurrenciesTitle">
+								{{ feature.supportedCurrenciesTitle }}
+								<ul style="margin: 5px 0 15px; padding-left: 20px;">
+									<li v-for="(currency, idx) in feature.supportedCurrencies" :key="idx">{{ currency }}</li>
+								</ul>
+							</template>
+							<template v-if="feature.transferTime">
+								<span v-for="(time, idx) in feature.transferTime" :key="idx">{{ time }}<br></span>
+							</template>
 						</li>
 					</ol>
-					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">III. Example of
-						Exchange Process</p>
+					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">{{ $t('common.index.exchangeProcessTitle') }}</p>
 					<p style="margin: 6px 0; font-size: 16px; line-height: 1.8;">
-						The following is the general exchange process (which can be adjusted according to your business
-						needs):
+						{{ $t('common.index.exchangeProcessIntro') }}
 					</p>
 					<ul style="margin: 10px 0 20px; padding-left: 20px; font-size: 16px; line-height: 1.8;">
-						<li><strong>Submit an exchange application</strong><br>
-							The user selects the legal tender, amount and receiving bank.<br>
-							The system generates the USDT collection address (TRC20 or ERC20).<br>
-							User transfers to USDT or other cryptocurrency.
-						</li>
-						<li><strong>DEX:OFX performs exchange</strong><br>
-							The system converts the exchange price into the required legal tender in real time.
-						</li>
-						<li><strong>Legal tender to account</strong><br>
-							Remittance to user account through international financial network or local banking system.
+						<li v-for="(process, index) in $t('common.index.exchangeProcess')" :key="index">
+							<strong>{{ process.title }}</strong><br>
+							<span v-for="(step, idx) in process.steps" :key="idx">{{ step }}<br></span>
 						</li>
 					</ul>
-					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">4. Why can't
-						many people buy USDT?</p>
+					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">{{ $t('common.index.whyCantBuyTitle') }}</p>
 					<ul style="margin: 10px 0 20px; padding-left: 20px; font-size: 16px; line-height: 1.8;">
-						<li>The bank does not allow the category of "cryptocurrency transaction"</li>
-						<li>Credit card companies block encrypted purchases.</li>
-						<li>Local regulatory restrictions</li>
-						<li>The exchange requires a high KYC</li>
-						<li>Exchange withdrawal fees are high.</li>
-						<li>There is no stable currency distribution channel in the local area.</li>
-						<li>Some countries do not have legal encryption exchanges.</li>
+						<li v-for="(reason, index) in $t('common.index.whyCantBuyReasons')" :key="index">{{ reason }}</li>
 					</ul>
 					<p style="margin: 6px 0; font-size: 16px; line-height: 1.8;">
-						Dex: The value of OFX is to help these people cross financial barriers and use French currency
-						directly.
+						{{ $t('common.index.valueProposition') }}
 					</p>
-					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">V. Safety and
-						supervision (focusing on increasing trust)</p>
+					<p style="margin: 16px 0 8px; font-size: 20px; line-height: 1.6; font-weight: 600;">{{ $t('common.index.safetyTitle') }}</p>
 					<p style="margin: 6px 0; font-size: 16px; line-height: 1.8;">
-						Based on the concept of OFX system, it emphasizes supervision, compliance and transparent
-						process.
+						{{ $t('common.index.safetyIntro') }}
 					</p>
 					<ul style="margin: 10px 0 20px; padding-left: 20px; font-size: 16px; line-height: 1.8;">
-						<li>All capital flows have been audited by AML and KYC.</li>
-						<li>The user's receiving bank needs to be verified.</li>
-						<li>The whole process can be traced and audited.</li>
+						<li v-for="(feature, index) in $t('common.index.safetyFeatures')" :key="index">{{ feature }}</li>
 					</ul>
-					<div class="grid-container" style="padding-top: 50px; cursor: pointer;"
-						onclick="window.location.href='/index/exchange/'">
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/europe.png"
-								alt="歐洲"><span>歐洲</span></div>
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/unitedstate.png"
-								alt="美國"><span>美國</span></div>
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/canada.png"
-								alt="加拿大"><span>加拿大</span></div>
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/singapore.png"
-								alt="新加坡"><span>新加坡</span></div>
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/switzerland.png"
-								alt="瑞士"><span>瑞士</span></div>
-						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/unitedkingdom.png"
-								alt="英國"><span>英國</span></div>
+					<div class="grid-container" style="padding-top: 50px; cursor: pointer;" onclick="window.location.href='/index/exchange/'">
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/europe.png" :alt="$t('common.index.regions.europe')"><span>{{ $t('common.index.regions.europe') }}</span></div>
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/unitedstate.png" :alt="$t('common.index.regions.unitedStates')"><span>{{ $t('common.index.regions.unitedStates') }}</span></div>
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/canada.png" :alt="$t('common.index.regions.canada')"><span>{{ $t('common.index.regions.canada') }}</span></div>
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/singapore.png" :alt="$t('common.index.regions.singapore')"><span>{{ $t('common.index.regions.singapore') }}</span></div>
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/switzerland.png" :alt="$t('common.index.regions.switzerland')"><span>{{ $t('common.index.regions.switzerland') }}</span></div>
+						<div class="grid-item"><img src="https://www.currencyexch.top/statics/new/img/unitedkingdom.png" :alt="$t('common.index.regions.unitedKingdom')"><span>{{ $t('common.index.regions.unitedKingdom') }}</span></div>
 					</div>
 					<div class="info-card">
 						<div class="icon"><i class="fas fa-paper-plane"></i></div>
-						<h3>易於使用</h3>
-						<p>在線兌換超過150個國家的貨幣</p>
+						<h3>{{ $t('common.index.infoCards[0].title') }}</h3>
+						<p>{{ $t('common.index.infoCards[0].description') }}</p>
 					</div>
 					<div class="info-card">
 						<div class="icon"><i class="fas fa-clock"></i></div>
-						<h3>快速、可靠的轉賬</h3>
-						<p>即時兌換實時市場匯率</p>
+						<h3>{{ $t('common.index.infoCards[1].title') }}</h3>
+						<p>{{ $t('common.index.infoCards[1].description') }}</p>
 					</div>
 					<div class="info-card">
 						<div class="icon"><i class="fas fa-lock"></i></div>
-						<h3>值得信賴且安全</h3>
-						<p>經授權監管的P2P機構</p>
+						<h3>{{ $t('common.index.infoCards[2].title') }}</h3>
+						<p>{{ $t('common.index.infoCards[2].description') }}</p>
 					</div>
 				</div>
 			</view>
@@ -148,14 +96,14 @@
 
 		<!-- 公告弹窗 -->
 		<u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
-				<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
-				<scroll-view class="" style="height: 600rpx;">
-					<view class="popup-content">
-						<h3>{{ latest.title }}</h3>
-						<u-parse :html="latest.content"></u-parse>
-					</view>
-				</scroll-view>
-			
+			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
+			<scroll-view class="" style="height: 600rpx;">
+				<view class="popup-content">
+					<h3>{{ latest.title }}</h3>
+					<u-parse :html="latest.content"></u-parse>
+				</view>
+			</scroll-view>
+
 		</u-popup>
 
 	</view>

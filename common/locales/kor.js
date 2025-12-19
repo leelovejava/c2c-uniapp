@@ -24,9 +24,17 @@ export default {
 			label: ["환영합니다"],
 			broadcast: "회원 {member}님, {grade}이 되신 것을 축하드립니다",
 			menu: ["자금 기록", "초보자 안내", "초대 등록", "고객 서비스 문의"],
-			noticeTitle: "최신 공지사항",
-			msg: "미션은 아직 개방되지 않았습니다",
-			video: "비디오 안내가 현재 없습니다"
+		noticeTitle: "최신 공지사항",
+		msg: "미션은 아직 개방되지 않았습니다",
+		video: "비디오 안내가 현재 없습니다",
+		hero: {
+			title: "온라인 교환의 쉬운 방법",
+			subtitle: "전 세계적으로 돈을 이동시키는 것이 우리의 일입니다",
+			description: "우리는 고액의 은행 수수료 없이 기업과 개인이 안전하게 돈을 보내고 받을 수 있도록 도와줍니다.",
+			credentials1: "25년 이상의 경험, 2013년부터 ASX에 상장",
+			credentials2: "전 세계 50개 이상의 규제 기관에 의해 규제",
+			button: "시작하기 →"
+		}
 		},
 		
 		hall: {
@@ -117,7 +125,142 @@ export default {
 		common7: ["문제를 해결하지 못했다면 온라인 고객 센터에 문의하세요", "고객 센터에 문의하기", "문의하기 클릭", "설정", "전체", "친구 초대", "팀 인원", "이번 달 추가", "등록 일시", "하위 인원"],
 		hall4: ["회원 정보", "회원", "계정 정보", "거래 완료", "성공적으로 완료했습니다", "총 가격", "구매", "판매"],
 		task3: ["전체", "미지급", "지급 완료"],
-		my: ["정말로 계정에서 로그아웃 하시겠습니까?"]
-
+		my: ["정말로 계정에서 로그아웃 하시겠습니까?"],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT를 법정 화폐로 변환",
+			intro: "많은 지역의 사용자들에게 USDT(스테이블코인)를 쉽게 구매할 수 없는 것은 보편적인 문제입니다. 이는 결제 채널 제한, 은행 제한, 지역 규제 또는 합법 거래소 부족으로 인해 발생합니다. DEX:OFX는 안전하고 합법적이며 높은 유동성을 제공하여 사용자가 디지털 자산을 지역 법정 화폐로 원활하게 변환할 수 있도록 돕습니다.",
+			suitableUsersTitle: "첫째, 어떤 사용자에게 적합한가?",
+			suitableUsersIntro: "DEX:OFX의 법정 화폐 교환 메커니즘은 다음과 같은 그룹에게 특히 적합합니다:",
+			suitableUsers: [
+				"지역 은행이 암호 화폐 구매를 금지하거나 제한합니다.",
+				"신용/직불 카드로 거래소에서 USDT를 구매할 수 없습니다.",
+				"지역 거래소에 USDT 유동성이 부족합니다.",
+				"복잡한 KYC나 높은 수수료를 피하고 싶습니다.",
+				"디지털 자산을 지역 법정 화폐(EUR, CAD, USD, SGD, CHF 등)로 빠르게 변환하고 싶습니다."
+			],
+			coreFeaturesTitle: "둘째, DEX:OFX의 핵심 기능",
+			coreFeatures: [
+				{
+					title: "USDT → 법정 화폐 교환",
+					content: "사용자는 DEX:OFX의 지정된 지갑 주소로 USDT를 전송할 수 있으며, 시스템은 실시간 환율에 따라 지정된 법정 화폐로 자동 변환하고 협력 금융 네트워크를 통해 송금을 완료합니다.",
+					supportedCurrenciesTitle: "지원되는 법정 화폐(예시):",
+					supportedCurrencies: [
+						"미국 달러 USD",
+						"홍콩 달러 HKD",
+						"싱가포르 달러 SGD",
+						"대만 달러 TWD",
+						"유로 EUR",
+						"호주 달러 AUD"
+					]
+				},
+				{
+					title: "거래소 계정이 필요 없습니다.",
+					content: "coinbase-crypto.com과 같은 중앙 집중식 거래소가 필요 없습니다. 특히 거래소에 등록할 수 없는 사용자에게 진입 장벽을 낮춥니다."
+				},
+				{
+					title: "글로벌 교차 경계 수신 기능",
+					content: "OFX의 글로벌 교차 경계 결제 네트워크를 기반으로 빠른 결제를 실현할 수 있습니다;",
+					transferTime: [
+						"동일 국가 내 송금: 당일 또는 1영업일",
+						"국제 송금: 1-3영업일",
+						"(지역 은행에 따라 다름)"
+					]
+				},
+				{
+					title: "투명한 환율과 낮은 수수료.",
+					content: "교환은 실시간 시세를 사용하며 수수료는 고정되어 투명하므로 숨겨진 수수료를 피할 수 있습니다."
+				}
+			],
+			exchangeProcessTitle: "셋째, 교환 과정 예시",
+			exchangeProcessIntro: "다음은 일반적인 교환 과정입니다(비즈니스 요구에 따라 조정 가능):",
+			exchangeProcess: [
+				{
+					title: "교환 신청 제출",
+					steps: [
+						"사용자가 법정 화폐, 금액 및 수신 은행을 선택합니다.",
+						"시스템이 USDT 수금 주소(TRC20 또는 ERC20)를 생성합니다.",
+						"사용자가 USDT 또는 다른 암호 화폐를 전송합니다."
+					]
+				},
+				{
+					title: "DEX:OFX가 교환을 수행",
+					steps: ["시스템이 교환 가격을 실시간으로 필요한 법정 화폐로 변환합니다."]
+				},
+				{
+					title: "법정 화폐 입금",
+					steps: ["국제 금융 네트워크 또는 지역 은행 시스템을 통해 사용자 계좌에 송금합니다."]
+				}
+			],
+			whyCantBuyTitle: "넷째, 많은 사람들이 USDT를 구매할 수 없는 이유는?",
+			whyCantBuyReasons: [
+				"은행이 \"암호 화폐 거래\" 카테고리를 허용하지 않습니다",
+				"신용 카드 회사가 암호 구매를 차단합니다.",
+				"지역 규제 제한",
+				"거래소가 높은 KYC를 요구합니다",
+				"거래소 출금 수수료가 높습니다.",
+				"지역에 안정 화폐 유통 채널이 없습니다.",
+				"일부 국가에는 합법적인 암호 거래소가 없습니다."
+			],
+			valueProposition: "Dex:OFX의 가치는 이러한 사람들이 금융 장벽을 넘어 법정 화폐를 직접 사용할 수 있도록 돕는 것입니다.",
+			safetyTitle: "다섯째, 안전성과 규제(신뢰 증가에 중점)",
+			safetyIntro: "OFX 시스템의 개념을 기반으로 규제, 준수 및 투명한 프로세스를 강조합니다.",
+			safetyFeatures: [
+				"모든 자금 흐름은 AML과 KYC에 의해 감사되었습니다.",
+				"사용자의 수신 은행은 확인이 필요합니다.",
+				"전체 프로세스는 추적 및 감사가 가능합니다."
+			],
+			regions: {
+				europe: "유럽",
+				unitedStates: "미국",
+				canada: "캐나다",
+				singapore: "싱가포르",
+				switzerland: "스위스",
+				unitedKingdom: "영국"
+			},
+			infoCards: [
+				{
+					title: "사용하기 쉽습니다",
+					description: "전 세계 150여 개 국가의 통화를 온라인으로 교환할 수 있습니다"
+				},
+				{
+					title: "빠르고 신뢰할 수 있는 송금",
+					description: "실시간 시장 환율로 즉시 교환"
+				},
+				{
+					title: "신뢰할 수 있고 안전합니다",
+					description: "허가된 규제 P2P 기관"
+				}
+			]
+		},
+		navbar: {
+			title: "Dex:OFX",
+			home: "홈",
+			market: "시장",
+			trade: "거래",
+			wallet: "지갑",
+			profile: "프로필"
+		},
+		order: {
+			recordsTitle: "기록",
+			tabs: {
+				all: "전체",
+				pending: "처리 중",
+				completed: "완료됨",
+				limitOrder: "지정가 주문"
+			},
+			status: {
+				completed: "완료됨",
+				pending: "처리 중",
+				processing: "처리 중"
+			},
+			details: {
+				orderId: "주문 ID",
+				orderType: "주문 유형",
+				exchangeCurrency: "환전 통화",
+				exchangeEarnings: "환전 수익",
+				expectedReturn: "예상 수익"
+			}
+		},
 	}
 }

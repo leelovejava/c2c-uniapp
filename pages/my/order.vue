@@ -3,14 +3,14 @@
 		<view class="a-pr a-crfff" style="min-height: 100vh; z-index: 3;">
 			<navbar />
 			<div class="main-content">
-				<h1 class="records-title">記錄</h1>
+				<h1 class="records-title">{{ i18n.order.recordsTitle }}</h1>
 				<div class="records-tabs"><button :class="['tab-link', { active: activeTab === 'all' }]"
-						@click="switchTab('all')" data-status="all">全部</button><button
+						@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
 						:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
-						data-status="5">待處理</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
-						@click="switchTab('completed')" data-status="1">已完成</button><button
+						data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
+						@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
 						:class="['tab-link', { active: activeTab === 'limit_order' }]" @click="switchTab('limit_order')"
-						data-type="limit_order">限價訂單</button></div>
+						data-type="limit_order">{{ i18n.order.tabs.limitOrder }}</button></div>
 				<div class="order-list">
 					<div v-for="item in list" :key="item.id" class="order-item">
 						<div class="order-header">
@@ -18,14 +18,14 @@
 							<div class="order-status">
 								<span
 									:class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
-									{{ item.status === '1' ? '已完成' : item.status === '5' ? '待處理' : '處理中' }}
+									{{ item.status === '1' ? i18n.order.status.completed : item.status === '5' ? i18n.order.status.pending : i18n.order.status.processing }}
 								</span>
 							</div>
 						</div>
 						<div class="order-body">
 							<div class="order-meta">
-								<p class="order-id">{{ item.order_no }}</p>
-								<p class="order-type">{{ item.order_type }}</p>
+								<p class="order-id">{{ i18n.order.details.orderId }}: {{ item.order_no }}</p>
+								<p class="order-type">{{ i18n.order.details.orderType }}: {{ item.order_type }}</p>
 							</div>
 							<div class="exchange-info">
 								<div class="currencies">
@@ -37,11 +37,11 @@
 										}}</span></div>
 							</div>
 							<div class="exchange-details">
-								<div class="detail-row"><span>兌換貨幣</span><span>{{ item.exchange_currency }} {{ item.to
+								<div class="detail-row"><span>{{ i18n.order.details.exchangeCurrency }}</span><span>{{ item.exchange_currency }} {{ item.to
 										}}</span></div>
-								<div class="detail-row"><span>兌換收益</span><span>{{ item.exchange_earnings }} {{ item.from
+								<div class="detail-row"><span>{{ i18n.order.details.exchangeEarnings }}</span><span>{{ item.exchange_earnings }} {{ item.from
 										}}</span></div>
-								<div class="detail-row"><span>預期回報</span><span>{{ item.expected_return }} {{ item.to
+								<div class="detail-row"><span>{{ i18n.order.details.expectedReturn }}</span><span>{{ item.expected_return }} {{ item.to
 										}}</span></div>
 							</div>
 						</div>
@@ -51,7 +51,7 @@
 
 		</view>
 		<view class="a-pf a-w" style="top: 0;left: 0;height: 100vh;z-index: 0;z-index: 1; ">
-			<video class="a-w a-h" objectFit="cover" src=/static/image/fz/ea1.mp4"
+			<video class="a-w a-h" objectFit="cover" src="/static/image/fz/ea1.mp4"
 				:controls="false" :show-center-play-btn="false" :show-play-btn="false" :show-fullscreen-btn="false"
 				:enable-progress-gesture="false" autoplay loop muted></video>
 		</view>
@@ -75,6 +75,11 @@ export default {
 			},
 			list: [],
 		};
+	},
+	computed: {
+		i18n() {
+			return this.$t("common")
+		}
 	},
 	onLoad(options) {
 		this.init()

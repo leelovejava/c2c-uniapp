@@ -4,16 +4,16 @@
 			<navbar />
 			<div class="main-content">
 				<div class="info-card" style="color: white;">
-					<div class="info-item"><span>總訂單數</span>
+					<div class="info-item"><span>{{ $t('common.exchange.infoCard.totalOrders') }}</span>
 						<span>
 							{{ exchangeinfo.today_orders }}
 						</span>
 					</div>
-					<div class="info-item"><span>總利潤</span><span>
+					<div class="info-item"><span>{{ $t('common.exchange.infoCard.totalProfit') }}</span><span>
 							{{ exchangeinfo.expected_profit }}
 							USD</span>
 					</div>
-					<div class="info-item"><span class="info-label">總餘額</span>
+					<div class="info-item"><span class="info-label">{{ $t('common.exchange.infoCard.totalBalance') }}</span>
 						<div class="balance-container">
 							<span class="balance-amount">
 								{{ exchangeinfo.balance }}
@@ -22,19 +22,19 @@
 						</div>
 					</div>
 					<div class="info-item">
-						<span>處理中</span>
+						<span>{{ $t('common.exchange.infoCard.processing') }}</span>
 						<span>
 							{{ exchangeinfo.expected_profit }} USD
 						</span>
 					</div>
 					<div class="orders">
-						訂單 ({{ exchangeinfo.today_orders }}/{{ exchangeinfo.daily_limit }})
+						{{ $t('common.exchange.infoCard.orders') }} ({{ exchangeinfo.today_orders }}/{{ exchangeinfo.daily_limit }})
 					</div>
 					<div class="actions">
 						<button class="exchange-btn"
 							style="font-size: 14px; width: calc(50% - 16px); margin: 0 8px; box-sizing: border-box; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 calc(50% - 16px); transform: translateX(-28px);"
-							@click="qrdh">確認兌換</button>
-						<view @click="$u.route('/pages/my/order')" class="records-link">記錄</view>
+							@click="qrdh">{{ $t('common.exchange.infoCard.confirmExchange') }}</button>
+						<view @click="$u.route('/pages/my/order')" class="records-link">{{ $t('common.exchange.infoCard.records') }}</view>
 					</div>
 				</div>
 			</div>
@@ -42,26 +42,17 @@
 			<div class="modal" v-if="showModal">
 				<div class="modal-content">
 					<div class="progress-stepper">
-						<div class="step active" id="step-1">
+						<div v-for="(step, index) in $t('common.exchange.modal.steps')" :key="index" class="step active" :id="'step-' + (index + 1)">
 							<div class="step-dot"></div>
-							<div class="step-label">Match Order</div>
-							<div class="progress-line"></div>
-						</div>
-						<div class="step active" id="step-2">
-							<div class="step-dot"></div>
-							<div class="step-label">Pending</div>
-							<div class="progress-line"></div>
-						</div>
-						<div class="step active" id="step-3">
-							<div class="step-dot"></div>
-							<div class="step-label">Exchanged</div>
+							<div class="step-label">{{ step }}</div>
+							<div v-if="index < $t('common.exchange.modal.steps').length - 1" class="progress-line"></div>
 						</div>
 					</div>
 					<div class="main-progress-bar">
 						<u-line-progress active-color="#4CAF50" height="20" :percent="100"
 								:show-percent="false"></u-line-progress>
 					</div>
-					<div class="progress-percentage">(100%)</div>
+					<div class="progress-percentage">{{ $t('common.exchange.modal.percentage') }}</div>
 					<div class="currency-exchange">
 						<div class="currency">
 							<img :src="'https://flagcdn.com/'+processString(swap.from)+'.svg'" alt="USD" id="fromCurrencyFlag">
@@ -80,27 +71,27 @@
 					</div>
 					<div class="order-details">
 						<div class="info-item">
-							<span>Exchanged Currency</span>
+							<span>{{ $t('common.exchange.modal.exchangedCurrency') }}</span>
 							<span id="exchangedCurrency">
 							{{swap.exchange_currency}}
 							</span>
 						</div>
 						<div class="info-item">
-							<span>Exchanged Rate</span>
+							<span>{{ $t('common.exchange.modal.exchangedRate') }}</span>
 							<span id="exchangedRate">
 							{{swap.exchange_rate}}
 							</span>
 						</div>
 						<div class="info-item">
-							<span>Exchanged Amount</span>
+							<span>{{ $t('common.exchange.modal.exchangedAmount') }}</span>
 							<span id="exchangedAmount">
 							{{swap.exchange_amount}}
 						</span></div>
-						<div class="info-item"><span>Exchange Earnings</span><span id="exchangeEarnings">
+						<div class="info-item"><span>{{ $t('common.exchange.modal.exchangeEarnings') }}</span><span id="exchangeEarnings">
 							{{swap.exchange_earnings}}
 						</span>
 						</div>
-						<div class="info-item"><span>Order Type</span>
+						<div class="info-item"><span>{{ $t('common.exchange.modal.orderType') }}</span>
 							<span id="order_type">
 							{{swap.order_type}}
 						</span>
@@ -109,7 +100,7 @@
 							{{swap.expected_return}}
 						</span></div>
 					</div>
-					<button class="close-btn" @click="showModal = false">Close</button>
+					<button class="close-btn" @click="showModal = false">{{ $t('common.exchange.modal.close') }}</button>
 				</div>
 			</div>
 
@@ -178,8 +169,6 @@ export default {
 		},
 		switchTab(tabName) {
 			this.activeTab = tabName;
-			// 这里可以添加根据标签切换加载不同数据的逻辑
-			console.log('切换到标签:', tabName);
 		}
 	},
 }

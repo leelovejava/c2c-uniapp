@@ -26,7 +26,15 @@ broadcast: "Parabéns ao membro {member} por se tornar {grade}",
 menu: ["Registro de Fundos", "Tutorial para iniciantes", "Registro de convites", "Suporte ao cliente"],
 noticeTitle: "Último Aviso",
 msg: "Tarefa não disponível",
-video: "Tutorial em vídeo não disponível"
+video: "Tutorial em vídeo não disponível",
+hero: {
+  title: "A forma fácil de trocar online",
+  subtitle: "Mover dinheiro globalmente é o que fazemos",
+  description: "Ajudamos empresas e indivíduos a enviar e receber dinheiro com segurança, sem taxas bancárias excessivas.",
+  credentials1: "Mais de 25 anos de experiência, listado na ASX desde 2013",
+  credentials2: "Regulamentado por mais de 50 órgãos reguladores globalmente",
+  button: "COMEÇAR →"
+}
 },
 hall: {
 default: ["Sala de negociação", "Saldo", "Comprar", "Vender", "Confirmar venda", "Lista de pedidos", "Pedidos de venda", "Vender para o comerciante", "Ordem pendente", "Comprar", "Vender"],
@@ -133,12 +141,163 @@ bind: [
 	],
 	
 	setting: [
-		"Meu histórico de publicações",
-		"Ordens de compra",
-		"Ordens de venda",
-	],
-	empty: [
-		"Não há dados disponíveis"
-	]
-},
+			"Meu histórico de publicações",
+			"Ordens de compra",
+			"Ordens de venda",
+		],
+		empty: [
+			"Não há dados disponíveis"
+		],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT é convertido em moeda legal",
+			intro: "Para usuários em muitas áreas, é um problema comum não conseguirem comprar USDT (moeda estável) facilmente devido a canais de pagamento limitados, restrições bancárias, supervisão local ou falta de exchanges conformes. O DEX:OFX oferece uma maneira segura, conforme e altamente líquida para ajudar os usuários a converter ativos digitais em moeda legal local.",
+			suitableUsersTitle: "Primeiro, quais usuários são adequados?",
+			suitableUsersIntro: "O mecanismo de câmbio de moeda legal do DEX:OFX é especialmente adequado para os seguintes grupos:",
+			suitableUsers: [
+				"Bancos locais proíbem ou restringem a compra de criptomoedas.",
+				"Cartões de crédito/débito não podem comprar USDT na exchange.",
+				"A exchange local carece de liquidez em USDT.",
+				"Deseja evitar KYC complicado ou altas taxas.",
+				"Deseja converter rapidamente ativos digitais em moeda legal local (EUR, CAD, USD, SGD, CHF, etc.)."
+			],
+			coreFeaturesTitle: "Segundo, a função central do DEX:OFX",
+			coreFeatures: [
+				{
+					title: "Câmbio USDT → Moeda legal",
+					content: "Os usuários podem transferir USDT para o endereço de carteira designado do DEX:OFX, e o sistema converterá automaticamente em moeda legal designada de acordo com a taxa de câmbio em tempo real, concluindo a transferência através da rede financeira cooperativa.",
+					supportedCurrenciesTitle: "Moedas legais suportadas incluem (mas não se limitam a):",
+					supportedCurrencies: [
+						"Dólares USD",
+						"HKD",
+						"SGD",
+						"TWD",
+						"Euro EUR",
+						"Dólar Australiano AUD"
+					]
+				},
+				{
+					title: "Não é necessário uma conta de exchange.",
+					content: "Não é necessário exchanges centralizadas como coinbase-crypto.com. Baixa o limite, especialmente para usuários que não podem se registrar na exchange."
+				},
+				{
+					title: "Capacidade de recebimento global transborda",
+					content: "Contando com a rede global de pagamentos transborda do OFX, podemos realizar pagamentos rápidos;",
+					transferTime: [
+						"Transferência no mesmo país: mesmo dia ou 1 dia útil",
+						"Remessa internacional: 1-3 dias úteis",
+						"(dependendo do banco regional)"
+					]
+				},
+				{
+					title: "Taxa de câmbio transparente e baixa taxa de serviço.",
+					content: "A exchange adota preço de mercado em tempo real, e a taxa é fixa e transparente, para evitar ocultar taxas de serviço."
+				}
+			],
+			exchangeProcessTitle: "III. Exemplo de processo de câmbio",
+			exchangeProcessIntro: "O seguinte é o processo geral de câmbio (que pode ser ajustado de acordo com as necessidades do seu negócio):",
+			exchangeProcess: [
+				{
+					title: "Enviar solicitação de câmbio",
+					steps: [
+						"O usuário seleciona a moeda legal, valor e banco receptivo.",
+						"O sistema gera o endereço de recebimento USDT (TRC20 ou ERC20).",
+						"Usuário transfere para USDT ou outra criptomoeda."
+					]
+				},
+				{
+					title: "DEX:OFX realiza o câmbio",
+					steps: ["O sistema converte o preço de câmbio em moeda legal necessária em tempo real."]
+				},
+				{
+					title: "Moeda legal na conta",
+					steps: ["Remessa para a conta do usuário através da rede financeira internacional ou sistema bancário local."]
+				}
+			],
+			whyCantBuyTitle: "4. Por que muitas pessoas não conseguem comprar USDT?",
+			whyCantBuyReasons: [
+				"O banco não permite a categoria de \"transação de criptomoeda\"",
+				"Empresas de cartão de crédito bloqueiam compras criptografadas.",
+				"Restrições regulatórias locais",
+				"A exchange requer um KYC alto",
+				"As taxas de saque da exchange são altas.",
+				"Não há canal de distribuição de moeda estável na área local.",
+				"Alguns países não têm exchanges de criptografia legais."
+			],
+			valueProposition: "O valor do Dex:OFX é ajudar essas pessoas a cruzar barreiras financeiras e usar moeda legal diretamente.",
+			safetyTitle: "V. Segurança e supervisão (focando em aumentar a confiança)",
+			safetyIntro: "Baseado no conceito do sistema OFX, enfatiza supervisão, conformidade e processo transparente.",
+			safetyFeatures: [
+				"Todos os fluxos de capital foram auditados por AML e KYC.",
+				"O banco receptivo do usuário precisa ser verificado.",
+				"Todo o processo pode ser rastreado e auditado."
+			]
+		},
+		navbar: {
+			inviteCode: "Código de Convite",
+			copy: "Copiar",
+			creditScore: "Pontuação de Crédito",
+			totalBalance: "Saldo Total",
+			currencyExchange: "Troca de Moeda",
+			memberLevel: "Nível de Membro",
+			promotions: "Promoções",
+			aboutUs: "Sobre Nós",
+			faqs: "FAQ",
+			certification: "Certificação",
+			recharge: "Recarregar",
+			bankCards: "Cartões Bancários",
+			records: "Registros",
+			withdraw: "Sacar",
+			contactUs: "Contate-Nos",
+			inviteFriends: "Convidar Amigos",
+			logout: "Sair"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Total de Pedidos",
+				totalProfit: "Lucro Total",
+				totalBalance: "Saldo Total",
+				processing: "Processando",
+				orders: "Pedidos",
+				confirmExchange: "Confirmar Troca",
+				records: "Registros"
+			},
+			modal: {
+				steps: [
+					"Associar Pedido",
+					"Processando",
+					"Trocado"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Moeda Trocada",
+				exchangedRate: "Taxa de Câmbio",
+				exchangedAmount: "Valor Trocado",
+				exchangeEarnings: "Ganhos da Troca",
+				orderType: "Tipo de Pedido",
+				expectedReturn: "Retorno Esperado",
+				close: "Fechar"
+			}
+		},
+		order: {
+			recordsTitle: "Registros",
+			tabs: {
+				all: "Todos",
+				pending: "Pendente",
+				completed: "Concluído",
+				limitOrder: "Ordem Limitada"
+			},
+			status: {
+				completed: "Concluído",
+				pending: "Pendente",
+				processing: "Processando"
+			},
+			details: {
+				orderId: "ID do Pedido",
+				orderType: "Tipo de Pedido",
+				exchangeCurrency: "Moeda Trocada",
+				exchangeEarnings: "Ganhos da Troca",
+				expectedReturn: "Retorno Esperado"
+			}
+		}
+	}
 }

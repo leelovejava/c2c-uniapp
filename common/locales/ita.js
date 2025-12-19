@@ -26,7 +26,15 @@ export default {
 		  menu: ["Registro delle transazioni", "Guida per principianti", "Invita amici", "Assistenza online"],
 		  noticeTitle: "Ultimi annunci",
 		  msg: "Attività non disponibile",
-		  video: "Video tutorial non disponibili"
+		  video: "Video tutorial non disponibili",
+		  hero: {
+			title: "Il modo semplice per scambiare online",
+			subtitle: "Muoviamo denaro a livello globale",
+			description: "Aiutiamo aziende e individui a inviare e ricevere denaro in modo sicuro, senza le elevate commissioni bancarie.",
+			credentials1: "25+ anni di esperienza, quotata alla ASX dal 2013",
+			credentials2: "Regolamentata da oltre 50 autorità di controllo a livello mondiale",
+			button: "INIZIA →"
+		  }
 		},
 		hall: {
 		  default: ["Hall delle transazioni", "Saldo", "Acquista", "Vendi", "Conferma vendita", "Elenco ordini", "Ordini di vendita", "Vendita ai commercianti", "In attesa", "Compra", "Vendi ora"],
@@ -114,6 +122,179 @@ export default {
 		common7: ["Se non riesci a risolvere il tuo problema, contatta il servizio clienti online", "Contatta il servizio clienti", "Clicca per consultare", "Impostazioni", "Tutti", "Invita amici", "Numero di squadra", "Nuovi aggiunti questo mese", "Data di registrazione", "Numero di sottoposti"],
 		hall4: ["La tua identità", "Membro", "Informazioni del tuo account", "Transazione completata con successo", "Hai completato con successo", "Prezzo totale", "Acquista", "Vendi"],
 		task3: ["Tutti", "Non pagato", "Pagato"],
-		my: ["Sei sicuro di voler uscire dal tuo account?"]
+		my: ["Sei sicuro di voler uscire dal tuo account?"],
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT viene convertito in valuta legale",
+			intro: "Per gli utenti in molte aree, è un problema comune non poter acquistare facilmente USDT (valuta stabile) a causa di canali di pagamento limitati, restrizioni bancarie, sorveglianza locale o mancanza di exchange conformi. DEX:OFX offre un modo sicuro, conforme e altamente liquido per aiutare gli utenti a convertire agevolmente gli asset digitali in valuta legale locale.",
+			suitableUsersTitle: "Primo, quali utenti sono adatti?",
+			suitableUsersIntro: "Il meccanismo di exchange di valuta legale DEX:OFX è particolarmente adatto ai seguenti gruppi:",
+			suitableUsers: [
+				"Le banche locali proibiscono o limitano l'acquisto di criptovalute.",
+				"Le carte di credito/debito non possono acquistare USDT sull'exchange.",
+				"L'exchange locale manca di liquidità USDT.",
+				"Vogliono evitare KYC complicati o costose formalità.",
+				"Vogliono convertire rapidamente gli asset digitali in valuta legale locale (EUR, CAD, USD, SGD, CHF, ecc.)."
+			],
+			coreFeaturesTitle: "Secondo, DEX: la funzione core di OFX",
+			coreFeatures: [
+				{
+					title: "Exchange USDT → Valuta legale",
+					content: "Gli utenti possono trasferire USDT all'indirizzo wallet designato di DEX:OFX, e il sistema convertirà automaticamente in valuta legale designata secondo il tasso di cambio in tempo reale, e completterà il trasferimento attraverso la rete finanziaria cooperativa.",
+					supportedCurrenciesTitle: "La valuta legale supportata include (ma non è limitata a):",
+					supportedCurrencies: [
+						"USD dollari",
+						"HKD dollari hongkonghesi",
+						"SGD dollari di Singapore",
+						"TWD dollari taiwanesi",
+						"EUR euro",
+						"AUD dollari australiani"
+					]
+				},
+				{
+					title: "Nessun account exchange richiesto.",
+					content: "Non è necessaria alcuna exchange centralizzata come coinbase-crypto.com. Riduciamo la soglia, soprattutto per gli utenti che non possono registrarsi all'exchange."
+				},
+				{
+					title: "Capacità di ricevimento internazionale transfrontaliero",
+					content: "Sfruttando la rete di pagamenti transfrontalieri globale di OFX, possiamo realizzare pagamenti rapidi;",
+					transferTime: [
+						"Trasferimento nello stesso paese: stesso giorno o 1 giorno lavorativo",
+						"Bonifico internazionale: 1-3 giorni lavorativi",
+						"(a seconda della banca regionale)"
+					]
+				},
+				{
+					title: "Tasso di cambio trasparente e commissioni basse.",
+					content: "L'exchange adotta il prezzo di mercato in tempo reale, e la commissione è fissa e trasparente, evitando di nascondere le commissioni."
+				}
+			],
+			exchangeProcessTitle: "III. Esempio di processo di exchange",
+			exchangeProcessIntro: "Ecco il processo di exchange generale (può essere adattato secondo le tue esigenze commerciali):",
+			exchangeProcess: [
+				{
+					title: "Inviare una richiesta di exchange",
+					steps: [
+						"L'utente seleziona la valuta legale, l'importo e la banca ricevente.",
+						"Il sistema genera l'indirizzo di ricezione USDT (TRC20 o ERC20).",
+						"L'utente effettua il trasferimento di USDT o altra criptovaluta."
+					]
+				},
+				{
+					title: "DEX:OFX esegue l'exchange",
+					steps: ["Il sistema converte il prezzo di exchange nella valuta legale richiesta in tempo reale."]
+				},
+				{
+					title: "Valuta legale sul conto",
+					steps: ["Bonifico sul conto utente attraverso la rete finanziaria internazionale o il sistema bancario locale."]
+				}
+			],
+			whyCantBuyTitle: "4. Perché molte persone non possono acquistare USDT?",
+			whyCantBuyReasons: [
+				"La banca non permette la categoria di \"transazione di criptovalute\"",
+				"Le compagnie di carte di credito bloccano gli acquisti di criptovalute.",
+				"Restrizioni normativa locali",
+				"L'exchange richiede un KYC elevato",
+				"Le commissioni di prelievo dell'exchange sono elevate.",
+				"Non ci sono canali di distribuzione di valute stabili nel territorio.",
+				"Alcuni paesi non hanno exchange di criptovalute legali."
+			],
+			valueProposition: "Il valore di Dex:OFX è aiutare queste persone a superare le barriere finanziarie e ad usare direttamente la valuta legale.",
+			safetyTitle: "V. Sicurezza e supervisione (concentrandosi sull'aumento della fiducia)",
+			safetyIntro: "Basato sul concetto del sistema OFX, mette l'accento sulla supervisione, la conformità e il processo trasparente.",
+			safetyFeatures: [
+				"Tutti i flussi di capitale sono stati verificati tramite AML e KYC.",
+				"La banca ricevente dell'utente necessita di essere verificata.",
+				"Tutto il processo è tracciabile e verificabile."
+			],
+			regions: {
+				europe: "Europa",
+				unitedStates: "Stati Uniti",
+				canada: "Canada",
+				singapore: "Singapore",
+				switzerland: "Svizzera",
+				unitedKingdom: "Regno Unito"
+			},
+			infoCards: [
+				{
+					title: "Facile da usare",
+					description: "Scambia valute da oltre 150 paesi online"
+				},
+				{
+					title: "Trasferimenti veloci e affidabili",
+					description: "Scambio istantaneo con tariffe di mercato in tempo reale"
+				},
+				{
+					title: "Affidabile e sicuro",
+					description: "Istituzione P2P autorizzata e regolamentata"
+				}
+			]
+		},
+		navbar: {
+			inviteCode: "Codice di invito",
+			copy: "Copia",
+			creditScore: "Punteggio di credito",
+			totalBalance: "Bilancio totale",
+			currencyExchange: "Conversione valuta",
+			memberLevel: "Livello membro",
+			promotions: "Promozioni",
+			aboutUs: "Chi siamo",
+			faqs: "FAQ",
+			certification: "Certificazione",
+			recharge: "Ricarica",
+			bankCards: "Carte bancarie",
+			records: "Registri",
+			withdraw: "Prelievo",
+			contactUs: "Contattaci",
+			inviteFriends: "Invita amici",
+			logout: "Esci"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Ordini totali",
+				totalProfit: "Profitto totale",
+				totalBalance: "Bilancio totale",
+				processing: "In elaborazione",
+				orders: "Ordini",
+				confirmExchange: "Conferma scambio",
+				records: "Registri"
+			},
+			modal: {
+				steps: [
+					"Abbina ordine",
+					"In elaborazione",
+					"Scambiato"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Valuta scambiata",
+				exchangedRate: "Tasso di cambio",
+				exchangedAmount: "Importo scambiato",
+				exchangeEarnings: "Guadagno dallo scambio",
+				orderType: "Tipo di ordine",
+				expectedReturn: "Ritorno previsto",
+				close: "Chiudi"
+			}
+		},
+		order: {
+			recordsTitle: "Registri",
+			tabs: {
+				all: "Tutti",
+				pending: "In attesa",
+				completed: "Completato",
+				limitOrder: "Ordine limite"
+			},
+			status: {
+				completed: "Completato",
+				pending: "In attesa",
+				processing: "In elaborazione"
+			},
+			details: {
+				orderId: "ID Ordine",
+				orderType: "Tipo di ordine",
+				exchangeCurrency: "Valuta scambiata",
+				exchangeEarnings: "Guadagno dallo scambio",
+				expectedReturn: "Ritorno previsto"
+			}
+		}
 	}
 }

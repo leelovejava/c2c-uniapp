@@ -23,10 +23,18 @@ export default {
 		home: {
 			label: ["欢迎"],
 			broadcast: "恭喜会员{member} 成为{grade}",
-			menu: ["资金日志", "新手教程", "邀请注册", "联系客服"],
-			noticeTitle: "最新公告",
-			msg: "任务未开放",
-			video: "暂无视频教程"
+		menu: ["资金日志", "新手教程", "邀请注册", "联系客服"],
+		noticeTitle: "最新公告",
+		msg: "任务未开放",
+		video: "暂无视频教程",
+		hero: {
+			title: "简单便捷的在线兑换方式",
+			subtitle: "我们专注于全球资金转移",
+			description: "我们帮助企业和个人安全地发送和接收资金，无需支付高额银行费用。",
+			credentials1: "25+年经验，自2013年在ASX上市",
+			credentials2: "受全球50+监管机构监管",
+			button: "开始使用 →"
+		}
 		},
 		hall: {
 			default: ["交易大厅", "余额", "我要买", "我要卖", "确认卖出", "订单列表", "卖出订单", "卖给商家", "挂单中", "买入", "去出售"],
@@ -163,7 +171,179 @@ export default {
 			],
 			empty: [
 				"暂无数据"
+			],
+			index: {
+				title: "DEX:OFX",
+				subtitle: "USDT兑换法定货币",
+				intro: "对于许多地区的用户来说，由于支付渠道有限、银行限制、当地监管或缺乏合规交易所等原因，无法轻松购买USDT（稳定币）是一个普遍问题。DEX:OFX提供了一种安全、合规且高流动性的方式，帮助用户将数字资产顺利兑换为当地法定货币。",
+				suitableUsersTitle: "一、哪些用户适合？",
+				suitableUsersIntro: "DEX:OFX的法币兑换机制特别适合以下人群：",
+				suitableUsers: [
+					"当地银行禁止或限制购买加密货币。",
+					"信用卡/借记卡无法在交易所购买USDT。",
+					"当地交易所USDT流动性不足。",
+					"想要避免复杂的KYC或高额手续费。",
+					"想要快速将数字资产转换为当地法定货币（欧元、加元、美元、新加坡元、瑞士法郎等）。"
+				],
+				coreFeaturesTitle: "二、DEX:OFX的核心功能",
+				coreFeatures: [
+					{
+						title: "USDT → 法币兑换",
+						content: "用户可以将USDT转账到DEX:OFX的指定钱包地址，系统会根据实时汇率自动转换为指定法定货币，并通过合作金融网络完成转账。",
+						supportedCurrenciesTitle: "支持的法定货币包括（但不限于）：",
+						supportedCurrencies: [
+							"美元 USD",
+							"港币 HKD",
+							"新加坡元 SGD",
+							"新台币 TWD",
+							"欧元 EUR",
+							"澳大利亚元 AUD"
+						]
+					},
+					{
+						title: "无需交易所账户",
+						content: "无需coinbase-crypto.com等中心化交易所账户。降低门槛，特别是针对无法注册交易所的用户。"
+					},
+					{
+						title: "全球跨境收款能力",
+						content: "依托OFX的全球跨境支付网络，实现快速到账；",
+						transferTime: [
+							"同一国家转账：当天或1个工作日",
+							"国际汇款：1-3个工作日",
+							"（取决于地区银行）"
+						]
+					},
+					{
+						title: "透明汇率，低手续费",
+						content: "采用实时市场价进行兑换，费用固定透明，避免隐藏手续费。"
+					}
+				],
+				exchangeProcessTitle: "三、兑换流程示例",
+				exchangeProcessIntro: "以下是一般兑换流程（可根据业务需求调整）：",
+				exchangeProcess: [
+					{
+						title: "提交兑换申请",
+						steps: [
+							"用户选择法定货币、金额和收款银行。",
+							"系统生成USDT收款地址（TRC20或ERC20）。",
+							"用户向USDT或其他加密货币转账。"
+						]
+					},
+					{
+						title: "DEX:OFX执行兑换",
+						steps: ["系统实时将兑换价格转换为所需法定货币。"]
+					},
+					{
+						title: "法定货币到账",
+						steps: ["通过国际金融网络或当地银行系统汇款到用户账户。"]
+					}
+				],
+				whyCantBuyTitle: "四、为什么很多人买不到USDT？",
+				whyCantBuyReasons: [
+					"银行不允许加密货币交易类别",
+					"信用卡公司阻止加密购买。",
+					"当地监管限制",
+					"交易所要求高KYC",
+					"交易所提款费用高。",
+					"当地没有稳定币分发渠道。",
+					"一些国家没有合法的加密交易所。"
+				],
+				valueProposition: "Dex:OFX的价值在于帮助这些人跨越金融障碍，直接使用法币。",
+			safetyTitle: "五、安全与监管（重点增加信任）",
+			safetyIntro: "基于OFX系统的理念，强调监管、合规和透明流程。",
+			safetyFeatures: [
+				"所有资金流动都经过AML和KYC审核。",
+				"用户的收款银行需要进行验证。",
+				"整个过程可追溯、可审计。"
+			],
+			regions: {
+				europe: "歐洲",
+				unitedStates: "美國",
+				canada: "加拿大",
+				singapore: "新加坡",
+				switzerland: "瑞士",
+				unitedKingdom: "英國"
+			},
+			infoCards: [
+				{
+					title: "易於使用",
+					description: "在線兌換超過150個國家的貨幣"
+				},
+				{
+					title: "快速、可靠的轉賬",
+					description: "即時兌換實時市場匯率"
+				},
+				{
+					title: "值得信賴且安全",
+					description: "經授權監管的P2P機構"
+				}
 			]
-			
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "總訂單數",
+				totalProfit: "總利潤",
+				totalBalance: "總餘額",
+				processing: "處理中",
+				orders: "訂單",
+				confirmExchange: "確認兌換",
+				records: "記錄"
+			},
+			modal: {
+				steps: [
+					"匹配訂單",
+					"處理中",
+					"已兌換"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "已兌換貨幣",
+				exchangedRate: "兌換匯率",
+				exchangedAmount: "兌換金額",
+				exchangeEarnings: "兌換收益",
+				orderType: "訂單類型",
+				expectedReturn: "預期收益",
+				close: "關閉"
+			}
+		},
+		order: {
+			recordsTitle: "记录",
+			tabs: {
+				all: "全部",
+				pending: "待处理",
+				completed: "已完成",
+				limitOrder: "限价订单"
+			},
+			status: {
+				completed: "已完成",
+				pending: "待处理",
+				processing: "处理中"
+			},
+			details: {
+				orderId: "订单号",
+				orderType: "订单类型",
+				exchangeCurrency: "兑换货币",
+				exchangeEarnings: "兑换收益",
+				expectedReturn: "预期回报"
+			}
+		},
+		navbar: {
+			inviteCode: "邀请码",
+			copy: "复制",
+			creditScore: "信誉分",
+			totalBalance: "总余额",
+			currencyExchange: "货币兑换",
+			memberLevel: "会员等级",
+			promotions: "优惠活动",
+			aboutUs: "关于我们",
+			faqs: "常见问题",
+			certification: "资质",
+			recharge: "充值",
+			bankCards: "银行卡",
+			records: "记录",
+			withdraw: "提现",
+			contactUs: "联系我们",
+			inviteFriends: "邀请好友",
+			logout: "注销"
+		}
 	}
 }

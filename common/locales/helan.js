@@ -219,6 +219,14 @@ export default {
 		homeJoinPopupTips: "Het activeren van de account om lid te worden moet ETH-verwerkingskosten betalen",
 		homeJoinPopupBtn: "Bevestigen",
 		homeMenuTitle: "FUNCTIE",
+		hero: {
+			title: "De eenvoudige manier om online te wisselen",
+			subtitle: "We verplaatsen geld wereldwijd",
+			description: "We helpen bedrijven en particulieren om veilig geld te verzenden en te ontvangen, zonder de overmatige bankkosten.",
+			credentials1: "25+ jaar ervaring, sinds 2013 genoteerd aan de ASX",
+			credentials2: "Gereguleerd door 50+ toezichthouders wereldwijd",
+			button: "BEGIN →"
+		},
 		toastinfo18: "Uw mijnwerkervergoeding is onvoldoende",
 		recordTitle: "Record",
 		recordAccount: "Rekening",
@@ -238,6 +246,132 @@ export default {
 		actionApply: "Toepassen",
 		actionReceive: "Ontvangen",
 		actionTips1: "Poolliquiditeit toevoegen",
-		actionTips2: "Standaard"
+		actionTips2: "Standaard",
+		index: {
+			title: "DEX:OFX",
+			subtitle: "USDT wordt omgezet in wettige valuta",
+			intro: "Voor gebruikers in veel gebieden is het een veelvoorkomend probleem dat ze USDT (stabiele munt) niet gemakkelijk kunnen kopen vanwege beperkte betaalkanalen, bankrestricties, lokale toezicht of gebrek aan compliant beurzen. DEX:OFX biedt een veilige, compliant en hoog liquide manier om gebruikers te helpen digitale activa soepel om te zetten in lokale wettige valuta.",
+			suitableUsersTitle: "Eerst, welke gebruikers zijn geschikt?",
+			suitableUsersIntro: "De wettige valutawisselingsmechanisme van DEX:OFX is vooral geschikt voor de volgende groepen:",
+			suitableUsers: [
+				"Lokale banken verbieden of beperken de aankoop van cryptocurrencies.",
+				"Credit/debetkaarten kunnen geen USDT kopen op de beurs.",
+				"De lokale beurs mist USDT liquiditeit.",
+				"Wil complexe KYC of hoge formaliteiten vermijden.",
+				"Wil digitale activa snel omzetten in lokale wettige valuta (EUR, CAD, USD, SGD, CHF, etc.)."
+			],
+			coreFeaturesTitle: "Tweede, DEX: de kernfunctie van OFX",
+			coreFeatures: [
+				{
+					title: "USDT → Franse valuta wisseling",
+					content: "Gebruikers kunnen USDT overboeken naar het aangewezen walletadres van DEX:OFX, en het systeem zet het automatisch om in aangewezen wettige valuta volgens de realtime wisselkoers, en voltooit de overboeking via het samenwerkende financiële netwerk.",
+					supportedCurrenciesTitle: "Ondersteunde wettige valuta omvatten (maar zijn niet beperkt tot):",
+					supportedCurrencies: [
+						"USD dollars",
+						"HKD",
+						"SGD SGD",
+						"TWD nt $",
+						"EUR euro",
+						"AUD Australische dollar"
+					]
+				},
+				{
+					title: "Geen beursaccount nodig.",
+					content: "Er is geen behoefte aan gecentraliseerde beurzen zoals coinbase-crypto.com. Laag de drempel, vooral voor gebruikers die zich niet kunnen registreren voor de beurs."
+				},
+				{
+					title: "Globale grensoverschrijdende ontvangstcapaciteit",
+					content: "Gebaseerd op het globale grensoverschrijdende betaalnetwerk van OFX, kunnen we snelle betaling bereiken;",
+					transferTime: [
+						"Overboeking in hetzelfde land: dezelfde dag of 1 werkdag",
+						"Internationale overboeking: 1-3 werkdagen",
+						"(afhankelijk van de regionale bank)"
+					]
+				},
+				{
+					title: "Transparante wisselkoers en lage verwerkingkosten.",
+					content: "De beurs gebruikt realtime marktprijs, en de kosten zijn vast en transparant, om verbergende verwerkingkosten te voorkomen."
+				}
+			],
+			exchangeProcessTitle: "III. Voorbeeld van wisselingsproces",
+			exchangeProcessIntro: "Hieronder vindt u het algemene wisselingsproces (dat kan worden aangepast aan uw zakelijke behoeften):",
+			exchangeProcess: [
+				{
+					title: "Indienen van een wisselingsaanvraag",
+					steps: [
+						"De gebruiker selecteert de wettige valuta, bedrag en ontvangstbank.",
+						"Het systeem genereert het USDT inzendadres (TRC20 of ERC20).",
+						"Gebruiker overboekt naar USDT of andere cryptocurrency."
+					]
+				},
+				{
+					title: "DEX:OFX voert wisseling uit",
+					steps: ["Het systeem zet de wisselkoers in realtime om in de vereiste wettige valuta."]
+				},
+				{
+					title: "Wettige valuta naar account",
+					steps: ["Overboeking naar het gebruikersaccount via internationaal financiële netwerk of lokaal bankierssysteem."]
+				}
+			],
+			whyCantBuyTitle: "4. Waarom kunnen veel mensen USDT niet kopen?",
+			whyCantBuyReasons: [
+				"De bank staat de categorie \"cryptocurrency transactie\" niet toe",
+				"Creditcardbedrijven blokkeren versleutelde aankopen.",
+				"Lokale regelgevingsbeperkingen",
+				"De beurs vereist een hoge KYC",
+				"Beurs opnamekosten zijn hoog.",
+				"Er is geen stabiele muntverdelingskanaal in het lokale gebied.",
+				"Sommige landen hebben geen wettige encryptiebeurzen."
+			],
+			valueProposition: "Dex: De waarde van OFX is om deze mensen te helpen financiële barrières te overwinnen en rechtstreeks wettige valuta te gebruiken.",
+			safetyTitle: "V. Veiligheid en toezicht (met focus op vertrouwen vergroten)",
+			safetyIntro: "Gebaseerd op het concept van het OFX-systeem, benadrukt het toezicht, conformiteit en transparant proces.",
+			safetyFeatures: [
+				"Alle kapitaalstromen zijn gecontroleerd door AML en KYC.",
+				"De ontvangstbank van de gebruiker moet worden geverifieerd.",
+				"Het gehele proces is traceerbaar en controleerbaar."
+			],
+			regions: {
+				europe: "Europa",
+				unitedStates: "Verenigde Staten",
+				canada: "Canada",
+				singapore: "Singapore",
+				switzerland: "Zwitserland",
+				unitedKingdom: "Verenigd Koninkrijk"
+			},
+			infoCards: [
+				{
+					title: "Gemakkelijk te gebruiken",
+					description: "Wissel valuta van meer dan 150 landen online"
+				},
+				{
+					title: "Snelle, betrouwbare overboekingen",
+					description: "Directe wisseling met realtime marktprijzen"
+				},
+				{
+					title: "Vertrouwd en veilig",
+					description: "Geautoriseerde en gereguleerde P2P-instelling"
+				}
+			]}
+		},
+		navbar: {
+			inviteCode: "Uitnodigingscode",
+			copy: "Kopiëren",
+			creditScore: "Kredietscore",
+			totalBalance: "Totaal saldo",
+			currencyExchange: "Valutawisseling",
+			memberLevel: "Lidmaatschapniveau",
+			promotions: "Promoties",
+			aboutUs: "Over ons",
+			faqs: "Veelgestelde vragen",
+			certification: "Certificering",
+			recharge: "Oplaad",
+			bankCards: "Bankkaarten",
+			records: "Records",
+			withdraw: "Opname",
+			contactUs: "Neem contact met ons op",
+			inviteFriends: "Nodig vrienden uit",
+			logout: "Uitloggen"
+		}
 	},
 }
