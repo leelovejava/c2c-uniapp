@@ -508,52 +508,7 @@ export default {
 				exchangeEarnings: "Tauschgewinn",
 				expectedReturn: "Erwartete Rendite"
 			}
-		}
-	},
-	vip: {
-		title: "Mitgliedschaftsstufe",
-		current: "Aktuell",
-		deposit: "Einzahlung",
-		bonus: "Bonus",
-		commissionRate: "Provisionssatz",
-		dailyOrders: "Tägliche Bestellungen"
-	},
-	about: {
-		title: "Über uns",
-		companyDescription: "Die OFX wurde 2001 gegründet und ist ein multinationales Finanztechnologieunternehmen mit Schwerpunkt auf globalen Kapitaltransfers und Devisendienstleistungen. Das Unternehmen basiert auf einem klaren Konzept: bessere, fairere und effizientere grenzüberschreitende Kapitallösungen für Kunden weltweit zu bieten. Seit der Gründung hat die OFX über 1 Million Kunden bedient, unterstützt über 50 Währungen, deckt über 170 Länder und Märkte ab und hat über 1,48 Billionen US-Dollar an Mitteln bearbeitet.",
-		globalNetworkTitle: "Globale Netzwerkstruktur",
-		globalNetworkDesc: "Das Unternehmen unterhält Büros in London, Dublin, Sydney, Auckland, Hongkong, Singapur, Toronto und San Francisco, beschäftigt weltweit über 700 Mitarbeiter und verfügt über ein solides Betriebsnetzwerk sowie Lokalisierungsfähigkeiten.",
-		regulatoryAdvantageTitle: "Starke Regulierungsvorteile",
-		regulatoryAdvantageDesc: "Das Unternehmen steht unter der Aufsicht von über 50 Regulierungsbehörden weltweit und folgt strengen Prüf- und Compliance-Standards. Seit der Börsennotierung gab es keine regulatorischen Strafen oder Vollzugshandlungen, und die Risikomanagementfähigkeiten sind solide.",
-		corporateGovernanceTitle: "Unternehmensführung und Management",
-		corporateGovernanceDesc1: "Der Vorstand besteht aus Geschäftsführern mit umfangreicher Erfahrung in Banken, Finanzen und Technologie, um eine gesunde Unternehmensführungsstruktur zu gewährleisten.",
-		corporateGovernanceDesc2: "Das Management-Team besteht aus Führungskräften großer internationaler Banken, Zahlungsdienstleister und Technologieunternehmen unter der Leitung des CEOs Skander Malcolm und fördert kontinuierlich die strategische Expansion und digitale Innovation von OFX.",
-		listingStatusTitle: "Börsenstatus und Branchenzugehörigkeit",
-		listingStatusDesc: "Die OFX wurde 2013 an der Australian Stock Exchange (ASX) notiert (Wertpapierkennnummer: OFX) und als \"Diversifizierte Finanzen\" klassifiziert. Das Unternehmen behält starke Wettbewerbsfähigkeit in der grenzüberschreitenden FinTech-Branche mit einem stabilen Compliance-Framework, internationaler Ausrichtung und nachhaltigem Gewinnmodell.",
-		aboutDexOfxTitle: "Über \"DEX:OFX\"",
-		aboutDexOfxDesc1: "Seit dem 10. März 2023 haben einige Finanzinformationsplattformen das Label \"DEX:OFX\" angezeigt.",
-		aboutDexOfxDesc2: "Es muss geklärt werden:",
-		aboutDexOfxDesc3: "\"Dex: OFX\" ist kein tatsächlicher Handelscode. Es handelt sich um einen automatisch generierten Cross-Market-Mapping-Identifier, der während Systemaktualisierungen auf einigen Datenplattformen entsteht.",
-		aboutDexOfxDesc4: "Der Identifier wurde als Teil interner Systemtests generiert, um die Fähigkeit der Plattform zu überprüfen, Unternehmensinformationen in verschiedenen Märkten korrekt zu verknüpfen. Daher wird das Label nur für Datenindexierung und Testzwecke verwendet und bedeutet nicht, dass OFX an DEX oder einer anderen Börse gelistet ist.",
-		aboutDexOfxDesc5: "Die einzige offizielle gültige Liste von OFX ist: Australian Stock Exchange (ASX) Wertpapierkennnummer: OFX",
-		aboutDexOfxDesc6: "Alle anderen Identifikatoren (einschließlich \"DEX:OFX\") sind vom System generierte Mapping-Einträge, die nicht für tatsächliche Transaktionen verwendet werden und nur bessere Dienste für Benutzer bereitstellen.",
-		headquartersTitle: "Hauptsitz der OFX Group",
-		headquartersDesc: "Etage 19, 60 Margaret Street, Sydney NSW 2000, Australien"
-	},
-	bindTrc20: {
-		formTitle: "Aufladeinformationen",
-		moneyLabel: "Aufladebetrag",
-		moneyPlaceholder: "Bitte geben Sie den Aufladebetrag ein",
-		addressLabel: "Aufladeadresse",
-		addressPlaceholder: "Bitte geben Sie die Aufladeadresse ein",
-		hashLabel: "Auflade-Hash",
-		hashPlaceholder: "Bitte geben Sie den Auflade-Hash ein",
-		submitButton: "Aufladung einreichen",
-		successMessage: "Aufladung erfolgreich eingereicht",
-		failMessage: "Einreichen fehlgeschlagen",
-		networkErrorMessage: "Netzwerkfehler"
-	},
-		
+		},
 		bankCardList: {
 			formTitle: "Bankinformationen",
 			accountNameLabel: "Kontoinhaber",
@@ -573,5 +528,11 @@ export default {
 			submitButtonText: "Informationen speichern",
 			bindSuccess: "Bindung erfolgreich",
 			updateSuccess: "Aktualisierung erfolgreich"
+		},
+		support: {
+			title: "Kontaktieren Sie uns",
+			serviceTime: "Servicezeiten: Täglich von 10:00 Uhr bis 23:00 Uhr",
+			buttonText: "OFX Support-Team"
 		}
+	}
 };

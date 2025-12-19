@@ -519,5 +519,10 @@ export default {
 			submitButtonText: "情報を保存",
 			bindSuccess: "バインド成功",
 			updateSuccess: "更新成功"
+		},
+		support: {
+			title: "お問い合わせ",
+			serviceTime: "サービス時間：毎日午前10:00～午後11:00",
+			buttonText: "OFX サポートチーム"
 		}
 	}

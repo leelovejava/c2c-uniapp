@@ -476,5 +476,10 @@ export default {
 		submitButtonText: "保存信息",
 		bindSuccess: "綁定成功",
 		updateSuccess: "修改成功"
+	},
+	"support": {
+		"title": "聯繫我們",
+		"serviceTime": "客服時間：每日上午10:00 – 晩上11:00",
+		"buttonText": "OFX 支援團隊"
 	}
 }

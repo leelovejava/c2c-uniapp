@@ -524,5 +524,10 @@ export default {
 			submitButtonText: "Сохранить информацию",
 			bindSuccess: "Привязка успешна",
 			updateSuccess: "Обновление успешно"
+		},
+		support: {
+			title: "Связаться с нами",
+			serviceTime: "Время работы службы поддержки: Ежедневно с 10:00 до 23:00",
+			buttonText: "Команда поддержки OFX"
 		}
 	}

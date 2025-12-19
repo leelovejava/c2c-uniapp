@@ -383,5 +383,10 @@ export default {
 			submitButtonText: "정보 저장",
 			bindSuccess: "바인딩 성공",
 			updateSuccess: "업데이트 성공"
+		},
+		support: {
+			title: "문의하기",
+			serviceTime: "고객센터 운영시간: 매일 오전 10:00 – 오후 11:00",
+			buttonText: "OFX 지원팀"
 		}
 	}
