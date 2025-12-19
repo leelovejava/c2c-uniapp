@@ -474,5 +474,43 @@ export default {
 			bindSuccess: "Binding succesvol",
 			updateSuccess: "Update succesvol"
 		}
+	},
+	order: {
+		recordsTitle: "Records",
+		tabs: {
+			all: "Alles",
+			pending: "In behandeling",
+			completed: "Voltooid",
+			limitOrder: "Limietorder"
+		},
+		status: {
+			completed: "Voltooid",
+			pending: "In behandeling",
+			processing: "Verwerken"
+		},
+		details: {
+			orderId: "Bestelnummer",
+			orderType: "Besteltype",
+			exchangeCurrency: "Wisselvaluta",
+			exchangeEarnings: "Wisselwinst",
+			expectedReturn: "Verwacht rendement"
+		}
+	},
+	deposit: {
+		withdrawal: "Opname",
+		history: "Geschiedenis",
+		totalBalance: "Totaal saldo",
+		processingTime: "Verwerking van opnames duurt 15-20 minuten.",
+		walletAddressType: "Type walletadres",
+		trc20Address: "trc20-adres",
+		erc20Address: "ERC20-adres",
+		btcAddress: "BTC-adres",
+		addressNotSet: "Adres niet ingesteld",
+		bindAddress: "Adres koppelen",
+		verifyWalletAddress: "Controleer uw walletadres zorgvuldig.",
+		enterWithdrawalAmount: "Voer het opnamebedrag in",
+		all: "Alle",
+		enterWithdrawalPassword: "Voer het opnamewachtwoord in",
+		submit: "Indienen"
 	}
 };

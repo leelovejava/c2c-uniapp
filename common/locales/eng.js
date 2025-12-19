@@ -120,7 +120,15 @@ export default {
 		},
 		common2: ["Beginner's Tutorial", "Contact Customer Service", "Terms of Service, View Details", "Customer Service 1", "Customer Service 2"],
 		common3: ["Success", "Platform Introduction"],
-		invite: ["Share and Promote", "My Invitation Code", "Copy Invitation Code to Invite More Friends", "Copy", "Unable to invite members at the moment"],
+		invite: {
+			share: "Share and Promote",
+			myInviteCode: "My Invitation Code",
+			copyInviteText: "Copy Invitation Code to Invite More Friends",
+			copy: "Copy",
+			unableToInvite: "Unable to invite members at the moment",
+			inviteCodeLabel: "Invitation Code:",
+			copyInviteLink: "Click to copy invitation link"
+		},
 		common4: ["Real Name Authentication", "Submitted Successfully", "Attention", "Item Content", "Amount to Pay", "ID Card", "Financial Proof", "Please complete account binding first", "Please complete real name authentication first"],
 		common5: ["Sell", "minutes", "ago", "Save QR Code", "Open", "Account frozen, unable to trade temporarily", "APP download"],
 		common6: ["Recharge Orders", "Order Number", "Amount", "Time", "Status"],
@@ -408,6 +416,23 @@ export default {
 		bonus: "Bonus",
 		commissionRate: "Commission Rate",
 		dailyOrders: "Daily Orders"
+	},
+	deposit: {
+		withdrawal: "Withdrawal",
+		history: "History",
+		totalBalance: "Total Balance",
+		processingTime: "Withdrawal processing takes 15-20 minutes.",
+		walletAddressType: "Wallet Address Type",
+		trc20Address: "trc20 Address",
+		erc20Address: "ERC20 Address",
+		btcAddress: "BTC Address",
+		addressNotSet: "Address Not Set",
+		bindAddress: "Bind Address",
+		verifyWalletAddress: "Please carefully verify your wallet address.",
+		enterWithdrawalAmount: "Enter withdrawal amount",
+		all: "All",
+		enterWithdrawalPassword: "Enter withdrawal password",
+		submit: "Submit"
 	},
 	about: {
 		title: "About Us",

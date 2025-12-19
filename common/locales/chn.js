@@ -120,7 +120,15 @@ export default {
 		},
 		common2: ["新手教程", "联系客服", "服务条款，查看详情", "客服1", "客服2"],
 		common3: ["成功", "平台介绍"],
-		invite: ["分享推广", "我的邀请码", "复制邀请码，邀请更多好友加入", "复制", "暫時無法邀請會員註冊"],
+		invite: {
+			share: "分享推广",
+			myInviteCode: "我的邀请码",
+			copyInviteText: "复制邀请码，邀请更多好友加入",
+			copy: "复制",
+			unableToInvite: "暫時無法邀請會員註冊",
+			inviteCodeLabel: "邀请码：",
+			copyInviteLink: "点击复制邀请链接"
+		},
 		common4: ["实名认证", "提交成功", "注意事项", "事项内容", "缴纳金额", "身份证", "财务证明", "请先去完成账号绑定", "请先完成实名认证"],
 		common5: ["卖出", "分钟", "前", "保存二维码", "打开", "账号冻结,暂时无法交易", "APP下载"],
 		common6: ["充值订单", "订单号", "金额", "时间", "状态"],
@@ -343,8 +351,10 @@ export default {
 			withdraw: "提现",
 			contactUs: "联系我们",
 			inviteFriends: "邀请好友",
-			logout: "注销"
-		}
+			logout: "注销",
+			copySuccess: "复制成功",
+			copyFailed: "复制失败"
+		},
 	},
 	faqs: {
 		pageHeader: {
@@ -409,6 +419,23 @@ export default {
 		bonus: "奖金",
 		commissionRate: "佣金率",
 		dailyOrders: "每日订单"
+	},
+	deposit: {
+		withdrawal: "提款",
+		history: "历史记录",
+		totalBalance: "总余额",
+		processingTime: "提款处理需要15-20分钟。",
+		walletAddressType: "钱包地址类型",
+		trc20Address: "trc20地址",
+		erc20Address: "ERC20地址",
+		btcAddress: "BTC Address",
+		addressNotSet: "地址未设置",
+		bindAddress: "绑定地址",
+		verifyWalletAddress: "请仔细核实您的钱包地址。",
+		enterWithdrawalAmount: "输入提现金额",
+		all: "全部",
+		enterWithdrawalPassword: "输入提款密码",
+		submit: "提交"
 	},
 	about: {
 		title: "关于我们",

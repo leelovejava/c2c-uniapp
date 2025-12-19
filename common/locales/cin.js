@@ -403,6 +403,23 @@ export default {
 		"commissionRate": "佣金率",
 		"dailyOrders": "每日訂單"
 	},
+	"deposit": {
+		"withdrawal": "提款",
+		"history": "歷史記錄",
+		"totalBalance": "總餘額",
+		"processingTime": "提款處理需要15-20分鐘。",
+		"walletAddressType": "錢包地址類型",
+		"trc20Address": "trc20地址",
+		"erc20Address": "ERC20地址",
+		"btcAddress": "BTC Address",
+		"addressNotSet": "地址未設置",
+		"bindAddress": "綁定地址",
+		"verifyWalletAddress": "請仔細核實您的錢包地址。",
+		"enterWithdrawalAmount": "輸入提現金額",
+		"all": "全部",
+		"enterWithdrawalPassword": "輸入提款密碼",
+		"submit": "提交"
+	},
 	"about": {
 		"title": "關於我們",
 		"companyDescription": "OFX成立於2001年，是一家專注於全球資本轉移和外匯服務的跨國金融科技公司。公司源於一個清晰的概念：為全球客戶提供更好、更公平、更高效的跨境資本解決方案。自成立以來，OFX已為超過100萬客戶提供了服務，支持50多種貨幣，覆蓋170多個國家和市場，累計處理資金超過1.48萬億美元。",

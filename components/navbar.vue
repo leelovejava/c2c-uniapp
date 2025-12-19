@@ -2,8 +2,11 @@
 <template>
 	<view class="navbar">
 		<view class="menu-btn" @click="leftShow=true,getuserinfo()">☰ MENU</view>
-		<view class="logo"><img  src="/static/image/fz/logo3.png" 
-				style="width:100px;object-fit:contain;vertical-align:middle;"></view>
+		<view class="logo">
+			<image src="/static/image/fz/logo3.png" mode="widthFix"
+				style="width:100px;object-fit:contain;vertical-align:middle;">
+			</image>
+		</view>
 		<view class="language-switcher">
 			<view class="dropdown">
 				<view class="dropdown-toggle a-rowC" @tap="$u.route('/pages/setting/language')">
@@ -12,17 +15,6 @@
 					</view>
 					<u-icon name="arrow-down-fill" color="#fff" size="16"></u-icon>
 				</view>
-				<!-- 	<view class="dropdown-menu">
-					<a class="dropdown-item" href="#" onclick="changlang('en')">English</a><a class="dropdown-item"
-						href="#" onclick="changlang('de')">Deutsch</a>
-					<a class="dropdown-item" href="#" onclick="changlang('kr')">한국어</a>
-					<a class="dropdown-item" href="#" onclick="changlang('zn')">中文</a>
-					<a class="dropdown-item" href="#" onclick="changlang('fr')">Français</a>
-					<a class="dropdown-item" href="#" onclick="changlang('jp')">日本語</a>
-					<a class="dropdown-item" href="#" onclick="changlang('cz')">Čeština</a>
-					<a class="dropdown-item" href="#" onclick="changlang('it')">Italiano</a>
-					<a class="dropdown-item" href="#" onclick="changlang('se')">svenska</a>
-				</view> -->
 			</view>
 		</view>
 
@@ -33,8 +25,7 @@
 					<view class="a-pr" style="padding: 30rpx 20rpx;">
 						<view class="a-rowC a-mb20">
 							<view class="a-mr10">
-								<image src="/static/image/fz/txo.png" mode="widthFix"
-									style="width: 120rpx;">
+								<image src="/static/image/fz/txo.png" mode="widthFix" style="width: 120rpx;">
 								</image>
 							</view>
 							<view>
@@ -57,7 +48,7 @@
 										{{ $t('common.navbar.inviteCode') }}: {{userinfo.code}}
 									</view>
 									<view class="a-tc a-f24 a-borr5 a-crfff"
-										style="background: #1E90FF;padding:4rpx 16rpx;">
+										style="background: #1E90FF;padding:4rpx 16rpx;" @click="copyInviteCode">
 										{{ $t('common.navbar.copy') }}
 									</view>
 								</view>
@@ -86,7 +77,8 @@
 								{{userinfo.money}} USD
 							</view>
 							<view class="a-center2">
-								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"  @tap="$u.route('/pages/my/exchange')">
+								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"
+									@tap="$u.route('/pages/my/exchange')">
 									{{ $t('common.navbar.currencyExchange') }}
 								</view>
 							</view>
@@ -128,7 +120,7 @@
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.recharge') }}</view>
 								</u-grid-item>
-									<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
+								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
 									<image src="/static/image/fz/bdym.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.bankCards') }}</view>
@@ -193,11 +185,11 @@
 		data() {
 			return {
 				leftShow: false,
-				userinfo:{},
+				userinfo: {},
 			};
 		},
 		mounted() {
-			
+
 		},
 		methods: {
 			getuserinfo() {
@@ -206,6 +198,14 @@
 					this.userinfo = res.data
 				})
 			},
+			copyInviteCode() {
+				uni.setClipboardData({
+					data: this.userinfo.code,
+					success: () => {
+						this.$u.toast('Copied to clipboard')
+					}
+				})
+			}
 		}
 
 	};

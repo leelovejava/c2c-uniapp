@@ -137,7 +137,15 @@ export default {
 		},
 		common2: ["新手ガイド", "カスタマーサポートに連絡する", "サービス規約の詳細を見る", "カスタマーサポート1", "カスタマーサポート2"],
 		common3: ["成功", "プラットフォーム紹介"],
-		invite: ["共有プロモーション", "私の紹介コード", "紹介コードをコピーして、さらに多くの友達を招待する", "コピー", "メンバーを招待することは現在できません"],
+		invite: {
+			share: "共有プロモーション",
+			myInviteCode: "私の紹介コード",
+			copyInviteText: "紹介コードをコピーして、さらに多くの友達を招待する",
+			copy: "コピー",
+			unableToInvite: "メンバーを招待することは現在できません",
+			inviteCodeLabel: "招待コード：",
+			copyInviteLink: "招待リンクをクリックしてコピー"
+		},
 		common4: ["本人確認", "提出成功", "注意事項", "内容", "支払金額", "身分証明書", "財務証明書", "アカウントのバインディングを完了してください", "本人確認を完了してください"],
 		common5: ["売却", "分", "前", "QRコードを保存", "開く", "アカウントがロックされており、取引が一時的にできません", "APPをダウンロード"],
 		common6: ["チャージ注文", "オーダー番号", "金額", "時間", "状態"],
@@ -437,6 +445,23 @@ export default {
 		bonus: "ボーナス",
 		commissionRate: "コミッション率",
 		dailyOrders: "日次注文"
+	},
+	deposit: {
+		withdrawal: "引き出し",
+		history: "履歴",
+		totalBalance: "総残高",
+		processingTime: "引き出し処理には15-20分かかります。",
+		walletAddressType: "ウォレットアドレスタイプ",
+		trc20Address: "trc20アドレス",
+		erc20Address: "ERC20アドレス",
+		btcAddress: "BTCアドレス",
+		addressNotSet: "アドレスが設定されていません",
+		bindAddress: "アドレスをバインド",
+		verifyWalletAddress: "ウォレットアドレスを慎重に確認してください。",
+		enterWithdrawalAmount: "引き出し金額を入力",
+		all: "すべて",
+		enterWithdrawalPassword: "引き出しパスワードを入力",
+		submit: "提出"
 	},
 	about: {
 		title: "当社について",

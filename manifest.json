@@ -132,7 +132,7 @@
         "publicPath" : "https://overthecounter.top/h5/",
         "router" : {
             "mode" : "hash",
-            "base" : ""
+            "base" : "/h5/"
         },
         "optimization" : {
             "treeShaking" : {

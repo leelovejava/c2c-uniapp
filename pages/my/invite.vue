@@ -9,18 +9,16 @@
 						1222
 					</div>
 					<div>
-						<h3>邀请码：</h3>
+						<h3>{{$t('invite.inviteCodeLabel')}}</h3>
 						<h4 onclick="copy_txt('64WMV7')">64WMV7</h4>
 					</div>
 				</div>
 
 				<div class="copy" style="display: flex; align-items: center; justify-content: center;cursor: pointer;"
 					onclick="copy_txt('https://www.currencyexch.top/index/user/register/invite_code/64WMV7/lang/zh-cn.html')">
-					点击复制邀请链接
+					{{$t('invite.copyInviteLink')}}
 				</div>
 			</div>
-
-
 		</view>
 
 	</view>
