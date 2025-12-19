@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 
 			<div class="main-container">

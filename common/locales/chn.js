@@ -355,6 +355,11 @@ export default {
 			copySuccess: "复制成功",
 			copyFailed: "复制失败"
 		},
+		support: {
+			title: "聯繫我們",
+			serviceTime: "客服時間：每日上午10:00 – 晚上11:00",
+			buttonText: "OFX 支援團隊"
+		},
 	},
 	faqs: {
 		pageHeader: {

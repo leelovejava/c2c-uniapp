@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 
 			<div class="top-buttons-container">
@@ -187,7 +187,6 @@
 		}
 
 		.gift-icon {
-			background: url(/static/image/fz/check_gift3.png) no-repeat center center;
 			background-size: contain;
 			width: 30px;
 			height: 30px;

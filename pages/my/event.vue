@@ -1,11 +1,11 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 			<div class="main-content">
-				<img src="../../static/image/fz/1_usd.png" alt="Event Image 1" class="responsive-image"><img
-					src="../../static/image/fz/2new.png" alt="Event Image 2" class="responsive-image">
+				<img src="static/image/fz/1_usd.png" alt="Event Image 1" class="responsive-image"><img
+					src="static/image/fz/2new.png" alt="Event Image 2" class="responsive-image">
 			</div>
 
 		</view>

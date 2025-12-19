@@ -1,13 +1,13 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
-			<div class="support-container"><img src="../../static/image/fz/kfbg.png" alt="客服代表">
-				<h2>聯繫我們</h2>
-				<p>客服時間：每日上午10:00 – 晚上11:00</p><a
+			<div class="support-container"><img src="static/image/fz/kfbg.png" alt="客服代表">
+				<h2>{{ $t('common.support.title') }}</h2>
+				<p>{{ $t('common.support.serviceTime') }}</p><a
 					href="https://cs.onlinecs.sbs/index/index/home?visiter_id=6589657826&amp;visiter_name=&amp;avatar=&amp;groupid=0&amp;business_id=28"
-					class="support-button">OFX 支援團隊</a>
+					class="support-button">{{ $t('common.support.buttonText') }}</a>
 			</div>
 
 		</view>

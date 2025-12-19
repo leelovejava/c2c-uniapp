@@ -1,10 +1,10 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 			<div class="main-content">
-				<img src="../../static/image/fz/zizhidimg.png" alt="Event Image 1" class="responsive-image">
+				<img src="static/image/fz/zizhidimg.png" alt="Event Image 1" class="responsive-image">
 			</div>
 
 		</view>

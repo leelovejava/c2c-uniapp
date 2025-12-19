@@ -351,6 +351,11 @@ export default {
 			contactUs: "Contact Us",
 			inviteFriends: "Invite Friends",
 			logout: "Logout"
+		},
+		support: {
+			title: "Contact Us",
+			serviceTime: "Service Hours: 10:00 AM - 11:00 PM Daily",
+			buttonText: "OFX Support Team"
 		}
 	},
 	faqs: {

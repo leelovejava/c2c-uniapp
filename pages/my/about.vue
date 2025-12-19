@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(/static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 			<div class="main-content">
 				<!-- 页面标题 -->
@@ -14,7 +14,7 @@
 					<div class="info-card hero-card a-tc">
 						<div class="icon">
 							<image mode="widthFix" style="width:80rpx"
-								src="/static/image/fz/www.currencyexch.top_index_support_about(iPhone SE).png"></image>
+								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE).png"></image>
 						</div>
 						<p>{{$t('about.companyDescription')}}</p>
 					</div>

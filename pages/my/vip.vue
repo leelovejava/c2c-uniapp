@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="z-index: 3;background: url(/static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 			<div class="main-content">
 				<h2 style="text-align: center; margin-bottom: 20px;">{{ $t('vip.title') }}</h2>
@@ -17,7 +17,7 @@
 							<h4>{{ $t('vip.commissionRate') }}: 1%</h4>
 							<h4>{{ $t('vip.dailyOrders') }}: 30</h4>
 						</div>
-						<div style="text-align: right;"><img src="/static/image/fz/vip1.png" alt="VIP 1"
+						<div style="text-align: right;"><img src="static/image/fz/vip1.png" alt="VIP 1"
 								style="width: 100px; height: auto;"></div>
 					</div>
 				</div>
@@ -31,7 +31,7 @@
 							<h4>{{ $t('vip.commissionRate') }}: 1.5%</h4>
 							<h4>{{ $t('vip.dailyOrders') }}: 35</h4>
 						</div>
-						<div style="text-align: right;"><img src="/static/image/fz/vip2.png" alt="VIP 2"
+						<div style="text-align: right;"><img src="static/image/fz/vip2.png" alt="VIP 2"
 								style="width: 100px; height: auto;"></div>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 							<h4>{{ $t('vip.commissionRate') }}: 2%</h4>
 							<h4>{{ $t('vip.dailyOrders') }}: 40</h4>
 						</div>
-						<div style="text-align: right;"><img src="/static/image/fz/vip3.png" alt="VIP 3"
+						<div style="text-align: right;"><img src="static/image/fz/vip3.png" alt="VIP 3"
 								style="width: 100px; height: auto;"></div>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 							<h4>{{ $t('vip.commissionRate') }}: 3%</h4>
 							<h4>{{ $t('vip.dailyOrders') }}: 45</h4>
 						</div>
-						<div style="text-align: right;"><img src="/static/image/fz/vip4.png" alt="VIP 4"
+						<div style="text-align: right;"><img src="static/image/fz/vip4.png" alt="VIP 4"
 								style="width: 100px; height: auto;"></div>
 					</div>
 				</div>

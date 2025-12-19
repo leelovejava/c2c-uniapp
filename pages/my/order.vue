@@ -30,7 +30,7 @@
 							<div class="exchange-info">
 								<div class="currencies">
 									<img :src="'https://flagcdn.com/' + getCountryCode(item.from) + '.svg'">
-									<img src="/static/image/fz/huhuan.png" style="width: 45rpx;height: 40rpx;">
+									<img src="static/image/fz/huhuan.png" style="width: 45rpx;height: 40rpx;">
 									<img :src="'https://flagcdn.com/' + getCountryCode(item.to) + '.svg'">
 								</div>
 								<div class="amount-info"><span class="amount">{{ item.exchange_amount }} {{ item.from
@@ -51,7 +51,7 @@
 
 		</view>
 		<view class="a-pf a-w" style="top: 0;left: 0;height: 100vh;z-index: 0;z-index: 1; ">
-			<video class="a-w a-h" objectFit="cover" src="/static/image/fz/ea1.mp4"
+			<video class="a-w a-h" objectFit="cover" src="static/image/fz/ea1.mp4"
 				:controls="false" :show-center-play-btn="false" :show-play-btn="false" :show-fullscreen-btn="false"
 				:enable-progress-gesture="false" autoplay loop muted></video>
 		</view>

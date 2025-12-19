@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(../../static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
 			<div class="main-content"><!-- 页面标题 -->
 				<div class="page-header">
@@ -16,7 +16,7 @@ Strong regulatory advantage: it is supervised by more than 50 regulatory agencie
 					<div class="info-card hero-card a-tc">
 						<div class="icon">
 							<image mode="widthFix" style="width:80rpx"
-								src="/static/image/fz/www.currencyexch.top_index_support_about(iPhone SE).png"></image>
+								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE).png"></image>
 						</div>
 						<h3>Corporate governance and management</h3>
 						<p>Founded in 2001, OFX is a multinational financial technology company focusing on global capital transfer and foreign exchange services. The company comes from a clear concept: to provide better, fairer and more efficient cross-border capital solutions for global customers. Since its establishment, OFX has served more than 1 million customers, supported 50+ currencies, covered more than 170 countries and markets, and handled more than 1.48 trillion US dollars in accumulated funds.
@@ -29,7 +29,7 @@ Strong regulatory advantage: it is supervised by more than 50 regulatory agencie
 					<div class="info-card mission-card">
 						<div class="icon">
 							<image mode="widthFix" style="width:80rpx"
-								src="/static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (1).png"></image>
+								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (1).png"></image>
 						</div>
 						<h4>我們的使命</h4>
 						<p>我們致力於提供最新和可靠的貨幣信息，以及安全、用戶友好的服務，讓每個人都能更輕鬆、更便捷地進行貨幣兌換。</p>
@@ -37,7 +37,7 @@ Strong regulatory advantage: it is supervised by more than 50 regulatory agencie
 					<div class="info-card features-card">
 						<div class="icon">
 							<image mode="widthFix" style="width:80rpx"
-								src="/static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (2).png"></image>
+								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (2).png"></image>
 						</div>
 						<h4>為什麼選擇我們？</h4>
 						<p>我們的平台通過以下方式提供快速便捷的貨幣兌換：</p>
@@ -51,7 +51,7 @@ Strong regulatory advantage: it is supervised by more than 50 regulatory agencie
 					<div class="info-card features-card">
 						<div class="icon">
 							<image mode="widthFix" style="width:80rpx"
-								src="/static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (2).png"></image>
+								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE) (2).png"></image>
 						</div>
 						<p>作為Euronet Worldwide（納斯達克：EEFT）的一部分，我們經營著世界上最大的兌換和匯款業務之一。我們的目標很簡單：提供最可靠、最易用的兌換和匯款服務。</p>
 					</div>
