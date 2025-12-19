@@ -21,6 +21,7 @@
 							<span class="currency-unit">USD</span>
 						</div>
 					</div>
+					
 					<div class="info-item">
 						<span>{{ $t('common.exchange.infoCard.processing') }}</span>
 						<span>
