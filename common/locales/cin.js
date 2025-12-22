@@ -337,6 +337,27 @@ export default {
 				"exchangeEarnings": "兌換收益",
 				"expectedReturn": "預期回報"
 			}
+		},
+		"navbar": {
+			"inviteCode": "邀請碼",
+			"copy": "複製",
+			"creditScore": "信譽分",
+			"totalBalance": "總餘額",
+			"currencyExchange": "貨幣兌換",
+			"memberLevel": "會員等級",
+			"promotions": "優惠活動",
+			"aboutUs": "關於我們",
+			"faqs": "常見問題",
+			"certification": "資質",
+			"recharge": "充值",
+			"bankCards": "銀行卡",
+			"records": "記錄",
+			"withdraw": "提現",
+			"contactUs": "聯繫我們",
+			"inviteFriends": "邀請好友",
+			"logout": "註銷",
+			"copySuccess": "複製成功",
+			"copyFailed": "複製失敗"
 		}
 	},
 	"faqs": {

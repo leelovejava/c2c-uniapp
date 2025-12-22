@@ -1,33 +1,33 @@
 // 葡萄牙
 export default {
-common: {
-mixRecharge: ["Por favor, insira o endereço de email"],
-language: "Língua",
-common: ["Atendimento ao cliente online", "Desativar suspenso", "Confirmar", "Cancelar"],
-upload: ["Carregando...", "Formato incorreto", "Carregado com sucesso", "Falha ao carregar"],
-vanPull: ["Não há mais dados", "Sem dados"],
-login: {
-text: ["Língua", "BITCOIN", "Entrar"],
-label: ["Entrando...", "Entrar agora"],
-placeholder: ["Por favor, insira o e-mail", "Por favor, insira a senha"],
-default: ["Não tem uma conta?", "Registrar agora", "Esqueceu sua senha?", "Esqueceu a senha de login"],
-codes: ["Conta não existe", "Senha incorreta", "Conta suspensa", "Falha"]
-},
-register: {
-text: ["BITCOIN", "Enviar código...", "Clique para obter", "Registrando...", "Registrar agora"],
-placeholder: ["Por favor, insira o e-mail", "Por favor, insira o código", "Por favor, insira a senha", "Por favor, confirme sua senha", "Por favor, insira o código do convite", "As senhas não coincidem", "Por favor, insira o código de verificação", "E-mail inválido"],
-label: ["Já tem uma conta? {a} {line}", "Voltar para o login"],
-codes: ["A conta já existe", "Nenhum código recebido", "Código inválido", "As senhas não coincidem", "O referenciador não existe", "Falha"]
-},
-resetpwd: ["Esqueceu sua senha", "Por favor, insira o e-mail", "Por favor, insira o código", "Clique para obter", "Por favor insira a senha", "Redefinir senha"],
-footer: ["Home", "Hall", "Order", "My"],
-home: {
-label: ["Bem-vindo"],
-broadcast: "Parabéns ao membro {member} por se tornar {grade}",
-menu: ["Registro de Fundos", "Tutorial para iniciantes", "Registro de convites", "Suporte ao cliente"],
-noticeTitle: "Último Aviso",
-msg: "Tarefa não disponível",
-video: "Tutorial em vídeo não disponível",
+	common: {
+		mixRecharge: ["Por favor, insira o endereço de email"],
+		language: "Língua",
+		common: ["Atendimento ao cliente online", "Desativar suspenso", "Confirmar", "Cancelar"],
+		upload: ["Carregando...", "Formato incorreto", "Carregado com sucesso", "Falha ao carregar"],
+		vanPull: ["Não há mais dados", "Sem dados"],
+		login: {
+			text: ["Língua", "BITCOIN", "Entrar"],
+			label: ["Entrando...", "Entrar agora"],
+			placeholder: ["Por favor, insira o e-mail", "Por favor, insira a senha"],
+			default: ["Não tem uma conta?", "Registrar agora", "Esqueceu sua senha?", "Esqueceu a senha de login"],
+			codes: ["Conta não existe", "Senha incorreta", "Conta suspensa", "Falha"]
+		},
+		register: {
+			text: ["BITCOIN", "Enviar código...", "Clique para obter", "Registrando...", "Registrar agora"],
+			placeholder: ["Por favor, insira o e-mail", "Por favor, insira o código", "Por favor, insira a senha", "Por favor, confirme sua senha", "Por favor, insira o código do convite", "As senhas não coincidem", "Por favor, insira o código de verificação", "E-mail inválido"],
+			label: ["Já tem uma conta? {a} {line}", "Voltar para o login"],
+			codes: ["A conta já existe", "Nenhum código recebido", "Código inválido", "As senhas não coincidem", "O referenciador não existe", "Falha"]
+		},
+		resetpwd: ["Esqueceu sua senha", "Por favor, insira o e-mail", "Por favor, insira o código", "Clique para obter", "Por favor insira a senha", "Redefinir senha"],
+		footer: ["Home", "Hall", "Order", "My"],
+		home: {
+			label: ["Bem-vindo"],
+			broadcast: "Parabéns ao membro {member} por se tornar {grade}",
+			menu: ["Registro de Fundos", "Tutorial para iniciantes", "Registro de convites", "Suporte ao cliente"],
+			noticeTitle: "Último Aviso",
+			msg: "Tarefa não disponível",
+			video: "Tutorial em vídeo não disponível",
 hero: {
   title: "A forma fácil de trocar online",
   subtitle: "Mover dinheiro globalmente é o que fazemos",

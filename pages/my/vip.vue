@@ -64,17 +64,17 @@
 								style="width: 100px; height: auto;"></div>
 					</div>
 				</div>
+				<!-- VIP 等级说明（通用规则） -->
+				<div class="info-card vip-description"
+					style="max-width: 768px;margin: 0 auto 40px auto;border: 1px solid #ddd;border-radius: 8px;padding: 20px;">
+
+					<view style="text-align: left; white-space: pre-line; line-height: 1.7; font-size: 14px;">
+						{{ $t('vip.description') }}
+					</view>
+				</div>
 			</div>
 
-      <!-- VIP 等级说明（通用规则） -->
-      <div class="info-card vip-description"
-           style="max-width: 768px;margin: 0 auto 40px auto;border: 1px solid #ddd;border-radius: 8px;padding: 20px;">
 
-        <view
-            style="text-align: left; white-space: pre-line; line-height: 1.7; font-size: 14px;">
-          {{ $t('vip.description') }}
-        </view>
-      </div>
 		</view>
 
 	</view>
@@ -125,10 +125,12 @@
 		}
 	}
 
-  .vip-description {
-    background-color: rgba(0, 0, 0, 0.35); /* 比 VIP 卡片浅 */
-    border: 1px dashed rgba(255, 255, 255, 0.25); /* 规则感 */
-    font-size: 13px;
-    color: #e0e0e0;
-  }
+	.vip-description {
+		background-color: rgba(0, 0, 0, 0.35);
+		/* 比 VIP 卡片浅 */
+		border: 1px dashed rgba(255, 255, 255, 0.25);
+		/* 规则感 */
+		font-size: 13px;
+		color: #e0e0e0;
+	}
 </style>

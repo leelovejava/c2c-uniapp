@@ -12,10 +12,6 @@
 				<div class="cards-container">
 					<!-- 主要介绍卡片 -->
 					<div class="info-card hero-card a-tc">
-						<div class="icon">
-							<image mode="widthFix" style="width:80rpx"
-								src="static/image/fz/www.currencyexch.top_index_support_about(iPhone SE).png"></image>
-						</div>
 						<p>{{$t('about.companyDescription')}}</p>
 					</div>
 					

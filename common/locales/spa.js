@@ -440,6 +440,27 @@ export default {
 				exchangeEarnings: "Ganancias del intercambio",
 				expectedReturn: "Retorno esperado"
 			}
+		},
+		navbar: {
+			inviteCode: "Código de invitación",
+			copy: "Copiar",
+			creditScore: "Puntuación de credibilidad",
+			totalBalance: "Saldo total",
+			currencyExchange: "Cambio de divisa",
+			memberLevel: "Nivel de miembro",
+			promotions: "Promociones",
+			aboutUs: "Sobre nosotros",
+			faqs: "Preguntas frecuentes",
+			certification: "Certificación",
+			recharge: "Recargar",
+			bankCards: "Tarjetas bancarias",
+			records: "Registros",
+			withdraw: "Retirar",
+			contactUs: "Contáctanos",
+			inviteFriends: "Invitar amigos",
+			logout: "Cerrar sesión",
+			copySuccess: "Copiado con éxito",
+			copyFailed: "Error al copiar"
 		}
 	},
 	vip: {

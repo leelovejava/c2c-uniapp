@@ -220,6 +220,7 @@ export default {
 		homeJoinPopupTips: "Het activeren van de account om lid te worden moet ETH-verwerkingskosten betalen",
 		homeJoinPopupBtn: "Bevestigen",
 		homeMenuTitle: "FUNCTIE",
+		footer: ["Home", "Hall", "Bestelling", "Mijn"],
 		hero: {
 			title: "De eenvoudige manier om online te wisselen",
 			subtitle: "We verplaatsen geld wereldwijd",
