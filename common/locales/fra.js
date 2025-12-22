@@ -420,7 +420,8 @@ export default {
 				processing: "Traitement en cours",
 				orders: "Commandes",
 				confirmExchange: "Confirmer l'échange",
-				records: "Enregistrements"
+				records: "Enregistrements",
+				selectCurrency: "Sélectionnez la devise"
 			},
 			modal: {
 				steps: [

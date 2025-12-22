@@ -231,6 +231,33 @@ export default {
 				}
 			]}
 		},
+		exchange: {
+			infoCard: {
+				totalOrders: "總訂單數",
+				totalProfit: "總利潤",
+				totalBalance: "總餘額",
+				processing: "處理中",
+				orders: "訂單",
+				confirmExchange: "確認兌換",
+				records: "記錄",
+				selectCurrency: ""
+			},
+			modal: {
+				steps: [
+					"匹配訂單",
+					"處理中",
+					"已兌換"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "已兌換貨幣",
+				exchangedRate: "兌換匯率",
+				exchangedAmount: "兌換金額",
+				exchangeEarnings: "兌換收益",
+				orderType: "訂單類型",
+				expectedReturn: "預期收益",
+				close: "關閉"
+			}
+		},
 		navbar: {
 			inviteCode: "邀請碼",
 			copy: "複製",

@@ -31,6 +31,17 @@
 					<div class="orders">
 						{{ $t('common.exchange.infoCard.orders') }} ({{ exchangeinfo.today_orders }}/{{ exchangeinfo.daily_limit }})
 					</div>
+          <div class="info-item">
+            <span>{{ $t('common.exchange.infoCard.selectCurrency') || 'Select Currency' }}</span>
+            <select class="wallet-select" v-model="form.to_currency">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="CAD">CAD</option>
+              <option value="SGD">SGD</option>
+              <option value="CHF">CHF</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
 					<div class="actions">
 						<button class="exchange-btn"
 							style="font-size: 14px; width: calc(50% - 16px); margin: 0 8px; box-sizing: border-box; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 calc(50% - 16px); transform: translateX(-28px);"
@@ -134,6 +145,9 @@ export default {
 			showModal: false,
 			swap:{},
 			exchangeinfo: {},
+      form: {
+        to_currency: 'USD' // ✅ 默认 USD
+      }
 		};
 	},
 	onLoad(e) {
@@ -161,6 +175,7 @@ export default {
 		qrdh() {
 			const token = uni.getStorageSync('token')
 			this.loading = true
+      // 兑换
 			this.$u.api.setting.exchangeswap(token, this.form).then(res => {
 				this.swap = res.data
 				this.showModal = true
@@ -389,5 +404,18 @@ export default {
 		line-height: 1.5;
 	}
 
+  .wallet-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+    outline: none;
+
+    option {
+      color: #000;
+    }
+  }
 }
 </style>

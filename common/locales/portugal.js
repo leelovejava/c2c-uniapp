@@ -261,7 +261,8 @@ bind: [
 				processing: "Processando",
 				orders: "Pedidos",
 				confirmExchange: "Confirmar Troca",
-				records: "Registros"
+				records: "Registros",
+				selectCurrency: "Selecionar moeda"
 			},
 			modal: {
 				steps: [

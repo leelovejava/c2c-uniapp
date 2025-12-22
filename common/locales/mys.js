@@ -333,6 +333,33 @@ export default {
 			contactUs: "Hubungi Kami",
 			inviteFriends: "Jemput Rakan",
 			logout: "Log Keluar"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Ordini totali",
+				totalProfit: "Profitto totale",
+				totalBalance: "Bilancio totale",
+				processing: "In elaborazione",
+				orders: "Ordini",
+				confirmExchange: "Conferma scambio",
+				records: "Registri",
+				selectCurrency: "Seleziona valuta"
+			},
+			modal: {
+				steps: [
+					"Abbina ordine",
+					"In elaborazione",
+					"Scambiato"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Valuta scambiata",
+				exchangedRate: "Tasso di cambio",
+				exchangedAmount: "Importo scambiato",
+				exchangeEarnings: "Guadagno dallo scambio",
+				orderType: "Tipo di ordine",
+				expectedReturn: "Ritorno previsto",
+				close: "Chiudi"
+			}
 		}
 	},
 

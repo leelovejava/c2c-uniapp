@@ -296,7 +296,8 @@ export default {
 				processing: "処理中",
 				orders: "注文",
 				confirmExchange: "換金を確認",
-				records: "記録"
+				records: "記録",
+				selectCurrency: "通貨を選択してください"
 			},
 			modal: {
 				steps: [

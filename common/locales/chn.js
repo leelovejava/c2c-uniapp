@@ -296,7 +296,8 @@ export default {
 				processing: "處理中",
 				orders: "訂單",
 				confirmExchange: "確認兌換",
-				records: "記錄"
+				records: "記錄",
+				selectCurrency: "請選擇貨幣"
 			},
 			modal: {
 				steps: [
@@ -479,7 +480,6 @@ export default {
 		addressNotSet: "地址未设置",
 		bindAddress: "绑定地址",
 		verifyWalletAddress: "请仔细核实您的钱包地址。",
-		enterWithdrawalAmount: "输入提现金额",
 		all: "全部",
 		enterWithdrawalPassword: "输入提款密码",
 		submit: "提交",

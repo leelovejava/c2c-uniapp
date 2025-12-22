@@ -296,7 +296,8 @@ export default {
 				processing: "In Bearbeitung",
 				orders: "Bestellungen",
 				confirmExchange: "Umtausch bestätigen",
-				records: "Datensätze"
+				records: "Datensätze",
+				selectCurrency: "Währung auswählen"
 			},
 			modal: {
 				steps: [

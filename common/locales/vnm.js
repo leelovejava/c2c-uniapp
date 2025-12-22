@@ -315,7 +315,8 @@ export default {
 				processing: "Đang xử lý",
 				orders: "Đơn hàng",
 				confirmExchange: "Xác nhận trao đổi",
-				records: "Hồ sơ"
+				records: "Hồ sơ",
+				selectCurrency: "Chọn loại tiền tệ"
 			},
 			modal: {
 				steps: [

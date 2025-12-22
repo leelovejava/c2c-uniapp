@@ -298,7 +298,8 @@ export default {
 				"processing": "處理中",
 				"orders": "訂單",
 				"confirmExchange": "確認兌換",
-				"records": "記錄"
+				"records": "記錄",
+				selectCurrency: "請選擇貨幣"
 			},
 			"modal": {
 				"steps": [

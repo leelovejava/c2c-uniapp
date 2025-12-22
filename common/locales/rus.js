@@ -279,7 +279,8 @@ export default {
 				processing: "Обработка",
 				orders: "Заказы",
 				confirmExchange: "Подтвердить обмен",
-				records: "Записи"
+				records: "Записи",
+				selectCurrency: "Выберите валюту"
 			},
 			modal: {
 				steps: [

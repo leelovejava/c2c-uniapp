@@ -323,7 +323,8 @@ export default {
 				processing: "กำลังดำเนินการ",
 				orders: "คำสั่งซื้อ",
 				confirmExchange: "ยืนยันการแลกเปลี่ยน",
-				records: "บันทึก"
+				records: "บันทึก",
+				selectCurrency: "เลือกสกุลเงิน"
 			},
 			modal: {
 				steps: ["จับคู่คำสั่งซื้อ", "กำลังดำเนินการ", "แลกเปลี่ยนแล้ว"],

@@ -250,7 +250,34 @@ export default {
 					title: "신뢰할 수 있고 안전합니다",
 					description: "허가된 규제 P2P 기관"
 				}
-			]
+			],
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "총 주문 수",
+				totalProfit: "총 수익",
+				totalBalance: "총 잔액",
+				processing: "처리 중",
+				orders: "주문",
+				confirmExchange: "환전 확인",
+				records: "기록",
+				selectCurrency: "통화 선택"
+			},
+			modal: {
+				steps: [
+					"주문 매칭",
+					"처리 중",
+					"환전 완료"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "환전 통화",
+				exchangedRate: "환율",
+				exchangedAmount: "환전 금액",
+				exchangeEarnings: "환전 수익",
+				orderType: "주문 유형",
+				expectedReturn: "예상 수익",
+				close: "닫기"
+			}
 		},
 		navbar: {
 			title: "Dex:OFX",

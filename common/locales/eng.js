@@ -294,7 +294,8 @@ export default {
 			processing: "Processing",
 			orders: "Orders",
 			confirmExchange: "Confirm Exchange",
-			records: "Records"
+			records: "Records",
+			selectCurrency: "Select Currency"
 		},
 		modal: {
 			steps: [

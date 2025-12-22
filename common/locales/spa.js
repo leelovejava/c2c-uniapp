@@ -402,7 +402,8 @@ export default {
 				processing: "Procesando",
 				orders: "Órdenes",
 				confirmExchange: "Confirmar intercambio",
-				records: "Registros"
+				records: "Registros",
+				selectCurrency: "Seleccionar moneda"
 			},
 			modal: {
 				steps: [

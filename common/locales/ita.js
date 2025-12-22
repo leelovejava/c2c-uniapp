@@ -258,7 +258,8 @@ export default {
 				processing: "In elaborazione",
 				orders: "Ordini",
 				confirmExchange: "Conferma scambio",
-				records: "Registri"
+				records: "Registri",
+				selectCurrency: "Seleziona valuta"
 			},
 			modal: {
 				steps: [

@@ -327,6 +327,33 @@ export default {
 			logout: "लॉग आउट करें"
 		}
 	},
+	exchange: {
+		infoCard: {
+			totalOrders: "कुल ऑर्डर",
+			totalProfit: "कुल लाभ",
+			totalBalance: "कुल बैलेंस",
+			processing: "प्रक्रिया में",
+			orders: "ऑर्डर",
+			confirmExchange: "विनिमय की पुष्टि करें",
+			records: "रिकॉर्ड",
+			selectCurrency: "मुद्रा चुनें"
+		},
+		modal: {
+			steps: [
+				"ऑर्डर मिलान",
+				"प्रक्रिया में",
+				"विनिमय पूरा हुआ"
+			],
+			percentage: "(100%)",
+			exchangedCurrency: "विनिमय की गई मुद्रा",
+			exchangedRate: "विनिमय दर",
+			exchangedAmount: "विनिमय की गई राशि",
+			exchangeEarnings: "विनिमय से आय",
+			orderType: "ऑर्डर का प्रकार",
+			expectedReturn: "अपेक्षित रिटर्न",
+			close: "बंद करें"
+		}
+	},
 	order: {
 		recordsTitle: "रिकॉर्ड",
 		tabs: {
