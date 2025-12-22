@@ -75,7 +75,7 @@
 									<span class="currency-value">{{ userinfo.eur || '0.00' }} EUR</span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.money || '0.00' }} USD</span>
+									<span class="currency-value">{{ userinfo.usd || '0.00' }} USD</span>
 								</view>
 								<view class="currency-item">
 									<span class="currency-value">{{ userinfo.cad || '0.00' }} CAD</span>

@@ -465,7 +465,9 @@ export default {
 		enterWithdrawalAmount: "出金金額を入力",
 		all: "すべて",
 		enterWithdrawalPassword: "出金パスワードを入力",
-		submit: "送信"
+		submit: "送信",
+		enterWithdrawalAmount: "出金金額を入力してください",
+		withdrawalFailed: "出金に失敗しました。後でもう一度お試しください"
 	},
 	about: {
 		title: "私たちについて",
@@ -537,5 +539,11 @@ export default {
 		statusPending: "審査中",
 		statusSuccess: "審査成功",
 		statusFailed: "審査失敗"
+	},
+	withdrawalStatus: {
+		pending: "審査待ち",
+		success: "支払い済み",
+		rejected: "拒否",
+		processing: "支払い処理中"
 	}
 }

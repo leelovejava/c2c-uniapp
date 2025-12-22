@@ -32,7 +32,7 @@ const install = (Vue, vm) => {
 
 		walletedit: (token) => vm.$u.post("/wallet/edit", {token}),
 		exchangeinfo: (token) => vm.$u.post("/exchange/info", {token}),
-		exchangeswap: (token) => vm.$u.post("/exchange/swap", {token}),
+		exchangeswap: (token,data) => vm.$u.post("/exchange/swap", {token, ...data}),
 		exchanglist: (token,data) => vm.$u.post("/exchange/list", {token,...data}),
 		//忘记密码
 		change_pwd: (token, {ol_password, password}) => vm.$u.post("/user/change_pwd", {token, ol_password, password}),

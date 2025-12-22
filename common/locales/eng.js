@@ -463,7 +463,15 @@ export default {
 		enterWithdrawalAmount: "Enter Withdrawal Amount",
 		all: "All",
 		enterWithdrawalPassword: "Enter Withdrawal Password",
-		submit: "Submit"
+		submit: "Submit",
+		enterWithdrawalAmount: "Please enter withdrawal amount",
+		withdrawalFailed: "Withdrawal failed, please try again later"
+	},
+	withdrawalStatus: {
+		pending: "Pending Review",
+		success: "Payment Made",
+		rejected: "Rejected",
+		processing: "Processing Payment"
 	},
 	about: {
 		title: "About Us",

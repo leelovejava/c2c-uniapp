@@ -380,6 +380,27 @@ export default {
 			statusPending: "На рассмотрении",
 			statusSuccess: "Рассмотрение успешно",
 			statusFailed: "Рассмотрение не удалось"
-		}
+		},
+		deposit: {
+			withdrawal: "Вывод",
+			history: "История",
+			submit: "Отправить",
+			enterWithdrawalAmount: "Введите сумму вывода",
+			withdrawalFailed: "Ошибка вывода, попробуйте позже"
+		},
+		currency: {
+			usd: "Доллар США",
+			eur: "Евро",
+			cad: "Канадский доллар",
+			sgd: "Сингапурский доллар",
+			chf: "Швейцарский франк",
+			gbp: "Фунт стерлингов"
+		},
+		withdrawalStatus: {
+			pending: "Ожидает проверки",
+			success: "Выплачено",
+			rejected: "Отклонено",
+			processing: "Обработка выплаты"
 		}
 	}
+}

@@ -465,7 +465,9 @@ export default {
 		enterWithdrawalAmount: "Auszahlungsbetrag eingeben",
 		all: "Alle",
 		enterWithdrawalPassword: "Auszahlungskennwort eingeben",
-		submit: "Senden"
+		submit: "Senden",
+		enterWithdrawalAmount: "Bitte geben Sie den Auszahlungsbetrag ein",
+		withdrawalFailed: "Auszahlung fehlgeschlagen, bitte versuchen Sie es später erneut"
 	},
 	about: {
 		title: "Über uns",
@@ -537,5 +539,11 @@ export default {
 		statusPending: "In Prüfung",
 		statusSuccess: "Prüfung erfolgreich",
 		statusFailed: "Prüfung fehlgeschlagen"
+	},
+	withdrawalStatus: {
+		pending: "Ausstehende Überprüfung",
+		success: "Bezahlt",
+		rejected: "Abgelehnt",
+		processing: "Zahlung wird bearbeitet"
 	}
 }

@@ -441,5 +441,18 @@ export default {
 			submitButtonText: "Salva Informazioni",
 			bindSuccess: "Collegamento riuscito",
 			updateSuccess: "Aggiornamento riuscito"
+		},
+		deposit: {
+			withdrawal: "Prelievo",
+			history: "Cronologia",
+			submit: "Invia",
+			enterWithdrawalAmount: "Inserisci l'importo del prelievo",
+			withdrawalFailed: "Prelievo fallito, riprova più tardi"
+		},
+		withdrawalStatus: {
+			pending: "In attesa di revisione",
+			success: "Pagamento effettuato",
+			rejected: "Respinto",
+			processing: "Elaborazione pagamento"
 		}
 	}

@@ -420,5 +420,18 @@ bind: [
 			submitButtonText: "Salvar Informações",
 			bindSuccess: "Vinculação bem-sucedida",
 			updateSuccess: "Atualização bem-sucedida"
+		},
+		deposit: {
+			withdrawal: "Retirada",
+			history: "Histórico",
+			submit: "Enviar",
+			enterWithdrawalAmount: "Digite o valor da retirada",
+			withdrawalFailed: "Falha na retirada, tente novamente mais tarde"
+		},
+		withdrawalStatus: {
+			pending: "Pendente de revisão",
+			success: "Pagamento efetuado",
+			rejected: "Rejeitado",
+			processing: "Processando pagamento"
 		}
 	}

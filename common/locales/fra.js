@@ -589,7 +589,15 @@ export default {
 		enterWithdrawalAmount: "Entrez le montant du retrait",
 		all: "Tout",
 		enterWithdrawalPassword: "Entrez le mot de passe de retrait",
-		submit: "Soumettre"
+		submit: "Soumettre",
+		enterWithdrawalAmount: "Veuillez saisir le montant du retrait",
+		withdrawalFailed: "Échec du retrait, veuillez réessayer plus tard"
+	},
+	withdrawalStatus: {
+		pending: "En attente de vérification",
+		success: "Paiement effectué",
+		rejected: "Rejeté",
+		processing: "Traitement du paiement"
 	},
 	about: {
 		title: "À propos de nous",

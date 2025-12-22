@@ -538,9 +538,22 @@ export default {
 		bindSuccess: "綁定成功",
 		updateSuccess: "修改成功"
 	},
+	deposit: {
+		withdrawal: "提款",
+		history: "歷史記錄",
+		submit: "提交",
+		enterWithdrawalAmount: "請輸入提款金額",
+		withdrawalFailed: "提款失敗，請稍後再試"
+	},
 	"support": {
 		"title": "聯繫我們",
 		"serviceTime": "客服時間：每日上午10:00 – 晚上11:00",
 		"buttonText": "OFX 支援團隊"
+	},
+	withdrawalStatus: {
+		pending: "待審核",
+		success: "已打款",
+		rejected: "已拒絕",
+		processing: "打款中"
 	}
 }

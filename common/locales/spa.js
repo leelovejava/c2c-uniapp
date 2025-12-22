@@ -550,5 +550,18 @@ export default {
 			submitButtonText: "Guardar información",
 			bindSuccess: "Vinculación exitosa",
 			updateSuccess: "Actualización exitosa"
+		},
+		deposit: {
+			withdrawal: "Retiro",
+			history: "Historial",
+			submit: "Enviar",
+			enterWithdrawalAmount: "Ingrese el monto del retiro",
+			withdrawalFailed: "Error en el retiro, inténtelo de nuevo más tarde"
+		},
+		withdrawalStatus: {
+			pending: "Pendiente de revisión",
+			success: "Pago realizado",
+			rejected: "Rechazado",
+			processing: "Procesando pago"
 		}
 	}

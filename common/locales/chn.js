@@ -482,7 +482,15 @@ export default {
 		enterWithdrawalAmount: "输入提现金额",
 		all: "全部",
 		enterWithdrawalPassword: "输入提款密码",
-		submit: "提交"
+		submit: "提交",
+		enterWithdrawalAmount: "请输入提现金额",
+		withdrawalFailed: "提现失败，请稍后再试"
+	},
+	withdrawalStatus: {
+		pending: "待审核",
+		success: "已打款",
+		rejected: "已拒绝",
+		processing: "打款中"
 	},
 	about: {
 		title: "关于我们",
