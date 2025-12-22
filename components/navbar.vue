@@ -99,6 +99,12 @@
 						</view>
 						<view class="">
 							<u-grid :col="3" :border="false">
+								
+								<u-grid-item bg-color="none" @click="$u.route('/pages/index/index')">
+									<image src="/static/image/fz/home.png" style="width: 46rpx;height: 46rpx;"
+										class="a-mb5"></image>
+									<view class="grid-text">{{ $t('common.footer') [0]}}</view>
+								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/vip')">
 									<image src="/static/image/fz/hydj.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
