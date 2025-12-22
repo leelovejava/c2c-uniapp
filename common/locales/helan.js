@@ -1,3 +1,4 @@
+// 荷兰语
 export default {
 	common: {
 		currency: "USDT",
@@ -512,5 +513,37 @@ export default {
 		all: "Alle",
 		enterWithdrawalPassword: "Voer het opnamewachtwoord in",
 		submit: "Indienen"
+	},
+	vip: {
+		title: "Membership Level",
+		current: "Current",
+		deposit: "Deposit",
+		bonus: "Bonus",
+		commissionRate: "Commission Rate",
+		dailyOrders: "Daily Orders",
+		description: "VIP-niveauverklaring:\n" +
+		"Het verkopen van USDT om prijsverschillen te benutten is in wezen een vorm van liquiditeitsverstrekking.\n" +
+		"VIP-niveaus beperken het aantal transacties om te voorkomen dat gewone accounts de ruimte van professionele market makers innemen en om platformrisico’s te verminderen.\n" +
+		"AML- en regelgevingsdruk! (de kernreden)\n" +
+		"Daarom gebruikt het platform:\n" +
+		"VIP-niveau\n" +
+		"Aantal transacties\n" +
+		"Drempel voor transactiewaarde\n" +
+		"Om gebruikers te selecteren:\n" +
+		"Gewone gebruikers wisselen slechts af en toe geld.\n" +
+		"Het frequent verkopen van USDT wordt gezien als professionele valutawissel- of liquiditeitsactiviteit.\n" +
+		"VIP = beheersbaar risicodoel (meer zekerheid voor het platform)\n" +
+		"VIP-gebruikers beschikken doorgaans over:\n" +
+		"Een groter kapitaalvolume\n" +
+		"Vollediger KYC\n" +
+		"Een langere transactiegeschiedenis\n" +
+		"\n" +
+		"Platformlogica:\n" +
+		"Beperkingen op de verkoop van USDT bestaan omdat dit al hoogfrequente valuta- en liquiditeitsactiviteiten zijn, waarvoor hogere niveaus nodig zijn om aan regelgeving te voldoen.\n" +
+		"Dit is geen platformbelemmering, maar een marktgericht ontwerp voor naleving van regelgeving.\n" +
+		"\n" +
+		"Let op:\n" +
+		"Prijsverschillen in USDT kunnen winst opleveren, maar het betreft een \"quasi-financiële activiteit\". VIP-beperkingen zijn geen drempel, maar een signaal:\n" +
+		"\"U bent geen gewone gebruiker meer.\""
 	}
 };

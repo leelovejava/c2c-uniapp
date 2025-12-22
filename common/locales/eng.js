@@ -1,3 +1,4 @@
+// 英文
 export default {
 	common: {
 		mixRecharge: ["Please fill in the email address"],
@@ -420,7 +421,31 @@ export default {
 		deposit: "Deposit",
 		bonus: "Bonus",
 		commissionRate: "Commission Rate",
-		dailyOrders: "Daily Orders"
+		dailyOrders: "Daily Orders",
+		description: "VIP level statement:\n" +
+			"Selling USDT can earn the difference, which is essentially \"doing liquidity business\"\n" +
+			"VIP limits the number of transactions in order to prevent ordinary accounts from occupying the space of professional market makers and reduce the risk of platform risk control.\n" +
+			"AML and regulatory pressure! (the core reason)\n" +
+			"So the platform will use:\n" +
+			"VIP level\n" +
+			"Number of transactions\n" +
+			"Threshold of transaction amount\n" +
+			"To screen the crowd:\n" +
+			"Ordinary users occasionally exchange money.\n" +
+			"High-frequency selling USDT suspected foreign exchange/market maker professional liquidity provider\n" +
+			"VIP= risk control controllable object (platform is more assured)\n" +
+			"VIP users usually have:\n" +
+			"Higher capital volume\n" +
+			"More complete KYC\n" +
+			"Long transaction history\n" +
+			"\n" +
+			"The logic of the platform is:\n" +
+			"The platform limits the number of selling USDT because it is already a high-frequency foreign exchange and liquidity behavior, and it needs a higher level to meet the supervision.\n" +
+			"Risk control requirements are not platform difficulties, but more market-oriented regulatory compliance design.\n" +
+			"\n" +
+			"Tips:\n" +
+			"USDT price difference can make money, but it is a \"quasi-financial behavior\". VIP level restriction is not a threshold, but the platform is telling you:\n" +
+			"You are no longer an ordinary user."
 	},
 	deposit: {
 		withdrawal: "Withdrawal",

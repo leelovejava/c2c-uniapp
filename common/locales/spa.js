@@ -1,3 +1,4 @@
+// 西班牙语
 export default {
 	common: {
 		mixRecharge: ["Por favor, ingrese su dirección de correo electrónico"],
@@ -447,7 +448,31 @@ export default {
 		deposit: "Depósito",
 		bonus: "Bono",
 		commissionRate: "Tasa de comisión",
-		dailyOrders: "Órdenes diarias"
+		dailyOrders: "Órdenes diarias",
+		description: "Declaración de nivel VIP:\n" +
+			"Vender USDT para obtener diferencias de precio es, en esencia, una actividad de provisión de liquidez.\n" +
+			"El nivel VIP limita la cantidad de transacciones para evitar que las cuentas ordinarias ocupen el espacio de los creadores de mercado profesionales y para reducir los riesgos de control de la plataforma.\n" +
+			"Presión de AML y regulatoria. (razón principal)\n" +
+			"Por lo tanto, la plataforma utiliza:\n" +
+			"Nivel VIP\n" +
+			"Número de transacciones completadas\n" +
+			"Umbral del volumen de transacciones\n" +
+			"Para filtrar a los usuarios:\n" +
+			"Los usuarios ordinarios solo realizan cambios ocasionales.\n" +
+			"La venta frecuente de USDT se considera una actividad profesional de cambio o provisión de liquidez.\n" +
+			"VIP = objeto de control de riesgo gestionable (mayor tranquilidad para la plataforma)\n" +
+			"Los usuarios VIP normalmente tienen:\n" +
+			"Mayor volumen de capital\n" +
+			"KYC más completo\n" +
+			"Historial de transacciones más largo\n" +
+			"\n" +
+			"La lógica de la plataforma es:\n" +
+			"La limitación en la venta de USDT se debe a que ya constituye una actividad de cambio y liquidez de alta frecuencia, que requiere un nivel más alto para cumplir con la supervisión regulatoria y los requisitos de control de riesgo.\n" +
+			"No es una dificultad impuesta por la plataforma, sino un diseño de cumplimiento regulatorio más orientado al mercado.\n" +
+			"\n" +
+			"Aviso:\n" +
+			"La diferencia de precios de USDT puede generar ganancias, pero es una \"actividad cuasi financiera\". La restricción del nivel VIP no es un umbral, sino un mensaje de la plataforma:\n" +
+			"\"Ya no eres un usuario ordinario.\""
 	},
 	about: {
 		title: "Acerca de nosotros",

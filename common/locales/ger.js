@@ -1,3 +1,4 @@
+// 德语
 export default {
 	common: {
 		mixRecharge: ["Bitte geben Sie Ihre E-Mail-Adresse ein"],
@@ -533,6 +534,38 @@ export default {
 			title: "Kontaktieren Sie uns",
 			serviceTime: "Servicezeiten: Täglich von 10:00 Uhr bis 23:00 Uhr",
 			buttonText: "OFX Support-Team"
+		},
+		vip: {
+			title: 'Mitgliedsstufe',
+			current: "Aktuell",
+			deposit : "Einzahlung",
+			bonus : "Bonus",
+			commissionRate : "Provisionssatz",
+			dailyOrders : "Tägliche Aufträge",
+			description:
+				"VIP-Stufen-Erklärung:\n" +
+				"Der Verkauf von USDT zur Erzielung von Preisunterschieden stellt im Wesentlichen eine Liquiditätsbereitstellung dar.\n" +
+				"VIP-Stufen begrenzen die Anzahl der Transaktionen, um normale Konten von professionellen Market Makern zu trennen.\n" +
+				"AML- und regulatorischer Druck! (Hauptgrund)\n" +
+				"Die Plattform nutzt daher:\n" +
+				"VIP-Stufe\n" +
+				"Anzahl der Transaktionen\n" +
+				"Transaktionsbetragsgrenze\n" +
+				"Zur Nutzerklassifizierung:\n" +
+				"Normale Nutzer führen gelegentliche Transaktionen durch.\n" +
+				"Häufiger USDT-Verkauf gilt als professionelle Liquiditätsaktivität.\n" +
+				"VIP = kontrollierbares Risikoobjekt\n" +
+				"VIP-Nutzer verfügen in der Regel über:\n" +
+				"Höheres Kapitalvolumen\n" +
+				"Vollständigeres KYC\n" +
+				"Längere Transaktionshistorie\n" +
+				"\n" +
+				"Plattformlogik:\n" +
+				"Die Begrenzung des USDT-Verkaufs ist eine marktorientierte regulatorische Compliance-Maßnahme.\n" +
+				"\n" +
+				"Hinweis:\n" +
+				"USDT-Preisdifferenzen sind quasi-finanzielle Aktivitäten. Der VIP-Status signalisiert:\n" +
+				"Sie sind kein gewöhnlicher Nutzer mehr."
 		}
 	}
 };

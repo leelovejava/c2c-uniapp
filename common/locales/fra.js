@@ -1,3 +1,4 @@
+// 法语
 export default {
 	common: {
 		mixRecharge: ["Veuillez entrer votre adresse e-mail"],
@@ -535,7 +536,30 @@ export default {
 		deposit: "Dépôt",
 		bonus: "Bonus",
 		commissionRate: "Taux de commission",
-		dailyOrders: "Commandes quotidiennes"
+		dailyOrders: "Commandes quotidiennes",
+		description: "Déclaration du niveau VIP :\n" +
+			"La vente de USDT permet de générer des profits grâce aux écarts de prix, ce qui constitue essentiellement une activité de fourniture de liquidité.\n" +
+			"Les niveaux VIP limitent le nombre de transactions afin d’éviter que les comptes ordinaires n’occupent l’espace des teneurs de marché professionnels.\n" +
+			"Pressions AML et réglementaires ! (raison principale)\n" +
+			"La plateforme utilise donc :\n" +
+			"Niveau VIP\n" +
+			"Nombre de transactions\n" +
+			"Seuil du montant des transactions\n" +
+			"Pour classifier les utilisateurs :\n" +
+			"Les utilisateurs ordinaires effectuent des échanges occasionnels.\n" +
+			"La vente fréquente de USDT est considérée comme une activité professionnelle de change ou de liquidité.\n" +
+			"VIP = objet de contrôle du risque maîtrisable\n" +
+			"Les utilisateurs VIP disposent généralement de :\n" +
+			"Capitaux plus élevés\n" +
+			"KYC plus complet\n" +
+			"Historique de transactions plus long\n" +
+			"\n" +
+			"Logique de la plateforme :\n" +
+			"La limitation des ventes de USDT répond à des exigences de conformité réglementaire orientées marché.\n" +
+			"\n" +
+			"Conseils :\n" +
+			"Les écarts de prix USDT relèvent d’une activité quasi financière. Le niveau VIP indique que :\n" +
+			"Vous n’êtes plus un utilisateur ordinaire."
 	},
 	about: {
 		title: "À propos de nous",

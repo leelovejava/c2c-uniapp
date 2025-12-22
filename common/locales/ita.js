@@ -1,3 +1,4 @@
+// 意大利语
 export default {
 	common: {
 		mixRecharge: ["Si prega di inserire l'indirizzo email"],
@@ -359,7 +360,31 @@ export default {
 		deposit: "Deposito",
 		bonus: "Bonus",
 		commissionRate: "Tasso di commissione",
-		dailyOrders: "Ordini giornalieri"
+		dailyOrders: "Ordini giornalieri",
+		description: "Dichiarazione del livello VIP:\n" +
+			"La vendita di USDT consente di guadagnare sulla differenza di prezzo, che è essenzialmente un’attività di fornitura di liquidità.\n" +
+			"Il livello VIP limita il numero di transazioni per evitare che gli account ordinari occupino lo spazio dei market maker professionali e per ridurre la pressione del controllo del rischio della piattaforma.\n" +
+			"Pressione AML e normativa! (motivo principale)\n" +
+			"Pertanto, la piattaforma utilizza:\n" +
+			"Livello VIP\n" +
+			"Numero di transazioni\n" +
+			"Soglia dell’importo delle transazioni\n" +
+			"Per selezionare gli utenti:\n" +
+			"Gli utenti ordinari effettuano cambi occasionali.\n" +
+			"La vendita frequente di USDT è considerata un’attività professionale di cambio o di fornitura di liquidità.\n" +
+			"VIP = oggetto di controllo del rischio gestibile (maggiore affidabilità per la piattaforma)\n" +
+			"Gli utenti VIP di solito hanno:\n" +
+			"Maggiore volume di capitale\n" +
+			"KYC più completo\n" +
+			"Storico delle transazioni più lungo\n" +
+			"\n" +
+			"La logica della piattaforma è:\n" +
+			"La limitazione del numero di vendite di USDT è dovuta al fatto che si tratta già di un comportamento ad alta frequenza di cambio e liquidità, che richiede un livello più elevato per soddisfare la supervisione normativa.\n" +
+			"I requisiti di controllo del rischio non sono difficoltà della piattaforma, ma una progettazione di conformità normativa orientata al mercato.\n" +
+			"\n" +
+			"Suggerimenti:\n" +
+			"Le differenze di prezzo di USDT possono generare profitti, ma si tratta di un \"comportamento quasi finanziario\". La restrizione del livello VIP non è una soglia, ma un messaggio della piattaforma:\n" +
+			"Non sei più un utente ordinario."
 	},
 	about: {
 		title: "Chi siamo",

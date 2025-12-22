@@ -1,3 +1,4 @@
+// 中文
 export default {
 	common: {
 		mixRecharge: ["请填写邮箱地址"],
@@ -423,7 +424,31 @@ export default {
 		deposit: "存款",
 		bonus: "奖金",
 		commissionRate: "佣金率",
-		dailyOrders: "每日订单"
+		dailyOrders: "每日订单",
+		description: "VIP等级声明：\n" +
+			"出售USDT能赚差价，本质是在“做流动性生意”\n" +
+			"VIP限制交易次数，是为了防止普通账号挤占专业做市商的空间，同时降低平台风控风险。\n" +
+			"防洗钱（AML）与监管压力！（最核心原因）\n" +
+			"所以平台会用：\n" +
+			"VIP等级\n" +
+			"成交次数\n" +
+			"交易额门槛\n" +
+			"来筛选人群：\n" +
+			"普通用户 偶尔换钱\n" +
+			"高频卖 USDT疑似换汇/做市商家 专业流动性提供者\n" +
+			"VIP=风控可控对象（平台更放心）\n" +
+			"VIP用户通常具备：\n" +
+			"更高资金量\n" +
+			"更完整KYC\n" +
+			"更长交易历史\n" +
+			"\n" +
+			"平台的逻辑是:\n" +
+			"平台限制卖USDT的次数，是因为这已经属于高频换汇和流动性行为，需要更高等级来满足监管\n" +
+			"和风控要求，不是平台刁难，而是更具市场的监管合规设计。\n" +
+			"\n" +
+			"温馨提示：\n" +
+			"USDT差价能赚钱，但他是“准金融行为”VIP等级限制不是门槛，而是平台在告诉你：\n" +
+			"“你已经不是普通用户了”。"
 	},
 	deposit: {
 		withdrawal: "提款",
@@ -478,23 +503,22 @@ export default {
 		failMessage: "提交失败",
 		networkErrorMessage: "网络错误"
 	},
-		
-		bankCardList: {
-			formTitle: "银行信息",
-			accountNameLabel: "账户名称",
-			accountNamePlaceholder: "请输入账户名称",
-			accountNumberLabel: "账号",
-			accountNumberPlaceholder: "请输入账号",
-			bankNameLabel: "银行名称",
-			bankNamePlaceholder: "请输入银行名称",
-			countryLabel: "国家",
-			countryPlaceholder: "请选择国家",
-			routingNumberLabel: "路由号码",
-			routingNumberPlaceholder: "请输入路由号码",
-			swiftCodeLabel: "SWIFT代码",
-			swiftCodePlaceholder: "请输入SWIFT代码",
-			bankAddressLabel: "银行地址",
-			bankAddressPlaceholder: "请输入银行地址",
-			submitButtonText: "保存信息"
-		}
+	bankCardList: {
+		formTitle: "银行信息",
+		accountNameLabel: "账户名称",
+		accountNamePlaceholder: "请输入账户名称",
+		accountNumberLabel: "账号",
+		accountNumberPlaceholder: "请输入账号",
+		bankNameLabel: "银行名称",
+		bankNamePlaceholder: "请输入银行名称",
+		countryLabel: "国家",
+		countryPlaceholder: "请选择国家",
+		routingNumberLabel: "路由号码",
+		routingNumberPlaceholder: "请输入路由号码",
+		swiftCodeLabel: "SWIFT代码",
+		swiftCodePlaceholder: "请输入SWIFT代码",
+		bankAddressLabel: "银行地址",
+		bankAddressPlaceholder: "请输入银行地址",
+		submitButtonText: "保存信息"
 	}
+}

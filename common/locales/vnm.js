@@ -417,7 +417,31 @@ export default {
 		deposit: "Tiền gửi",
 		bonus: "Thưởng",
 		commissionRate: "Tỷ lệ hoa hồng",
-		dailyOrders: "Đơn hàng hàng ngày"
+		dailyOrders: "Đơn hàng hàng ngày",
+		description :
+			"Giải thích cấp độ VIP:\n" +
+			"Bán USDT để kiếm chênh lệch giá về bản chất là hoạt động cung cấp thanh khoản。\n" +
+			"Cấp VIP giới hạn số lượng giao dịch nhằm ngăn tài khoản thông thường chiếm chỗ của nhà tạo lập thị trường chuyên nghiệp。\n" +
+			"Áp lực AML và quy định (lý do cốt lõi)\n" +
+			"Nền tảng sử dụng các tiêu chí sau:\n" +
+			"Cấp VIP\n" +
+			"Số lượng giao dịch\n" +
+			"Ngưỡng giá trị giao dịch\n" +
+			"Phân loại người dùng:\n" +
+			"Người dùng thông thường chỉ giao dịch thỉnh thoảng。\n" +
+			"Bán USDT tần suất cao được xem là hoạt động thanh khoản chuyên nghiệp。\n" +
+			"VIP = đối tượng kiểm soát rủi ro có thể quản lý\n" +
+			"Người dùng VIP thường có:\n" +
+			"Nguồn vốn lớn hơn\n" +
+			"KYC đầy đủ\n" +
+			"Lịch sử giao dịch dài\n" +
+			"\n" +
+			"Logic nền tảng:\n" +
+			"Giới hạn bán USDT là thiết kế tuân thủ quy định theo thị trường。\n" +
+			"\n" +
+			"Lưu ý:\n" +
+			"Chênh lệch giá USDT là hành vi bán tài chính. VIP có nghĩa là:\n" +
+			"Bạn không còn là người dùng thông thường."
 	},
 	about: {
 		title: "Về chúng tôi",

@@ -1,3 +1,4 @@
+// 马来西亚
 export default {
 	common: {
 		mixRecharge: ["Sila masukkan alamat emel"],
@@ -414,6 +415,38 @@ export default {
 			exchangeCurrency: "Mata Wang Pertukaran",
 			exchangeEarnings: "Pendapatan Pertukaran",
 			expectedReturn: "Pulangan Yang Dijangka"
+		},
+		vip: {
+			title: "Membership Level",
+			current: "Current",
+			deposit: "Deposit",
+			bonus: "Bonus",
+			commissionRate: "Commission Rate",
+			dailyOrders: "Daily Orders",
+			description: "Pernyataan Tahap VIP:\n" +
+				"Menjual USDT untuk mendapatkan perbezaan harga pada asasnya merupakan aktiviti penyediaan kecairan.\n" +
+				"Tahap VIP mengehadkan bilangan transaksi bagi mengelakkan akaun biasa mengambil ruang pembuat pasaran profesional serta mengurangkan risiko kawalan platform.\n" +
+				"Tekanan AML dan peraturan! (sebab paling utama)\n" +
+				"Oleh itu, platform menggunakan:\n" +
+				"Tahap VIP\n" +
+				"Bilangan transaksi\n" +
+				"Ambang jumlah transaksi\n" +
+				"Untuk menapis pengguna:\n" +
+				"Pengguna biasa hanya menukar wang sekali-sekala.\n" +
+				"Penjualan USDT secara kerap dianggap sebagai aktiviti pertukaran atau penyediaan kecairan profesional.\n" +
+				"VIP = objek kawalan risiko yang boleh diurus (platform lebih yakin)\n" +
+				"Pengguna VIP biasanya mempunyai:\n" +
+				"Jumlah modal yang lebih tinggi\n" +
+				"KYC yang lebih lengkap\n" +
+				"Sejarah transaksi yang lebih panjang\n" +
+				"\n" +
+				"Logik platform:\n" +
+				"Had penjualan USDT dikenakan kerana ia sudah tergolong sebagai aktiviti pertukaran dan kecairan berfrekuensi tinggi, yang memerlukan tahap lebih tinggi untuk memenuhi keperluan kawal selia.\n" +
+				"Keperluan kawalan risiko bukanlah kesukaran platform, tetapi reka bentuk pematuhan peraturan yang berorientasikan pasaran.\n" +
+				"\n" +
+				"Peringatan:\n" +
+				"Perbezaan harga USDT boleh menjana keuntungan, tetapi ia merupakan \"aktiviti separa kewangan\". Had tahap VIP bukan sekatan, tetapi mesej daripada platform:\n" +
+				"\"Anda bukan lagi pengguna biasa.\""
 		}
 	}
 };

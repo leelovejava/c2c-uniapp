@@ -1,3 +1,4 @@
+// 泰语
 export default {
 	common: {
 		mixRecharge: ["กรุณากรอกที่อยู่อีเมลของคุณ"],

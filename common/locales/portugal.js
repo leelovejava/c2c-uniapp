@@ -1,3 +1,4 @@
+// 葡萄牙
 export default {
 common: {
 mixRecharge: ["Por favor, insira o endereço de email"],
