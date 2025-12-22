@@ -1,6 +1,6 @@
 <template>
 	<view class="navbar">
-		<view class="menu-btn" @click="leftShow=true,getuserinfo()">☰ MENU</view>
+		<view class="menu-btn" @click="leftShow = true, init()">☰ MENU</view>
 		<view class="logo">
 			<image src="/static/image/fz/logo3.png" mode="widthFix"
 				style="width:100px;object-fit:contain;vertical-align:middle;">
@@ -10,7 +10,7 @@
 			<view class="dropdown">
 				<view class="dropdown-toggle a-rowC" @tap="$u.route('/pages/setting/language')">
 					<view class="a-mr3">
-						{{i18n.language}}
+						{{ i18n.language }}
 					</view>
 					<u-icon name="arrow-down-fill" color="#fff" size="16"></u-icon>
 				</view>
@@ -39,12 +39,12 @@
 								</view> -->
 								<view class="a-rowC a-mb5" style="color: #ccc;">
 									<view class="a-mr10 a-f28">
-										UID:{{userinfo.uid}} {{userinfo.level}}
+										UID:{{ userinfo.uid }} {{ userinfo.level }}
 									</view>
 								</view>
 								<view class="a-rowC" style="color: #ccc;">
 									<view class="a-mr10 a-f28">
-										{{ $t('common.navbar.inviteCode') }}: {{userinfo.code}}
+										{{ $t('common.navbar.inviteCode') }}: {{ userinfo.code }}
 									</view>
 									<view class="a-tc a-f24 a-borr5 a-crfff"
 										style="background: #1E90FF;padding:4rpx 16rpx;" @click="copyInviteCode">
@@ -54,7 +54,7 @@
 							</view>
 						</view>
 						<view style="position: absolute;right:10rpx;top: 30rpx;">
-							<u-icon name="close" color="#fff" size="34" @click="leftShow=false"></u-icon>
+							<u-icon name="close" color="#fff" size="34" @click="leftShow = false"></u-icon>
 						</view>
 						<view class="a-mb15">
 							<view class="a-between a-mb3">
@@ -62,14 +62,14 @@
 									{{ $t('common.navbar.creditScore') }}
 								</view>
 								<view>
-									{{userinfo.credit_score-0}}%
+									{{ userinfo.credit_score - 0 }}%
 								</view>
 							</view>
-							<u-line-progress active-color="#4CAF50" height="20" :percent="userinfo.credit_score-0"
+							<u-line-progress active-color="#4CAF50" height="20" :percent="userinfo.credit_score - 0"
 								:show-percent="false"></u-line-progress>
 						</view>
 						<view class="a-mb15">
-						
+
 							<view class="currency-grid">
 								<view class="currency-item">
 									<span class="currency-value">{{ userinfo.eur || '0.00' }} EUR</span>
@@ -99,11 +99,11 @@
 						</view>
 						<view class="">
 							<u-grid :col="3" :border="false">
-								
+
 								<u-grid-item bg-color="none" @click="$u.route('/pages/index/index')">
 									<image src="/static/image/fz/home.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
-									<view class="grid-text">{{ $t('common.footer') [0]}}</view>
+									<view class="grid-text">{{ $t('common.footer')[0] }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/vip')">
 									<image src="/static/image/fz/hydj.png" style="width: 46rpx;height: 46rpx;"
@@ -141,7 +141,7 @@
 									<view class="grid-text">{{ $t('common.navbar.recharge') }}</view>
 								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
-									<image src="/static/image/fz/bdym.png" style="width: 46rpx;height: 46rpx;"
+									<image src="/static/image/fz/back.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.bankCards') }}</view>
 								</u-grid-item>
@@ -155,6 +155,13 @@
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.withdraw') }}</view>
 								</u-grid-item>
+
+								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bindinfo')">
+									<image src="/static/image/fz/smrz.png" style="width: 46rpx;height: 46rpx;"
+										class="a-mb5"></image>
+									<view class="grid-text">{{ $t('common.common4')[0] }}</view>
+								</u-grid-item>
+
 							</u-grid>
 						</view>
 					</view>
@@ -178,7 +185,7 @@
 								<u-icon name="arrow-right" color="#fff" size="28"></u-icon>
 							</view>
 						</view>
-					
+
 					</view>
 
 				</view>
@@ -189,126 +196,133 @@
 </template>
 
 <script>
-	export default {
-		computed: {
-			i18n() {
-				return this.$t("common")
-			},
+export default {
+	computed: {
+		i18n() {
+			return this.$t("common")
 		},
-		name: "Navbar",
-		data() {
-			return {
-				leftShow: false,
-				userinfo: {},
-			};
-		},
-		mounted() {
+	},
+	name: "Navbar",
+	data() {
+		return {
+			leftShow: false,
+			userinfo: {},
+		};
+	},
+	mounted() {
 
+	},
+	methods: {
+		init() {
+			const token = uni.getStorageSync('token')
+			this.$u.api.setting.exchangeswap(token).then(res => {
+				this.userinfo = res.data
+			})
+			this.getuserinfo()
 		},
-		methods: {
-			getuserinfo() {
-				const token = uni.getStorageSync('token')
-				this.$u.api.index.getUserinfo(token).then(res => {
-					this.userinfo = res.data
-				})
-			},
-			copyInviteCode() {
-				uni.setClipboardData({
-					data: this.userinfo.code,
-					success: () => {
-						this.$u.toast('Copied to clipboard')
-					}
-				})
-			}
+		getuserinfo() {
+			const token = uni.getStorageSync('token')
+			this.$u.api.index.getUserinfo(token).then(res => {
+				this.userinfo = res.data
+			})
+		},
+		copyInviteCode() {
+			uni.setClipboardData({
+				data: this.userinfo.code,
+				success: () => {
+					this.$u.toast('Copied to clipboard')
+				}
+			})
 		}
+	}
 
-	};
+};
 </script>
 
 <style lang="scss">
-	.navbar {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 30rpx;
-		background-color: rgba(0, 0, 0, 0.5);
-		color: white;
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30rpx;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 
-		.menu-btn {
-			font-size: 48rpx;
-			cursor: pointer;
+	.menu-btn {
+		font-size: 48rpx;
+		cursor: pointer;
+	}
+
+	.logo {
+		font-size: 40rpx;
+		font-weight: bold;
+	}
+
+	.language-switcher {
+		font-size: 60rpx;
+		margin-bottom: 20rpx;
+
+		.dropdown-toggle {
+			background-color: transparent;
+			color: white;
+			font-size: 32rpx;
 		}
 
-		.logo {
-			font-size: 40rpx;
-			font-weight: bold;
+		.dropdown {
+			position: relative;
+			display: inline-block;
 		}
 
-		.language-switcher {
-			font-size: 60rpx;
-			margin-bottom: 20rpx;
+		.dropdown-menu {
+			display: none;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.7);
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			max-height: 300px;
+			overflow-y: auto;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			right: 0;
+		}
 
-			.dropdown-toggle {
-				background-color: transparent;
-				color: white;
-				font-size: 32rpx;
-			}
+		.dropdown-menu a {
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			font-size: 12px;
+		}
+	}
 
-			.dropdown {
-				position: relative;
-				display: inline-block;
-			}
+	.currency-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		margin: 15px 0;
+		background-color: #1a233a;
+		border-radius: 10px;
+		padding: 10px;
 
-			.dropdown-menu {
-				display: none;
-				position: absolute;
-				background-color: rgba(0, 0, 0, 0.7);
-				min-width: 160px;
-				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-				z-index: 1;
-				max-height: 300px;
-				overflow-y: auto;
-				border: 1px solid rgba(255, 255, 255, 0.2);
-				right: 0;
-			}
+		.currency-item {
+			display: flex;
+			flex-direction: column;
+			padding: 8px;
+			background-color: #2d3748;
+			border-radius: 5px;
 
-			.dropdown-menu a {
-				color: white;
-				padding: 12px 16px;
-				text-decoration: none;
-				display: block;
+			.currency-name {
+				color: #a0aec0;
 				font-size: 12px;
+				margin-bottom: 5px;
 			}
-		}
-		
-		.currency-grid {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 10px;
-			margin: 15px 0;
-			background-color: #1a233a;
-			border-radius: 10px;
-			padding: 10px;
-			
-			.currency-item {
-				display: flex;
-				flex-direction: column;
-				padding: 8px;
-				background-color: #2d3748;
-				border-radius: 5px;
-				
-				.currency-name {
-					color: #a0aec0;
-					font-size: 12px;
-					margin-bottom: 5px;
-				}
-				
-				.currency-value {
-					color: #fff;
-					font-weight: bold;
-					font-size: 14px;
-				}
+
+			.currency-value {
+				color: #fff;
+				font-weight: bold;
+				font-size: 14px;
 			}
 		}
 	}
+}
 </style>

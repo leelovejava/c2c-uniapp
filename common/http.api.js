@@ -88,7 +88,7 @@ const install = (Vue, vm) => {
 		// 提交充值凭证
 		add_Recharge: (token,data) => vm.$u.get("/user/add_Recharge",{token,...data}),
 		// 申请提现
-		apply_withdrawal: (token,money) => vm.$u.post("/user/apply_withdrawal",{token,money,}),
+		apply_withdrawal: (token,data) => vm.$u.post("/user/apply_withdrawal",{token, ...data}),
 		// 充值记录
 		recharge_list: (token) => vm.$u.post("/user/recharge_list",{token}),
 		// 提现记录
