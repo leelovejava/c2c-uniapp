@@ -3,367 +3,267 @@ export default {
 	common: {
 		mixRecharge: ["Bitte geben Sie Ihre E-Mail-Adresse ein"],
 		language: "Sprache",
-		common: ["Online-Kundenservice", "Schwebende Abschaltung deaktivieren", "Bestätigen", "Abbrechen"],
-		upload: ["Upload läuft...", "Falsches Format", "Upload erfolgreich", "Upload fehlgeschlagen"],
-		vanPull: ["Keine weiteren Daten verfügbar", "Keine Daten"],
+		common: ["Online-Kundenservice", "Schweben abbrechen", "Bestätigen", "Abbrechen"],
+		upload: ["Wird hochgeladen...", "Falsches Format", "Upload erfolgreich", "Upload fehlgeschlagen"],
+		vanPull: ["Keine weiteren Daten", "Keine Daten"],
 		login: {
 			text: ["Sprache", "BITCOIN", "Anmelden"],
-			label: ["Melde dich an...", "Sofort anmelden"],
-			placeholder: ["Bitte geben Sie Ihre E-Mail-Adresse ein", "Bitte geben Sie Ihr Anmeldepasswort ein"],
-			default: ["Kein Konto?", "Jetzt registrieren", "Passwort vergessen?", "Vergessen Sie Ihr Anmeldepasswort"],
-			codes: ["Konto existiert nicht", "Passwort falsch", "Konto gesperrt", "Fehler"]
+			label: ["Anmeldung läuft...", "Jetzt anmelden"],
+			placeholder: ["Bitte geben Sie Ihre E-Mail ein", "Bitte geben Sie Ihr Anmeldekennwort ein"],
+			default: ["Noch kein Konto?", "Jetzt registrieren", "Passwort vergessen?", "Anmeldekennwort vergessen"],
+			codes: ["Konto existiert nicht", "Falsches Passwort", "Konto ist gesperrt", "Fehlgeschlagen"]
 		},
 		register: {
-			text: ["BITCOIN", "Senden des Bestätigungscodes...", "Klicken zum Erhalten", "Registrierung läuft...",
-				"Jetzt registrieren"
-			],
-			placeholder: ["Bitte geben Sie Ihre E-Mail-Adresse ein", "Bitte geben Sie den Bestätigungscode ein",
-				"Bitte geben Sie ein Anmeldepasswort ein", "Bitte bestätigen Sie Ihr Passwort",
-				"Bitte geben Sie den Einladungscode ein", "Passwörter stimmen nicht überein",
-				"Bitte geben Sie den Bestätigungscode ein", "Ungültige E-Mail-Adresse",
-				"Passwort darf nicht weniger als 6 Zeichen haben"
-			],
-			label: ["Bereits ein Konto? {a} {line}", "Zurück zur Anmeldung"],
-			codes: ["Konto existiert bereits", "Kein Bestätigungscode", "Bestätigungscode falsch",
-				"Die Passwörter stimmen nicht überein", "Empfohlener Benutzer existiert nicht", "Fehler"
-			]
+			text: ["BITCOIN", "Bestätigungscode wird gesendet...", "Klicken zum Abrufen", "Registrierung läuft...", "Jetzt registrieren"],
+			placeholder: ["Bitte geben Sie Ihre E-Mail ein", "Bitte geben Sie den Bestätigungscode ein", "Bitte geben Sie Ihr Anmeldekennwort ein", "Bitte bestätigen Sie Ihr Passwort", "Bitte geben Sie den Einladungscode ein", "Die Passwörter stimmen nicht überein", "Bitte geben Sie den Bestätigungscode ein", "Ungültige E-Mail", "Das Passwort sollte mindestens 6 Zeichen haben"],
+			label: ["Haben Sie bereits ein Konto? {a} {line}", "Zurück zur Anmeldung"],
+			codes: ["Konto existiert bereits", "Kein Bestätigungscode", "Falscher Bestätigungscode", "Passwörter stimmen nicht überein", "Empfehlender Benutzer existiert nicht", "Fehlgeschlagen"]
 		},
-		resetpwd: ["Passwort vergessen", "Bitte geben Sie Ihre E-Mail-Adresse ein",
-			"Bitte geben Sie den Bestätigungscode ein", "Klicken zum Erhalten",
-			"Bitte geben Sie ein neues Passwort ein", "Passwort zurücksetzen"
-		],
-		footer: ["Startseite", "Lobby", "Bestellungen", "Ich"],
+		resetpwd: ["Passwort vergessen", "Bitte geben Sie Ihre E-Mail ein", "Bitte geben Sie den Bestätigungscode ein", "Klicken zum Abrufen", "Bitte geben Sie Ihr Passwort ein", "Passwort zurücksetzen"],
+		footer: ["Startseite", "Marktplatz", "Bestellungen", "Mein Bereich"],
 		home: {
 			label: ["Willkommen"],
-			broadcast: "Glückwunsch an Mitglied {member} zur Beförderung zum {grade}",
-		menu: ["Fondsprotokoll", "Anfängertutorial", "Einladung registrieren", "Kontakt Kundenservice"],
-		noticeTitle: "Neueste Bekanntmachung",
-		msg: "Aufgabe nicht verfügbar",
-		video: "Kein Video-Tutorial verfügbar",
-		hero: {
-			title: "Der einfache Weg zum Online-Tausch",
-			subtitle: "Wir bewegen Geld global",
-			description: "Wir helfen Unternehmen und Privatpersonen, Geld sicher zu senden und zu empfangen, ohne übermäßige Bankgebühren zu zahlen.",
-			credentials1: "+25 Jahre Erfahrung, seit 2013 an der ASX gelistet",
-			credentials2: "Reguliert von über 50 Aufsichtsbehörden weltweit",
-			button: "STARTEN →"
-		}
+			broadcast: "Herzlichen Glückwunsch an Mitglied {member} für das Erreichen von {grade}",
+			menu: ["Kapitalprotokoll", "Einsteiger-Tutorial", "Einladungsregistrierung", "Kundenservice kontaktieren"],
+			noticeTitle: "Neueste Ankündigung",
+			msg: "Aufgabe nicht verfügbar",
+			video: "Kein Video-Tutorial verfügbar",
+			hero: {
+				title: "Der einfache Weg zum Online-Handel",
+				subtitle: "Wir bewegen Geld weltweit",
+				description: "Wir helfen Unternehmen und Privatpersonen dabei, sicher Geld zu senden und zu empfangen, ohne hohe Bankgebühren.",
+				credentials1: "Mehr als 25 Jahre Erfahrung, seit 2013 an der ASX gelistet",
+				credentials2: "Reguliert von über 50 Aufsichtsbehörden weltweit",
+				button: "LOSLEGEN →"
+			}
 		},
 		hall: {
-			default: ["Handelslobby", "Guthaben", "Kaufen", "Verkaufen", "Verkauf bestätigen", "Bestellliste",
-				"Verkaufsaufträge", "An Händler verkaufen", "Offen", "Kaufen", "Zum Verkauf gehen"
-			],
-			list: ["Anzahl", "Preis pro Einheit", "Unausgeführt", "USDT verkaufen",
-				"Bitte geben Sie die Menge an USDT ein", "Erhaltenes Betrag", "Limit", "USDT kaufen",
-				"Verbraucher Betrag"
-			],
-			kbip: ["Stornieren", "Betrag überschritten", "Muss im zulässigen Betragsbereich sein"]
+			default: ["Handelshalle", "Guthaben", "Kaufen", "Verkaufen", "Verkauf bestätigen", "Bestellliste", "Verkaufsbestellungen", "An Händler verkaufen", "Ausstehende Bestellungen", "Kaufen", "Zum Verkauf gehen"],
+			list: ["Menge", "Preis", "Nicht ausgeführt", "USDT verkaufen", "Bitte geben Sie die USDT-Menge ein", "Erhaltener Betrag", "Limit", "USDT kaufen", "Ausgegebener Betrag"],
+			kbip: ["Abbrechen", "Betrag überschritten", "Muss innerhalb des Betragsbereichs liegen"]
 		},
 		msglist: ["Nachrichtenliste"],
 		sell: {
 			placeholder: ["Bitte geben Sie den Verkaufspreis ein", "Bitte geben Sie die Verkaufsmenge ein"],
-			label: ["Guthaben (USDT)", "Name", "Bankkonto", "Aktueller Preis (USDT)", "Bester Verkaufspreis",
-				"Verkaufspreis", "Menge", "Bester Preis", "Alle", "Verkauf bestätigen"
-			]
+			label: ["Guthaben (USDT)", "Name", "Bankkonto", "Aktueller Preis (USDT)", "Bester Verkaufspreis", "Verkaufspreis", "Verkaufsmenge", "Bester Preis", "Alle", "Verkauf bestätigen"]
 		},
 		buy: {
-			placeholder: ["Bitte geben Sie den Kaufpreis ein", "Bitte geben Sie die Kaufmenge ein", "Mindestbetrag",
-				"Höchstbetrag"
-			],
-			label: ["Guthaben (USDT)", "Name", "Bankkonto", "Aktueller Preis (USDT)", "Bester Kaufpreis", "Kaufpreis",
-				"Menge", "Bester Preis", "Alle", "Kauf bestätigen", "Limit"
-			]
+			placeholder: ["Bitte geben Sie den Kaufpreis ein", "Bitte geben Sie die Kaufmenge ein", "Mindestlimit", "Maximallimit"],
+			label: ["Guthaben (USDT)", "Name", "Bankkonto", "Aktueller Preis (USDT)", "Bester Kaufpreis", "Kaufpreis", "Kaufmenge", "Bester Preis", "Alle", "Kauf bestätigen", "Limit"]
 		},
 		user: {
-			default: ["Benutzerzentrum", "Konto anmelden", "Einladungscode", "Abmelden", "Guthaben", "Goldmünzen",
-				"Wallet",
-				"Zinswallet",
-				"Gesamteinnahmen",
-				"Einzahlungsbetrag",
-				"Verkaufsbetrag",
-				"Einzelheiten",
-				"Bitte geben Sie den Kaufbetrag ein",
-				"Stornieren",
-				"Bestätigen",
-				"Kauf erfolgreich",
-				"Betrag",
-				"Ablaufzeit",
-				"Zinssatz",
-				"Laufzeit",
-				"Tage"
+			default: ["Persönliches Zentrum", "Anmeldekonto", "Einladungscode", "Abmelden", "Guthaben", "Gold", "Geldbörse",
+			"Zinsgeldbörse",
+			"Gesamteinnahmen",
+			"Aufladebetrag",
+			"Verkaufsbetrag",
+			"Details",
+			"Bitte geben Sie den Kaufbetrag ein",
+			"Abbrechen",
+			"Bestätigen",
+			"Kauf erfolgreich",
+			"Betrag",
+			"Ablaufzeit",
+			"Zinssatz",
+			"Laufzeit",
+			"Tage"
 			],
-			menu: ["Mein Vermögen", "Teilnehmerliste", "Konten verknüpfen", "Kontoauszug", "Plattformvorstellung",
-				"Abmelden"
-			]
+			menu: ["Meine Vermögenswerte", "Teamliste", "Kontobindung", "Kontodetails", "Plattform-Einführung", "Abmelden"]
 		},
 		bindAccount: {
-			default: ["Konto verknüpfen", "Einreichen"],
-			fields: ["Kontoinhaber", "Telefonnummer", "Bankkontonummer", "Bankname", "Typ", "USDT-Adresse"],
-			placeholder: ["Bitte geben Sie den Kontoinhaber ein", "Bitte geben Sie die Telefonnummer ein",
-				"Bitte geben Sie die Bankkontonummer ein", "Bitte geben Sie den Banknamen ein",
-				"Bitte wählen Sie den USDT-Typ aus", "Bitte geben Sie die USDT-Adresse ein"
-			]
+			default: ["Konto binden", "Senden"],
+			fields: ["Name des Kontoinhabers", "Telefonnummer", "Bankkonto", "Name", "Typ", "USDT-Adresse"],
+			placeholder: ["Bitte geben Sie den Namen des Kontoinhabers ein", "Bitte geben Sie die Telefonnummer ein", "Bitte geben Sie das Bankkonto ein", "Bitte geben Sie den Banknamen ein", "Bitte wählen Sie den USDT-Typ", "Bitte geben Sie die USDT-Adresse ein"]
 		},
-		bindAccount2: [
-			"Bitte bestätigen Sie, dass die Informationen korrekt sind, da dies sonst den normalen Handel beeinträchtigen könnte",
-			"Jetzt verbinden"
-		],
+		bindAccount2: ["Bitte bestätigen Sie, dass die Informationen korrekt sind, da sonst der normale Handel beeinträchtigt wird", "Jetzt binden"],
 		wallet: {
-			default: ["Mein Vermögen", "Aufladen", "Abheben", "Aufladeverlauf", "Abhebeverlauf", "Bereits aufgeladen",
-				"Bereits verkauft", "Bereits erzielte Gewinne", "Kontostand", "Guthaben", "Aufladebetrag (USDT)",
-				"Verkaufsbetrag",
-				"Gesamteinnahmen", "Upgrade zum Händler",
-				"Upgrade zum Händler, bitte kontaktieren Sie den Kundenservice",
-				"Setzen Sie sich als Händler nieder", "Händlerauthentifizierung", "Sie müssen bezahlen",
-				"Zahlungsnachweis", "Händlerkaution", "Jetzt authentifizieren", "Informationen",
-				"Sie müssen bezahlen",
-				"Guthaben ist nicht ausreichend, möchten Sie aufladen?"
+			default: ["Meine Vermögenswerte", "Aufladen", "Abheben", "Aufladeverlauf", "Abhebeverlauf", "Aufgeladener Betrag", "Verkaufter Betrag", "Erhaltene Einnahmen", "Kontoguthaben", "Guthaben", "Aufladebetrag (USDT)", "Verkaufsbetrag",
+			"Gesamteinnahmen", "Zum Händler aufwerten", "Zum Händler aufwerten, bitte Kundenservice kontaktieren", "Händlerregistrierung bestätigen", "Händler-Zertifizierung", "Sie müssen bezahlen", "Zahlungsbeleg", "Händler-Kaution", "Jetzt zertifizieren", "Information", "Sie müssen bezahlen",
+			"Unzureichendes Guthaben, möchten Sie aufladen"
 			],
-			label: ["Abhebemethode", "Abhebebetrag", "Ihre PIN", "Einreichen", "Telefonnummer", "E-Mail", "IFSC",
-				"Bestätigen"
-			],
-			placeholder: ["Abhebemethode auswählen", "Bitte geben Sie den Abhebebetrag ein",
-				"Bitte geben Sie Ihre PIN ein", "Bitte wählen Sie die Abhebemethode aus",
-				"Bitte geben Sie die Telefonnummer des Empfängers ein",
-				"Bitte geben Sie die E-Mail-Adresse des Empfängers ein",
-				"Bitte geben Sie den IFSC-Code des Empfängers ein"
-			],
-			msg: ["Sie haben noch keine PIN festgelegt, bitte legen Sie zuerst eine fest",
-				"Sie haben noch kein PIX-Konto verknüpft, bitte verknüpfen Sie zuerst ein Konto",
-				"Möchten Sie wirklich abheben?"
-			]
+			label: ["Abhebemethode", "Abhebebetrug", "Geldpasswort", "Senden", "Telefonnummer", "E-Mail", "IFSC", "Bestätigen"],
+			placeholder: ["Abhebemethode auswählen", "Bitte geben Sie den Abhebebetrug ein", "Bitte geben Sie das Geldpasswort ein", "Bitte wählen Sie die Abhebemethode", "Bitte geben Sie die Telefonnummer des Empfängers ein", "Bitte geben Sie die E-Mail des Empfängers ein", "Bitte geben Sie die IFSC des Empfängers ein"],
+			msg: ["Sie haben noch kein Geldpasswort festgelegt, bitte legen Sie zuerst eines fest", "Sie haben noch kein PIX-Konto gebunden, bitte binden Sie zuerst eines", "Möchten Sie wirklich abheben?"]
 		},
-		recharge4: [
-			"Für Ihre finanzielle Sicherheit laden Sie bitte nach der erfolgreichen Überweisung einen Screenshot der Überweisung hoch, damit wir dies überprüfen können!"
-		],
+		recharge4: ["Für Ihre finanzielle Sicherheit senden Sie bitte nach erfolgreicher Überweisung einen Screenshot des erfolgreichen Transfers zur Überprüfung!"],
 		recharge: {
-			default: ["Wallet aufladen", "Vorausladung des Wallets", "Auflademethode", "Aufladen", "Bestätigen"],
-			label: ["Kategorie", "Adresse", "Aufladebetrag", "Geben Sie den Betrag ein", "Laden Sie den Nachweis hoch",
-				"Erfolgreich kopiert", "Vorausladungsbörse"
-			],
-			placeholder: ["Kategorie", "Adresse"],
-			info: ["Aufladebetrag", "Bestellnummer", "Empfangsbank", "Empfängerkonto", "Empfänger", "Kopieren"]
+			default: ["Geldbörse aufladen", "Voraufladung der Geldbörse", "Auflademethode", "Aufladen", "Bestätigen"],
+			label: ["Kategorie", "Adresse", "Aufladebetrag", "Betrag eingeben", "Beleg hochladen", "Kopieren erfolgreich", "Voraufladung zur Börse"],
+			placeholder: ["Typ", "Adresse"],
+			info: ["Aufladebetrag", "Bestellnummer", "Empfängerbank", "Empfängerkonto", "Empfänger", "Kopieren"]
 		},
 		task: {
-			tabs: ["Alle", "Verkaufsliste", "Abgelaufen", "Abgeschlossen", "Warten auf Händlerzahlung",
-				"Warten auf Bestätigung"
-			],
-			default: ["Bestellliste", "Bestellnummer", "Händlerkonto", "Menge", "Preis", "Betrag", "Status",
-				"Spielzeit", "In Bearbeitung", "Abgeschlossen", "Abgebrochen", "Alle"
-			],
-			msg: ["Überprüfen einreichen", "Eingereicht, bitte warten Sie auf die Überprüfung",
-				"Einreichen fehlgeschlagen, bitte erneut einreichen"
-			],
+			tabs: ["Alle", "Verkaufsliste", "Abgelaufen", "Abgeschlossen", "Warten auf Zahlung des Händlers", "Warten auf Bestätigung"],
+			default: ["Bestellliste", "Bestellnummer", "Händlerkonto","Menge","Preis","Betrag","Status","Übereinstimmungszeit", "In Bearbeitung", "Abgeschlossen", "Abgebrochen", "Alle"],
+			msg: ["Zur Prüfung einreichen", "Eingereicht, bitte warten auf Prüfung", "Einreichung fehlgeschlagen, bitte erneut einreichen"],
 		},
 		userInfo: {
-			default: ["Persönliche Informationen", "Profilbild", "Konto", "E-Mail", "Alipay", "Details",
-				"Passwort ändern", "PIN", "Klicken zum Einstellen", "Profilbild ändern", "Anmeldepasswort ändern",
-				"PIN ändern", "Einreichen",
-				"Cache leeren", "Informationen anzeigen", "Spitzname", "Empfehlungscode", "Sprache ändern"
+			default: ["Persönliche Informationen", "Avatar", "Konto", "E-Mail", "Alipay", "Detaillierte Informationen", "Passwort ändern", "Geldpasswort", "Klicken zum Festlegen", "Avatar ändern", "Anmeldekennwort ändern", "Geldpasswort ändern", "Senden",
+			"Cache leeren", "Informationen anzeigen", "Spitzname", "Empfehlungscode", "Sprache wechseln"
 			],
-			label: ["Altes Anmeldepasswort", "Neues Anmeldepasswort", "Passwort bestätigen", "Alte PIN", "Neue PIN",
-				"PIN bestätigen", "Speichern", "Änderung erfolgreich"
-			],
-			placeholder: ["Geben Sie das alte Anmeldepasswort ein", "Geben Sie das neue Anmeldepasswort ein",
-				"Geben Sie das neue Anmeldepasswort erneut ein", "Geben Sie die alte PIN ein",
-				"Geben Sie die neue PIN ein", "Geben Sie die neue PIN erneut ein"
-			]
+			label: ["Aktuelles Anmeldekennwort", "Neues Anmeldekennwort", "Passwort bestätigen", "Aktuelles Geldpasswort", "Neues Geldpasswort", "Passwort bestätigen", "Speichern", "Änderung erfolgreich"],
+			placeholder: ["Bitte geben Sie das aktuelle Anmeldekennwort ein", "Bitte geben Sie das neue Anmeldekennwort ein", "Bitte bestätigen Sie das Anmeldekennwort", "Bitte geben Sie das aktuelle Geldpasswort ein", "Bitte geben Sie das neue Geldpasswort ein", "Bitte bestätigen Sie das Geldpasswort"]
 		},
 		fundRecord: {
-			default: ["Ausgabenverlauf", "Aufladeverlauf", "Vermögensprotokoll", "Aufladung", "Einnahme", "Ausgabe"],
+			default: ["Ausgabenverlauf", "Aufladeverlauf", "Vermögensprotokoll", "Aufladen", "Einnahme", "Ausgabe"],
 			tabs: ["Einnahmen", "Ausgaben", "Aufladungen"]
 		},
-		dialog: ["Hinweis", "Bestätigen", "Einreichen läuft...", "Erfolgreich kopiert",
-			"IOS-Systemversion zu niedrig, nicht unterstützt", "Einreichen läuft...", "Daten werden geladen..."
-		],
-		serviceCenter: ["Kundenservicecenter", "Hallo, ich bin Ihr persönlicher Kundendienst~",
-			"Ich freue mich, Ihnen behilflich sein zu können", "Selbstbedienungsservice", "Online-Kundendienst",
-			"Kundendienst für Aufladungen", "Line-Kundendienst", "Zum Händler aufsteigen",
-			"Bitte kontaktieren Sie den Kundenservice für den Aufstieg zum Händler",
-			"Kontaktieren Sie den Kundendienst"
-		],
-
-		userTaskRecord: ["Meine Bestellungen", "Verkaufsbestellungen", "Kaufbestellungen", "Aktueller Status",
-			"Erhaltene Provision", "Abgeschlossen"
-		],
+		dialog: ["Hinweis", "Bestätigen", "Wird gesendet...", "Kopieren erfolgreich", "Niedrige IOS-Systemversion wird nicht unterstützt", "Registrierung läuft...", "Daten werden geladen..."],
+		serviceCenter: ["Service-Zentrum", "Hallo, ich bin Ihr persönlicher Kundenservice~", "Ich freue mich, Ihnen zu helfen", "Selbstbedienung", "Online-Kundenservice", "Auflade-Kundenservice", "Line-Kundenservice", "Zum Händler aufwerten", "Bitte kontaktieren Sie den Kundenservice, um zum Händler aufzuwerten!", "Kundenservice kontaktieren"],
+		
+		userTaskRecord: ["Meine Bestellungen", "Verkaufsbestellungen", "Kaufbestellungen", "Aktueller Status", "Erhaltene Provision", "Abgeschlossen"],
 		withdrawlist: ["Abhebeverlauf"],
-		withdraw: ["Bankname", "IBAN", "Kontoname", "Abhebebetrag", "Bitte geben Sie den Banknamen ein",
-			"Bitte geben Sie die IBAN ein", "Bitte geben Sie den Kontonamen ein",
-			"Bitte geben Sie den Abhebebetrag ein",
+		withdraw: ["Bankname", "IBAN", "Kontoname", "Abhebebetrug", "Bitte geben Sie den Banknamen ein", 
+		"Bitte geben Sie die IBAN ein","Bitte geben Sie den Kontonamen ein","Bitte geben Sie den Abhebebetrug ein",
 		],
 		teamReport: {
-			default: ["Teilnehmerliste", "Gesamtzahl der Teammitglieder"]
+			default: ["Teamliste", "Gesamtzahl der Teammitglieder"]
 		},
-		common2: ["Anfängertutorial", "Kontaktieren Sie den Kundenservice",
-			"Dienstleistungsvereinbarung, Einzelheiten anzeigen", "Kundenservice 1", "Kundenservice 2"
-		],
-		common3: ["Erfolgreich", "Plattformvorstellung"],
-		invite: ["Freigabe und Werbung", "Mein Empfehlungscode",
-			"Kopieren Sie den Empfehlungscode und laden Sie mehr Freunde zur Teilnahme ein", "Kopieren",
-			"Keine Mitglieder einladen verfügbar"
-		],
-		common4: ["Identitätsbestätigung", "Erfolgreich eingereicht", "Hinweise", "Inhalt", "Zu zahlender Betrag",
-			"Personalausweis", "Finanznachweis", "Bitte binden Sie zuerst ein Konto",
-			"Bitte schließen Sie zuerst die Identitätsbestätigung ab"
-		],
-		common5: ["Verkaufen", "Minuten", "vor", "QR-Code speichern", "Öffnen",
-			"Kontosperre, vorübergehend nicht handeln", "App herunterladen"
-		],
+		common2: ["Einsteiger-Tutorial", "Kundenservice kontaktieren", "Servicebedingungen, Details anzeigen", "Kundenservice 1", "Kundenservice 2"],
+		common3: ["Erfolgreich", "Plattform-Einführung"],
+		invite: {
+			share: "Teilen und Werben",
+			myInviteCode: "Mein Einladungscode",
+			copyInviteText: "Einladungscode kopieren, um mehr Freunde einzuladen",
+			copy: "Kopieren",
+			unableToInvite: "Momentan keine Einladung von Mitgliedern möglich",
+			inviteCodeLabel: "Einladungscode:",
+			copyInviteLink: "Klicken, um Einladungslink zu kopieren"
+		},
+		common4: ["Echte Namensverifizierung", "Erfolgreich eingereicht", "Hinweise", "Artikelinhalt", "Zu zahlender Betrag", "Personalausweis", "Finanznachweis", "Bitte schließen Sie zuerst die Kontobindung ab", "Bitte schließen Sie zuerst die echte Namensverifizierung ab"],
+		common5: ["Verkaufen", "Minuten", "vor", "QR-Code speichern", "Öffnen", "Konto gesperrt, vorübergehend kein Handel möglich", "App herunterladen"],
 		common6: ["Aufladebestellungen", "Bestellnummer", "Betrag", "Zeit", "Status"],
-		hall2: ["Der Mindestverkaufsbetrag beträgt", "", "Die Anzahl der Verkäufe übersteigt das tägliche Limit"],
-		register2: ["E-Mail", "Telefon", "Bitte geben Sie die Telefonnummer ein", "Einladungscode", "Anmeldepasswort",
-			"Bestätigungscode", "Telefonnummer", "Registrieren"
-		],
-		withdraw2: ["Abheben", "Händlerkonto", "Kontostand", "Zu zahlender Betrag", "Jetzt bezahlen",
-			"Es gibt noch ausstehende Aufgaben, vorübergehend keine Abhebungen möglich",
-			"Tägliches Limit für Abhebungen überschritten", "Bemerkungen"
-		],
-		mytask2: ["Händlerkonto", "Preis", "Betrag", "Kontostand", "Zu zahlender Betrag", "Spielzeit", "Bestelldetails",
-			"Menge darf nicht 0 sein", "Guthaben ist nicht ausreichend", "Preis darf nicht 0 sein", "Bereichsfehler"
-		],
-		taskOrder2: ["Sie haben noch ausstehende Bestellungen, die nicht storniert werden können",
-			"Guthaben ist nicht ausreichend", "Bestätigen", "Fehler",
-			"Sie müssen die Bestellung abschließen, damit Sie abheben können:"
-		],
-		busAuth2: ["Upgrade zum Händler", "Ich stimme zu", "Upgrade bestätigen", "Händler aufsteigen",
-			"Bei Änderungen der Bankdaten wenden Sie sich bitte an den Kundenservice",
-			"Ihr Konto muss als Händlerkonto aufsteigen"
-		],
-		recharge2: ["Betrag darf nicht 0 sein", "Sie müssen einen Screenshot hochladen"],
-		buy3: ["Countdown", "Stunden", "Art", "Wohltätigkeitsbestellung", "Gruppenbestellung", "Personenbeschränkung",
-			"Keine Beschränkung, wenn nicht angegeben", "Spezifische Benutzer-ID",
-			"Bitte geben Sie die spezifische ID ein"
-		],
-		hall3: ["Tage", "Stunden", "Minuten", "Sekunden", "Gruppenbestellung", "Konto", "Abgelaufen"],
-		sell3: ["Verkaufspreis darf nicht höher als bester Preis sein"],
-		busAuth3: ["Benutzer", "Händler", "Kronen-Händler"],
+		hall2: ["Mindestverkaufsbetrag ist", "", "Verkaufshäufigkeit überschreitet das tägliche Limit"],
+		register2: ["E-Mail", "Telefon", "Bitte geben Sie die Telefonnummer ein", "Einladungscode", "Anmeldekennwort", "Bestätigungscode", "Telefonnummer", "Registrieren"],
+		withdraw2: ["Abheben", "Verkäuferkonto", "Kontoguthaben", "Zu zahlender Betrag", "Jetzt bezahlen", "Abheben nicht möglich, da Aufgaben unvollständig", "Tägliche Abhebehäufigkeit überschritten", "Bemerkungen"],
+		mytask2: ["Händlerkonto", "Preis", "Betrag", "Kontoguthaben", "Zu zahlender Betrag", "Übereinstimmungszeit", "Bestelldetails", "Menge kann nicht 0 sein", "Unzureichendes Guthaben", "Preis kann nicht 0 sein", "Bereichsfehler"],
+		taskOrder2: ["Sie haben noch nicht ausgeführte Bestellungen, Stornierung nicht möglich", "Unzureichendes Guthaben", "Bestätigen", "Fehlgeschlagen", "Sie müssen noch Bestellungen abschließen, bevor Sie abheben können:"],
+		busAuth2: ["Zum Händler aufwerten", "Ich stimme zu", "Upgrade bestätigen", "Zum Händler aufwerten", "Bitte kontaktieren Sie den Kundenservice, um Bankdaten zu ändern", "Aktuelles Konto muss zum Händlerkonto aufgewertet werden"],
+		recharge2: ["Betrag kann nicht 0 sein", "Screenshot muss hochgeladen werden"],
+		buy3: ["Countdown", "Stunden", "Typ", "Wohlfahrtsbestellung", "Gruppenkaufbestellung", "Anzahlbeschränkung", "Leer lassen für keine Beschränkung", "Angegebene Benutzer-ID", "Bitte geben Sie die angegebene ID ein"],
+		hall3: ["Tage", "Stunden", "Minuten", "Sekunden", "Gruppenkaufbestellungen", "Konto", "Abgelaufen"],
+		sell3: ["Verkaufspreis darf nicht höher als der beste Preis sein"],
+		busAuth3: ["Mitglied", "Händler", "Kronenhändler"],
 		recharge3: ["Berechnen"],
-		home3: ["Mining", "Wetten", "Blind Box", "Investment", "Demnächst verfügbar"],
-		home4: ["Schnellhandel", "USDT auf einen Klick kaufen", "C2C-Handel", "USDT kaufen und verkaufen",
-			"Aktive Benutzer", "Gesamthandelvolumen (USDT) in den letzten 24 Stunden"
-		],
-		common7: ["Wenn Ihr Problem nicht gelöst wurde, kontaktieren Sie bitte den Kundenservice",
-			"Kontaktieren Sie den Kundenservice", "Klicken Sie hier für eine Beratung", "Einstellungen", "Alle",
-			"Freunde einladen", "Anzahl der Teammitglieder", "Neue Mitglieder in diesem Monat",
-			"Registrierungsdatum", "Untergeordnete Anzahl"
-		],
-		hall4: ["Deine Identität", "Benutzer", "Ihre Kontoinformationen", "Erfolgreicher Handel",
-			"Sie haben erfolgreich abgeschlossen", "Gesamtpreis", "Kaufanfrage", "Verkaufsanfrage"
-		],
-		task3: ["Alle", "Nicht bezahlt", "Bezahlt"],
-		my: ["Möchten Sie sich wirklich abmelden?"],
+		home3: ["Miner", "Raten", "Blind Box", "Vermögensverwaltung", "Demnächst verfügbar"],
+		home4: ["Schnellhandel", "USDT mit einem Klick kaufen", "C2C-Handel", "USDT kaufen und verkaufen", "Online-Benutzer", "24h Handelsvolumen (USDT)"],
+		common7: ["Wenn Ihr Problem nicht gelöst ist, wenden Sie sich bitte an den Online-Kundenservice", "Kundenservice kontaktieren", "Klicken zum Beraten", "Einstellungen", "Alle", "Freunde einladen", "Teamgröße", "Neuzugänge diesen Monat", "Registrierungsdatum", "Untergeordnete Anzahl"],
+		hall4: ["Ihre Identität", "Mitglied", "Ihre Kontoinformationen", "Erfolgreiche Transaktion", "Sie haben erfolgreich abgeschlossen", "Gesamtpreis", "Kaufen", "Verkaufen"],
+		task3: ["Alle", "Unbezahlt", "Bezahlt"],
+		my: ["Sind Sie sicher, dass Sie sich abmelden möchten?"],
+		
 		bind: [
-			'Konto verknüpfen',
-			'Land/Region',
-			'Bankname',
-			'IBAN',
-			'Kontoname',
-			'Vorname',
-			'Nachname',
-			'Adresse',
-			'PLZ',
-			'Stadt',
-			'Bundesland',
-			'Telefonnummer',
-			'Bei Änderungen der Bankdaten wenden Sie sich bitte',
-			'an den Kundenservice',
-			'Einreichen',
-			'Bitte geben Sie ein',
-			'Es sind noch Pflichtfelder nicht ausgefüllt',
-			'Konto erfolgreich verknüpft'
+		'Kontobindung',
+		'Land/Region',
+		'Bankname',
+		'IBAN',
+		'Kontoname',
+		'Vorname',
+		'Nachname',
+		'Adresse',
+		'Postleitzahl',
+		'Stadt',
+		'Bundesland',
+		'Telefonnummer',
+		'Bitte kontaktieren Sie den Kundenservice, um Bankkartendaten zu ändern',
+		'Kundenservice kontaktieren',
+		'Senden',
+		'Bitte eingeben',
+		'Einige Pflichtfelder sind nicht ausgefüllt',
+		'Bindung erfolgreich'
 		],
-
+		
 		setting: [
-			"Meine Veröffentlichungsprotokolle",
-			"Kaufaufträge",
-			"Verkaufsaufträge",
+		"Meine Veröffentlichungsdaten",
+		"Kaufbestellungen",
+		"Verkaufsbestellungen",
 		],
 		empty: [
-			"Keine Daten vorhanden"
+			"Keine Daten"
 		],
 		index: {
 			title: "DEX:OFX",
-			subtitle: "USDT wird in gesetzliche Währung umgewandelt",
-			intro: "Für Benutzer in vielen Gebieten ist es ein häufiges Problem, dass sie USDT (Stabile Währung) aufgrund eingeschränkter Zahlungskanäle, Bankbeschränkungen, lokaler Aufsicht oder fehlender compliant Börsen nicht einfach kaufen können. DEX:OFX bietet eine sichere, compliant und hoche liquide Möglichkeit, Benutzern dabei zu helfen, digitale Assets reibungslos in lokale gesetzliche Währungen umzuwandeln.",
-			suitableUsersTitle: "Zuerst, welche Benutzer sind geeignet?",
-			suitableUsersIntro: "Der gesetzliche Währungswechselmechanismus von DEX:OFX ist besonders geeignet für folgende Gruppen:",
+			subtitle: "USDT in Fiat-Währung umwandeln",
+			intro: "Für Benutzer in vielen Regionen ist es ein häufiges Problem, dass sie aufgrund begrenzter Zahlungskanäle, Bankbeschränkungen, lokaler Aufsicht oder fehlender konformer Börsen USDT (Stablecoin) nicht einfach kaufen können. DEX:OFX bietet eine sichere, konforme und hochliquide Möglichkeit, Benutzern bei der reibungslosen Umwandlung digitaler Vermögenswerte in lokale Fiat-Währungen zu helfen.",
+			suitableUsersTitle: "Erstens, welche Benutzer sind geeignet?",
+			suitableUsersIntro: "DEX:OFXs Fiat-Währungsumtausch-Mechanismus eignet sich besonders für folgende Gruppen:",
 			suitableUsers: [
 				"Lokale Banken verbieten oder beschränken den Kauf von Kryptowährungen.",
-				"Kredit-/Debitkarten können USDT auf der Börse nicht kaufen.",
-				"Die lokale Börse fehlt an USDT-Liquidität.",
-				"Will komplexe KYC oder hohe Formalitäten vermeiden.",
-				"Will digitale Assets schnell in lokale gesetzliche Währungen umwandeln (EUR, CAD, USD, SGD, CHF usw.)."
+				"Kredit-/Debitkarten können USDT an der Börse nicht kaufen.",
+				"Die lokale Börse hat unzureichende USDT-Liquidität.",
+				"Möchte komplizierte KYC oder hohe Gebühren vermeiden.",
+				"Möchte digitale Vermögenswerte schnell in lokale Fiat-Währungen (EUR, CAD, USD, SGD, CHF usw.) umwandeln."
 			],
-			coreFeaturesTitle: "Zweitens, DEX: die Kernfunktion von OFX",
+			coreFeaturesTitle: "Zweitens, die Kernfunktionen von DEX:OFX",
 			coreFeatures: [
 				{
-					title: "USDT → Französische Währungsaustausch",
-					content: "Benutzer können USDT an die angegebene Wallet-Adresse von DEX:OFX überweisen, und das System wandelt es automatisch in die angegebene gesetzliche Währung gemäß dem Echtzeitwechselkurs um und vollzieht die Überweisung über das kooperative Finanznetzwerk ab.",
-					supportedCurrenciesTitle: "Unterstützte gesetzliche Währungen umfassen (aber sind nicht beschränkt auf):",
+					title: "USDT → Fiat-Währungsumtausch",
+					content: "Benutzer können USDT an die von DEX:OFX bestimmte Wallet-Adresse überweisen, das System wandelt automatisch gemäß dem Echtzeit-Wechselkurs in die bestimmte Fiat-Währung um und führt die Übertragung durch das kooperative Finanznetzwerk durch.",
+					supportedCurrenciesTitle: "Unterstützte Fiat-Währungen umfassen (aber sind nicht beschränkt auf):",
 					supportedCurrencies: [
-						"USD Dollar",
-						"HKD",
-						"SGD SGD",
-						"TWD NT $",
-						"EUR Euro",
-						"AUD Australischer Dollar"
+						"US-Dollar USD",
+						"Hongkong-Dollar HKD",
+						"Singapur-Dollar SGD",
+						"Neuer Taiwan-Dollar TWD",
+						"Euro EUR",
+						"Australischer Dollar AUD"
 					]
 				},
 				{
-					title: "Kein Börsenkonto erforderlich.",
-					content: "Es besteht keine Notwendigkeit für zentrale Börsen wie coinbase-crypto.com. Senken Sie die Schwelle, besonders für Benutzer, die sich nicht für die Börse registrieren können."
+					title: "Kein Börsenkonto erforderlich",
+					content: "Es sind keine zentralisierten Börsenkonten wie coinbase-crypto.com erforderlich. Senkt die Schwelle, insbesondere für Benutzer, die sich nicht an Börsen registrieren können."
 				},
 				{
-					title: "Globale grenzüberschreitende Empfangskapazität",
-					content: "Aufbauend auf dem globalen grenzüberschreitenden Zahlungsnetzwerk von OFX können wir schnelle Zahlungen erreichen;",
+					title: "Globale grenzüberschreitende Zahlungsfähigkeit",
+					content: "Stützt sich auf das globale grenzüberschreitende Zahlungsnetzwerk von OFX, um schnelle Zahlungseingänge zu ermöglichen;",
 					transferTime: [
-						"Überweisung im selben Land: am selben Tag oder 1 Werktag",
+						"Überweisung im selben Land: am selben Tag oder innerhalb von 1 Werktag",
 						"Internationale Überweisung: 1-3 Werktage",
-						"(je nach regionaler Bank)"
+						"(abhängig von regionalen Banken)"
 					]
 				},
 				{
-					title: "Transparanter Wechselkurs und niedrige Gebühren.",
-					content: "Die Börse nutzt den Echtzeitmarktpreis, und die Gebühren sind fest und transparent, um versteckte Gebühren zu vermeiden."
+					title: "Transparenter Wechselkurs, niedrige Gebühren",
+					content: "Verwendet Echtzeit-Marktpreise für Umtausch, feste und transparente Gebühren, vermeidet versteckte Gebühren."
 				}
 			],
-			exchangeProcessTitle: "III. Beispiel für den Austauschprozess",
-			exchangeProcessIntro: "Hier ist der allgemeine Austauschprozess (kann je nach Geschäftsanforderungen angepasst werden):",
+			exchangeProcessTitle: "Drittens, Beispiel für den Umtauschprozess",
+			exchangeProcessIntro: "Im Folgenden ist ein allgemeiner Umtauschprozess (anpassbar nach Geschäftsanforderungen):",
 			exchangeProcess: [
 				{
-					title: "Austauschanfrage einreichen",
+					title: "Umtauschantrag stellen",
 					steps: [
-						"Der Benutzer wählt die gesetzliche Währung, den Betrag und die Empfangsbank aus.",
-						"Das System generiert die USDT-Empfangsadresse (TRC20 oder ERC20).",
-						"Benutzer überweist an USDT oder andere Kryptowährungen."
+						"Benutzer wählen die Fiat-Währung, den Betrag und die empfangende Bank.",
+						"Das System generiert eine USDT-Sammeladresse (TRC20 oder ERC20).",
+						"Benutzer überweisen an USDT oder andere Kryptowährungen."
 					]
 				},
 				{
-					title: "DEX:OFX führt den Austausch durch",
-					steps: ["Das System wandelt den Austauschpreis in Echtzeit in die benötigte gesetzliche Währung um."]
+					title: "DEX:OFX führt den Umtausch durch",
+					steps: ["Das System wandelt den Umtauschpreis in Echtzeit in die benötigte Fiat-Währung um."]
 				},
 				{
-					title: "Gesetzliche Währung auf das Konto",
-					steps: ["Überweisung auf das Benutzerkonto über das internationale Finanznetzwerk oder das lokale Bankensystem."]
+					title: "Fiat-Währung geht ein",
+					steps: ["Überweisung an das Benutzerkonto durch das internationale Finanznetzwerk oder das lokale Banksystem."]
 				}
 			],
-			whyCantBuyTitle: "4. Warum können viele Menschen USDT nicht kaufen?",
+			whyCantBuyTitle: "Viertens, warum können viele Leute kein USDT kaufen?",
 			whyCantBuyReasons: [
-				"Die Bank erlaubt keine Kategorie \"Kryptowährungstransaktion\"",
-				"Kreditkartenunternehmen blockieren verschlüsselte Käufe.",
-				"Lokale regulatorische Beschränkungen",
-				"Die Börse erfordert eine hohe KYC",
-				"Börsenabhebungsgebühren sind hoch.",
-				"Es gibt keinen stabilen Währungsverteilungskanal in der Region.",
-				"Einige Länder haben keine gesetzlichen Verschlüsselungsbörsen."
+				"Banken erlauben keine Kryptowährungstransaktionskategorien",
+				"Kreditkartenunternehmen blockieren Kryptokäufe.",
+				"Lokale Regulierungsbeschränkungen",
+				"Börsen erfordern hohes KYC",
+				"Hohe Auszahlungsgebühren bei Börsen.",
+				"Es gibt lokal keinen Stablecoin-Verteilungskanal.",
+				"Einige Länder haben keine legalen Krypto-Börsen."
 			],
-			valueProposition: "Dex: Der Wert von OFX ist es, diesen Menschen zu helfen, finanzielle Barrieren zu überwinden und direkt gesetzliche Währung zu verwenden.",
-			safetyTitle: "V. Sicherheit und Aufsicht (mit Fokus auf Vertrauensaufbau)",
-			safetyIntro: "Basierend auf dem Konzept des OFX-Systems betont es Aufsicht, Compliance und transparenten Prozess.",
+			valueProposition: "Der Wert von Dex:OFX liegt darin, diesen Menschen zu helfen, finanzielle Barrieren zu überwinden und direkt Fiat-Geld zu verwenden.",
+			safetyTitle: "Fünftens, Sicherheit und Regulierung (Schwerpunkt auf Vertrauensaufbau)",
+			safetyIntro: "Basierend auf dem Konzept des OFX-Systems, betont Regulierung, Compliance und transparente Prozesse.",
 			safetyFeatures: [
-				"Alle Kapitalströme wurden durch AML und KYC geprüft.",
-				"Die Empfangsbank des Benutzers muss verifiziert werden.",
-				"Der gesamte Prozess kann nachverfolgt und überprüft werden."
+				"Alle Kapitalflüsse unterliegen AML- und KYC-Prüfungen.",
+				"Die empfangende Bank des Benutzers muss verifiziert werden.",
+				"Der gesamte Prozess ist nachverfolgbar und prüfbar."
 			],
 			regions: {
 				europe: "Europa",
@@ -376,36 +276,17 @@ export default {
 			infoCards: [
 				{
 					title: "Einfach zu bedienen",
-					description: "Tauschen Sie Währungen aus über 150 Ländern online"
+					description: "Online-Umtausch von Währungen aus über 150 Ländern"
 				},
 				{
-					title: "Schnelle, zuverlässige Überweisungen",
-					description: "Sofortiger Wechsel mit Echtzeit-Marktkursen"
+					title: "Schnelle und zuverlässige Überweisungen",
+					description: "Sofortiger Umtausch zu Echtzeit-Marktkursen"
 				},
 				{
 					title: "Vertrauenswürdig und sicher",
-					description: "Genehmigte und regulierte P2P-Institution"
+					description: "Autorisierte und regulierte P2P-Institutionen"
 				}
 			]
-		},
-		navbar: {
-			inviteCode: "Einladungscode",
-			copy: "Kopieren",
-			creditScore: "Kreditpunktzahl",
-			totalBalance: "Gesamtsaldo",
-			currencyExchange: "Währungswechsel",
-			memberLevel: "Mitgliedsstufe",
-			promotions: "Aktionen",
-			aboutUs: "Über uns",
-			faqs: "FAQs",
-			certification: "Zertifizierung",
-			recharge: "Aufladen",
-			bankCards: "Bankkarten",
-			records: "Aufzeichnungen",
-			withdraw: "Abheben",
-			contactUs: "Kontaktieren Sie uns",
-			inviteFriends: "Freunde einladen",
-			logout: "Abmelden"
 		},
 		exchange: {
 			infoCard: {
@@ -414,83 +295,27 @@ export default {
 				totalBalance: "Gesamtsaldo",
 				processing: "In Bearbeitung",
 				orders: "Bestellungen",
-				confirmExchange: "Austausch bestätigen",
-				records: "Aufzeichnungen"
+				confirmExchange: "Umtausch bestätigen",
+				records: "Datensätze"
 			},
 			modal: {
 				steps: [
-					"Bestellung zuordnen",
-					"In Verarbeitung",
-					"Ausgetauscht"
+					"Bestellungen abgleichen",
+					"In Bearbeitung",
+					"Umgetauscht"
 				],
 				percentage: "(100%)",
-				exchangedCurrency: "Ausgetauschte Währung",
-				exchangedRate: "Wechselkurs",
-				exchangedAmount: "Ausgetauschter Betrag",
-				exchangeEarnings: "Tauschgewinn",
+				exchangedCurrency: "Umgetauschte Währung",
+				exchangedRate: "Umtauschkurs",
+				exchangedAmount: "Umtauschbetrag",
+				exchangeEarnings: "Umtauschgewinne",
 				orderType: "Bestelltyp",
 				expectedReturn: "Erwartete Rendite",
 				close: "Schließen"
 			}
 		},
-		faqs: {
-			pageHeader: {
-				title: "Regeln und Vorschriften",
-				description: "Plattformführer und Handelsinformationen"
-			},
-			basicRules: {
-				title: "Grundlegende Regeln",
-				rules: [
-					"Jedes Konto verwendet nur eine Mobilfunknummer für die Registrierung.",
-					"Gemäß den FinCEN-Vorschriften muss jeder Benutzer mindestens 100 $ auf seinem Konto haben, um Aufträge auszuführen.",
-					"Jede Aufgabengruppe kann 0-4 Limit-Aufträge enthalten, und jeder Limit-Auftrag kann bis zu 2 Austauschaufträge enthalten (d.h. 1 Auftrag tauscht 2 Mal). Pro Gruppe ist nur die Ausführung von 1 Aufgabe mit 2 Austauschvorgängen erlaubt.",
-					"Konten, die einen bestimmten Einzahlungsbetrag überschreiten, werden automatisch auf die SVIP-Mitgliedschaft aktualisiert. Aktualisierte Mitglieder können 40 Aufträge pro Runde abschließen."
-				]
-			},
-			platformOperation: {
-				title: "Plattformbetrieb",
-				rules: [
-					"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet. Mitglieder können nur während dieser Stunden Aufträge erteilen.",
-					"Wenn Ihr Konto von einem Dritten missbraucht wird, wenden Sie sich bitte sofort an den Kundenservice.",
-					"Auszahlungen über 30.000 $ erfordern eine vorherige Benachrichtigung des Kundenservice.",
-					"Kreditpunkte werden jeden Tag nach 22:30 Uhr aktualisiert. Auszahlungen sind nicht möglich, wenn die Kreditpunkte unter 95 Punkten liegen."
-				]
-			},
-			orderTypes: {
-				title: "Auftragsarten",
-				marketOrder: {
-					title: "Marktauftrag",
-					description: "Benutzer der Devisenhandelsplattform akzeptieren den besten verfügbaren Wechselkurs des aktuellen Marktes und schließen den Austausch sofort ab. Das System weist Aufträge automatisch basierend auf dem verfügbaren Guthaben des Mitgliedskontos zu. Die Provision für diese Auftragsart beträgt 1 % des Auftragsbetrags."
-				},
-				limitOrder: {
-					title: "Limit-Auftrag",
-					description: "Benutzer der Devisenhandelsplattform können einen Zielwechselkurs festlegen. Sobald der Marktkurs den angegebenen Wert erreicht, gleicht das System automatisch ab und führt den Austausch durch. Diese Aufträge übertreffen normalerweise das aktuelle Kontoguthaben des Händlers, bieten aber ein höheres Renditepotenzial. Die Provision für diese Auftragsart beträgt 5-60 % des Auftragsbetrags."
-				}
-			},
-			giftPackage: {
-				title: "Geschenkverpackung",
-				description: [
-					"Geschenkverpackungen sind exklusive Angebote für unsere geschätzten Mitglieder. Sie enthalten einen zufälligen Auftrag, der mit Limit-Aufträgen oder Bargeld verbunden ist, das großzügig von unseren Partnern bereitgestellt wird. Dieses Sonderangebot gilt für Mitglieder, die einen bestimmten Betrag auf ihrem Konto angesammelt haben. Geschenkverpackungen werden nur 0-4 Mal pro Runde angeboten.",
-					"Geschenkverpackungen sollen unsere treue Gemeinschaft belohnen und Ihr Erlebnis mit uns verbessern. Das Erreichen dieses Schwellenwerts ermöglicht es Ihnen nicht nur, attraktive Belohnungen zu erhalten, sondern macht Sie auch zu Teil einer exklusiven Gruppe mit zusätzlichen Vorteilen."
-				]
-			},
-			deposits: {
-				title: "Einzahlungen",
-				description: [
-					"Alle Einzahlungen müssen über den Online-Kundenservice der Plattform koordiniert werden. Nachdem Sie Gelder auf das vom Kundenservice angegebene Konto überwiesen haben, reichen Sie bitte Zahlungsnachweise ein, um eine zeitnahe Bearbeitung zu gewährleisten.",
-					"Um Verzögerungen zu vermeiden, bestätigen Sie bitte Ihre Kontodaten direkt auf der Plattform vor jeder Transaktion, da diese regelmäßig geändert werden können. Wenn Sie Probleme beim Einzahlungsvorgang haben, wenden Sie sich bitte sofort an den Kundenservice."
-				]
-			},
-			withdrawals: {
-				title: "Auszahlungen",
-				description: [
-					"Mitglieder können Auszahlungen nur nach Abschluss aller festgelegten täglichen Aufgaben beantragen. Auf der Plattform erwirtschaftete Gelder können ausgezahlt werden, wenn die Auszahlungsbedingungen der Plattform erfüllt sind. Bevor Sie eine Auszahlung beantragen, stellen Sie bitte sicher, dass Ihr Plattformkonto eine gültige Wallet-Adresse enthält.",
-					"Hinweis: Auszahlungen können täglich von 10:00 bis 23:00 Uhr erfolgen."
-				]
-			}
-		},
 		order: {
-			recordsTitle: "Aufzeichnungen",
+			recordsTitle: "Datensätze",
 			tabs: {
 				all: "Alle",
 				pending: "Ausstehend",
@@ -503,69 +328,214 @@ export default {
 				processing: "In Bearbeitung"
 			},
 			details: {
-				orderId: "Bestellnummer",
+				orderId: "Bestell-ID",
 				orderType: "Bestelltyp",
 				exchangeCurrency: "Tauschwährung",
-				exchangeEarnings: "Tauschgewinn",
+				exchangeEarnings: "Tauschgewinne",
 				expectedReturn: "Erwartete Rendite"
 			}
 		},
-		bankCardList: {
-			formTitle: "Bankinformationen",
-			accountNameLabel: "Kontoinhaber",
-			accountNamePlaceholder: "Bitte geben Sie den Kontoinhaber ein",
-			accountNumberLabel: "Kontonummer",
-			accountNumberPlaceholder: "Bitte geben Sie die Kontonummer ein",
-			bankNameLabel: "Bankname",
-			bankNamePlaceholder: "Bitte geben Sie den Banknamen ein",
-			countryLabel: "Land",
-			countryPlaceholder: "Bitte wählen Sie das Land aus",
-			routingNumberLabel: "Routing-Nummer",
-			routingNumberPlaceholder: "Bitte geben Sie die Routing-Nummer ein",
-			swiftCodeLabel: "SWIFT-Code",
-			swiftCodePlaceholder: "Bitte geben Sie den SWIFT-Code ein",
-			bankAddressLabel: "Bankadresse",
-			bankAddressPlaceholder: "Bitte geben Sie die Bankadresse ein",
-			submitButtonText: "Informationen speichern",
-			bindSuccess: "Bindung erfolgreich",
-			updateSuccess: "Aktualisierung erfolgreich"
+		navbar: {
+			inviteCode: "Einladungscode",
+			copy: "Kopieren",
+			creditScore: "Kreditscore",
+			totalBalance: "Gesamtsaldo",
+			currencyExchange: "Währungsumtausch",
+			memberLevel: "Mitgliedsstufe",
+			promotions: "Werbeaktionen",
+			aboutUs: "Über uns",
+			faqs: "FAQs",
+			certification: "Zertifizierung",
+			recharge: "Aufladen",
+			bankCards: "Bankkarten",
+			records: "Datensätze",
+			withdraw: "Abheben",
+			contactUs: "Kontaktieren Sie uns",
+			inviteFriends: "Freunde einladen",
+			logout: "Abmelden",
+			copySuccess: "Kopieren erfolgreich",
+			copyFailed: "Kopieren fehlgeschlagen"
 		},
 		support: {
 			title: "Kontaktieren Sie uns",
-			serviceTime: "Servicezeiten: Täglich von 10:00 Uhr bis 23:00 Uhr",
-			buttonText: "OFX Support-Team"
-		},
-		vip: {
-			title: 'Mitgliedsstufe',
-			current: "Aktuell",
-			deposit : "Einzahlung",
-			bonus : "Bonus",
-			commissionRate : "Provisionssatz",
-			dailyOrders : "Tägliche Aufträge",
-			description:
-				"VIP-Stufen-Erklärung:\n" +
-				"Der Verkauf von USDT zur Erzielung von Preisunterschieden stellt im Wesentlichen eine Liquiditätsbereitstellung dar.\n" +
-				"VIP-Stufen begrenzen die Anzahl der Transaktionen, um normale Konten von professionellen Market Makern zu trennen.\n" +
-				"AML- und regulatorischer Druck! (Hauptgrund)\n" +
-				"Die Plattform nutzt daher:\n" +
-				"VIP-Stufe\n" +
-				"Anzahl der Transaktionen\n" +
-				"Transaktionsbetragsgrenze\n" +
-				"Zur Nutzerklassifizierung:\n" +
-				"Normale Nutzer führen gelegentliche Transaktionen durch.\n" +
-				"Häufiger USDT-Verkauf gilt als professionelle Liquiditätsaktivität.\n" +
-				"VIP = kontrollierbares Risikoobjekt\n" +
-				"VIP-Nutzer verfügen in der Regel über:\n" +
-				"Höheres Kapitalvolumen\n" +
-				"Vollständigeres KYC\n" +
-				"Längere Transaktionshistorie\n" +
-				"\n" +
-				"Plattformlogik:\n" +
-				"Die Begrenzung des USDT-Verkaufs ist eine marktorientierte regulatorische Compliance-Maßnahme.\n" +
-				"\n" +
-				"Hinweis:\n" +
-				"USDT-Preisdifferenzen sind quasi-finanzielle Aktivitäten. Der VIP-Status signalisiert:\n" +
-				"Sie sind kein gewöhnlicher Nutzer mehr."
+			serviceTime: "Servicezeiten: Täglich von 10:00 bis 23:00 Uhr",
+			buttonText: "OFX-Support-Team"
 		}
+	},
+	faqs: {
+		pageHeader: {
+			title: "Regeln und Vorschriften",
+			description: "Plattform-Leitfaden und Handelsinformationen"
+		},
+		basicRules: {
+			title: "Grundregeln",
+			rules: [
+				"Jedes Konto kann nur mit einer Mobiltelefonnummer registriert werden.",
+				"Laut FinCEN-Vorschriften muss jeder Benutzer mindestens 100 $ auf seinem Konto haben, um Aufträge auszuführen.",
+				"Jede Aufgabengruppe enthält maximal 0-4 Limit-Orders, jede Limit-Order kann maximal 2 Tauschaufträge enthalten (d.h. 1 Auftrag wird 2 Mal getauscht). Nur 1 Auftrag mit 2 Tauschvorgängen darf pro Gruppe ausgeführt werden.",
+				"Konten, deren Einzahlungsbetrag eine bestimmte Grenze überschreitet, werden automatisch auf SVIP-Mitglieder aufgewertet. Aufgewertete Mitglieder können 40 Aufträge pro Runde abschließen."
+			]
+		},
+		platformOperation: {
+			title: "Plattform-Betrieb",
+			rules: [
+				"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet. Mitglieder können nur während dieser Stunden Aufträge erteilen.",
+				"Wenn Ihr Konto von Dritten missbraucht wird, wenden Sie sich bitte sofort an den Kundenservice.",
+				"Auszahlungen über 30.000 $ erfordern eine vorherige Benachrichtigung des Kundenservice.",
+				"Kreditpunkte werden jeden Abend nach 22:30 Uhr aktualisiert. Auszahlungen sind nicht möglich, wenn die Kreditpunkte unter 95 liegen."
+			]
+		},
+		orderTypes: {
+			title: "Auftragstypen",
+			marketOrder: {
+				title: "Marktauftrag",
+				description: "Börsenplattform-Benutzer akzeptieren den aktuellen besten verfügbaren Wechselkurs des Marktes und schließen den Tausch sofort ab. Das System weist Aufträge automatisch basierend auf dem verfügbaren Saldo des Mitgliedskontos zu. Die Provision für diesen Auftragstyp beträgt 1% des Auftragsbetrags."
+			},
+			limitOrder: {
+				title: "Limit-Order",
+				description: "Börsenplattform-Benutzer können Zielwechselkurse festlegen. Sobald der Marktwechselkurs den festgelegten Wert erreicht, gleicht das System automatisch ab und führt den Tausch aus. Diese Aufträge übertreffen normalerweise das aktuelle Kontoguthaben des Agenten, bieten aber ein höheres Renditepotenzial. Die Provision für diesen Auftragstyp beträgt 5%-60% des Auftragsbetrags."
+			}
+		},
+		giftPackage: {
+			title: "Geschenk-Paket",
+			description: [
+				"Geschenk-Pakete sind exklusive Angebote für unsere geschätzten Mitglieder. Sie enthalten einen zufälligen Auftrag, der mit Limit-Aufträgen oder Bargeld verbunden ist, das großzügig von unseren Partnern bereitgestellt wird. Dieses Sonderangebot gilt für Mitglieder, die einen bestimmten Betrag auf ihrem Konto angesammelt haben. Geschenk-Pakete werden nur 0-4 Mal pro Runde angeboten.",
+				"Geschenk-Pakete sollen unsere treue Gemeinschaft belohnen und Ihre Erfahrung mit uns verbessern. Das Erreichen dieser Schwelle ermöglicht Ihnen nicht nur attraktive Belohnungen zu erhalten, sondern auch Teil einer exklusiven Gruppe mit zusätzlichen Vorteilen zu werden."
+			]
+		},
+		deposits: {
+			title: "Einzahlungen",
+			description: [
+				"Alle Einzahlungen müssen über den Online-Kundenservice der Plattform koordiniert werden. Nach der Überweisung von Geldern auf das vom Kundenservice bestimmte Konto, senden Sie bitte Zahlungsbelege zur rechtzeitigen Bearbeitung.",
+				"Um Verzögerungen zu vermeiden, bestätigen Sie bitte Ihre Kontodaten direkt auf der Plattform vor jeder Transaktion, da diese regelmäßig geändert werden können. Wenn Sie Probleme beim Einzahlungsprozess haben, wenden Sie sich bitte sofort an den Kundenservice."
+			]
+		},
+		withdrawals: {
+			title: "Auszahlungen",
+			description: [
+				"Mitglieder können Auszahlungen nur beantragen, nachdem alle festgelegten täglichen Aufgaben abgeschlossen wurden. Auf der Plattform erwirtschaftete Mittel können ausgezahlt werden, wenn die Auszahlungsbedingungen der Plattform erfüllt sind. Vor der Beantragung einer Auszahlung stellen Sie bitte sicher, dass Ihr Plattformkonto eine gültige Wallet-Adresse enthält.",
+				"Hinweis: Auszahlungen sind täglich von 10:00 bis 23:00 Uhr möglich."
+			]
+		}
+	},
+	vip: {
+		title: "Mitgliedsstufe",
+		current: "Aktuell",
+		deposit: "Einzahlung",
+		bonus: "Bonus",
+		commissionRate: "Provisionsrate",
+		dailyOrders: "Tägliche Aufträge",
+		description: "VIP-Stufenerklärung:\n" +
+			"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
+			"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +
+			"Geldwäschebekämpfung (AML) und regulatorischer Druck! (Der Hauptgrund)\n" +
+			"Daher verwendet die Plattform:\n" +
+			"VIP-Stufe\n" +
+			"Anzahl der Transaktionen\n" +
+			"Transaktionsbetrags-Schwelle\n" +
+			"um Benutzer zu filtern:\n" +
+			"Normale Benutzer, die gelegentlich Geld tauschen\n" +
+			"Hochfrequente USDT-Verkäufer, die verdächtigt werden, Währungsumtausch/Professionelle Market Maker Liquiditätsanbieter zu betreiben\n" +
+			"VIP=Risikokontroll-Objekte (Plattform fühlt sich sicherer)\n" +
+			"VIP-Benutzer besitzen typischerweise:\n" +
+			"Höhere Kapitalausstattung\n" +
+			"Vollständigeres KYC\n" +
+			"Längere Transaktionshistorie\n" +
+			"\n" +
+			"Die Logik der Plattform ist:\n" +
+			"Die Plattform begrenzt die Anzahl der USDT-Verkäufe, weil dies bereits ein hochfrequentes Währungsumtausch- und Liquiditätsverhalten ist, das eine höhere Stufe zur Einhaltung der regulatorischen\n" +
+			"und Risikokontrollanforderungen erfordert, nicht weil die Plattform schwierig ist, sondern vielmehr ein marktorientiertes regulatorisches Compliance-Design.\n" +
+			"\n" +
+			"Freundlicher Hinweis:\n" +
+			"USDT-Spreads können Geld verdienen, aber es ist ein 'quasi-finanzielles Verhalten'. VIP-Stufenbeschränkungen sind keine Schwellen, sondern die Plattform sagt Ihnen:\n" +
+			"'Sie sind kein normaler Benutzer mehr.'"
+	},
+	deposit: {
+		withdrawal: "Auszahlung",
+		history: "Verlauf",
+		totalBalance: "Gesamtsaldo",
+		processingTime: "Die Bearbeitung der Auszahlung dauert 15-20 Minuten.",
+		walletAddressType: "Wallet-Adresstyp",
+		trc20Address: "TRC20-Adresse",
+		erc20Address: "ERC20-Adresse",
+		btcAddress: "BTC-Adresse",
+		addressNotSet: "Adresse nicht festgelegt",
+		bindAddress: "Adresse binden",
+		verifyWalletAddress: "Bitte überprüfen Sie Ihre Wallet-Adresse sorgfältig.",
+		enterWithdrawalAmount: "Auszahlungsbetrag eingeben",
+		all: "Alle",
+		enterWithdrawalPassword: "Auszahlungskennwort eingeben",
+		submit: "Senden"
+	},
+	about: {
+		title: "Über uns",
+		companyDescription: "OFX wurde 2001 gegründet und ist ein multinationales Fintech-Unternehmen, das sich auf globale Kapitaltransfers und Devisendienstleistungen konzentriert. Das Unternehmen entspringt einem klaren Konzept: Bessere, fairere und effizientere grenzüberschreitende Kapitallösungen für globale Kunden zu bieten. Seit seiner Gründung hat OFX über 1 Million Kunden bedient, unterstützt über 50 Währungen, deckt über 170 Länder und Märkte ab und hat kumulativ Gelder über 1,48 Billionen US-Dollar abgewickelt.",
+		globalNetworkTitle: "Globales Netzwerklayout",
+		globalNetworkDesc: "Das Unternehmen hat Büros in London, Dublin, Sydney, Auckland, Hongkong, Singapur, Toronto und San Francisco, mit über 700 Mitarbeitern weltweit, besitzt ein solides Betriebsnetzwerk und lokalisierte Servicefähigkeiten.",
+		regulatoryAdvantageTitle: "Starke regulatorische Vorteile",
+		regulatoryAdvantageDesc: "Das Unternehmen wird von über 50 Regulierungsbehörden weltweit überwacht, folgt strengen Finanzprüfungs- und Compliance-Standards. Seit der Börsennotierung gab es keine regulatorischen Sanktionen oder Vollzugshandlungen, was auf gesunde Risikomanagementfähigkeiten hinweist.",
+		corporateGovernanceTitle: "Unternehmensführung und Management",
+		corporateGovernanceDesc1: "Der Vorstand besteht aus Geschäftsführern mit umfangreicher Erfahrung in den Bereichen Bankwesen, Finanzen und Technologie, die eine gesunde Unternehmensführungsstruktur gewährleisten.",
+		corporateGovernanceDesc2: "Das Management-Team besteht aus Führungskräften großer internationaler Banken, Zahlungsdienstanbieter und Technologieunternehmen, geleitet vom CEO Skander Malcolm, der kontinuierlich die strategische Expansion und digitale Innovation von OFX vorantreibt.",
+		listingStatusTitle: "Börsenstatus und Branchenattribute",
+		listingStatusDesc: "OFX wurde 2013 an der Australian Securities Exchange (ASX) notiert (Börsencode: OFX), klassifiziert als \"Diversifizierte Finanzen\". Das Unternehmen behält starke Wettbewerbsfähigkeit in der grenzüberschreitenden Fintech-Branche mit seinem stabilen Compliance-Framework, internationaler Ausrichtung und nachhaltigem Gewinnmodell.",
+		aboutDexOfxTitle: "Über \"DEX:OFX\"",
+		aboutDexOfxDesc1: "Seit dem 10. März 2023 zeigen einige Finanzinformationsplattformen die \"DEX:OFX\"-Kennzeichnung an.",
+		aboutDexOfxDesc2: "Es muss geklärt werden, dass:",
+		aboutDexOfxDesc3: "\"Dex: OFX\" ist kein tatsächlicher Handelscode. Es ist ein Cross-Market-Mapping-Identifier, der während Systemupdates auf bestimmten Datenplattformen automatisch generiert wird.",
+		aboutDexOfxDesc4: "Dieser Identifier wird als Teil interner Systemtests generiert, um die Fähigkeit der Plattform zu überprüfen, Firmeninformationen korrekt über verschiedene Märkte hinweg zu verknüpfen. Daher wird dieses Label nur für Datenindizierung und Testzwecke verwendet und bedeutet nicht, dass OFX an DEX oder einer anderen Börse notiert ist.",
+		aboutDexOfxDesc5: "Die einzige gültige offizielle Notierung von OFX ist: Australian Securities Exchange (ASX) Börsencode: OFX",
+		aboutDexOfxDesc6: "Alle anderen Identifier (einschließlich \"DEX:OFX\") sind vom System generierte Mapping-Einträge, nicht für den tatsächlichen Handel verwendet, lediglich zur besseren Bedienung der Benutzer.",
+		headquartersTitle: "Adresse des OFX-Gruppen-Hauptsitzes",
+		headquartersDesc: "19. Stock, 60 Margaret Street, Sydney, New South Wales, Australien, Postleitzahl 2000"
+	},
+	
+	bindTrc20: {
+		formTitle: "Aufladeinformationen",
+		moneyLabel: "Aufladebetrag",
+		moneyPlaceholder: "Bitte geben Sie den Aufladebetrag ein",
+		addressLabel: "Aufladeadresse",
+		addressPlaceholder: "Bitte geben Sie die Aufladeadresse ein",
+		hashLabel: "Auflade-Hash",
+		hashPlaceholder: "Bitte geben Sie den Auflade-Hash ein",
+		submitButton: "Aufladung senden",
+		successMessage: "Aufladung erfolgreich eingereicht",
+		failMessage: "Einreichung fehlgeschlagen",
+		networkErrorMessage: "Netzwerkfehler"
+	},
+	bankCardList: {
+		formTitle: "Bankinformationen",
+		accountNameLabel: "Kontoname",
+		accountNamePlaceholder: "Bitte geben Sie den Kontonamen ein",
+		accountNumberLabel: "Kontonummer",
+		accountNumberPlaceholder: "Bitte geben Sie die Kontonummer ein",
+		bankNameLabel: "Bankname",
+		bankNamePlaceholder: "Bitte geben Sie den Banknamen ein",
+		countryLabel: "Land",
+		countryPlaceholder: "Bitte wählen Sie das Land",
+		routingNumberLabel: "Routing-Nummer",
+		routingNumberPlaceholder: "Bitte geben Sie die Routing-Nummer ein",
+		swiftCodeLabel: "SWIFT-Code",
+		swiftCodePlaceholder: "Bitte geben Sie den SWIFT-Code ein",
+		bankAddressLabel: "Bankadresse",
+		bankAddressPlaceholder: "Bitte geben Sie die Bankadresse ein",
+		submitButtonText: "Informationen speichern"
+	},
+	// Echte Namensauthentifizierung bezogene Internationalisierung
+	certification: {
+		title: "Echte Namensauthentifizierung beantragen",
+		subtitle: "Bitte füllen Sie Ihre echten Informationen aus, um die Authentifizierung abzuschließen",
+		successTitle: "Sie haben die echte Namensauthentifizierung abgeschlossen",
+		successSubtitle: "Keine erneute Einreichung der Authentifizierungsinformationen erforderlich",
+		nameLabel: "Echter Name",
+		emailLabel: "E-Mail-Adresse",
+		phoneLabel: "Telefonnummer",
+		namePlaceholder: "Bitte geben Sie Ihren echten Namen ein",
+		emailPlaceholder: "Bitte geben Sie Ihre E-Mail-Adresse ein",
+		phonePlaceholder: "Bitte geben Sie Ihre Telefonnummer ein",
+		submitButton: "Authentifizierung senden",
+		statusPending: "In Prüfung",
+		statusSuccess: "Prüfung erfolgreich",
+		statusFailed: "Prüfung fehlgeschlagen"
 	}
-};
+}

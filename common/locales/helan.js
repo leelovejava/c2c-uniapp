@@ -475,9 +475,24 @@ export default {
 			submitButtonText: "Informatie opslaan",
 			bindSuccess: "Binding succesvol",
 			updateSuccess: "Update succesvol"
-		}
-	},
-	order: {
+		},
+		certification: {
+			title: "Solliciteer voor certificering",
+			subtitle: "Vul uw echte informatie in om de certificering te voltooien",
+			successTitle: "U heeft de certificering voltooid",
+			successSubtitle: "Geen noodzaak om certificeringsinformatie opnieuw in te dienen",
+			nameLabel: "Echte naam",
+			emailLabel: "E-mailadres",
+			phoneLabel: "Telefoonnummer",
+			namePlaceholder: "Voer uw echte naam in",
+			emailPlaceholder: "Voer uw e-mailadres in",
+			phonePlaceholder: "Voer uw telefoonnummer in",
+			submitButton: "Indieningscertificaat",
+			statusPending: "In beoordeling",
+			statusSuccess: "Audit geslaagd",
+			statusFailed: "Audit mislukt"
+		},
+		order: {
 		recordsTitle: "Records",
 		tabs: {
 			all: "Alles",

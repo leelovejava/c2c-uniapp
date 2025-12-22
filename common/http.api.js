@@ -74,7 +74,7 @@ const install = (Vue, vm) => {
 		//修改个人信息
 		up_userinfo: (token,nickname) => vm.$u.get("/user/up_userinfo",{token,nickname}),
 		//实名认证提交
-		bind_real: (token,fileurl,fileurl1,fileurl2) => vm.$u.get("/user/bind_real",{token,fileurl,fileurl1,fileurl2}),
+		bind_real: (token,data) => vm.$u.get("/user/bind_real",{token,...data}),
 		//实名认证状态
 		is_verified: (token) => vm.$u.get("/user/is_verified",{token}),
 		

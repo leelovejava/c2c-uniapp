@@ -255,8 +255,7 @@ export default {
 			"valueProposition": "Dex:OFX的價值在於幫助這些人跨越金融障礙，直接使用法幣。",
 			"safetyTitle": "五、安全與監管（重點增加信任）",
 			"safetyIntro": "基於OFX系統的理念，強調監管、合規和透明流程。",
-			"safetyFeatures": [
-				"所有資金流動都經過AML和KYC審核。",
+			"safetyFeatures": [				"所有資金流動都經過AML和KYC審核。",
 				"用戶的收款銀行需要進行驗證。",
 				"整個過程可追溯、可審計。"
 			],
@@ -358,6 +357,23 @@ export default {
 			"logout": "註銷",
 			"copySuccess": "複製成功",
 			"copyFailed": "複製失敗"
+		},
+		// 实名认证相关国际化
+		"certification": {
+			"title": "申請實名認證",
+			"subtitle": "請填寫您的真實信息以完成認證",
+			"successTitle": "您已完成實名認證",
+			"successSubtitle": "無需重複提交認證信息",
+			"nameLabel": "真實姓名",
+			"emailLabel": "郵箱地址",
+			"phoneLabel": "手機號碼",
+			"namePlaceholder": "請輸入您的真實姓名",
+			"emailPlaceholder": "請輸入您的郵箱地址",
+			"phonePlaceholder": "請輸入您的手機號碼",
+			"submitButton": "提交認證",
+			"statusPending": "審核中",
+			"statusSuccess": "審核成功",
+			"statusFailed": "審核失敗"
 		}
 	},
 	"faqs": {
@@ -524,7 +540,7 @@ export default {
 	},
 	"support": {
 		"title": "聯繫我們",
-		"serviceTime": "客服時間：每日上午10:00 – 晩上11:00",
+		"serviceTime": "客服時間：每日上午10:00 – 晚上11:00",
 		"buttonText": "OFX 支援團隊"
 	}
 }

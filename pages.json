@@ -193,15 +193,7 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		}, 
-		// {
-		// 	"path": "pages/index/setails",
-		// 	"style": {
-		// 		"navigationBarTitleText": "",
-		// 		"enablePullDownRefresh": false
-		// 	}
-
-		// },
+		},
 		{
 			"path": "pages/index/details",
 			"style": {
@@ -313,6 +305,12 @@
 			}
 		},{
 			"path": "pages/err/err",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "pages/my/bindinfo",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false

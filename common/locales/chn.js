@@ -361,6 +361,23 @@ export default {
 			serviceTime: "客服時間：每日上午10:00 – 晚上11:00",
 			buttonText: "OFX 支援團隊"
 		},
+		// 实名认证相关国际化
+		certification: {
+			title: "申请实名认证",
+			subtitle: "请填写您的真实信息以完成认证",
+			successTitle: "您已完成实名认证",
+			successSubtitle: "无需重复提交认证信息",
+		 nameLabel: "真实姓名",
+			emailLabel: "邮箱地址",
+			phoneLabel: "手机号码",
+			namePlaceholder: "请输入您的真实姓名",
+			emailPlaceholder: "请输入您的邮箱地址",
+			phonePlaceholder: "请输入您的手机号码",
+			submitButton: "提交认证",
+			statusPending: "审核中",
+			statusSuccess: "审核成功",
+			statusFailed: "审核失败"
+		}
 	},
 	faqs: {
 		pageHeader: {

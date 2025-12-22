@@ -1,7 +1,6 @@
-<!-- src/components/Navbar.vue -->
 <template>
 	<view class="navbar">
-		<view class="menu-btn" @click="leftShow = true, getuserinfo()">☰ MENU</view>
+		<view class="menu-btn" @click="leftShow=true,getuserinfo()">☰ MENU</view>
 		<view class="logo">
 			<image src="/static/image/fz/logo3.png" mode="widthFix"
 				style="width:100px;object-fit:contain;vertical-align:middle;">
@@ -11,7 +10,7 @@
 			<view class="dropdown">
 				<view class="dropdown-toggle a-rowC" @tap="$u.route('/pages/setting/language')">
 					<view class="a-mr3">
-						{{ i18n.language }}
+						{{i18n.language}}
 					</view>
 					<u-icon name="arrow-down-fill" color="#fff" size="16"></u-icon>
 				</view>
@@ -40,12 +39,12 @@
 								</view> -->
 								<view class="a-rowC a-mb5" style="color: #ccc;">
 									<view class="a-mr10 a-f28">
-										UID:{{ userinfo.uid }} {{ userinfo.level }}
+										UID:{{userinfo.uid}} {{userinfo.level}}
 									</view>
 								</view>
 								<view class="a-rowC" style="color: #ccc;">
 									<view class="a-mr10 a-f28">
-										{{ $t('common.navbar.inviteCode') }}: {{ userinfo.code }}
+										{{ $t('common.navbar.inviteCode') }}: {{userinfo.code}}
 									</view>
 									<view class="a-tc a-f24 a-borr5 a-crfff"
 										style="background: #1E90FF;padding:4rpx 16rpx;" @click="copyInviteCode">
@@ -55,7 +54,7 @@
 							</view>
 						</view>
 						<view style="position: absolute;right:10rpx;top: 30rpx;">
-							<u-icon name="close" color="#fff" size="34" @click="leftShow = false"></u-icon>
+							<u-icon name="close" color="#fff" size="34" @click="leftShow=false"></u-icon>
 						</view>
 						<view class="a-mb15">
 							<view class="a-between a-mb3">
@@ -63,18 +62,33 @@
 									{{ $t('common.navbar.creditScore') }}
 								</view>
 								<view>
-									{{ userinfo.credit_score - 0 }}%
+									{{userinfo.credit_score-0}}%
 								</view>
 							</view>
-							<u-line-progress active-color="#4CAF50" height="20" :percent="userinfo.credit_score - 0"
+							<u-line-progress active-color="#4CAF50" height="20" :percent="userinfo.credit_score-0"
 								:show-percent="false"></u-line-progress>
 						</view>
 						<view class="a-mb15">
-							<view class="a-center2 a-mb5">
-								{{ $t('common.navbar.totalBalance') }}
-							</view>
-							<view class="a-center2 a-mb10 a-fw a-f38">
-								{{ userinfo.money }} USD
+						
+							<view class="currency-grid">
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.eur || '0.00' }} EUR</span>
+								</view>
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.money || '0.00' }} USD</span>
+								</view>
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.cad || '0.00' }} CAD</span>
+								</view>
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.sgd || '0.00' }} SGD</span>
+								</view>
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.chf || '0.00' }} CHF</span>
+								</view>
+								<view class="currency-item">
+									<span class="currency-value">{{ userinfo.gbp || '0.00' }} GBP</span>
+								</view>
 							</view>
 							<view class="a-center2">
 								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"
@@ -85,13 +99,6 @@
 						</view>
 						<view class="">
 							<u-grid :col="3" :border="false">
-								<u-grid-item bg-color="none" @click="$u.route('/pages/index/index')">
-									<image src="/static/image/fz/home.png" style="width: 46rpx;height: 46rpx;"
-										class="a-mb5"></image>
-									<view class="grid-text">
-										{{ $t('common.footer')[0] }}
-									</view>
-								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/vip')">
 									<image src="/static/image/fz/hydj.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
@@ -165,13 +172,7 @@
 								<u-icon name="arrow-right" color="#fff" size="28"></u-icon>
 							</view>
 						</view>
-
-						<!-- <view class="a-p15" @click="deltoken">
-							<view style="background:#fff;color: #333; " class="a-f32 a-p10 a-w a-tc a-borr100">
-								{{ $t('common.navbar.logout') }}
-							</view>
-						</view> -->
-
+					
 					</view>
 
 				</view>
@@ -199,24 +200,6 @@
 
 		},
 		methods: {
-			deltoken() {
-
-				uni.showModal({
-					title: 'Tips', // 对话框标题
-					content: this.$t("common.my")[0], // 对话框内容
-					showCancel: true, // 是否显示取消按钮（默认true）
-					cancelText: 'No', // 取消按钮文字
-					confirmText: 'Yes', // 隐藏确认按钮（置空即可）
-					success: (res) => {
-						if (res.cancel) {
-							uni.removeStorageSync('token'); // 清除登录令牌
-							uni.reLaunch({
-								url: '/pages/index/index' // 替换为你的首页路径
-							});
-						}
-					}
-				});
-			},
 			getuserinfo() {
 				const token = uni.getStorageSync('token')
 				this.$u.api.index.getUserinfo(token).then(res => {
@@ -225,7 +208,7 @@
 			},
 			copyInviteCode() {
 				uni.setClipboardData({
-					data: this.userinfo.code + "",
+					data: this.userinfo.code,
 					success: () => {
 						this.$u.toast('Copied to clipboard')
 					}
@@ -237,10 +220,6 @@
 </script>
 
 <style lang="scss">
-	uni-modal {
-		padding: 0 !important;
-	}
-
 	.navbar {
 		display: flex;
 		justify-content: space-between;
@@ -293,6 +272,36 @@
 				text-decoration: none;
 				display: block;
 				font-size: 12px;
+			}
+		}
+		
+		.currency-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+			margin: 15px 0;
+			background-color: #1a233a;
+			border-radius: 10px;
+			padding: 10px;
+			
+			.currency-item {
+				display: flex;
+				flex-direction: column;
+				padding: 8px;
+				background-color: #2d3748;
+				border-radius: 5px;
+				
+				.currency-name {
+					color: #a0aec0;
+					font-size: 12px;
+					margin-bottom: 5px;
+				}
+				
+				.currency-value {
+					color: #fff;
+					font-weight: bold;
+					font-size: 14px;
+				}
 			}
 		}
 	}

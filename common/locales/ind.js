@@ -436,5 +436,21 @@ export default {
 		submitButtonText: "जानकारी सहेजें",
 		bindSuccess: "बाइंड सफल",
 		updateSuccess: "अपडेट सफल"
+	},
+	certification: {
+		title: "वास्तविक नाम प्रमाणीकरण के लिए आवेदन करें",
+		subtitle: "प्रमाणीकरण पूरा करने के लिए कृपया अपनी वास्तविक जानकारी भरें",
+		successTitle: "आपने वास्तविक नाम प्रमाणीकरण पूरा कर लिया है",
+		successSubtitle: "प्रमाणीकरण जानकारी को दोहराकर सबमिट करने की कोई आवश्यकता नहीं है",
+		nameLabel: "असली नाम",
+		emailLabel: "ईमेल पता",
+		phoneLabel: "फ़ोन नंबर",
+		namePlaceholder: "कृपया अपना असली नाम दर्ज करें",
+		emailPlaceholder: "कृपया अपना ईमेल पता दर्ज करें",
+		phonePlaceholder: "कृपया अपना फ़ोन नंबर दर्ज करें",
+		submitButton: "प्रमाणीकरण सबमिट करें",
+		statusPending: "समीक्षा में",
+		statusSuccess: "ऑडिट सफल",
+		statusFailed: "ऑडिट विफल"
 	}
 }

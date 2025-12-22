@@ -394,5 +394,21 @@ export default {
 			submitButtonText: "保存信息",
 			bindSuccess: "綁定成功",
 			updateSuccess: "修改成功"
+		},
+		certification: {
+			title: "申請實名認證",
+			subtitle: "請填寫您的真實信息以完成認證",
+			successTitle: "您已完成實名認證",
+			successSubtitle: "無需重複提交認證信息",
+			nameLabel: "真實姓名",
+			emailLabel: "電子郵箱",
+			phoneLabel: "電話號碼",
+			namePlaceholder: "請輸入您的真實姓名",
+			emailPlaceholder: "請輸入您的電子郵箱",
+			phonePlaceholder: "請輸入您的電話號碼",
+			submitButton: "提交認證",
+			statusPending: "審核中",
+			statusSuccess: "審核成功",
+			statusFailed: "審核失敗"
 		}
 	}
