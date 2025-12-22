@@ -77,33 +77,32 @@
 					<div class="grid-container" style="padding-top: 50px; cursor: pointer;"
 						@click="$u.route('/pages/my/exchange')">
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/europe.png"
-								:alt="$t('common.index.regions.europe')"> -->
+							<img src="static/image/fz/europe.png">
 								<span>{{ $t('common.index.regions.europe') }}</span>
 						</div>
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/unitedstate.png"
-								:alt="$t('common.index.regions.unitedStates')"> -->
+							<img src="static/image/fz/unitedstate.png"
+								:alt="$t('common.index.regions.unitedStates')">
 								<span>{{ $t('common.index.regions.unitedStates') }}</span>
 						</div>
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/canada.png"
-								:alt="$t('common.index.regions.canada')"> -->
+							<img src="static/image/fz/canada.png"
+								:alt="$t('common.index.regions.canada')">
 								<span>{{ $t('common.index.regions.canada') }}</span>
 						</div>
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/singapore.png"
-								:alt="$t('common.index.regions.singapore')"> -->
+							<img src="static/image/fz/singapore.png"
+								:alt="$t('common.index.regions.singapore')">
 								<span>{{ $t('common.index.regions.singapore') }}</span>
 						</div>
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/switzerland.png"
-								:alt="$t('common.index.regions.switzerland')"> -->
+							<img src="static/image/fz/switzerland.png"
+								:alt="$t('common.index.regions.switzerland')">
 								<span>{{ $t('common.index.regions.switzerland') }}</span>
 						</div>
 						<div class="grid-item">
-							<!-- <img src="https://www.currencyexch.top/statics/new/img/unitedkingdom.png"
-								:alt="$t('common.index.regions.unitedKingdom')"><span> -->
+							<img src="static/image/fz/unitedkingdom.png"
+								:alt="$t('common.index.regions.unitedKingdom')"><span>
 								{{ $t('common.index.regions.unitedKingdom') }}</span>
 						</div>
 					</div>
