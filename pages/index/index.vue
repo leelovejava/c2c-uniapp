@@ -127,7 +127,10 @@
 		</view>
 
 		<!-- 用户站内信 弹窗 -->
-				<u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content" @confirm="confirmAnnouncement" confirm-text="我已知晓"></u-modal>
+    <u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content"
+              @confirm="confirmAnnouncement"
+              :confirm-text="$t('common.home.confirm')">
+    </u-modal>
 
 		<!-- <u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
 			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
