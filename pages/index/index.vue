@@ -127,47 +127,34 @@
 		</view>
 
 		<!-- 用户站内信 弹窗 -->
-<!--    <u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content"
+		<!--    <u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content"
               @confirm="confirmAnnouncement"
               :confirm-text="$t('common.home.confirm')">
     </u-modal>-->
 
-    <!-- 用户站内信 弹窗-->
-    <u-popup
-        v-model="showAnnouncement"
-        mode="center"
-        border-radius="20"
-        width="80%"
-        :mask-close-able="false"
-    >
-      <view class="notice-popup">
+		<!-- 用户站内信 弹窗-->
+		<u-popup v-model="showAnnouncement" mode="center" border-radius="20" width="80%" :mask-close-able="false">
+			<view class="notice-popup">
 
-        <view class="notice-header">
-          <text class="notice-title">{{ latest.title || 'Notify' }}</text>
-        </view>
+				<view class="notice-header">
+					<text class="notice-title">{{ latest.title || 'Notify' }}</text>
+				</view>
 
-        <!-- 内容区：内容少不滚，内容多才滚 -->
-        <scroll-view class="notice-body" scroll-y>
-          <u-parse :html="latest.content"></u-parse>
-        </scroll-view>
+				<!-- 内容区：内容少不滚，内容多才滚 -->
+				<scroll-view class="notice-body" scroll-y>
+					<u-parse :html="latest.content"></u-parse>
+					<view style="height: 100rpx;"></view>
+				</scroll-view>
 
-        <!-- 固定底部 -->
-        <view class="notice-footer" @click="confirmAnnouncement">
-          {{ $t('common.home.confirm') }}
-        </view>
+				<!-- 固定底部 -->
+				<view class="notice-footer" @click="confirmAnnouncement">
+					{{ $t('common.home.confirm') }}
+				</view>
 
-        <u-icon
-            name="close"
-            size="26"
-            class="notice-close"
-            @click="closeAnnouncement"
-        />
-      </view>
-    </u-popup>
-
-
-
-  </view>
+				<u-icon name="close" size="26" class="notice-close" @click="closeAnnouncement" />
+			</view>
+		</u-popup>
+	</view>
 </template>
 <script>
 	import navbar from "@/components/navbar.vue";
@@ -433,64 +420,63 @@
 		font-size: 12px;
 		color: #999;
 	}
-  .notice-popup {
-    background: #0b1225;
-    border-radius: 20rpx;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
 
-    /* ✅ 关键：自适应高度 + 最大高度限制 */
-    height: auto;
-    max-height: 80vh;     // 屏幕的 80%
-    min-height: 300rpx;   // 防止太小（可选）
+	.notice-popup {
+		background: #0b1225;
+		border-radius: 20rpx;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-  }
+		/* ✅ 关键：自适应高度 + 最大高度限制 */
+		height: auto;
+		max-height: 80vh; // 屏幕的 80%
+		min-height: 300rpx; // 防止太小（可选）
 
-  /* 标题 */
-  .notice-header {
-    padding: 30rpx;
-    text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    flex-shrink: 0;
-  }
+		display: flex;
+		flex-direction: column;
+	}
 
-  .notice-title {
-    font-size: 32rpx;
-    font-weight: 600;
-  }
+	/* 标题 */
+	.notice-header {
+		padding: 30rpx;
+		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		flex-shrink: 0;
+	}
 
-  /* 内容 */
-  .notice-body {
-    padding: 30rpx;
-    color: #ccc;
-    line-height: 1.6;
+	.notice-title {
+		font-size: 32rpx;
+		font-weight: 600;
+	}
 
-    /* ✅ 内容区自适应，超过才滚 */
-    flex: 1;
-    overflow: hidden;
-  }
+	/* 内容 */
+	.notice-body {
+		padding: 30rpx;
+		color: #ccc;
+		line-height: 1.6;
+		box-sizing: border-box;
+		/* 核心属性 */
+		max-height: 800rpx;
+	}
 
-  /* 底部按钮 */
-  .notice-footer {
-    height: 90rpx;
-    line-height: 90rpx;
-    text-align: center;
-    font-size: 30rpx;
-    font-weight: 600;
-    background: linear-gradient(90deg, #6a5cff, #7b6cff);
+	/* 底部按钮 */
+	.notice-footer {
+		height: 90rpx;
+		line-height: 90rpx;
+		text-align: center;
+		font-size: 30rpx;
+		font-weight: 600;
+		background: linear-gradient(90deg, #6a5cff, #7b6cff);
+		z-index: 10;
+		flex-shrink: 0; // 永远不被压缩
+	}
 
-    flex-shrink: 0; // 永远不被压缩
-  }
-
-  /* 关闭按钮 */
-  .notice-close {
-    position: absolute;
-    top: 20rpx;
-    right: 20rpx;
-    color: #aaa;
-  }
-
+	/* 关闭按钮 */
+	.notice-close {
+		position: absolute;
+		top: 20rpx;
+		right: 20rpx;
+		color: #aaa;
+	}
 </style>
