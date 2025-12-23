@@ -78,27 +78,23 @@
 						@click="$u.route('/pages/my/exchange')">
 						<div class="grid-item">
 							<img src="static/image/fz/europe.png">
-								<span>{{ $t('common.index.regions.europe') }}</span>
+							<span>{{ $t('common.index.regions.europe') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/unitedstate.png"
-								:alt="$t('common.index.regions.unitedStates')">
-								<span>{{ $t('common.index.regions.unitedStates') }}</span>
+							<img src="static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
+							<span>{{ $t('common.index.regions.unitedStates') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/canada.png"
-								:alt="$t('common.index.regions.canada')">
-								<span>{{ $t('common.index.regions.canada') }}</span>
+							<img src="static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
+							<span>{{ $t('common.index.regions.canada') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/singapore.png"
-								:alt="$t('common.index.regions.singapore')">
-								<span>{{ $t('common.index.regions.singapore') }}</span>
+							<img src="static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
+							<span>{{ $t('common.index.regions.singapore') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/switzerland.png"
-								:alt="$t('common.index.regions.switzerland')">
-								<span>{{ $t('common.index.regions.switzerland') }}</span>
+							<img src="static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
+							<span>{{ $t('common.index.regions.switzerland') }}</span>
 						</div>
 						<div class="grid-item">
 							<img src="static/image/fz/unitedkingdom.png"
@@ -130,27 +126,21 @@
 				:enable-progress-gesture="false" autoplay loop muted></video>
 		</view>
 
-
-
 		<!-- 用户站内信 弹窗 -->
-		<u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
-			<u-icon name="close" class="close-btn" @click="closeAnnouncement" size="30"></u-icon>
+				<u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content" @confirm="confirmAnnouncement" confirm-text="我已知晓"></u-modal>
+
+		<!-- <u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
+			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
 			<scroll-view class="" style="height: 600rpx;">
 				<view class="popup-content">
 					<h3>{{ latest.title }}</h3>
 					<u-parse :html="latest.content"></u-parse>
-
-          <!-- 确认按钮 -->
-          <u-button
-              type="primary"
-              style="margin-top: 30rpx;"
-              @click="confirmAnnouncement"
-          >
-            {{ $t('common.index.confirm') }}
-          </u-button>
+					<u-button type="primary" style="margin-top: 30rpx;" @click="confirmAnnouncement">
+						
+					</u-button>
 				</view>
 			</scroll-view>
-		</u-popup>
+		</u-popup> -->
 
 	</view>
 </template>
@@ -163,11 +153,11 @@
 		data() {
 			return {
 				showLanguage: false,
-        // 是否显示 用户站内信
+				// 是否显示 用户站内信
 				showAnnouncement: false,
 				latest: {
-          id: 0
-        },
+					id: 0
+				},
 			};
 		},
 		onLoad(options) {
@@ -192,29 +182,29 @@
 					this.news = [res.data[lang]]
 				})
 			},
-      // 标记 用户站内信为已读
-      confirmAnnouncement() {
-        if (!this.latest || !this.latest.id) {
-          this.showAnnouncement = false
-          return
-        }
+			// 标记 用户站内信为已读
+			confirmAnnouncement() {
+				if (!this.latest || !this.latest.id) {
+					this.showAnnouncement = false
+					return
+				}
 
-        const token = uni.getStorageSync('token')
+				const token = uni.getStorageSync('token')
 
-        this.$u.api.index.announcement_read(token, this.latest.id).then(res => {
-          // 成功后关闭弹窗
-          this.showAnnouncement = false
-          this.latest = {}
-        }).catch(() => {
-          // 就算失败，也别卡用户
-          this.showAnnouncement = false
-        })
-      },
+				this.$u.api.index.announcement_read(token, this.latest.id).then(res => {
+					// 成功后关闭弹窗
+					this.showAnnouncement = false
+					this.latest = {}
+				}).catch(() => {
+					// 就算失败，也别卡用户
+					this.showAnnouncement = false
+				})
+			},
 
-      // 右上角关闭（也视为已读）
-      closeAnnouncement() {
-        this.confirmAnnouncement()
-      }
+			// 右上角关闭（也视为已读）
+			closeAnnouncement() {
+				this.confirmAnnouncement()
+			}
 		},
 		computed: {
 			common() {
