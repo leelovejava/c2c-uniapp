@@ -72,7 +72,7 @@
             <!--用户资产-->
 						<view class="a-mb15">
 							<view class="currency-grid">
-                <view class="currency-item">
+                <view class="currency-item currency-full">
                   <span class="currency-value">{{ assets.money || '0.00' }} USDT</span>
                 </view>
 								<view class="currency-item">
@@ -331,6 +331,10 @@ export default {
 		background-color: #1a233a;
 		border-radius: 10px;
 		padding: 10px;
+
+    .currency-full {
+      grid-column: 1 / -1; // 横跨所有列
+    }
 
 		.currency-item {
 			display: flex;
