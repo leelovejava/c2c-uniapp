@@ -32,6 +32,7 @@ export default {
 		],
 		footer: ["Inicio", "Lobby", "Orden", "Mi cuenta"],
 		home: {
+			confirm: "Confirmar",
 			label: ["Bienvenido"],
 			broadcast: "Felicitaciones a {member} por convertirse en {grade}",
 			menu: ["Registro de fondos", "Tutorial para principiantes", "Registro de invitación",

@@ -35,20 +35,21 @@ export default {
 		],
 		footer: ["Accueil", "Hall", "Commandes", "Profil"],
 		home: {
+			confirm: "Confirmer",
 			label: ["Bienvenue"],
 			broadcast: "Félicitations au membre {member} pour son nouveau grade {grade}",
-		menu: ["Journal des transactions", "Guide du débutant", "Inscription par invitation", "Service client"],
-		noticeTitle: "Dernières annonces",
-		msg: "Tâche non disponible",
-		video: "Pas de tutoriel vidéo disponible",
-		hero: {
-			title: "La façon facile d'échanger en ligne",
-			subtitle: "Nous déplaçons de l'argent à l'échelle mondiale",
-			description: "Nous aidons les entreprises et les particuliers à envoyer et recevoir de l'argent en toute sécurité, sans frais bancaires excessifs.",
-			credentials1: "+25 ans d'expérience, coté à l'ASX depuis 2013",
-			credentials2: "Réglementé par plus de 50 autorités de régulation dans le monde",
-			button: "COMMENCER →"
-		}
+			menu: ["Journal des transactions", "Guide du débutant", "Inscription par invitation", "Service client"],
+			noticeTitle: "Dernières annonces",
+			msg: "Tâche non disponible",
+			video: "Pas de tutoriel vidéo disponible",
+			hero: {
+				title: "La façon facile d'échanger en ligne",
+				subtitle: "Nous déplaçons de l'argent à l'échelle mondiale",
+				description: "Nous aidons les entreprises et les particuliers à envoyer et recevoir de l'argent en toute sécurité, sans frais bancaires excessifs.",
+				credentials1: "+25 ans d'expérience, coté à l'ASX depuis 2013",
+				credentials2: "Réglementé par plus de 50 autorités de régulation dans le monde",
+				button: "COMMENCER →"
+			}
 		},
 		hall: {
 			default: ["Hall des transactions", "Solde", "Acheter", "Vendre", "Confirmer la vente",

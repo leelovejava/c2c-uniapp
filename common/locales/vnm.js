@@ -28,6 +28,7 @@ export default {
 		],
 		footer: ["Trang chủ", "Sảnh", "Đơn hàng", "Cá nhân"],
 		home: {
+			confirm: "Xác nhận",
 			label: ["Tạo tài khoản cá nhân"],
 			broadcast: "chúc mừng thành viên{member} trở thành{grade}",
 			menu: ["nhật ký tiền vốn", "Hướng dẫn", "Mời đăng ký", "Hỗ trợ"],

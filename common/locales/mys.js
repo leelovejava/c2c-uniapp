@@ -29,6 +29,7 @@ export default {
 		],
 		footer: ["Laman Utama", "Lobi", "Pesanan", "Akaun Saya"],
 		home: {
+			confirm: "Sahkan",
 			label: ["Selamat Datang"],
 			broadcast: "Tahniah kepada ahli {member} atas menjadi {grade}",
 			menu: ["Log Kewangan", "Tutorial Pemula", "Daftar Jemputan", "Hubungi Perkhidmatan Pelanggan"],

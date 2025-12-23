@@ -134,7 +134,7 @@
 
 		<!-- 用户站内信 弹窗 -->
 		<u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
-			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
+			<u-icon name="close" class="close-btn" @click="closeAnnouncement" size="30"></u-icon>
 			<scroll-view class="" style="height: 600rpx;">
 				<view class="popup-content">
 					<h3>{{ latest.title }}</h3>
@@ -146,7 +146,7 @@
               style="margin-top: 30rpx;"
               @click="confirmAnnouncement"
           >
-            我已知晓
+            {{ $t('common.index.confirm') }}
           </u-button>
 				</view>
 			</scroll-view>

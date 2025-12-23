@@ -22,6 +22,7 @@ export default {
 		resetpwd: ["Passwort vergessen", "Bitte geben Sie Ihre E-Mail ein", "Bitte geben Sie den Bestätigungscode ein", "Klicken zum Abrufen", "Bitte geben Sie Ihr Passwort ein", "Passwort zurücksetzen"],
 		footer: ["Startseite", "Marktplatz", "Bestellungen", "Mein Bereich"],
 		home: {
+			confirm: "Bestätigen",
 			label: ["Willkommen"],
 			broadcast: "Herzlichen Glückwunsch an Mitglied {member} für das Erreichen von {grade}",
 			menu: ["Kapitalprotokoll", "Einsteiger-Tutorial", "Einladungsregistrierung", "Kundenservice kontaktieren"],

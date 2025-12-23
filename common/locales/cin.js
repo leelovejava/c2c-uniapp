@@ -21,6 +21,7 @@ export default {
 		resetpwd: ["忘記密碼", "請輸入郵箱", "請輸入驗證碼", "點擊獲取", "請輸入密碼", "重置密碼"],
 		footer: ["首頁", "大廳", "訂單", "我的"],
 		home: {
+			confirm: "確認",
 			label: ["歡迎"],
 			broadcast: "恭喜會員{member} 成為{grade}",
 			menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],

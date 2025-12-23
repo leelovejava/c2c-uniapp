@@ -22,6 +22,7 @@ export default {
 		resetpwd: ["Esqueceu sua senha", "Por favor, insira o e-mail", "Por favor, insira o código", "Clique para obter", "Por favor insira a senha", "Redefinir senha"],
 		footer: ["Home", "Hall", "Order", "My"],
 		home: {
+			confirm: "Confirmar",
 			label: ["Bem-vindo"],
 			broadcast: "Parabéns ao membro {member} por se tornar {grade}",
 			menu: ["Registro de Fundos", "Tutorial para iniciantes", "Registro de convites", "Suporte ao cliente"],

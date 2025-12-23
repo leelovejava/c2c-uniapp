@@ -22,6 +22,7 @@ export default {
 		resetpwd: ["Password dimenticata", "Inserisci l'indirizzo email", "Inserisci il codice di verifica", "Ottieni", "Inserisci la nuova password", "Reimposta la password"],
 		footer: ["Home", "Hall", "Ordini", "Il mio"],
 		home: {
+		  confirm: "Conferma",
 		  label: ["Benvenuto"],
 		  broadcast: "Congratulazioni al membro {member} per diventare {grade}",
 		  menu: ["Registro delle transazioni", "Guida per principianti", "Invita amici", "Assistenza online"],

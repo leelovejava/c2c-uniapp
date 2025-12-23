@@ -21,20 +21,21 @@ export default {
 		resetpwd: ["Forget password", "Please enter your email", "Please enter the verification code", "Click to get", "Please enter your password", "Reset password"],
 		footer: ["Home", "Hall", "Order", "Mine"],
 		home: {
-		label: ["Welcome"],
-		broadcast: "Congratulations to member {member} for becoming {grade}",
-		menu: ["Capital Log", "Beginner's Tutorial", "Invite Registration", "Contact Customer Service"],
-		noticeTitle: "Latest Announcement",
-		msg: "Task not available",
-		video: "No video tutorial available",
-		hero: {
-			title: "The Easy Way to Exchange Online",
-			subtitle: "Moving money globally is what we do",
-			description: "We help businesses and individuals to securely send and receive money, without the excessive bank fees.",
-			credentials1: "25+ years' experience, ASX listed since 2013",
-			credentials2: "Regulated by 50+ regulators globally",
-			button: "GET START →"
-		}
+			confirm: "Confirm",
+			label: ["Welcome"],
+			broadcast: "Congratulations to member {member} for becoming {grade}",
+			menu: ["Capital Log", "Beginner's Tutorial", "Invite Registration", "Contact Customer Service"],
+			noticeTitle: "Latest Announcement",
+			msg: "Task not available",
+			video: "No video tutorial available",
+			hero: {
+				title: "The Easy Way to Exchange Online",
+				subtitle: "Moving money globally is what we do",
+				description: "We help businesses and individuals to securely send and receive money, without the excessive bank fees.",
+				credentials1: "25+ years' experience, ASX listed since 2013",
+				credentials2: "Regulated by 50+ regulators globally",
+				button: "GET START →"
+			}
 		},
 		hall: {
 		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Go to Sell"],
