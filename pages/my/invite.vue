@@ -13,7 +13,6 @@
 						<h4 onclick="copy_txt('64WMV7')">{{userinfo.code}}</h4>
 					</div>
 				</div>
-
 				<div class="copy" style="display: flex; align-items: center; justify-content: center;cursor: pointer;" @click="copyInviteCode">
 					{{$t('common.invite.copyInviteLink')}}
 				</div>
