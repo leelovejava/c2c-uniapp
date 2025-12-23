@@ -215,9 +215,6 @@ export default {
 	methods: {
 		init() {
 			const token = uni.getStorageSync('token')
-			this.$u.api.setting.exchangeswap(token).then(res => {
-				this.userinfo = res.data
-			})
 			this.getuserinfo()
 		},
 		getuserinfo() {

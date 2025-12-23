@@ -288,7 +288,26 @@ export default {
 			"market": "行情",
 			"trade": "交易",
 			"wallet": "錢包",
-			"profile": "我的"
+			"profile": "我的",
+			"inviteCode": "邀請碼",
+			"copy": "複製",
+			"creditScore": "信譽分",
+			"totalBalance": "總餘額",
+			"currencyExchange": "貨幣兌換",
+			"memberLevel": "會員等級",
+			"promotions": "優惠活動",
+			"aboutUs": "關於我們",
+			"faqs": "常見問題",
+			"certification": "資質",
+			"recharge": "充值",
+			"bankCards": "銀行卡",
+			"records": "記錄",
+			"withdraw": "出金",
+			"contactUs": "聯繫我們",
+			"inviteFriends": "邀請好友",
+			"logout": "註銷",
+			"copySuccess": "複製成功",
+			"copyFailed": "複製失敗"
 		},
 		"exchange": {
 			"infoCard": {
@@ -337,27 +356,6 @@ export default {
 				"exchangeEarnings": "兌換收益",
 				"expectedReturn": "預期回報"
 			}
-		},
-		"navbar": {
-			"inviteCode": "邀請碼",
-			"copy": "複製",
-			"creditScore": "信譽分",
-			"totalBalance": "總餘額",
-			"currencyExchange": "貨幣兌換",
-			"memberLevel": "會員等級",
-			"promotions": "優惠活動",
-			"aboutUs": "關於我們",
-			"faqs": "常見問題",
-			"certification": "資質",
-			"recharge": "充值",
-			"bankCards": "銀行卡",
-			"records": "記錄",
-			"withdraw": "提現",
-			"contactUs": "聯繫我們",
-			"inviteFriends": "邀請好友",
-			"logout": "註銷",
-			"copySuccess": "複製成功",
-			"copyFailed": "複製失敗"
 		},
 		// 实名认证相关国际化
 		"certification": {
@@ -466,7 +464,7 @@ export default {
 			"「你已經不是普通用戶了」。"
 	},
 	"deposit": {
-		"withdrawal": "提款",
+		"withdrawal": "出金",
 		"history": "歷史記錄",
 		"totalBalance": "總餘額",
 		"processingTime": "提款處理需要15-20分鐘。",
@@ -480,7 +478,8 @@ export default {
 		"enterWithdrawalAmount": "輸入提現金額",
 		"all": "全部",
 		"enterWithdrawalPassword": "輸入提款密碼",
-		"submit": "提交"
+		"submit": "提交",
+		withdrawalFailed: "提款失敗，請稍後再試",
 	},
 	"about": {
 		"title": "關於我們",
@@ -538,13 +537,6 @@ export default {
 		submitButtonText: "保存信息",
 		bindSuccess: "綁定成功",
 		updateSuccess: "修改成功"
-	},
-	deposit: {
-		withdrawal: "提款",
-		history: "歷史記錄",
-		submit: "提交",
-		enterWithdrawalAmount: "請輸入提款金額",
-		withdrawalFailed: "提款失敗，請稍後再試"
 	},
 	"support": {
 		"title": "聯繫我們",

@@ -272,10 +272,10 @@ export default {
 			recharge: "充值",
 			bankCards: "銀行卡",
 			records: "記錄",
-			withdraw: "提現",
+			withdraw: "出金",
 			contactUs: "聯繫我們",
 			inviteFriends: "邀請好友",
-			logout: "退出登錄"
+			logout: "退出登錄",
 		},
 		faqs: {
 			pageHeader: {
@@ -437,5 +437,29 @@ export default {
 			statusPending: "審核中",
 			statusSuccess: "審核成功",
 			statusFailed: "審核失敗"
+		},
+		deposit: {
+			withdrawal: "出金",
+				history: "历史记录",
+				totalBalance: "总余额",
+				processingTime: "提款处理需要15-20分钟。",
+				walletAddressType: "钱包地址类型",
+				trc20Address: "trc20地址",
+				erc20Address: "ERC20地址",
+				btcAddress: "BTC Address",
+				addressNotSet: "地址未设置",
+				bindAddress: "绑定地址",
+				verifyWalletAddress: "请仔细核实您的钱包地址。",
+				all: "全部",
+				enterWithdrawalPassword: "输入提款密码",
+				submit: "提交",
+				enterWithdrawalAmount: "请输入提现金额",
+				withdrawalFailed: "提现失败，请稍后再试"
+		},
+		withdrawalStatus: {
+			pending: "待审核",
+				success: "已打款",
+				rejected: "已拒绝",
+				processing: "打款中"
 		}
 	}

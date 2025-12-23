@@ -32,6 +32,7 @@ const install = (Vue, vm) => {
 
 		walletedit: (token) => vm.$u.post("/wallet/edit", {token}),
 		exchangeinfo: (token) => vm.$u.post("/exchange/info", {token}),
+		// 兑换
 		exchangeswap: (token,data) => vm.$u.post("/exchange/swap", {token, ...data}),
 		exchanglist: (token,data) => vm.$u.post("/exchange/list", {token,...data}),
 		//忘记密码
@@ -144,6 +145,8 @@ const install = (Vue, vm) => {
 		// 买入、卖出订单
 		getorders: (token, data) => vm.$u.post("/user/getorders", {token, ...data}),
 		articleget: (token, data) => vm.$u.post("/article/get", {token, ...data}),
+		// 获取用户资产
+		getUserAssets: (token, data) => vm.$u.post("/user/getUserAssets", {token, ...data}),
 	}
 	
 	vm.$u.api = {

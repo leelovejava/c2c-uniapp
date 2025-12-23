@@ -37,6 +37,30 @@
 								<input type="text" v-model="formData.money" :placeholder="$t('deposit.enterWithdrawalAmount')" class="amount-input">
 							</div>
 
+              <div class="input-group">
+                <input type="text" v-model="formData.account_name" class="form-input" :placeholder="$t('bankCardList.accountNamePlaceholder')">
+              </div>
+
+              <div class="input-group">
+                <input type="text" v-model="formData.account_number" class="form-input" :placeholder="$t('bankCardList.accountNumberPlaceholder')">
+              </div>
+
+              <div class="input-group">
+                <input type="text" v-model="formData.bank_name" class="form-input" :placeholder="$t('bankCardList.bankNamePlaceholder')">
+              </div>
+
+              <div class="input-group">
+                <input type="text" v-model="formData.routing_number" class="form-input" :placeholder="$t('bankCardList.routingNumberPlaceholder')">
+              </div>
+
+              <div class="input-group">
+                <input type="text" v-model="formData.swift_code" class="form-input" :placeholder="$t('bankCardList.swiftCodePlaceholder')">
+              </div>
+
+              <div class="input-group">
+                <textarea v-model="formData.bank_address" class="form-textarea" :placeholder="$t('bankCardList.bankAddressPlaceholder')"></textarea>
+              </div>
+
 						</div>
 						<button class="submit-button" id="btn-submit" @click="submitWithdrawal">{{ $t('deposit.submit') }}</button>
 					</div>
@@ -89,10 +113,18 @@ export default {
 			activeTab: 'withdrawal',
 			formData: {
 				money: '',
-				currency: 'usd'
+				currency: 'usd',
+        account_name: '',
+        account_number: '',
+        bank_name: '',
+        country: '',
+        routing_number: '',
+        swift_code: '',
+        bank_address: ''
 			},
 			userinfo: {},
 			historyRecords: [],
+      // 可提现金额
 			ktxjine: 0,
 		};
 	},
@@ -105,12 +137,21 @@ export default {
 
 	},
 	methods: {
-		changeCurrency() {
-			const token = uni.getStorageSync('token');
-			this.$u.api.setting.exchangeswap(token, { to_currency: this.formData.currency }).then(res => {
-				this.ktxjine = res.data
-			});
-		},
+    // usd美元,eur欧元,cad加元,sgd新加坡元,chf瑞士,gbp英镑
+    changeCurrency() {
+      const currency = this.formData.currency
+
+      // userinfo 还没加载完成时兜底
+      if (!this.userinfo || !currency) {
+        this.ktxjine = 0
+        return
+      }
+
+      // 根据币种动态取余额，如 userinfo.usd / userinfo.eur
+      const amount = this.userinfo[currency]
+
+      this.ktxjine = Number(amount || 0)
+    },
 		getUserInfo() {
 			const token = uni.getStorageSync('token');
 			this.$u.api.index.getUserinfo(token).then(res => {
@@ -165,15 +206,9 @@ export default {
 				return;
 			}
 
-			// 构造请求参数
-			const requestData = {
-				money: this.formData.money,
-				currency: this.formData.currency
-			};
-
 			// 调用提现API
 			const token = uni.getStorageSync('token');
-			this.$u.api.index.apply_withdrawal(token, requestData).then(res => {
+			this.$u.api.index.apply_withdrawal(token, this.formData).then(res => {
 				if (res.code == 1) {
 					uni.showToast({
 						title: res.msg,

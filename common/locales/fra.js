@@ -587,7 +587,6 @@ export default {
 		addressNotSet: "Adresse non définie",
 		bindAddress: "Lier l'adresse",
 		verifyWalletAddress: "Veuillez vérifier attentivement votre adresse de portefeuille.",
-		enterWithdrawalAmount: "Entrez le montant du retrait",
 		all: "Tout",
 		enterWithdrawalPassword: "Entrez le mot de passe de retrait",
 		submit: "Soumettre",

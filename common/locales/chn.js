@@ -469,7 +469,7 @@ export default {
 			"“你已经不是普通用户了”。"
 	},
 	deposit: {
-		withdrawal: "提款",
+		withdrawal: "出金",
 		history: "历史记录",
 		totalBalance: "总余额",
 		processingTime: "提款处理需要15-20分钟。",
