@@ -48,7 +48,10 @@ const install = (Vue, vm) => {
 		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
 		//发验证码
 		send_email_mobile: (username) => vm.$u.post("/user/send_email_mobile", {username}),
+		// 获取用户最新的站内信
 		announcement_latest: (token) => vm.$u.get("/index/announcement_latest", {token}),
+		// 标记 用户站内信为已读
+		announcement_read: (token,id) => vm.$u.get("/index/announcement_read", {token,id}),
 		//获取轮播图
 		get_about: () => vm.$u.get("/index/get_about"),
 		//获取下载地址

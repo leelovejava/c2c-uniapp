@@ -132,17 +132,25 @@
 
 
 
-		<!-- 公告弹窗 -->
-		<!-- <u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
+		<!-- 用户站内信 弹窗 -->
+		<u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
 			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
 			<scroll-view class="" style="height: 600rpx;">
 				<view class="popup-content">
 					<h3>{{ latest.title }}</h3>
 					<u-parse :html="latest.content"></u-parse>
+
+          <!-- 确认按钮 -->
+          <u-button
+              type="primary"
+              style="margin-top: 30rpx;"
+              @click="confirmAnnouncement"
+          >
+            我已知晓
+          </u-button>
 				</view>
 			</scroll-view>
-
-		</u-popup> -->
+		</u-popup>
 
 	</view>
 </template>
@@ -155,8 +163,11 @@
 		data() {
 			return {
 				showLanguage: false,
+        // 是否显示 用户站内信
 				showAnnouncement: false,
-				latest: {},
+				latest: {
+          id: 0
+        },
 			};
 		},
 		onLoad(options) {
@@ -181,6 +192,29 @@
 					this.news = [res.data[lang]]
 				})
 			},
+      // 标记 用户站内信为已读
+      confirmAnnouncement() {
+        if (!this.latest || !this.latest.id) {
+          this.showAnnouncement = false
+          return
+        }
+
+        const token = uni.getStorageSync('token')
+
+        this.$u.api.index.announcement_read(token, this.latest.id).then(res => {
+          // 成功后关闭弹窗
+          this.showAnnouncement = false
+          this.latest = {}
+        }).catch(() => {
+          // 就算失败，也别卡用户
+          this.showAnnouncement = false
+        })
+      },
+
+      // 右上角关闭（也视为已读）
+      closeAnnouncement() {
+        this.confirmAnnouncement()
+      }
 		},
 		computed: {
 			common() {
