@@ -68,26 +68,45 @@
 							<u-line-progress active-color="#4CAF50" height="20" :percent="userinfo.credit_score - 0"
 								:show-percent="false"></u-line-progress>
 						</view>
-						<view class="a-mb15">
 
+            <!--用户资产-->
+						<view class="a-mb15">
 							<view class="currency-grid">
+                <view class="currency-item">
+                  <span class="currency-value">{{ assets.money || '0.00' }} USDT</span>
+                </view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.eur || '0.00' }} EUR</span>
+									<span class="currency-value">{{ assets.eur || '0.00' }} EUR</span>
+                  <span class="currency-usd">
+                    ≈ {{ assets.eur_to || '0.00' }} USD
+                  </span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.usd || '0.00' }} USD</span>
+									<span class="currency-value">{{ assets.usd || '0.00' }} USD</span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.cad || '0.00' }} CAD</span>
+									<span class="currency-value">{{ assets.cad || '0.00' }} CAD</span>
+                  <span class="currency-usd">
+                    ≈ {{ assets.cad_to || '0.00' }} USD
+                  </span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.sgd || '0.00' }} SGD</span>
+									<span class="currency-value">{{ assets.sgd || '0.00' }} SGD</span>
+                  <span class="currency-usd">
+                    ≈ {{ assets.sgd_to || '0.00' }} USD
+                  </span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.chf || '0.00' }} CHF</span>
+									<span class="currency-value">{{ assets.chf || '0.00' }} CHF</span>
+                  <span class="currency-usd">
+                    ≈ {{ assets.chf_to || '0.00' }} USD
+                  </span>
 								</view>
 								<view class="currency-item">
-									<span class="currency-value">{{ userinfo.gbp || '0.00' }} GBP</span>
+									<span class="currency-value">{{ assets.gbp || '0.00' }} GBP</span>
+                  <span class="currency-usd">
+                    ≈ {{ assets.gbp_to || '0.00' }} USD
+                  </span>
 								</view>
 							</view>
 							<view class="a-center2">
@@ -140,11 +159,11 @@
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.recharge') }}</view>
 								</u-grid-item>
-								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
+<!--								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bankcardList')">
 									<image src="/static/image/fz/back.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.bankCards') }}</view>
-								</u-grid-item>
+								</u-grid-item>-->
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/order')">
 									<image src="/static/image/fz/jilu.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
@@ -207,6 +226,10 @@ export default {
 		return {
 			leftShow: false,
 			userinfo: {},
+      // 用户资产
+      assets: {
+
+      }
 		};
 	},
 	mounted() {
@@ -215,12 +238,20 @@ export default {
 	methods: {
 		init() {
 			const token = uni.getStorageSync('token')
-			this.getuserinfo()
+      this.getuserinfo()
+			this.getUserAssets()
 		},
-		getuserinfo() {
+    getuserinfo() {
+      const token = uni.getStorageSync('token')
+      this.$u.api.index.getUserinfo(token).then(res => {
+        this.userinfo = res.data
+      })
+    },
+    // 获取用户资产
+    getUserAssets() {
 			const token = uni.getStorageSync('token')
-			this.$u.api.index.getUserinfo(token).then(res => {
-				this.userinfo = res.data
+			this.$u.api.index.getUserAssets(token).then(res => {
+				this.assets = res.data
 			})
 		},
 		copyInviteCode() {
