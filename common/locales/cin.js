@@ -439,7 +439,7 @@ export default {
 		"deposit": "存款",
 		"bonus": "獎金",
 		"commissionRate": "佣金率",
-		"dailyOrders": "每日訂單",
+		dailyOrders: "每週訂單",
 		"description": "VIP 等級聲明：\n" +
 			"出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +
 			"VIP 等級限制交易次數，是為了防止普通帳戶佔用專業做市商的交易空間，同時降低平台風控風險。\n" +

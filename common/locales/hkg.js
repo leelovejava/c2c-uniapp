@@ -240,7 +240,7 @@ export default {
 				orders: "訂單",
 				confirmExchange: "確認兌換",
 				records: "記錄",
-				selectCurrency: ""
+				selectCurrency: "請選擇貨幣"
 			},
 			modal: {
 				steps: [
@@ -339,7 +339,7 @@ export default {
 			deposit: "存款",
 			bonus: "獎金",
 			commissionRate: "佣金率",
-			dailyOrders: "每日訂單",
+			dailyOrders: "每週訂單",
 			description:
 				"VIP 等級說明：\n" +
 				"出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +

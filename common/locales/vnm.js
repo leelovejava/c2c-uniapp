@@ -418,7 +418,7 @@ export default {
 		deposit: "Tiền gửi",
 		bonus: "Thưởng",
 		commissionRate: "Tỷ lệ hoa hồng",
-		dailyOrders: "Đơn hàng hàng ngày",
+		dailyOrders: "Đơn hàng hàng tuần",
 		description :
 			"Giải thích cấp độ VIP:\n" +
 			"Bán USDT để kiếm chênh lệch giá về bản chất là hoạt động cung cấp thanh khoản.\n" +

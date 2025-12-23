@@ -442,7 +442,7 @@ export default {
 		deposit: "存款",
 		bonus: "奖金",
 		commissionRate: "佣金率",
-		dailyOrders: "每日订单",
+		dailyOrders: "每週訂單",
 		description: "VIP等级声明：\n" +
 			"出售USDT能赚差价，本质是在“做流动性生意”\n" +
 			"VIP限制交易次数，是为了防止普通账号挤占专业做市商的空间，同时降低平台风控风险。\n" +

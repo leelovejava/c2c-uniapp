@@ -20,7 +20,7 @@ const install = (Vue, vm) => {
 		
 		// 我的利息钱包列表
 		addRecharge: (token) => vm.$u.post("/user/add_recharge", {token}),
-//绑定
+		//绑定
 		getfinas: (token) => vm.$u.post("/user/getfinas", {token}),
 
 		bind_bank2: (token,data) => vm.$u.post("/user/bind_bank", {token, ...data}),
@@ -36,7 +36,8 @@ const install = (Vue, vm) => {
 		exchanglist: (token,data) => vm.$u.post("/exchange/list", {token,...data}),
 		//忘记密码
 		change_pwd: (token, {ol_password, password}) => vm.$u.post("/user/change_pwd", {token, ol_password, password}),
-		
+		// 获取vip等级
+		get_vip_level: (token) => vm.$u.get("/vip/list", {token}),
 	}
 	
 	const index = {

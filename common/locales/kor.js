@@ -371,7 +371,7 @@ export default {
 		deposit: "예금",
 		bonus: "보너스",
 		commissionRate: "커미션율",
-		dailyOrders: "일일 주문"
+		dailyOrders: "주간 주문",
 	},
 	about: {
 		title: "회사 소개",

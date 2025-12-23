@@ -425,7 +425,7 @@ export default {
 		deposit: "Einzahlung",
 		bonus: "Bonus",
 		commissionRate: "Provisionsrate",
-		dailyOrders: "Tägliche Aufträge",
+		dailyOrders: "Wöchentliche Bestellungen",
 		description: "VIP-Stufenerklärung:\n" +
 			"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
 			"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +

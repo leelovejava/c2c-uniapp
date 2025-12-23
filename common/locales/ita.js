@@ -361,7 +361,7 @@ export default {
 		deposit: "Deposito",
 		bonus: "Bonus",
 		commissionRate: "Tasso di commissione",
-		dailyOrders: "Ordini giornalieri",
+		dailyOrders: "Ordini settimanali",
 		description: "Dichiarazione del livello VIP:\n" +
 			"La vendita di USDT consente di guadagnare sulla differenza di prezzo, che è essenzialmente un’attività di fornitura di liquidità.\n" +
 			"Il livello VIP limita il numero di transazioni per evitare che gli account ordinari occupino lo spazio dei market maker professionali e per ridurre la pressione del controllo del rischio della piattaforma.\n" +

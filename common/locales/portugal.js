@@ -364,7 +364,7 @@ bind: [
 		deposit: "Depósito",
 		bonus: "Bônus",
 		commissionRate: "Taxa de Comissão",
-		dailyOrders: "Pedidos Diários"
+		dailyOrders: "Pedidos semanais",
 	},
 	about: {
 		title: "Sobre Nós",

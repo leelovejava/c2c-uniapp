@@ -423,7 +423,7 @@ export default {
 		deposit: "Deposit",
 		bonus: "Bonus",
 		commissionRate: "Commission Rate",
-		dailyOrders: "Daily Orders",
+		dailyOrders: "Weekly Orders",
 		description: "VIP Level Statement:\n" +
 			"Selling USDT earns the spread, essentially engaging in 'liquidity business'\n" +
 			"VIP level limits the number of transactions to prevent ordinary accounts from occupying professional market makers' space, while reducing platform risk control risks.\n" +
@@ -461,7 +461,6 @@ export default {
 		addressNotSet: "Address Not Set",
 		bindAddress: "Bind Address",
 		verifyWalletAddress: "Please carefully verify your wallet address.",
-		enterWithdrawalAmount: "Enter Withdrawal Amount",
 		all: "All",
 		enterWithdrawalPassword: "Enter Withdrawal Password",
 		submit: "Submit",

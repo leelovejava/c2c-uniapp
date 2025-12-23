@@ -449,7 +449,7 @@ export default {
 			deposit: "Deposit",
 			bonus: "Bonus",
 			commissionRate: "Commission Rate",
-			dailyOrders: "Daily Orders",
+			dailyOrders: "Pesanan mingguan",
 			description: "Pernyataan Tahap VIP:\n" +
 				"Menjual USDT untuk mendapatkan perbezaan harga pada asasnya merupakan aktiviti penyediaan kecairan.\n" +
 				"Tahap VIP mengehadkan bilangan transaksi bagi mengelakkan akaun biasa mengambil ruang pembuat pasaran profesional serta mengurangkan risiko kawalan platform.\n" +

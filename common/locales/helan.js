@@ -531,35 +531,36 @@ export default {
 		submit: "Indienen"
 	},
 	vip: {
-		title: "Membership Level",
-		current: "Current",
-		deposit: "Deposit",
+		title: "Lidmaatschapsniveau",
+		current: "Huidig",
+		deposit: "Storting",
 		bonus: "Bonus",
-		commissionRate: "Commission Rate",
-		dailyOrders: "Daily Orders",
-		description: "VIP-niveauverklaring:\n" +
-		"Het verkopen van USDT om prijsverschillen te benutten is in wezen een vorm van liquiditeitsverstrekking.\n" +
-		"VIP-niveaus beperken het aantal transacties om te voorkomen dat gewone accounts de ruimte van professionele market makers innemen en om platformrisico’s te verminderen.\n" +
-		"AML- en regelgevingsdruk! (de kernreden)\n" +
-		"Daarom gebruikt het platform:\n" +
+		commissionRate: "Commissietarief",
+		dailyOrders: "Wekelijkse bestellingen",
+		description: "Uitleg van het VIP-niveau:\n" +
+		"Het verkopen van USDT om te profiteren van spreads is in wezen een vorm van liquiditeitsverstrekking.\n" +
+		"VIP-niveaus beperken het aantal transacties om te voorkomen dat gewone accounts de ruimte van professionele market makers innemen en om de risico’s van het platform te verlagen.\n" +
+		"Druk vanuit anti-witwasmaatregelen (AML) en regelgeving! (De kernreden)\n" +
+		"Daarom hanteert het platform:\n" +
 		"VIP-niveau\n" +
 		"Aantal transacties\n" +
-		"Drempel voor transactiewaarde\n" +
-		"Om gebruikers te selecteren:\n" +
+		"Drempel voor transactiebedrag\n" +
+		"om gebruikers te selecteren:\n" +
 		"Gewone gebruikers wisselen slechts af en toe geld.\n" +
-		"Het frequent verkopen van USDT wordt gezien als professionele valutawissel- of liquiditeitsactiviteit.\n" +
-		"VIP = beheersbaar risicodoel (meer zekerheid voor het platform)\n" +
+		"Hoogfrequente USDT-verkopers worden gezien als professionele valutawisselaars / liquiditeitsverschaffers (market makers).\n" +
+		"VIP = objecten onder risicobeheersing (meer zekerheid voor het platform)\n" +
 		"VIP-gebruikers beschikken doorgaans over:\n" +
-		"Een groter kapitaalvolume\n" +
-		"Vollediger KYC\n" +
+		"Meer kapitaal\n" +
+		"Een completere KYC\n" +
 		"Een langere transactiegeschiedenis\n" +
 		"\n" +
-		"Platformlogica:\n" +
-		"Beperkingen op de verkoop van USDT bestaan omdat dit al hoogfrequente valuta- en liquiditeitsactiviteiten zijn, waarvoor hogere niveaus nodig zijn om aan regelgeving te voldoen.\n" +
-		"Dit is geen platformbelemmering, maar een marktgericht ontwerp voor naleving van regelgeving.\n" +
+		"De logica van het platform is:\n" +
+		"Het platform beperkt het aantal USDT-verkopen omdat dit al hoogfrequente valuta- en liquiditeitsactiviteiten zijn, waarvoor een hoger niveau nodig is om te voldoen aan regelgeving\n" +
+		"en risicobeheersingsvereisten. Dit is niet om het moeilijk te maken, maar een meer marktgericht ontwerp voor naleving van regelgeving.\n" +
 		"\n" +
-		"Let op:\n" +
-		"Prijsverschillen in USDT kunnen winst opleveren, maar het betreft een \"quasi-financiële activiteit\". VIP-beperkingen zijn geen drempel, maar een signaal:\n" +
+		"Vriendelijke herinnering:\n" +
+		"Met USDT-spreads kan geld worden verdiend, maar het is een \"quasi-financiële activiteit\". VIP-beperkingen zijn geen drempel, maar een signaal van het platform:\n" +
 		"\"U bent geen gewone gebruiker meer.\""
 	}
+
 };

@@ -429,7 +429,7 @@ export default {
 		deposit: "เงินฝาก",
 		bonus: "โบนัส",
 		commissionRate: "อัตราค่าคอมมิชชั่น",
-		dailyOrders: "คำสั่งซื้อรายวัน"
+		dailyOrders: "Еженедельные заказы",
 	},
 	about: {
 		title: "เกี่ยวกับเรา",
