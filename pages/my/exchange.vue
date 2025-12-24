@@ -272,7 +272,7 @@ export default {
 		margin: 15% auto;
 		padding: 20px;
 		border: 1px solid #888;
-		width: 100%;
+    width: 80%;
 		max-width: 400px;
 		border-radius: 10px;
 		color: white;
