@@ -77,31 +77,27 @@
 					<div class="grid-container" style="padding-top: 50px; cursor: pointer;"
 						@click="$u.route('/pages/my/exchange')">
 						<div class="grid-item">
-							<img src="static/image/fz/europe.png">
-								<span>{{ $t('common.index.regions.europe') }}</span>
+							<img src="/h5/static/image/fz/europe.png">
+							<span>{{ $t('common.index.regions.europe') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/unitedstate.png"
-								:alt="$t('common.index.regions.unitedStates')">
-								<span>{{ $t('common.index.regions.unitedStates') }}</span>
+							<img src="/h5/static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
+							<span>{{ $t('common.index.regions.unitedStates') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/canada.png"
-								:alt="$t('common.index.regions.canada')">
-								<span>{{ $t('common.index.regions.canada') }}</span>
+							<img src="/h5/static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
+							<span>{{ $t('common.index.regions.canada') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/singapore.png"
-								:alt="$t('common.index.regions.singapore')">
-								<span>{{ $t('common.index.regions.singapore') }}</span>
+							<img src="/h5/static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
+							<span>{{ $t('common.index.regions.singapore') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/switzerland.png"
-								:alt="$t('common.index.regions.switzerland')">
-								<span>{{ $t('common.index.regions.switzerland') }}</span>
+							<img src="/h5/static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
+							<span>{{ $t('common.index.regions.switzerland') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="static/image/fz/unitedkingdom.png"
+							<img src="/h5/static/image/fz/unitedkingdom.png"
 								:alt="$t('common.index.regions.unitedKingdom')"><span>
 								{{ $t('common.index.regions.unitedKingdom') }}</span>
 						</div>
@@ -130,20 +126,34 @@
 				:enable-progress-gesture="false" autoplay loop muted></video>
 		</view>
 
+		<!-- 用户站内信 弹窗 -->
+		<!--    <u-modal  v-model="showAnnouncement" :title="latest.title" :content="latest.content"
+              @confirm="confirmAnnouncement"
+              :confirm-text="$t('common.home.confirm')">
+    </u-modal>-->
 
+		<!-- 用户站内信 弹窗-->
+		<u-popup v-model="showAnnouncement" mode="center" border-radius="20" width="80%" :mask-close-able="false">
+			<view class="notice-popup">
 
-		<!-- 公告弹窗 -->
-		<!-- <u-popup v-model="showAnnouncement" mode="center" border-radius="12" width="80%">
-			<u-icon name="close" class="close-btn" @click="showAnnouncement = false" size="30"></u-icon>
-			<scroll-view class="" style="height: 600rpx;">
-				<view class="popup-content">
-					<h3>{{ latest.title }}</h3>
-					<u-parse :html="latest.content"></u-parse>
+				<view class="notice-header">
+					<text class="notice-title">{{ latest.title || 'Notify' }}</text>
 				</view>
-			</scroll-view>
 
-		</u-popup> -->
+				<!-- 内容区：内容少不滚，内容多才滚 -->
+				<scroll-view class="notice-body" scroll-y>
+					<u-parse :html="latest.content"></u-parse>
+					<view style="height: 100rpx;"></view>
+				</scroll-view>
 
+				<!-- 固定底部 -->
+				<view class="notice-footer" @click="confirmAnnouncement">
+					{{ $t('common.home.confirm') }}
+				</view>
+
+				<u-icon name="close" size="26" class="notice-close" @click="closeAnnouncement" />
+			</view>
+		</u-popup>
 	</view>
 </template>
 <script>
@@ -155,8 +165,11 @@
 		data() {
 			return {
 				showLanguage: false,
+				// 是否显示 用户站内信
 				showAnnouncement: false,
-				latest: {},
+				latest: {
+					id: 0
+				},
 			};
 		},
 		onLoad(options) {
@@ -181,6 +194,29 @@
 					this.news = [res.data[lang]]
 				})
 			},
+			// 标记 用户站内信为已读
+			confirmAnnouncement() {
+				if (!this.latest || !this.latest.id) {
+					this.showAnnouncement = false
+					return
+				}
+
+				const token = uni.getStorageSync('token')
+
+				this.$u.api.index.announcement_read(token, this.latest.id).then(res => {
+					// 成功后关闭弹窗
+					this.showAnnouncement = false
+					this.latest = {}
+				}).catch(() => {
+					// 就算失败，也别卡用户
+					this.showAnnouncement = false
+				})
+			},
+
+			// 右上角关闭（也视为已读）
+			closeAnnouncement() {
+				this.confirmAnnouncement()
+			}
 		},
 		computed: {
 			common() {
@@ -383,5 +419,64 @@
 		margin-top: 20px;
 		font-size: 12px;
 		color: #999;
+	}
+
+	.notice-popup {
+		background: #0b1225;
+		border-radius: 20rpx;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+
+		/* ✅ 关键：自适应高度 + 最大高度限制 */
+		height: auto;
+		max-height: 80vh; // 屏幕的 80%
+		min-height: 300rpx; // 防止太小（可选）
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* 标题 */
+	.notice-header {
+		padding: 30rpx;
+		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		flex-shrink: 0;
+	}
+
+	.notice-title {
+		font-size: 32rpx;
+		font-weight: 600;
+	}
+
+	/* 内容 */
+	.notice-body {
+		padding: 30rpx;
+		color: #ccc;
+		line-height: 1.6;
+		box-sizing: border-box;
+		/* 核心属性 */
+		max-height: 800rpx;
+	}
+
+	/* 底部按钮 */
+	.notice-footer {
+		height: 90rpx;
+		line-height: 90rpx;
+		text-align: center;
+		font-size: 30rpx;
+		font-weight: 600;
+		background: linear-gradient(90deg, #6a5cff, #7b6cff);
+		z-index: 10;
+		flex-shrink: 0; // 永远不被压缩
+	}
+
+	/* 关闭按钮 */
+	.notice-close {
+		position: absolute;
+		top: 20rpx;
+		right: 20rpx;
+		color: #aaa;
 	}
 </style>
