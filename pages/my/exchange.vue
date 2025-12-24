@@ -245,7 +245,7 @@ export default {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1000;
-	width: 100%;
+	width: 90%;
 	max-width: 500px;
 	min-width: 300px;
 	border-radius: 8px;
