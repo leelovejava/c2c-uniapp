@@ -21,6 +21,7 @@ export default {
 		resetpwd: ["忘記密碼", "請輸入郵箱", "請輸入驗證碼", "點擊獲取", "請輸入密碼", "重置密碼"],
 		footer: ["首頁", "大廳", "訂單", "我的"],
 		home: {
+			confirm: "確認",
 			label: ["歡迎"],
 			broadcast: "恭喜會員{member} 成為{grade}",
 			menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],
@@ -255,8 +256,7 @@ export default {
 			"valueProposition": "Dex:OFX的價值在於幫助這些人跨越金融障礙，直接使用法幣。",
 			"safetyTitle": "五、安全與監管（重點增加信任）",
 			"safetyIntro": "基於OFX系統的理念，強調監管、合規和透明流程。",
-			"safetyFeatures": [
-				"所有資金流動都經過AML和KYC審核。",
+			"safetyFeatures": [				"所有資金流動都經過AML和KYC審核。",
 				"用戶的收款銀行需要進行驗證。",
 				"整個過程可追溯、可審計。"
 			],
@@ -289,7 +289,26 @@ export default {
 			"market": "行情",
 			"trade": "交易",
 			"wallet": "錢包",
-			"profile": "我的"
+			"profile": "我的",
+			"inviteCode": "邀請碼",
+			"copy": "複製",
+			"creditScore": "信譽分",
+			"totalBalance": "總餘額",
+			"currencyExchange": "貨幣兌換",
+			"memberLevel": "會員等級",
+			"promotions": "優惠活動",
+			"aboutUs": "關於我們",
+			"faqs": "常見問題",
+			"certification": "資質",
+			"recharge": "充值",
+			"bankCards": "銀行卡",
+			"records": "記錄",
+			"withdraw": "出金",
+			"contactUs": "聯繫我們",
+			"inviteFriends": "邀請好友",
+			"logout": "註銷",
+			"copySuccess": "複製成功",
+			"copyFailed": "複製失敗"
 		},
 		"exchange": {
 			"infoCard": {
@@ -299,7 +318,8 @@ export default {
 				"processing": "處理中",
 				"orders": "訂單",
 				"confirmExchange": "確認兌換",
-				"records": "記錄"
+				"records": "記錄",
+				selectCurrency: "請選擇貨幣"
 			},
 			"modal": {
 				"steps": [
@@ -338,26 +358,22 @@ export default {
 				"expectedReturn": "預期回報"
 			}
 		},
-		"navbar": {
-			"inviteCode": "邀請碼",
-			"copy": "複製",
-			"creditScore": "信譽分",
-			"totalBalance": "總餘額",
-			"currencyExchange": "貨幣兌換",
-			"memberLevel": "會員等級",
-			"promotions": "優惠活動",
-			"aboutUs": "關於我們",
-			"faqs": "常見問題",
-			"certification": "資質",
-			"recharge": "充值",
-			"bankCards": "銀行卡",
-			"records": "記錄",
-			"withdraw": "提現",
-			"contactUs": "聯繫我們",
-			"inviteFriends": "邀請好友",
-			"logout": "註銷",
-			"copySuccess": "複製成功",
-			"copyFailed": "複製失敗"
+		// 实名认证相关国际化
+		"certification": {
+			"title": "申請實名認證",
+			"subtitle": "請填寫您的真實信息以完成認證",
+			"successTitle": "您已完成實名認證",
+			"successSubtitle": "無需重複提交認證信息",
+			"nameLabel": "真實姓名",
+			"emailLabel": "郵箱地址",
+			"phoneLabel": "手機號碼",
+			"namePlaceholder": "請輸入您的真實姓名",
+			"emailPlaceholder": "請輸入您的郵箱地址",
+			"phonePlaceholder": "請輸入您的手機號碼",
+			"submitButton": "提交認證",
+			"statusPending": "審核中",
+			"statusSuccess": "審核成功",
+			"statusFailed": "審核失敗"
 		}
 	},
 	"faqs": {
@@ -422,7 +438,7 @@ export default {
 		"deposit": "存款",
 		"bonus": "獎金",
 		"commissionRate": "佣金率",
-		"dailyOrders": "每日訂單",
+		dailyOrders: "每週訂單",
 		"description": "VIP 等級聲明：\n" +
 			"出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +
 			"VIP 等級限制交易次數，是為了防止普通帳戶佔用專業做市商的交易空間，同時降低平台風控風險。\n" +
@@ -449,7 +465,7 @@ export default {
 			"「你已經不是普通用戶了」。"
 	},
 	"deposit": {
-		"withdrawal": "提款",
+		"withdrawal": "出金",
 		"history": "歷史記錄",
 		"totalBalance": "總餘額",
 		"processingTime": "提款處理需要15-20分鐘。",
@@ -463,7 +479,8 @@ export default {
 		"enterWithdrawalAmount": "輸入提現金額",
 		"all": "全部",
 		"enterWithdrawalPassword": "輸入提款密碼",
-		"submit": "提交"
+		"submit": "提交",
+		withdrawalFailed: "提款失敗，請稍後再試",
 	},
 	"about": {
 		"title": "關於我們",
@@ -524,7 +541,13 @@ export default {
 	},
 	"support": {
 		"title": "聯繫我們",
-		"serviceTime": "客服時間：每日上午10:00 – 晩上11:00",
+		"serviceTime": "客服時間：每日上午10:00 – 晚上11:00",
 		"buttonText": "OFX 支援團隊"
+	},
+	withdrawalStatus: {
+		pending: "待審核",
+		success: "已打款",
+		rejected: "已拒絕",
+		processing: "打款中"
 	}
 }

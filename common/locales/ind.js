@@ -30,6 +30,7 @@ export default {
 		],
 		footer: ["होम", "हॉल", "आदेश", "माय अकाउंट"],
 		home: {
+			confirm: "Confirm",
 			label: ["स्वागत हे"],
 			broadcast: "बधाई हो सदस्य {member} को {grade} बनने के लिए",
 			menu: ["फंड लॉग", "नए उपयोगकर्ता ट्यूटोरियल", "आमंत्रण रजिस्टर", "सहायता संपर्क करें"],
@@ -327,6 +328,33 @@ export default {
 			logout: "लॉग आउट करें"
 		}
 	},
+	exchange: {
+		infoCard: {
+			totalOrders: "कुल ऑर्डर",
+			totalProfit: "कुल लाभ",
+			totalBalance: "कुल बैलेंस",
+			processing: "प्रक्रिया में",
+			orders: "ऑर्डर",
+			confirmExchange: "विनिमय की पुष्टि करें",
+			records: "रिकॉर्ड",
+			selectCurrency: "मुद्रा चुनें"
+		},
+		modal: {
+			steps: [
+				"ऑर्डर मिलान",
+				"प्रक्रिया में",
+				"विनिमय पूरा हुआ"
+			],
+			percentage: "(100%)",
+			exchangedCurrency: "विनिमय की गई मुद्रा",
+			exchangedRate: "विनिमय दर",
+			exchangedAmount: "विनिमय की गई राशि",
+			exchangeEarnings: "विनिमय से आय",
+			orderType: "ऑर्डर का प्रकार",
+			expectedReturn: "अपेक्षित रिटर्न",
+			close: "बंद करें"
+		}
+	},
 	order: {
 		recordsTitle: "रिकॉर्ड",
 		tabs: {
@@ -354,7 +382,7 @@ export default {
 		deposit: "जमा राशि",
 		bonus: "बोनस",
 		commissionRate: "कमीशन दर",
-		dailyOrders: "दैनिक आदेश",
+		dailyOrders: "साप्ताहिक ऑर्डर",
 		description: "VIP स्तर विवरण:\n" +
 			"USDT बेचकर मूल्य अंतर से लाभ कमाना मूल रूप से तरलता प्रदान करने की गतिविधि है।\n" +
 			"VIP स्तर लेन-देन की संख्या को सीमित करता है ताकि सामान्य खाते पेशेवर मार्केट मेकर की जगह न घेरें और प्लेटफ़ॉर्म के जोखिम को कम किया जा सके।\n" +
@@ -436,5 +464,21 @@ export default {
 		submitButtonText: "जानकारी सहेजें",
 		bindSuccess: "बाइंड सफल",
 		updateSuccess: "अपडेट सफल"
+	},
+	certification: {
+		title: "वास्तविक नाम प्रमाणीकरण के लिए आवेदन करें",
+		subtitle: "प्रमाणीकरण पूरा करने के लिए कृपया अपनी वास्तविक जानकारी भरें",
+		successTitle: "आपने वास्तविक नाम प्रमाणीकरण पूरा कर लिया है",
+		successSubtitle: "प्रमाणीकरण जानकारी को दोहराकर सबमिट करने की कोई आवश्यकता नहीं है",
+		nameLabel: "असली नाम",
+		emailLabel: "ईमेल पता",
+		phoneLabel: "फ़ोन नंबर",
+		namePlaceholder: "कृपया अपना असली नाम दर्ज करें",
+		emailPlaceholder: "कृपया अपना ईमेल पता दर्ज करें",
+		phonePlaceholder: "कृपया अपना फ़ोन नंबर दर्ज करें",
+		submitButton: "प्रमाणीकरण सबमिट करें",
+		statusPending: "समीक्षा में",
+		statusSuccess: "ऑडिट सफल",
+		statusFailed: "ऑडिट विफल"
 	}
 }

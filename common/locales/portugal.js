@@ -22,6 +22,7 @@ export default {
 		resetpwd: ["Esqueceu sua senha", "Por favor, insira o e-mail", "Por favor, insira o código", "Clique para obter", "Por favor insira a senha", "Redefinir senha"],
 		footer: ["Home", "Hall", "Order", "My"],
 		home: {
+			confirm: "Confirmar",
 			label: ["Bem-vindo"],
 			broadcast: "Parabéns ao membro {member} por se tornar {grade}",
 			menu: ["Registro de Fundos", "Tutorial para iniciantes", "Registro de convites", "Suporte ao cliente"],
@@ -261,7 +262,8 @@ bind: [
 				processing: "Processando",
 				orders: "Pedidos",
 				confirmExchange: "Confirmar Troca",
-				records: "Registros"
+				records: "Registros",
+				selectCurrency: "Selecionar moeda"
 			},
 			modal: {
 				steps: [
@@ -363,7 +365,7 @@ bind: [
 		deposit: "Depósito",
 		bonus: "Bônus",
 		commissionRate: "Taxa de Comissão",
-		dailyOrders: "Pedidos Diários"
+		dailyOrders: "Pedidos semanais",
 	},
 	about: {
 		title: "Sobre Nós",
@@ -420,5 +422,18 @@ bind: [
 			submitButtonText: "Salvar Informações",
 			bindSuccess: "Vinculação bem-sucedida",
 			updateSuccess: "Atualização bem-sucedida"
+		},
+		deposit: {
+			withdrawal: "Retirada",
+			history: "Histórico",
+			submit: "Enviar",
+			enterWithdrawalAmount: "Digite o valor da retirada",
+			withdrawalFailed: "Falha na retirada, tente novamente mais tarde"
+		},
+		withdrawalStatus: {
+			pending: "Pendente de revisão",
+			success: "Pagamento efetuado",
+			rejected: "Rejeitado",
+			processing: "Processando pagamento"
 		}
 	}

@@ -22,20 +22,21 @@ export default {
 		resetpwd: ["忘记密码", "请输入邮箱", "请输入验证码", "点击获取", "请输入密码", "重置密码"],
 		footer: ["首页", "大厅", "订单", "我的"],
 		home: {
+			confirm: "確認",
 			label: ["欢迎"],
 			broadcast: "恭喜会员{member} 成为{grade}",
-		menu: ["资金日志", "新手教程", "邀请注册", "联系客服"],
-		noticeTitle: "最新公告",
-		msg: "任务未开放",
-		video: "暂无视频教程",
-		hero: {
-			title: "简单便捷的在线兑换方式",
-			subtitle: "我们专注于全球资金转移",
-			description: "我们帮助企业和个人安全地发送和接收资金，无需支付高额银行费用。",
-			credentials1: "25+年经验，自2013年在ASX上市",
-			credentials2: "受全球50+监管机构监管",
-			button: "开始使用 →"
-		}
+			menu: ["资金日志", "新手教程", "邀请注册", "联系客服"],
+			noticeTitle: "最新公告",
+			msg: "任务未开放",
+			video: "暂无视频教程",
+			hero: {
+				title: "简单便捷的在线兑换方式",
+				subtitle: "我们专注于全球资金转移",
+				description: "我们帮助企业和个人安全地发送和接收资金，无需支付高额银行费用。",
+				credentials1: "25+年经验，自2013年在ASX上市",
+				credentials2: "受全球50+监管机构监管",
+				button: "开始使用 →"
+			}
 		},
 		hall: {
 			default: ["交易大厅", "余额", "我要买", "我要卖", "确认卖出", "订单列表", "卖出订单", "卖给商家", "挂单中", "买入", "去出售"],
@@ -296,7 +297,8 @@ export default {
 				processing: "處理中",
 				orders: "訂單",
 				confirmExchange: "確認兌換",
-				records: "記錄"
+				records: "記錄",
+				selectCurrency: "請選擇貨幣"
 			},
 			modal: {
 				steps: [
@@ -361,6 +363,23 @@ export default {
 			serviceTime: "客服時間：每日上午10:00 – 晚上11:00",
 			buttonText: "OFX 支援團隊"
 		},
+		// 实名认证相关国际化
+		certification: {
+			title: "申请实名认证",
+			subtitle: "请填写您的真实信息以完成认证",
+			successTitle: "您已完成实名认证",
+			successSubtitle: "无需重复提交认证信息",
+		 nameLabel: "真实姓名",
+			emailLabel: "邮箱地址",
+			phoneLabel: "手机号码",
+			namePlaceholder: "请输入您的真实姓名",
+			emailPlaceholder: "请输入您的邮箱地址",
+			phonePlaceholder: "请输入您的手机号码",
+			submitButton: "提交认证",
+			statusPending: "审核中",
+			statusSuccess: "审核成功",
+			statusFailed: "审核失败"
+		}
 	},
 	faqs: {
 		pageHeader: {
@@ -424,7 +443,7 @@ export default {
 		deposit: "存款",
 		bonus: "奖金",
 		commissionRate: "佣金率",
-		dailyOrders: "每日订单",
+		dailyOrders: "每週訂單",
 		description: "VIP等级声明：\n" +
 			"出售USDT能赚差价，本质是在“做流动性生意”\n" +
 			"VIP限制交易次数，是为了防止普通账号挤占专业做市商的空间，同时降低平台风控风险。\n" +
@@ -451,7 +470,7 @@ export default {
 			"“你已经不是普通用户了”。"
 	},
 	deposit: {
-		withdrawal: "提款",
+		withdrawal: "出金",
 		history: "历史记录",
 		totalBalance: "总余额",
 		processingTime: "提款处理需要15-20分钟。",
@@ -462,10 +481,17 @@ export default {
 		addressNotSet: "地址未设置",
 		bindAddress: "绑定地址",
 		verifyWalletAddress: "请仔细核实您的钱包地址。",
-		enterWithdrawalAmount: "输入提现金额",
 		all: "全部",
 		enterWithdrawalPassword: "输入提款密码",
-		submit: "提交"
+		submit: "提交",
+		enterWithdrawalAmount: "请输入提现金额",
+		withdrawalFailed: "提现失败，请稍后再试"
+	},
+	withdrawalStatus: {
+		pending: "待审核",
+		success: "已打款",
+		rejected: "已拒绝",
+		processing: "打款中"
 	},
 	about: {
 		title: "关于我们",

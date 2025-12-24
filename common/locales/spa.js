@@ -32,6 +32,7 @@ export default {
 		],
 		footer: ["Inicio", "Lobby", "Orden", "Mi cuenta"],
 		home: {
+			confirm: "Confirmar",
 			label: ["Bienvenido"],
 			broadcast: "Felicitaciones a {member} por convertirse en {grade}",
 			menu: ["Registro de fondos", "Tutorial para principiantes", "Registro de invitación",
@@ -402,7 +403,8 @@ export default {
 				processing: "Procesando",
 				orders: "Órdenes",
 				confirmExchange: "Confirmar intercambio",
-				records: "Registros"
+				records: "Registros",
+				selectCurrency: "Seleccionar moneda"
 			},
 			modal: {
 				steps: [
@@ -469,7 +471,7 @@ export default {
 		deposit: "Depósito",
 		bonus: "Bono",
 		commissionRate: "Tasa de comisión",
-		dailyOrders: "Órdenes diarias",
+		dailyOrders: "Pedidos semanales",
 		description: "Declaración de nivel VIP:\n" +
 			"Vender USDT para obtener diferencias de precio es, en esencia, una actividad de provisión de liquidez.\n" +
 			"El nivel VIP limita la cantidad de transacciones para evitar que las cuentas ordinarias ocupen el espacio de los creadores de mercado profesionales y para reducir los riesgos de control de la plataforma.\n" +
@@ -550,5 +552,18 @@ export default {
 			submitButtonText: "Guardar información",
 			bindSuccess: "Vinculación exitosa",
 			updateSuccess: "Actualización exitosa"
+		},
+		deposit: {
+			withdrawal: "Retiro",
+			history: "Historial",
+			submit: "Enviar",
+			enterWithdrawalAmount: "Ingrese el monto del retiro",
+			withdrawalFailed: "Error en el retiro, inténtelo de nuevo más tarde"
+		},
+		withdrawalStatus: {
+			pending: "Pendiente de revisión",
+			success: "Pago realizado",
+			rejected: "Rechazado",
+			processing: "Procesando pago"
 		}
 	}

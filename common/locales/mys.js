@@ -29,6 +29,7 @@ export default {
 		],
 		footer: ["Laman Utama", "Lobi", "Pesanan", "Akaun Saya"],
 		home: {
+			confirm: "Sahkan",
 			label: ["Selamat Datang"],
 			broadcast: "Tahniah kepada ahli {member} atas menjadi {grade}",
 			menu: ["Log Kewangan", "Tutorial Pemula", "Daftar Jemputan", "Hubungi Perkhidmatan Pelanggan"],
@@ -333,6 +334,33 @@ export default {
 			contactUs: "Hubungi Kami",
 			inviteFriends: "Jemput Rakan",
 			logout: "Log Keluar"
+		},
+		exchange: {
+			infoCard: {
+				totalOrders: "Ordini totali",
+				totalProfit: "Profitto totale",
+				totalBalance: "Bilancio totale",
+				processing: "In elaborazione",
+				orders: "Ordini",
+				confirmExchange: "Conferma scambio",
+				records: "Registri",
+				selectCurrency: "Seleziona valuta"
+			},
+			modal: {
+				steps: [
+					"Abbina ordine",
+					"In elaborazione",
+					"Scambiato"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "Valuta scambiata",
+				exchangedRate: "Tasso di cambio",
+				exchangedAmount: "Importo scambiato",
+				exchangeEarnings: "Guadagno dallo scambio",
+				orderType: "Tipo di ordine",
+				expectedReturn: "Ritorno previsto",
+				close: "Chiudi"
+			}
 		}
 	},
 
@@ -422,7 +450,7 @@ export default {
 			deposit: "Deposit",
 			bonus: "Bonus",
 			commissionRate: "Commission Rate",
-			dailyOrders: "Daily Orders",
+			dailyOrders: "Pesanan mingguan",
 			description: "Pernyataan Tahap VIP:\n" +
 				"Menjual USDT untuk mendapatkan perbezaan harga pada asasnya merupakan aktiviti penyediaan kecairan.\n" +
 				"Tahap VIP mengehadkan bilangan transaksi bagi mengelakkan akaun biasa mengambil ruang pembuat pasaran profesional serta mengurangkan risiko kawalan platform.\n" +

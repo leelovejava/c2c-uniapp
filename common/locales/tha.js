@@ -29,6 +29,7 @@ export default {
 		],
 		footer: ["หน้าแรก", "รายการ", "คำสั่งซื้อ", "ประวัตของฉัน"],
 		home: {
+			confirm: "ยืนยัน",
 			label: ["ยินดีต้อนรับ"],
 			broadcast: "ขอแสดงความยินดีสมาชิก{member} กลายเป็น{grade}",
 			menu: ["บันทึกกองทุน", "แนะนำ", "ลงทะเบียน", "บริการลูกค้า"],
@@ -323,7 +324,8 @@ export default {
 				processing: "กำลังดำเนินการ",
 				orders: "คำสั่งซื้อ",
 				confirmExchange: "ยืนยันการแลกเปลี่ยน",
-				records: "บันทึก"
+				records: "บันทึก",
+				selectCurrency: "เลือกสกุลเงิน"
 			},
 			modal: {
 				steps: ["จับคู่คำสั่งซื้อ", "กำลังดำเนินการ", "แลกเปลี่ยนแล้ว"],
@@ -428,7 +430,7 @@ export default {
 		deposit: "เงินฝาก",
 		bonus: "โบนัส",
 		commissionRate: "อัตราค่าคอมมิชชั่น",
-		dailyOrders: "คำสั่งซื้อรายวัน"
+		dailyOrders: "Еженедельные заказы",
 	},
 	about: {
 		title: "เกี่ยวกับเรา",

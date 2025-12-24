@@ -21,6 +21,7 @@ export default {
 		resetpwd: ["忘記密碼", "請輸入郵箱", "請輸入驗證碼", "點擊獲取", "請輸入密碼", "重置密碼"],
 		footer: ["首頁", "大廳", "訂單", "我的"],
 		home: {
+			confirm: "確認",
 			label: ["歡迎"],
 			broadcast: "恭喜會員{member} 成為{grade}",
 			menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],
@@ -231,6 +232,33 @@ export default {
 				}
 			]}
 		},
+		exchange: {
+			infoCard: {
+				totalOrders: "總訂單數",
+				totalProfit: "總利潤",
+				totalBalance: "總餘額",
+				processing: "處理中",
+				orders: "訂單",
+				confirmExchange: "確認兌換",
+				records: "記錄",
+				selectCurrency: "請選擇貨幣"
+			},
+			modal: {
+				steps: [
+					"匹配訂單",
+					"處理中",
+					"已兌換"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "已兌換貨幣",
+				exchangedRate: "兌換匯率",
+				exchangedAmount: "兌換金額",
+				exchangeEarnings: "兌換收益",
+				orderType: "訂單類型",
+				expectedReturn: "預期收益",
+				close: "關閉"
+			}
+		},
 		navbar: {
 			inviteCode: "邀請碼",
 			copy: "複製",
@@ -245,10 +273,10 @@ export default {
 			recharge: "充值",
 			bankCards: "銀行卡",
 			records: "記錄",
-			withdraw: "提現",
+			withdraw: "出金",
 			contactUs: "聯繫我們",
 			inviteFriends: "邀請好友",
-			logout: "退出登錄"
+			logout: "退出登錄",
 		},
 		faqs: {
 			pageHeader: {
@@ -312,7 +340,7 @@ export default {
 			deposit: "存款",
 			bonus: "獎金",
 			commissionRate: "佣金率",
-			dailyOrders: "每日訂單",
+			dailyOrders: "每週訂單",
 			description:
 				"VIP 等級說明：\n" +
 				"出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +
@@ -394,5 +422,45 @@ export default {
 			submitButtonText: "保存信息",
 			bindSuccess: "綁定成功",
 			updateSuccess: "修改成功"
+		},
+		certification: {
+			title: "申請實名認證",
+			subtitle: "請填寫您的真實信息以完成認證",
+			successTitle: "您已完成實名認證",
+			successSubtitle: "無需重複提交認證信息",
+			nameLabel: "真實姓名",
+			emailLabel: "電子郵箱",
+			phoneLabel: "電話號碼",
+			namePlaceholder: "請輸入您的真實姓名",
+			emailPlaceholder: "請輸入您的電子郵箱",
+			phonePlaceholder: "請輸入您的電話號碼",
+			submitButton: "提交認證",
+			statusPending: "審核中",
+			statusSuccess: "審核成功",
+			statusFailed: "審核失敗"
+		},
+		deposit: {
+			withdrawal: "出金",
+				history: "历史记录",
+				totalBalance: "总余额",
+				processingTime: "提款处理需要15-20分钟。",
+				walletAddressType: "钱包地址类型",
+				trc20Address: "trc20地址",
+				erc20Address: "ERC20地址",
+				btcAddress: "BTC Address",
+				addressNotSet: "地址未设置",
+				bindAddress: "绑定地址",
+				verifyWalletAddress: "请仔细核实您的钱包地址。",
+				all: "全部",
+				enterWithdrawalPassword: "输入提款密码",
+				submit: "提交",
+				enterWithdrawalAmount: "请输入提现金额",
+				withdrawalFailed: "提现失败，请稍后再试"
+		},
+		withdrawalStatus: {
+			pending: "待审核",
+				success: "已打款",
+				rejected: "已拒绝",
+				processing: "打款中"
 		}
 	}

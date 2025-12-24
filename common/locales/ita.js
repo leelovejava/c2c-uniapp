@@ -22,6 +22,7 @@ export default {
 		resetpwd: ["Password dimenticata", "Inserisci l'indirizzo email", "Inserisci il codice di verifica", "Ottieni", "Inserisci la nuova password", "Reimposta la password"],
 		footer: ["Home", "Hall", "Ordini", "Il mio"],
 		home: {
+		  confirm: "Conferma",
 		  label: ["Benvenuto"],
 		  broadcast: "Congratulazioni al membro {member} per diventare {grade}",
 		  menu: ["Registro delle transazioni", "Guida per principianti", "Invita amici", "Assistenza online"],
@@ -258,7 +259,8 @@ export default {
 				processing: "In elaborazione",
 				orders: "Ordini",
 				confirmExchange: "Conferma scambio",
-				records: "Registri"
+				records: "Registri",
+				selectCurrency: "Seleziona valuta"
 			},
 			modal: {
 				steps: [
@@ -360,7 +362,7 @@ export default {
 		deposit: "Deposito",
 		bonus: "Bonus",
 		commissionRate: "Tasso di commissione",
-		dailyOrders: "Ordini giornalieri",
+		dailyOrders: "Ordini settimanali",
 		description: "Dichiarazione del livello VIP:\n" +
 			"La vendita di USDT consente di guadagnare sulla differenza di prezzo, che è essenzialmente un’attività di fornitura di liquidità.\n" +
 			"Il livello VIP limita il numero di transazioni per evitare che gli account ordinari occupino lo spazio dei market maker professionali e per ridurre la pressione del controllo del rischio della piattaforma.\n" +
@@ -441,5 +443,18 @@ export default {
 			submitButtonText: "Salva Informazioni",
 			bindSuccess: "Collegamento riuscito",
 			updateSuccess: "Aggiornamento riuscito"
+		},
+		deposit: {
+			withdrawal: "Prelievo",
+			history: "Cronologia",
+			submit: "Invia",
+			enterWithdrawalAmount: "Inserisci l'importo del prelievo",
+			withdrawalFailed: "Prelievo fallito, riprova più tardi"
+		},
+		withdrawalStatus: {
+			pending: "In attesa di revisione",
+			success: "Pagamento effettuato",
+			rejected: "Respinto",
+			processing: "Elaborazione pagamento"
 		}
 	}
