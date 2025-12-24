@@ -20,7 +20,7 @@ const install = (Vue, vm) => {
 		
 		// 我的利息钱包列表
 		addRecharge: (token) => vm.$u.post("/user/add_recharge", {token}),
-//绑定
+		//绑定
 		getfinas: (token) => vm.$u.post("/user/getfinas", {token}),
 
 		bind_bank2: (token,data) => vm.$u.post("/user/bind_bank", {token, ...data}),
@@ -32,11 +32,13 @@ const install = (Vue, vm) => {
 
 		walletedit: (token) => vm.$u.post("/wallet/edit", {token}),
 		exchangeinfo: (token) => vm.$u.post("/exchange/info", {token}),
-		exchangeswap: (token) => vm.$u.post("/exchange/swap", {token}),
+		// 兑换
+		exchangeswap: (token,data) => vm.$u.post("/exchange/swap", {token, ...data}),
 		exchanglist: (token,data) => vm.$u.post("/exchange/list", {token,...data}),
 		//忘记密码
 		change_pwd: (token, {ol_password, password}) => vm.$u.post("/user/change_pwd", {token, ol_password, password}),
-		
+		// 获取vip等级
+		get_vip_level: (token) => vm.$u.get("/vip/list", {token}),
 	}
 	
 	const index = {
@@ -46,7 +48,10 @@ const install = (Vue, vm) => {
 		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
 		//发验证码
 		send_email_mobile: (username) => vm.$u.post("/user/send_email_mobile", {username}),
+		// 获取用户最新的站内信
 		announcement_latest: (token) => vm.$u.get("/index/announcement_latest", {token}),
+		// 标记 用户站内信为已读
+		announcement_read: (token,id) => vm.$u.get("/index/announcement_read", {token,id}),
 		//获取轮播图
 		get_about: () => vm.$u.get("/index/get_about"),
 		//获取下载地址
@@ -74,7 +79,7 @@ const install = (Vue, vm) => {
 		//修改个人信息
 		up_userinfo: (token,nickname) => vm.$u.get("/user/up_userinfo",{token,nickname}),
 		//实名认证提交
-		bind_real: (token,fileurl,fileurl1,fileurl2) => vm.$u.get("/user/bind_real",{token,fileurl,fileurl1,fileurl2}),
+		bind_real: (token,data) => vm.$u.get("/user/bind_real",{token,...data}),
 		//实名认证状态
 		is_verified: (token) => vm.$u.get("/user/is_verified",{token}),
 		
@@ -88,7 +93,7 @@ const install = (Vue, vm) => {
 		// 提交充值凭证
 		add_Recharge: (token,data) => vm.$u.get("/user/add_Recharge",{token,...data}),
 		// 申请提现
-		apply_withdrawal: (token,money) => vm.$u.post("/user/apply_withdrawal",{token,money,}),
+		apply_withdrawal: (token,data) => vm.$u.post("/user/apply_withdrawal",{token, ...data}),
 		// 充值记录
 		recharge_list: (token) => vm.$u.post("/user/recharge_list",{token}),
 		// 提现记录
@@ -143,6 +148,8 @@ const install = (Vue, vm) => {
 		// 买入、卖出订单
 		getorders: (token, data) => vm.$u.post("/user/getorders", {token, ...data}),
 		articleget: (token, data) => vm.$u.post("/article/get", {token, ...data}),
+		// 获取用户资产
+		getUserAssets: (token, data) => vm.$u.post("/user/getUserAssets", {token, ...data}),
 	}
 	
 	vm.$u.api = {
