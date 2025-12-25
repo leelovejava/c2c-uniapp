@@ -325,6 +325,7 @@ export default {
 			copy: "Копировать",
 			creditScore: "Кредитный рейтинг",
 			totalBalance: "Общий баланс",
+			eurBalance: "Баланс EUR",
 			currencyExchange: "Обмен валют",
 			memberLevel: "Уровень участника",
 			promotions: "Акции",

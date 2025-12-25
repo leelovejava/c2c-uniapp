@@ -342,6 +342,7 @@ export default {
 			copy: "复制",
 			creditScore: "信誉分",
 			totalBalance: "总余额",
+			eurBalance: "Euro 餘額",
 			currencyExchange: "货币兑换",
 			memberLevel: "会员等级",
 			promotions: "优惠活动",

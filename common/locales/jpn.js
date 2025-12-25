@@ -342,6 +342,7 @@ export default {
 			copy: "コピー",
 			creditScore: "信用スコア",
 			totalBalance: "総残高",
+			eurBalance: "ユーロ残高",
 			currencyExchange: "通貨換金",
 			memberLevel: "会員レベル",
 			promotions: "プロモーション",

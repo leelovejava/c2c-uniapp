@@ -448,6 +448,7 @@ export default {
 			copy: "Copiar",
 			creditScore: "Puntuación de credibilidad",
 			totalBalance: "Saldo total",
+			eurBalance: "Saldo en euros",
 			currencyExchange: "Cambio de divisa",
 			memberLevel: "Nivel de miembro",
 			promotions: "Promociones",

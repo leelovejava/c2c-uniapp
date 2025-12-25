@@ -240,6 +240,7 @@ bind: [
 			copy: "Copiar",
 			creditScore: "Pontuação de Crédito",
 			totalBalance: "Saldo Total",
+			eurBalance: "Saldo em Euros",
 			currencyExchange: "Troca de Moeda",
 			memberLevel: "Nível de Membro",
 			promotions: "Promoções",

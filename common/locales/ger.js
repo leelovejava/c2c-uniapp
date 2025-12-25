@@ -342,6 +342,7 @@ export default {
 			copy: "Kopieren",
 			creditScore: "Kreditscore",
 			totalBalance: "Gesamtsaldo",
+			eurBalance: "Euro-Guthaben",
 			currencyExchange: "Währungsumtausch",
 			memberLevel: "Mitgliedsstufe",
 			promotions: "Werbeaktionen",

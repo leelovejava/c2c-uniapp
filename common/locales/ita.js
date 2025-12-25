@@ -237,6 +237,7 @@ export default {
 			copy: "Copia",
 			creditScore: "Punteggio di credito",
 			totalBalance: "Bilancio totale",
+			eurBalance: "EUR Balance",
 			currencyExchange: "Conversione valuta",
 			memberLevel: "Livello membro",
 			promotions: "Promozioni",

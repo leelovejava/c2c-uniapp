@@ -76,6 +76,14 @@
 							<view class="a-center2 a-mb10 a-fw a-f38">
 								{{ userinfo.money }} USD
 							</view>
+
+              <view class="a-center2 a-mb5">
+                {{ $t('common.navbar.eurBalance') }}
+              </view>
+              <view class="a-center2 a-mb10 a-fw a-f38">
+                {{ userinfo.eur }} EUR
+              </view>
+
 							<view class="a-center2">
 								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"
 									@tap="$u.route('/pages/my/exchange')">

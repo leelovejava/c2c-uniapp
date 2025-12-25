@@ -361,6 +361,7 @@ export default {
 			copy: "Kopiëren",
 			creditScore: "Kredietscore",
 			totalBalance: "Totaal saldo",
+			eurBalance: "Saldo EUR",
 			currencyExchange: "Valutawisseling",
 			memberLevel: "Lidmaatschapniveau",
 			promotions: "Promoties",

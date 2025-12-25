@@ -294,6 +294,7 @@ export default {
 			"copy": "複製",
 			"creditScore": "信譽分",
 			"totalBalance": "總餘額",
+			eurBalance: "Euro 餘額",
 			"currencyExchange": "貨幣兌換",
 			"memberLevel": "會員等級",
 			"promotions": "優惠活動",

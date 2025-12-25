@@ -340,6 +340,7 @@ export default {
 		copy: "Copy",
 		creditScore: "Credit Score",
 		totalBalance: "Total Balance",
+		eurBalance: "Eur Balance",
 		currencyExchange: "Currency Exchange",
 		memberLevel: "Member Level",
 		promotions: "Promotions",

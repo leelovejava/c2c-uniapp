@@ -344,7 +344,8 @@ export default {
 			market: "ตลาด",
 			trade: "การซื้อขาย",
 			wallet: "กระเป๋าเงิน",
-			profile: "โปรไฟล์"
+			profile: "โปรไฟล์",
+			eurBalance: "ยอดคงเหลือ EUR",
 		}
 	},
 	order: {

@@ -313,6 +313,7 @@ export default {
 			copy: "कॉपी करें",
 			creditScore: "क्रेडिट स्कोर",
 			totalBalance: "कुल शेष",
+			eurBalance: "यूरो बैलेंस",
 			currencyExchange: "मुद्रा विनिमय",
 			memberLevel: "सदस्य स्तर",
 			promotions: "प्रचार",

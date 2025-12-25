@@ -301,12 +301,26 @@ export default {
 			]
 		},
 		navbar: {
-			title: "DEX:OFX",
-			home: "Trang chủ",
-			market: "Tình hình",
-			trade: "Giao dịch",
-			wallet: "Ví tiền",
-			profile: "Hồ sơ"
+			inviteCode: "Mã giới thiệu",
+			copy: "Sao chép",
+			creditScore: "Điểm tín dụng",
+			totalBalance: "Tổng số dư",
+			eurBalance: "Số dư EUR",
+			currencyExchange: "Đổi tiền",
+			memberLevel: "Cấp thành viên",
+			promotions: "Khuyến mãi",
+			aboutUs: "Giới thiệu",
+			faqs: "Câu hỏi thường gặp",
+			certification: "Xác thực",
+			recharge: "Nạp tiền",
+			bankCards: "Thẻ ngân hàng",
+			records: "Lịch sử",
+			withdraw: "Rút tiền",
+			contactUs: "Liên hệ",
+			inviteFriends: "Mời bạn bè",
+			logout: "Đăng xuất",
+			copySuccess: "Sao chép thành công",
+			copyFailed: "Sao chép thất bại"
 		},
 		exchange: {
 			infoCard: {

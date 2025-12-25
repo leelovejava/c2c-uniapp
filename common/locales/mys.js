@@ -315,6 +315,7 @@ export default {
 			]
 		},
 		navbar: {
+			eurBalance: "Bakiye EUR",
 			inviteCode: "Kod Jemputan",
 			copy: "Salin",
 			home: "Laman Utama",
