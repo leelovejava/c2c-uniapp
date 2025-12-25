@@ -469,8 +469,8 @@ export default {
 		all: "すべて",
 		enterWithdrawalPassword: "出金パスワードを入力",
 		submit: "送信",
-		enterWithdrawalAmount: "出金金額を入力してください",
-		withdrawalFailed: "出金に失敗しました。後でもう一度お試しください"
+		withdrawalFailed: "出金に失敗しました。後でもう一度お試しください",
+		currencyDescription: "EUR（ユーロ）以外の通貨の出金は、オンラインサポートへお問い合わせください。",
 	},
 	about: {
 		title: "私たちについて",
@@ -518,8 +518,8 @@ export default {
 		bankNamePlaceholder: "銀行名を入力してください",
 		countryLabel: "国",
 		countryPlaceholder: "国を選択してください",
-		routingNumberLabel: "ルーティング番号",
-		routingNumberPlaceholder: "ルーティング番号を入力してください",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "IBANを入力",
 		swiftCodeLabel: "SWIFTコード",
 		swiftCodePlaceholder: "SWIFTコードを入力してください",
 		bankAddressLabel: "銀行住所",

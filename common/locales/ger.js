@@ -469,8 +469,8 @@ export default {
 		all: "Alle",
 		enterWithdrawalPassword: "Auszahlungskennwort eingeben",
 		submit: "Senden",
-		enterWithdrawalAmount: "Bitte geben Sie den Auszahlungsbetrag ein",
-		withdrawalFailed: "Auszahlung fehlgeschlagen, bitte versuchen Sie es später erneut"
+		withdrawalFailed: "Auszahlung fehlgeschlagen, bitte versuchen Sie es später erneut",
+		currencyDescription: "Für Auszahlungen in anderen Währungen als EUR wenden Sie sich bitte an den Online-Support",
 	},
 	about: {
 		title: "Über uns",
@@ -518,8 +518,8 @@ export default {
 		bankNamePlaceholder: "Bitte geben Sie den Banknamen ein",
 		countryLabel: "Land",
 		countryPlaceholder: "Bitte wählen Sie das Land",
-		routingNumberLabel: "Routing-Nummer",
-		routingNumberPlaceholder: "Bitte geben Sie die Routing-Nummer ein",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "IBAN eingeben",
 		swiftCodeLabel: "SWIFT-Code",
 		swiftCodePlaceholder: "Bitte geben Sie den SWIFT-Code ein",
 		bankAddressLabel: "Bankadresse",

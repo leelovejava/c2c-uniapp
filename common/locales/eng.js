@@ -467,7 +467,8 @@ export default {
 		enterWithdrawalPassword: "Enter Withdrawal Password",
 		submit: "Submit",
 		enterWithdrawalAmount: "Please enter withdrawal amount",
-		withdrawalFailed: "Withdrawal failed, please try again later"
+		withdrawalFailed: "Withdrawal failed, please try again later",
+		currencyDescription: "For withdrawals in currencies other than EUR, please contact online support for assistance",
 	},
 	withdrawalStatus: {
 		pending: "Pending Review",
@@ -521,8 +522,8 @@ export default {
 		bankNamePlaceholder: "Please enter bank name",
 		countryLabel: "Country",
 		countryPlaceholder: "Please select country",
-		routingNumberLabel: "Routing Number",
-		routingNumberPlaceholder: "Please enter routing number",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "Please enter IBAN",
 		swiftCodeLabel: "SWIFT Code",
 		swiftCodePlaceholder: "Please enter SWIFT code",
 		bankAddressLabel: "Bank Address",

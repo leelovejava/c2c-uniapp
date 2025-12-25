@@ -414,8 +414,8 @@ export default {
 			bankNamePlaceholder: "請輸入銀行名稱",
 			countryLabel: "國家",
 			countryPlaceholder: "請選擇國家",
-			routingNumberLabel: "路由號碼",
-			routingNumberPlaceholder: "請輸入路由號碼",
+			routingNumberLabel: "IBAN",
+			routingNumberPlaceholder: "請輸入IBAN",
 			swiftCodeLabel: "SWIFT代碼",
 			swiftCodePlaceholder: "請輸入SWIFT代碼",
 			bankAddressLabel: "銀行地址",
@@ -456,7 +456,8 @@ export default {
 				enterWithdrawalPassword: "输入提款密码",
 				submit: "提交",
 				enterWithdrawalAmount: "请输入提现金额",
-				withdrawalFailed: "提现失败，请稍后再试"
+				withdrawalFailed: "提现失败，请稍后再试",
+				currencyDescription: "提取歐元以外的貨幣，請聯繫線上客服獲得協助",
 		},
 		withdrawalStatus: {
 			pending: "待审核",

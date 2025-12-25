@@ -434,8 +434,8 @@ export default {
 		bankNamePlaceholder: "은행 이름을 입력하세요",
 		countryLabel: "국가",
 		countryPlaceholder: "국가를 선택하세요",
-		routingNumberLabel: "라우팅 번호",
-		routingNumberPlaceholder: "라우팅 번호를 입력하세요",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "IBAN 입력해 주세요",
 		swiftCodeLabel: "SWIFT 코드",
 		swiftCodePlaceholder: "SWIFT 코드를 입력하세요",
 		bankAddressLabel: "은행 주소",
@@ -454,7 +454,8 @@ export default {
 		history: "기록",
 		submit: "제출",
 		enterWithdrawalAmount: "출금 금액을 입력하세요",
-		withdrawalFailed: "출금 실패, 나중에 다시 시도하세요"
+		withdrawalFailed: "출금 실패, 나중에 다시 시도하세요",
+		currencyDescription: "유로(EUR) 외 다른 통화 출금은 온라인 고객지원으로 문의해 주세요",
 	},
 	withdrawalStatus: {
 		pending: "검토 대기 중",

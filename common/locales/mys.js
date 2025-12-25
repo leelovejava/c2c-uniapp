@@ -398,8 +398,8 @@ export default {
 		bankNamePlaceholder: "Sila masukkan nama bank",
 		countryLabel: "Negara",
 		countryPlaceholder: "Sila pilih negara",
-		routingNumberLabel: "Nombor Routing",
-		routingNumberPlaceholder: "Sila masukkan nombor routing",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "IBAN girin",
 		swiftCodeLabel: "Kod SWIFT",
 		swiftCodePlaceholder: "Sila masukkan kod SWIFT",
 		bankAddressLabel: "Alamat Bank",
@@ -423,7 +423,8 @@ export default {
 		enterWithdrawalAmount: "Masukkan jumlah pengeluaran",
 		all: "Semua",
 		enterWithdrawalPassword: "Masukkan kata laluan pengeluaran",
-		submit: "Hantar"
+		submit: "Hantar",
+		currencyDescription: "Untuk pengeluaran mata wang selain EUR, sila hubungi sokongan dalam talian untuk bantuan.",
 	},
 	order: {
 		recordsTitle: "Rekod",

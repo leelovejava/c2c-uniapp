@@ -435,8 +435,8 @@ export default {
 			bankNamePlaceholder: "Inserisci il nome della banca",
 			countryLabel: "Paese",
 			countryPlaceholder: "Seleziona il paese",
-			routingNumberLabel: "Numero di Routing",
-			routingNumberPlaceholder: "Inserisci il numero di routing",
+			routingNumberLabel: "IBAN",
+			routingNumberPlaceholder: "Inserisci IBAN",
 			swiftCodeLabel: "Codice SWIFT",
 			swiftCodePlaceholder: "Inserisci il codice SWIFT",
 			bankAddressLabel: "Indirizzo della Banca",
@@ -450,7 +450,8 @@ export default {
 			history: "Cronologia",
 			submit: "Invia",
 			enterWithdrawalAmount: "Inserisci l'importo del prelievo",
-			withdrawalFailed: "Prelievo fallito, riprova più tardi"
+			withdrawalFailed: "Prelievo fallito, riprova più tardi",
+			currencyDescription: "Per prelievi in valute diverse da EUR, contatta il supporto online per assistenza",
 		},
 		withdrawalStatus: {
 			pending: "In attesa di revisione",

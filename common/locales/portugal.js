@@ -414,8 +414,8 @@ bind: [
 			bankNamePlaceholder: "Por favor, insira o nome do banco",
 			countryLabel: "País",
 			countryPlaceholder: "Por favor, selecione o país",
-			routingNumberLabel: "Número de Roteamento",
-			routingNumberPlaceholder: "Por favor, insira o número de roteamento",
+			routingNumberLabel: "IBAN",
+			routingNumberPlaceholder: "Insira o IBAN",
 			swiftCodeLabel: "Código SWIFT",
 			swiftCodePlaceholder: "Por favor, insira o código SWIFT",
 			bankAddressLabel: "Endereço do Banco",
@@ -429,7 +429,8 @@ bind: [
 			history: "Histórico",
 			submit: "Enviar",
 			enterWithdrawalAmount: "Digite o valor da retirada",
-			withdrawalFailed: "Falha na retirada, tente novamente mais tarde"
+			withdrawalFailed: "Falha na retirada, tente novamente mais tarde",
+			currencyDescription: "Para sacar moedas diferentes de EUR, entre em contato com o suporte online para obter ajuda",
 		},
 		withdrawalStatus: {
 			pending: "Pendente de revisão",

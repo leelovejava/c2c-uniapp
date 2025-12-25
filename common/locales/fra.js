@@ -593,7 +593,8 @@ export default {
 		enterWithdrawalPassword: "Entrez le mot de passe de retrait",
 		submit: "Soumettre",
 		enterWithdrawalAmount: "Veuillez saisir le montant du retrait",
-		withdrawalFailed: "Échec du retrait, veuillez réessayer plus tard"
+		withdrawalFailed: "Échec du retrait, veuillez réessayer plus tard",
+		currencyDescription: "Pour les retraits dans des devises autres que l’EUR, veuillez contacter l’assistance en ligne pour obtenir de l’aide."
 	},
 	withdrawalStatus: {
 		pending: "En attente de vérification",
@@ -647,8 +648,8 @@ export default {
 		bankNamePlaceholder: "Veuillez entrer le nom de la banque",
 		countryLabel: "Pays",
 		countryPlaceholder: "Veuillez sélectionner le pays",
-		routingNumberLabel: "Numéro de routage",
-		routingNumberPlaceholder: "Veuillez entrer le numéro de routage",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "Veuillez entrer IBAN",
 		swiftCodeLabel: "Code SWIFT",
 		swiftCodePlaceholder: "Veuillez entrer le code SWIFT",
 		bankAddressLabel: "Adresse bancaire",
