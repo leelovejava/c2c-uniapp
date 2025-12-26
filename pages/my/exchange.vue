@@ -31,21 +31,10 @@
 					<div class="orders">
 						{{ $t('common.exchange.infoCard.orders') }} ({{ exchangeinfo.today_orders }}/{{ exchangeinfo.daily_limit }})
 					</div>
-          <div class="info-item">
-            <span>{{ $t('common.exchange.infoCard.selectCurrency') || 'Select Currency' }}</span>
-            <select class="wallet-select" v-model="form.to_currency">
-              <option value="USD">USD</option>
-              <option value="EUR">EUR</option>
-              <option value="CAD">CAD</option>
-              <option value="SGD">SGD</option>
-              <option value="CHF">CHF</option>
-              <option value="GBP">GBP</option>
-            </select>
-          </div>
 					<div class="actions">
 						<button class="exchange-btn"
 							style="font-size: 14px; width: calc(50% - 16px); margin: 0 8px; box-sizing: border-box; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 calc(50% - 16px); transform: translateX(-28px);"
-							@click="qrdh">{{ $t('common.exchange.infoCard.confirmExchange') }}</button>
+							@click="goHall">{{ $t('common.exchange.infoCard.confirmExchange') }}</button>
 						<view @click="$u.route('/pages/my/order')" class="records-link">{{ $t('common.exchange.infoCard.records') }}</view>
 					</div>
 				</div>
@@ -157,6 +146,9 @@ export default {
 
 	},
 	methods: {
+    goHall() {
+      uni.navigateTo({ url: "/pages/index/c2c" });
+    },
 		// 字符串处理函数：大写转小写并去掉最后一位字符
 		processString(str) {
 			if (!str || typeof str !== 'string' || str.length === 0) {

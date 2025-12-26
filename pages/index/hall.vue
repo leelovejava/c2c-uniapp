@@ -336,6 +336,7 @@
 					this.secondsInterval = res.data
 				})
 			},
+      // 交易大厅
 			getlist() {
 				const token = uni.getStorageSync('token')
 				this.$u.api.index.mSell(token, this.sellForm).then(res => {

@@ -38,7 +38,7 @@ export default {
 			}
 		},
 		hall: {
-		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Go to Sell"],
+		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Sell"],
 		list: ["Quantity", "Price", "Unfilled", "Sell USDT", "Please enter USDT quantity", "Amount Obtained", "Quota", "Buy USDT", "Amount Spent"],
 		kbip: ["Cancel", "Exceeding the amount", "Must be within the amount range"]
 		},

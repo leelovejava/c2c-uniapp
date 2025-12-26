@@ -22,7 +22,15 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		}, {
+		},
+		{
+			"path": "pages/index/c2c",
+			"style": {
+				"navigationBarTitleText": "c2c",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
 			"path": "pages/index/busauth",
 			"style": {
 				"navigationBarTitleText": "",

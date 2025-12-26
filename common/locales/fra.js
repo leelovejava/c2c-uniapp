@@ -52,7 +52,7 @@ export default {
 			}
 		},
 		hall: {
-			default: ["Hall des transactions", "Solde", "Acheter", "Vendre", "Confirmer la vente",
+			default: ["Hall des transactions", "Solde", "Acheter", "Vendre", "Vendre",
 				"Liste des commandes", "Commandes de vente", "Vendre aux commerçants", "En attente", "Acheter",
 				"Vendre maintenant"
 			],
