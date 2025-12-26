@@ -1,5 +1,7 @@
 export default {
 	common: {
+		back: "Back",
+		market: "Trading Market",
 		mixRecharge: ["Please fill in the email address"],
 		language: "Language",
 		common: ["Online Customer Service", "Cancel Floating", "Confirm", "Cancel"],

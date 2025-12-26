@@ -1,6 +1,8 @@
 // 日语
 export default {
 	common: {
+		back: "戻る",
+		market: "取引市場",
 		mixRecharge: ["メールアドレスを入力してください"],
 		language: "言語",
 		common: ["オンラインカスタマーサービス", "フロートをキャンセル", "確認", "キャンセル"],

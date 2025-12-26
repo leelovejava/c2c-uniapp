@@ -77,27 +77,27 @@
 					<div class="grid-container" style="padding-top: 50px; cursor: pointer;"
 						@click="$u.route('/pages/my/exchange')">
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/europe.png">
+							<img src="static/image/fz/europe.png">
 							<span>{{ $t('common.index.regions.europe') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
+							<img src="static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
 							<span>{{ $t('common.index.regions.unitedStates') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
+							<img src="static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
 							<span>{{ $t('common.index.regions.canada') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
+							<img src="static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
 							<span>{{ $t('common.index.regions.singapore') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
+							<img src="static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
 							<span>{{ $t('common.index.regions.switzerland') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/unitedkingdom.png"
+							<img src="static/image/fz/unitedkingdom.png"
 								:alt="$t('common.index.regions.unitedKingdom')"><span>
 								{{ $t('common.index.regions.unitedKingdom') }}</span>
 						</div>

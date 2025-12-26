@@ -1,5 +1,11 @@
 <template>
   <view class="Body hall" style="width:100%; min-height: 100%;">
+    <view class="market-header">
+      <image class="back-icon" src="/static/image/icon/back.png" @click="back()" />
+      <text class="title-text">{{ common.market }}</text>
+    </view>
+    <view style="height: 88rpx;"></view>
+    <!--static/image/icon/back.png-->
     <div class="Site PageBox" style="width:100%; min-height: 100%; height: auto;">
 
       <div class="records" style="height: auto;">
@@ -278,6 +284,32 @@ page, .Body, .hall, .Body.hall, .Site, .PageBox, .records {
   padding-top: 0 !important;
   background-color: #fefaf0
 }
+
+.market-header {
+  width: 100%;
+  height: 88rpx;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 24rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.back-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+}
+
+.title-text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
 
 .head {
   margin-top: 0 !important;

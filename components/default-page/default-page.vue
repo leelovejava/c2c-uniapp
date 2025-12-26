@@ -41,6 +41,7 @@
 					order:require("static/image/svg/order.svg"),
 					empty:require("static/image/svg/empty.svg"),
 					update:require("static/image/svg/update.svg"),
+          back:require("static/image/svg/back.svg"),
 				}
 			};
 		},

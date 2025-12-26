@@ -1,5 +1,7 @@
 export default {
 	common: {
+		back: "뒤로",
+		market: "거래 시장",
 		mixRecharge: ["이메일 주소를 입력하세요"],
 		language: "언어",
 		common: ["온라인 고객 서비스", "마우스 호버 해제", "확인", "취소"],

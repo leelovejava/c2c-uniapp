@@ -1,6 +1,8 @@
 // 荷兰语
 export default {
 	common: {
+		back: "Terug",
+		market: "Handelsmarkt",
 		currency: "USDT",
 		currencySimplify: "US",
 		currencySymbol: "$",

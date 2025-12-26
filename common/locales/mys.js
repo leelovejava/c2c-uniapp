@@ -1,6 +1,8 @@
 // 马来西亚
 export default {
 	common: {
+		back: "Kembali",
+		market: "Pasaran Dagangan",
 		mixRecharge: ["Sila masukkan alamat emel"],
 		language: "Bahasa",
 		common: ["Perkhidmatan Pelanggan Dalam Talian", "Batal Hover", "Sahkan", "Batal"],

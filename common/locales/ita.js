@@ -1,6 +1,8 @@
 // 意大利语
 export default {
 	common: {
+		back: "Indietro",
+		market: "Mercato di trading",
 		mixRecharge: ["Si prega di inserire l'indirizzo email"],
 		language: "Lingua",
 		common: ["Assistenza online", "Annulla", "Conferma", "Annulla"],

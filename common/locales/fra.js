@@ -1,5 +1,7 @@
 export default {
 	common: {
+		back: "Retour",
+		market: "Marché des échanges",
 		mixRecharge: ["Veuillez entrer votre adresse e-mail"],
 		language: "Langue",
 		common: ["Service client en ligne", "Désactiver la flottaison", "Confirmer", "Annuler"],

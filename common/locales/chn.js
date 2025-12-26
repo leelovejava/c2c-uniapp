@@ -1,6 +1,8 @@
 // 中文
 export default {
 	common: {
+		back: "返回",
+		market: "交易市場",
 		mixRecharge: ["请填写邮箱地址"],
 		language: "语言",
 		common: ["在线客服", "取消悬浮", "确认", "取消"],

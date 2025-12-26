@@ -1,6 +1,8 @@
 // 葡萄牙
 export default {
 	common: {
+		back: "Voltar",
+		market: "Mercado de negociação",
 		mixRecharge: ["Por favor, insira o endereço de email"],
 		language: "Língua",
 		common: ["Atendimento ao cliente online", "Desativar suspenso", "Confirmar", "Cancelar"],

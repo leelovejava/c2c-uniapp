@@ -1,5 +1,7 @@
 export default {
 	common: {
+		back: "返回",
+		market: "交易市場",
 		mixRecharge: ["請填寫郵箱地址"],
 		language: "語言",
 		common: ["在線客服", "取消懸浮", "確認", "取消"],

@@ -1,5 +1,7 @@
 export default {
 	common: {
+		back: "Quay lại",
+		market: "Thị trường giao dịch",
 		mixRecharge: ["vui lòng điền địa chỉ email"],
 		language: "ngôn ngữ",
 		common: ["chăm sóc khách hàng online", "Hủy bỏ treo", "Xác nhận", "Hủy bỏ"],

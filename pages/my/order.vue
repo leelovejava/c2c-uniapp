@@ -30,7 +30,7 @@
 							<div class="exchange-info">
 								<div class="currencies">
 									<img :src="'https://flagcdn.com/' + getCountryCode(item.from) + '.svg'">
-									<img src="h5/static/image/fz/huhuan.png" style="width: 45rpx;height: 40rpx;">
+									<img src="static/image/fz/huhuan.png" style="width: 45rpx;height: 40rpx;">
 									<img :src="'https://flagcdn.com/' + getCountryCode(item.to) + '.svg'">
 								</div>
 								<div class="amount-info"><span class="amount">{{ item.exchange_amount }} {{ item.from
