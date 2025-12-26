@@ -289,19 +289,22 @@ page, .Body, .hall, .Body.hall, .Site, .PageBox, .records {
   width: 100%;
   height: 88rpx;
   background: #000;
-  display: flex;
-  align-items: center;
-  padding: 0 24rpx;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back-icon {
   width: 40rpx;
   height: 40rpx;
-  margin-right: 16rpx;
+  position: absolute;
+  left: 24rpx;
+  filter: brightness(0) invert(1);
 }
 
 .title-text {
