@@ -28,9 +28,9 @@
 							{{ exchangeinfo.expected_profit }} USD
 						</span>
 					</div>
-					<div class="orders">
+<!--					<div class="orders">
 						{{ $t('common.exchange.infoCard.orders') }} ({{ exchangeinfo.today_orders }}/{{ exchangeinfo.daily_limit }})
-					</div>
+					</div>-->
 					<div class="actions">
 						<button class="exchange-btn"
 							style="font-size: 14px; width: calc(50% - 16px); margin: 0 8px; box-sizing: border-box; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 calc(50% - 16px); transform: translateX(-28px);"
