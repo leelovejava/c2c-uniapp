@@ -16,36 +16,38 @@
 							<li v-for="(rule, index) in $t('faqs.basicRules.rules')" :key="index"><span class="rule-number">{{index + 1}}</span>{{rule}}</li>
 						</ul>
 					</div>
-					<div class="info-card rules-card">
-						<div class="icon"><i class="fas fa-clock"></i></div>
-						<h4>{{$t('faqs.platformOperation.title')}}</h4>
-						<ul>
-							<li v-for="(rule, index) in $t('faqs.platformOperation.rules')" :key="index"><span class="rule-number">{{index + 6}}</span>{{rule}}</li>
-						</ul>
-					</div>
 					<div class="info-card order-types-card">
 						<div class="icon"><i class="fas fa-chart-line"></i></div>
 						<h4>{{$t('faqs.orderTypes.title')}}</h4>
 						<h4>{{$t('faqs.orderTypes.marketOrder.title')}}</h4>
 						<p>{{$t('faqs.orderTypes.marketOrder.description')}}</p>
-						<h4>{{$t('faqs.orderTypes.limitOrder.title')}}</h4>
-						<p>{{$t('faqs.orderTypes.limitOrder.description')}}</p>
 					</div>
 					<div class="info-card order-types-card">
 						<div class="icon"><i class="fas fa-gift"></i></div>
 						<h4>{{$t('faqs.giftPackage.title')}}</h4>
 						<p v-for="(desc, index) in $t('faqs.giftPackage.description')" :key="index">{{desc}}</p>
 					</div>
-					<div class="info-card deposits-withdrawals-card">
-						<div class="icon"><i class="fas fa-credit-card"></i></div>
-						<h4>{{$t('faqs.deposits.title')}}</h4>
-						<p v-for="(desc, index) in $t('faqs.deposits.description')" :key="index">{{desc}}</p>
-					</div>
-					<div class="info-card deposits-withdrawals-card">
-						<div class="icon"><i class="fas fa-money-bill-wave"></i></div>
-						<h4>{{$t('faqs.withdrawals.title')}}</h4>
-						<p v-for="(desc, index) in $t('faqs.withdrawals.description')" :key="index">{{desc}}</p>
-					</div>
+
+          <div class="info-card">
+            <div class="icon"><i class="fas fa-credit-card"></i></div>
+            <h4>Customer service time description</h4>
+            <p>Since OFX provides services to users all over the world, customer service will provide online support from 10: 00–11: 00 Pacific Time (PT) in order to respond to the consulting needs of various regions more efficiently. </p>
+            <p>Thank you for your patience and cooperation.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon"><i class="fas fa-credit-card"></i></div>
+            <p>OFX will launch recharge activities from time to time to help users manage funds more efficiently.</p>
+            <p>In order to give back to users' long-term support, OFX platform will launch recharge activities from time to time to provide users with more flexibility and preferential space in the use of funds and cross-border transactions. Such activities are usually open in stages or in limited time, and the specific rules will be adjusted according to market conditions and platform arrangements.</p>
+            <p>During the activity, after the qualified users complete the recharge operation, they have the opportunity to get a certain percentage of the gift amount or related rewards for the subsequent fund operation or transaction arrangement. This can not only effectively improve the efficiency of capital use, but also bring users a more cost-effective experience.</p>
+            <p>Features of the event include:</p>
+            <p>Open from time to time: the activity time is flexible and not fixed for a long time, so you need to pay attention to the official notice.</p>
+            <p>The participation method is simple: usually you only need to complete the specified recharge conditions.</p>
+            <p>Clear reward form: transparent content and rules of use.</p>
+            <p>Suitable for different users' needs: whether it is daily capital turnover or cross-border use, it can bring certain convenience</p>
+            <p>It should be noted that the specific proportion, upper limit and usage mode of each recharge activity may be different. Users should carefully read the description of the current activity before participating to ensure that they meet the requirements and plan the fund arrangement reasonably.</p>
+            <p>OFX hopes to provide users with more practical feedback and improve the overall experience by launching recharge activities from time to time under the premise of compliance and safety. It is recommended to pay attention to the official channel announcements and keep abreast of the latest activity information so as not to miss the relevant benefits.</p>
+          </div>
 				</div>
 			</div>
 

@@ -489,6 +489,8 @@ export default {
 			bankAddressPlaceholder: "กรุณาใส่ที่อยู่ธนาคาร",
 			submitButtonText: "บันทึกข้อมูล",
 			bindSuccess: "ผูกบัญชีสำเร็จ",
-			updateSuccess: "อัปเดตสำเร็จ"
+			updateSuccess: "อัปเดตสำเร็จ",
+			remark: "หมายเหตุ",
+			remarkPlaceholder: "กรุณากรอกหมายเหตุ",
 		}
 	}

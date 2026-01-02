@@ -502,7 +502,9 @@ export default {
 			bankAddressPlaceholder: "Vui lòng nhập địa chỉ ngân hàng",
 			submitButtonText: "Lưu thông tin",
 			bindSuccess: "Liên kết thành công",
-			updateSuccess: "Cập nhật thành công"
+			updateSuccess: "Cập nhật thành công",
+			remark: "Ghi chú",
+			remarkPlaceholder: "Vui lòng nhập ghi chú",
 		},
 		deposit: {
 			withdrawal: "Rút tiền",

@@ -141,9 +141,9 @@
 				</view>
 
 				<!-- 内容区：内容少不滚，内容多才滚 -->
-				<scroll-view class="notice-body" scroll-y>
+        <scroll-view class="notice-body" scroll-y :style="{ maxHeight: '60vh', height: 'auto' }">
 					<u-parse :html="latest.content"></u-parse>
-					<view style="height: 100rpx;"></view>
+          <view style="height: 40rpx;"></view>
 				</scroll-view>
 
 				<!-- 固定底部 -->
@@ -154,6 +154,8 @@
 				<u-icon name="close" size="26" class="notice-close" @click="closeAnnouncement" />
 			</view>
 		</u-popup>
+    <!-- 用户站内信 弹窗-->
+
 	</view>
 </template>
 <script>
@@ -457,8 +459,9 @@
 		line-height: 1.6;
 		box-sizing: border-box;
 		/* 核心属性 */
-		max-height: 800rpx;
-	}
+    max-height: 60vh;
+    height: auto;
+  }
 
 	/* 底部按钮 */
 	.notice-footer {

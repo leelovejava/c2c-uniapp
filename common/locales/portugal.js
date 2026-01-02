@@ -423,7 +423,9 @@ bind: [
 			bankAddressPlaceholder: "Por favor, insira o endereço do banco",
 			submitButtonText: "Salvar Informações",
 			bindSuccess: "Vinculação bem-sucedida",
-			updateSuccess: "Atualização bem-sucedida"
+			updateSuccess: "Atualização bem-sucedida",
+			remark: "Observação",
+			remarkPlaceholder: "Por favor, insira uma observação",
 		},
 		deposit: {
 			withdrawal: "Retirada",

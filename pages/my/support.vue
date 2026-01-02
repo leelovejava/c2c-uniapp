@@ -6,7 +6,7 @@
 			<div class="support-container"><img src="static/image/fz/kfbg.png" alt="客服代表">
 				<h2>{{ $t('common.support.title') }}</h2>
 				<p>{{ $t('common.support.serviceTime') }}</p><a
-					href="https://cs.onlinecs.sbs/index/index/home?visiter_id=6589657826&amp;visiter_name=&amp;avatar=&amp;groupid=0&amp;business_id=28"
+					href="https://www.axd01ys.cfd/chat/index?channelId=c2d2d91eff7a414fa478ec20684ea42a"
 					class="support-button">{{ $t('common.support.buttonText') }}</a>
 			</div>
 

@@ -465,7 +465,9 @@ export default {
 		bankAddressPlaceholder: "कृपया बैंक का पता दर्ज करें",
 		submitButtonText: "जानकारी सहेजें",
 		bindSuccess: "बाइंड सफल",
-		updateSuccess: "अपडेट सफल"
+		updateSuccess: "अपडेट सफल",
+		remark: "टिप्पणी",
+		remarkPlaceholder: "कृपया टिप्पणी दर्ज करें",
 	},
 	certification: {
 		title: "वास्तविक नाम प्रमाणीकरण के लिए आवेदन करें",

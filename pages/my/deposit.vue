@@ -61,6 +61,10 @@
                 <textarea v-model="formData.bank_address" class="form-textarea" :placeholder="$t('bankCardList.bankAddressPlaceholder')"></textarea>
               </div>
 
+              <div class="input-group">
+                <textarea v-model="formData.user_remark" class="form-textarea" :placeholder="$t('bankCardList.remarkPlaceholder')"></textarea>
+              </div>
+
 						</div>
 						<button class="submit-button" id="btn-submit" @click="submitWithdrawal">{{ $t('deposit.submit') }}</button>
 					</div>
@@ -120,7 +124,9 @@ export default {
         country: '',
         routing_number: '',
         swift_code: '',
-        bank_address: ''
+        bank_address: '',
+        // 备注
+        user_remark: ''
 			},
 			userinfo: {},
 			historyRecords: [],
@@ -200,7 +206,7 @@ export default {
 			// 表单验证
 			if (!this.formData.money) {
 				uni.showToast({
-					title: this.$t('common.deposit.enterWithdrawalAmount'),
+					title: this.$t('deposit.enterWithdrawalAmount'),
 					icon: 'none'
 				});
 				return;
@@ -215,7 +221,19 @@ export default {
 						icon: 'success'
 					});
 					// 重置表单
-					this.formData.money = '';
+          this.formData.money = '';
+          this.formData.currency = 'usd';
+          this.formData.account_name = '';
+          this.formData.account_number = '';
+          this.formData.bank_name = '';
+          this.formData.routing_number = '';
+          this.formData.swift_code = '';
+          this.formData.bank_address = '';
+          this.formData.user_remark = '';
+
+          // 重新计算可提现金额
+          this.changeCurrency();
+
 					// 刷新用户信息和历史记录
 					this.getUserInfo();
 					this.getWithdrawalHistory();
@@ -227,7 +245,7 @@ export default {
 				}
 			}).catch(err => {
 				uni.showToast({
-					title: this.$t('common.deposit.withdrawalFailed'),
+					title: this.$t('deposit.withdrawalFailed'),
 					icon: 'none'
 				});
 			});

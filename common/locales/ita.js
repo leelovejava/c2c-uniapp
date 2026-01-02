@@ -444,7 +444,9 @@ export default {
 			bankAddressPlaceholder: "Inserisci l'indirizzo della banca",
 			submitButtonText: "Salva Informazioni",
 			bindSuccess: "Collegamento riuscito",
-			updateSuccess: "Aggiornamento riuscito"
+			updateSuccess: "Aggiornamento riuscito",
+			remark: "Nota",
+			remarkPlaceholder: "Inserisci una nota",
 		},
 		deposit: {
 			withdrawal: "Prelievo",

@@ -361,7 +361,9 @@ export default {
 			bankAddressPlaceholder: "Введите адрес банка",
 			submitButtonText: "Сохранить информацию",
 			bindSuccess: "Привязка успешна",
-			updateSuccess: "Обновление успешно"
+			updateSuccess: "Обновление успешно",
+			remark: "Примечание",
+			remarkPlaceholder: "Введите примечание",
 		},
 		support: {
 			title: "Связаться с нами",

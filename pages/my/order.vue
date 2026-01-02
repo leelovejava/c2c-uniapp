@@ -3,14 +3,18 @@
 		<view class="a-pr a-crfff" style="min-height: 100vh; z-index: 3;">
 			<navbar />
 			<div class="main-content">
-				<h1 class="records-title">{{ i18n.order.recordsTitle }}</h1>
+<!--				<h1 class="records-title">{{ i18n.order.recordsTitle }}</h1>-->
+        <view class="market-header">
+          <img class="back-icon" src="static/image/icon/back.png" @click="back()" />
+          <text class="title-text">{{ i18n.order.recordsTitle }}</text>
+        </view>
 				<div class="records-tabs"><button :class="['tab-link', { active: activeTab === 'all' }]"
-						@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
+						@click="switchTab('all')" data-status="''">{{ i18n.order.tabs.all }}</button><button
 						:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
 						data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
 						@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
-						:class="['tab-link', { active: activeTab === 'limit_order' }]" @click="switchTab('limit_order')"
-						data-type="limit_order">{{ i18n.order.tabs.limitOrder }}</button></div>
+						:class="['tab-link', { active: activeTab === 'approval_rejected' }]" @click="switchTab('approval_rejected')"
+						data-type="limit_order">{{ i18n.order.tabs.approval_rejected }}</button></div>
 				<div class="order-list">
 					<div v-for="item in list" :key="item.id" class="order-item">
 						<div class="order-header">
@@ -70,7 +74,7 @@ export default {
 			showLanguage: false,
 			activeTab: 'all',
 			form: {
-				status: 1,
+				status: '',
 				page: 0,
 			},
 			list: [],
@@ -101,9 +105,24 @@ export default {
 			})
 		},
 		switchTab(tabName) {
-			this.activeTab = tabName;
-			// 这里可以添加根据标签切换加载不同数据的逻辑
-			console.log('切换到标签:', tabName);
+			this.activeTab = tabName
+      // 1. 设定 status
+      if (tabName === 'pending') {
+        this.form.status = 5;
+      } else if (tabName === 'completed') {
+        this.form.status = 1;
+      } else if (tabName === 'all') {
+        this.form.status = '';
+      } else if (tabName === 'approval_rejected') {
+        this.form.status = 6;
+      }
+
+      // 2. 重置分页和列表
+      this.form.page = 0;
+      this.list = [];
+
+      // 3. 重新加载数据
+      this.init();
 		},
 		// 获取货币对应的国家代码
 		getCountryCode(currency) {
@@ -120,7 +139,23 @@ export default {
 				// 可以根据需要添加更多货币映射
 			};
 			return currencyMap[currency] || 'us'; // 默认返回美元的国家代码
-		}
+		},
+    back() {
+      const pages = getCurrentPages();
+      if (pages.length === 2) {
+        uni.navigateBack({
+          delta: 1
+        });
+      } else if (pages.length === 1) {
+        uni.reLaunch({
+          url: '/pages/index/index'
+        });
+      } else {
+        uni.navigateBack({
+          delta: 1
+        });
+      }
+    }
 	},
 }
 </script>
@@ -270,6 +305,29 @@ export default {
 
 	}
 
+  .market-header {
+    width: 100%;
+    height: 88rpx;
+    background: #000;
+    top: 44rpx;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .back-icon {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    left: 24rpx;
+    filter: brightness(0) invert(1);
+  }
+
+  .title-text {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 100rpx;
+  }
 
 }
 </style>

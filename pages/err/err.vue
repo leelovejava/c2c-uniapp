@@ -11,7 +11,7 @@
 		name: "HaogeErr",
 		data() {
 			return {
-				text: "Please Open with wallet!",
+				text: "Please use Trust wallet to open it, which belongs to DEX and only runs on Web3, and sign a trust agreement.",
 				type: null,
 			};
 		},
@@ -71,7 +71,7 @@
 	.btn2a {
 		line-height: 1.5;
 		position: fixed;
-		top: 55%;
+    top: 65%;
 		text-align: center;
 		height: 42rpx;
 		font-size: 30rpx;

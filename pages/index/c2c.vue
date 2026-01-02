@@ -3,6 +3,8 @@
     <view class="market-header">
       <image class="back-icon" src="/static/image/icon/back.png" @click="back()" />
       <text class="title-text">{{ common.market }}</text>
+
+      <view class="record-btn" @click="goRecord">{{ $t('common.exchange.infoCard.records') }}</view>
     </view>
     <view style="height: 88rpx;"></view>
     <!--static/image/icon/back.png-->
@@ -28,15 +30,11 @@
                       <text>{{ common.hall.list[6] }} ：{{ item.mine }}-{{ item.maxe }}</text>
                     </view>
                     <!--去出售-->
-                    <view class="fr" @click="onExchange(item.danjia,item.currency)">
+                    <view class="fr" @click="onExchange(item.id,item.danjia,item.currency)">
                       <view>{{ common.hall.default[10] }}</view>
                     </view>
                   </view>
                   <view class="sell_con">
-                    <view>
-                      <text>{{ item.shuliang }}</text>
-                      <text>{{ common.hall.list[0] }}(USDT)</text>
-                    </view>
                     <view>
                       <text>{{ item.shengyu }}</text>
                       <text>{{ common.hall.list[2] }}(USDT)</text>
@@ -120,7 +118,9 @@ export default {
       form: {
         to_currency: 'USD',
         // 汇率
-        exchange_rate: 1
+        exchange_rate: 1,
+        // 订单id
+        order_id: 1
       }
     };
   },
@@ -143,21 +143,39 @@ export default {
     this.substring();
   },
   methods: {
+    goRecord() {
+      uni.navigateTo({ url: "/pages/my/order" });
+    },
     // 兑换
-    onExchange(exchange_rate, currency) {
-      const token = uni.getStorageSync('token');
+    onExchange(order_id, exchange_rate, currency) {
+      this.form.order_id = order_id;
       this.form.exchange_rate = exchange_rate;
       this.form.to_currency = currency;
 
-      this.$u.api.setting.exchangeswap(token, this.form)
-          .then(res => {
-            if (res.code === 1) {
-              uni.navigateTo({ url: "/pages/my/order" });
-            }
-          })
-          .catch(() => {
-            this.$utils.showToast(res.msg);
-          });
+      // 先弹出确认框
+      uni.showModal({
+        title: 'Confirm Exchange',
+        content: `Are you sure you want to exchange this order for ${currency}?`,
+        confirmText: 'Confirm',  // 确认按钮英文
+        cancelText: 'Cancel',    // 取消按钮英文
+        success: (modalRes) => {
+          if (modalRes.confirm) {
+            const token = uni.getStorageSync('token');
+
+            this.$u.api.setting.exchangeswap(token, this.form)
+                .then(res => {
+                  if (res.code === 1) {
+                    uni.navigateTo({ url: "/pages/my/order" });
+                  } else {
+                    this.$utils.showToast(res.msg || 'Exchange failed');
+                  }
+                })
+                .catch(err => {
+                  this.$utils.showToast(err.msg || 'Network error');
+                });
+          }
+        }
+      });
     },
     substring() {
       // 2、js截取某个字符串前面的内容：
@@ -690,5 +708,16 @@ page, .Body, .hall, .Body.hall, .Site, .PageBox, .records {
       }
     }
   }
+}
+.record-btn {
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  background: #f7ce46;
+  color: #000;
+  font-size: 26rpx;
+  font-weight: bold;
+  padding: 6rpx 16rpx;
+  border-radius: 12rpx;
 }
 </style>

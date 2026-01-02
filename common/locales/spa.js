@@ -553,7 +553,9 @@ export default {
 			bankAddressPlaceholder: "Por favor, ingrese la dirección del banco",
 			submitButtonText: "Guardar información",
 			bindSuccess: "Vinculación exitosa",
-			updateSuccess: "Actualización exitosa"
+			updateSuccess: "Actualización exitosa",
+			remark: "Nota",
+			remarkPlaceholder: "Introduce una nota",
 		},
 		deposit: {
 			withdrawal: "Retiro",

@@ -498,37 +498,44 @@ export default {
 		basicRules: {
 			title: "Règles de base",
 			rules: [
-				"Chaque compte ne peut être enregistré qu'avec un seul numéro de téléphone portable.",
-				"Selon les réglementations de FinCEN, chaque utilisateur doit avoir au moins 100 $ dans son compte pour exécuter des ordres.",
-				"Chaque groupe de tâches contient jusqu'à 0-4 ordres à cours limité, chaque ordre à cours limité pouvant contenir jusqu'à 2 ordres d'échange (c'est-à-dire 1 ordre échangé 2 fois). Un seul ordre contenant 2 échanges est autorisé à être exécuté par groupe.",
-				"Les comptes dont le montant des dépôts dépasse un certain seuil seront automatiquement mis à niveau vers le statut de membre SVIP. Les membres mis à niveau peuvent effectuer 40 ordres par tour."
+				"1: Chaque portefeuille Web3 ne peut être utilisé que pour enregistrer un seul compte sur la plateforme.",
+				"2: Conformément à la réglementation FinCEN (FinCEN/FinCEN), chaque utilisateur doit détenir au moins 100 USDT sur son compte pour exécuter un ordre.",
+				"3: Le niveau VIP limite le nombre d’échanges hebdomadaires : VIP1 = 2 fois/semaine, VIP2 = 3 fois/semaine, VIP3 = 5 fois/semaine, VIP4 = échanges illimités.",
+				"4: Le niveau VIP sera automatiquement mis à jour lorsque le montant du dépôt atteindra le seuil défini.",
+				"5: La plateforme fonctionne sur Web3 et permet aux utilisateurs du monde entier d’effectuer des échanges librement, à tout moment.",
+				"6: Pour la sécurité de votre compte, ne divulguez jamais votre phrase mnémonique (seed phrase).",
+				"7: Le score de crédit est mis à jour quotidiennement à 00:00 heure du Pacifique (PT). Si le score de crédit est inférieur à 95, la fonction de retrait sera gelée. Pour la sécurité du compte, veuillez contacter le service client.",
+				"8: Remarques sur les retraits : veuillez renseigner des informations bancaires internationales exactes. Les virements internationaux prennent généralement 1 à 5 jours ouvrés pour arriver. Toute erreur peut entraîner un échec du virement — les fonds devront être retournés avant une nouvelle tentative. Une erreur peut également entraîner une baisse du score de crédit.",
+				"9: La plateforme opère sur Web3 et a actuellement signé une licence de fonctionnement de confiance avec Trust. La connexion via d’autres portefeuilles Web3 est également prise en charge sans affecter l’accès."
 			]
 		},
+
 		platformOperation: {
-			title: "Fonctionnement de la plateforme",
+			title: "Exploitation de la plateforme",
 			rules: [
-				"La plateforme est ouverte quotidiennement de 10h00 à 23h00. Les membres ne peuvent passer des ordres que durant ces heures.",
-				"Si votre compte est abusé par un tiers, veuillez contacter immédiatement le service client.",
-				"Les retraits supérieurs à 30 000 $ nécessitent une notification préalable au service client.",
-				"Les scores de crédit sont mis à jour après 22h30 chaque soir. Les retraits ne peuvent être effectués lorsque le score de crédit est inférieur à 95."
+				"La plateforme est ouverte tous les jours de 10:00 à 23:00 (UTC−8). Les membres ne peuvent passer des ordres que pendant cette période.",
+				"Si votre compte est utilisé de manière abusive par un tiers, contactez immédiatement le support client.",
+				"Les retraits supérieurs à 30 000 $ doivent être signalés au service client à l’avance.",
+				"Le score de crédit est mis à jour quotidiennement après 22:30 (UTC−8). Les retraits sont désactivés si le score est inférieur à 95."
 			]
 		},
+
 		orderTypes: {
-			title: "Types d'ordres",
+			title: "Types d’ordres",
 			marketOrder: {
-				title: "Ordre au marché",
-				description: "Les utilisateurs de la plateforme de change acceptent le meilleur taux de change disponible sur le marché actuel et finalisent l'échange immédiatement. Le système attribue automatiquement les ordres en fonction du solde disponible du compte du membre. La commission pour ce type d'ordre est de 1 % du montant de l'ordre."
+				title: "Ordre au marché (Market Order)",
+				description: "Les utilisateurs acceptent le meilleur taux de change disponible sur le marché et l’échange est exécuté immédiatement. Le système met à jour régulièrement les taux en temps réel publiés par les acheteurs/partenaires, et l’utilisateur choisit librement les ordres selon son solde disponible."
 			},
 			limitOrder: {
-				title: "Ordre à cours limité",
-				description: "Les utilisateurs de la plateforme de change peuvent définir des taux de change cibles. Une fois que le taux de change du marché atteint la valeur spécifiée, le système mettra automatiquement en correspondance et exécutera l'échange. Ces ordres dépassent généralement le solde actuel du compte de l'agent, mais offrent un potentiel de rendement plus élevé. La commission pour ce type d'ordre est de 5 % à 60 % du montant de l'ordre."
+				title: "Ordre à cours limité (Limit Order)",
+				description: "Les utilisateurs peuvent définir un taux de change cible. Lorsque le taux du marché atteint la valeur spécifiée, le système effectue automatiquement l’appariement et exécute l’échange. Ce type d’ordre peut dépasser le solde actuel de l’agent, mais offre un potentiel de rendement plus élevé. Les frais de commission varient entre 5 % et 60 % du montant de l’ordre."
 			}
 		},
+
 		giftPackage: {
-			title: "Colis cadeau",
+			title: "Pack cadeau",
 			description: [
-				"Les colis cadeaux sont des offres exclusives pour nos membres précieux. Ils contiennent un ordre aléatoire associé à des ordres à cours limité ou à de l'argent généreusement fourni par nos partenaires. Cette offre spéciale s'applique aux membres ayant accumulé un certain montant dans leur compte. Les colis cadeaux ne sont offerts que 0 à 4 fois par tour.",
-				"Les colis cadeaux sont conçus pour récompenser notre communauté fidèle et améliorer votre expérience avec nous. Atteindre ce seuil vous permet non seulement de recevoir des récompenses attractives, mais aussi de faire partie d'un groupe exclusif avec des avantages supplémentaires."
+				"Les packs cadeaux sont des avantages exclusifs réservés à nos membres VIP les plus distingués. À chaque montée d’un niveau VIP, vous recevez un bonus fixe sans aucune restriction d’utilisation. Ce bonus peut être utilisé librement, sans limite."
 			]
 		},
 		deposits: {
@@ -656,7 +663,9 @@ export default {
 		bankAddressPlaceholder: "Veuillez entrer l'adresse bancaire",
 		submitButtonText: "Enregistrer les informations",
 		bindSuccess: "Liaison réussie",
-		updateSuccess: "Mise à jour réussie"
+		updateSuccess: "Mise à jour réussie",
+		remark: "Remarque",
+		remarkPlaceholder: "Veuillez saisir une remarque",
 	},
 	// Internationalisation liée à l'authentification de nom réel
 	certification: {

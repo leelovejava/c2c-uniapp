@@ -7,8 +7,8 @@
 			<view class="certification-content">
 				<view class="certification-card">
 					<view class="card-header">
-						<text class="header-title">{{ $t('common.certification.title') }}</text>
-						<text class="header-subtitle">{{ $t('common.certification.subtitle') }}</text>
+						<text class="header-title">{{ $t('certification.title') }}</text>
+						<text class="header-subtitle">{{ $t('certification.subtitle') }}</text>
 					</view>
 
 					<!-- 认证状态显示 -->
@@ -21,33 +21,33 @@
 					<!-- 审核成功时显示成功信息 -->
 					<view v-if="verificationStatus === 1" class="success-message">
 						<view class="success-icon">✓</view>
-						<text class="success-text">{{ $t('common.certification.successTitle') }}</text>
-						<text class="success-subtext">{{ $t('common.certification.successSubtitle') }}</text>
+						<text class="success-text">{{ $t('certification.successTitle') }}</text>
+						<text class="success-subtext">{{ $t('certification.successSubtitle') }}</text>
 					</view>
 
 					<!-- 审核中或审核失败时显示表单 -->
 					<view class="certification-form" v-else>
 						<view class="form-group">
-							<label class="form-label">{{ $t('common.certification.nameLabel') }}</label>
+							<label class="form-label">{{ $t('certification.nameLabel') }}</label>
 							<input type="text" v-model="formData.name" class="form-input"
-								:placeholder="$t('common.certification.namePlaceholder')" required>
+								:placeholder="$t('certification.namePlaceholder')" required>
 						</view>
 
 						<view class="form-group">
-							<label class="form-label">{{ $t('common.certification.emailLabel') }}</label>
+							<label class="form-label">{{ $t('certification.emailLabel') }}</label>
 							<input type="email" v-model="formData.email" class="form-input"
 								:placeholder="$t('common.certification.emailPlaceholder')" required>
 						</view>
 
 						<view class="form-group">
-							<label class="form-label">{{ $t('common.certification.phoneLabel') }}</label>
+							<label class="form-label">{{ $t('certification.phoneLabel') }}</label>
 							<input type="tel" v-model="formData.phone" class="form-input"
 								:placeholder="$t('common.certification.phonePlaceholder')" required>
 						</view>
 
 						<view class="submit-section">
 							<button type="submit" class="submit-button"
-								@click="submitCertification">{{ $t('common.certification.submitButton') }}</button>
+								@click="submitCertification">{{ $t('certification.submitButton') }}</button>
 						</view>
 					</view>
 				</view>
@@ -91,11 +91,11 @@
 			getStatusText() {
 				switch (this.verificationStatus) {
 					case 0:
-						return this.$t('common.certification.statusPending');
+						return this.$t('certification.statusPending');
 					case 1:
-						return this.$t('common.certification.statusSuccess');
+						return this.$t('certification.statusSuccess');
 					case 2:
-						return this.$t('common.certification.statusFailed');
+						return this.$t('certification.statusFailed');
 					default:
 						return '';
 				}

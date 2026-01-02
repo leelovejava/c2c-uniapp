@@ -539,7 +539,9 @@ export default {
 		bankAddressPlaceholder: "請輸入銀行地址",
 		submitButtonText: "保存信息",
 		bindSuccess: "綁定成功",
-		updateSuccess: "修改成功"
+		updateSuccess: "修改成功",
+		remark: "備註",
+		remarkPlaceholder: "請輸入備註",
 	},
 	"support": {
 		"title": "聯繫我們",

@@ -47,7 +47,7 @@
 										{{ $t('common.navbar.inviteCode') }}: {{ userinfo.code }}
 									</view>
 									<view class="a-tc a-f24 a-borr5 a-crfff"
-										style="background: #1E90FF;padding:4rpx 16rpx;" @click="copyInviteCode">
+										style="background: #1E90FF;padding:4rpx 16rpx;" @click="copyInviteCode(userinfo.code)">
 										{{ $t('common.navbar.copy') }}
 									</view>
 								</view>
@@ -111,7 +111,7 @@
 							</view>
 							<view class="a-center2">
 								<view style="background:#1E90FF;" class="a-f32 a-p10 a-w80p a-tc a-borr5"
-									@tap="$u.route('/pages/my/exchange')">
+									@tap="$u.route('/pages/index/c2c')">
 									{{ $t('common.navbar.currencyExchange') }}
 								</view>
 							</view>
@@ -254,15 +254,26 @@ export default {
 				this.assets = res.data
 			})
 		},
-		copyInviteCode() {
-			uni.setClipboardData({
-				data: this.userinfo.code,
-				success: () => {
-					this.$u.toast('Copied to clipboard')
-				}
-			})
-		}
-	}
+    copyInviteCode(text) {
+      uni.setClipboardData({
+        data: String(text),
+        success: () => {
+          uni.showToast({
+            title: this.$t('common.navbar.copySuccess'), // 复制成功
+            icon: 'success'
+          });
+        },
+        fail: (err) => {
+          console.log('cope failed info:', err);  // 打印完整错误对象
+
+          uni.showToast({
+            title: this.$t('common.navbar.copyFailed'), // 复制失败
+            icon: 'none'
+          });
+        }
+      });
+    }
+  }
 
 };
 </script>

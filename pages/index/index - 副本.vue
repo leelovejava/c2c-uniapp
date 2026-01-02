@@ -452,7 +452,7 @@
 				// })
 
 				uni.request({
-					url: 'https://overthecounter.top/api/index/get_coin_increase',
+					url: 'https://ofxdex.top/api/index/get_coin_increase',
 					data: {
 						token
 					},

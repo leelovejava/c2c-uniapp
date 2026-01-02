@@ -374,37 +374,44 @@ export default {
 		basicRules: {
 			title: "Grundregeln",
 			rules: [
-				"Jedes Konto kann nur mit einer Mobiltelefonnummer registriert werden.",
-				"Laut FinCEN-Vorschriften muss jeder Benutzer mindestens 100 $ auf seinem Konto haben, um Aufträge auszuführen.",
-				"Jede Aufgabengruppe enthält maximal 0-4 Limit-Orders, jede Limit-Order kann maximal 2 Tauschaufträge enthalten (d.h. 1 Auftrag wird 2 Mal getauscht). Nur 1 Auftrag mit 2 Tauschvorgängen darf pro Gruppe ausgeführt werden.",
-				"Konten, deren Einzahlungsbetrag eine bestimmte Grenze überschreitet, werden automatisch auf SVIP-Mitglieder aufgewertet. Aufgewertete Mitglieder können 40 Aufträge pro Runde abschließen."
+				"1: Jedes Web3-Wallet darf nur zur erfolgreichen Registrierung eines einzigen Plattformkontos verwendet werden.",
+				"2: Gemäß den FinCEN-Vorschriften muss jeder Nutzer mindestens 100 USDT auf dem Konto halten, um einen Auftrag auszuführen.",
+				"3: Die VIP-Stufe begrenzt die Anzahl der wöchentlichen Tauschvorgänge: VIP1 = 2-mal/Woche, VIP2 = 3-mal/Woche, VIP3 = 5-mal/Woche, VIP4 = unbegrenzte Tauschvorgänge.",
+				"4: Die VIP-Stufe wird automatisch erhöht, sobald der Einzahlungsbetrag den festgelegten Schwellenwert erreicht.",
+				"5: Die Plattform läuft auf Web3 und ermöglicht Nutzern weltweit, jederzeit frei und ohne Einschränkungen zu tauschen.",
+				"6: Geben Sie zum Schutz Ihres Kontos niemals Ihre Wallet-Mnemonik (Seed-Phrase) weiter.",
+				"7: Der Kredit-Score wird täglich um 00:00 Uhr pazifischer Zeit (PT) aktualisiert. Wenn der Score unter 95 fällt, wird die Auszahlungsfunktion eingefroren. Zur Kontosicherheit wenden Sie sich bitte an den Kundensupport.",
+				"8: Hinweise zur Auszahlung: Bitte geben Sie korrekte internationale Bankdaten an. Internationale Überweisungen benötigen in der Regel 1–5 Werktage. Falsche Angaben können zu Überweisungsfehlern führen – das Geld muss erst zurückgebucht werden, bevor ein erneuter Versuch möglich ist. Fehler können zudem Ihren Kredit-Score verringern.",
+				"9: Die Plattform arbeitet vollständig auf Web3 und besitzt aktuell eine Vertrauens-Betriebslizenz mit Trust. Logins über andere Web3-Wallets werden ebenfalls unterstützt und beeinträchtigen den Zugang nicht."
 			]
 		},
+
 		platformOperation: {
-			title: "Plattform-Betrieb",
+			title: "Plattformbetrieb",
 			rules: [
-				"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet. Mitglieder können nur während dieser Stunden Aufträge erteilen.",
-				"Wenn Ihr Konto von Dritten missbraucht wird, wenden Sie sich bitte sofort an den Kundenservice.",
-				"Auszahlungen über 30.000 $ erfordern eine vorherige Benachrichtigung des Kundenservice.",
-				"Kreditpunkte werden jeden Abend nach 22:30 Uhr aktualisiert. Auszahlungen sind nicht möglich, wenn die Kreditpunkte unter 95 liegen."
+				"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet (UTC−8). Nur innerhalb dieses Zeitfensters können Mitglieder Aufträge erteilen.",
+				"Falls Ihr Konto durch Dritte missbraucht wurde, kontaktieren Sie sofort den Kundensupport.",
+				"Auszahlungen über 30.000 $ müssen dem Kundensupport im Voraus gemeldet werden.",
+				"Der Kredit-Score wird täglich nach 22:30 Uhr aktualisiert (UTC−8). Bei einem Score unter 95 ist keine Auszahlung möglich."
 			]
 		},
+
 		orderTypes: {
-			title: "Auftragstypen",
+			title: "Auftragsarten",
 			marketOrder: {
-				title: "Marktauftrag",
-				description: "Börsenplattform-Benutzer akzeptieren den aktuellen besten verfügbaren Wechselkurs des Marktes und schließen den Tausch sofort ab. Das System weist Aufträge automatisch basierend auf dem verfügbaren Saldo des Mitgliedskontos zu. Die Provision für diesen Auftragstyp beträgt 1% des Auftragsbetrags."
+				title: "Market-Order (Marktauftrag)",
+				description: "Nutzer akzeptieren den derzeit besten verfügbaren Wechselkurs am Markt und der Tausch wird sofort ausgeführt. Das System aktualisiert regelmäßig die von Händlern/Käufern veröffentlichten Echtzeit-Kurse. Nutzer wählen Aufträge entsprechend ihrem verfügbaren Guthaben frei aus."
 			},
 			limitOrder: {
-				title: "Limit-Order",
-				description: "Börsenplattform-Benutzer können Zielwechselkurse festlegen. Sobald der Marktwechselkurs den festgelegten Wert erreicht, gleicht das System automatisch ab und führt den Tausch aus. Diese Aufträge übertreffen normalerweise das aktuelle Kontoguthaben des Agenten, bieten aber ein höheres Renditepotenzial. Die Provision für diesen Auftragstyp beträgt 5%-60% des Auftragsbetrags."
+				title: "Limit-Order (Limitauftrag)",
+				description: "Nutzer können einen Ziel-Wechselkurs festlegen. Sobald der Markt-Kurs den angegebenen Wert erreicht, führt das System automatisch Matching und Tausch aus. Diese Aufträge können das aktuelle Guthaben des Agents übersteigen, bieten jedoch ein höheres Renditepotenzial. Die Kommissionsgebühr liegt zwischen 5 % und 60 % des Auftragsbetrags."
 			}
 		},
+
 		giftPackage: {
-			title: "Geschenk-Paket",
+			title: "Geschenkpaket",
 			description: [
-				"Geschenk-Pakete sind exklusive Angebote für unsere geschätzten Mitglieder. Sie enthalten einen zufälligen Auftrag, der mit Limit-Aufträgen oder Bargeld verbunden ist, das großzügig von unseren Partnern bereitgestellt wird. Dieses Sonderangebot gilt für Mitglieder, die einen bestimmten Betrag auf ihrem Konto angesammelt haben. Geschenk-Pakete werden nur 0-4 Mal pro Runde angeboten.",
-				"Geschenk-Pakete sollen unsere treue Gemeinschaft belohnen und Ihre Erfahrung mit uns verbessern. Das Erreichen dieser Schwelle ermöglicht Ihnen nicht nur attraktive Belohnungen zu erhalten, sondern auch Teil einer exklusiven Gruppe mit zusätzlichen Vorteilen zu werden."
+				"Geschenkpakete sind exklusive Vorteile für unsere angesehenen VIP-Mitglieder. Bei jedem VIP-Level-Aufstieg erhalten Sie eine feste Bonusbelohnung ohne Nutzungsbeschränkung. Dieser Bonus kann völlig frei und unbegrenzt verwendet werden."
 			]
 		},
 		deposits: {
@@ -525,7 +532,9 @@ export default {
 		swiftCodePlaceholder: "Bitte geben Sie den SWIFT-Code ein",
 		bankAddressLabel: "Bankadresse",
 		bankAddressPlaceholder: "Bitte geben Sie die Bankadresse ein",
-		submitButtonText: "Informationen speichern"
+		submitButtonText: "Informationen speichern",
+		remark: "Anmerkung",
+		remarkPlaceholder: "Bitte geben Sie eine Anmerkung ein",
 	},
 	// Echte Namensauthentifizierung bezogene Internationalisierung
 	certification: {

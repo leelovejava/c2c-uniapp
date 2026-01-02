@@ -407,7 +407,9 @@ export default {
 		bankAddressPlaceholder: "Sila masukkan alamat bank",
 		submitButtonText: "Simpan Maklumat",
 		bindSuccess: "Berjaya mengikat",
-		updateSuccess: "Berjaya dikemas kini"
+		updateSuccess: "Berjaya dikemas kini",
+		remark: "Nota",
+		remarkPlaceholder: "Sila masukkan nota",
 	},
 	deposit: {
 		withdrawal: "Pengeluaran",

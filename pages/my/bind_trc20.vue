@@ -7,11 +7,9 @@
 				<div class="cashout-container">
 					<div class="tabs">
 						<button :class="['tab-button', { active: activeTab == 0 }]"
-							@click="switchTab(0)">TRC20</button>
+							@click="switchTab(0)">ERC20</button>
 						<button :class="['tab-button', { active: activeTab == 1 }]"
-							@click="switchTab(1)">ERC20</button>
-						<button :class="['tab-button', { active: activeTab == 2 }]"
-							@click="switchTab(2)">BTC</button>
+							@click="switchTab(1)">BTC</button>
 					</div>
 				</div>
 				<div class="bank-card-form">
@@ -19,11 +17,17 @@
 					<div class="a-center2 a-mb10">
 						<QiyanQrcode :text="ewmUrl[activeTab]"></QiyanQrcode>
 					</div>
-					<div class="a-center2 a-mb20">
-						{{ewmUrl[activeTab]}}
-					</div>
 
-					<div class="form-group">
+          <!--复制-->
+          <div class="a-center2 a-mb20 a-flex" style="gap:10px; align-items:center;">
+            <span style="word-break: break-all; flex:1;">{{ ewmUrl[activeTab] }}</span>
+            <button class="copy-btn" @click="copyAddress(ewmUrl[activeTab])">
+              {{$t('common.navbar.copy')}}
+            </button>
+          </div>
+
+
+          <div class="form-group">
 						<label class="form-label">{{$t('bindTrc20.moneyLabel')}}</label>
 						<input type="number" v-model="form.money" class="form-input"
 							:placeholder="$t('bindTrc20.moneyPlaceholder')" step="0.01">
@@ -59,7 +63,7 @@
 		data() {
 			return {
 				activeTab:0,
-				ewmUrl:['sbbbbbbbbbb','wwwwwwwwwwww','aaaaaaaaaaaaa'],
+				ewmUrl:['0xDe2f9b9F9C5Fe149F4f49e608d3fA7045B3b6656','bc1p49vp4v72xr62r646kl4fz2xxtngj84rejyq6nmrpdweazrfzzndsvxttvu'],
 				form: {
 					money: '',
 					recharge_address: '',
@@ -74,6 +78,25 @@
 			// })
 		},
 		methods: {
+      copyAddress(text) {
+        uni.setClipboardData({
+          data: text,
+          success: () => {
+            uni.showToast({
+              // 复制成功
+              title: this.$t('common.navbar.copySuccess'),
+              icon: 'success'
+            });
+          },
+          fail: () => {
+            uni.showToast({
+              // 复制失败
+              title: this.$t('common.navbar.copyFailed'),
+              icon: 'error'
+            });
+          }
+        });
+      },
 			switchTab(tabName) {
 				this.activeTab = tabName;
 			},
@@ -85,6 +108,11 @@
 							title: this.$t('bindTrc20.successMessage'),
 							icon: 'success'
 						})
+
+            // ✅ 重置表单
+            this.form.money = '';
+            this.form.recharge_address = '';
+            this.form.recharge_hash = '';
 					} else {
 						uni.showToast({
 							title: res.msg || this.$t('bindTrc20.failMessage'),
@@ -248,4 +276,27 @@
 			transform: translateY(0);
 		}
 	}
+  .copy-btn {
+    background: rgba(30,144,255,0.18);
+    color: #1E90FF;
+    border: 1px solid rgba(30,144,255,0.6);
+    padding: 8rpx 26rpx;
+    border-radius: 16rpx;
+    font-size: 26rpx;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px rgba(30,144,255,0.35);
+    transition: all 0.25s ease;
+  }
+
+  .copy-btn:active {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+
+  .copy-btn.copied {
+    border-color: #00ffa2;
+    color: #00ffa2;
+    background: rgba(0,255,162,0.22);
+    box-shadow: 0 0 14px rgba(0,255,162,0.6);
+  }
 </style>
