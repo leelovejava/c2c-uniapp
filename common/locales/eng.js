@@ -15,7 +15,7 @@ export default {
 		register: {
 		text: ["BITCOIN", "Verifying code sending...", "Click to get", "Registering...", "Register now"],
 		placeholder: ["Please enter your email", "Please enter the verification code", "Please enter your login password", "Please confirm your password", "Please enter the invitation code", "The passwords do not match", "Please enter the verification code", "Invalid email", "Password should not be less than 6 characters"],
-		label: ["Already have an account? {a} {line}", "Return to Login"],
+		label: ["Already have an account?", "Return to Login"],
 		codes: ["Account already exists", "Verification code does not exist", "Incorrect verification code", "Passwords do not match", "Referrer does not exist", "Failed"]
 		},
 		resetpwd: ["Forget password", "Please enter your email", "Please enter the verification code", "Click to get", "Please enter your password", "Reset password"],

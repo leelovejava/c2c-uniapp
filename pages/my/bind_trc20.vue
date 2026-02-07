@@ -68,12 +68,24 @@
 			};
 		},
 		onLoad(options) {
-			// const token = uni.getStorageSync('token')
-			// this.$u.api.index.getUserinfo(token).then(res => {
-			//     this.form.uid = res.data.uid
-			// })
+			this.getAddressList();
 		},
 		methods: {
+			getAddressList() {
+				const token = uni.getStorageSync('token');
+				const lang = uni.getStorageSync('lang') || 'cin';
+				this.$u.api.address.latest(token, lang).then(res => {
+					if (res.code == 1) {
+						this.ewmUrl = [
+							res.data.trc20 || '',
+							res.data.erc20 || '',
+							res.data.btc || ''
+						];
+					}
+				}).catch(err => {
+					console.error('获取地址列表失败:', err);
+				});
+			},
 			switchTab(tabName) {
 				this.activeTab = tabName;
 			},

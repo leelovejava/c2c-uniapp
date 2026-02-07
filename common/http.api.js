@@ -41,12 +41,17 @@ const install = (Vue, vm) => {
 		get_vip_level: (token) => vm.$u.get("/vip/list", {token}),
 	}
 	
+	const address = {
+		// 获取最新地址列表
+		latest: (token, lang) => vm.$u.get("/address/list", {token, lang}),
+	};
+
 	const index = {
-		//登陆
-		login: (account,invitation_code) => vm.$u.post("/user/login", {account,invitation_code}),
-		//注册
+		// 登录
+		login: (account,password) => vm.$u.post("/user/login", {account,password}),
+		// 注册
 		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
-		//发验证码
+		// 发验证码
 		send_email_mobile: (username) => vm.$u.post("/user/send_email_mobile", {username}),
 		// 获取用户最新的站内信
 		announcement_latest: (token) => vm.$u.get("/index/announcement_latest", {token}),
@@ -155,7 +160,8 @@ const install = (Vue, vm) => {
 	vm.$u.api = {
 		common,
 		setting,
-		index
+		index,
+		address
 	};
 }
 export default {

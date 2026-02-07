@@ -206,7 +206,7 @@
 				    success: (res) => {
 				      const tempFilePaths = res.tempFilePaths[0]
 					  uni.uploadFile({
-					    url: 'https://overthecounter.top/upload', // 服务器接口地址
+					    url: 'https://api.ofxdex.xyz/upload', // 服务器接口地址
 					    filePath: tempFilePaths,
 					    success: (res) => {
 					      res.data = JSON.parse(res.data)

@@ -105,7 +105,7 @@
 					// 	window.location.href = res.data.zalo
 					// }
 				})
-				// window.location.href = 'https://overthecounter.top/kefu.php'
+				// window.location.href = 'https://api.ofxdex.xyz/kefu.php'
 			}
 		},
 		computed: {

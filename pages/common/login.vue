@@ -18,8 +18,8 @@
 				</view>
 			</view>
 			<view class="login_logo">
-				<image src="@/static/image/logo.png" mode="widthFix" 
-				style="width: 300rpx; border-radius: 20rpx;">
+				<image src="@/static/image/fz/logo3.png" mode="widthFix" 
+							style="width: 300rpx; border-radius: 20rpx;">
 				</image>
 				<!-- <text>NYBAK</text> -->
 			</view>
@@ -224,42 +224,47 @@
 	}
 </script>
 <style lang="scss" scoped>
+	.Body {
+		background-color: #121212;
+		background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+		height: 100vh;
+		overflow: hidden;
+	}
+	
 	.loign{
 		.PageBox{
-			background-color: #e6f8f3;
-			height: auto;
+			background-color: #121212;
+			height: 100vh;
 			.header_bg{
-				background-color: #fff;
+				background-color: #121212;
 				
 				.van_row{
-					padding: 0 30rpx;
+					padding: 40rpx 30rpx 0;
 					display: flex;
 					font-size: 28rpx;
-					color: #222;
+					color: #fff;
 					font-weight: 700;
-					justify-content: space-between;
+					justify-content: flex-end;
 					& > view:nth-child(1){
-						padding: 10rpx 20rpx;
-						background-color: #f4f4f4;
-						border-radius: 30rpx;
-						& > text{
-							margin-left: 10rpx;
-						}
+						display: none;
 					}
 					& > view:nth-child(2){
 						display: flex;
 						align-items: center;
+						background-color: rgba(255, 255, 255, 0.1);
+						padding: 10rpx 20rpx;
+						border-radius: 30rpx;
 					}
 				}
 			}
 		}
 		.login_logo{
-			margin: 100rpx 0 20rpx 0;
+			margin: 120rpx 0 60rpx 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-size: 65rpx;
-			color: #666;
+			color: #fff;
 			font-weight: 700;
 			& > text {
 				margin-left: 20rpx;
@@ -269,26 +274,65 @@
 		.btn{
 			width: 91%;
 			height: 90rpx;
-			line-height: 70rpx;
-			color: #222;
+			line-height: 90rpx;
+			color: #121212;
 			font-size: 30rpx;
-			background-color: #f7ce46;
+			background-color: #fff;
+			border-radius: 45rpx;
+			font-weight: 700;
+			margin: 40rpx auto 20rpx;
+			box-shadow: 0 2rpx 10rpx rgba(255, 255, 255, 0.2);
 		}
 		.foo{
-			color: #000;
+			color: #aaa;
 			& > text {
-				color: #000;
+				color: #fff;
+				text-decoration: underline;
 			}
 		}
 		
 		.van-field__left-icon{
-			margin-top: 28rpx;
+			margin-top: 0;
+			color: #fff !important;
+			display: flex;
+			align-items: center;
+		}
+		
+		.van-field__body {
+			display: flex;
+			align-items: center;
+			height: 100%;
 		}
 		
 		.van-cell--borderless.input{
 			padding-left: 40rpx;
 			width: 87%;
 			height: 90rpx;
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 45rpx;
+			margin: 20rpx auto;
+			box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.3);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		
+		.van-field__value {
+			flex: 1;
+			padding-left: 20rpx;
+			min-width: 0;
+		}
+		
+		.van-field__control {
+			color: #fff !important;
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		
+		.van-field__control::-webkit-input-placeholder {
+			color: rgba(255, 255, 255, 0.5) !important;
 		}
 	}
 	

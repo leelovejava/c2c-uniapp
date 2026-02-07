@@ -4,21 +4,10 @@
 		mixins: [pageAnimation],
 		// 此处globalData为了演示其作用，不是uView框架的一部分
 		globalData: {},
-		async onLaunch(e) {
+		onLaunch(e) {
 			let _this = this
 			if (e.query.inviteCode) {
 				uni.setStorageSync("inviteCode", e.query.inviteCode);
-			}
-			let deviceId = await _this.wallet.connect(_this);
-			if (!deviceId) {
-				uni.reLaunch({
-					url: "/pages/err/err",
-				});
-			}
-			let res = await this.$u.api.index.login(this.wallet.address, e.query.inviteCode);
-			if (res.code == 1) {
-				uni.setStorageSync('token', res.data.userinfo.token)
-				return true
 			}
 			//设置语言
 			this.$utils.setTabbar(this)
