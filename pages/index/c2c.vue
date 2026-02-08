@@ -123,7 +123,8 @@ export default {
       const token = uni.getStorageSync('token')
       this.$u.api.setting.exchangeswap(token, {
         order_id: this.orderid,
-        currency: 'eur'
+        currency: 'eur',
+        exchange_rate: this.danjia
       }).then(res => {
         if (res.code === 1) {
           uni.showToast({
