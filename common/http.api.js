@@ -157,11 +157,17 @@ const install = (Vue, vm) => {
 		getUserAssets: (token, data) => vm.$u.post("/user/getUserAssets", {token, ...data}),
 	}
 	
+	const config = {
+		// 获取客服链接
+		getChatUrl: (data) => vm.$u.get("/config/getChatUrl", data),
+	}
+	
 	vm.$u.api = {
 		common,
 		setting,
 		index,
-		address
+		address,
+		config
 	};
 }
 export default {
