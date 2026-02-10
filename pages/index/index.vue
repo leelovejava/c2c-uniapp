@@ -77,27 +77,27 @@
 					<div class="grid-container" style="padding-top: 50px; cursor: pointer;"
 						@click="$u.route('/pages/my/exchange')">
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/europe.png">
+							<img src="/static/image/fz/europe.png">
 							<span>{{ $t('common.index.regions.europe') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
+							<img src="/static/image/fz/unitedstate.png" :alt="$t('common.index.regions.unitedStates')">
 							<span>{{ $t('common.index.regions.unitedStates') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
+							<img src="/static/image/fz/canada.png" :alt="$t('common.index.regions.canada')">
 							<span>{{ $t('common.index.regions.canada') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
+							<img src="/static/image/fz/singapore.png" :alt="$t('common.index.regions.singapore')">
 							<span>{{ $t('common.index.regions.singapore') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
+							<img src="/static/image/fz/switzerland.png" :alt="$t('common.index.regions.switzerland')">
 							<span>{{ $t('common.index.regions.switzerland') }}</span>
 						</div>
 						<div class="grid-item">
-							<img src="/h5/static/image/fz/unitedkingdom.png"
+							<img src="/static/image/fz/unitedkingdom.png"
 								:alt="$t('common.index.regions.unitedKingdom')"><span>
 								{{ $t('common.index.regions.unitedKingdom') }}</span>
 						</div>
@@ -172,18 +172,15 @@
 				},
 			};
 		},
-		onLoad(options) {
-			uni.hideTabBar();
-			const token = uni.getStorageSync('token')
-			this.$u.api.index.announcement_latest(token).then(res => {
-				this.latest = res.data
-				if (res.data.title) {
-					this.showAnnouncement = true
-				}
+		// #ifdef H5
+		onLaunch: function() {
+			this.show()
+			this.$router.beforeEach((to, from, next) => {
+				this.hide(next)
 			})
-		},
-		onShow() {
-
+			this.$router.afterEach(() => {
+				setTimeout(this.show, 50)
+			})
 		},
 		methods: {
 			// 获取首页公告
@@ -216,7 +213,47 @@
 			// 右上角关闭（也视为已读）
 			closeAnnouncement() {
 				this.confirmAnnouncement()
+			},
+			hide(callback) {
+				const uniPage = document.querySelector('uni-page')
+				if (!uniPage) {
+					callback && callback()
+					return
+				}
+				const classList = uniPage.classList
+				classList.add('animation-before', 'animation-leave')
+				classList.remove('animation-show')
+				setTimeout(() => {
+					classList.remove('animation-before', 'animation-leave')
+					callback && callback()
+				}, 200)
+			},
+			show() {
+				const uniPage = document.querySelector('uni-page')
+				if (!uniPage) return
+				const classList = uniPage.classList
+				classList.add('animation-before')
+				setTimeout(() => {
+					classList.add('animation-enter', 'animation-after', 'animation-show')
+					setTimeout(() => {
+						classList.remove('animation-before', 'animation-after', 'animation-enter')
+					}, 200)
+				}, 20)
 			}
+		},
+		// #endif
+		onLoad(options) {
+			uni.hideTabBar();
+			const token = uni.getStorageSync('token')
+			this.$u.api.index.announcement_latest(token).then(res => {
+				this.latest = res.data
+				if (res.data.title) {
+					this.showAnnouncement = true
+				}
+			})
+		},
+		onShow() {
+
 		},
 		computed: {
 			common() {

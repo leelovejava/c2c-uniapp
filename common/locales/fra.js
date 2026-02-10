@@ -553,29 +553,30 @@ export default {
 		commissionRate: "Taux de commission",
 		dailyOrders: "Commandes hebdomadaires",
 		description: "Déclaration de niveau VIP :\n" +
-			"Vendre de l'USDT permet de gagner sur l'écart, essentiellement en faisant du \"commerce de liquidité\"\n" +
-			"Le niveau VIP limite le nombre de transactions pour empêcher les comptes ordinaires d'occuper l'espace des teneurs de marché professionnels, tout en réduisant les risques de contrôle des risques de la plateforme.\n" +
-			"Anti-blanchiment (AML) et pression réglementaire ! (La raison principale)\n" +
-			"Par conséquent, la plateforme utilise :\n" +
-			"Niveau VIP\n" +
-			"Nombre de transactions\n" +
-			"Seuil de montant de transaction\n" +
-			"pour filtrer les utilisateurs :\n" +
-			"Utilisateurs ordinaires qui échangent occasionnellement de l'argent\n" +
-			"Vendeurs fréquents d'USDT soupçonnés de change/commerçants professionnels fournisseurs de liquidité\n" +
-			"VIP=objets contrôlés par gestion des risques (la plateforme se sent plus rassurée)\n" +
-			"Les utilisateurs VIP possèdent généralement :\n" +
-			"Plus de capital\n" +
-			"KYC plus complet\n" +
-			"Historique de transactions plus long\n" +
-			"\n" +
-			"La logique de la plateforme est :\n" +
-			"La plateforme limite le nombre de ventes d'USDT parce que cela constitue déjà un comportement de change fréquent et de liquidité, nécessitant un niveau supérieur pour répondre aux exigences de\n" +
-			"réglementation et de contrôle des risques, ce n'est pas que la plateforme soit difficile, mais plutôt une conception conforme à la réglementation orientée marché.\n" +
-			"\n" +
-			"Rappel amical :\n" +
-			"Les écarts d'USDT peuvent rapporter de l'argent, mais c'est un \"comportement quasi-financier\". Les restrictions de niveau VIP ne sont pas des seuils, mais la plateforme vous dit :\n" +
-			"\"Vous n'êtes plus un utilisateur ordinaire.\""
+		"Vendre de l'USDT permet de gagner sur l'écart, essentiellement en faisant du \"commerce de liquidité\"\n" +
+		"Le niveau VIP limite le nombre de transactions pour empêcher les comptes ordinaires d'occuper l'espace des teneurs de marché professionnels, tout en réduisant les risques de contrôle des risques de la plateforme.\n" +
+		"Anti-blanchiment (AML) et pression réglementaire ! (La raison principale)\n" +
+		"Par conséquent, la plateforme utilise :\n" +
+		"Niveau VIP\n" +
+		"Nombre de transactions\n" +
+		"Seuil de montant de transaction\n" +
+		"pour filtrer les utilisateurs :\n" +
+		"Utilisateurs ordinaires qui échangent occasionnellement de l'argent\n" +
+		"Vendeurs fréquents d'USDT soupçonnés de change/commerçants professionnels fournisseurs de liquidité\n" +
+		"VIP=objets contrôlés par gestion des risques (la plateforme se sent plus rassurée)\n" +
+		"Les utilisateurs VIP possèdent généralement :\n" +
+		"Plus de capital\n" +
+		"KYC plus complet\n" +
+		"Historique de transactions plus long\n" +
+		"\n" +
+		"La logique de la plateforme est :\n" +
+		"La plateforme limite le nombre de ventes d'USDT parce que cela constitue déjà un comportement de change fréquent et de liquidité, nécessitant un niveau supérieur pour répondre aux exigences de\n" +
+		"réglementation et de contrôle des risques, ce n'est pas que la plateforme soit difficile, mais plutôt une conception conforme à la réglementation orientée marché.\n" +
+		"\n" +
+		"Rappel amical :\n" +
+		"Les écarts d'USDT peuvent rapporter de l'argent, mais c'est un \"comportement quasi-financier\". Les restrictions de niveau VIP ne sont pas des seuils, mais la plateforme vous dit :\n" +
+		"\"Vous n'êtes plus un utilisateur ordinaire.\"\n" +
+		"La montée en niveau VIP est automatiquement examinée par le système et ne peut pas faire l'objet d'une intervention manuelle."
 	},
 	deposit: {
 		withdrawal: "Retrait",

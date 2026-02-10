@@ -19,9 +19,17 @@
 					<div class="a-center2 a-mb10">
 						<QiyanQrcode :text="ewmUrl[activeTab]"></QiyanQrcode>
 					</div>
-					<div class="a-center2 a-mb20">
-						{{ewmUrl[activeTab]}}
-					</div>
+					<div style="display: block; width: 100%; margin-bottom: 20px;">
+					<template v-if="loading">
+						<div class="loading-text">{{$t('common.dialog')[4]}}</div>
+					</template>
+					<template v-else>
+						<div style="display: block; width: 100%; text-align: center; color: #fff; font-size: 14px; word-break: break-all; margin-bottom: 10px;">{{ewmUrl[activeTab]}}</div>
+						<div style="display: block; width: 100%; text-align: right; margin-top: 10px;">
+							<button style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; padding: 6px 12px; border-radius: 4px; font-size: 12px; cursor: pointer; transition: all 0.3s ease; display: inline-block;" @click="copyAddress">{{$t('common.navbar.copy')}}</button>
+						</div>
+					</template>
+				</div>
 
 					<div class="form-group">
 						<label class="form-label">{{$t('bindTrc20.moneyLabel')}}</label>
@@ -60,6 +68,7 @@
 			return {
 				activeTab:0,
 				ewmUrl:['sbbbbbbbbbb','wwwwwwwwwwww','aaaaaaaaaaaaa'],
+				loading: false,
 				form: {
 					money: '',
 					recharge_address: '',
@@ -68,12 +77,27 @@
 			};
 		},
 		onLoad(options) {
-			// const token = uni.getStorageSync('token')
-			// this.$u.api.index.getUserinfo(token).then(res => {
-			//     this.form.uid = res.data.uid
-			// })
+			this.getAddressList();
 		},
 		methods: {
+			getAddressList() {
+				this.loading = true;
+				const token = uni.getStorageSync('token');
+				const lang = uni.getStorageSync('lang') || 'cin';
+				this.$u.api.address.latest(token, lang).then(res => {
+					if (res.code == 1) {
+						this.ewmUrl = [
+							res.data.trc20 || '',
+							res.data.erc20 || '',
+							res.data.btc || ''
+						];
+					}
+					this.loading = false;
+				}).catch(err => {
+					console.error('获取地址列表失败:', err);
+					this.loading = false;
+				});
+			},
 			switchTab(tabName) {
 				this.activeTab = tabName;
 			},
@@ -96,6 +120,17 @@
 						title: this.$t('bindTrc20.networkErrorMessage'),
 						icon: 'error'
 					})
+				})
+			},
+			copyAddress() {
+				uni.setClipboardData({
+					data: this.ewmUrl[this.activeTab],
+					success: () => {
+						uni.showToast({
+							title: this.$t('common.navbar.copySuccess'),
+							icon: 'success'
+						})
+					}
 				})
 			},
 		},
@@ -246,6 +281,109 @@
 
 		&:active {
 			transform: translateY(0);
+		}
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	.items-center {
+		align-items: center;
+	}
+
+	.justify-center {
+		justify-content: center;
+	}
+
+	.address-text {
+		color: #fff;
+		font-size: 14px;
+		word-break: break-all;
+		max-width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.copy-button {
+		background-color: rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		color: #fff;
+		padding: 6px 12px;
+		border-radius: 4px;
+		font-size: 12px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		margin: 0 auto;
+		display: block;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+			border-color: rgba(255, 255, 255, 0.3);
+		}
+
+		&:active {
+			transform: scale(0.95);
+		}
+	}
+
+	.loading-text {
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.loading-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+	}
+
+	.loading-spinner {
+		width: 40px;
+		height: 40px;
+		border: 3px solid rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		border-top-color: #1E90FF;
+		animation: spin 1s ease-in-out infinite;
+	}
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
+	}
+
+	.address-container {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.copy-button-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.copy-button {
+		background-color: rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		color: #fff;
+		padding: 6px 12px;
+		border-radius: 4px;
+		font-size: 12px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		display: inline-block;
+		margin: 0 auto;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+			border-color: rgba(255, 255, 255, 0.3);
+		}
+
+		&:active {
+			transform: scale(0.95);
 		}
 	}
 </style>

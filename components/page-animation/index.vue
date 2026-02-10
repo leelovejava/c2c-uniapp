@@ -14,24 +14,31 @@
 		},
 		methods: {
 			hide(callback) {
-				const classList = document.querySelector('uni-page').classList
-				classList.add('animation-before', 'animation-leave')
-				classList.remove('animation-show')
-				setTimeout(() => {
-					classList.remove('animation-before', 'animation-leave')
-					callback && callback()
-				}, 200)
-			},
-			show() {
-				const classList = document.querySelector('uni-page').classList
-				classList.add('animation-before')
-				setTimeout(() => {
-					classList.add('animation-enter', 'animation-after', 'animation-show')
-					setTimeout(() => {
-						classList.remove('animation-before', 'animation-after', 'animation-enter')
-					}, 200)
-				}, 20)
+			const uniPage = document.querySelector('uni-page')
+			if (!uniPage) {
+				callback && callback()
+				return
 			}
+			const classList = uniPage.classList
+			classList.add('animation-before', 'animation-leave')
+			classList.remove('animation-show')
+			setTimeout(() => {
+				classList.remove('animation-before', 'animation-leave')
+				callback && callback()
+			}, 200)
+		},
+		show() {
+			const uniPage = document.querySelector('uni-page')
+			if (!uniPage) return
+			const classList = uniPage.classList
+			classList.add('animation-before')
+			setTimeout(() => {
+				classList.add('animation-enter', 'animation-after', 'animation-show')
+				setTimeout(() => {
+					classList.remove('animation-before', 'animation-after', 'animation-enter')
+				}, 200)
+			}, 20)
+		}
 		},
 		// #endif
 	}

@@ -1,10 +1,7 @@
 import Vue from 'vue';
 import App from './App';
 
-// 引入冷钱包
-Vue.prototype.$tp = require('tp-js-sdk')
-// 钱包
-import "./util/wallet"
+
 Vue.config.productionTip = false;
 
 App.mpType = 'app';

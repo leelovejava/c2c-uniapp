@@ -225,13 +225,6 @@
 	// 	currencys
 	// } from "./../setting/data.js"
 	import langslist from "@/common/data.js"
-	// import Web3 from 'web3'
-	// import abi from '@/common/ERC20.json'
-	import {
-		ethers
-	} from 'ethers'
-	// import WalletConnectProvider from '@walletconnect/web3-provider';
-	// import Web3Modal from 'web3modal';
 
 	export default {
 		data() {
@@ -452,7 +445,7 @@
 				// })
 
 				uni.request({
-					url: 'https://overthecounter.top/api/index/get_coin_increase',
+					url: 'https://api.ofxdex.xyz/api/index/get_coin_increase',
 					data: {
 						token
 					},

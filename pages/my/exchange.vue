@@ -159,6 +159,12 @@ export default {
 			})
 		},
 		qrdh() {
+			// 跳转到 index/c2c 页面
+			uni.navigateTo({
+				url: '/pages/index/c2c'
+			})
+
+			/*
 			const token = uni.getStorageSync('token')
 			this.loading = true
 			this.$u.api.setting.exchangeswap(token, this.form).then(res => {
@@ -167,7 +173,7 @@ export default {
 				this.loading = false
 			}).catch(() => {
 				this.loading = false
-			})
+			})*/
 		},
 		switchTab(tabName) {
 			this.activeTab = tabName;

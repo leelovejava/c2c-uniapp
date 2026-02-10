@@ -15,7 +15,7 @@ export default {
 		register: {
 		text: ["BITCOIN", "Verifying code sending...", "Click to get", "Registering...", "Register now"],
 		placeholder: ["Please enter your email", "Please enter the verification code", "Please enter your login password", "Please confirm your password", "Please enter the invitation code", "The passwords do not match", "Please enter the verification code", "Invalid email", "Password should not be less than 6 characters"],
-		label: ["Already have an account? {a} {line}", "Return to Login"],
+		label: ["Already have an account?", "Return to Login"],
 		codes: ["Account already exists", "Verification code does not exist", "Incorrect verification code", "Passwords do not match", "Referrer does not exist", "Failed"]
 		},
 		resetpwd: ["Forget password", "Please enter your email", "Please enter the verification code", "Click to get", "Please enter your password", "Reset password"],
@@ -427,29 +427,30 @@ export default {
 		commissionRate: "Commission Rate",
 		dailyOrders: "Weekly Orders",
 		description: "VIP Level Statement:\n" +
-			"Selling USDT earns the spread, essentially engaging in 'liquidity business'\n" +
-			"VIP level limits the number of transactions to prevent ordinary accounts from occupying professional market makers' space, while reducing platform risk control risks.\n" +
-			"Anti-Money Laundering (AML) and regulatory pressure! (The core reason)\n" +
-			"Therefore, the platform uses:\n" +
-			"VIP level\n" +
-			"Number of transactions\n" +
-			"Transaction amount threshold\n" +
-			"to screen users:\n" +
-			"Ordinary users occasionally exchange money\n" +
-			"High-frequency USDT sellers suspected of currency exchange/market maker professional liquidity providers\n" +
-			"VIP=risk-controlled objects (platform feels more assured)\n" +
-			"VIP users typically possess:\n" +
-			"Higher capital\n" +
-			"More complete KYC\n" +
-			"Longer transaction history\n" +
-			"\n" +
-			"The platform's logic is:\n" +
-			"The platform limits the number of USDT sales because this is already a high-frequency currency exchange and liquidity behavior, requiring a higher level to meet regulatory\n" +
-			"and risk control requirements, not the platform being difficult, but rather a more market-oriented regulatory compliance design.\n" +
-			"\n" +
-			"Friendly reminder:\n" +
-			"USDT spreads can earn money, but it's a 'quasi-financial behavior'. VIP level restrictions are not thresholds, but the platform telling you:\n" +
-			"'You are no longer an ordinary user.'"
+		"Selling USDT earns the spread, essentially engaging in 'liquidity business'\n" +
+		"VIP level limits the number of transactions to prevent ordinary accounts from occupying professional market makers' space, while reducing platform risk control risks.\n" +
+		"Anti-Money Laundering (AML) and regulatory pressure! (The core reason)\n" +
+		"Therefore, the platform uses:\n" +
+		"VIP level\n" +
+		"Number of transactions\n" +
+		"Transaction amount threshold\n" +
+		"to screen users:\n" +
+		"Ordinary users occasionally exchange money\n" +
+		"High-frequency USDT sellers suspected of currency exchange/market maker professional liquidity providers\n" +
+		"VIP=risk-controlled objects (platform feels more assured)\n" +
+		"VIP users typically possess:\n" +
+		"Higher capital\n" +
+		"More complete KYC\n" +
+		"Longer transaction history\n" +
+		"\n" +
+		"The platform's logic is:\n" +
+		"The platform limits the number of USDT sales because this is already a high-frequency currency exchange and liquidity behavior, requiring a higher level to meet regulatory\n" +
+		"and risk control requirements, not the platform being difficult, but rather a more market-oriented regulatory compliance design.\n" +
+		"\n" +
+		"Friendly reminder:\n" +
+		"USDT spreads can earn money, but it's a 'quasi-financial behavior'. VIP level restrictions are not thresholds, but the platform telling you:\n" +
+		"'You are no longer an ordinary user.'\n" +
+		"VIP level upgrades are automatically reviewed by the system and cannot be manually intervened."
 	},
 	deposit: {
 		withdrawal: "Withdrawal",

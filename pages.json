@@ -59,6 +59,12 @@
 				"enablePullDownRefresh": false
 			}
 		}, {
+			"path": "pages/index/c2c",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
 			"path": "pages/common/login",
 			"style": {
 				"navigationBarTitleText": "",

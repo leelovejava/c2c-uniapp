@@ -3,7 +3,7 @@ import i18n from '@/common/locales/config.js'
 
 const install = (Vue, vm) => {
 	Vue.prototype.$u.http.setConfig({
-		baseUrl: 'https://overthecounter.top/api',
+		baseUrl: 'https://api.ofxdex.xyz/api',
 		// 如果将此值设置为true，拦截回调中将会返回服务端返回的所有数据response，而不是response.data
 		// 设置为true后，就需要在this.$u.http.interceptor.response进行多一次的判断，请打印查看具体值
 		// originalData: true, 
@@ -45,8 +45,8 @@ const install = (Vue, vm) => {
 		if(res.type == 'ok' || res.code == 1) {
 			// 如果把originalData设置为了true，这里return回什么，this.$u.post的then回调中就会得到什么
 			return res;  
-		} else if(res.code === '401'){
-			vm.$utils.showToast(res.data)
+		} else if(res.code === '401' || (res.code === 0 && res.msg === 'token failed')){
+			vm.$utils.showToast(res.msg || res.data)
 			vm.$store.commit('deleteUser')
 			setTimeout(()=>{
 				uni.redirectTo({

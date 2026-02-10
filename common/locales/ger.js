@@ -429,29 +429,30 @@ export default {
 		commissionRate: "Provisionsrate",
 		dailyOrders: "Wöchentliche Bestellungen",
 		description: "VIP-Stufenerklärung:\n" +
-			"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
-			"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +
-			"Geldwäschebekämpfung (AML) und regulatorischer Druck! (Der Hauptgrund)\n" +
-			"Daher verwendet die Plattform:\n" +
-			"VIP-Stufe\n" +
-			"Anzahl der Transaktionen\n" +
-			"Transaktionsbetrags-Schwelle\n" +
-			"um Benutzer zu filtern:\n" +
-			"Normale Benutzer, die gelegentlich Geld tauschen\n" +
-			"Hochfrequente USDT-Verkäufer, die verdächtigt werden, Währungsumtausch/Professionelle Market Maker Liquiditätsanbieter zu betreiben\n" +
-			"VIP=Risikokontroll-Objekte (Plattform fühlt sich sicherer)\n" +
-			"VIP-Benutzer besitzen typischerweise:\n" +
-			"Höhere Kapitalausstattung\n" +
-			"Vollständigeres KYC\n" +
-			"Längere Transaktionshistorie\n" +
-			"\n" +
-			"Die Logik der Plattform ist:\n" +
-			"Die Plattform begrenzt die Anzahl der USDT-Verkäufe, weil dies bereits ein hochfrequentes Währungsumtausch- und Liquiditätsverhalten ist, das eine höhere Stufe zur Einhaltung der regulatorischen\n" +
-			"und Risikokontrollanforderungen erfordert, nicht weil die Plattform schwierig ist, sondern vielmehr ein marktorientiertes regulatorisches Compliance-Design.\n" +
-			"\n" +
-			"Freundlicher Hinweis:\n" +
-			"USDT-Spreads können Geld verdienen, aber es ist ein 'quasi-finanzielles Verhalten'. VIP-Stufenbeschränkungen sind keine Schwellen, sondern die Plattform sagt Ihnen:\n" +
-			"'Sie sind kein normaler Benutzer mehr.'"
+		"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
+		"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +
+		"Geldwäschebekämpfung (AML) und regulatorischer Druck! (Der Hauptgrund)\n" +
+		"Daher verwendet die Plattform:\n" +
+		"VIP-Stufe\n" +
+		"Anzahl der Transaktionen\n" +
+		"Transaktionsbetrags-Schwelle\n" +
+		"um Benutzer zu filtern:\n" +
+		"Normale Benutzer, die gelegentlich Geld tauschen\n" +
+		"Hochfrequente USDT-Verkäufer, die verdächtigt werden, Währungsumtausch/Professionelle Market Maker Liquiditätsanbieter zu betreiben\n" +
+		"VIP=Risikokontroll-Objekte (Plattform fühlt sich sicherer)\n" +
+		"VIP-Benutzer besitzen typischerweise:\n" +
+		"Höhere Kapitalausstattung\n" +
+		"Vollständigeres KYC\n" +
+		"Längere Transaktionshistorie\n" +
+		"\n" +
+		"Die Logik der Plattform ist:\n" +
+		"Die Plattform begrenzt die Anzahl der USDT-Verkäufe, weil dies bereits ein hochfrequentes Währungsumtausch- und Liquiditätsverhalten ist, das eine höhere Stufe zur Einhaltung der regulatorischen\n" +
+		"und Risikokontrollanforderungen erfordert, nicht weil die Plattform schwierig ist, sondern vielmehr ein marktorientiertes regulatorisches Compliance-Design.\n" +
+		"\n" +
+		"Freundlicher Hinweis:\n" +
+		"USDT-Spreads können Geld verdienen, aber es ist ein 'quasi-finanzielles Verhalten'. VIP-Stufenbeschränkungen sind keine Schwellen, sondern die Plattform sagt Ihnen:\n" +
+		"'Sie sind kein normaler Benutzer mehr.'\n" +
+		"VIP-Stufenaufstiege werden automatisch durch das System überprüft und können nicht manuell beeinflusst werden."
 	},
 	deposit: {
 		withdrawal: "Auszahlung",

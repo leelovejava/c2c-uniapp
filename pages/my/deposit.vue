@@ -130,7 +130,7 @@ export default {
   onLoad(options) {
     this.getUserInfo();
     this.getWithdrawalHistory();
-    this.changeCurrency() //可提现的金额
+    ///this.changeCurrency() //可提现的金额
   },
   onShow() {
 
@@ -155,6 +155,7 @@ export default {
       const token = uni.getStorageSync('token');
       this.$u.api.index.getUserinfo(token).then(res => {
         this.userinfo = res.data;
+        this.changeCurrency();
       });
     },
     getWithdrawalHistory() {
