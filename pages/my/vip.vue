@@ -25,12 +25,8 @@
             </span>
           </h3>
 
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-            <div style="text-align: left;">
-              <h4>{{ $t('vip.dailyOrders') }}: {{ item.daily_orders }}</h4>
-            </div>
-
-            <div style="text-align: right;">
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px;">
+            <div style="text-align: center;">
               <img
                   :src="`static/image/fz/vip${item.vip_level}.png`"
                   :alt="`VIP ${item.vip_level}`"
@@ -38,14 +34,6 @@
               >
             </div>
           </div>
-        </div>
-        <!-- VIP 等级说明（通用规则） -->
-        <div class="info-card vip-description"
-             style="max-width: 768px;margin: 0 auto 40px auto;border: 1px solid #ddd;border-radius: 8px;padding: 20px;">
-
-          <view style="text-align: left; white-space: pre-line; line-height: 1.7; font-size: 14px;">
-            {{ $t('vip.description') }}
-          </view>
         </div>
       </div>
 
@@ -122,14 +110,5 @@ export default {
     margin: 0 0 5px 0;
     font-size: 18px;
   }
-}
-
-.vip-description {
-  background-color: rgba(0, 0, 0, 0.35);
-  /* 比 VIP 卡片浅 */
-  border: 1px dashed rgba(255, 255, 255, 0.25);
-  /* 规则感 */
-  font-size: 13px;
-  color: #e0e0e0;
 }
 </style>
