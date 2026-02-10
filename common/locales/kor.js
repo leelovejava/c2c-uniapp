@@ -320,7 +320,8 @@ export default {
 				orderType: "주문 유형",
 				exchangeCurrency: "환전 통화",
 				exchangeEarnings: "환전 수익",
-				expectedReturn: "예상 수익"
+				expectedReturn: "예상 수익",
+				exchangeRate: "단가"
 			}
 		}
 	},

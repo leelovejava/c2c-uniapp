@@ -458,7 +458,8 @@ export default {
 				orderType: "Type de commande",
 				exchangeCurrency: "Monnaie d'échange",
 				exchangeEarnings: "Gains d'échange",
-				expectedReturn: "Retour attendu"
+				expectedReturn: "Retour attendu",
+				exchangeRate: "unité"
 			}
 		},
 		navbar: {

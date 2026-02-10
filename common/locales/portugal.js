@@ -300,7 +300,8 @@ bind: [
 				orderType: "Tipo de Pedido",
 				exchangeCurrency: "Moeda Trocada",
 				exchangeEarnings: "Ganhos da Troca",
-				expectedReturn: "Retorno Esperado"
+				expectedReturn: "Retorno Esperado",
+				exchangeRate: "unidade"
 			}
 		}
 	},

@@ -334,7 +334,8 @@ export default {
 				orderType: "Bestelltyp",
 				exchangeCurrency: "Tauschwährung",
 				exchangeEarnings: "Tauschgewinne",
-				expectedReturn: "Erwartete Rendite"
+				expectedReturn: "Erwartete Rendite",
+				exchangeRate: "Einheit"
 			}
 		},
 		navbar: {

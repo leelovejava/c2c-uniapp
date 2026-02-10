@@ -297,7 +297,8 @@ export default {
 				orderType: "Tipo di ordine",
 				exchangeCurrency: "Valuta scambiata",
 				exchangeEarnings: "Guadagno dallo scambio",
-				expectedReturn: "Ritorno previsto"
+				expectedReturn: "Ritorno previsto",
+				exchangeRate: "unità"
 			}
 		}
 	},

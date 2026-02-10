@@ -511,7 +511,8 @@ export default {
 			orderType: "Besteltype",
 			exchangeCurrency: "Wisselvaluta",
 			exchangeEarnings: "Wisselwinst",
-			expectedReturn: "Verwacht rendement"
+			expectedReturn: "Verwacht rendement",
+			exchangeRate: "eenheid"
 		}
 	},
 	deposit: {

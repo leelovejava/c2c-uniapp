@@ -334,7 +334,8 @@ export default {
 				orderType: "订单类型",
 				exchangeCurrency: "兑换货币",
 				exchangeEarnings: "兑换收益",
-				expectedReturn: "预期回报"
+				expectedReturn: "预期回报",
+				exchangeRate: "单价"
 			}
 		},
 		navbar: {

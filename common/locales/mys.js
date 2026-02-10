@@ -444,7 +444,8 @@ export default {
 			orderType: "Jenis Pesanan",
 			exchangeCurrency: "Mata Wang Pertukaran",
 			exchangeEarnings: "Pendapatan Pertukaran",
-			expectedReturn: "Pulangan Yang Dijangka"
+			expectedReturn: "Pulangan Yang Dijangka",
+			exchangeRate: "unit"
 		},
 		vip: {
 			title: "Membership Level",

@@ -317,7 +317,8 @@ export default {
 				orderType: "Тип заказа",
 				exchangeCurrency: "Обменная валюта",
 				exchangeEarnings: "Доход от обмена",
-				expectedReturn: "Ожидаемый возврат"
+				expectedReturn: "Ожидаемый возврат",
+				exchangeRate: "единица"
 			}
 		},
 		navbar: {

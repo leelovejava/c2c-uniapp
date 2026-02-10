@@ -366,7 +366,8 @@ export default {
 			orderType: "ประเภทคำสั่งซื้อ",
 			exchangeCurrency: "สกุลเงินที่แลกเปลี่ยน",
 			exchangeEarnings: "รายได้จากการแลกเปลี่ยน",
-			expectedReturn: "ผลตอบแทนที่คาดหวัง"
+			expectedReturn: "ผลตอบแทนที่คาดหวัง",
+			exchangeRate: "หน่วย"
 		}
 	},
 	faqs: {

@@ -334,7 +334,8 @@ export default {
 				orderType: "注文タイプ",
 				exchangeCurrency: "換金通貨",
 				exchangeEarnings: "換金収益",
-				expectedReturn: "期待収益"
+				expectedReturn: "期待収益",
+				exchangeRate: "単価"
 			}
 		},
 		navbar: {

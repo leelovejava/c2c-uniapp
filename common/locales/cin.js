@@ -356,7 +356,8 @@ export default {
 				"orderType": "訂單類型",
 				"exchangeCurrency": "兌換貨幣",
 				"exchangeEarnings": "兌換收益",
-				"expectedReturn": "預期回報"
+				"expectedReturn": "預期回報",
+				"exchangeRate": "單價"
 			}
 		},
 		// 实名认证相关国际化

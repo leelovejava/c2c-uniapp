@@ -367,7 +367,8 @@ export default {
 				orderType: "Loại đơn hàng",
 				exchangeCurrency: "Tiền tệ đã trao đổi",
 				exchangeEarnings: "Thu nhập từ trao đổi",
-				expectedReturn: "Lợi nhuận kỳ vọng"
+				expectedReturn: "Lợi nhuận kỳ vọng",
+				exchangeRate: "đơn vị"
 			}
 		}
 	},

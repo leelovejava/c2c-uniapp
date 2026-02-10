@@ -374,7 +374,8 @@ export default {
 			orderType: "आदेश प्रकार",
 			exchangeCurrency: "विनिमय मुद्रा",
 			exchangeEarnings: "विनिमय लाभ",
-			expectedReturn: "अपेक्षित रिटर्न"
+			expectedReturn: "अपेक्षित रिटर्न",
+			exchangeRate: "इकाई"
 		}
 	},
 	vip: {

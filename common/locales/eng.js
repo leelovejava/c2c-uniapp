@@ -332,7 +332,8 @@ export default {
 			orderType: "Order Type",
 			exchangeCurrency: "Exchange Currency",
 			exchangeEarnings: "Exchange Earnings",
-			expectedReturn: "Expected Return"
+			expectedReturn: "Expected Return",
+			exchangeRate: "Unit"
 		}
 	},
 	navbar: {
