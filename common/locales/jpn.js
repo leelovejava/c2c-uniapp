@@ -364,12 +364,6 @@ export default {
 			title: "お問い合わせ",
 			serviceTime: "サービス時間：毎日午前10時～午後11時",
 			buttonText: "OFXサポートチーム"
-		},
-		modal: {
-			tipTitle: "ヒント",
-			confirmDelete: "このアイテムを削除してもよろしいですか？",
-			cancel: "キャンセル",
-			confirm: "確認"
 		}
 	},
 	faqs: {

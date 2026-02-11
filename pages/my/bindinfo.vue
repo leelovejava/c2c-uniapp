@@ -8,65 +8,89 @@
         <div class="auth-card">
           <!-- 卡片标题和描述 -->
           <view class="auth-header">
-            <view class="auth-title">{{ (common.certification && common.certification.title) || 'Apply for Real Name Authentication' }}</view>
-            <view class="auth-desc">{{ (common.certification && common.certification.subtitle) || 'Please fill in your real information to complete the authentication' }}</view>
+            <view class="auth-title">{{ $t('common.certification.title') }}</view>
+            <view class="auth-desc">{{ $t('common.certification.subtitle') }}</view>
           </view>
           
           <!-- 状态标签 -->
-          <view v-if="authStatus === 1" class="auth-status success">{{ (common.certification && common.certification.statusSuccess) || 'Review Successful' }}</view>
-          <view v-else-if="authStatus === 2" class="auth-status pending">{{ (common.certification && common.certification.statusPending) || 'Under Review' }}</view>
-          
           <!-- 已实名状态 -->
           <view v-if="authStatus === 1" class="auth-success-content">
-            <view class="auth-icon success">
-              <u-icon name="checkmark-circle" color="#4CAF50" size="80rpx"></u-icon>
+            <view class="auth-status success">
+              {{ $t('common.certification.statusSuccess') }}
             </view>
-            <view class="auth-result">{{ (common.certification && common.certification.successTitle) || 'You have completed real name authentication' }}</view>
-            <view class="auth-note">{{ (common.certification && common.certification.successSubtitle) || 'No need to resubmit authentication information' }}</view>
+
+            <view class="success-row">
+              <view class="success-check">
+                <u-icon name="checkmark" color="#35d06f" size="54"></u-icon>
+              </view>
+
+              <view class="success-text">
+                <view class="auth-result">
+                  {{ $t('common.certification.successTitle') }}
+                </view>
+                <view class="auth-note">
+                  {{ $t('common.certification.successSubtitle') }}
+                </view>
+              </view>
+            </view>
           </view>
 
           <!-- 审核中状态 -->
           <view v-else-if="authStatus === 2" class="auth-pending-content">
-            <view class="auth-icon pending">
-              <u-icon name="time" color="#FFC107" size="80rpx"></u-icon>
+            <view class="auth-status pending">
+              {{ $t('common.certification.statusPending') }}
             </view>
-            <view class="auth-result">{{ (common.certification && common.certification.statusPending) || 'Your application is being reviewed' }}</view>
-            <view class="auth-note">{{ (common.certification && common.certification.subtitle) || 'Please wait patiently for review results' }}</view>
+
+            <view class="success-row">
+              <view class="success-check pending">
+                <u-icon name="time" color="#FFC107" size="54"></u-icon>
+              </view>
+
+              <view class="success-text">
+                <view class="auth-result">
+                  {{ $t('common.certification.pendingTitle') }}
+                </view>
+                <view class="auth-note">
+                  {{ $t('common.certification.pendingSubtitle') }}
+                </view>
+              </view>
+            </view>
           </view>
+
 
           <!-- 未实名状态 - 表单 -->
           <view v-else class="auth-form">
             <!-- 真实姓名输入 -->
             <div class="form-item">
-              <label>{{ (common.certification && common.certification.nameLabel) || 'Real Name' }}</label>
-              <input type="text" v-model="realname" :placeholder="(common.certification && common.certification.namePlaceholder) || 'Please enter your real name'"
+              <label>{{ $t('common.certification.nameLabel') }}</label>
+              <input type="text" v-model="realname" :placeholder="$t('common.certification.namePlaceholder')"
                      class="form-input">
             </div>
 
             <!-- 邮箱输入 -->
             <div class="form-item">
-              <label>{{ (common.certification && common.certification.emailLabel) || 'Email Address' }}</label>
-              <input type="email" v-model="email" :placeholder="(common.certification && common.certification.emailPlaceholder) || 'Please enter your email address'"
+              <label>{{ $t('common.certification.emailLabel') }}</label>
+              <input type="email" v-model="email" :placeholder="$t('common.certification.emailPlaceholder')"
                      class="form-input">
             </div>
 
             <!-- 手机号输入 -->
             <div class="form-item">
-              <label>{{ (common.certification && common.certification.phoneLabel) || 'Phone Number' }}</label>
-              <input type="tel" v-model="phone" :placeholder="(common.certification && common.certification.phonePlaceholder) || 'Please enter your phone number'"
+              <label>{{ $t('common.certification.phoneLabel') }}</label>
+              <input type="tel" v-model="phone" :placeholder="$t('common.certification.phonePlaceholder')"
                      class="form-input">
             </div>
 
             <!-- 身份证正面上传 -->
             <div class="form-item">
-              <label class="upload-label">{{ (common.bindAccount && common.bindAccount.text && common.bindAccount.text[9]) || 'ID Card Front' }}</label>
+              <label class="upload-label">{{ $t('common.certification.idCardFrontLabel') }}</label>
               <div class="upload-area">
                 <u-upload 
                   :fileList="fileList" 
                   @on-success="okopen" 
                   multiple 
                   :maxCount="1"
-                  :uploadText="(common.bindAccount && common.bindAccount.placeholder && common.bindAccount.placeholder[1]) || 'Please upload ID card front photo'" 
+                  :uploadText="$t('common.certification.idCardFrontPlaceholder')" 
                   width="50vw"
                   action="https://api.ofxdex.xyz/api/index/upload"
                   :form-data="{ token: token }"
@@ -76,14 +100,14 @@
 
             <!-- 身份证反面上传 -->
             <div class="form-item">
-              <label class="upload-label">{{ (common.bindAccount && common.bindAccount.text && common.bindAccount.text[10]) || 'ID Card Back' }}</label>
+              <label class="upload-label">{{ $t('common.certification.idCardBackLabel') }}</label>
               <div class="upload-area">
                 <u-upload 
                   :fileList="fileList1" 
                   @on-success="okopen1" 
                   multiple 
                   :maxCount="1"
-                  :uploadText="(common.bindAccount && common.bindAccount.placeholder && common.bindAccount.placeholder[2]) || 'Please upload ID card back photo'" 
+                  :uploadText="$t('common.certification.idCardBackPlaceholder')" 
                   width="50vw"
                   action="https://api.ofxdex.xyz/api/index/upload"
                   :form-data="{ token: token }"
@@ -99,7 +123,7 @@
                 class="submit-button"
                 :disabled="!realname || !email || !phone || !fileurl || !fileurl1"
             >
-              {{ (common.certification && common.certification.submitButton) || 'Submit Authentication' }}
+              {{ $t('common.certification.submitButton') }}
             </button>
           </div>
         </div>
@@ -146,33 +170,33 @@ export default {
     },
     // 上传成功回调
     okopen(data) {
-      this.$utils.showToast(this.common.common3[0])
+      this.$utils.showToast(this.$t('common.upload')[2])
       this.fileurl = data.data.url
     },
     okopen1(data) {
-      this.$utils.showToast(this.common.common3[0])
+      this.$utils.showToast(this.$t('common.upload')[2])
       this.fileurl1 = data.data.url
     },
     // 提交实名信息
     tijiao() {
       if (!this.realname) {
-        this.$utils.showToast(this.common.certification.namePlaceholder || 'Please enter your real name')
+        this.$utils.showToast(this.$t('common.certification.namePlaceholder'))
         return
       }
       if (!this.email) {
-        this.$utils.showToast(this.common.certification.emailPlaceholder || 'Please enter your email address')
+        this.$utils.showToast(this.$t('common.certification.emailPlaceholder'))
         return
       }
       if (!this.phone) {
-        this.$utils.showToast(this.common.certification.phonePlaceholder || 'Please enter your phone number')
+        this.$utils.showToast(this.$t('common.certification.phonePlaceholder'))
         return
       }
       if (!this.fileurl) {
-        this.$utils.showToast('Please upload ID card front photo')
+        this.$utils.showToast(this.$t('common.certification.idCardFrontPlaceholder'))
         return
       }
       if (!this.fileurl1) {
-        this.$utils.showToast('Please upload ID card back photo')
+        this.$utils.showToast(this.$t('common.certification.idCardBackPlaceholder'))
         return
       }
 
@@ -199,11 +223,6 @@ export default {
         url: '/pages/index/index'
       })
     }
-  },
-  computed: {
-    common() {
-      return this.$t("common")
-    }
   }
 }
 </script>
@@ -222,10 +241,18 @@ export default {
 /* 认证卡片样式 - 参考界面风格 */
 .auth-card {
   width: 100%;
-  max-width: 680rpx;   /* 你可以在 620~720rpx 之间微调 */
+  max-width: 680rpx;
   box-sizing: border-box;
-  overflow: hidden;    /* 防止阴影/背景溢出导致边缘怪异 */
+  border-radius: 22rpx;
+  padding: 54rpx 40rpx 44rpx;
+
+  background: rgba(20, 26, 40, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16rpx 40rpx rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
 }
+
 
 /* 卡片标题和描述 */
 .auth-header {
@@ -404,6 +431,70 @@ export default {
   color: #ffffff;
   opacity: 0.6;
   box-shadow: 0 10rpx 24rpx rgba(43, 124, 255, 0.25);
+}
+
+/* 成功区：不要再居中一列 */
+.auth-success-content{
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+
+/* 绿色胶囊：靠左 + 扁平一点 */
+.auth-status.success{
+  display: inline-flex;
+  align-items: center;
+  padding: 14rpx 34rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+
+  background: rgba(46, 204, 113, 0.18);
+  border: 1px solid rgba(46, 204, 113, 0.45);
+  color: #35d06f;
+
+  margin: 18rpx 0 26rpx;
+}
+
+/* 左勾 + 右文案 */
+.success-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18rpx;
+}
+
+/* 左侧圆勾（大圈） */
+.success-check{
+  margin-top: 18rpx;
+}
+
+/* 右侧文本 */
+.success-text .auth-result{
+  text-align: center;
+}
+
+.success-text .auth-note{
+  text-align: center;
+}
+
+.success-check.pending{
+  border-color: rgba(255,193,7,0.65);
+  background: rgba(255,193,7,0.10);
+}
+
+.auth-header{
+  text-align: center;
+}
+.auth-title{
+  text-align: center;
+  font-size: 38rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+}
+.auth-desc{
+  text-align: center;
 }
 
 </style>

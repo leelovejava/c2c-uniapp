@@ -264,13 +264,22 @@ export default {
 				confirmExchange: "환전 확인",
 				records: "기록",
 				selectCurrency: "통화 선택"
+			},
+			modal: {
+				steps: [
+					"주문 매칭",
+					"처리 중",
+					"환전 완료"
+				],
+				percentage: "(100%)",
+				exchangedCurrency: "환전 통화",
+				exchangedRate: "환율",
+				exchangedAmount: "환전 금액",
+				exchangeEarnings: "환전 수익",
+				orderType: "주문 유형",
+				expectedReturn: "예상 수익",
+				close: "닫기"
 			}
-		},
-		modal: {
-			tipTitle: "팁",
-			confirmDelete: "이 항목을 삭제하시겠습니까？",
-			cancel: "취소",
-			confirm: "확인"
 		},
 		navbar: {
 			inviteCode: "초대 코드",
@@ -412,6 +421,12 @@ export default {
 			successMessage: "충전 제출 성공",
 			failMessage: "제출 실패",
 			networkErrorMessage: "네트워크 오류"
+		},
+		modal: {
+			tipTitle: "팁",
+			confirmDelete: "이 항목을 삭제하시겠습니까?",
+			cancel: "취소",
+			confirm: "확인"
 		},
 
 	bankCardList: {

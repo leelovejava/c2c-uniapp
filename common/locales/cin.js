@@ -377,13 +377,7 @@ export default {
 			"statusPending": "審核中",
 			"statusSuccess": "審核成功",
 			"statusFailed": "審核失敗"
-	},
-	"modal": {
-		"tipTitle": "提示",
-		"confirmDelete": "您確定要刪除此項嗎？",
-		"cancel": "取消",
-		"confirm": "確定"
-	}
+		}
 	},
 	"faqs": {
 		"pageHeader": {

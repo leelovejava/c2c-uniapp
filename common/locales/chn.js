@@ -372,7 +372,7 @@ export default {
 			subtitle: "请填写您的真实信息以完成认证",
 			successTitle: "您已完成实名认证",
 			successSubtitle: "无需重复提交认证信息",
-		 nameLabel: "真实姓名",
+		    nameLabel: "真实姓名",
 			emailLabel: "邮箱地址",
 			phoneLabel: "手机号码",
 			namePlaceholder: "请输入您的真实姓名",
