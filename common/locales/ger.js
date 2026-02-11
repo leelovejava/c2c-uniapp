@@ -364,6 +364,12 @@ export default {
 			title: "Kontaktieren Sie uns",
 			serviceTime: "Servicezeiten: Täglich von 10:00 bis 23:00 Uhr",
 			buttonText: "OFX-Support-Team"
+		},
+		modal: {
+			tipTitle: "Tipp",
+			confirmDelete: "Möchten Sie diesen Eintrag wirklich löschen?",
+			cancel: "Abbrechen",
+			confirm: "Bestätigen"
 		}
 	},
 	faqs: {
@@ -501,10 +507,8 @@ export default {
 		formTitle: "Aufladeinformationen",
 		moneyLabel: "Aufladebetrag",
 		moneyPlaceholder: "Bitte geben Sie den Aufladebetrag ein",
-		addressLabel: "Aufladeadresse",
-		addressPlaceholder: "Bitte geben Sie die Aufladeadresse ein",
-		hashLabel: "Auflade-Hash",
-		hashPlaceholder: "Bitte geben Sie den Auflade-Hash ein",
+		imageLabel: "Auflade-Screenshot",
+		imagePlaceholder: "Bitte laden Sie den Auflade-Screenshot hoch",
 		submitButton: "Aufladung senden",
 		successMessage: "Aufladung erfolgreich eingereicht",
 		failMessage: "Einreichung fehlgeschlagen",

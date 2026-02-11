@@ -278,6 +278,7 @@ export default {
 			contactUs: "聯繫我們",
 			inviteFriends: "邀請好友",
 			logout: "退出登錄",
+			realNameAuth: "实名认证",
 		},
 		faqs: {
 			pageHeader: {
@@ -395,14 +396,18 @@ export default {
 			formTitle: "充值信息",
 			moneyLabel: "充值金額",
 			moneyPlaceholder: "請輸入充值金額",
-			addressLabel: "充值地址",
-			addressPlaceholder: "請輸入充值地址",
-			hashLabel: "充值hash",
-			hashPlaceholder: "請輸入充值hash",
+			imageLabel: "充值截圖",
+			imagePlaceholder: "請上傳充值截圖",
 			submitButton: "提交充值",
-			successMessage: "充值提交成功",
+			successMessage: "提交充值成功",
 			failMessage: "提交失敗",
 			networkErrorMessage: "網絡錯誤"
+		},
+		modal: {
+			tipTitle: "提示",
+			confirmDelete: "您確定要刪除此項嗎？",
+			cancel: "取消",
+			confirm: "確定"
 		},
 		
 		bankCardList: {

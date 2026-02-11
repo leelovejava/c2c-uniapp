@@ -327,6 +327,12 @@ export default {
 			contactUs: "हमसे संपर्क करें",
 			inviteFriends: "दोस्तों को आमंत्रित करें",
 			logout: "लॉग आउट करें"
+		},
+		modal: {
+			tipTitle: "सुझाव",
+			confirmDelete: "क्या आप वास्तव में इस आइटम को हटाना चाहते हैं?",
+			cancel: "रद्द करें",
+			confirm: "पुष्टि करें"
 		}
 	},
 	exchange: {
@@ -437,10 +443,8 @@ export default {
 		formTitle: "रिचार्ज जानकारी",
 		moneyLabel: "रिचार्ज राशि",
 		moneyPlaceholder: "कृपया रिचार्ज राशि दर्ज करें",
-		addressLabel: "रिचार्ज पता",
-		addressPlaceholder: "कृपया रिचार्ज पता दर्ज करें",
-		hashLabel: "रिचार्ज हैश",
-		hashPlaceholder: "कृपया रिचार्ज हैश दर्ज करें",
+		imageLabel: "रिचार्ज स्क्रीनशॉट",
+		imagePlaceholder: "रिचार्ज स्क्रीनशॉट अपलोड करें",
 		submitButton: "रिचार्ज सबमिट करें",
 		successMessage: "रिचार्ज सबमिशन सफल",
 		failMessage: "सबमिशन विफल",

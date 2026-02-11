@@ -364,6 +364,12 @@ export default {
 			title: "お問い合わせ",
 			serviceTime: "サービス時間：毎日午前10時～午後11時",
 			buttonText: "OFXサポートチーム"
+		},
+		modal: {
+			tipTitle: "ヒント",
+			confirmDelete: "このアイテムを削除してもよろしいですか？",
+			cancel: "キャンセル",
+			confirm: "確認"
 		}
 	},
 	faqs: {
@@ -501,10 +507,8 @@ export default {
 		formTitle: "チャージ情報",
 		moneyLabel: "チャージ金額",
 		moneyPlaceholder: "チャージ金額を入力してください",
-		addressLabel: "チャージアドレス",
-		addressPlaceholder: "チャージアドレスを入力してください",
-		hashLabel: "チャージハッシュ",
-		hashPlaceholder: "チャージハッシュを入力してください",
+		imageLabel: "チャージスクリーンショット",
+		imagePlaceholder: "チャージスクリーンショットをアップロードしてください",
 		submitButton: "チャージを送信",
 		successMessage: "チャージ送信成功",
 		failMessage: "送信失敗",

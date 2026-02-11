@@ -14,8 +14,8 @@ export default {
 			codes: ["账号不存在", "密码不正确", "账号被冻结", "失败"]
 		},
 		register: {
-			text: ["BITCOIN", "验证码发送中...", "点击获取", "正在注册...", "立即注册"],
-			placeholder: ["请输入邮箱", "请输入验证码", "请输入登录密码", "请确认您的密码", "请输入邀请码", "两次密码不一样", "请输入验证码", "无效邮箱", "密码不能低于6位"],
+			text: ["BITCOIN", "验证码发送中...", "点击获取", "正在注册...", "立即注册", "发送验证码", "验证码已发送"],
+			placeholder: ["请输入邮箱", "请输入验证码", "请输入登录密码", "请确认您的密码", "请输入邀请码", "请输入验证码", "两次密码不一样", "无效邮箱", "密码不能低于6位"],
 			label: ["已有账号？", "返回登录"],
 			codes: ["账号已存在", "没有验证码", "验证码不正确", "两次密码不一致", "推荐人不存在", "失败"]
 		},
@@ -72,9 +72,9 @@ export default {
 			menu: ["我的资产", "团队列表", "账户绑定", "账户明细", "平台介绍", "退出登录"]
 		},
 		bindAccount: {
-			default: ["绑定账号", "提交"],
-			fields: ["开户姓名", "手机号码", "银行账号", "名称", "类型", "USDT地址"],
-			placeholder: ["请输入开户姓名", "请输入手机号码", "请输入银行账号", "请输入开户行名称", "请选择USDT类型", "请输入USDT地址"]
+			default: ["实名认证", "提交审核"],
+			text: ["Apply for Real Name Authentication", "Please fill in your real information to complete the authentication", "审核通过", "您已完成实名认证", "无需重新提交认证信息", "审核中", "您的申请正在审核中", "请耐心等待审核结果", "真实姓名", "身份证正面", "身份证反面"],
+			placeholder: ["请输入真实姓名", "请上传身份证正面照片", "请上传身份证反面照片"]
 		},
 		bindAccount2: ["请确认信息填写无误，否则将影响正常交易", "立即绑定"],
 		wallet: {
@@ -350,6 +350,7 @@ export default {
 			aboutUs: "关于我们",
 			faqs: "常见问题",
 			certification: "资质",
+			realNameAuth: "实名认证",
 			recharge: "充值",
 			bankCards: "银行卡",
 			records: "记录",
@@ -381,7 +382,13 @@ export default {
 			statusPending: "审核中",
 			statusSuccess: "审核成功",
 			statusFailed: "审核失败"
-		}
+	},
+	modal: {
+		tipTitle: "提示",
+		confirmDelete: "您确定要删除此项吗？",
+		cancel: "取消",
+		confirm: "确定"
+	}
 	},
 	faqs: {
 		pageHeader: {
@@ -524,10 +531,8 @@ export default {
 		formTitle: "充值信息",
 		moneyLabel: "充值金额",
 		moneyPlaceholder: "请输入充值金额",
-		addressLabel: "充值地址",
-		addressPlaceholder: "请输入充值地址",
-		hashLabel: "充值hash",
-		hashPlaceholder: "请输入充值hash",
+		imageLabel: "充值截图",
+		imagePlaceholder: "请上传充值截图",
 		submitButton: "提交充值",
 		successMessage: "充值提交成功",
 		failMessage: "提交失败",

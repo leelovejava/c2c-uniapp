@@ -71,9 +71,9 @@ export default {
 		menu: ["My Assets", "Team List", "Account Binding", "Account Details", "Platform Introduction", "Logout"]
 		},
 		bindAccount: {
-		default: ["Bind Account", "Submit"],
-		fields: ["Account Holder Name", "Phone Number", "Bank Account", "Name", "Type", "USDT Address"],
-		placeholder: ["Please enter account holder name", "Please enter phone number", "Please enter bank account", "Please enter bank name", "Please select USDT type", "Please enter USDT address"]
+		default: ["Real Name Authentication", "Submit Review"],
+		text: ["Apply for Real Name Authentication", "Please fill in your real information to complete the authentication", "Review Successful", "You have completed real name authentication", "No need to resubmit authentication information", "Under Review", "Your application is being reviewed", "Please wait patiently for review results", "Real Name", "ID Card Front", "ID Card Back"],
+		placeholder: ["Please enter your real name", "Please upload ID card front photo", "Please upload ID card back photo"]
 		},
 		bindAccount2: ["Please confirm that the information is correct, otherwise it will affect normal trading", "Bind Now"],
 		wallet: {
@@ -288,82 +288,91 @@ export default {
 		]
 	},
 	exchange: {
-		infoCard: {
-			totalOrders: "Total Orders",
-			totalProfit: "Total Profit",
-			totalBalance: "Total Balance",
-			processing: "Processing",
+			infoCard: {
+				totalOrders: "Total Orders",
+				totalProfit: "Total Profit",
+				totalBalance: "Total Balance",
+				processing: "Processing",
 			orders: "Orders",
 			confirmExchange: "Confirm Exchange",
 			records: "Records",
 			selectCurrency: "Select Currency"
-		},
-		modal: {
-			steps: [
-				"Match Orders",
-				"Processing",
-				"Exchanged"
-			],
-			percentage: "(100%)",
-			exchangedCurrency: "Exchanged Currency",
-			exchangedRate: "Exchange Rate",
-			exchangedAmount: "Exchange Amount",
-			exchangeEarnings: "Exchange Earnings",
-			orderType: "Order Type",
-			expectedReturn: "Expected Return",
-			close: "Close"
-		}
-	},
-	order: {
-		recordsTitle: "Records",
-		tabs: {
-			all: "All",
-			pending: "Pending",
-			completed: "Completed",
-			limitOrder: "Limit Order"
-		},
-		status: {
-			completed: "Completed",
-			pending: "Pending",
-			processing: "Processing"
-		},
-		details: {
-			orderId: "Order ID",
-			orderType: "Order Type",
-			exchangeCurrency: "Exchange Currency",
-			exchangeEarnings: "Exchange Earnings",
-			expectedReturn: "Expected Return",
-			exchangeRate: "Unit"
-		}
-	},
-	navbar: {
-		inviteCode: "Invite Code",
-		copy: "Copy",
-		creditScore: "Credit Score",
-		totalBalance: "Total Balance",
-		eurBalance: "Eur Balance",
-		currencyExchange: "Currency Exchange",
-		memberLevel: "Member Level",
-		promotions: "Promotions",
-		aboutUs: "About Us",
-		faqs: "FAQs",
-		certification: "Certification",
-		recharge: "Recharge",
-		bankCards: "Bank Cards",
-		records: "Records",
-		withdraw: "Withdraw",
-		contactUs: "Contact Us",
-		inviteFriends: "Invite Friends",
-		logout: "Logout",
-		copySuccess: "Copy Successful",
-		copyFailed: "Copy Failed"
-	},
-	support: {
-		title: "Contact Us",
-		serviceTime: "Service Hours: 10:00 AM - 11:00 PM Daily",
-		buttonText: "OFX Support Team"
-	}
-	},
+				}
+			},
+			order: {
+				recordsTitle: "Records",
+				tabs: {
+					all: "All",
+					pending: "Pending",
+					completed: "Completed",
+					limitOrder: "Limit Order"
+				},
+				status: {
+					completed: "Completed",
+					pending: "Pending",
+					processing: "Processing"
+				},
+				details: {
+					orderId: "Order ID",
+					orderType: "Order Type",
+					exchangeCurrency: "Exchange Currency",
+					exchangeEarnings: "Exchange Earnings",
+					expectedReturn: "Expected Return",
+					exchangeRate: "Unit"
+				}
+				},
+				navbar: {
+					inviteCode: "Invitation Code",
+					copy: "Copy",
+					creditScore: "Credit Score",
+					totalBalance: "Total Balance",
+					eurBalance: "Euro Balance",
+					currencyExchange: "Currency Exchange",
+					memberLevel: "Membership Level",
+					promotions: "Promotions",
+					aboutUs: "About Us",
+					faqs: "FAQs",
+					certification: "Certification",
+					realNameAuth: "Real Name",
+					recharge: "Recharge",
+					bankCards: "Bank Cards",
+					records: "Records",
+					withdraw: "Withdraw",
+					contactUs: "Contact Us",
+					inviteFriends: "Invite Friends",
+					logout: "Logout",
+					copySuccess: "Copied successfully",
+					copyFailed: "Copy failed"
+				},
+				support: {
+					title: "Contact Us",
+					serviceTime: "Service Hours: 10:00 AM - 11:00 PM Daily",
+					buttonText: "OFX Support Team"
+				},
+				modal: {
+					tipTitle: "Tips",
+					confirmDelete: "Are you sure you want to delete this item?",
+					cancel: "Cancel",
+					confirm: "Confirm"
+				},
+				// 实名认证相关国际化
+				certification: {
+					title: "Apply for Real Name Authentication",
+					subtitle: "Please fill in your real information to complete the authentication",
+					successTitle: "You have completed real name authentication",
+					successSubtitle: "No need to resubmit authentication information",
+					nameLabel: "Real Name",
+					emailLabel: "Email Address",
+					phoneLabel: "Phone Number",
+					namePlaceholder: "Please enter your real name",
+					emailPlaceholder: "Please enter your email address",
+					phonePlaceholder: "Please enter your phone number",
+					submitButton: "Submit Authentication",
+					statusPending: "Under Review",
+					statusSuccess: "Review Successful",
+					statusFailed: "Review Failed"
+				}
+			},
 	faqs: {
 		pageHeader: {
 			title: "Rules and Regulations",
@@ -505,10 +514,8 @@ export default {
 		formTitle: "Recharge Information",
 		moneyLabel: "Recharge Amount",
 		moneyPlaceholder: "Please enter recharge amount",
-		addressLabel: "Recharge Address",
-		addressPlaceholder: "Please enter recharge address",
-		hashLabel: "Recharge Hash",
-		hashPlaceholder: "Please enter recharge hash",
+		imageLabel: "Recharge Screenshot",
+		imagePlaceholder: "Please upload recharge screenshot",
 		submitButton: "Submit Recharge",
 		successMessage: "Recharge submission successful",
 		failMessage: "Submission failed",
@@ -531,22 +538,5 @@ export default {
 		bankAddressLabel: "Bank Address",
 		bankAddressPlaceholder: "Please enter bank address",
 		submitButtonText: "Save Information"
-	},
-	// Real name authentication related internationalization
-	certification: {
-		title: "Apply for Real Name Authentication",
-		subtitle: "Please fill in your real information to complete the authentication",
-		successTitle: "You have completed real name authentication",
-		successSubtitle: "No need to resubmit authentication information",
-		nameLabel: "Real Name",
-		emailLabel: "Email Address",
-		phoneLabel: "Phone Number",
-		namePlaceholder: "Please enter your real name",
-		emailPlaceholder: "Please enter your email address",
-		phonePlaceholder: "Please enter your phone number",
-		submitButton: "Submit Authentication",
-		statusPending: "Under Review",
-		statusSuccess: "Review Successful",
-		statusFailed: "Review Failed"
 	}
 }

@@ -236,14 +236,15 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
+		},
+		{
 			"path": "pages/my/vip",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		},{
+		},
+		{
 			"path": "pages/my/checkin",
 			"style": {
 				"navigationBarTitleText": "",
@@ -269,13 +270,22 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		},{
+		},
+		{
 			"path": "pages/my/cert",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		},{
+		},
+		{
+			"path": "pages/my/bindinfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
 			"path": "pages/my/bind_trc20",
 			"style": {
 				"navigationBarTitleText": "",

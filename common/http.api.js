@@ -50,7 +50,7 @@ const install = (Vue, vm) => {
 		// 登录
 		login: (account,password) => vm.$u.post("/user/login", {account,password}),
 		// 注册
-		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
+			register: (username,password,invitation_code,code,lang) => vm.$u.post("/user/register", {username,password,invitation_code,code,lang}),
 		// 发验证码
 		send_email_mobile: (username) => vm.$u.post("/user/send_email_mobile", {username}),
 		// 获取用户最新的站内信

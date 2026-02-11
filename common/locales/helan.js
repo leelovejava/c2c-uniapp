@@ -375,6 +375,12 @@ export default {
 			contactUs: "Neem contact met ons op",
 			inviteFriends: "Nodig vrienden uit",
 			logout: "Uitloggen"
+		},
+		modal: {
+			tipTitle: "Tip",
+			confirmDelete: "Weet u zeker dat u dit item wilt verwijderen?",
+			cancel: "Annuleren",
+			confirm: "Bevestigen"
 		}
 	},
 	faqs: {
@@ -447,10 +453,8 @@ export default {
 		formTitle: "Herlaad Informatie",
 		moneyLabel: "Herlaad Bedrag",
 		moneyPlaceholder: "Voer herlaad bedrag in",
-		addressLabel: "Herlaad Adres",
-		addressPlaceholder: "Voer herlaad adres in",
-		hashLabel: "Herlaad Hash",
-		hashPlaceholder: "Voer herlaad hash in",
+		imageLabel: "Herlaad Screenshot",
+		imagePlaceholder: "Upload herlaad screenshot",
 		submitButton: "Verstuur Herlaad",
 		successMessage: "Herlaad succesvol ingediend",
 		failMessage: "Indiening mislukt",

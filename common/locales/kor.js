@@ -264,22 +264,13 @@ export default {
 				confirmExchange: "환전 확인",
 				records: "기록",
 				selectCurrency: "통화 선택"
-			},
-			modal: {
-				steps: [
-					"주문 매칭",
-					"처리 중",
-					"환전 완료"
-				],
-				percentage: "(100%)",
-				exchangedCurrency: "환전 통화",
-				exchangedRate: "환율",
-				exchangedAmount: "환전 금액",
-				exchangeEarnings: "환전 수익",
-				orderType: "주문 유형",
-				expectedReturn: "예상 수익",
-				close: "닫기"
 			}
+		},
+		modal: {
+			tipTitle: "팁",
+			confirmDelete: "이 항목을 삭제하시겠습니까？",
+			cancel: "취소",
+			confirm: "확인"
 		},
 		navbar: {
 			inviteCode: "초대 코드",
@@ -412,18 +403,16 @@ export default {
 		headquartersDesc: "호주 뉴사우스웨일스주 시드니 마가렛 스트리트 60번지 19층, 우편번호 2000"
 	},
 	bindTrc20: {
-		formTitle: "충전 정보",
-		moneyLabel: "충전 금액",
-		moneyPlaceholder: "충전 금액을 입력하세요",
-		addressLabel: "충전 주소",
-		addressPlaceholder: "충전 주소를 입력하세요",
-		hashLabel: "충전 해시",
-		hashPlaceholder: "충전 해시를 입력하세요",
-		submitButton: "충전 제출",
-		successMessage: "충전 제출 성공",
-		failMessage: "제출 실패",
-		networkErrorMessage: "네트워크 오류"
-	},
+			formTitle: "충전 정보",
+			moneyLabel: "충전 금액",
+			moneyPlaceholder: "충전 금액을 입력하세요",
+			imageLabel: "충전 스크린샷",
+			imagePlaceholder: "충전 스크린샷을 업로드하세요",
+			submitButton: "충전 제출",
+			successMessage: "충전 제출 성공",
+			failMessage: "제출 실패",
+			networkErrorMessage: "네트워크 오류"
+		},
 
 	bankCardList: {
 		formTitle: "은행 정보",
@@ -463,5 +452,22 @@ export default {
 		success: "지급 완료",
 		rejected: "거부됨",
 		processing: "지급 처리 중"
+	},
+	// 실명 인증 관련 국제화
+	certification: {
+		title: "실명 인증 신청",
+		subtitle: "인증을 완료하려면 실제 정보를 입력하세요",
+		successTitle: "실명 인증을 완료했습니다",
+		successSubtitle: "인증 정보를 다시 제출할 필요가 없습니다",
+		nameLabel: "실명",
+		emailLabel: "이메일 주소",
+		phoneLabel: "전화번호",
+		namePlaceholder: "실명을 입력하세요",
+		emailPlaceholder: "이메일 주소를 입력하세요",
+		phonePlaceholder: "전화번호를 입력하세요",
+		submitButton: "인증 제출",
+		statusPending: "검토 중",
+		statusSuccess: "검토 성공",
+		statusFailed: "검토 실패"
 	}
 };

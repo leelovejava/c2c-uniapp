@@ -130,6 +130,11 @@
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.certification') }}</view>
 								</u-grid-item>
+								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bindinfo')">
+									<image src="/static/image/fz/zizhi.png" style="width: 46rpx;height: 46rpx;"
+										class="a-mb5"></image>
+									<view class="grid-text">{{ $t('common.navbar.realNameAuth') }}</view>
+								</u-grid-item>
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/bind_trc20')">
 									<image src="/static/image/fz/bdym.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
@@ -174,11 +179,11 @@
 							</view>
 						</view>
 
-						<!-- <view class="a-p15" @click="deltoken">
+						<view class="a-p15" @click="deltoken">
 							<view style="background:#fff;color: #333; " class="a-f32 a-p10 a-w a-tc a-borr100">
 								{{ $t('common.navbar.logout') }}
 							</view>
-						</view> -->
+						</view>
 
 					</view>
 
@@ -216,7 +221,7 @@
 					cancelText: 'No', // 取消按钮文字
 					confirmText: 'Yes', // 隐藏确认按钮（置空即可）
 					success: (res) => {
-						if (res.cancel) {
+						if (res.confirm) {
 							uni.removeStorageSync('token'); // 清除登录令牌
 							uni.reLaunch({
 								url: '/pages/index/index' // 替换为你的首页路径

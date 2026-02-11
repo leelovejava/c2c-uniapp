@@ -255,6 +255,12 @@ bind: [
 			inviteFriends: "Convidar Amigos",
 			logout: "Sair"
 		},
+		modal: {
+			tipTitle: "Dica",
+			confirmDelete: "Tem certeza de que deseja excluir este item?",
+			cancel: "Cancelar",
+			confirm: "Confirmar"
+		},
 		exchange: {
 			infoCard: {
 				totalOrders: "Total de Pedidos",
@@ -395,10 +401,8 @@ bind: [
 		formTitle: "Informações de recarga",
 		moneyLabel: "Valor da recarga",
 		moneyPlaceholder: "Por favor, insira o valor da recarga",
-		addressLabel: "Endereço de recarga",
-		addressPlaceholder: "Por favor, insira o endereço de recarga",
-		hashLabel: "Hash da recarga",
-		hashPlaceholder: "Por favor, insira o hash da recarga",
+		imageLabel: "Captura de tela de recarga",
+		imagePlaceholder: "Por favor, faça upload da captura de tela de recarga",
 		submitButton: "Enviar recarga",
 		successMessage: "Recarga enviada com sucesso",
 		failMessage: "Falha no envio",

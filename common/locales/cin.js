@@ -294,7 +294,7 @@ export default {
 			"copy": "複製",
 			"creditScore": "信譽分",
 			"totalBalance": "總餘額",
-			eurBalance: "Euro 餘額",
+			"eurBalance": "Euro 餘額",
 			"currencyExchange": "貨幣兌換",
 			"memberLevel": "會員等級",
 			"promotions": "優惠活動",
@@ -309,7 +309,8 @@ export default {
 			"inviteFriends": "邀請好友",
 			"logout": "註銷",
 			"copySuccess": "複製成功",
-			"copyFailed": "複製失敗"
+			"copyFailed": "複製失敗",
+			"realNameAuth": "实名认证",
 		},
 		"exchange": {
 			"infoCard": {
@@ -376,7 +377,13 @@ export default {
 			"statusPending": "審核中",
 			"statusSuccess": "審核成功",
 			"statusFailed": "審核失敗"
-		}
+	},
+	"modal": {
+		"tipTitle": "提示",
+		"confirmDelete": "您確定要刪除此項嗎？",
+		"cancel": "取消",
+		"confirm": "確定"
+	}
 	},
 	"faqs": {
 		"pageHeader": {
@@ -512,10 +519,8 @@ export default {
 		formTitle: "充值信息",
 		moneyLabel: "充值金額",
 		moneyPlaceholder: "請輸入充值金額",
-		addressLabel: "充值地址",
-		addressPlaceholder: "請輸入充值地址",
-		hashLabel: "充值hash",
-		hashPlaceholder: "請輸入充值hash",
+		imageLabel: "充值截圖",
+		imagePlaceholder: "請上傳充值截圖",
 		submitButton: "提交充值",
 		successMessage: "充值提交成功",
 		failMessage: "提交失敗",
@@ -552,5 +557,22 @@ export default {
 		success: "已打款",
 		rejected: "已拒絕",
 		processing: "打款中"
+	},
+	// 實名認證相關國際化
+	certification: {
+		title: "申請實名認證",
+		subtitle: "請填寫您的真實信息以完成認證",
+		successTitle: "您已完成實名認證",
+		successSubtitle: "無需重新提交認證信息",
+		nameLabel: "真實姓名",
+		emailLabel: "郵箱地址",
+		phoneLabel: "手機號碼",
+		namePlaceholder: "請輸入您的真實姓名",
+		emailPlaceholder: "請輸入您的郵箱地址",
+		phonePlaceholder: "請輸入您的手機號碼",
+		submitButton: "提交認證",
+		statusPending: "審核中",
+		statusSuccess: "審核成功",
+		statusFailed: "審核失敗"
 	}
 }
