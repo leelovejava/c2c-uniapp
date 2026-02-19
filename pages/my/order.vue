@@ -38,9 +38,9 @@
 							</div>
 							<div class="exchange-details">
 <!--								<div class="detail-row"><span>{{ i18n.order.details.exchangeCurrency }}</span><span>{{ item.exchange_currency }} {{ item.to}}</span></div>-->
-								<div class="detail-row"><span>{{ i18n.order.details.exchangeEarnings }}</span><span>{{ item.exchange_earnings }} {{ item.from
-										}}</span></div>
-<!--								<div class="detail-row"><span>{{ i18n.order.details.expectedReturn }}</span><span>{{ item.expected_return }} {{ item.to}}</span></div>-->
+<!--								<div class="detail-row"><span>{{ i18n.order.details.exchangeEarnings }}</span><span>{{ item.exchange_earnings }} {{ item.from
+										}}</span></div>-->
+								<div class="detail-row"><span>{{ i18n.order.details.expectedReturn }}</span><span>{{ item.expected_return }} {{ item.to}}</span></div>
                 <div class="detail-row"><span>{{ i18n.order.details.exchangeRate }}</span><span>{{ item.exchange_rate}}</span></div>
 							</div>
 						</div>
