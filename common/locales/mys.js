@@ -446,7 +446,7 @@ export default {
 			exchangeRate: "unit"
 		},
 		vip: {
-			title: "Membership Level",
+			title: "VIP Level",
 			current: "Current",
 			deposit: "Deposit",
 			bonus: "Bonus",

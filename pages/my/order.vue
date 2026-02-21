@@ -17,7 +17,7 @@
 							<span class="order-date">{{ item.create_time }}</span>
 							<div class="order-status">
 								<span
-									:class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
+                    :class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
 									{{ item.status === '1' ? i18n.order.status.completed : item.status === '5' ? i18n.order.status.pending : i18n.order.status.processing }}
 								</span>
 							</div>
@@ -69,7 +69,8 @@ export default {
 			showLanguage: false,
 			activeTab: 'all',
 			form: {
-				status: 1,
+        // 状态 5pending审核中,1completed已完成,6review_failed审核失败
+				status: '',
 				page: 0,
 			},
 			list: [],
@@ -99,11 +100,26 @@ export default {
 				}
 			})
 		},
-		switchTab(tabName) {
-			this.activeTab = tabName;
-			// 这里可以添加根据标签切换加载不同数据的逻辑
-			console.log('切换到标签:', tabName);
-		},
+    switchTab(tabName) {
+      this.activeTab = tabName;
+      // 1. 设定 status
+      if (tabName === 'pending') {
+        this.form.status = 5;
+      } else if (tabName === 'completed') {
+        this.form.status = 1;
+      } else if (tabName === 'all') {
+        this.form.status = '';
+      } else if (tabName === 'approval_rejected') {
+        this.form.status = 6;
+      }
+
+      // 2. 重置分页和列表
+      this.form.page = 0;
+      this.list = [];
+
+      // 3. 重新加载数据
+      this.init();
+    },
 		// 获取货币对应的国家代码
 		getCountryCode(currency) {
 			// 简单的货币代码到国家代码的映射

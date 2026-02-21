@@ -328,7 +328,7 @@ export default {
 					totalBalance: "Total Balance",
 					eurBalance: "Euro Balance",
 					currencyExchange: "Currency Exchange",
-					memberLevel: "Membership Level",
+					memberLevel: "VIP Level",
 					promotions: "Promotions",
 					aboutUs: "About Us",
 					faqs: "FAQs",
@@ -430,7 +430,7 @@ export default {
 		}
 	},
 	vip: {
-		title: "Membership Level",
+		title: "VIP Level",
 		current: "Current",
 		deposit: "Deposit",
 		bonus: "Bonus",
