@@ -682,11 +682,5 @@ export default {
 		invalidEmail: "Veuillez entrer une adresse e-mail valide",
 		invalidPhone: "Veuillez entrer un numéro de téléphone valide",
 		submitFailed: "Échec de la soumission, veuillez réessayer"
-	},
-	common: {
-		certification: {
-			emailPlaceholder: "Veuillez entrer votre adresse e-mail",
-			phonePlaceholder: "Veuillez entrer votre numéro de téléphone"
-		}
 	}
 }

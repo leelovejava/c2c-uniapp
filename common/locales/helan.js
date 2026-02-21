@@ -379,12 +379,12 @@ export default {
 	},
 	faqs: {
 	  pageHeader: {
-		title: "Regels en voorschriften",
-		description: "Platformgids en handelsinformatie"
+		'title': "Regels en voorschriften",
+		'description': "Platformgids en handelsinformatie"
 	  },
 	  basicRules: {
-		title: "Basisregels",
-		rules: [
+		'title': "Basisregels",
+		'rules': [
 		  "Gebruikers moeten hun identiteit verifiëren voordat ze transacties kunnen uitvoeren",
 		  "Elke gebruiker mag slechts één account registreren en gebruiken",
 		  "De minimale transactiehoeveelheid is 100 USDT",
@@ -403,10 +403,10 @@ export default {
 		]
 	  },
 	  orderTypes: {
-		title: "Soorten bestellingen",
+		'title': "Soorten bestellingen",
 		marketOrder: {
-		  title: "Marktorder",
-		  description: "Een marktorder wordt onmiddellijk uitgevoerd tegen de beste beschikbare prijs. Deze bestelling garandeert uitvoering maar niet de prijs. Geschikt voor gebruikers die prioriteit geven aan snelheid boven exacte prijs."
+		  'title': "Marktorder",
+		  'description': "Een marktorder wordt onmiddellijk uitgevoerd tegen de beste beschikbare prijs. Deze bestelling garandeert uitvoering maar niet de prijs. Geschikt voor gebruikers die prioriteit geven aan snelheid boven exacte prijs."
 		},
 		limitOrder: {
 		  title: "Limietorder",

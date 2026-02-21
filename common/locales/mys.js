@@ -399,13 +399,6 @@ export default {
 		invalidPhone: "Sila masukkan nombor telefon yang sah",
 		submitFailed: "Hantaran gagal, sila cuba lagi"
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "Sila masukkan alamat e-mel",
-			phonePlaceholder: "Sila masukkan nombor telefon"
-		}
-	},
-
 	bindTrc20: {
 		formTitle: "Maklumat Tambahan",
 		moneyLabel: "Jumlah Tambahan",

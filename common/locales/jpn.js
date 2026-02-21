@@ -366,12 +366,6 @@ export default {
 			buttonText: "OFXサポートチーム"
 		}
 	},
- 	common: {
-		certification: {
-			emailPlaceholder: "メールアドレスを入力してください",
-			phonePlaceholder: "電話番号を入力してください"
-		}
-	},
 	faqs: {
 		pageHeader: {
 			title: "ルールと規制",
@@ -483,7 +477,6 @@ export default {
 		all: "すべて",
 		enterWithdrawalPassword: "出金パスワードを入力",
 		submit: "送信",
-		enterWithdrawalAmount: "出金金額を入力してください",
 		withdrawalFailed: "出金に失敗しました。後でもう一度お試しください"
 	},
 	about: {

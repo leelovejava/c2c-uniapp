@@ -383,12 +383,6 @@ export default {
 		invalidPhone: "Vui lòng nhập số điện thoại hợp lệ",
 		submitFailed: "Gửi thất bại, vui lòng thử lại"
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "Vui lòng nhập địa chỉ email",
-			phonePlaceholder: "Vui lòng nhập số điện thoại"
-		}
-	},
 	faqs: {
 		pageHeader: {
 			title: "Luật lệ và Quy định",

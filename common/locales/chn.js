@@ -385,12 +385,6 @@ export default {
 			invalidEmail: "请输入有效的邮箱地址",
 			invalidPhone: "请输入有效的电话号码",
 			submitFailed: "提交失败，请重试"
-		},
-		common: {
-			certification: {
-				emailPlaceholder: "请输入邮箱地址",
-				phonePlaceholder: "请输入手机号码"
-			}
 		}
 	},
 	faqs: {

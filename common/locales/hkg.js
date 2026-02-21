@@ -454,7 +454,14 @@ export default {
 			invalidPhone: "請輸入有效的電話號碼",
 			submitFailed: "提交失敗，請重試"
 		},
-		deposit: {
+		common: {
+			certification: {
+				emailPlaceholder: "請輸入郵箱地址",
+				phonePlaceholder: "請輸入手機號碼"
+			}
+		}
+	},
+	deposit: {
 			withdrawal: "出金",
 				history: "历史记录",
 				totalBalance: "总余额",

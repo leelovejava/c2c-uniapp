@@ -394,12 +394,6 @@ export default {
 		invalidPhone: "กรุณากรอกหมายเลขโทรศัพท์ที่ถูกต้อง",
 		submitFailed: "การส่งล้มเหลว กรุณาลองอีกครั้ง"
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "กรุณากรอกที่อยู่อีเมล",
-			phonePlaceholder: "กรุณากรอกหมายเลขโทรศัพท์"
-		}
-	},
 	faqs: {
 		pageHeader: {
 			title: "กฎระเบียบและข้อบังคับ",

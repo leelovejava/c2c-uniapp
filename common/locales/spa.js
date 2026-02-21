@@ -591,11 +591,5 @@ export default {
 		invalidEmail: "Por favor, ingrese una dirección de correo electrónico válida",
 		invalidPhone: "Por favor, ingrese un número de teléfono válido",
 		submitFailed: "Error al enviar, por favor intente de nuevo"
-	},
-	common: {
-		certification: {
-			emailPlaceholder: "Por favor, ingrese su dirección de correo electrónico",
-			phonePlaceholder: "Por favor, ingrese su número de teléfono"
-		}
 	}
 }

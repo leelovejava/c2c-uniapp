@@ -313,12 +313,6 @@ export default {
 			}
 		}
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "이메일 주소를 입력하세요",
-			phonePlaceholder: "전화번호를 입력하세요"
-		}
-	},
 	faqs: {
 		pageHeader: {
 			title: "규칙과 규정",

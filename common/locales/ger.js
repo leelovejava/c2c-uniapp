@@ -551,12 +551,6 @@ export default {
 		invalidPhone: "Bitte geben Sie eine gültige Telefonnummer ein",
 		submitFailed: "Einreichung fehlgeschlagen, bitte versuchen Sie es erneut"
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "Bitte geben Sie Ihre E-Mail-Adresse ein",
-			phonePlaceholder: "Bitte geben Sie Ihre Telefonnummer ein"
-		}
-	},
 	withdrawalStatus: {
 		pending: "Ausstehende Überprüfung",
 		success: "Bezahlt",

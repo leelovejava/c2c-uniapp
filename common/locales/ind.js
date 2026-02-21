@@ -488,11 +488,5 @@ export default {
 		invalidEmail: "कृपया एक वैध ईमेल पता दर्ज करें",
 		invalidPhone: "कृपया एक वैध फ़ोन नंबर दर्ज करें",
 		submitFailed: "सबमिट विफल, कृपया पुनः प्रयास करें"
-	},
-	common: {
-		certification: {
-			emailPlaceholder: "कृपया अपना ईमेल पता दर्ज करें",
-			phonePlaceholder: "कृपया अपना फ़ोन नंबर दर्ज करें"
-		}
 	}
 }

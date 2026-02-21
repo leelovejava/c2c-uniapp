@@ -328,12 +328,6 @@ export default {
 		serviceTime: "Orario di servizio: 10:00 - 23:00 tutti i giorni",
 		buttonText: "Team Supporto OFX"
 	},
-	common: {
-		certification: {
-			emailPlaceholder: "Inserisci il tuo indirizzo email",
-			phonePlaceholder: "Inserisci il tuo numero di telefono"
-		}
-	},
 	faqs: {
 		pageHeader: {
 			'title': "Regole e Regolamenti",
