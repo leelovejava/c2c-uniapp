@@ -1,8 +1,6 @@
 // 荷兰语
 export default {
 	common: {
-		back: "Terug",
-		market: "Handelsmarkt",
 		currency: "USDT",
 		currencySimplify: "US",
 		currencySymbol: "$",
@@ -363,6 +361,7 @@ export default {
 			copy: "Kopiëren",
 			creditScore: "Kredietscore",
 			totalBalance: "Totaal saldo",
+			eurBalance: "Saldo EUR",
 			currencyExchange: "Valutawisseling",
 			memberLevel: "Lidmaatschapniveau",
 			promotions: "Promoties",
@@ -448,10 +447,8 @@ export default {
 		formTitle: "Herlaad Informatie",
 		moneyLabel: "Herlaad Bedrag",
 		moneyPlaceholder: "Voer herlaad bedrag in",
-		addressLabel: "Herlaad Adres",
-		addressPlaceholder: "Voer herlaad adres in",
-		hashLabel: "Herlaad Hash",
-		hashPlaceholder: "Voer herlaad hash in",
+		imageLabel: "Herlaad Screenshot",
+		imagePlaceholder: "Upload herlaad screenshot",
 		submitButton: "Verstuur Herlaad",
 		successMessage: "Herlaad succesvol ingediend",
 		failMessage: "Indiening mislukt",
@@ -468,8 +465,8 @@ export default {
 			bankNamePlaceholder: "Voer de banknaam in",
 			countryLabel: "Land",
 			countryPlaceholder: "Selecteer een land",
-			routingNumberLabel: "Routeringsnummer",
-			routingNumberPlaceholder: "Voer het routeringsnummer in",
+			routingNumberLabel: "IBAN",
+			routingNumberPlaceholder: "Voer IBAN in",
 			swiftCodeLabel: "SWIFT-code",
 			swiftCodePlaceholder: "Voer de SWIFT-code in",
 			bankAddressLabel: "Bankadres",
@@ -492,7 +489,11 @@ export default {
 			submitButton: "Indieningscertificaat",
 			statusPending: "In beoordeling",
 			statusSuccess: "Audit geslaagd",
-			statusFailed: "Audit mislukt"
+			statusFailed: "Audit mislukt",
+			requiredFields: "Vul alle verplichte velden in",
+			invalidEmail: "Voer een geldig e-mailadres in",
+			invalidPhone: "Voer een geldig telefoonnummer in",
+			submitFailed: "Indienen mislukt, probeer het opnieuw"
 		},
 		order: {
 		recordsTitle: "Records",
@@ -512,7 +513,8 @@ export default {
 			orderType: "Besteltype",
 			exchangeCurrency: "Wisselvaluta",
 			exchangeEarnings: "Wisselwinst",
-			expectedReturn: "Verwacht rendement"
+			expectedReturn: "Verwacht rendement",
+			exchangeRate: "eenheid"
 		}
 	},
 	deposit: {

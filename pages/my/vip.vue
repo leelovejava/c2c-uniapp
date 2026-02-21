@@ -25,14 +25,8 @@
             </span>
           </h3>
 
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-            <div style="text-align: left;">
-              <h4>{{ $t('vip.deposit') }}: {{ item.deposit }}</h4>
-              <h4>{{ $t('vip.bonus') }}: {{ item.bonus }}</h4>
-              <h4>{{ $t('vip.dailyOrders') }}: {{ item.daily_orders }}</h4>
-            </div>
-
-            <div style="text-align: right;">
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px;">
+            <div style="text-align: center;">
               <img
                   :src="`static/image/fz/vip${item.vip_level}.png`"
                   :alt="`VIP ${item.vip_level}`"

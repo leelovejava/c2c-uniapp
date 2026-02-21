@@ -357,7 +357,11 @@ export default {
 		inviteFriends: "Invite Friends",
 		logout: "Logout",
 		copySuccess: "Copy Successful",
-		copyFailed: "Copy Failed"
+		copyFailed: "Copy Failed",
+		certification: {
+			emailPlaceholder: "Please enter your email address",
+			phonePlaceholder: "Please enter your phone number"
+		}
 	},
 	support: {
 		title: "Contact Us",
@@ -514,6 +518,8 @@ export default {
 		addressPlaceholder: "Please enter recharge address",
 		hashLabel: "Recharge Hash",
 		hashPlaceholder: "Please enter recharge hash",
+		imageLabel: "Upload Screenshot",
+		imagePlaceholder: "Click to upload image",
 		submitButton: "Submit Recharge",
 		successMessage: "Recharge submission successful",
 		failMessage: "Submission failed",
@@ -551,9 +557,17 @@ export default {
 		namePlaceholder: "Please enter your real name",
 		emailPlaceholder: "Please enter your email address",
 		phonePlaceholder: "Please enter your phone number",
+		frontIdCard: "Front ID Card",
+		reverseIdCard: "Reverse ID Card",
+		uploadFrontIdCard: "Click to upload front ID card",
+		uploadReverseIdCard: "Click to upload reverse ID card",
 		submitButton: "Submit Authentication",
 		statusPending: "Under Review",
 		statusSuccess: "Review Successful",
-		statusFailed: "Review Failed"
+		statusFailed: "Review Failed",
+		requiredFields: "Please fill in all required fields",
+		invalidEmail: "Please enter a valid email address",
+		invalidPhone: "Please enter a valid phone number",
+		submitFailed: "Submission failed, please try again"
 	}
 }

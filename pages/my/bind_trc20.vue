@@ -8,8 +8,10 @@
 					<div class="tabs">
 						<button :class="['tab-button', { active: activeTab == 0 }]"
 							@click="switchTab(0)">ERC20</button>
-						<button :class="['tab-button', { active: activeTab == 1 }]"
-							@click="switchTab(1)">BTC</button>
+            <button :class="['tab-button', { active: activeTab == 1 }]"
+                    @click="switchTab(1)">TRC20</button>
+						<button :class="['tab-button', { active: activeTab == 2 }]"
+							@click="switchTab(2)">BTC</button>
 					</div>
 				</div>
 				<div class="bank-card-form">
@@ -34,15 +36,17 @@
 					</div>
 
 					<div class="form-group">
-						<label class="form-label">{{$t('bindTrc20.addressLabel')}}</label>
-						<input type="text" v-model="form.recharge_address" class="form-input"
-							:placeholder="$t('bindTrc20.addressPlaceholder')">
-					</div>
-
-					<div class="form-group">
-						<label class="form-label">{{$t('bindTrc20.hashLabel')}}</label>
-						<input type="text" v-model="form.recharge_hash" class="form-input"
-							:placeholder="$t('bindTrc20.hashPlaceholder')">
+						<label class="form-label">{{$t('bindTrc20.imageLabel')}}</label>
+						<view class="upload-container" @click="chooseImage">
+							<image v-if="form.image" :src="form.image" mode="aspectFit" class="preview-image"></image>
+							<view v-else class="upload-placeholder">
+								<text class="upload-icon">+</text>
+								<text>{{$t('bindTrc20.imagePlaceholder')}}</text>
+							</view>
+							<view v-if="form.image" class="delete-btn" @click.stop="deleteImage">
+								<text class="delete-icon">×</text>
+							</view>
+						</view>
 					</div>
 
 					<button class="submit-button" @click="submitRecharge">{{$t('bindTrc20.submitButton')}}</button>
@@ -63,11 +67,10 @@
 		data() {
 			return {
 				activeTab:0,
-				ewmUrl:['0xDe2f9b9F9C5Fe149F4f49e608d3fA7045B3b6656','bc1p49vp4v72xr62r646kl4fz2xxtngj84rejyq6nmrpdweazrfzzndsvxttvu'],
+				ewmUrl:['0xDe2f9b9F9C5Fe149F4f49e608d3fA7045B3b6656','0xDe2f9b9F9C5Fe149F4f49e608d3fA7045B3b6656','bc1p49vp4v72xr62r646kl4fz2xxtngj84rejyq6nmrpdweazrfzzndsvxttvu'],
 				form: {
 					money: '',
-					recharge_address: '',
-					recharge_hash: ''
+					image: ''
 				}
 			};
 		},
@@ -78,27 +81,56 @@
 			// })
 		},
 		methods: {
-      copyAddress(text) {
-        uni.setClipboardData({
-          data: text,
-          success: () => {
-            uni.showToast({
-              // 复制成功
-              title: this.$t('common.navbar.copySuccess'),
-              icon: 'success'
-            });
-          },
-          fail: () => {
-            uni.showToast({
-              // 复制失败
-              title: this.$t('common.navbar.copyFailed'),
-              icon: 'error'
-            });
-          }
-        });
-      },
+			copyAddress(text) {
+				uni.setClipboardData({
+				data: text,
+				success: () => {
+					uni.showToast({
+					// 复制成功
+					title: this.$t('common.navbar.copySuccess'),
+					icon: 'success'
+					});
+				},
+				fail: () => {
+					uni.showToast({
+					// 复制失败
+					title: this.$t('common.navbar.copyFailed'),
+					icon: 'error'
+					});
+				}
+				});
+			},
 			switchTab(tabName) {
 				this.activeTab = tabName;
+			},
+			chooseImage() {
+				uni.chooseImage({
+					sourceType: ['camera', 'album'],
+					count: 1,
+					success: (res) => {
+						const tempFilePaths = res.tempFilePaths[0]
+						const token = uni.getStorageSync('token')
+						uni.uploadFile({
+							url: this.$store.state.baseDomain + '/api/index/upload',
+							filePath: tempFilePaths,
+							header: {
+								'token': token
+							},
+							success: (res) => {
+								res.data = JSON.parse(res.data)
+								if (res.data.code == 1) {
+									this.form.image = this.$store.state.baseDomain + res.data.data.url
+								}
+							},
+							fail: (err) => {
+								console.log(err)
+							}
+						})
+					}
+				})
+			},
+			deleteImage() {
+				this.form.image = ''
 			},
 			submitRecharge() {
 				const token = uni.getStorageSync('token')
@@ -109,10 +141,9 @@
 							icon: 'success'
 						})
 
-            // ✅ 重置表单
-            this.form.money = '';
-            this.form.recharge_address = '';
-            this.form.recharge_hash = '';
+						// ✅ 重置表单
+						this.form.money = '';
+						this.form.image = '';
 					} else {
 						uni.showToast({
 							title: res.msg || this.$t('bindTrc20.failMessage'),
@@ -298,5 +329,55 @@
     color: #00ffa2;
     background: rgba(0,255,162,0.22);
     box-shadow: 0 0 14px rgba(0,255,162,0.6);
+  }
+
+  .upload-container {
+    width: 100%;
+    height: 200rpx;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #a0aec0;
+  }
+
+  .upload-icon {
+    font-size: 40rpx;
+    margin-bottom: 8rpx;
+  }
+
+  .preview-image {
+    width: 100%;
+    height: 200rpx;
+    border-radius: 8px;
+  }
+
+  .delete-btn {
+    position: absolute;
+    top: -10rpx;
+    right: -10rpx;
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #ff4d4f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .delete-icon {
+    color: #fff;
+    font-size: 28rpx;
+    font-weight: bold;
   }
 </style>

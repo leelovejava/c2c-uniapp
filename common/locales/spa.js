@@ -1,8 +1,6 @@
 // 西班牙语
 export default {
 	common: {
-		back: "Volver",
-		market: "Mercado de comercio",
 		mixRecharge: ["Por favor, ingrese su dirección de correo electrónico"],
 		language: "Idioma",
 		common: ["Servicio al Cliente en Línea", "Desactivar Flotante", "Confirmar", "Cancelar"],
@@ -442,7 +440,8 @@ export default {
 				orderType: "Tipo de orden",
 				exchangeCurrency: "Moneda intercambiada",
 				exchangeEarnings: "Ganancias del intercambio",
-				expectedReturn: "Retorno esperado"
+				expectedReturn: "Retorno esperado",
+				exchangeRate: "unidad"
 			}
 		},
 		navbar: {
@@ -450,6 +449,7 @@ export default {
 			copy: "Copiar",
 			creditScore: "Puntuación de credibilidad",
 			totalBalance: "Saldo total",
+			eurBalance: "Saldo en euros",
 			currencyExchange: "Cambio de divisa",
 			memberLevel: "Nivel de miembro",
 			promotions: "Promociones",
@@ -475,29 +475,30 @@ export default {
 		commissionRate: "Tasa de comisión",
 		dailyOrders: "Pedidos semanales",
 		description: "Declaración de nivel VIP:\n" +
-			"Vender USDT para obtener diferencias de precio es, en esencia, una actividad de provisión de liquidez.\n" +
-			"El nivel VIP limita la cantidad de transacciones para evitar que las cuentas ordinarias ocupen el espacio de los creadores de mercado profesionales y para reducir los riesgos de control de la plataforma.\n" +
-			"Presión de AML y regulatoria. (razón principal)\n" +
-			"Por lo tanto, la plataforma utiliza:\n" +
-			"Nivel VIP\n" +
-			"Número de transacciones completadas\n" +
-			"Umbral del volumen de transacciones\n" +
-			"Para filtrar a los usuarios:\n" +
-			"Los usuarios ordinarios solo realizan cambios ocasionales.\n" +
-			"La venta frecuente de USDT se considera una actividad profesional de cambio o provisión de liquidez.\n" +
-			"VIP = objeto de control de riesgo gestionable (mayor tranquilidad para la plataforma)\n" +
-			"Los usuarios VIP normalmente tienen:\n" +
-			"Mayor volumen de capital\n" +
-			"KYC más completo\n" +
-			"Historial de transacciones más largo\n" +
-			"\n" +
-			"La lógica de la plataforma es:\n" +
-			"La limitación en la venta de USDT se debe a que ya constituye una actividad de cambio y liquidez de alta frecuencia, que requiere un nivel más alto para cumplir con la supervisión regulatoria y los requisitos de control de riesgo.\n" +
-			"No es una dificultad impuesta por la plataforma, sino un diseño de cumplimiento regulatorio más orientado al mercado.\n" +
-			"\n" +
-			"Aviso:\n" +
-			"La diferencia de precios de USDT puede generar ganancias, pero es una \"actividad cuasi financiera\". La restricción del nivel VIP no es un umbral, sino un mensaje de la plataforma:\n" +
-			"\"Ya no eres un usuario ordinario.\""
+		"Vender USDT para obtener diferencias de precio es, en esencia, una actividad de provisión de liquidez.\n" +
+		"El nivel VIP limita la cantidad de transacciones para evitar que las cuentas ordinarias ocupen el espacio de los creadores de mercado profesionales y para reducir los riesgos de control de la plataforma.\n" +
+		"Presión de AML y regulatoria. (razón principal)\n" +
+		"Por lo tanto, la plataforma utiliza:\n" +
+		"Nivel VIP\n" +
+		"Número de transacciones completadas\n" +
+		"Umbral del volumen de transacciones\n" +
+		"Para filtrar a los usuarios:\n" +
+		"Los usuarios ordinarios solo realizan cambios ocasionales.\n" +
+		"La venta frecuente de USDT se considera una actividad profesional de cambio o provisión de liquidez.\n" +
+		"VIP = objeto de control de riesgo gestionable (mayor tranquilidad para la plataforma)\n" +
+		"Los usuarios VIP normalmente tienen:\n" +
+		"Mayor volumen de capital\n" +
+		"KYC más completo\n" +
+		"Historial de transacciones más largo\n" +
+		"\n" +
+		"La lógica de la plataforma es:\n" +
+		"La limitación en la venta de USDT se debe a que ya constituye una actividad de cambio y liquidez de alta frecuencia, que requiere un nivel más alto para cumplir con la supervisión regulatoria y los requisitos de control de riesgo.\n" +
+		"No es una dificultad impuesta por la plataforma, sino un diseño de cumplimiento regulatorio más orientado al mercado.\n" +
+		"\n" +
+		"Aviso:\n" +
+		"La diferencia de precios de USDT puede generar ganancias, pero es una \"actividad cuasi financiera\". La restricción del nivel VIP no es un umbral, sino un mensaje de la plataforma:\n" +
+		"\"Ya no eres un usuario ordinario.\"\n" +
+		"Las mejoras de nivel VIP son revisadas automáticamente por el sistema y no pueden ser intervenidas manualmente."
 	},
 	about: {
 		title: "Acerca de nosotros",
@@ -525,10 +526,8 @@ export default {
 		formTitle: "Información de recarga",
 		moneyLabel: "Monto de recarga",
 		moneyPlaceholder: "Por favor, ingrese el monto de recarga",
-		addressLabel: "Dirección de recarga",
-		addressPlaceholder: "Por favor, ingrese la dirección de recarga",
-		hashLabel: "Hash de recarga",
-		hashPlaceholder: "Por favor, ingrese el hash de recarga",
+		imageLabel: "Captura de pantalla de recarga",
+		imagePlaceholder: "Por favor, sube la captura de pantalla de recarga",
 		submitButton: "Enviar recarga",
 		successMessage: "Recarga enviada correctamente",
 		failMessage: "Error al enviar",
@@ -545,17 +544,15 @@ export default {
 			bankNamePlaceholder: "Por favor, ingrese el nombre del banco",
 			countryLabel: "País",
 			countryPlaceholder: "Por favor, seleccione el país",
-			routingNumberLabel: "Número de ruta",
-			routingNumberPlaceholder: "Por favor, ingrese el número de ruta",
+			routingNumberLabel: "IBAN",
+			routingNumberPlaceholder: "Ingrese IBAN",
 			swiftCodeLabel: "Código SWIFT",
 			swiftCodePlaceholder: "Por favor, ingrese el código SWIFT",
 			bankAddressLabel: "Dirección del banco",
 			bankAddressPlaceholder: "Por favor, ingrese la dirección del banco",
 			submitButtonText: "Guardar información",
 			bindSuccess: "Vinculación exitosa",
-			updateSuccess: "Actualización exitosa",
-			remark: "Nota",
-			remarkPlaceholder: "Introduce una nota",
+			updateSuccess: "Actualización exitosa"
 		},
 		deposit: {
 			withdrawal: "Retiro",
@@ -565,9 +562,40 @@ export default {
 			withdrawalFailed: "Error en el retiro, inténtelo de nuevo más tarde"
 		},
 		withdrawalStatus: {
-			pending: "Pendiente de revisión",
-			success: "Pago realizado",
-			rejected: "Rechazado",
-			processing: "Procesando pago"
+		pending: "Pendiente de revisión",
+		success: "Pago realizado",
+		rejected: "Rechazado",
+		processing: "Procesando pago"
+	},
+	// Internacionalización relacionada con la autenticación de nombre real
+	certification: {
+		title: "Solicitar Autenticación de Nombre Real",
+		subtitle: "Por favor, complete sus datos reales para completar la autenticación",
+		successTitle: "Ha completado la autenticación de nombre real",
+		successSubtitle: "No es necesario volver a enviar la información de autenticación",
+		nameLabel: "Nombre Real",
+		emailLabel: "Dirección de Correo Electrónico",
+		phoneLabel: "Número de Teléfono",
+		namePlaceholder: "Por favor, ingrese su nombre real",
+		emailPlaceholder: "Por favor, ingrese su dirección de correo electrónico",
+		phonePlaceholder: "Por favor, ingrese su número de teléfono",
+		frontIdCard: "Identificación Anverso",
+		reverseIdCard: "Identificación Reverso",
+		uploadFrontIdCard: "Haga clic para cargar la identificación anverso",
+		uploadReverseIdCard: "Haga clic para cargar la identificación reverso",
+		submitButton: "Enviar Autenticación",
+		statusPending: "En Revisión",
+		statusSuccess: "Revisión Exitosa",
+		statusFailed: "Revisión Fallida",
+		requiredFields: "Por favor, complete todos los campos requeridos",
+		invalidEmail: "Por favor, ingrese una dirección de correo electrónico válida",
+		invalidPhone: "Por favor, ingrese un número de teléfono válido",
+		submitFailed: "Error al enviar, por favor intente de nuevo"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "Por favor, ingrese su dirección de correo electrónico",
+			phonePlaceholder: "Por favor, ingrese su número de teléfono"
 		}
 	}
+}

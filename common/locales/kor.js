@@ -1,4 +1,5 @@
 export default {
+	"uni.async.error": "연결 시간 초과, 화면을 터치하여 다시 시도하세요.",
 	common: {
 		back: "뒤로",
 		market: "거래 시장",
@@ -312,6 +313,12 @@ export default {
 			}
 		}
 	},
+	common: {
+		certification: {
+			emailPlaceholder: "이메일 주소를 입력하세요",
+			phonePlaceholder: "전화번호를 입력하세요"
+		}
+	},
 	faqs: {
 		pageHeader: {
 			title: "규칙과 규정",
@@ -413,6 +420,8 @@ export default {
 		addressPlaceholder: "충전 주소를 입력하세요",
 		hashLabel: "충전 해시",
 		hashPlaceholder: "충전 해시를 입력하세요",
+		imageLabel: "스크린샷 업로드",
+		imagePlaceholder: "클릭하여 이미지 업로드",
 		submitButton: "충전 제출",
 		successMessage: "충전 제출 성공",
 		failMessage: "제출 실패",
@@ -449,6 +458,17 @@ export default {
 	deposit: {
 		withdrawal: "출금",
 		history: "기록",
+		totalBalance: "총 잔액",
+		processingTime: "출금 처리에는 15~20분이 소요됩니다.",
+		walletAddressType: "지갑 주소 유형",
+		trc20Address: "TRC20 주소",
+		erc20Address: "ERC20 주소",
+		btcAddress: "BTC 주소",
+		addressNotSet: "주소 미설정",
+		bindAddress: "주소 연결",
+		verifyWalletAddress: "지갑 주소를 잘 확인해 주세요.",
+		all: "전체",
+		enterWithdrawalPassword: "출금 비밀번호 입력",
 		submit: "제출",
 		enterWithdrawalAmount: "출금 금액을 입력하세요",
 		withdrawalFailed: "출금 실패, 나중에 다시 시도하세요"
@@ -458,5 +478,29 @@ export default {
 		success: "지급 완료",
 		rejected: "거부됨",
 		processing: "지급 처리 중"
+	},
+	certification: {
+		title: "실명 인증 신청",
+		subtitle: "실명 인증을 완료하려면 실제 정보를 입력해 주세요",
+		successTitle: "실명 인증이 완료되었습니다",
+		successSubtitle: "인증 정보를 다시 제출할 필요가 없습니다",
+		nameLabel: "실명",
+		emailLabel: "이메일 주소",
+		phoneLabel: "전화번호",
+		namePlaceholder: "실명을 입력해 주세요",
+		emailPlaceholder: "이메일 주소를 입력해 주세요",
+		phonePlaceholder: "전화번호를 입력해 주세요",
+		frontIdCard: "주민등록증 앞면",
+		reverseIdCard: "주민등록증 뒤면",
+		uploadFrontIdCard: "주민등록증 앞면을 업로드하세요",
+		uploadReverseIdCard: "주민등록증 뒤면을 업로드하세요",
+		submitButton: "인증 제출",
+		statusPending: "검토 중",
+		statusSuccess: "검토 통과",
+		statusFailed: "검토 실패",
+		requiredFields: "모든 필수 항목을 입력해 주세요",
+		invalidEmail: "유효한 이메일 주소를 입력해 주세요",
+		invalidPhone: "유효한 전화번호를 입력해 주세요",
+		submitFailed: "제출 실패, 다시 시도해 주세요"
 	}
 };

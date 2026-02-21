@@ -1,5 +1,6 @@
 // 马来西亚
 export default {
+	"uni.async.error": "Sambungan tamat masa, sentuh skrin untuk mencuba lagi.",
 	common: {
 		back: "Kembali",
 		market: "Pasaran Dagangan",
@@ -336,44 +337,73 @@ export default {
 			contactUs: "Hubungi Kami",
 			inviteFriends: "Jemput Rakan",
 			logout: "Log Keluar"
-		},
-		exchange: {
-			infoCard: {
-				totalOrders: "Ordini totali",
-				totalProfit: "Profitto totale",
-				totalBalance: "Bilancio totale",
-				processing: "In elaborazione",
-				orders: "Ordini",
-				confirmExchange: "Conferma scambio",
-				records: "Registri",
-				selectCurrency: "Seleziona valuta"
-			},
-			modal: {
-				steps: [
-					"Abbina ordine",
-					"In elaborazione",
-					"Scambiato"
-				],
-				percentage: "(100%)",
-				exchangedCurrency: "Valuta scambiata",
-				exchangedRate: "Tasso di cambio",
-				exchangedAmount: "Importo scambiato",
-				exchangeEarnings: "Guadagno dallo scambio",
-				orderType: "Tipo di ordine",
-				expectedReturn: "Ritorno previsto",
-				close: "Chiudi"
-			}
 		}
 	},
-
+	exchange: {
+		infoCard: {
+			totalOrders: "Ordini totali",
+			totalProfit: "Profitto totale",
+			totalBalance: "Bilancio totale",
+			processing: "In elaborazione",
+			orders: "Ordini",
+			confirmExchange: "Conferma scambio",
+			records: "Registri",
+			selectCurrency: "Seleziona valuta"
+		},
+		modal: {
+			steps: [
+				"Abbina ordine",
+				"In elaborazione",
+				"Scambiato"
+			],
+			percentage: "(100%)",
+			exchangedCurrency: "Valuta scambiata",
+			exchangedRate: "Tasso di cambio",
+			exchangedAmount: "Importo scambiato",
+			exchangeEarnings: "Guadagno dallo scambio",
+			orderType: "Tipo di ordine",
+			expectedReturn: "Ritorno previsto",
+			close: "Chiudi"
+		}
+	},
 	invite: {
-		share: "Kongsi dan Promosikan",
-		myInviteCode: "Kod Jemputan Saya",
-		copyInviteText: "Salin Kod Jemputan untuk Menjemput Lebih Banyak Rakan",
-		copy: "Salin",
-		unableToInvite: "Tidak dapat menjemput ahli pada masa ini",
-		inviteCodeLabel: "Kod Jemputan:",
-		copyInviteLink: "Klik untuk menyalin pautan jemputan"
+		'share': "Kongsi dan Promosikan",
+		'myInviteCode': "Kod Jemputan Saya",
+		'copyInviteText': "Salin Kod Jemputan untuk Menjemput Lebih Banyak Rakan",
+		'copy': "Salin",
+		'unableToInvite': "Tidak dapat menjemput ahli pada masa ini",
+		'inviteCodeLabel': "Kod Jemputan:",
+		'copyInviteLink': "Klik untuk menyalin pautan jemputan"
+	},
+	certification: {
+		title: "Mohon Pengesahan Nama Sebenar",
+		subtitle: "Sila isi maklumat sebenar anda untuk melengkapkan pengesahan",
+		successTitle: "Anda telah melengkapkan pengesahan nama sebenar",
+		successSubtitle: "Tiada keperluan untuk mengemukakan semula maklumat pengesahan",
+		nameLabel: "Nama Sebenar",
+		emailLabel: "Alamat E-mel",
+		phoneLabel: "Nombor Telefon",
+		namePlaceholder: "Sila masukkan nama sebenar anda",
+		emailPlaceholder: "Sila masukkan alamat e-mel anda",
+		phonePlaceholder: "Sila masukkan nombor telefon anda",
+		frontIdCard: "Kad Pengenalan Depan",
+		reverseIdCard: "Kad Pengenalan Belakang",
+		uploadFrontIdCard: "Klik untuk memuat naik kad pengenalan depan",
+		uploadReverseIdCard: "Klik untuk memuat naik kad pengenalan belakang",
+		submitButton: "Hantar Pengesahan",
+		statusPending: "Dalam Semakan",
+		statusSuccess: "Semakan Berjaya",
+		statusFailed: "Semakan Gagal",
+		requiredFields: "Sila isi semua ruangan yang diperlukan",
+		invalidEmail: "Sila masukkan alamat e-mel yang sah",
+		invalidPhone: "Sila masukkan nombor telefon yang sah",
+		submitFailed: "Hantaran gagal, sila cuba lagi"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "Sila masukkan alamat e-mel",
+			phonePlaceholder: "Sila masukkan nombor telefon"
+		}
 	},
 
 	bindTrc20: {
@@ -384,6 +414,8 @@ export default {
 		addressPlaceholder: "Sila masukkan alamat tambahan",
 		hashLabel: "Hash Tambahan",
 		hashPlaceholder: "Sila masukkan hash tambahan",
+		imageLabel: "Muat naik tangkapan skrin",
+		imagePlaceholder: "Klik untuk memuat naik imej",
 		submitButton: "Hantar Tambahan",
 		successMessage: "Berjaya menghantar tambahan",
 		failMessage: "Gagal menghantar",

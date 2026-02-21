@@ -375,7 +375,11 @@ export default {
 			"submitButton": "提交認證",
 			"statusPending": "審核中",
 			"statusSuccess": "審核成功",
-			"statusFailed": "審核失敗"
+			"statusFailed": "審核失敗",
+			"requiredFields": "請填寫所有必填欄位",
+			"invalidEmail": "請輸入有效的郵箱地址",
+			"invalidPhone": "請輸入有效的手機號碼",
+			"submitFailed": "提交失敗，請重試"
 		}
 	},
 	"faqs": {
@@ -515,6 +519,8 @@ export default {
 		addressPlaceholder: "請輸入充值地址",
 		hashLabel: "充值hash",
 		hashPlaceholder: "請輸入充值hash",
+		imageLabel: "上傳截圖",
+		imagePlaceholder: "點擊上傳圖片",
 		submitButton: "提交充值",
 		successMessage: "充值提交成功",
 		failMessage: "提交失敗",

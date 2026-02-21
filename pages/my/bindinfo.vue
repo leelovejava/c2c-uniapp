@@ -36,13 +36,41 @@
 						<view class="form-group">
 							<label class="form-label">{{ $t('certification.emailLabel') }}</label>
 							<input type="email" v-model="formData.email" class="form-input"
-								:placeholder="$t('common.certification.emailPlaceholder')" required>
+								:placeholder="$t('certification.emailPlaceholder')" required>
 						</view>
 
 						<view class="form-group">
 							<label class="form-label">{{ $t('certification.phoneLabel') }}</label>
 							<input type="tel" v-model="formData.phone" class="form-input"
-								:placeholder="$t('common.certification.phonePlaceholder')" required>
+								:placeholder="$t('certification.phonePlaceholder')" required>
+						</view>
+
+						<view class="form-group">
+							<label class="form-label">{{ $t('certification.frontIdCard') }}</label>
+							<view class="upload-container" @click="chooseImage('front')">
+								<image v-if="formData.front" :src="formData.front" mode="aspectFit" class="preview-image"></image>
+								<view v-else class="upload-placeholder">
+									<text class="upload-icon">+</text>
+									<text>{{ $t('certification.uploadFrontIdCard') }}</text>
+								</view>
+								<view v-if="formData.front" class="delete-btn" @click.stop="deleteImage('front')">
+									<text class="delete-icon">×</text>
+								</view>
+							</view>
+						</view>
+
+						<view class="form-group">
+							<label class="form-label">{{ $t('certification.reverseIdCard') }}</label>
+							<view class="upload-container" @click="chooseImage('reverse')">
+								<image v-if="formData.reverse" :src="formData.reverse" mode="aspectFit" class="preview-image"></image>
+								<view v-else class="upload-placeholder">
+									<text class="upload-icon">+</text>
+									<text>{{ $t('certification.uploadReverseIdCard') }}</text>
+								</view>
+								<view v-if="formData.reverse" class="delete-btn" @click.stop="deleteImage('reverse')">
+									<text class="delete-icon">×</text>
+								</view>
+							</view>
 						</view>
 
 						<view class="submit-section">
@@ -68,7 +96,9 @@
 				formData: {
 					name: '',
 					email: '',
-					phone: ''
+					phone: '',
+					front: '',
+					reverse: ''
 				},
 				verificationStatus: null // 实名认证状态: 0-审核中, 1-审核成功, 2-审核失败, null-未获取
 			};
@@ -112,34 +142,75 @@
 						return '';
 				}
 			},
+			chooseImage(type) {
+				uni.chooseImage({
+					sourceType: ['camera', 'album'],
+					count: 1,
+					success: (res) => {
+						const tempFilePaths = res.tempFilePaths[0]
+						const token = uni.getStorageSync('token')
+						uni.uploadFile({
+							url: this.$store.state.baseDomain + '/api/index/upload',
+							filePath: tempFilePaths,
+							header: {
+								'token': token
+							},
+							success: (res) => {
+								res.data = JSON.parse(res.data)
+								if (res.data.code == 1) {
+									if (type === 'front') {
+										this.formData.front = this.$store.state.baseDomain + res.data.data.url
+									} else {
+										this.formData.reverse = this.$store.state.baseDomain + res.data.data.url
+									}
+								}
+							},
+							fail: (err) => {
+								console.log(err)
+							}
+						})
+					}
+				})
+			},
+			deleteImage(type) {
+				if (type === 'front') {
+					this.formData.front = ''
+				} else {
+					this.formData.reverse = ''
+				}
+			},
 			submitCertification() {
 				// 表单验证
 				if (!this.formData.name || !this.formData.email || !this.formData.phone) {
-					this.$utils.showToast('请填写所有必填字段');
+					this.$utils.showToast(this.$t('certification.requiredFields'));
 					return;
 				}
 
 				// 邮箱格式验证
 				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 				if (!emailRegex.test(this.formData.email)) {
-					this.$utils.showToast('请输入有效的邮箱地址');
+					this.$utils.showToast(this.$t('certification.invalidEmail'));
 					return;
 				}
 
 				// 电话号码验证（简单验证）
-				const phoneRegex = /^1[3-9]\d{9}$/;
-				if (!phoneRegex.test(this.formData.phone)) {
-					this.$utils.showToast('请输入有效的电话号码');
-					return;
-				}
+				//const phoneRegex = /^1[3-9]\d{9}$/;
+				//if (!phoneRegex.test(this.formData.phone)) {
+				//	this.$utils.showToast(this.$t('certification.invalidPhone'));
+				//	return;
+				//}
 
 				// 提交数据到 api/user/bind_real
 				const token = uni.getStorageSync('token');
 				this.$u.api.index.bind_real(
 					token,
-					this.formData.name,
-					this.formData.email,
-					this.formData.phone
+					{
+						name: this.formData.name,
+						email: this.formData.email,
+						phone: this.formData.phone,
+						front: this.formData.front,
+						reverse: this.formData.reverse
+					}
 				).then(res => {
 					this.$utils.showToast(res.msg);
 					if (res.code === 1) {
@@ -151,7 +222,7 @@
 						}, 1500);
 					}
 				}).catch(err => {
-					this.$utils.showToast('提交失败，请重试');
+					this.$utils.showToast(this.$t('certification.submitFailed'));
 				});
 			},
 			back() {
@@ -335,5 +406,55 @@
 
 	.submit-button:active {
 		transform: translateY(0);
+	}
+
+	.upload-container {
+		width: 100%;
+		height: 200rpx;
+		border: 1px dashed rgba(255, 255, 255, 0.3);
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(255, 255, 255, 0.05);
+		cursor: pointer;
+		position: relative;
+	}
+
+	.upload-placeholder {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #a0aec0;
+	}
+
+	.upload-icon {
+		font-size: 40rpx;
+		margin-bottom: 8rpx;
+	}
+
+	.preview-image {
+		width: 100%;
+		height: 200rpx;
+		border-radius: 8px;
+	}
+
+	.delete-btn {
+		position: absolute;
+		top: -10rpx;
+		right: -10rpx;
+		width: 40rpx;
+		height: 40rpx;
+		background-color: #ff4d4f;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.delete-icon {
+		color: #fff;
+		font-size: 28rpx;
+		font-weight: bold;
 	}
 </style>

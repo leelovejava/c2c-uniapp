@@ -1,7 +1,5 @@
 export default {
 	common: {
-		back: "वापस",
-		market: "ट्रेडिंग बाजार",
 		mixRecharge: ["कृपया ईमेल पता भरें"],
 		language: "भाषा",
 		common: ["ऑनलाइन सहायता", "फ्लोट कैंसल करें", "पुष्टि करें", "रद्द करें"],
@@ -315,6 +313,7 @@ export default {
 			copy: "कॉपी करें",
 			creditScore: "क्रेडिट स्कोर",
 			totalBalance: "कुल शेष",
+			eurBalance: "यूरो बैलेंस",
 			currencyExchange: "मुद्रा विनिमय",
 			memberLevel: "सदस्य स्तर",
 			promotions: "प्रचार",
@@ -375,7 +374,8 @@ export default {
 			orderType: "आदेश प्रकार",
 			exchangeCurrency: "विनिमय मुद्रा",
 			exchangeEarnings: "विनिमय लाभ",
-			expectedReturn: "अपेक्षित रिटर्न"
+			expectedReturn: "अपेक्षित रिटर्न",
+			exchangeRate: "इकाई"
 		}
 	},
 	vip: {
@@ -437,10 +437,8 @@ export default {
 		formTitle: "रिचार्ज जानकारी",
 		moneyLabel: "रिचार्ज राशि",
 		moneyPlaceholder: "कृपया रिचार्ज राशि दर्ज करें",
-		addressLabel: "रिचार्ज पता",
-		addressPlaceholder: "कृपया रिचार्ज पता दर्ज करें",
-		hashLabel: "रिचार्ज हैश",
-		hashPlaceholder: "कृपया रिचार्ज हैश दर्ज करें",
+		imageLabel: "रिचार्ज स्क्रीनशॉट",
+		imagePlaceholder: "रिचार्ज स्क्रीनशॉट अपलोड करें",
 		submitButton: "रिचार्ज सबमिट करें",
 		successMessage: "रिचार्ज सबमिशन सफल",
 		failMessage: "सबमिशन विफल",
@@ -457,17 +455,15 @@ export default {
 		bankNamePlaceholder: "कृपया बैंक का नाम दर्ज करें",
 		countryLabel: "देश",
 		countryPlaceholder: "कृपया देश चुनें",
-		routingNumberLabel: "रूटिंग नंबर",
-		routingNumberPlaceholder: "कृपया रूटिंग नंबर दर्ज करें",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "कृपया IBAN दर्ज करेंं",
 		swiftCodeLabel: "SWIFT कोड",
 		swiftCodePlaceholder: "कृपया SWIFT कोड दर्ज करें",
 		bankAddressLabel: "बैंक का पता",
 		bankAddressPlaceholder: "कृपया बैंक का पता दर्ज करें",
 		submitButtonText: "जानकारी सहेजें",
 		bindSuccess: "बाइंड सफल",
-		updateSuccess: "अपडेट सफल",
-		remark: "टिप्पणी",
-		remarkPlaceholder: "कृपया टिप्पणी दर्ज करें",
+		updateSuccess: "अपडेट सफल"
 	},
 	certification: {
 		title: "वास्तविक नाम प्रमाणीकरण के लिए आवेदन करें",
@@ -480,9 +476,23 @@ export default {
 		namePlaceholder: "कृपया अपना असली नाम दर्ज करें",
 		emailPlaceholder: "कृपया अपना ईमेल पता दर्ज करें",
 		phonePlaceholder: "कृपया अपना फ़ोन नंबर दर्ज करें",
+		frontIdCard: "आईडी कार्ड का सामने",
+		reverseIdCard: "आईडी कार्ड का पीछे",
+		uploadFrontIdCard: "आईडी कार्ड के सामने को अपलोड करने के लिए क्लिक करें",
+		uploadReverseIdCard: "आईडी कार्ड के पीछे को अपलोड करने के लिए क्लिक करें",
 		submitButton: "प्रमाणीकरण सबमिट करें",
 		statusPending: "समीक्षा में",
 		statusSuccess: "ऑडिट सफल",
-		statusFailed: "ऑडिट विफल"
+		statusFailed: "ऑडिट विफल",
+		requiredFields: "कृपया सभी आवश्यक फ़ील्ड भरें",
+		invalidEmail: "कृपया एक वैध ईमेल पता दर्ज करें",
+		invalidPhone: "कृपया एक वैध फ़ोन नंबर दर्ज करें",
+		submitFailed: "सबमिट विफल, कृपया पुनः प्रयास करें"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "कृपया अपना ईमेल पता दर्ज करें",
+			phonePlaceholder: "कृपया अपना फ़ोन नंबर दर्ज करें"
+		}
 	}
 }

@@ -1,8 +1,6 @@
 // 德语
 export default {
 	common: {
-		back: "Zurück",
-		market: "Handelsmarkt",
 		mixRecharge: ["Bitte geben Sie Ihre E-Mail-Adresse ein"],
 		language: "Sprache",
 		common: ["Online-Kundenservice", "Schweben abbrechen", "Bestätigen", "Abbrechen"],
@@ -336,7 +334,8 @@ export default {
 				orderType: "Bestelltyp",
 				exchangeCurrency: "Tauschwährung",
 				exchangeEarnings: "Tauschgewinne",
-				expectedReturn: "Erwartete Rendite"
+				expectedReturn: "Erwartete Rendite",
+				exchangeRate: "Einheit"
 			}
 		},
 		navbar: {
@@ -344,6 +343,7 @@ export default {
 			copy: "Kopieren",
 			creditScore: "Kreditscore",
 			totalBalance: "Gesamtsaldo",
+			eurBalance: "Euro-Guthaben",
 			currencyExchange: "Währungsumtausch",
 			memberLevel: "Mitgliedsstufe",
 			promotions: "Werbeaktionen",
@@ -374,44 +374,37 @@ export default {
 		basicRules: {
 			title: "Grundregeln",
 			rules: [
-				"1: Jedes Web3-Wallet darf nur zur erfolgreichen Registrierung eines einzigen Plattformkontos verwendet werden.",
-				"2: Gemäß den FinCEN-Vorschriften muss jeder Nutzer mindestens 100 USDT auf dem Konto halten, um einen Auftrag auszuführen.",
-				"3: Die VIP-Stufe begrenzt die Anzahl der wöchentlichen Tauschvorgänge: VIP1 = 2-mal/Woche, VIP2 = 3-mal/Woche, VIP3 = 5-mal/Woche, VIP4 = unbegrenzte Tauschvorgänge.",
-				"4: Die VIP-Stufe wird automatisch erhöht, sobald der Einzahlungsbetrag den festgelegten Schwellenwert erreicht.",
-				"5: Die Plattform läuft auf Web3 und ermöglicht Nutzern weltweit, jederzeit frei und ohne Einschränkungen zu tauschen.",
-				"6: Geben Sie zum Schutz Ihres Kontos niemals Ihre Wallet-Mnemonik (Seed-Phrase) weiter.",
-				"7: Der Kredit-Score wird täglich um 00:00 Uhr pazifischer Zeit (PT) aktualisiert. Wenn der Score unter 95 fällt, wird die Auszahlungsfunktion eingefroren. Zur Kontosicherheit wenden Sie sich bitte an den Kundensupport.",
-				"8: Hinweise zur Auszahlung: Bitte geben Sie korrekte internationale Bankdaten an. Internationale Überweisungen benötigen in der Regel 1–5 Werktage. Falsche Angaben können zu Überweisungsfehlern führen – das Geld muss erst zurückgebucht werden, bevor ein erneuter Versuch möglich ist. Fehler können zudem Ihren Kredit-Score verringern.",
-				"9: Die Plattform arbeitet vollständig auf Web3 und besitzt aktuell eine Vertrauens-Betriebslizenz mit Trust. Logins über andere Web3-Wallets werden ebenfalls unterstützt und beeinträchtigen den Zugang nicht."
+				"Jedes Konto kann nur mit einer Mobiltelefonnummer registriert werden.",
+				"Laut FinCEN-Vorschriften muss jeder Benutzer mindestens 100 $ auf seinem Konto haben, um Aufträge auszuführen.",
+				"Jede Aufgabengruppe enthält maximal 0-4 Limit-Orders, jede Limit-Order kann maximal 2 Tauschaufträge enthalten (d.h. 1 Auftrag wird 2 Mal getauscht). Nur 1 Auftrag mit 2 Tauschvorgängen darf pro Gruppe ausgeführt werden.",
+				"Konten, deren Einzahlungsbetrag eine bestimmte Grenze überschreitet, werden automatisch auf SVIP-Mitglieder aufgewertet. Aufgewertete Mitglieder können 40 Aufträge pro Runde abschließen."
 			]
 		},
-
 		platformOperation: {
-			title: "Plattformbetrieb",
+			title: "Plattform-Betrieb",
 			rules: [
-				"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet (UTC−8). Nur innerhalb dieses Zeitfensters können Mitglieder Aufträge erteilen.",
-				"Falls Ihr Konto durch Dritte missbraucht wurde, kontaktieren Sie sofort den Kundensupport.",
-				"Auszahlungen über 30.000 $ müssen dem Kundensupport im Voraus gemeldet werden.",
-				"Der Kredit-Score wird täglich nach 22:30 Uhr aktualisiert (UTC−8). Bei einem Score unter 95 ist keine Auszahlung möglich."
+				"Die Plattform ist täglich von 10:00 bis 23:00 Uhr geöffnet. Mitglieder können nur während dieser Stunden Aufträge erteilen.",
+				"Wenn Ihr Konto von Dritten missbraucht wird, wenden Sie sich bitte sofort an den Kundenservice.",
+				"Auszahlungen über 30.000 $ erfordern eine vorherige Benachrichtigung des Kundenservice.",
+				"Kreditpunkte werden jeden Abend nach 22:30 Uhr aktualisiert. Auszahlungen sind nicht möglich, wenn die Kreditpunkte unter 95 liegen."
 			]
 		},
-
 		orderTypes: {
-			title: "Auftragsarten",
+			title: "Auftragstypen",
 			marketOrder: {
-				title: "Market-Order (Marktauftrag)",
-				description: "Nutzer akzeptieren den derzeit besten verfügbaren Wechselkurs am Markt und der Tausch wird sofort ausgeführt. Das System aktualisiert regelmäßig die von Händlern/Käufern veröffentlichten Echtzeit-Kurse. Nutzer wählen Aufträge entsprechend ihrem verfügbaren Guthaben frei aus."
+				title: "Marktauftrag",
+				description: "Börsenplattform-Benutzer akzeptieren den aktuellen besten verfügbaren Wechselkurs des Marktes und schließen den Tausch sofort ab. Das System weist Aufträge automatisch basierend auf dem verfügbaren Saldo des Mitgliedskontos zu. Die Provision für diesen Auftragstyp beträgt 1% des Auftragsbetrags."
 			},
 			limitOrder: {
-				title: "Limit-Order (Limitauftrag)",
-				description: "Nutzer können einen Ziel-Wechselkurs festlegen. Sobald der Markt-Kurs den angegebenen Wert erreicht, führt das System automatisch Matching und Tausch aus. Diese Aufträge können das aktuelle Guthaben des Agents übersteigen, bieten jedoch ein höheres Renditepotenzial. Die Kommissionsgebühr liegt zwischen 5 % und 60 % des Auftragsbetrags."
+				title: "Limit-Order",
+				description: "Börsenplattform-Benutzer können Zielwechselkurse festlegen. Sobald der Marktwechselkurs den festgelegten Wert erreicht, gleicht das System automatisch ab und führt den Tausch aus. Diese Aufträge übertreffen normalerweise das aktuelle Kontoguthaben des Agenten, bieten aber ein höheres Renditepotenzial. Die Provision für diesen Auftragstyp beträgt 5%-60% des Auftragsbetrags."
 			}
 		},
-
 		giftPackage: {
-			title: "Geschenkpaket",
+			title: "Geschenk-Paket",
 			description: [
-				"Geschenkpakete sind exklusive Vorteile für unsere angesehenen VIP-Mitglieder. Bei jedem VIP-Level-Aufstieg erhalten Sie eine feste Bonusbelohnung ohne Nutzungsbeschränkung. Dieser Bonus kann völlig frei und unbegrenzt verwendet werden."
+				"Geschenk-Pakete sind exklusive Angebote für unsere geschätzten Mitglieder. Sie enthalten einen zufälligen Auftrag, der mit Limit-Aufträgen oder Bargeld verbunden ist, das großzügig von unseren Partnern bereitgestellt wird. Dieses Sonderangebot gilt für Mitglieder, die einen bestimmten Betrag auf ihrem Konto angesammelt haben. Geschenk-Pakete werden nur 0-4 Mal pro Runde angeboten.",
+				"Geschenk-Pakete sollen unsere treue Gemeinschaft belohnen und Ihre Erfahrung mit uns verbessern. Das Erreichen dieser Schwelle ermöglicht Ihnen nicht nur attraktive Belohnungen zu erhalten, sondern auch Teil einer exklusiven Gruppe mit zusätzlichen Vorteilen zu werden."
 			]
 		},
 		deposits: {
@@ -437,29 +430,30 @@ export default {
 		commissionRate: "Provisionsrate",
 		dailyOrders: "Wöchentliche Bestellungen",
 		description: "VIP-Stufenerklärung:\n" +
-			"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
-			"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +
-			"Geldwäschebekämpfung (AML) und regulatorischer Druck! (Der Hauptgrund)\n" +
-			"Daher verwendet die Plattform:\n" +
-			"VIP-Stufe\n" +
-			"Anzahl der Transaktionen\n" +
-			"Transaktionsbetrags-Schwelle\n" +
-			"um Benutzer zu filtern:\n" +
-			"Normale Benutzer, die gelegentlich Geld tauschen\n" +
-			"Hochfrequente USDT-Verkäufer, die verdächtigt werden, Währungsumtausch/Professionelle Market Maker Liquiditätsanbieter zu betreiben\n" +
-			"VIP=Risikokontroll-Objekte (Plattform fühlt sich sicherer)\n" +
-			"VIP-Benutzer besitzen typischerweise:\n" +
-			"Höhere Kapitalausstattung\n" +
-			"Vollständigeres KYC\n" +
-			"Längere Transaktionshistorie\n" +
-			"\n" +
-			"Die Logik der Plattform ist:\n" +
-			"Die Plattform begrenzt die Anzahl der USDT-Verkäufe, weil dies bereits ein hochfrequentes Währungsumtausch- und Liquiditätsverhalten ist, das eine höhere Stufe zur Einhaltung der regulatorischen\n" +
-			"und Risikokontrollanforderungen erfordert, nicht weil die Plattform schwierig ist, sondern vielmehr ein marktorientiertes regulatorisches Compliance-Design.\n" +
-			"\n" +
-			"Freundlicher Hinweis:\n" +
-			"USDT-Spreads können Geld verdienen, aber es ist ein 'quasi-finanzielles Verhalten'. VIP-Stufenbeschränkungen sind keine Schwellen, sondern die Plattform sagt Ihnen:\n" +
-			"'Sie sind kein normaler Benutzer mehr.'"
+		"Der Verkauf von USDT bringt den Spread ein, im Wesentlichen handelt es sich um 'Liquiditätsgeschäft'\n" +
+		"Die VIP-Stufe begrenzt die Anzahl der Transaktionen, um zu verhindern, dass normale Konten den Platz professioneller Market Maker einnehmen, und reduziert gleichzeitig Plattform-Risikokontrollrisiken.\n" +
+		"Geldwäschebekämpfung (AML) und regulatorischer Druck! (Der Hauptgrund)\n" +
+		"Daher verwendet die Plattform:\n" +
+		"VIP-Stufe\n" +
+		"Anzahl der Transaktionen\n" +
+		"Transaktionsbetrags-Schwelle\n" +
+		"um Benutzer zu filtern:\n" +
+		"Normale Benutzer, die gelegentlich Geld tauschen\n" +
+		"Hochfrequente USDT-Verkäufer, die verdächtigt werden, Währungsumtausch/Professionelle Market Maker Liquiditätsanbieter zu betreiben\n" +
+		"VIP=Risikokontroll-Objekte (Plattform fühlt sich sicherer)\n" +
+		"VIP-Benutzer besitzen typischerweise:\n" +
+		"Höhere Kapitalausstattung\n" +
+		"Vollständigeres KYC\n" +
+		"Längere Transaktionshistorie\n" +
+		"\n" +
+		"Die Logik der Plattform ist:\n" +
+		"Die Plattform begrenzt die Anzahl der USDT-Verkäufe, weil dies bereits ein hochfrequentes Währungsumtausch- und Liquiditätsverhalten ist, das eine höhere Stufe zur Einhaltung der regulatorischen\n" +
+		"und Risikokontrollanforderungen erfordert, nicht weil die Plattform schwierig ist, sondern vielmehr ein marktorientiertes regulatorisches Compliance-Design.\n" +
+		"\n" +
+		"Freundlicher Hinweis:\n" +
+		"USDT-Spreads können Geld verdienen, aber es ist ein 'quasi-finanzielles Verhalten'. VIP-Stufenbeschränkungen sind keine Schwellen, sondern die Plattform sagt Ihnen:\n" +
+		"'Sie sind kein normaler Benutzer mehr.'\n" +
+		"VIP-Stufenaufstiege werden automatisch durch das System überprüft und können nicht manuell beeinflusst werden."
 	},
 	deposit: {
 		withdrawal: "Auszahlung",
@@ -477,8 +471,8 @@ export default {
 		all: "Alle",
 		enterWithdrawalPassword: "Auszahlungskennwort eingeben",
 		submit: "Senden",
-		enterWithdrawalAmount: "Bitte geben Sie den Auszahlungsbetrag ein",
-		withdrawalFailed: "Auszahlung fehlgeschlagen, bitte versuchen Sie es später erneut"
+		withdrawalFailed: "Auszahlung fehlgeschlagen, bitte versuchen Sie es später erneut",
+		currencyDescription: "Für Auszahlungen in anderen Währungen als EUR wenden Sie sich bitte an den Online-Support",
 	},
 	about: {
 		title: "Über uns",
@@ -507,10 +501,8 @@ export default {
 		formTitle: "Aufladeinformationen",
 		moneyLabel: "Aufladebetrag",
 		moneyPlaceholder: "Bitte geben Sie den Aufladebetrag ein",
-		addressLabel: "Aufladeadresse",
-		addressPlaceholder: "Bitte geben Sie die Aufladeadresse ein",
-		hashLabel: "Auflade-Hash",
-		hashPlaceholder: "Bitte geben Sie den Auflade-Hash ein",
+		imageLabel: "Auflade-Screenshot",
+		imagePlaceholder: "Bitte laden Sie den Auflade-Screenshot hoch",
 		submitButton: "Aufladung senden",
 		successMessage: "Aufladung erfolgreich eingereicht",
 		failMessage: "Einreichung fehlgeschlagen",
@@ -526,15 +518,13 @@ export default {
 		bankNamePlaceholder: "Bitte geben Sie den Banknamen ein",
 		countryLabel: "Land",
 		countryPlaceholder: "Bitte wählen Sie das Land",
-		routingNumberLabel: "Routing-Nummer",
-		routingNumberPlaceholder: "Bitte geben Sie die Routing-Nummer ein",
+		routingNumberLabel: "IBAN",
+		routingNumberPlaceholder: "IBAN eingeben",
 		swiftCodeLabel: "SWIFT-Code",
 		swiftCodePlaceholder: "Bitte geben Sie den SWIFT-Code ein",
 		bankAddressLabel: "Bankadresse",
 		bankAddressPlaceholder: "Bitte geben Sie die Bankadresse ein",
-		submitButtonText: "Informationen speichern",
-		remark: "Anmerkung",
-		remarkPlaceholder: "Bitte geben Sie eine Anmerkung ein",
+		submitButtonText: "Informationen speichern"
 	},
 	// Echte Namensauthentifizierung bezogene Internationalisierung
 	certification: {
@@ -548,10 +538,24 @@ export default {
 		namePlaceholder: "Bitte geben Sie Ihren echten Namen ein",
 		emailPlaceholder: "Bitte geben Sie Ihre E-Mail-Adresse ein",
 		phonePlaceholder: "Bitte geben Sie Ihre Telefonnummer ein",
+		frontIdCard: "Ausweis Vorderseite",
+		reverseIdCard: "Ausweis Rückseite",
+		uploadFrontIdCard: "Klicken Sie, um die Vorderseite des Ausweises hochzuladen",
+		uploadReverseIdCard: "Klicken Sie, um die Rückseite des Ausweises hochzuladen",
 		submitButton: "Authentifizierung senden",
 		statusPending: "In Prüfung",
 		statusSuccess: "Prüfung erfolgreich",
-		statusFailed: "Prüfung fehlgeschlagen"
+		statusFailed: "Prüfung fehlgeschlagen",
+		requiredFields: "Bitte füllen Sie alle Pflichtfelder aus",
+		invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+		invalidPhone: "Bitte geben Sie eine gültige Telefonnummer ein",
+		submitFailed: "Einreichung fehlgeschlagen, bitte versuchen Sie es erneut"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "Bitte geben Sie Ihre E-Mail-Adresse ein",
+			phonePlaceholder: "Bitte geben Sie Ihre Telefonnummer ein"
+		}
 	},
 	withdrawalStatus: {
 		pending: "Ausstehende Überprüfung",

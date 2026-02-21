@@ -370,6 +370,36 @@ export default {
 			expectedReturn: "ผลตอบแทนที่คาดหวัง"
 		}
 	},
+	certification: {
+		title: "ขอสำเร็จรูปยืนยันตัวตน",
+		subtitle: "กรุณากรอกข้อมูลจริงของคุณเพื่อดำเนินการยืนยันตัวตน",
+		successTitle: "คุณได้ทำการยืนยันตัวตนแล้ว",
+		successSubtitle: "ไม่จำเป็นต้องส่งข้อมูลการยืนยันอีกครั้ง",
+		nameLabel: "ชื่อจริง",
+		emailLabel: "ที่อยู่อีเมล",
+		phoneLabel: "หมายเลขโทรศัพท์",
+		namePlaceholder: "กรุณากรอกชื่อจริงของคุณ",
+		emailPlaceholder: "กรุณากรอกที่อยู่อีเมลของคุณ",
+		phonePlaceholder: "กรุณากรอกหมายเลขโทรศัพท์ของคุณ",
+		frontIdCard: "บัตรประจำตัวด้านหน้า",
+		reverseIdCard: "บัตรประจำตัวด้านหลัง",
+		uploadFrontIdCard: "คลิกเพื่ออัปโหลดบัตรประจำตัวด้านหน้า",
+		uploadReverseIdCard: "คลิกเพื่ออัปโหลดบัตรประจำตัวด้านหลัง",
+		submitButton: "ส่งการยืนยันตัวตน",
+		statusPending: "กำลังตรวจสอบ",
+		statusSuccess: "ผ่านการตรวจสอบ",
+		statusFailed: "ไม่ผ่านการตรวจสอบ",
+		requiredFields: "กรุณากรอกทุกช่องที่จำเป็น",
+		invalidEmail: "กรุณากรอกที่อยู่อีเมลที่ถูกต้อง",
+		invalidPhone: "กรุณากรอกหมายเลขโทรศัพท์ที่ถูกต้อง",
+		submitFailed: "การส่งล้มเหลว กรุณาลองอีกครั้ง"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "กรุณากรอกที่อยู่อีเมล",
+			phonePlaceholder: "กรุณากรอกหมายเลขโทรศัพท์"
+		}
+	},
 	faqs: {
 		pageHeader: {
 			title: "กฎระเบียบและข้อบังคับ",
@@ -465,6 +495,8 @@ export default {
 			addressPlaceholder: "กรุณาใส่ที่อยู่การเติมเงิน",
 			hashLabel: "แฮชการเติมเงิน",
 			hashPlaceholder: "กรุณาใส่แฮชการเติมเงิน",
+			imageLabel: "อัปโหลดภาพหน้าจอ",
+			imagePlaceholder: "คลิกเพื่ออัปโหลดภาพ",
 			submitButton: "ส่งการเติมเงิน",
 			successMessage: "ส่งการเติมเงินสำเร็จ",
 			failMessage: "การส่งล้มเหลว",

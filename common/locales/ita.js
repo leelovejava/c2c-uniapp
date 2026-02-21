@@ -252,8 +252,9 @@ export default {
 			contactUs: "Contattaci",
 			inviteFriends: "Invita amici",
 			logout: "Esci"
-		},
-		exchange: {
+		}
+	},
+	exchange: {
 			infoCard: {
 				totalOrders: "Ordini totali",
 				totalProfit: "Profitto totale",
@@ -280,32 +281,63 @@ export default {
 				close: "Chiudi"
 			}
 		},
-		order: {
-			recordsTitle: "Registri",
-			tabs: {
-				all: "Tutti",
-				pending: "In attesa",
-				completed: "Completato",
-				limitOrder: "Ordine limite"
-			},
-			status: {
-				completed: "Completato",
-				pending: "In attesa",
-				processing: "In elaborazione"
-			},
-			details: {
-				orderId: "ID Ordine",
-				orderType: "Tipo di ordine",
-				exchangeCurrency: "Valuta scambiata",
-				exchangeEarnings: "Guadagno dallo scambio",
-				expectedReturn: "Ritorno previsto"
-			}
+	order: {
+		recordsTitle: "Registri",
+		tabs: {
+			all: "Tutti",
+			pending: "In attesa",
+			completed: "Completato",
+			limitOrder: "Ordine limite"
+		},
+		status: {
+			completed: "Completato",
+			pending: "In attesa",
+			processing: "In elaborazione"
+		},
+		details: {
+			orderId: "ID Ordine",
+			orderType: "Tipo di ordine",
+			exchangeCurrency: "Valuta scambiata",
+			exchangeEarnings: "Guadagno dallo scambio",
+			expectedReturn: "Ritorno previsto"
+		}
+	},
+	navbar: {
+		inviteCode: "Codice invito",
+		copy: "Copia",
+		creditScore: "Punteggio creditizio",
+		totalBalance: "Bilancio totale",
+		currencyExchange: "Cambio valuta",
+		memberLevel: "Livello membro",
+		promotions: "Promozioni",
+		aboutUs: "Chi siamo",
+		faqs: "FAQ",
+		certification: "Certificazione",
+		recharge: "Ricarica",
+		bankCards: "Carte bancarie",
+		records: "Registri",
+		withdraw: "Preleva",
+		contactUs: "Contattaci",
+		inviteFriends: "Invita amici",
+		logout: "Esci",
+		copySuccess: "Copia riuscita",
+		copyFailed: "Copia fallita"
+	},
+	support: {
+		title: "Contattaci",
+		serviceTime: "Orario di servizio: 10:00 - 23:00 tutti i giorni",
+		buttonText: "Team Supporto OFX"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "Inserisci il tuo indirizzo email",
+			phonePlaceholder: "Inserisci il tuo numero di telefono"
 		}
 	},
 	faqs: {
 		pageHeader: {
-			title: "Regole e Regolamenti",
-			description: "Guida alla Piattaforma e Informazioni sul Trading"
+			'title': "Regole e Regolamenti",
+			'description': "Guida alla Piattaforma e Informazioni sul Trading"
 		},
 		basicRules: {
 			title: "Regole di Base",
@@ -420,45 +452,82 @@ export default {
 		addressPlaceholder: "Inserisci l'indirizzo di ricarica",
 		hashLabel: "Hash della ricarica",
 		hashPlaceholder: "Inserisci l'hash della ricarica",
+		imageLabel: "Carica screenshot",
+		imagePlaceholder: "Clicca per caricare immagine",
 		submitButton: "Invia ricarica",
 		successMessage: "Ricarica inviata con successo",
 		failMessage: "Invio fallito",
 		networkErrorMessage: "Errore di rete"
 	},
 		
-		bankCardList: {
-			formTitle: "Informazioni Bancarie",
-			accountNameLabel: "Nome del Titolare del Conto",
-			accountNamePlaceholder: "Inserisci il nome del titolare del conto",
-			accountNumberLabel: "Numero del Conto",
-			accountNumberPlaceholder: "Inserisci il numero del conto",
-			bankNameLabel: "Nome della Banca",
-			bankNamePlaceholder: "Inserisci il nome della banca",
-			countryLabel: "Paese",
-			countryPlaceholder: "Seleziona il paese",
-			routingNumberLabel: "Numero di Routing",
-			routingNumberPlaceholder: "Inserisci il numero di routing",
-			swiftCodeLabel: "Codice SWIFT",
-			swiftCodePlaceholder: "Inserisci il codice SWIFT",
-			bankAddressLabel: "Indirizzo della Banca",
-			bankAddressPlaceholder: "Inserisci l'indirizzo della banca",
-			submitButtonText: "Salva Informazioni",
-			bindSuccess: "Collegamento riuscito",
-			updateSuccess: "Aggiornamento riuscito",
-			remark: "Nota",
-			remarkPlaceholder: "Inserisci una nota",
-		},
-		deposit: {
-			withdrawal: "Prelievo",
-			history: "Cronologia",
-			submit: "Invia",
-			enterWithdrawalAmount: "Inserisci l'importo del prelievo",
-			withdrawalFailed: "Prelievo fallito, riprova più tardi"
-		},
-		withdrawalStatus: {
-			pending: "In attesa di revisione",
-			success: "Pagamento effettuato",
-			rejected: "Respinto",
-			processing: "Elaborazione pagamento"
-		}
+	bankCardList: {
+		formTitle: "Informazioni Bancarie",
+		accountNameLabel: "Nome del Titolare del Conto",
+		accountNamePlaceholder: "Inserisci il nome del titolare del conto",
+		accountNumberLabel: "Numero del Conto",
+		accountNumberPlaceholder: "Inserisci il numero del conto",
+		bankNameLabel: "Nome della Banca",
+		bankNamePlaceholder: "Inserisci il nome della banca",
+		countryLabel: "Paese",
+		countryPlaceholder: "Seleziona il paese",
+		routingNumberLabel: "Numero di Routing",
+		routingNumberPlaceholder: "Inserisci il numero di routing",
+		swiftCodeLabel: "Codice SWIFT",
+		swiftCodePlaceholder: "Inserisci il codice SWIFT",
+		bankAddressLabel: "Indirizzo della Banca",
+		bankAddressPlaceholder: "Inserisci l'indirizzo della banca",
+		submitButtonText: "Salva Informazioni",
+		bindSuccess: "Collegamento riuscito",
+		updateSuccess: "Aggiornamento riuscito",
+		remark: "Nota",
+		remarkPlaceholder: "Inserisci una nota",
+	},
+	deposit: {
+		withdrawal: "Prelievo",
+		history: "Cronologia",
+		totalBalance: "Bilancio Totale",
+		processingTime: "Il prelievo richiede 15-20 minuti.",
+		walletAddressType: "Tipo di Indirizzo Wallet",
+		trc20Address: "Indirizzo TRC20",
+		erc20Address: "Indirizzo ERC20",
+		btcAddress: "Indirizzo BTC",
+		addressNotSet: "Indirizzo Non Impostato",
+		bindAddress: "Collega Indirizzo",
+		verifyWalletAddress: "Si prega di verificare attentamente l'indirizzo del wallet.",
+		all: "Tutti",
+		enterWithdrawalPassword: "Inserisci Password di Prelievo",
+		submit: "Invia",
+		enterWithdrawalAmount: "Inserisci l'importo del prelievo",
+		withdrawalFailed: "Prelievo fallito, riprova più tardi"
+	},
+	withdrawalStatus: {
+		pending: "In attesa di revisione",
+		success: "Pagamento effettuato",
+		rejected: "Respinto",
+		processing: "Elaborazione pagamento"
+	},
+	certification: {
+		title: "Richiesta di Autenticazione del Nome Reale",
+		subtitle: "Si prega di compilare con le informazioni reali per completare l'autenticazione",
+		successTitle: "Hai completato l'autenticazione del nome reale",
+		successSubtitle: "Non è necessario reinviare le informazioni di autenticazione",
+		nameLabel: "Nome Reale",
+		emailLabel: "Indirizzo Email",
+		phoneLabel: "Numero di Telefono",
+		namePlaceholder: "Inserisci il tuo nome reale",
+		emailPlaceholder: "Inserisci il tuo indirizzo email",
+		phonePlaceholder: "Inserisci il tuo numero di telefono",
+		frontIdCard: "Carta d'Identità Fronte",
+		reverseIdCard: "Carta d'Identità Retro",
+		uploadFrontIdCard: "Clicca per caricare la carta d'identità fronte",
+		uploadReverseIdCard: "Clicca per caricare la carta d'identità retro",
+		submitButton: "Invia Autenticazione",
+		statusPending: "In Revisione",
+		statusSuccess: "Revisione Riuscita",
+		statusFailed: "Revisione Fallita",
+		requiredFields: "Si prega di compilare tutti i campi richiesti",
+		invalidEmail: "Si prega di inserire un indirizzo email valido",
+		invalidPhone: "Si prega di inserire un numero di telefono valido",
+		submitFailed: "Invio fallito, si prega di riprovare"
 	}
+}

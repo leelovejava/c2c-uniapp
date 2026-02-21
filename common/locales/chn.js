@@ -371,7 +371,7 @@ export default {
 			subtitle: "请填写您的真实信息以完成认证",
 			successTitle: "您已完成实名认证",
 			successSubtitle: "无需重复提交认证信息",
-		 nameLabel: "真实姓名",
+			nameLabel: "真实姓名",
 			emailLabel: "邮箱地址",
 			phoneLabel: "手机号码",
 			namePlaceholder: "请输入您的真实姓名",
@@ -380,7 +380,17 @@ export default {
 			submitButton: "提交认证",
 			statusPending: "审核中",
 			statusSuccess: "审核成功",
-			statusFailed: "审核失败"
+			statusFailed: "审核失败",
+			requiredFields: "请填写所有必填字段",
+			invalidEmail: "请输入有效的邮箱地址",
+			invalidPhone: "请输入有效的电话号码",
+			submitFailed: "提交失败，请重试"
+		},
+		common: {
+			certification: {
+				emailPlaceholder: "请输入邮箱地址",
+				phonePlaceholder: "请输入手机号码"
+			}
 		}
 	},
 	faqs: {
@@ -530,6 +540,8 @@ export default {
 		addressPlaceholder: "请输入充值地址",
 		hashLabel: "充值hash",
 		hashPlaceholder: "请输入充值hash",
+		imageLabel: "上传截图",
+		imagePlaceholder: "点击上传图片",
 		submitButton: "提交充值",
 		successMessage: "充值提交成功",
 		failMessage: "提交失败",

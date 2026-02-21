@@ -359,6 +359,36 @@ export default {
 			}
 		}
 	},
+	certification: {
+		title: "Đăng ký xác minh danh tính",
+		subtitle: "Vui lòng điền thông tin thực của bạn để hoàn tất xác minh",
+		successTitle: "Bạn đã hoàn tất xác minh danh tính",
+		successSubtitle: "Không cần gửi lại thông tin xác minh",
+		nameLabel: "Họ tên thực",
+		emailLabel: "Địa chỉ email",
+		phoneLabel: "Số điện thoại",
+		namePlaceholder: "Vui lòng nhập họ tên thực của bạn",
+		emailPlaceholder: "Vui lòng nhập địa chỉ email của bạn",
+		phonePlaceholder: "Vui lòng nhập số điện thoại của bạn",
+		frontIdCard: "CMND mặt trước",
+		reverseIdCard: "CMND mặt sau",
+		uploadFrontIdCard: "Nhấp để tải lên CMND mặt trước",
+		uploadReverseIdCard: "Nhấp để tải lên CMND mặt sau",
+		submitButton: "Gửi xác minh",
+		statusPending: "Đang xem xét",
+		statusSuccess: "Xem xét thành công",
+		statusFailed: "Xem xét thất bại",
+		requiredFields: "Vui lòng điền tất cả các trường bắt buộc",
+		invalidEmail: "Vui lòng nhập địa chỉ email hợp lệ",
+		invalidPhone: "Vui lòng nhập số điện thoại hợp lệ",
+		submitFailed: "Gửi thất bại, vui lòng thử lại"
+	},
+	common: {
+		certification: {
+			emailPlaceholder: "Vui lòng nhập địa chỉ email",
+			phonePlaceholder: "Vui lòng nhập số điện thoại"
+		}
+	},
 	faqs: {
 		pageHeader: {
 			title: "Luật lệ và Quy định",
@@ -478,6 +508,8 @@ export default {
 			addressPlaceholder: "Vui lòng nhập địa chỉ nạp tiền",
 			hashLabel: "Mã hash nạp tiền",
 			hashPlaceholder: "Vui lòng nhập mã hash nạp tiền",
+			imageLabel: "Tải lên ảnh chụp màn hình",
+			imagePlaceholder: "Nhấp để tải lên hình ảnh",
 			submitButton: "Gửi nạp tiền",
 			successMessage: "Gửi nạp tiền thành công",
 			failMessage: "Gửi thất bại",

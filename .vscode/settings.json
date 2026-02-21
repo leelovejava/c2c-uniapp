@@ -51,5 +51,7 @@
     ".history"
   ],
   "i18n-swapper.includeFiles": [],
-  "i18n-swapper.SkipPrompt": []
-}
+  "i18n-swapper.SkipPrompt": [],
+  "java.jdt.ls.java.home": "D:\\setup\\jdk-11.0.2",
+  "java.configuration.maven.userSettings": "C:\\Users\\Administrator\\.m2\\settings.xml"
+  }

@@ -366,6 +366,12 @@ export default {
 			buttonText: "OFXサポートチーム"
 		}
 	},
+ 	common: {
+		certification: {
+			emailPlaceholder: "メールアドレスを入力してください",
+			phonePlaceholder: "電話番号を入力してください"
+		}
+	},
 	faqs: {
 		pageHeader: {
 			title: "ルールと規制",
@@ -511,6 +517,8 @@ export default {
 		addressPlaceholder: "チャージアドレスを入力してください",
 		hashLabel: "チャージハッシュ",
 		hashPlaceholder: "チャージハッシュを入力してください",
+		imageLabel: "スクリーンショットをアップロード",
+		imagePlaceholder: "クリックして画像をアップロード",
 		submitButton: "チャージを送信",
 		successMessage: "チャージ送信成功",
 		failMessage: "送信失敗",
@@ -548,10 +556,18 @@ export default {
 		namePlaceholder: "本名を入力してください",
 		emailPlaceholder: "メールアドレスを入力してください",
 		phonePlaceholder: "電話番号を入力してください",
+		frontIdCard: "身分証明書の表",
+		reverseIdCard: "身分証明書の裏",
+		uploadFrontIdCard: "身分証明書の表をアップロード",
+		uploadReverseIdCard: "身分証明書の裏をアップロード",
 		submitButton: "認証を送信",
 		statusPending: "審査中",
 		statusSuccess: "審査成功",
-		statusFailed: "審査失敗"
+		statusFailed: "審査失敗",
+		requiredFields: "必須項目をすべて入力してください",
+		invalidEmail: "有効なメールアドレスを入力してください",
+		invalidPhone: "有効な電話番号を入力してください",
+		submitFailed: "送信に失敗しました。もう一度お試しください"
 	},
 	withdrawalStatus: {
 		pending: "審査待ち",

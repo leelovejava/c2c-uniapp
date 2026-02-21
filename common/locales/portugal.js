@@ -399,6 +399,8 @@ bind: [
 		addressPlaceholder: "Por favor, insira o endereço de recarga",
 		hashLabel: "Hash da recarga",
 		hashPlaceholder: "Por favor, insira o hash da recarga",
+		imageLabel: "Carregar captura de ecrã",
+		imagePlaceholder: "Clique para carregar imagem",
 		submitButton: "Enviar recarga",
 		successMessage: "Recarga enviada com sucesso",
 		failMessage: "Falha no envio",
