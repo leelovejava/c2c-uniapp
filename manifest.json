@@ -1,6 +1,6 @@
 {
     "name" : "NYSE",
-    "appid" : "__UNI__989A9BA",
+    "appid" : "__UNI__DF4E11F",
     "description" : "",
     "versionName" : "0.9.8",
     "versionCode" : 98,
@@ -129,7 +129,7 @@
     },
     "h5" : {
         "template" : "template.h5.html",
-        "publicPath" : "https://overthecounter.top/h5/",
+        "publicPath" : "https://ofxdex.top/h5/",
         "router" : {
             "mode" : "hash",
             "base" : "/h5/"
