@@ -1,488 +1,482 @@
 export default {
-	common: {
-		back: "返回",
-		market: "交易市場",
-		mixRecharge: ["請填寫郵箱地址"],
-		language: "語言",
-		common: ["在線客服", "取消懸浮", "確認", "取消"],
-		upload: ["上傳中...", "錯誤格式", "上傳成功", "上傳失敗"],
-		vanPull: ["沒有更多數據了", "沒有數據"],
-		login: {
-			text: ["語言", "Crypto", "登錄"],
-			label: ["正在登錄...", "立即登錄"],
-			placeholder: ["請輸入郵箱/手機號碼", "請輸入登錄密碼"],
-			default: ["沒有賬號？", "立即註冊", "忘記密碼?", "忘記登錄密碼"],
-			codes: ["賬號不存在", "密碼不正確", "賬號被凍結", "失敗"]
-		},
-		register: {
-			text: ["Crypto", "驗證碼發送中...", "點擊獲取", "正在註冊...", "立即註冊"],
-			placeholder: ["請輸入郵箱", "請輸入驗證碼", "請輸入登錄密碼", "請確認您的密碼", "請輸入邀請碼", "兩次密碼不一樣", "請輸入驗證碼", "無效郵箱"],
-			label: ["已有賬號？{a} {line}", "返回登錄"],
-			codes: ["賬號已存在", "沒有驗證碼", "驗證碼不正確", "兩次密碼不一致", "推薦人不存在", "失敗"]
-		},
-		resetpwd: ["忘記密碼", "請輸入郵箱", "請輸入驗證碼", "點擊獲取", "請輸入密碼", "重置密碼"],
-		footer: ["首頁", "大廳", "訂單", "我的"],
-		home: {
-			confirm: "確認",
-			label: ["歡迎"],
-			broadcast: "恭喜會員{member} 成為{grade}",
-			menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],
-			noticeTitle: "最新公告",
-			msg: "任務未開放",
-			video: "暫無視頻教程",
-			hero: {
-				title: "簡單便捷的在線兌換方式",
-				subtitle: "我們專注於全球資金轉移",
-				description: "我們幫助企業和個人安全地發送和接收資金，無需支付高額銀行費用。",
-				credentials1: "25+年經驗，自2013年在ASX上市",
-				credentials2: "受全球50+監管機構監管",
-				button: "開始使用 →"
-			}
-		},
-		hall: {
-			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "卖出訂單", "卖给商家", "掛單中", "買入", "出售"],
-			list: ["數量", "單價", "剩余", "出售USDT", "請輸入USDT數量", "獲得金額", "限額", "買入USDT", "耗費金額"],
-			kbip: ["撤銷", "超出金額", "必須在金額範圍內"]
-		},
-		msglist: ["消息列表"],
-		sell: {
-			placeholder: ["請輸入賣出價格", "請輸入賣出數量"],
-			label: ["餘額(USDT)", "姓名", "銀行帳號", "當前價格(USDT)", "賣出最優價格", "賣出價格", "賣出USDT數量", "最優價格", "全部", "確定賣出"]
-		},
-		buy: {
-			placeholder: ["請輸入買入價格", "請輸入買入數量", "最小額度", "最大額度"],
-			label: ["餘額(USDT)", "姓名", "銀行帳號", "當前價格(USDT)", "買入最優價格", "買入價格", "買入數量", "最優價格", "全部", "確認買入", "額度"]
-		},
-		user: {
-			default: ["個人中心", "登錄帳號", "邀請碼", "退出登錄", "餘額", "金幣", "錢包"],
-			menu: ["我的資產", "團隊列表", "帳戶綁定", "帳戶明細", "平臺介紹", "退出登錄"]
-		},
-		bindAccount: {
-			default: ["綁定帳號", "提交"],
-			fields: ["姓名", "手機號", "帳號", "銀行", "類型", "USDT地址", "銀行代码"],
-			placeholder: ["請輸入開戶姓名", "請輸入手機號碼", "請輸入銀行帳號", "請輸入開戶行名稱", "請選擇USDT類型", "請輸入USDT地址"]
-		},
-		wallet: {
-			default: ["我的資產", "充值", "提現", "充值記錄", "提現記錄", "已充值金額", "已賣出金額", "已獲取收益", "帳號餘額", "餘額", "充值金額(USDT)", "賣出金額",
-				"總收益", "升級商家", "升級商家，請聯繫客服", "確認入駐商家", "商家認證", "您需支付", "支付憑證", "商家保證金", "立即認證", "資訊", "您需支付",
-				"餘額不足是否充值"
-			],
-			label: ["提現方式", "提現金額", "資金密碼", "提交", "手機號", "郵箱", "IFSC", "確定"],
-			placeholder: ["選擇提現方式", "請輸入提現金額", "請輸入資金密碼", "請選擇提現方式", "請輸入收款人手機號", "請輸入收款人郵箱", "請輸入收款人IFSC"],
-			msg: ["你還未設置資金密碼，請先設置", "你還未綁定PIX帳戶，請先綁定", "確定要提現?"]
-		},
-		recharge: {
-			default: ["錢包充值", "錢包預充值", "充值方式", "充值", "確認"],
-			label: ["類別", "地址", "充值金額", "輸入金額", "上傳憑證", "拷貝成功", "預充值交易所"],
-			placeholder: ["類型", "地址"],
-			info: ["充值金額", "訂單號", "收款銀行", "收款帳號", "收款人", "複製"]
-		},
-		task: {
-			tabs: ["全部", "出售列表", "已失效", "已完成", "等待商家支付", "等待確認"],
-			default: ["訂單列表"],
-			msg: ["提交審核", "已提交，請等待審核", "提交失敗，請重新提交"]
-		},
-		userInfo: {
-			default: ["個人資訊", "頭像", "帳號", "郵箱", "支付寶", "詳細資訊", "修改密碼", "資金密碼", "點擊設置", "修改頭像", "修改登錄密碼", "修改資金密碼", "提交",
-				"清空緩存", "查看資訊", "昵稱", "推薦碼"
-			],
-			label: ["原登錄密碼", "新登錄密碼", "確認密碼", "原資金密碼", "新資金密碼", "確認密碼", "保存"],
-			placeholder: ["請輸入原登錄密碼", "請輸入新登錄密碼", "請確認登錄密碼", "請輸入原資金密碼", "請輸入新資金密碼", "請確認資金密碼"]
-		},
-		fundRecord: {
-			default: ["支出記錄", "充值記錄", "資產日誌", "充", "收", "支"],
-			tabs: ["收入", "支出", "充值"]
-		},
-		dialog: ["提示", "確定", "正在提交...", "複製成功", "IOS系統版本低不支持", "正在註冊...", "數據加載中..."],
-		serviceCenter: ["客服中心", "Hi,我是專屬客服~", "很高興為您服務", "自助服務", "線上客服", "充值客服", "Line客服"],
-		userTaskRecord: ["我的訂單", "賣出訂單", "買入訂單", "當前狀態", "獲得傭金", "已完成"],
-		withdrawlist: ["提現記錄"],
-		teamReport: {
-			default: ["團隊列表"]
-		},
-		common2: ["新手教程", "聯繫客服", "服務條款，查看詳情", "客服1", "客服2"],
-		common3: ["成功", "平臺介紹"],
-		invite: ["分享推廣", "我的邀請碼", "複製邀請碼，邀請更多好友加入", "複製"],
-		common4: ["實名認證", "提交成功", "注意事項", "事項內容", "繳納金額", "身份證正面", "財務證明", "請先去完成帳號綁定", "請先完成實名認證"],
-		common5: ["賣出", "分鐘", "前", "保存二維碼", "打開", "帳號凍結,暫時無法交易", "APP下載"],
-		common6: ["充值訂單", "訂單號", "金額", "時間", "狀態"],
-		hall2: ["最低出售金額為", "", "賣出次數超出每天限制"],
-		register2: ["郵箱註冊", "手機註冊", "請輸入手機號碼"],
-		withdraw2: ["提現", "賣家帳號", "帳戶餘額", "需支付金額", "立即支付", "還有任務未完成,暫時不能提現", "每天提現次數超出", "備註說明"],
-		mytask2: ["商家帳號", "價格", "金額", "帳號餘額", "需付款金額", "時間", "訂單詳情", "數量不能為0", "餘額不足", "價格不能為0", "範圍錯誤"],
-		taskOrder2: ["你還有未成交訂單，不能撤銷", "餘額不足", "確認", "失敗", "你還需要完成訂單才能提現:"],
-		busAuth2: ["商家升級", "我同意", "確認升級", "升級商家", "需要修改銀行卡資訊請聯繫客服", "當前帳號需要升級為商家帳號"],
-		recharge2: ["金額不能為0", "必須上傳截圖"],
-		buy3: ["倒計時", "小時", "類型", "福利訂單", "合卖訂單", "限制人数", "不输入不限制人数", "指定用户ID", "请输入指定ID"],
-		hall3: ["天", "小時", "分鐘", "秒", "合卖訂單", "帳號", "已到期"],
-		sell3: ["賣出價格不能大於最優價"],
-		busAuth3: ["會員", "商家", "皇冠商家"],
-		recharge3: ["计算"],
-		home3: ["矿机", "竞猜", "盲盒", "理财", "敬请期待"],
-		home4: ["快捷交易", "一键购买USDT", "C2C交易", "买卖USDT", "在线用户", "24H交易总量(USDT)"],
-		common7: ["若未解决你的问题，请联系在线客服", "联系客服", "点击咨询", "设置", "全部", "邀請好友", "團隊人数", "本月新增", "註冊时间", "下属人数"],
-		hall4: ["你的身份", "会员", "你的账户信息", "交易成功", "你已成功完成", "总价", "求购", "出售"],
-		task3: ["全部", "未支付", "已支付"],
-		my: ["你確定要退出帳號?"],
-		bindAccount2: ["清确认信息填写无误，否则将影响正常交易", "立即绑定"],
-		recharge4: ["为了你的资金安全,转账成功后，清提交转账成功截图，以便审核!"],
-		resetpwd2: ["郵箱", "手機", "注意: 密碼由6~16個字符組成，不分大小寫"],
-		index: {
-			title: "DEX:OFX",
-			subtitle: "USDT兌換法定貨幣",
-			intro: "對於許多地區的用戶來說，由於支付渠道有限、銀行限制、當地監管或缺乏合規交易所等原因，無法輕鬆購買USDT（穩定幣）是一個普遍問題。DEX:OFX提供了一種安全、合規且高流動性的方式，幫助用戶將數字資產順利兌換為當地法定貨幣。",
-			suitableUsersTitle: "一、哪些用戶適合？",
-			suitableUsersIntro: "DEX:OFX的法幣兌換機制特別適合以下人群：",
-			suitableUsers: [
-				"當地銀行禁止或限制購買加密貨幣。",
-				"信用卡/借記卡無法在交易所購買USDT。",
-				"當地交易所USDT流動性不足。",
-				"想要避免複雜的KYC或高額手續費。",
-				"想要快速將數字資產轉換為當地法定貨幣（歐元、加元、美元、新加坡元、瑞士法郎等）。"
-			],
-			"coreFeaturesTitle": "二、DEX:OFX的核心功能",
-			"coreFeatures": [
-				{
-					"title": "USDT → 法幣兌換",
-					"content": "用戶可以將USDT轉賬到DEX:OFX的指定錢包地址，系統會根據實時匯率自動轉換為指定法定貨幣，並通過合作金融網絡完成轉賬。",
-					"supportedCurrenciesTitle": "支持的法定貨幣包括（但不限於）：",
-					"supportedCurrencies": [
-						"美元 USD",
-						"港幣 HKD",
-						"新加坡元 SGD",
-						"新台幣 TWD",
-						"歐元 EUR",
-						"澳大利亞元 AUD"
-					]
-				},
-				{
-					"title": "無需交易所賬戶",
-					"content": "無需coinbase-crypto.com等中心化交易所賬戶。降低門檻，特別是針對無法註冊交易所的用戶。"
-				},
-				{
-					"title": "全球跨境收款能力",
-					"content": "依托OFX的全球跨境支付網絡，實現快速到賬；",
-					"transferTime": [
-						"同一國家轉賬：當天或1個工作日",
-						"國際匯款：1-3個工作日",
-						"（取決於地區銀行）"
-					]
-				},
-				{
-					"title": "透明匯率，低手續費",
-					"content": "採用實時市場價進行兌換，費用固定透明，避免隱藏手續費。"
-				}
-			],
-			"exchangeProcessTitle": "三、兌換流程示例",
-			"exchangeProcessIntro": "以下是一般兌換流程（可根據業務需求調整）：",
-			"exchangeProcess": [
-				{
-					"title": "提交兌換申請",
-					"steps": [
-						"用戶選擇法定貨幣、金額和收款銀行。",
-						"系統生成USDT收款地址（TRC20或ERC20）。",
-						"用戶向USDT或其他加密貨幣轉賬。"
-					]
-				},
-				{
-					"title": "DEX:OFX執行兌換",
-					"steps": ["系統實時將兌換價格轉換為所需法定貨幣。"]
-				},
-				{
-					"title": "法定貨幣到賬",
-					"steps": ["通過國際金融網絡或當地銀行系統匯款到用戶賬戶。"]
-				}
-			],
-			"whyCantBuyTitle": "四、為什麼很多人買不到USDT？",
-			"whyCantBuyReasons": [
-				"銀行不允許\"加密貨幣交易\"類別",
-				"信用卡公司阻止加密購買。",
-				"當地監管限制",
-				"交易所要求高KYC",
-				"交易所提款費用高。",
-				"當地沒有穩定幣分發渠道。",
-				"一些國家沒有合法的加密交易所。"
-			],
-			"valueProposition": "Dex:OFX的價值在於幫助這些人跨越金融障礙，直接使用法幣。",
-			"safetyTitle": "五、安全與監管（重點增加信任）",
-			"safetyIntro": "基於OFX系統的理念，強調監管、合規和透明流程。",
-			"safetyFeatures": [
-				"所有資金流動都經過AML和KYC審核。",
-				"用戶的收款銀行需要進行驗證。",
-				"整個過程可追溯、可審計。"
-			],
-			"regions": {
-				"europe": "歐洲",
-				"unitedStates": "美國",
-				"canada": "加拿大",
-				"singapore": "新加坡",
-				"switzerland": "瑞士",
-				"unitedKingdom": "英國"
-			},
-			"infoCards": [
-				{
-					"title": "易於使用",
-					"description": "在線兌換來自150多個國家的貨幣"
-				},
-				{
-					"title": "快速、可靠的轉賬",
-					"description": "實時市場利率的即時兌換"
-				},
-				{
-					"title": "值得信賴且安全",
-					"description": "獲得授權和監管的P2P機構"
-				}
-			]}
-		},
-		exchange: {
-			infoCard: {
-				totalOrders: "總訂單數",
-				totalProfit: "總利潤",
-				totalBalance: "總餘額",
-				processing: "處理中",
-				orders: "訂單",
-				confirmExchange: "確認兌換",
-				records: "記錄",
-				selectCurrency: "請選擇貨幣"
-			},
-			modal: {
-				steps: [
-					"匹配訂單",
-					"處理中",
-					"已兌換"
-				],
-				percentage: "(100%)",
-				exchangedCurrency: "已兌換貨幣",
-				exchangedRate: "兌換匯率",
-				exchangedAmount: "兌換金額",
-				exchangeEarnings: "兌換收益",
-				orderType: "訂單類型",
-				expectedReturn: "預期收益",
-				close: "關閉"
-			}
-		},
-		navbar: {
-			inviteCode: "邀請碼",
-			copy: "複製",
-			creditScore: "信用評分",
-			totalBalance: "總資產",
-			currencyExchange: "貨幣兌換",
-			memberLevel: "會員等級",
-			promotions: "優惠活動",
-			aboutUs: "關於我們",
-			faqs: "常見問題",
-			certification: "認證",
-			recharge: "充值",
-			bankCards: "銀行卡",
-			records: "記錄",
-			withdraw: "出金",
-			contactUs: "聯繫我們",
-			inviteFriends: "邀請好友",
-			logout: "退出登錄",
-		},
-		faqs: {
-			pageHeader: {
-				title: "規則和條例",
-				description: "平台指南和交易信息"
-			},
-			basicRules: {
-				title: "基本規則",
-				rules: [
-					"1: 每個 Web3 錢包帳號僅允許成功註冊一個平台帳號。",
-					"2: 根據 FinCEN 法規，每位用戶的帳戶中必須至少擁有 100 USDT 才能執行訂單。",
-					"3: VIP 等級限制每週兌換次數：VIP1 每週 2 次，VIP2 每週 3 次，VIP3 每週 5 次，VIP4 兌換次數無限制。",
-					"4: 當帳戶存款達到指定門檻金額時，VIP 等級將會自動升級。",
-					"5: 平台在 Web3 上運行，面向全球用戶，任何時間都可以自由進行兌換。",
-					"6: 為了您的帳戶安全，請勿洩露您的錢包助記詞。",
-					"7: 信用分數將在每日太平洋時間 00:00 更新。當信用分數低於 95 分時，您的提現功能將會被凍結。為了帳號安全，請聯繫客服人員協助處理。",
-					"8: 提現注意事項：請依規定填寫正確的國際銀行資訊。國際電匯通常需要 1–5 個工作日到帳。若填寫錯誤資訊，將導致電匯失敗，需等待資金退回後才能再次提現。錯誤操作也可能導致您的信用分數下降。",
-					"9: 平台運行於 Web3，目前已與 Trust 簽署信任運行許可證，並支援其他 Web3 錢包登入，不影響登入與使用。"
-				]
-			},
+    common: {
+        back: "返回",
+        market: "交易市場",
+        mixRecharge: ["請填寫郵箱地址"],
+        language: "語言",
+        common: ["在線客服", "取消懸浮", "確認", "取消"],
+        upload: ["上傳中...", "錯誤格式", "上傳成功", "上傳失敗"],
+        vanPull: ["沒有更多數據了", "沒有數據"],
+        login: {
+            text: ["語言", "Crypto", "登錄"],
+            label: ["正在登錄...", "立即登錄"],
+            placeholder: ["請輸入郵箱/手機號碼", "請輸入登錄密碼"],
+            default: ["沒有賬號？", "立即註冊", "忘記密碼?", "忘記登錄密碼"],
+            codes: ["賬號不存在", "密碼不正確", "賬號被凍結", "失敗"]
+        },
+        register: {
+            text: ["Crypto", "驗證碼發送中...", "點擊獲取", "正在註冊...", "立即註冊"],
+            placeholder: ["請輸入郵箱", "請輸入驗證碼", "請輸入登錄密碼", "請確認您的密碼", "請輸入邀請碼", "兩次密碼不一樣", "請輸入驗證碼", "無效郵箱"],
+            label: ["已有賬號？{a} {line}", "返回登錄"],
+            codes: ["賬號已存在", "沒有驗證碼", "驗證碼不正確", "兩次密碼不一致", "推薦人不存在", "失敗"]
+        },
+        resetpwd: ["忘記密碼", "請輸入郵箱", "請輸入驗證碼", "點擊獲取", "請輸入密碼", "重置密碼"],
+        footer: ["首頁", "大廳", "訂單", "我的"],
+        home: {
+            confirm: "確認",
+            label: ["歡迎"],
+            broadcast: "恭喜會員{member} 成為{grade}",
+            menu: ["資金日誌", "新手教程", "邀請註冊", "聯繫客服"],
+            noticeTitle: "最新公告",
+            msg: "任務未開放",
+            video: "暫無視頻教程",
+            hero: {
+                title: "簡單便捷的在線兌換方式",
+                subtitle: "我們專注於全球資金轉移",
+                description: "我們幫助企業和個人安全地發送和接收資金，無需支付高額銀行費用。",
+                credentials1: "25+年經驗，自2013年在ASX上市",
+                credentials2: "受全球50+監管機構監管",
+                button: "開始使用 →"
+            }
+        },
+        hall: {
+            default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "卖出訂單", "卖给商家", "掛單中", "買入", "出售"],
+            list: ["數量", "單價", "剩余", "出售USDT", "請輸入USDT數量", "獲得金額", "限額", "買入USDT", "耗費金額"],
+            kbip: ["撤銷", "超出金額", "必須在金額範圍內"]
+        },
+        msglist: ["消息列表"],
+        sell: {
+            placeholder: ["請輸入賣出價格", "請輸入賣出數量"],
+            label: ["餘額(USDT)", "姓名", "銀行帳號", "當前價格(USDT)", "賣出最優價格", "賣出價格", "賣出USDT數量", "最優價格", "全部", "確定賣出"]
+        },
+        buy: {
+            placeholder: ["請輸入買入價格", "請輸入買入數量", "最小額度", "最大額度"],
+            label: ["餘額(USDT)", "姓名", "銀行帳號", "當前價格(USDT)", "買入最優價格", "買入價格", "買入數量", "最優價格", "全部", "確認買入", "額度"]
+        },
+        user: {
+            default: ["個人中心", "登錄帳號", "邀請碼", "退出登錄", "餘額", "金幣", "錢包"],
+            menu: ["我的資產", "團隊列表", "帳戶綁定", "帳戶明細", "平臺介紹", "退出登錄"]
+        },
+        bindAccount: {
+            default: ["綁定帳號", "提交"],
+            fields: ["姓名", "手機號", "帳號", "銀行", "類型", "USDT地址", "銀行代码"],
+            placeholder: ["請輸入開戶姓名", "請輸入手機號碼", "請輸入銀行帳號", "請輸入開戶行名稱", "請選擇USDT類型", "請輸入USDT地址"]
+        },
+        wallet: {
+            default: ["我的資產", "充值", "提現", "充值記錄", "提現記錄", "已充值金額", "已賣出金額", "已獲取收益", "帳號餘額", "餘額", "充值金額(USDT)", "賣出金額",
+                "總收益", "升級商家", "升級商家，請聯繫客服", "確認入駐商家", "商家認證", "您需支付", "支付憑證", "商家保證金", "立即認證", "資訊", "您需支付",
+                "餘額不足是否充值"
+            ],
+            label: ["提現方式", "提現金額", "資金密碼", "提交", "手機號", "郵箱", "IFSC", "確定"],
+            placeholder: ["選擇提現方式", "請輸入提現金額", "請輸入資金密碼", "請選擇提現方式", "請輸入收款人手機號", "請輸入收款人郵箱", "請輸入收款人IFSC"],
+            msg: ["你還未設置資金密碼，請先設置", "你還未綁定PIX帳戶，請先綁定", "確定要提現?"]
+        },
+        recharge: {
+            default: ["錢包充值", "錢包預充值", "充值方式", "充值", "確認"],
+            label: ["類別", "地址", "充值金額", "輸入金額", "上傳憑證", "拷貝成功", "預充值交易所"],
+            placeholder: ["類型", "地址"],
+            info: ["充值金額", "訂單號", "收款銀行", "收款帳號", "收款人", "複製"]
+        },
+        task: {
+            tabs: ["全部", "出售列表", "已失效", "已完成", "等待商家支付", "等待確認"],
+            default: ["訂單列表"],
+            msg: ["提交審核", "已提交，請等待審核", "提交失敗，請重新提交"]
+        },
+        userInfo: {
+            default: ["個人資訊", "頭像", "帳號", "郵箱", "支付寶", "詳細資訊", "修改密碼", "資金密碼", "點擊設置", "修改頭像", "修改登錄密碼", "修改資金密碼", "提交",
+                "清空緩存", "查看資訊", "昵稱", "推薦碼"
+            ],
+            label: ["原登錄密碼", "新登錄密碼", "確認密碼", "原資金密碼", "新資金密碼", "確認密碼", "保存"],
+            placeholder: ["請輸入原登錄密碼", "請輸入新登錄密碼", "請確認登錄密碼", "請輸入原資金密碼", "請輸入新資金密碼", "請確認資金密碼"]
+        },
+        fundRecord: {
+            default: ["支出記錄", "充值記錄", "資產日誌", "充", "收", "支"],
+            tabs: ["收入", "支出", "充值"]
+        },
+        dialog: ["提示", "確定", "正在提交...", "複製成功", "IOS系統版本低不支持", "正在註冊...", "數據加載中..."],
+        serviceCenter: ["客服中心", "Hi,我是專屬客服~", "很高興為您服務", "自助服務", "線上客服", "充值客服", "Line客服"],
+        userTaskRecord: ["我的訂單", "賣出訂單", "買入訂單", "當前狀態", "獲得傭金", "已完成"],
+        withdrawlist: ["提現記錄"],
+        teamReport: {
+            default: ["團隊列表"]
+        },
+        common2: ["新手教程", "聯繫客服", "服務條款，查看詳情", "客服1", "客服2"],
+        common3: ["成功", "平臺介紹"],
+        invite: ["分享推廣", "我的邀請碼", "複製邀請碼，邀請更多好友加入", "複製"],
+        common4: ["實名認證", "提交成功", "注意事項", "事項內容", "繳納金額", "身份證正面", "財務證明", "請先去完成帳號綁定", "請先完成實名認證"],
+        common5: ["賣出", "分鐘", "前", "保存二維碼", "打開", "帳號凍結,暫時無法交易", "APP下載"],
+        common6: ["充值訂單", "訂單號", "金額", "時間", "狀態"],
+        hall2: ["最低出售金額為", "", "賣出次數超出每天限制"],
+        register2: ["郵箱註冊", "手機註冊", "請輸入手機號碼"],
+        withdraw2: ["提現", "賣家帳號", "帳戶餘額", "需支付金額", "立即支付", "還有任務未完成,暫時不能提現", "每天提現次數超出", "備註說明"],
+        mytask2: ["商家帳號", "價格", "金額", "帳號餘額", "需付款金額", "時間", "訂單詳情", "數量不能為0", "餘額不足", "價格不能為0", "範圍錯誤"],
+        taskOrder2: ["你還有未成交訂單，不能撤銷", "餘額不足", "確認", "失敗", "你還需要完成訂單才能提現:"],
+        busAuth2: ["商家升級", "我同意", "確認升級", "升級商家", "需要修改銀行卡資訊請聯繫客服", "當前帳號需要升級為商家帳號"],
+        recharge2: ["金額不能為0", "必須上傳截圖"],
+        buy3: ["倒計時", "小時", "類型", "福利訂單", "合卖訂單", "限制人数", "不输入不限制人数", "指定用户ID", "请输入指定ID"],
+        hall3: ["天", "小時", "分鐘", "秒", "合卖訂單", "帳號", "已到期"],
+        sell3: ["賣出價格不能大於最優價"],
+        busAuth3: ["會員", "商家", "皇冠商家"],
+        recharge3: ["计算"],
+        home3: ["矿机", "竞猜", "盲盒", "理财", "敬请期待"],
+        home4: ["快捷交易", "一键购买USDT", "C2C交易", "买卖USDT", "在线用户", "24H交易总量(USDT)"],
+        common7: ["若未解决你的问题，请联系在线客服", "联系客服", "点击咨询", "设置", "全部", "邀請好友", "團隊人数", "本月新增", "註冊时间", "下属人数"],
+        hall4: ["你的身份", "会员", "你的账户信息", "交易成功", "你已成功完成", "总价", "求购", "出售"],
+        task3: ["全部", "未支付", "已支付"],
+        my: ["你確定要退出帳號?"],
+        bindAccount2: ["清确认信息填写无误，否则将影响正常交易", "立即绑定"],
+        recharge4: ["为了你的资金安全,转账成功后，清提交转账成功截图，以便审核!"],
+        resetpwd2: ["郵箱", "手機", "注意: 密碼由6~16個字符組成，不分大小寫"],
+        index: {
+            title: "DEX:OFX",
+            subtitle: "USDT兌換法定貨幣",
+            intro: "對於許多地區的用戶來說，由於支付渠道有限、銀行限制、當地監管或缺乏合規交易所等原因，無法輕鬆購買USDT（穩定幣）是一個普遍問題。DEX:OFX提供了一種安全、合規且高流動性的方式，幫助用戶將數字資產順利兌換為當地法定貨幣。",
+            suitableUsersTitle: "一、哪些用戶適合？",
+            suitableUsersIntro: "DEX:OFX的法幣兌換機制特別適合以下人群：",
+            suitableUsers: [
+                "當地銀行禁止或限制購買加密貨幣。",
+                "信用卡/借記卡無法在交易所購買USDT。",
+                "當地交易所USDT流動性不足。",
+                "想要避免複雜的KYC或高額手續費。",
+                "想要快速將數字資產轉換為當地法定貨幣（歐元、加元、美元、新加坡元、瑞士法郎等）。"
+            ],
+            "coreFeaturesTitle": "二、DEX:OFX的核心功能",
+            "coreFeatures": [
+                {
+                    "title": "USDT → 法幣兌換",
+                    "content": "用戶可以將USDT轉賬到DEX:OFX的指定錢包地址，系統會根據實時匯率自動轉換為指定法定貨幣，並通過合作金融網絡完成轉賬。",
+                    "supportedCurrenciesTitle": "支持的法定貨幣包括（但不限於）：",
+                    "supportedCurrencies": [
+                        "美元 USD",
+                        "港幣 HKD",
+                        "新加坡元 SGD",
+                        "新台幣 TWD",
+                        "歐元 EUR",
+                        "澳大利亞元 AUD"
+                    ]
+                },
+                {
+                    "title": "無需交易所賬戶",
+                    "content": "無需coinbase-crypto.com等中心化交易所賬戶。降低門檻，特別是針對無法註冊交易所的用戶。"
+                },
+                {
+                    "title": "全球跨境收款能力",
+                    "content": "依托OFX的全球跨境支付網絡，實現快速到賬；",
+                    "transferTime": [
+                        "同一國家轉賬：當天或1個工作日",
+                        "國際匯款：1-3個工作日",
+                        "（取決於地區銀行）"
+                    ]
+                },
+                {
+                    "title": "透明匯率，低手續費",
+                    "content": "採用實時市場價進行兌換，費用固定透明，避免隱藏手續費。"
+                }
+            ],
+            "exchangeProcessTitle": "三、兌換流程示例",
+            "exchangeProcessIntro": "以下是一般兌換流程（可根據業務需求調整）：",
+            "exchangeProcess": [
+                {
+                    "title": "提交兌換申請",
+                    "steps": [
+                        "用戶選擇法定貨幣、金額和收款銀行。",
+                        "系統生成USDT收款地址（TRC20或ERC20）。",
+                        "用戶向USDT或其他加密貨幣轉賬。"
+                    ]
+                },
+                {
+                    "title": "DEX:OFX執行兌換",
+                    "steps": ["系統實時將兌換價格轉換為所需法定貨幣。"]
+                },
+                {
+                    "title": "法定貨幣到賬",
+                    "steps": ["通過國際金融網絡或當地銀行系統匯款到用戶賬戶。"]
+                }
+            ],
+            "whyCantBuyTitle": "四、為什麼很多人買不到USDT？",
+            "whyCantBuyReasons": [
+                "銀行不允許\"加密貨幣交易\"類別",
+                "信用卡公司阻止加密購買。",
+                "當地監管限制",
+                "交易所要求高KYC",
+                "交易所提款費用高。",
+                "當地沒有穩定幣分發渠道。",
+                "一些國家沒有合法的加密交易所。"
+            ],
+            "valueProposition": "Dex:OFX的價值在於幫助這些人跨越金融障礙，直接使用法幣。",
+            "safetyTitle": "五、安全與監管（重點增加信任）",
+            "safetyIntro": "基於OFX系統的理念，強調監管、合規和透明流程。",
+            "safetyFeatures": [
+                "所有資金流動都經過AML和KYC審核。",
+                "用戶的收款銀行需要進行驗證。",
+                "整個過程可追溯、可審計。"
+            ],
+            "regions": {
+                "europe": "歐洲",
+                "unitedStates": "美國",
+                "canada": "加拿大",
+                "singapore": "新加坡",
+                "switzerland": "瑞士",
+                "unitedKingdom": "英國"
+            },
+            "infoCards": [
+                {
+                    "title": "易於使用",
+                    "description": "在線兌換來自150多個國家的貨幣"
+                },
+                {
+                    "title": "快速、可靠的轉賬",
+                    "description": "實時市場利率的即時兌換"
+                },
+                {
+                    "title": "值得信賴且安全",
+                    "description": "獲得授權和監管的P2P機構"
+                }
+            ]
+        }
+    },
+    exchange: {
+        infoCard: {
+            totalOrders: "總訂單數",
+            totalProfit: "總利潤",
+            totalBalance: "總餘額",
+            processing: "處理中",
+            orders: "訂單",
+            confirmExchange: "確認兌換",
+            records: "記錄",
+            selectCurrency: "請選擇貨幣"
+        },
+        modal: {
+            steps: [
+                "匹配訂單",
+                "處理中",
+                "已兌換"
+            ],
+            percentage: "(100%)",
+            exchangedCurrency: "已兌換貨幣",
+            exchangedRate: "兌換匯率",
+            exchangedAmount: "兌換金額",
+            exchangeEarnings: "兌換收益",
+            orderType: "訂單類型",
+            expectedReturn: "預期收益",
+            close: "關閉"
+        }
+    },
+    navbar: {
+        inviteCode: "邀請碼",
+        copy: "複製",
+        creditScore: "信用評分",
+        totalBalance: "總資產",
+        currencyExchange: "貨幣兌換",
+        memberLevel: "會員等級",
+        promotions: "優惠活動",
+        aboutUs: "關於我們",
+        faqs: "常見問題",
+        certification: "認證",
+        recharge: "充值",
+        bankCards: "銀行卡",
+        records: "記錄",
+        withdraw: "出金",
+        contactUs: "聯繫我們",
+        inviteFriends: "邀請好友",
+        logout: "退出登錄",
+    },
+    faqs: {
+        pageHeader: {
+            title: "規則和條例",
+            description: "平台指南和交易信息"
+        },
+        basicRules: {
+            title: "基本規則",
+            rules: [
+                "1: 每個 Web3 錢包帳號僅允許成功註冊一個平台帳號。",
+                "2: 根據 FinCEN 法規，每位用戶的帳戶中必須至少擁有 100 USDT 才能執行訂單。",
+                "3: VIP 等級限制每週兌換次數：VIP1 每週 2 次，VIP2 每週 3 次，VIP3 每週 5 次，VIP4 兌換次數無限制。",
+                "4: 當帳戶存款達到指定門檻金額時，VIP 等級將會自動升級。",
+                "5: 平台在 Web3 上運行，面向全球用戶，任何時間都可以自由進行兌換。",
+                "6: 為了您的帳戶安全，請勿洩露您的錢包助記詞。",
+                "7: 信用分數將在每日太平洋時間 00:00 更新。當信用分數低於 95 分時，您的提現功能將會被凍結。為了帳號安全，請聯繫客服人員協助處理。",
+                "8: 提現注意事項：請依規定填寫正確的國際銀行資訊。國際電匯通常需要 1–5 個工作日到帳。若填寫錯誤資訊，將導致電匯失敗，需等待資金退回後才能再次提現。錯誤操作也可能導致您的信用分數下降。",
+                "9: 平台運行於 Web3，目前已與 Trust 簽署信任運行許可證，並支援其他 Web3 錢包登入，不影響登入與使用。"
+            ]
+        },
 
-			platformOperation: {
-				title: "平台營運",
-				rules: [
-					"平台每日 10:00 至 23:00 開放（UTC−8），會員僅可在此時段內下單。",
-					"若您的帳號遭第三方濫用，請立即聯繫客服。",
-					"提現超過 $30,000 需事先通知客服人員。",
-					"信用分數每日 22:30 之後更新（UTC−8）。當信用分數低於 95 分時，將無法提現。"
-				]
-			},
+        platformOperation: {
+            title: "平台營運",
+            rules: [
+                "平台每日 10:00 至 23:00 開放（UTC−8），會員僅可在此時段內下單。",
+                "若您的帳號遭第三方濫用，請立即聯繫客服。",
+                "提現超過 $30,000 需事先通知客服人員。",
+                "信用分數每日 22:30 之後更新（UTC−8）。當信用分數低於 95 分時，將無法提現。"
+            ]
+        },
 
-			orderTypes: {
-				title: "訂單類型",
-				marketOrder: {
-					title: "市價單 (Market Order)",
-					description: "外匯平台用戶接受當前市場最佳可用匯率並立即完成兌換。系統會定時更新收購商發佈的即時匯率，用戶可依可用餘額自行選擇訂單進行兌換。"
-				},
-				limitOrder: {
-					title: "限價單 (Limit Order)",
-					description: "外匯平台用戶可設定目標匯率。當市場匯率達到指定值時，系統將自動匹配並執行兌換。此類訂單可能超過代理商當前帳戶餘額，但提供更高的潛在回報。此訂單類型的手續費為訂單金額的 5% – 60%。"
-				}
-			},
+        orderTypes: {
+            title: "訂單類型",
+            marketOrder: {
+                title: "市價單 (Market Order)",
+                description: "外匯平台用戶接受當前市場最佳可用匯率並立即完成兌換。系統會定時更新收購商發佈的即時匯率，用戶可依可用餘額自行選擇訂單進行兌換。"
+            },
+            limitOrder: {
+                title: "限價單 (Limit Order)",
+                description: "外匯平台用戶可設定目標匯率。當市場匯率達到指定值時，系統將自動匹配並執行兌換。此類訂單可能超過代理商當前帳戶餘額，但提供更高的潛在回報。此訂單類型的手續費為訂單金額的 5% – 60%。"
+            }
+        },
 
-			giftPackage: {
-				title: "禮品包",
-				description: [
-					"禮品包是為我們尊貴的 VIP 會員提供的專屬優惠。每提升一級 VIP，您都將獲得一份固定獎勵，該獎勵可自由支配，無任何使用限制。"
-				]
-			},
-			deposits: {
-				title: "Deposits",
-				description: [
-					"所有存款必須通過平台的在線客服協調。將資金轉入客服指定的賬戶後，請提交付款憑證以確保及時處理。",
-					"為避免延誤，請在每次交易前直接在平台上確認您的賬戶詳情，因為這些可能會定期更改。如果您在存款過程中遇到任何問題，請立即聯繫客服。"
-				]
-			},
-			withdrawals: {
-				title: "Withdrawals",
-				description: [
-					"會員只能在完成所有指定的日常任務後申請提現。在滿足平台提現條件的情況下，可以提取在平台上賺取的資金。在申請提現之前，請確保您的平台賬戶包含有效的錢包地址。",
-					"注意:每日10:00 至 23:00 可進行提現。"
-				]
-			}
-		},
-		vip: {
-			title: "會員等級",
-			current: "當前",
-			deposit: "存款",
-			bonus: "獎金",
-			commissionRate: "佣金率",
-			dailyOrders: "每週訂單",
-			description:
-				"VIP 等級說明：\n" +
-				"出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +
-				"VIP 等級限制交易次數，以防止普通帳戶佔用專業做市商的交易空間。\n" +
-				"反洗錢（AML）及監管壓力（核心原因）\n" +
-				"平台將透過以下條件篩選用戶：\n" +
-				"VIP 等級\n" +
-				"交易次數\n" +
-				"交易金額門檻\n" +
-				"用戶分類：\n" +
-				"普通用戶只會偶爾兌換。\n" +
-				"高頻出售 USDT 被視為專業流動性行為。\n" +
-				"VIP＝可控風控對象\n" +
-				"VIP 用戶通常具備：\n" +
-				"較高資金量\n" +
-				"更完整的 KYC\n" +
-				"較長的交易歷史\n" +
-				"\n" +
-				"平台邏輯：\n" +
-				"USDT 出售限制屬於市場導向的合規設計。\n" +
-				"\n" +
-				"提示：\n" +
-				"USDT 價差屬於準金融行為，VIP 代表：\n" +
-				"你已不再是普通用戶。"
-		},
-		about: {
-			title: "關於我們",
-			companyDescription: "OFX成立於2001年，是一家專注於全球資本轉移和外匯服務的跨國金融科技公司。公司源於一個清晰的概念：為全球客戶提供更好、更公平、更高效的跨境資本解決方案。自成立以來，OFX已為超過100萬客戶提供了服務，支持50多種貨幣，覆蓋170多個國家和市場，累計處理資金超過1.48萬億美元。",
-			globalNetworkTitle: "全球網絡佈局",
-			globalNetworkDesc: "公司在倫敦、都柏林、悉尼、奧克蘭、香港、新加坡、多倫多和舊金山設有辦事處，全球員工超過700人，擁有堅實的運營網絡和本地化服務能力。",
-			regulatoryAdvantageTitle: "強大的監管優勢",
-			regulatoryAdvantageDesc: "公司受到全球50多個監管機構的監督，遵循嚴格的財務審計和合規標準。自上市以來，沒有任何監管處罰或執法行動，風險管理能力健全。",
-			corporateGovernanceTitle: "公司治理與管理",
-			corporateGovernanceDesc1: "董事會由在銀行、金融和技術領域擁有豐富經驗的商業領袖組成，確保健全的公司治理結構。",
-			corporateGovernanceDesc2: "管理團隊由來自主要國際銀行、支付服務提供商和技術公司的高級管理人員組成，由首席執行官Skander Malcolm領導，持續推進OFX的戰略擴張和數字創新。",
-			listingStatusTitle: "上市地位與行業屬性",
-			listingStatusDesc: "OFX於2013年在澳洲證券交易所(ASX)上市(股票代碼：OFX)，被歸類為\"多元化金融\"。公司憑藉穩定的合規框架、國際化佈局和可持續的盈利模式，在跨境金融科技行業中保持著強大的競爭力。",
-			aboutDexOfxTitle: "關於\"DEX:OFX\"",
-			aboutDexOfxDesc1: "自2023年3月10日起，一些金融信息平台顯示了\"DEX:OFX\"標籤。",
-			aboutDexOfxDesc2: "必須澄清的是：",
-			aboutDexOfxDesc3: "\"Dex: OFX\"並非實際交易代碼。它是某些數據平台上系統更新期間自動生成的跨市場映射標識符。",
-			aboutDexOfxDesc4: "該標識符作為內部系統測試的一部分生成，用於驗證平台在不同市場中正確關聯公司信息的能力。因此，該標籤僅用於數據索引和測試目的，並不意味著OFX在DEX或其他任何交易所上市。",
-			aboutDexOfxDesc5: "OFX唯一有效的官方上市是：澳洲證券交易所(ASX) 股票代碼：OFX",
-			aboutDexOfxDesc6: "所有其他標識符（包括\"DEX:OFX\"）都是系統生成的映射條目，不用於實際交易，僅為用戶提供更好的服務。",
-			headquartersTitle: "OFX集團總部地址",
-			headquartersDesc: "澳洲新南威爾士州悉尼瑪格麗特街60號19層，郵編2000"
-		},
-		
-		bindTrc20: {
-			formTitle: "充值信息",
-			moneyLabel: "充值金額",
-			moneyPlaceholder: "請輸入充值金額",
-			addressLabel: "充值地址",
-			addressPlaceholder: "請輸入充值地址",
-			hashLabel: "充值hash",
-			hashPlaceholder: "請輸入充值hash",
-			imageLabel: "上傳截圖",
-			imagePlaceholder: "點擊上傳圖片",
-			submitButton: "提交充值",
-			successMessage: "充值提交成功",
-			failMessage: "提交失敗",
-			networkErrorMessage: "網絡錯誤"
-		},
-		
-		bankCardList: {
-			formTitle: "銀行信息",
-			accountNameLabel: "帳戶名稱",
-			accountNamePlaceholder: "請輸入帳戶名稱",
-			accountNumberLabel: "帳號",
-			accountNumberPlaceholder: "請輸入帳號",
-			bankNameLabel: "銀行名稱",
-			bankNamePlaceholder: "請輸入銀行名稱",
-			countryLabel: "國家",
-			countryPlaceholder: "請選擇國家",
-			routingNumberLabel: "路由號碼",
-			routingNumberPlaceholder: "請輸入路由號碼",
-			swiftCodeLabel: "SWIFT代碼",
-			swiftCodePlaceholder: "請輸入SWIFT代碼",
-			bankAddressLabel: "銀行地址",
-			bankAddressPlaceholder: "請輸入銀行地址",
-			submitButtonText: "保存信息",
-			bindSuccess: "綁定成功",
-			updateSuccess: "修改成功"
-		},
-		certification: {
-			title: "申請實名認證",
-			subtitle: "請填寫您的真實信息以完成認證",
-			successTitle: "您已完成實名認證",
-			successSubtitle: "無需重複提交認證信息",
-			nameLabel: "真實姓名",
-			emailLabel: "電子郵箱",
-			phoneLabel: "電話號碼",
-			namePlaceholder: "請輸入您的真實姓名",
-			emailPlaceholder: "請輸入您的電子郵箱",
-			phonePlaceholder: "請輸入您的電話號碼",
-			submitButton: "提交認證",
-			statusPending: "審核中",
-			statusSuccess: "審核成功",
-			statusFailed: "審核失敗",
-			requiredFields: "請填寫所有必填欄位",
-			invalidEmail: "請輸入有效的電子郵箱地址",
-			invalidPhone: "請輸入有效的電話號碼",
-			submitFailed: "提交失敗，請重試"
-		},
-		common: {
-			certification: {
-				emailPlaceholder: "請輸入郵箱地址",
-				phonePlaceholder: "請輸入手機號碼"
-			}
-		}
-	},
-	deposit: {
-			withdrawal: "出金",
-				history: "历史记录",
-				totalBalance: "总余额",
-				processingTime: "提款处理需要15-20分钟。",
-				walletAddressType: "钱包地址类型",
-				trc20Address: "trc20地址",
-				erc20Address: "ERC20地址",
-				btcAddress: "BTC Address",
-				addressNotSet: "地址未设置",
-				bindAddress: "绑定地址",
-				verifyWalletAddress: "请仔细核实您的钱包地址。",
-				all: "全部",
-				enterWithdrawalPassword: "输入提款密码",
-				submit: "提交",
-				enterWithdrawalAmount: "请输入提现金额",
-				withdrawalFailed: "提现失败，请稍后再试"
-		},
-		withdrawalStatus: {
-			pending: "待审核",
-				success: "已打款",
-				rejected: "已拒绝",
-				processing: "打款中"
-		}
-	}
+        giftPackage: {
+            title: "禮品包",
+            description: [
+                "禮品包是為我們尊貴的 VIP 會員提供的專屬優惠。每提升一級 VIP，您都將獲得一份固定獎勵，該獎勵可自由支配，無任何使用限制。"
+            ]
+        },
+        deposits: {
+            title: "Deposits",
+            description: [
+                "所有存款必須通過平台的在線客服協調。將資金轉入客服指定的賬戶後，請提交付款憑證以確保及時處理。",
+                "為避免延誤，請在每次交易前直接在平台上確認您的賬戶詳情，因為這些可能會定期更改。如果您在存款過程中遇到任何問題，請立即聯繫客服。"
+            ]
+        },
+        withdrawals: {
+            title: "Withdrawals",
+            description: [
+                "會員只能在完成所有指定的日常任務後申請提現。在滿足平台提現條件的情況下，可以提取在平台上賺取的資金。在申請提現之前，請確保您的平台賬戶包含有效的錢包地址。",
+                "注意:每日10:00 至 23:00 可進行提現。"
+            ]
+        }
+    },
+    vip: {
+        title: "會員等級",
+        current: "當前",
+        deposit: "存款",
+        bonus: "獎金",
+        commissionRate: "佣金率",
+        dailyOrders: "每週訂單",
+        description:
+            "VIP 等級說明：\n" +
+            "出售 USDT 賺取價差，本質上屬於流動性提供行為。\n" +
+            "VIP 等級限制交易次數，以防止普通帳戶佔用專業做市商的交易空間。\n" +
+            "反洗錢（AML）及監管壓力（核心原因）\n" +
+            "平台將透過以下條件篩選用戶：\n" +
+            "VIP 等級\n" +
+            "交易次數\n" +
+            "交易金額門檻\n" +
+            "用戶分類：\n" +
+            "普通用戶只會偶爾兌換。\n" +
+            "高頻出售 USDT 被視為專業流動性行為。\n" +
+            "VIP＝可控風控對象\n" +
+            "VIP 用戶通常具備：\n" +
+            "較高資金量\n" +
+            "更完整的 KYC\n" +
+            "較長的交易歷史\n" +
+            "\n" +
+            "平台邏輯：\n" +
+            "USDT 出售限制屬於市場導向的合規設計。\n" +
+            "\n" +
+            "提示：\n" +
+            "USDT 價差屬於準金融行為，VIP 代表：\n" +
+            "你已不再是普通用戶。"
+    },
+    about: {
+        title: "關於我們",
+        companyDescription: "OFX成立於2001年，是一家專注於全球資本轉移和外匯服務的跨國金融科技公司。公司源於一個清晰的概念：為全球客戶提供更好、更公平、更高效的跨境資本解決方案。自成立以來，OFX已為超過100萬客戶提供了服務，支持50多種貨幣，覆蓋170多個國家和市場，累計處理資金超過1.48萬億美元。",
+        globalNetworkTitle: "全球網絡佈局",
+        globalNetworkDesc: "公司在倫敦、都柏林、悉尼、奧克蘭、香港、新加坡、多倫多和舊金山設有辦事處，全球員工超過700人，擁有堅實的運營網絡和本地化服務能力。",
+        regulatoryAdvantageTitle: "強大的監管優勢",
+        regulatoryAdvantageDesc: "公司受到全球50多個監管機構的監督，遵循嚴格的財務審計和合規標準。自上市以來，沒有任何監管處罰或執法行動，風險管理能力健全。",
+        corporateGovernanceTitle: "公司治理與管理",
+        corporateGovernanceDesc1: "董事會由在銀行、金融和技術領域擁有豐富經驗的商業領袖組成，確保健全的公司治理結構。",
+        corporateGovernanceDesc2: "管理團隊由來自主要國際銀行、支付服務提供商和技術公司的高級管理人員組成，由首席執行官Skander Malcolm領導，持續推進OFX的戰略擴張和數字創新。",
+        listingStatusTitle: "上市地位與行業屬性",
+        listingStatusDesc: "OFX於2013年在澳洲證券交易所(ASX)上市(股票代碼：OFX)，被歸類為\"多元化金融\"。公司憑藉穩定的合規框架、國際化佈局和可持續的盈利模式，在跨境金融科技行業中保持著強大的競爭力。",
+        aboutDexOfxTitle: "關於\"DEX:OFX\"",
+        aboutDexOfxDesc1: "自2023年3月10日起，一些金融信息平台顯示了\"DEX:OFX\"標籤。",
+        aboutDexOfxDesc2: "必須澄清的是：",
+        aboutDexOfxDesc3: "\"Dex: OFX\"並非實際交易代碼。它是某些數據平台上系統更新期間自動生成的跨市場映射標識符。",
+        aboutDexOfxDesc4: "該標識符作為內部系統測試的一部分生成，用於驗證平台在不同市場中正確關聯公司信息的能力。因此，該標籤僅用於數據索引和測試目的，並不意味著OFX在DEX或其他任何交易所上市。",
+        aboutDexOfxDesc5: "OFX唯一有效的官方上市是：澳洲證券交易所(ASX) 股票代碼：OFX",
+        aboutDexOfxDesc6: "所有其他標識符（包括\"DEX:OFX\"）都是系統生成的映射條目，不用於實際交易，僅為用戶提供更好的服務。",
+        headquartersTitle: "OFX集團總部地址",
+        headquartersDesc: "澳洲新南威爾士州悉尼瑪格麗特街60號19層，郵編2000"
+    },
+
+    bindTrc20: {
+        formTitle: "充值信息",
+        moneyLabel: "充值金額",
+        moneyPlaceholder: "請輸入充值金額",
+        addressLabel: "充值地址",
+        addressPlaceholder: "請輸入充值地址",
+        hashLabel: "充值hash",
+        hashPlaceholder: "請輸入充值hash",
+        imageLabel: "上傳截圖",
+        imagePlaceholder: "點擊上傳圖片",
+        submitButton: "提交充值",
+        successMessage: "充值提交成功",
+        failMessage: "提交失敗",
+        networkErrorMessage: "網絡錯誤"
+    },
+
+    bankCardList: {
+        formTitle: "銀行信息",
+        accountNameLabel: "帳戶名稱",
+        accountNamePlaceholder: "請輸入帳戶名稱",
+        accountNumberLabel: "帳號",
+        accountNumberPlaceholder: "請輸入帳號",
+        bankNameLabel: "銀行名稱",
+        bankNamePlaceholder: "請輸入銀行名稱",
+        countryLabel: "國家",
+        countryPlaceholder: "請選擇國家",
+        routingNumberLabel: "路由號碼",
+        routingNumberPlaceholder: "請輸入路由號碼",
+        swiftCodeLabel: "SWIFT代碼",
+        swiftCodePlaceholder: "請輸入SWIFT代碼",
+        bankAddressLabel: "銀行地址",
+        bankAddressPlaceholder: "請輸入銀行地址",
+        submitButtonText: "保存信息",
+        bindSuccess: "綁定成功",
+        updateSuccess: "修改成功"
+    },
+    certification: {
+        title: "申請實名認證",
+        subtitle: "請填寫您的真實信息以完成認證",
+        successTitle: "您已完成實名認證",
+        successSubtitle: "無需重複提交認證信息",
+        nameLabel: "真實姓名",
+        emailLabel: "電子郵箱",
+        phoneLabel: "電話號碼",
+        namePlaceholder: "請輸入您的真實姓名",
+        emailPlaceholder: "請輸入您的電子郵箱",
+        phonePlaceholder: "請輸入您的電話號碼",
+        submitButton: "提交認證",
+        statusPending: "審核中",
+        statusSuccess: "審核成功",
+        statusFailed: "審核失敗",
+        requiredFields: "請填寫所有必填欄位",
+        invalidEmail: "請輸入有效的電子郵箱地址",
+        invalidPhone: "請輸入有效的電話號碼",
+        submitFailed: "提交失敗，請重試"
+    },
+    deposit: {
+        withdrawal: "出金",
+        history: "历史记录",
+        totalBalance: "总余额",
+        processingTime: "提款处理需要15-20分钟。",
+        walletAddressType: "钱包地址类型",
+        trc20Address: "trc20地址",
+        erc20Address: "ERC20地址",
+        btcAddress: "BTC Address",
+        addressNotSet: "地址未设置",
+        bindAddress: "绑定地址",
+        verifyWalletAddress: "请仔细核实您的钱包地址。",
+        all: "全部",
+        enterWithdrawalPassword: "输入提款密码",
+        submit: "提交",
+        enterWithdrawalAmount: "请输入提现金额",
+        withdrawalFailed: "提现失败，请稍后再试"
+    },
+    withdrawalStatus: {
+        pending: "待审核",
+        success: "已打款",
+        rejected: "已拒绝",
+        processing: "打款中"
+    }
+}

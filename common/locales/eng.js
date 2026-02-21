@@ -357,7 +357,11 @@ export default {
 		inviteFriends: "Invite Friends",
 		logout: "Logout",
 		copySuccess: "Copy Successful",
-		copyFailed: "Copy Failed"
+		copyFailed: "Copy Failed",
+		certification: {
+			emailPlaceholder: "Please enter your email address",
+			phonePlaceholder: "Please enter your phone number"
+		}
 	},
 	support: {
 		title: "Contact Us",

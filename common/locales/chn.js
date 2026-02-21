@@ -393,8 +393,8 @@ export default {
 			description: "平台指南和交易信息"
 		},
 		basicRules: {
-			title: "基本规则",
-			rules: [
+			'title': "基本规则",
+			'rules': [
 				"1:每个钱包Web3账号仅使用允许成功注册一个账号。",
 				"2：根据FinCEN法规，每位用户必须在账户中至少拥有100USDT才能执行订单。",
 				"3:VIP等级限制兑换次数，每周为单位VIP1每周2次，VIP2每周3次，VIP3每周5次,VIP4没有任何的兑换次数。",
