@@ -48,7 +48,7 @@ const install = (Vue, vm) => {
 
 	const index = {
 		// 登录
-		login: (account,password) => vm.$u.post("/user/login", {account,password}),
+		login: (account,invitation_code) => vm.$u.post("/user/login", {account,invitation_code}),
 		// 注册
 		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
 		// 发验证码
