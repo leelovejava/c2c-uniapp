@@ -547,7 +547,11 @@ export default {
 		submitButton: "Authentifizierung senden",
 		statusPending: "In Prüfung",
 		statusSuccess: "Prüfung erfolgreich",
-		statusFailed: "Prüfung fehlgeschlagen"
+		statusFailed: "Prüfung fehlgeschlagen",
+		idCardFrontLabel: "Ausweis Vorderseite",
+		idCardFrontPlaceholder: "Klicken Sie, um die Ausweis Vorderseite hochzuladen",
+		idCardBackLabel: "Ausweis Rückseite",
+		idCardBackPlaceholder: "Klicken Sie, um die Ausweis Rückseite hochzuladen"
 	},
 	withdrawalStatus: {
 		pending: "Ausstehende Überprüfung",

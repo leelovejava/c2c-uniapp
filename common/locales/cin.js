@@ -38,7 +38,7 @@ export default {
 			}
 		},
 		hall: {
-			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "賣出訂單", "賣給商家", "掛單中", "買入", "去出售"],
+			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "賣出訂單", "賣給商家", "掛單中", "買入", "出售"],
 			list: ["數量", "單價", "未成交", "賣出USDT", "請輸入USDT數量", "獲得金額", "額度", "買入USDT", "耗費金額"],
 			kbip: ["撤銷", "超出金額", "必須在金額範圍內"]
 		},
@@ -375,10 +375,14 @@ export default {
 			"phonePlaceholder": "請輸入您的手機號碼",
 			"submitButton": "提交認證",
 			"statusPending": "審核中",
-			"statusSuccess": "審核成功",
-			"statusFailed": "審核失敗"
-		}
-	},
+		"statusSuccess": "審核成功",
+		"statusFailed": "審核失敗",
+		"idCardFrontLabel": "身份證正面",
+		"idCardFrontPlaceholder": "點擊上傳身份證正面",
+		"idCardBackLabel": "身份證反面",
+		"idCardBackPlaceholder": "點擊上傳身份證反面"
+	}
+},
 	"faqs": {
 		"pageHeader": {
 			"title": "規則和條例",

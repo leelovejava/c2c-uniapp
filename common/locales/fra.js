@@ -679,6 +679,10 @@ export default {
 		submitButton: "Soumettre l'authentification",
 		statusPending: "En cours de révision",
 		statusSuccess: "Révision réussie",
-		statusFailed: "Révision échouée"
+		statusFailed: "Révision échouée",
+		idCardFrontLabel: "Pièce d'identité recto",
+		idCardFrontPlaceholder: "Cliquez pour télécharger la pièce d'identité recto",
+		idCardBackLabel: "Pièce d'identité verso",
+		idCardBackPlaceholder: "Cliquez pour télécharger la pièce d'identité verso"
 	}
 }

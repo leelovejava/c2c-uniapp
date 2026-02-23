@@ -381,7 +381,11 @@ export default {
 			submitButton: "提交认证",
 			statusPending: "审核中",
 			statusSuccess: "审核成功",
-			statusFailed: "审核失败"
+			statusFailed: "审核失败",
+			idCardFrontLabel: "身份证正面",
+			idCardFrontPlaceholder: "点击上传身份证正面",
+			idCardBackLabel: "身份证反面",
+			idCardBackPlaceholder: "点击上传身份证反面"
 	},
 	modal: {
 		tipTitle: "提示",

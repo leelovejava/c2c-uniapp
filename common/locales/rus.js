@@ -383,7 +383,11 @@ export default {
 			submitButton: "Отправить верификацию",
 			statusPending: "На рассмотрении",
 			statusSuccess: "Рассмотрение успешно",
-			statusFailed: "Рассмотрение не удалось"
+			statusFailed: "Рассмотрение не удалось",
+			idCardFrontLabel: "Лицевая сторона удостоверения",
+			idCardFrontPlaceholder: "Нажмите, чтобы загрузить лицевую сторону удостоверения",
+			idCardBackLabel: "Обратная сторона удостоверения",
+			idCardBackPlaceholder: "Нажмите, чтобы загрузить обратную сторону удостоверения"
 		},
 		deposit: {
 			withdrawal: "Вывод",

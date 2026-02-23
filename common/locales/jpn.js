@@ -541,7 +541,11 @@ export default {
 		submitButton: "認証を送信",
 		statusPending: "審査中",
 		statusSuccess: "審査成功",
-		statusFailed: "審査失敗"
+		statusFailed: "審査失敗",
+		idCardFrontLabel: "身分証明書表面",
+		idCardFrontPlaceholder: "身分証明書の表面をクリックしてアップロード",
+		idCardBackLabel: "身分証明書裏面",
+		idCardBackPlaceholder: "身分証明書の裏面をクリックしてアップロード"
 	},
 	withdrawalStatus: {
 		pending: "審査待ち",

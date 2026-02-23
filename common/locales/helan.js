@@ -495,7 +495,11 @@ export default {
 			submitButton: "Indieningscertificaat",
 			statusPending: "In beoordeling",
 			statusSuccess: "Audit geslaagd",
-			statusFailed: "Audit mislukt"
+			statusFailed: "Audit mislukt",
+			idCardFrontLabel: "ID-kaart voorzijde",
+			idCardFrontPlaceholder: "Klik om ID-kaart voorzijde te uploaden",
+			idCardBackLabel: "ID-kaart achterzijde",
+			idCardBackPlaceholder: "Klik om ID-kaart achterzijde te uploaden"
 		},
 		order: {
 		recordsTitle: "Records",

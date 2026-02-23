@@ -483,6 +483,10 @@ export default {
 		submitButton: "인증 제출",
 		statusPending: "검토 중",
 		statusSuccess: "검토 성공",
-		statusFailed: "검토 실패"
+		statusFailed: "검토 실패",
+		idCardFrontLabel: "주민등록증 앞면",
+		idCardFrontPlaceholder: "주민등록증 앞면을 클릭하여 업로드",
+		idCardBackLabel: "주민등록증 뒤면",
+		idCardBackPlaceholder: "주민등록증 뒤면을 클릭하여 업로드"
 	}
 };

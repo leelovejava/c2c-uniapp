@@ -582,7 +582,11 @@ export default {
 		submitButton: "Enviar Autenticación",
 		statusPending: "En Revisión",
 		statusSuccess: "Revisión Exitosa",
-		statusFailed: "Revisión Fallida"
+		statusFailed: "Revisión Fallida",
+		idCardFrontLabel: "Identificación Anverso",
+		idCardFrontPlaceholder: "Haga clic para cargar la identificación anverso",
+		idCardBackLabel: "Identificación Reverso",
+		idCardBackPlaceholder: "Haga clic para cargar la identificación reverso"
 	},
 	modal: {
 		tipTitle: "Consejo",

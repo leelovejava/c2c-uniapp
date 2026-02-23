@@ -485,6 +485,10 @@ export default {
 		submitButton: "प्रमाणीकरण सबमिट करें",
 		statusPending: "समीक्षा में",
 		statusSuccess: "ऑडिट सफल",
-		statusFailed: "ऑडिट विफल"
+		statusFailed: "ऑडिट विफल",
+		idCardFrontLabel: "आईडी कार्ड का सामने",
+		idCardFrontPlaceholder: "आईडी कार्ड का सामने अपलोड करने के लिए क्लिक करें",
+		idCardBackLabel: "आईडी कार्ड का पीछे",
+		idCardBackPlaceholder: "आईडी कार्ड का पीछे अपलोड करने के लिए क्लिक करें"
 	}
 }
