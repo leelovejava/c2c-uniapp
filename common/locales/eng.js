@@ -386,7 +386,8 @@ export default {
 		inviteFriends: "Invite Friends",
 		logout: "Logout",
 		copySuccess: "Copy Successful",
-		copyFailed: "Copy Failed"
+		copyFailed: "Copy Failed",
+		realNameAuth: "RealName"
 	},
 	support: {
 		title: "Contact Us",
