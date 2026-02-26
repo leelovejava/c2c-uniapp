@@ -297,11 +297,13 @@ export default {
 				all: "전체",
 				pending: "처리 중",
 				completed: "완료됨",
+				reviewFailed: "검토 실패",
 				limitOrder: "지정가 주문"
 			},
 			status: {
 				completed: "완료됨",
 				pending: "처리 중",
+				reviewFailed: "검토 실패",
 				processing: "처리 중"
 			},
 			details: {

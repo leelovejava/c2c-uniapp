@@ -323,11 +323,13 @@ export default {
 			all: "All",
 			pending: "Pending",
 			completed: "Completed",
+			reviewFailed: "Review Failed",
 			limitOrder: "Limit Order"
 		},
 		status: {
 			completed: "Completed",
 			pending: "Pending",
+			reviewFailed: "Review Failed",
 			processing: "Processing"
 		},
 		details: {

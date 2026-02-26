@@ -282,18 +282,20 @@ export default {
 			}
 		},
 	order: {
-		recordsTitle: "Registri",
-		tabs: {
+			recordsTitle: "Registri",
+			tabs: {
 			all: "Tutti",
 			pending: "In attesa",
 			completed: "Completato",
+			reviewFailed: "Revisione fallita",
 			limitOrder: "Ordine limite"
-		},
-		status: {
+			},
+			status: {
 			completed: "Completato",
 			pending: "In attesa",
+			reviewFailed: "Revisione fallita",
 			processing: "In elaborazione"
-		},
+			},
 		details: {
 			orderId: "ID Ordine",
 			orderType: "Tipo di ordine",

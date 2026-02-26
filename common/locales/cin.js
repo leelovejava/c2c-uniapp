@@ -345,11 +345,13 @@ export default {
 				"all": "全部",
 				"pending": "待處理",
 				"completed": "已完成",
+				"reviewFailed": "審核失敗",
 				"limitOrder": "限價訂單"
 			},
 			"status": {
 				"completed": "已完成",
 				"pending": "待處理",
+				"reviewFailed": "審核失敗",
 				"processing": "處理中"
 			},
 			"details": {

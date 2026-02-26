@@ -217,12 +217,12 @@
 						// 提交成功后更新状态为审核中
 						this.verificationStatus = 0;
 						// 1.5秒后返回上一页
-						setTimeout(() => {
+						//setTimeout(() => {
 							// uni.navigateBack();
-						}, 1500);
+						//}, 1500);
 					}
 				}).catch(err => {
-					this.$utils.showToast(this.$t('certification.submitFailed'));
+					///this.$utils.showToast(this.$t('certification.submitFailed'));
 				});
 			},
 			back() {

@@ -324,11 +324,13 @@ export default {
 				all: "全部",
 				pending: "待处理",
 				completed: "已完成",
+				reviewFailed: "审核失败",
 				limitOrder: "限价订单"
 			},
 			status: {
 				completed: "已完成",
 				pending: "待处理",
+				reviewFailed: "审核失败",
 				processing: "处理中"
 			},
 			details: {

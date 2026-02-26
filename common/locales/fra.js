@@ -443,16 +443,18 @@ export default {
 		order: {
 			recordsTitle: "Enregistrements",
 			tabs: {
-				all: "Tout",
-				pending: "En attente",
-				completed: "Terminé",
-				limitOrder: "Ordre à cours limité"
-			},
+			all: "Tout",
+			pending: "En attente",
+			completed: "Terminé",
+			reviewFailed: "Évaluation échouée",
+			limitOrder: "Ordre à cours limité"
+		},
 			status: {
-				completed: "Terminé",
-				pending: "En attente",
-				processing: "Traitement en cours"
-			},
+			completed: "Terminé",
+			pending: "En attente",
+			reviewFailed: "Évaluation échouée",
+			processing: "Traitement en cours"
+		},
 			details: {
 				orderId: "ID de commande",
 				orderType: "Type de commande",

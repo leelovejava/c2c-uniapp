@@ -362,11 +362,13 @@ export default {
 			all: "सभी",
 			pending: "लंबित",
 			completed: "पूर्ण किया गया",
+			reviewFailed: "समीक्षा असफल",
 			limitOrder: "सीमित आदेश"
 		},
 		status: {
 			completed: "पूर्ण किया गया",
 			pending: "लंबित",
+			reviewFailed: "समीक्षा असफल",
 			processing: "प्रसंस्करण"
 		},
 		details: {

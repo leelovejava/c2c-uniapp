@@ -305,11 +305,13 @@ export default {
 				all: "Все",
 				pending: "В ожидании",
 				completed: "Завершено",
+				reviewFailed: "Проверка не пройдена",
 				limitOrder: "Лимитный ордер"
 			},
 			status: {
 				completed: "Завершено",
 				pending: "В ожидании",
+				reviewFailed: "Проверка не пройдена",
 				processing: "Обработка"
 			},
 			details: {

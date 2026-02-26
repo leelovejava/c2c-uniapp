@@ -13,16 +13,15 @@
 						:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
 						data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
 						@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
-						:class="['tab-link', { active: activeTab === 'approval_rejected' }]" @click="switchTab('approval_rejected')"
-						data-type="limit_order">{{ i18n.order.tabs.approval_rejected }}</button></div>
+													:class="['tab-link', { active: activeTab === 'reviewFailed' }]" @click="switchTab('reviewFailed')"
+													data-status="6">{{ i18n.order.tabs.reviewFailed }}</button></div>
 				<div class="order-list">
 					<div v-for="item in list" :key="item.id" class="order-item">
 						<div class="order-header">
 							<span class="order-date">{{ item.create_time }}</span>
 							<div class="order-status">
-								<span
-									:class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
-									{{ item.status === '1' ? i18n.order.status.completed : item.status === '5' ? i18n.order.status.pending : i18n.order.status.processing }}
+								<span :class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5', 'status-failed': item.status === '6' }]">
+									{{ item.status === '1' ? i18n.order.status.completed : (item.status === '5' ? i18n.order.status.pending : (item.status === '6' ? i18n.order.status.reviewFailed : i18n.order.status.processing)) }}
 								</span>
 							</div>
 						</div>
@@ -105,25 +104,25 @@ export default {
 			})
 		},
 		switchTab(tabName) {
-			this.activeTab = tabName
-      // 1. 设定 status
-      if (tabName === 'pending') {
-        this.form.status = 5;
-      } else if (tabName === 'completed') {
-        this.form.status = 1;
-      } else if (tabName === 'all') {
-        this.form.status = '';
-      } else if (tabName === 'approval_rejected') {
-        this.form.status = 6;
-      }
+				this.activeTab = tabName
+			  // 1. 设定 status
+			  if (tabName === 'pending') {
+			    this.form.status = 5;
+			  } else if (tabName === 'completed') {
+			    this.form.status = 1;
+			  } else if (tabName === 'all') {
+			    this.form.status = '';
+			  } else if (tabName === 'reviewFailed') {
+			    this.form.status = 6;
+			  }
 
-      // 2. 重置分页和列表
-      this.form.page = 0;
-      this.list = [];
+			  // 2. 重置分页和列表
+			  this.form.page = 0;
+			  this.list = [];
 
-      // 3. 重新加载数据
-      this.init();
-		},
+			  // 3. 重新加载数据
+			  this.init();
+			},
 		// 获取货币对应的国家代码
 		getCountryCode(currency) {
 			// 简单的货币代码到国家代码的映射
@@ -161,149 +160,150 @@ export default {
 </script>
 <style lang="scss" scoped>
 .main-content {
-	padding: 20px;
+  padding: 20px;
 
-	.records-title {
-		font-size: 24px;
-		font-weight: bold;
-		margin-bottom: 20px;
-	}
+  .records-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
-	.records-tabs {
-		display: flex;
-		gap: 10px;
-		margin-bottom: 20px;
+  .records-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 
-		.tab-link.active {
-			background-color: #1E90FF;
-			color: black;
-		}
+    .tab-link.active {
+      background-color: #1E90FF;
+      color: black;
+    }
 
-		.tab-link {
-			line-height: 1.6;
-			background-color: transparent;
-			color: white;
-			border: 1px solid #1E90FF;
-			padding: 4px 8px;
-			border-radius: 10px;
-			cursor: pointer;
-			font-size: 14px;
-		}
-	}
+    .tab-link {
+      line-height: 1.6;
+      background-color: transparent;
+      color: white;
+      border: 1px solid #1E90FF;
+      padding: 4px 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
 
-	.order-list {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-		.order-item {
-			background-color: #0D1A2E;
-			border-radius: 10px;
-			padding: 20px;
-			border: 1px solid rgba(255, 255, 255, 0.1);
+    .order-item {
+      background-color: #0D1A2E;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
 
-			.order-header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-bottom: 15px;
+      .order-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
 
-				.order-date {
-					font-size: 14px;
-					color: #ccc;
-				}
+        .order-date {
+          font-size: 14px;
+          color: #ccc;
+        }
 
-				.order-status {
-					display: flex;
-					align-items: center;
-					gap: 10px;
-				}
+        .order-status {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
 
-				.status-tag {
-					padding: 4px 12px;
-					border-radius: 15px;
-					font-size: 12px;
-					font-weight: bold;
-				}
+        .status-tag {
+          padding: 4px 12px;
+          border-radius: 15px;
+          font-size: 12px;
+          font-weight: bold;
+        }
 
-				.status-completed {
-					border: 1px solid #4CAF50;
-					color: #4CAF50;
-				}
+        .status-completed {
+          border: 1px solid #4CAF50;
+          color: #4CAF50;
+        }
 
-			}
-		}
+      }
+    }
 
-		.order-body {
-			.order-meta {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-bottom: 15px;
-			}
+    .order-body {
+      .order-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
 
-			.order-id {
-				font-size: 14px;
-				color: #ccc;
-				margin: 0;
-			}
+      .order-id {
+        font-size: 14px;
+        color: #ccc;
+        margin: 0;
+      }
 
-			.order-type {
-				font-size: 14px;
-				color: #E53935;
-				margin: 0;
-			}
+      .order-type {
+        font-size: 14px;
+        color: #E53935;
+        margin: 0;
+      }
 
-			.exchange-info {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-bottom: 20px;
+      .exchange-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
 
-				.currencies {
-					display: flex;
-					align-items: center;
-					gap: 10px;
+        .currencies {
+          display: flex;
+          align-items: center;
+          gap: 10px;
 
-					img {
-						width: 50px;
-						height: 32px;
-						border-radius: 10%;
-					}
-				}
+          img {
+            width: 50px;
+            height: 32px;
+            border-radius: 10%;
+          }
+        }
 
-				.amount-info {
-					text-align: right;
+        .amount-info {
+          text-align: right;
 
-					.amount {
-						font-size: 22px;
-						font-weight: bold;
-						display: block;
-					}
-				}
+          .amount {
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+          }
+        }
 
-				.fa-exchange-alt {
-					font-size: 20px;
-				}
-			}
+        .fa-exchange-alt {
+          font-size: 20px;
+        }
+      }
 
-			.exchange-details {
-				.detail-row {
-					display: flex;
-					justify-content: space-between;
-					padding: 10px 0;
-					border-top: 1px solid rgba(255, 255, 255, 0.1);
-					font-size: 14px;
+      .exchange-details {
+        .detail-row {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          font-size: 14px;
 
-					span:first-child {
-						color: #ccc;
-					}
-				}
-			}
+          span:first-child {
+            color: #ccc;
+          }
+        }
+      }
 
-		}
+    }
 
-	}
+  }
+
 
   .market-header {
     width: 100%;

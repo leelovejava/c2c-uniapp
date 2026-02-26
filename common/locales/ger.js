@@ -322,11 +322,13 @@ export default {
 				all: "Alle",
 				pending: "Ausstehend",
 				completed: "Abgeschlossen",
+				reviewFailed: "Überprüfung fehlgeschlagen",
 				limitOrder: "Limit-Order"
 			},
 			status: {
 				completed: "Abgeschlossen",
 				pending: "Ausstehend",
+				reviewFailed: "Überprüfung fehlgeschlagen",
 				processing: "In Bearbeitung"
 			},
 			details: {

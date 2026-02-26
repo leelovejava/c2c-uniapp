@@ -262,6 +262,30 @@ export default {
             close: "關閉"
         }
     },
+    order: {
+        recordsTitle: "記錄",
+        tabs: {
+            all: "全部",
+            pending: "待處理",
+            completed: "已完成",
+            reviewFailed: "審核失敗",
+            limitOrder: "限價訂單"
+        },
+        status: {
+            completed: "已完成",
+            pending: "待處理",
+            reviewFailed: "審核失敗",
+            processing: "處理中"
+        },
+        details: {
+            orderId: "訂單號",
+            orderType: "訂單類型",
+            exchangeCurrency: "兌換貨幣",
+            exchangeEarnings: "兌換收益",
+            expectedReturn: "預期回報",
+            exchangeRate: "兌換匯率"
+        }
+    },
     navbar: {
         inviteCode: "邀請碼",
         copy: "複製",

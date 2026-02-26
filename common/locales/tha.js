@@ -355,11 +355,13 @@ export default {
 			all: "ทั้งหมด",
 			pending: "รอดำเนินการ",
 			completed: "เสร็จสมบูรณ์",
+			reviewFailed: "การตรวจสอบล้มเหลว",
 			limitOrder: "คำสั่งจำกัด"
 		},
 		status: {
 			completed: "เสร็จสมบูรณ์",
 			pending: "รอดำเนินการ",
+			reviewFailed: "การตรวจสอบล้มเหลว",
 			processing: "กำลังดำเนินการ"
 		},
 		details: {

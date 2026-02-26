@@ -501,11 +501,13 @@ export default {
 			all: "Alles",
 			pending: "In behandeling",
 			completed: "Voltooid",
+			reviewFailed: "Beoordeling mislukt",
 			limitOrder: "Limietorder"
 		},
 		status: {
 			completed: "Voltooid",
 			pending: "In behandeling",
+			reviewFailed: "Beoordeling mislukt",
 			processing: "Verwerken"
 		},
 		details: {
