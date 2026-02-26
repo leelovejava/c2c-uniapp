@@ -282,15 +282,17 @@ export default {
 		order: {
 			recordsTitle: "Registri",
 			tabs: {
-				all: "Tutti",
-				pending: "In attesa",
-				completed: "Completato",
-				limitOrder: "Ordine limite"
+			all: "Tutti",
+			pending: "In attesa",
+			completed: "Completato",
+			reviewFailed: "Revisione fallita",
+			limitOrder: "Ordine limite"
 			},
 			status: {
-				completed: "Completato",
-				pending: "In attesa",
-				processing: "In elaborazione"
+			completed: "Completato",
+			pending: "In attesa",
+			reviewFailed: "Revisione fallita",
+			processing: "In elaborazione"
 			},
 			details: {
 				orderId: "ID Ordine",

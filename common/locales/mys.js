@@ -430,11 +430,13 @@ export default {
 			all: "Semua",
 			pending: "Menunggu",
 			completed: "Selesai",
+			reviewFailed: "Semakan Gagal",
 			limitOrder: "Pesanan Had"
 		},
 		status: {
 			completed: "Selesai",
 			pending: "Menunggu",
+			reviewFailed: "Semakan Gagal",
 			processing: "Memproses"
 		},
 		details: {

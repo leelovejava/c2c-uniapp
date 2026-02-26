@@ -355,13 +355,15 @@ export default {
 				all: "Tất cả",
 				pending: "Đang chờ xử lý",
 				completed: "Đã hoàn thành",
+				reviewFailed: "Xét duyệt thất bại",
 				limitOrder: "Lệnh giới hạn"
 			},
 			status: {
-				completed: "Đã hoàn thành",
-				pending: "Đang chờ xử lý",
-				processing: "Đang xử lý"
-			},
+			completed: "Đã hoàn thành",
+			pending: "Đang chờ xử lý",
+			reviewFailed: "Xét duyệt thất bại",
+			processing: "Đang xử lý"
+		},
 			details: {
 				orderId: "ID đơn hàng",
 				orderType: "Loại đơn hàng",

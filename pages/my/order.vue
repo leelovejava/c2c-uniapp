@@ -5,20 +5,20 @@
 			<div class="main-content">
 				<h1 class="records-title">{{ i18n.order.recordsTitle }}</h1>
 				<div class="records-tabs"><button :class="['tab-link', { active: activeTab === 'all' }]"
-						@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
-						:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
-						data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
-						@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
-						:class="['tab-link', { active: activeTab === 'limit_order' }]" @click="switchTab('limit_order')"
-						data-type="limit_order">{{ i18n.order.tabs.limitOrder }}</button></div>
+										@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
+										:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
+										data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
+										@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
+										:class="['tab-link', { active: activeTab === 'approval_rejected' }]" @click="switchTab('approval_rejected')"
+										data-status="6">{{ i18n.order.tabs.reviewFailed }}</button></div>
 				<div class="order-list">
 					<div v-for="item in list" :key="item.id" class="order-item">
 						<div class="order-header">
 							<span class="order-date">{{ item.create_time }}</span>
 							<div class="order-status">
-								<span
-                    :class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
-									{{ item.status === '1' ? i18n.order.status.completed : item.status === '5' ? i18n.order.status.pending : i18n.order.status.processing }}
+                <!--状态 5pending审核中,1completed已完成,6review_failed审核失败-->
+								<span :class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5', 'status-failed': item.status === '6' }]">
+									{{ item.status === '1' ? i18n.order.status.completed : (item.status === '5' ? i18n.order.status.pending : (item.status === '6' ? i18n.order.status.reviewFailed : i18n.order.status.processing)) }}
 								</span>
 							</div>
 						</div>
@@ -207,9 +207,14 @@ export default {
 				}
 
 				.status-completed {
-					border: 1px solid #4CAF50;
-					color: #4CAF50;
-				}
+											border: 1px solid #4CAF50;
+											color: #4CAF50;
+										}
+
+										.status-failed {
+											border: 1px solid #E53935;
+											color: #E53935;
+										}
 
 			}
 		}

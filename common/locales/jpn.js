@@ -322,11 +322,13 @@ export default {
 				all: "すべて",
 				pending: "保留中",
 				completed: "完了",
+				reviewFailed: "審査失敗",
 				limitOrder: "指値注文"
 			},
 			status: {
 				completed: "完了",
 				pending: "保留中",
+				reviewFailed: "審査失敗",
 				processing: "処理中"
 			},
 			details: {

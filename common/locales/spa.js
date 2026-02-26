@@ -428,11 +428,13 @@ export default {
 				all: "Todo",
 				pending: "Pendiente",
 				completed: "Completado",
+				reviewFailed: "Revisión fallida",
 				limitOrder: "Orden limitada"
 			},
 			status: {
 				completed: "Completado",
 				pending: "Pendiente",
+				reviewFailed: "Revisión fallida",
 				processing: "Procesando"
 			},
 			details: {

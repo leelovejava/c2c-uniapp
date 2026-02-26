@@ -294,11 +294,13 @@ bind: [
 				all: "Todos",
 				pending: "Pendente",
 				completed: "Concluído",
+				reviewFailed: "Revisão falhou",
 				limitOrder: "Ordem Limitada"
 			},
 			status: {
 				completed: "Concluído",
 				pending: "Pendente",
+				reviewFailed: "Revisão falhou",
 				processing: "Processando"
 			},
 			details: {

@@ -471,8 +471,8 @@ export default {
 		},
 		withdrawalStatus: {
 			pending: "待审核",
-				success: "已打款",
-				rejected: "已拒绝",
-				processing: "打款中"
+			success: "已打款",
+			rejected: "已拒绝",
+			processing: "打款中"
 		}
 	}
