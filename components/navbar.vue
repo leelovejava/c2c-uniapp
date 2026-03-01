@@ -120,11 +120,11 @@
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.aboutUs') }}</view>
 								</u-grid-item>
-								<u-grid-item bg-color="none" @click="$u.route('/pages/my/faqs')">
+<!--								<u-grid-item bg-color="none" @click="$u.route('/pages/my/faqs')">
 									<image src="/static/image/fz/cjwt.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
 									<view class="grid-text">{{ $t('common.navbar.faqs') }}</view>
-								</u-grid-item>
+								</u-grid-item>-->
 								<u-grid-item bg-color="none" @click="$u.route('/pages/my/cert')">
 									<image src="/static/image/fz/zizhi.png" style="width: 46rpx;height: 46rpx;"
 										class="a-mb5"></image>
