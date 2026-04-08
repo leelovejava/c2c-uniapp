@@ -6,7 +6,7 @@
 			<div class="support-container"><img src="static/image/fz/kfbg.png" alt="客服代表">
 				<h2>{{ $t('common.support.title') }}</h2>
 				<p>{{ $t('common.support.serviceTime') }}</p><a
-					href="https://www.axd01ys.cfd/chat/index?channelId=c2d2d91eff7a414fa478ec20684ea42a"
+					href="https://api.whatsapp.com/send?phone=31616420440"
 					class="support-button">{{ $t('common.support.buttonText') }}</a>
 			</div>
 
