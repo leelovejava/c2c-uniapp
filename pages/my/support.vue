@@ -3,11 +3,14 @@
 		<view class="a-pr a-crfff"
 			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
 			<navbar />
-			<div class="support-container"><img src="static/image/fz/kfbg.png" alt="客服代表">
+			<div class="support-container"><img src="static/image/fz/kfbg.png" alt="customer">
 				<h2>{{ $t('common.support.title') }}</h2>
 				<p>{{ $t('common.support.serviceTime') }}</p><a
-					href="https://api.whatsapp.com/send?phone=31616420440"
-					class="support-button">{{ $t('common.support.buttonText') }}</a>
+				:href="chatUrl"
+				class="support-button"
+				:disabled="loading || !chatUrl">
+				{{ loading ? $t('common.loading') : $t('common.support.buttonText') }}
+			</a>
 			</div>
 
 		</view>
@@ -23,10 +26,12 @@
 		data() {
 			return {
 				showLanguage: false,
+				chatUrl: '',
+				loading: false,
 			};
 		},
 		onLoad(options) {
-
+			this.getChatUrl();
 		},
 		onShow() {
 
@@ -37,6 +42,19 @@
 				this.$u.api.index.get_noc(token).then(res => {
 					let lang = this.$store.state.lang
 					this.news = [res.data[lang]]
+				})
+			},
+			getChatUrl() {
+				this.loading = true
+				let lang = this.$store.state.lang
+				this.$u.api.config.getChatUrl({ lang }).then(res => {
+					if (res.code === 1 && res.data.value) {
+						this.chatUrl = res.data.value
+					}
+				}).catch(err => {
+					console.error('Failed to get chat URL:', err)
+				}).finally(() => {
+					this.loading = false
 				})
 			},
 		},

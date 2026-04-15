@@ -1,6 +1,7 @@
 // 泰语
 export default {
 	common: {
+        loading: "กำลังโหลด...",
 		back: "กลับ",
 		market: "ตลาดซื้อขาย",
 		mixRecharge: ["กรุณากรอกที่อยู่อีเมลของคุณ"],

@@ -1,5 +1,6 @@
 export default {
 	common: {
+        loading: "Loading...",
 		mixRecharge: ["कृपया ईमेल पता भरें"],
 		language: "भाषा",
 		common: ["ऑनलाइन सहायता", "फ्लोट कैंसल करें", "पुष्टि करें", "रद्द करें"],

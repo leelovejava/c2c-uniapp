@@ -1,6 +1,7 @@
 // 西班牙语
 export default {
 	common: {
+        loading: "Cargando...",
 		mixRecharge: ["Por favor, ingrese su dirección de correo electrónico"],
 		language: "Idioma",
 		common: ["Servicio al Cliente en Línea", "Desactivar Flotante", "Confirmar", "Cancelar"],

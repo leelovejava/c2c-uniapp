@@ -1,6 +1,7 @@
 // 荷兰语
 export default {
 	common: {
+        loading: "Laden...",
 		currency: "USDT",
 		currencySimplify: "US",
 		currencySymbol: "$",

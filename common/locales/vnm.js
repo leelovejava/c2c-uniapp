@@ -1,5 +1,6 @@
 export default {
 	common: {
+        loading: "Đang tải lên...",
 		back: "Quay lại",
 		market: "Thị trường giao dịch",
 		mixRecharge: ["vui lòng điền địa chỉ email"],

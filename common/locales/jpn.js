@@ -1,6 +1,7 @@
 // 日语
 export default {
-	common: {
+		common: {
+        loading: "ロード中...",
 		back: "戻る",
 		market: "取引市場",
 		mixRecharge: ["メールアドレスを入力してください"],

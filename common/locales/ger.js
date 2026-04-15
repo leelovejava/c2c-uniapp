@@ -1,6 +1,7 @@
 // 德语
 export default {
 	common: {
+        loading: "Laden...",
 		mixRecharge: ["Bitte geben Sie Ihre E-Mail-Adresse ein"],
 		language: "Sprache",
 		common: ["Online-Kundenservice", "Schweben abbrechen", "Bestätigen", "Abbrechen"],

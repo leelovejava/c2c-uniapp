@@ -1,5 +1,6 @@
 export default {
 	common: {
+        loading: "Chargement...",
 		mixRecharge: ["Veuillez entrer votre adresse e-mail"],
 		language: "Langue",
 		common: ["Service client en ligne", "Désactiver la flottaison", "Confirmer", "Annuler"],

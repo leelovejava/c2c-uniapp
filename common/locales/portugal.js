@@ -1,6 +1,7 @@
 // 葡萄牙
 export default {
 	common: {
+        loading: "Carregando...",
 		back: "Voltar",
 		market: "Mercado de negociação",
 		mixRecharge: ["Por favor, insira o endereço de email"],

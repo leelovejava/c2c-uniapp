@@ -2,6 +2,7 @@
 export default {
 	"uni.async.error": "Sambungan tamat masa, sentuh skrin untuk mencuba lagi.",
 	common: {
+        loading: "Memuat...",
 		back: "Kembali",
 		market: "Pasaran Dagangan",
 		mixRecharge: ["Sila masukkan alamat emel"],

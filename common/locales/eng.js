@@ -1,6 +1,7 @@
 export default {
 	"uni.async.error": "Connection timeout, tap screen to retry.",
 	common: {
+        loading: "Loading...",
 		back: "Back",
 		market: "Trading Market",
 		mixRecharge: ["Please fill in the email address"],

@@ -1,6 +1,7 @@
 // 中文
 export default {
 	common: {
+        loading: "加载中...",
 		back: "返回",
 		market: "交易市場",
 		mixRecharge: ["请填写邮箱地址"],

@@ -1,6 +1,7 @@
 export default {
 	"uni.async.error": "연결 시간 초과, 화면을 터치하여 다시 시도하세요.",
 	common: {
+        loading: "로딩 중...",
 		back: "뒤로",
 		market: "거래 시장",
 		mixRecharge: ["이메일 주소를 입력하세요"],

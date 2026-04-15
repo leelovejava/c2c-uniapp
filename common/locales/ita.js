@@ -1,6 +1,7 @@
 // 意大利语
 export default {
 	common: {
+        loading: "Caricamento...",
 		back: "Indietro",
 		market: "Mercato di trading",
 		mixRecharge: ["Si prega di inserire l'indirizzo email"],
