@@ -1,4 +1,4 @@
-export default {
+﻿export default {
 	common: {
 		mixRecharge: ["請填寫郵箱地址"],
 		language: "語言",
@@ -466,7 +466,7 @@ export default {
 				enterWithdrawalPassword: "输入提款密码",
 				submit: "提交",
 				enterWithdrawalAmount: "请输入提现金额",
-				withdrawalFailed: "提现失败，请稍后再试",
+				withdrawalFailed: "提款失敗，請聯絡線上客服",
 				currencyDescription: "提取歐元以外的貨幣，請聯繫線上客服獲得協助",
 		},
 		withdrawalStatus: {

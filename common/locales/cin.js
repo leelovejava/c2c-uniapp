@@ -490,7 +490,7 @@ export default {
 		"all": "全部",
 		"enterWithdrawalPassword": "輸入提款密碼",
 		"submit": "提交",
-		withdrawalFailed: "提款失敗，請稍後再試",
+		withdrawalFailed: "提款失敗，請聯絡線上客服",
 	},
 	"about": {
 		"title": "關於我們",

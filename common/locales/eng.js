@@ -1,4 +1,4 @@
-export default {
+﻿export default {
 	"uni.async.error": "Connection timeout, tap screen to retry.",
 	common: {
 		back: "Back",
@@ -508,7 +508,7 @@ export default {
 		enterWithdrawalPassword: "Enter Withdrawal Password",
 		submit: "Submit",
 		enterWithdrawalAmount: "Please enter withdrawal amount",
-		withdrawalFailed: "Withdrawal failed, please try again later"
+		withdrawalFailed: "Withdrawal failed, please contact online customer service."
 	},
 	withdrawalStatus: {
 		pending: "Pending Review",
