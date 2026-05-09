@@ -508,7 +508,8 @@
 		enterWithdrawalPassword: "Enter Withdrawal Password",
 		submit: "Submit",
 		enterWithdrawalAmount: "Please enter withdrawal amount",
-		withdrawalFailed: "Withdrawal failed, please contact online customer service."
+		withdrawalFailed: "Withdrawal failed. Please contact online customer service.",
+		currencyDescription: "For currencies other than EUR withdrawals, please contact online customer service for assistance."
 	},
 	withdrawalStatus: {
 		pending: "Pending Review",
