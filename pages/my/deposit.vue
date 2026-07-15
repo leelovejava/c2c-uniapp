@@ -200,7 +200,7 @@ export default {
       // 表单验证
       if (!this.formData.money) {
         uni.showToast({
-          title: this.$t('common.deposit.enterWithdrawalAmount'),
+          title: this.$t('deposit.enterWithdrawalAmount'),
           icon: 'none'
         });
         return;
@@ -227,7 +227,7 @@ export default {
         }
       }).catch(err => {
         uni.showToast({
-          title: this.$t('common.deposit.withdrawalFailed'),
+          title: this.$t('deposit.withdrawalFailed'),
           icon: 'none'
         });
       });

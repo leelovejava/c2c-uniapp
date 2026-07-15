@@ -355,19 +355,22 @@ export default {
 				all: "Tất cả",
 				pending: "Đang chờ xử lý",
 				completed: "Đã hoàn thành",
+				reviewFailed: "Xét duyệt thất bại",
 				limitOrder: "Lệnh giới hạn"
 			},
 			status: {
-				completed: "Đã hoàn thành",
-				pending: "Đang chờ xử lý",
-				processing: "Đang xử lý"
-			},
+			completed: "Đã hoàn thành",
+			pending: "Đang chờ xử lý",
+			reviewFailed: "Xét duyệt thất bại",
+			processing: "Đang xử lý"
+		},
 			details: {
 				orderId: "ID đơn hàng",
 				orderType: "Loại đơn hàng",
 				exchangeCurrency: "Tiền tệ đã trao đổi",
 				exchangeEarnings: "Thu nhập từ trao đổi",
-				expectedReturn: "Lợi nhuận kỳ vọng"
+				expectedReturn: "Lợi nhuận kỳ vọng",
+				exchangeRate: "đơn vị"
 			}
 		}
 	},
@@ -487,10 +490,8 @@ export default {
 			formTitle: "Thông tin nạp tiền",
 			moneyLabel: "Số tiền nạp",
 			moneyPlaceholder: "Vui lòng nhập số tiền nạp",
-			addressLabel: "Địa chỉ nạp tiền",
-			addressPlaceholder: "Vui lòng nhập địa chỉ nạp tiền",
-			hashLabel: "Mã hash nạp tiền",
-			hashPlaceholder: "Vui lòng nhập mã hash nạp tiền",
+			imageLabel: "Ảnh chụp màn hình nạp tiền",
+			imagePlaceholder: "Vui lòng tải lên ảnh chụp màn hình nạp tiền",
 			submitButton: "Gửi nạp tiền",
 			successMessage: "Gửi nạp tiền thành công",
 			failMessage: "Gửi thất bại",

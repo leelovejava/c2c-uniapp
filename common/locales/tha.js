@@ -354,11 +354,13 @@ export default {
 			all: "ทั้งหมด",
 			pending: "รอดำเนินการ",
 			completed: "เสร็จสมบูรณ์",
+			reviewFailed: "การตรวจสอบล้มเหลว",
 			limitOrder: "คำสั่งจำกัด"
 		},
 		status: {
 			completed: "เสร็จสมบูรณ์",
 			pending: "รอดำเนินการ",
+			reviewFailed: "การตรวจสอบล้มเหลว",
 			processing: "กำลังดำเนินการ"
 		},
 		details: {
@@ -366,7 +368,8 @@ export default {
 			orderType: "ประเภทคำสั่งซื้อ",
 			exchangeCurrency: "สกุลเงินที่แลกเปลี่ยน",
 			exchangeEarnings: "รายได้จากการแลกเปลี่ยน",
-			expectedReturn: "ผลตอบแทนที่คาดหวัง"
+			expectedReturn: "ผลตอบแทนที่คาดหวัง",
+			exchangeRate: "หน่วย"
 		}
 	},
 	faqs: {
@@ -479,10 +482,8 @@ export default {
 			formTitle: "ข้อมูลการเติมเงิน",
 			moneyLabel: "จำนวนเงินที่เติม",
 			moneyPlaceholder: "กรุณาใส่จำนวนเงินที่เติม",
-			addressLabel: "ที่อยู่การเติมเงิน",
-			addressPlaceholder: "กรุณาใส่ที่อยู่การเติมเงิน",
-			hashLabel: "แฮชการเติมเงิน",
-			hashPlaceholder: "กรุณาใส่แฮชการเติมเงิน",
+			imageLabel: "ภาพหน้าจอการเติมเงิน",
+			imagePlaceholder: "กรุณาอัปโหลดภาพหน้าจอการเติมเงิน",
 			submitButton: "ส่งการเติมเงิน",
 			successMessage: "ส่งการเติมเงินสำเร็จ",
 			failMessage: "การส่งล้มเหลว",

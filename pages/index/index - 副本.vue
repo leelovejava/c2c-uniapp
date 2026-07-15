@@ -445,7 +445,7 @@
 				// })
 
 				uni.request({
-					url: 'https://api.ofxdex.xyz/api/index/get_coin_increase',
+					url: 'https://api.ofxdex.cc/api/index/get_coin_increase',
 					data: {
 						token
 					},

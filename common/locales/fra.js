@@ -443,22 +443,25 @@ export default {
 		order: {
 			recordsTitle: "Enregistrements",
 			tabs: {
-				all: "Tout",
-				pending: "En attente",
-				completed: "Terminé",
-				limitOrder: "Ordre à cours limité"
-			},
+			all: "Tout",
+			pending: "En attente",
+			completed: "Terminé",
+			reviewFailed: "Évaluation échouée",
+			limitOrder: "Ordre à cours limité"
+		},
 			status: {
-				completed: "Terminé",
-				pending: "En attente",
-				processing: "Traitement en cours"
-			},
+			completed: "Terminé",
+			pending: "En attente",
+			reviewFailed: "Évaluation échouée",
+			processing: "Traitement en cours"
+		},
 			details: {
 				orderId: "ID de commande",
 				orderType: "Type de commande",
 				exchangeCurrency: "Monnaie d'échange",
 				exchangeEarnings: "Gains d'échange",
-				expectedReturn: "Retour attendu"
+				expectedReturn: "Retour attendu",
+				exchangeRate: "unité"
 			}
 		},
 		navbar: {
@@ -487,6 +490,12 @@ export default {
 			title: "Nous contacter",
 			serviceTime: "Heures de service : 10h00 - 23h00 tous les jours",
 			buttonText: "Équipe de soutien OFX"
+		},
+		modal: {
+			tipTitle: "Astuce",
+			confirmDelete: "Êtes-vous sûr de vouloir supprimer cet élément ?",
+			cancel: "Annuler",
+			confirm: "Confirmer"
 		}
 	},
 	faqs: {
@@ -630,10 +639,8 @@ export default {
 		formTitle: "Informations de recharge",
 		moneyLabel: "Montant de la recharge",
 		moneyPlaceholder: "Veuillez entrer le montant de la recharge",
-		addressLabel: "Adresse de recharge",
-		addressPlaceholder: "Veuillez entrer l'adresse de recharge",
-		hashLabel: "Hash de recharge",
-		hashPlaceholder: "Veuillez entrer le hash de recharge",
+		imageLabel: "Capture d'écran de recharge",
+		imagePlaceholder: "Veuillez télécharger la capture d'écran de recharge",
 		submitButton: "Soumettre la recharge",
 		successMessage: "Soumission de recharge réussie",
 		failMessage: "Échec de la soumission",
@@ -674,6 +681,10 @@ export default {
 		submitButton: "Soumettre l'authentification",
 		statusPending: "En cours de révision",
 		statusSuccess: "Révision réussie",
-		statusFailed: "Révision échouée"
+		statusFailed: "Révision échouée",
+		idCardFrontLabel: "Pièce d'identité recto",
+		idCardFrontPlaceholder: "Cliquez pour télécharger la pièce d'identité recto",
+		idCardBackLabel: "Pièce d'identité verso",
+		idCardBackPlaceholder: "Cliquez pour télécharger la pièce d'identité verso"
 	}
 }

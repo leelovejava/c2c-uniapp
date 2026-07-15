@@ -1,4 +1,4 @@
-export default {
+﻿export default {
 	common: {
 		mixRecharge: ["請填寫郵箱地址"],
 		language: "語言",
@@ -38,7 +38,7 @@ export default {
 			}
 		},
 		hall: {
-			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "卖出訂單", "卖给商家", "掛單中", "買入", "去出售"],
+			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "卖出訂單", "卖给商家", "掛單中", "買入", "出售"],
 			list: ["數量", "單價", "剩余", "出售USDT", "請輸入USDT數量", "獲得金額", "限額", "買入USDT", "耗費金額"],
 			kbip: ["撤銷", "超出金額", "必須在金額範圍內"]
 		},
@@ -278,6 +278,7 @@ export default {
 			contactUs: "聯繫我們",
 			inviteFriends: "邀請好友",
 			logout: "退出登錄",
+			realNameAuth: "实名认证",
 		},
 		faqs: {
 			pageHeader: {
@@ -395,14 +396,18 @@ export default {
 			formTitle: "充值信息",
 			moneyLabel: "充值金額",
 			moneyPlaceholder: "請輸入充值金額",
-			addressLabel: "充值地址",
-			addressPlaceholder: "請輸入充值地址",
-			hashLabel: "充值hash",
-			hashPlaceholder: "請輸入充值hash",
+			imageLabel: "充值截圖",
+			imagePlaceholder: "請上傳充值截圖",
 			submitButton: "提交充值",
-			successMessage: "充值提交成功",
+			successMessage: "提交充值成功",
 			failMessage: "提交失敗",
 			networkErrorMessage: "網絡錯誤"
+		},
+		modal: {
+			tipTitle: "提示",
+			confirmDelete: "您確定要刪除此項嗎？",
+			cancel: "取消",
+			confirm: "確定"
 		},
 		
 		bankCardList: {
@@ -439,7 +444,11 @@ export default {
 			submitButton: "提交認證",
 			statusPending: "審核中",
 			statusSuccess: "審核成功",
-			statusFailed: "審核失敗"
+			statusFailed: "審核失敗",
+			idCardFrontLabel: "身份證正面",
+			idCardFrontPlaceholder: "點擊上傳身份證正面",
+			idCardBackLabel: "身份證反面",
+			idCardBackPlaceholder: "點擊上傳身份證反面"
 		},
 		deposit: {
 			withdrawal: "出金",
@@ -457,13 +466,13 @@ export default {
 				enterWithdrawalPassword: "输入提款密码",
 				submit: "提交",
 				enterWithdrawalAmount: "请输入提现金额",
-				withdrawalFailed: "提现失败，请稍后再试",
+				withdrawalFailed: "提款失敗，請聯絡線上客服",
 				currencyDescription: "提取歐元以外的貨幣，請聯繫線上客服獲得協助",
 		},
 		withdrawalStatus: {
 			pending: "待审核",
-				success: "已打款",
-				rejected: "已拒绝",
-				processing: "打款中"
+			success: "已打款",
+			rejected: "已拒绝",
+			processing: "打款中"
 		}
 	}

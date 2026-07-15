@@ -322,11 +322,13 @@ export default {
 				all: "すべて",
 				pending: "保留中",
 				completed: "完了",
+				reviewFailed: "審査失敗",
 				limitOrder: "指値注文"
 			},
 			status: {
 				completed: "完了",
 				pending: "保留中",
+				reviewFailed: "審査失敗",
 				processing: "処理中"
 			},
 			details: {
@@ -334,7 +336,8 @@ export default {
 				orderType: "注文タイプ",
 				exchangeCurrency: "換金通貨",
 				exchangeEarnings: "換金収益",
-				expectedReturn: "期待収益"
+				expectedReturn: "期待収益",
+				exchangeRate: "単価"
 			}
 		},
 		navbar: {
@@ -500,10 +503,8 @@ export default {
 		formTitle: "チャージ情報",
 		moneyLabel: "チャージ金額",
 		moneyPlaceholder: "チャージ金額を入力してください",
-		addressLabel: "チャージアドレス",
-		addressPlaceholder: "チャージアドレスを入力してください",
-		hashLabel: "チャージハッシュ",
-		hashPlaceholder: "チャージハッシュを入力してください",
+		imageLabel: "チャージスクリーンショット",
+		imagePlaceholder: "チャージスクリーンショットをアップロードしてください",
 		submitButton: "チャージを送信",
 		successMessage: "チャージ送信成功",
 		failMessage: "送信失敗",
@@ -542,7 +543,11 @@ export default {
 		submitButton: "認証を送信",
 		statusPending: "審査中",
 		statusSuccess: "審査成功",
-		statusFailed: "審査失敗"
+		statusFailed: "審査失敗",
+		idCardFrontLabel: "身分証明書表面",
+		idCardFrontPlaceholder: "身分証明書の表面をクリックしてアップロード",
+		idCardBackLabel: "身分証明書裏面",
+		idCardBackPlaceholder: "身分証明書の裏面をクリックしてアップロード"
 	},
 	withdrawalStatus: {
 		pending: "審査待ち",

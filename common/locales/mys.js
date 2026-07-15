@@ -379,10 +379,8 @@ export default {
 		formTitle: "Maklumat Tambahan",
 		moneyLabel: "Jumlah Tambahan",
 		moneyPlaceholder: "Sila masukkan jumlah tambahan",
-		addressLabel: "Alamat Tambahan",
-		addressPlaceholder: "Sila masukkan alamat tambahan",
-		hashLabel: "Hash Tambahan",
-		hashPlaceholder: "Sila masukkan hash tambahan",
+		imageLabel: "Skrin Syot Tambahan",
+		imagePlaceholder: "Sila muat naik skrin syot tambahan",
 		submitButton: "Hantar Tambahan",
 		successMessage: "Berjaya menghantar tambahan",
 		failMessage: "Gagal menghantar",
@@ -432,11 +430,13 @@ export default {
 			all: "Semua",
 			pending: "Menunggu",
 			completed: "Selesai",
+			reviewFailed: "Semakan Gagal",
 			limitOrder: "Pesanan Had"
 		},
 		status: {
 			completed: "Selesai",
 			pending: "Menunggu",
+			reviewFailed: "Semakan Gagal",
 			processing: "Memproses"
 		},
 		details: {
@@ -444,10 +444,11 @@ export default {
 			orderType: "Jenis Pesanan",
 			exchangeCurrency: "Mata Wang Pertukaran",
 			exchangeEarnings: "Pendapatan Pertukaran",
-			expectedReturn: "Pulangan Yang Dijangka"
+			expectedReturn: "Pulangan Yang Dijangka",
+			exchangeRate: "unit"
 		},
 		vip: {
-			title: "Membership Level",
+			title: "VIP Level",
 			current: "Current",
 			deposit: "Deposit",
 			bonus: "Bonus",

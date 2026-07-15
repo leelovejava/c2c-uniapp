@@ -38,15 +38,24 @@
 					</div>
 
 					<div class="form-group">
-						<label class="form-label">{{$t('bindTrc20.addressLabel')}}</label>
-						<input type="text" v-model="form.recharge_address" class="form-input"
-							:placeholder="$t('bindTrc20.addressPlaceholder')">
-					</div>
-
-					<div class="form-group">
-						<label class="form-label">{{$t('bindTrc20.hashLabel')}}</label>
-						<input type="text" v-model="form.recharge_hash" class="form-input"
-							:placeholder="$t('bindTrc20.hashPlaceholder')">
+						<label class="form-label">{{$t('bindTrc20.imageLabel')}}</label>
+						<div class="upload-area">
+							<u-upload 
+						:key="uploadKey"
+						ref="uploadRef"
+						:fileList="fileList" 
+						@on-success="okopen" 
+						  @on-remove="onRemove"
+						@remove="onRemove"
+						@delete="onRemove"
+						multiple 
+						:maxCount="1"
+						:uploadText="$t('bindTrc20.imagePlaceholder')" 
+						width="50vw"
+						:action="uploadAction"
+						:form-data="{ token: token }"
+					></u-upload>
+						</div>
 					</div>
 
 					<button class="submit-button" @click="submitRecharge">{{$t('bindTrc20.submitButton')}}</button>
@@ -65,21 +74,32 @@
 			QiyanQrcode
 		},
 		data() {
-			return {
-				activeTab:0,
-				ewmUrl:['sbbbbbbbbbb','wwwwwwwwwwww','aaaaaaaaaaaaa'],
-				loading: false,
-				form: {
-					money: '',
-					recharge_address: '',
-					recharge_hash: ''
+				return {
+					activeTab:0,
+					ewmUrl:['sbbbbbbbbbb','wwwwwwwwwwww','aaaaaaaaaaaaa'],
+					loading: false,
+					token: '',
+					fileList: [],
+					image: '',
+					uploadKey: 0,
+					form: {
+						money: ''
+					}
+				};
+			},
+			computed: {
+				uploadAction() {
+					return this.$store.state.baseDomain + '/api/index/upload';
 				}
-			};
-		},
+			},
 		onLoad(options) {
+			this.token = uni.getStorageSync('token')
 			this.getAddressList();
 		},
 		methods: {
+			okopen(data) {
+				this.image = data.data.url
+			},
 			getAddressList() {
 				this.loading = true;
 				const token = uni.getStorageSync('token');
@@ -102,14 +122,39 @@
 				this.activeTab = tabName;
 			},
 			submitRecharge() {
+				if (!this.form.money) {
+					uni.showToast({
+						title: this.$t('bindTrc20.moneyPlaceholder'),
+						icon: 'none'
+					})
+					return
+				}
+				if (!this.image) {
+					uni.showToast({
+						title: this.$t('bindTrc20.imagePlaceholder'),
+						icon: 'none'
+					})
+					return
+				}
 				const token = uni.getStorageSync('token')
-				this.$u.api.index.add_Recharge(token, this.form).then(res => {
+				const data = {
+					money: this.form.money,
+					image: this.image
+				}
+				this.$u.api.index.add_Recharge(token, data).then(res => {
 					if (res.code == 1) {
-						uni.showToast({
-							title: this.$t('bindTrc20.successMessage'),
-							icon: 'success'
-						})
-					} else {
+							uni.showToast({
+								title: this.$t('bindTrc20.successMessage'),
+								icon: 'success'
+							})
+							// 清空表单
+							this.form.money = ''
+							this.image = ''
+							// 强制重建组件
+							this.uploadKey++
+							// 重置fileList
+							this.fileList = []
+						} else {
 						uni.showToast({
 							title: res.msg || this.$t('bindTrc20.failMessage'),
 							icon: 'error'
@@ -132,6 +177,22 @@
 						})
 					}
 				})
+			},
+			onRemove(index, lists) {
+				/*uni.showModal({ 
+				   title: 'Tips', 
+				   content: 'Are you sure you want to delete this item?', 
+				   cancelText: 'Cancel', 
+				   confirmText: 'Confirm', 
+				   success: ({ confirm }) => { 
+				     if (confirm) { 
+				       this.fileList = lists;
+				       this.image = '';
+				     } 
+				   } 
+				 })*/
+				this.fileList = lists;
+			    this.image = '';
 			},
 		},
 	}
@@ -385,5 +446,10 @@
 		&:active {
 			transform: scale(0.95);
 		}
+	}
+
+	.upload-area {
+		margin-top: 10rpx;
+		text-align: center;
 	}
 </style>

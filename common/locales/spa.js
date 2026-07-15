@@ -428,11 +428,13 @@ export default {
 				all: "Todo",
 				pending: "Pendiente",
 				completed: "Completado",
+				reviewFailed: "Revisión fallida",
 				limitOrder: "Orden limitada"
 			},
 			status: {
 				completed: "Completado",
 				pending: "Pendiente",
+				reviewFailed: "Revisión fallida",
 				processing: "Procesando"
 			},
 			details: {
@@ -440,7 +442,8 @@ export default {
 				orderType: "Tipo de orden",
 				exchangeCurrency: "Moneda intercambiada",
 				exchangeEarnings: "Ganancias del intercambio",
-				expectedReturn: "Retorno esperado"
+				expectedReturn: "Retorno esperado",
+				exchangeRate: "unidad"
 			}
 		},
 		navbar: {
@@ -525,10 +528,8 @@ export default {
 		formTitle: "Información de recarga",
 		moneyLabel: "Monto de recarga",
 		moneyPlaceholder: "Por favor, ingrese el monto de recarga",
-		addressLabel: "Dirección de recarga",
-		addressPlaceholder: "Por favor, ingrese la dirección de recarga",
-		hashLabel: "Hash de recarga",
-		hashPlaceholder: "Por favor, ingrese el hash de recarga",
+		imageLabel: "Captura de pantalla de recarga",
+		imagePlaceholder: "Por favor, sube la captura de pantalla de recarga",
 		submitButton: "Enviar recarga",
 		successMessage: "Recarga enviada correctamente",
 		failMessage: "Error al enviar",
@@ -563,9 +564,36 @@ export default {
 			withdrawalFailed: "Error en el retiro, inténtelo de nuevo más tarde"
 		},
 		withdrawalStatus: {
-			pending: "Pendiente de revisión",
-			success: "Pago realizado",
-			rejected: "Rechazado",
-			processing: "Procesando pago"
-		}
+		pending: "Pendiente de revisión",
+		success: "Pago realizado",
+		rejected: "Rechazado",
+		processing: "Procesando pago"
+	},
+	// Internacionalización relacionada con la autenticación de nombre real
+	certification: {
+		title: "Solicitar Autenticación de Nombre Real",
+		subtitle: "Por favor, complete sus datos reales para completar la autenticación",
+		successTitle: "Ha completado la autenticación de nombre real",
+		successSubtitle: "No es necesario volver a enviar la información de autenticación",
+		nameLabel: "Nombre Real",
+		emailLabel: "Dirección de Correo Electrónico",
+		phoneLabel: "Número de Teléfono",
+		namePlaceholder: "Por favor, ingrese su nombre real",
+		emailPlaceholder: "Por favor, ingrese su dirección de correo electrónico",
+		phonePlaceholder: "Por favor, ingrese su número de teléfono",
+		submitButton: "Enviar Autenticación",
+		statusPending: "En Revisión",
+		statusSuccess: "Revisión Exitosa",
+		statusFailed: "Revisión Fallida",
+		idCardFrontLabel: "Identificación Anverso",
+		idCardFrontPlaceholder: "Haga clic para cargar la identificación anverso",
+		idCardBackLabel: "Identificación Reverso",
+		idCardBackPlaceholder: "Haga clic para cargar la identificación reverso"
+	},
+	modal: {
+		tipTitle: "Consejo",
+		confirmDelete: "¿Estás seguro de que quieres eliminar este artículo?",
+		cancel: "Cancelar",
+		confirm: "Confirmar"
 	}
+}

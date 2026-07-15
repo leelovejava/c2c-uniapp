@@ -50,7 +50,7 @@ const install = (Vue, vm) => {
 		// 登录
 		login: (account,password) => vm.$u.post("/user/login", {account,password}),
 		// 注册
-		register: (username,password,invitation_code,code) => vm.$u.post("/user/register", {username,password,invitation_code,code}),
+		register: (username,password,invitation_code,code,lang) => vm.$u.post("/user/register", {username,password,invitation_code,code,lang}),
 		// 发验证码
 		send_email_mobile: (username) => vm.$u.post("/user/send_email_mobile", {username}),
 		// 获取用户最新的站内信
@@ -84,7 +84,7 @@ const install = (Vue, vm) => {
 		//修改个人信息
 		up_userinfo: (token,nickname) => vm.$u.get("/user/up_userinfo",{token,nickname}),
 		//实名认证提交
-		bind_real: (token,data) => vm.$u.get("/user/bind_real",{token,...data}),
+		bind_real: (token,data) => vm.$u.post("/user/bind_real",{token,...data}),
 		//实名认证状态
 		is_verified: (token) => vm.$u.get("/user/is_verified",{token}),
 		
@@ -157,11 +157,17 @@ const install = (Vue, vm) => {
 		getUserAssets: (token, data) => vm.$u.post("/user/getUserAssets", {token, ...data}),
 	}
 	
+	const config = {
+		// 获取客服链接
+		getChatUrl: (data) => vm.$u.get("/config/getChatUrl", data),
+	}
+	
 	vm.$u.api = {
 		common,
 		setting,
 		index,
-		address
+		address,
+		config
 	};
 }
 export default {

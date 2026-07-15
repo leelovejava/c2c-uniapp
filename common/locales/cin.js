@@ -38,7 +38,7 @@ export default {
 			}
 		},
 		hall: {
-			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "賣出訂單", "賣給商家", "掛單中", "買入", "去出售"],
+			default: ["交易大廳", "餘額", "我要買", "我要賣", "確認賣出", "訂單列表", "賣出訂單", "賣給商家", "掛單中", "買入", "出售"],
 			list: ["數量", "單價", "未成交", "賣出USDT", "請輸入USDT數量", "獲得金額", "額度", "買入USDT", "耗費金額"],
 			kbip: ["撤銷", "超出金額", "必須在金額範圍內"]
 		},
@@ -294,7 +294,7 @@ export default {
 			"copy": "複製",
 			"creditScore": "信譽分",
 			"totalBalance": "總餘額",
-			eurBalance: "Euro 餘額",
+			"eurBalance": "Euro 餘額",
 			"currencyExchange": "貨幣兌換",
 			"memberLevel": "會員等級",
 			"promotions": "優惠活動",
@@ -309,7 +309,8 @@ export default {
 			"inviteFriends": "邀請好友",
 			"logout": "註銷",
 			"copySuccess": "複製成功",
-			"copyFailed": "複製失敗"
+			"copyFailed": "複製失敗",
+			"realNameAuth": "实名认证",
 		},
 		"exchange": {
 			"infoCard": {
@@ -344,11 +345,13 @@ export default {
 				"all": "全部",
 				"pending": "待處理",
 				"completed": "已完成",
+				"reviewFailed": "審核失敗",
 				"limitOrder": "限價訂單"
 			},
 			"status": {
 				"completed": "已完成",
 				"pending": "待處理",
+				"reviewFailed": "審核失敗",
 				"processing": "處理中"
 			},
 			"details": {
@@ -356,7 +359,8 @@ export default {
 				"orderType": "訂單類型",
 				"exchangeCurrency": "兌換貨幣",
 				"exchangeEarnings": "兌換收益",
-				"expectedReturn": "預期回報"
+				"expectedReturn": "預期回報",
+				"exchangeRate": "單價"
 			}
 		},
 		// 实名认证相关国际化
@@ -373,10 +377,14 @@ export default {
 			"phonePlaceholder": "請輸入您的手機號碼",
 			"submitButton": "提交認證",
 			"statusPending": "審核中",
-			"statusSuccess": "審核成功",
-			"statusFailed": "審核失敗"
-		}
-	},
+		"statusSuccess": "審核成功",
+		"statusFailed": "審核失敗",
+		"idCardFrontLabel": "身份證正面",
+		"idCardFrontPlaceholder": "點擊上傳身份證正面",
+		"idCardBackLabel": "身份證反面",
+		"idCardBackPlaceholder": "點擊上傳身份證反面"
+	}
+},
 	"faqs": {
 		"pageHeader": {
 			"title": "規則和條例",
@@ -482,7 +490,7 @@ export default {
 		"all": "全部",
 		"enterWithdrawalPassword": "輸入提款密碼",
 		"submit": "提交",
-		withdrawalFailed: "提款失敗，請稍後再試",
+		withdrawalFailed: "提款失敗，請聯絡線上客服",
 	},
 	"about": {
 		"title": "關於我們",
@@ -511,10 +519,8 @@ export default {
 		formTitle: "充值信息",
 		moneyLabel: "充值金額",
 		moneyPlaceholder: "請輸入充值金額",
-		addressLabel: "充值地址",
-		addressPlaceholder: "請輸入充值地址",
-		hashLabel: "充值hash",
-		hashPlaceholder: "請輸入充值hash",
+		imageLabel: "充值截圖",
+		imagePlaceholder: "請上傳充值截圖",
 		submitButton: "提交充值",
 		successMessage: "充值提交成功",
 		failMessage: "提交失敗",
@@ -551,5 +557,22 @@ export default {
 		success: "已打款",
 		rejected: "已拒絕",
 		processing: "打款中"
+	},
+	// 實名認證相關國際化
+	certification: {
+		title: "申請實名認證",
+		subtitle: "請填寫您的真實信息以完成認證",
+		successTitle: "您已完成實名認證",
+		successSubtitle: "無需重新提交認證信息",
+		nameLabel: "真實姓名",
+		emailLabel: "郵箱地址",
+		phoneLabel: "手機號碼",
+		namePlaceholder: "請輸入您的真實姓名",
+		emailPlaceholder: "請輸入您的郵箱地址",
+		phonePlaceholder: "請輸入您的手機號碼",
+		submitButton: "提交認證",
+		statusPending: "審核中",
+		statusSuccess: "審核成功",
+		statusFailed: "審核失敗"
 	}
 }

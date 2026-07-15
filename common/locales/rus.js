@@ -305,11 +305,13 @@ export default {
 				all: "Все",
 				pending: "В ожидании",
 				completed: "Завершено",
+				reviewFailed: "Проверка не пройдена",
 				limitOrder: "Лимитный ордер"
 			},
 			status: {
 				completed: "Завершено",
 				pending: "В ожидании",
+				reviewFailed: "Проверка не пройдена",
 				processing: "Обработка"
 			},
 			details: {
@@ -317,7 +319,8 @@ export default {
 				orderType: "Тип заказа",
 				exchangeCurrency: "Обменная валюта",
 				exchangeEarnings: "Доход от обмена",
-				expectedReturn: "Ожидаемый возврат"
+				expectedReturn: "Ожидаемый возврат",
+				exchangeRate: "единица"
 			}
 		},
 		navbar: {
@@ -382,7 +385,11 @@ export default {
 			submitButton: "Отправить верификацию",
 			statusPending: "На рассмотрении",
 			statusSuccess: "Рассмотрение успешно",
-			statusFailed: "Рассмотрение не удалось"
+			statusFailed: "Рассмотрение не удалось",
+			idCardFrontLabel: "Лицевая сторона удостоверения",
+			idCardFrontPlaceholder: "Нажмите, чтобы загрузить лицевую сторону удостоверения",
+			idCardBackLabel: "Обратная сторона удостоверения",
+			idCardBackPlaceholder: "Нажмите, чтобы загрузить обратную сторону удостоверения"
 		},
 		deposit: {
 			withdrawal: "Вывод",

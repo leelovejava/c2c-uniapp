@@ -465,8 +465,10 @@ export default {
 		// 删除一个图片
 		deleteItem(index) {
 			uni.showModal({
-				title: '提示',
-				content: '您确定要删除此项吗？',
+        title: this.$t('common.modal.tipTitle'),
+        content: this.$t('common.modal.confirmDelete'),
+        cancelText: this.$t('common.modal.cancel'),
+        confirmText: this.$t('common.modal.confirm'),
 				success: async (res) => {
 					if (res.confirm) {
 						// 先检查是否有定义before-remove移除前钩子

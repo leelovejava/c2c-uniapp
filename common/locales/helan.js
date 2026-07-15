@@ -375,6 +375,12 @@ export default {
 			contactUs: "Neem contact met ons op",
 			inviteFriends: "Nodig vrienden uit",
 			logout: "Uitloggen"
+		},
+		modal: {
+			tipTitle: "Tip",
+			confirmDelete: "Weet u zeker dat u dit item wilt verwijderen?",
+			cancel: "Annuleren",
+			confirm: "Bevestigen"
 		}
 	},
 	faqs: {
@@ -447,10 +453,8 @@ export default {
 		formTitle: "Herlaad Informatie",
 		moneyLabel: "Herlaad Bedrag",
 		moneyPlaceholder: "Voer herlaad bedrag in",
-		addressLabel: "Herlaad Adres",
-		addressPlaceholder: "Voer herlaad adres in",
-		hashLabel: "Herlaad Hash",
-		hashPlaceholder: "Voer herlaad hash in",
+		imageLabel: "Herlaad Screenshot",
+		imagePlaceholder: "Upload herlaad screenshot",
 		submitButton: "Verstuur Herlaad",
 		successMessage: "Herlaad succesvol ingediend",
 		failMessage: "Indiening mislukt",
@@ -491,7 +495,11 @@ export default {
 			submitButton: "Indieningscertificaat",
 			statusPending: "In beoordeling",
 			statusSuccess: "Audit geslaagd",
-			statusFailed: "Audit mislukt"
+			statusFailed: "Audit mislukt",
+			idCardFrontLabel: "ID-kaart voorzijde",
+			idCardFrontPlaceholder: "Klik om ID-kaart voorzijde te uploaden",
+			idCardBackLabel: "ID-kaart achterzijde",
+			idCardBackPlaceholder: "Klik om ID-kaart achterzijde te uploaden"
 		},
 		order: {
 		recordsTitle: "Records",
@@ -499,11 +507,13 @@ export default {
 			all: "Alles",
 			pending: "In behandeling",
 			completed: "Voltooid",
+			reviewFailed: "Beoordeling mislukt",
 			limitOrder: "Limietorder"
 		},
 		status: {
 			completed: "Voltooid",
 			pending: "In behandeling",
+			reviewFailed: "Beoordeling mislukt",
 			processing: "Verwerken"
 		},
 		details: {
@@ -511,7 +521,8 @@ export default {
 			orderType: "Besteltype",
 			exchangeCurrency: "Wisselvaluta",
 			exchangeEarnings: "Wisselwinst",
-			expectedReturn: "Verwacht rendement"
+			expectedReturn: "Verwacht rendement",
+			exchangeRate: "eenheid"
 		}
 	},
 	deposit: {

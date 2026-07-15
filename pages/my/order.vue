@@ -5,20 +5,20 @@
 			<div class="main-content">
 				<h1 class="records-title">{{ i18n.order.recordsTitle }}</h1>
 				<div class="records-tabs"><button :class="['tab-link', { active: activeTab === 'all' }]"
-						@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
-						:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
-						data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
-						@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
-						:class="['tab-link', { active: activeTab === 'limit_order' }]" @click="switchTab('limit_order')"
-						data-type="limit_order">{{ i18n.order.tabs.limitOrder }}</button></div>
+										@click="switchTab('all')" data-status="all">{{ i18n.order.tabs.all }}</button><button
+										:class="['tab-link', { active: activeTab === 'pending' }]" @click="switchTab('pending')"
+										data-status="5">{{ i18n.order.tabs.pending }}</button><button :class="['tab-link', { active: activeTab === 'completed' }]"
+										@click="switchTab('completed')" data-status="1">{{ i18n.order.tabs.completed }}</button><button
+										:class="['tab-link', { active: activeTab === 'approval_rejected' }]" @click="switchTab('approval_rejected')"
+										data-status="6">{{ i18n.order.tabs.reviewFailed }}</button></div>
 				<div class="order-list">
 					<div v-for="item in list" :key="item.id" class="order-item">
 						<div class="order-header">
 							<span class="order-date">{{ item.create_time }}</span>
 							<div class="order-status">
-								<span
-									:class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5' }]">
-									{{ item.status === '1' ? i18n.order.status.completed : item.status === '5' ? i18n.order.status.pending : i18n.order.status.processing }}
+                <!--状态 5pending审核中,1completed已完成,6review_failed审核失败-->
+								<span :class="['status-tag', { 'status-completed': item.status === '1', 'status-pending': item.status === '5', 'status-failed': item.status === '6' }]">
+									{{ item.status === '1' ? i18n.order.status.completed : (item.status === '5' ? i18n.order.status.pending : (item.status === '6' ? i18n.order.status.reviewFailed : i18n.order.status.processing)) }}
 								</span>
 							</div>
 						</div>
@@ -37,12 +37,11 @@
 										}}</span></div>
 							</div>
 							<div class="exchange-details">
-								<div class="detail-row"><span>{{ i18n.order.details.exchangeCurrency }}</span><span>{{ item.exchange_currency }} {{ item.to
-										}}</span></div>
-								<div class="detail-row"><span>{{ i18n.order.details.exchangeEarnings }}</span><span>{{ item.exchange_earnings }} {{ item.from
-										}}</span></div>
-								<div class="detail-row"><span>{{ i18n.order.details.expectedReturn }}</span><span>{{ item.expected_return }} {{ item.to
-										}}</span></div>
+<!--								<div class="detail-row"><span>{{ i18n.order.details.exchangeCurrency }}</span><span>{{ item.exchange_currency }} {{ item.to}}</span></div>-->
+<!--								<div class="detail-row"><span>{{ i18n.order.details.exchangeEarnings }}</span><span>{{ item.exchange_earnings }} {{ item.from
+										}}</span></div>-->
+								<div class="detail-row"><span>{{ i18n.order.details.expectedReturn }}</span><span>{{ item.expected_return }} {{ item.to}}</span></div>
+                <div class="detail-row"><span>{{ i18n.order.details.exchangeRate }}</span><span>{{ item.exchange_rate}}</span></div>
 							</div>
 						</div>
 					</div>
@@ -70,7 +69,8 @@ export default {
 			showLanguage: false,
 			activeTab: 'all',
 			form: {
-				status: 1,
+        // 状态 5pending审核中,1completed已完成,6review_failed审核失败
+				status: '',
 				page: 0,
 			},
 			list: [],
@@ -100,11 +100,26 @@ export default {
 				}
 			})
 		},
-		switchTab(tabName) {
-			this.activeTab = tabName;
-			// 这里可以添加根据标签切换加载不同数据的逻辑
-			console.log('切换到标签:', tabName);
-		},
+    switchTab(tabName) {
+      this.activeTab = tabName;
+      // 1. 设定 status
+      if (tabName === 'pending') {
+        this.form.status = 5;
+      } else if (tabName === 'completed') {
+        this.form.status = 1;
+      } else if (tabName === 'all') {
+        this.form.status = '';
+      } else if (tabName === 'approval_rejected') {
+        this.form.status = 6;
+      }
+
+      // 2. 重置分页和列表
+      this.form.page = 0;
+      this.list = [];
+
+      // 3. 重新加载数据
+      this.init();
+    },
 		// 获取货币对应的国家代码
 		getCountryCode(currency) {
 			// 简单的货币代码到国家代码的映射
@@ -192,9 +207,14 @@ export default {
 				}
 
 				.status-completed {
-					border: 1px solid #4CAF50;
-					color: #4CAF50;
-				}
+											border: 1px solid #4CAF50;
+											color: #4CAF50;
+										}
+
+										.status-failed {
+											border: 1px solid #E53935;
+											color: #E53935;
+										}
 
 			}
 		}

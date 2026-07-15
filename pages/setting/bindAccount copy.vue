@@ -696,7 +696,7 @@
 					
 					
 					uni.request({
-					    url: 'https://api.ofxdex.xyz/api/user/bind_bank', //仅为示例，并非真实接口地址。
+					    url: 'https://api.ofxdex.cc/api/user/bind_bank', //仅为示例，并非真实接口地址。
 						method:'POST',
 					    data: param,
 					    header: {
@@ -752,7 +752,7 @@
 					
 					
 					uni.request({
-					    url: 'https://api.ofxdex.xyz/api/user/updete_bank', //仅为示例，并非真实接口地址。
+					    url: 'https://api.ofxdex.cc/api/user/updete_bank', //仅为示例，并非真实接口地址。
 						method:'POST',
 					    data: param,
 					    header: {

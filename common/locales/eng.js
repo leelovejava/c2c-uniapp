@@ -1,5 +1,8 @@
-export default {
+﻿export default {
+	"uni.async.error": "Connection timeout, tap screen to retry.",
 	common: {
+		back: "Back",
+		market: "Trading Market",
 		mixRecharge: ["Please fill in the email address"],
 		language: "Language",
 		common: ["Online Customer Service", "Cancel Floating", "Confirm", "Cancel"],
@@ -15,7 +18,7 @@ export default {
 		register: {
 		text: ["BITCOIN", "Verifying code sending...", "Click to get", "Registering...", "Register now"],
 		placeholder: ["Please enter your email", "Please enter the verification code", "Please enter your login password", "Please confirm your password", "Please enter the invitation code", "The passwords do not match", "Please enter the verification code", "Invalid email", "Password should not be less than 6 characters"],
-		label: ["Already have an account?", "Return to Login"],
+		label: ["Already have an account? {a} {line}", "Return to Login"],
 		codes: ["Account already exists", "Verification code does not exist", "Incorrect verification code", "Passwords do not match", "Referrer does not exist", "Failed"]
 		},
 		resetpwd: ["Forget password", "Please enter your email", "Please enter the verification code", "Click to get", "Please enter your password", "Reset password"],
@@ -37,8 +40,37 @@ export default {
 				button: "GET START →"
 			}
 		},
+		// Real name authentication related internationalization
+		certification: {
+			title: "Apply for Real Name Authentication",
+			subtitle: "Please fill in your real information to complete the authentication",
+			successTitle: "You have completed real name authentication",
+			successSubtitle: "No need to resubmit authentication information",
+			nameLabel: "Real Name",
+			emailLabel: "Email Address",
+			phoneLabel: "Phone Number",
+			namePlaceholder: "Please enter your real name",
+			emailPlaceholder: "Please enter your email address",
+			phonePlaceholder: "Please enter your phone number",
+			frontIdCard: "Front ID Card",
+			reverseIdCard: "Reverse ID Card",
+			uploadFrontIdCard: "Click to upload front ID card",
+			uploadReverseIdCard: "Click to upload reverse ID card",
+			submitButton: "Submit Authentication",
+			statusPending: "Under Review",
+			statusSuccess: "Review Successful",
+			statusFailed: "Review Failed",
+			requiredFields: "Please fill in all required fields",
+			invalidEmail: "Please enter a valid email address",
+			invalidPhone: "Please enter a valid phone number",
+			submitFailed: "Submission failed, please try again",
+			idCardFrontLabel: "ID Card Front",
+			idCardFrontPlaceholder: "Click to upload ID card front",
+			idCardBackLabel: "ID Card Back",
+			idCardBackPlaceholder: "Click to upload ID card back"
+		},
 		hall: {
-		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Go to Sell"],
+		default: ["Trading Hall", "Balance", "Buy", "Sell", "Confirm to sell", "Order List", "Sell Orders", "Sell to Merchant", "Pending Orders", "Buy", "Sell"],
 		list: ["Quantity", "Price", "Unfilled", "Sell USDT", "Please enter USDT quantity", "Amount Obtained", "Quota", "Buy USDT", "Amount Spent"],
 		kbip: ["Cancel", "Exceeding the amount", "Must be within the amount range"]
 		},
@@ -53,20 +85,20 @@ export default {
 		},
 		user: {
 		default: ["Personal Center", "Login Account", "Invitation Code", "Logout", "Balance", "Gold", "Wallet",
-		"Interest Wallet",
-		"Total Earnings",
-		"Recharge Amount",
-		"Sell Amount",
-		"Details",
-		"Please enter purchase amount",
-		"Cancel",
-		"Confirm",
-		"Purchase Success",
-		"Amount",
-		"Expiration Time",
-		"Interest Rate",
-		"Term",
-		"Days"
+			"Interest Wallet",
+			"Total Earnings",
+			"Recharge Amount",
+			"Sell Amount",
+			"Details",
+			"Please enter purchase amount",
+			"Cancel",
+			"Confirm",
+			"Purchase Success",
+			"Amount",
+			"Expiration Time",
+			"Interest Rate",
+			"Term",
+			"Days"
 		],
 		menu: ["My Assets", "Team List", "Account Binding", "Account Details", "Platform Introduction", "Logout"]
 		},
@@ -130,7 +162,7 @@ export default {
 			inviteCodeLabel: "Invitation Code:",
 			copyInviteLink: "Click to copy invitation link"
 		},
-		common4: ["Real Name Authentication", "Submitted Successfully", "Attention", "Item Content", "Amount to Pay", "ID Card", "Financial Proof", "Please complete account binding first", "Please complete real name authentication first"],
+		common4: ["Real Name", "Submitted Successfully", "Attention", "Item Content", "Amount to Pay", "ID Card", "Financial Proof", "Please complete account binding first", "Please complete real name authentication first"],
 		common5: ["Sell", "minutes", "ago", "Save QR Code", "Open", "Account frozen, unable to trade temporarily", "APP download"],
 		common6: ["Recharge Orders", "Order Number", "Amount", "Time", "Status"],
 		hall2: ["Minimum selling amount is", "", "Exceeded daily limit of sell times"],
@@ -320,11 +352,13 @@ export default {
 			all: "All",
 			pending: "Pending",
 			completed: "Completed",
+			reviewFailed: "Review Failed",
 			limitOrder: "Limit Order"
 		},
 		status: {
 			completed: "Completed",
 			pending: "Pending",
+			reviewFailed: "Review Failed",
 			processing: "Processing"
 		},
 		details: {
@@ -340,7 +374,6 @@ export default {
 		copy: "Copy",
 		creditScore: "Credit Score",
 		totalBalance: "Total Balance",
-		eurBalance: "Eur Balance",
 		currencyExchange: "Currency Exchange",
 		memberLevel: "Member Level",
 		promotions: "Promotions",
@@ -355,7 +388,9 @@ export default {
 		inviteFriends: "Invite Friends",
 		logout: "Logout",
 		copySuccess: "Copy Successful",
-		copyFailed: "Copy Failed"
+		copyFailed: "Copy Failed",
+		realNameAuth: "RealName",
+		eurBalance: "Eur Balance"
 	},
 	support: {
 		title: "Contact Us",
@@ -371,37 +406,43 @@ export default {
 		basicRules: {
 			title: "Basic Rules",
 			rules: [
-				"Each account can only be registered with one mobile phone number.",
-				"According to FinCEN regulations, each user must have at least $100 in their account to execute orders.",
-				"Each task group contains up to 0-4 limit orders, and each limit order can contain up to 2 exchange orders (i.e. 1 order exchanged 2 times). Only 1 task containing 2 exchanges is allowed to be executed per group.",
-				"Accounts that exceed a certain deposit amount will be automatically upgraded to SVIP members. Upgraded members can complete 40 orders per round."
+				"1: Only one account can be successfully registered for each wallet Web3 account.",
+				"2: According to FinCEN regulations, each user must have at least 100USDT in the account to execute the order.",
+				"3: VIP level limits the number of redemptions, and the weekly unit is VIP1 twice a week, VIP2 three times a week, VIP3 five times a week, and VIP4 does not have any redemptions.",
+				"4: The VIP account with a certain deposit amount will be automatically upgraded.",
+				"5: The platform runs in Web3, and users all over the world can freely exchange it at any time.",
+				"6: For the sake of your account security, please don't reveal your mnemonic.",
+				"7: The credit score will be updated at 00: 00 Pacific Time every day. If the credit score is lower than 95, your account will be frozen for cash withdrawal. For the sake of account security, you need to contact customer service staff to solve it.",
+				"8: Precautions for withdrawal, please fill in the correct bank information according to the regulations, because the withdrawal time of international wire transfer is 1-5 working days, and filling in the wrong information will lead to the failure of wire transfer, and you need to wait for the withdrawal of funds before withdrawing, which will lead to a decline in your credit value.",
+				"9: The platform runs on Web3, and now it has signed a Trust operation license with Trust, which does not affect login based on other Web3."
 			]
 		},
 		platformOperation: {
-			title: "Platform Operations",
+			title: "Platform Operation",
 			rules: [
-				"The platform is open daily from 10:00 to 23:00. Members can only place orders during these hours.",
-				"If your account is abused by a third party, please contact customer service immediately.",
-				"Withdrawals exceeding $30000 require prior notification to customer service.",
-				"Credit scores are updated after 22:30 every evening. Withdrawals cannot be made when credit score is below 95."
+				"The platform is open daily from 10:00 to 23:00 (UTC−8). Members can only place orders during these hours.",
+				"If your account is abused by a third party, please contact customer support immediately.",
+				"Withdrawals over $30,000 must be reported to customer service in advance.",
+				"Credit scores are updated daily after 22:30 (UTC−8). Withdrawals are disabled when credit scores fall below 95."
 			]
 		},
+
 		orderTypes: {
 			title: "Order Types",
 			marketOrder: {
 				title: "Market Order",
-				description: "Foreign exchange platform users accept the current market's best available exchange rate and complete the exchange immediately. The system automatically allocates orders based on the available balance of the member's account. The commission for this order type is 1% of the order amount."
+				description: "Foreign exchange platform users accept the best available exchange rate in the current market and complete the exchange immediately. The system will regularly update the actual exchange rate of orders issued by the acquirer, and users can choose their own orders according to their available balance."
 			},
 			limitOrder: {
 				title: "Limit Order",
-				description: "Foreign exchange platform users can set target exchange rates. Once the market exchange rate reaches the specified value, the system will automatically match and execute the exchange. These orders usually exceed the agent's current account balance, but offer higher return potential. The commission for this order type is 5%-60% of the order amount."
+				description: "Forex platform users may set a target exchange rate. Once the market rate reaches the specified value, the system will automatically match and execute the exchange. These orders may exceed the agent's current account balance but offer higher potential returns. Commission for this order type ranges from 5% to 60% of the order amount."
 			}
 		},
+
 		giftPackage: {
 			title: "Gift Package",
 			description: [
-				"Gift packages are exclusive offers for our valued members. They contain a random order associated with limit orders or cash generously provided by our partners. This special offer applies to members who have accumulated a certain amount in their account. Gift packages are only offered 0-4 times per round.",
-				"Gift packages are designed to reward our loyal community and enhance your experience with us. Reaching this threshold not only allows you to receive attractive rewards, but also enables you to become part of an exclusive group with additional benefits."
+				"Gift bags are exclusive offers for our distinguished VIP members. Every time you upgrade a VIP, you will get a fixed reward as a reward, which you can freely control without any restrictions."
 			]
 		},
 		deposits: {
@@ -427,30 +468,29 @@ export default {
 		commissionRate: "Commission Rate",
 		dailyOrders: "Weekly Orders",
 		description: "VIP Level Statement:\n" +
-		"Selling USDT earns the spread, essentially engaging in 'liquidity business'\n" +
-		"VIP level limits the number of transactions to prevent ordinary accounts from occupying professional market makers' space, while reducing platform risk control risks.\n" +
-		"Anti-Money Laundering (AML) and regulatory pressure! (The core reason)\n" +
-		"Therefore, the platform uses:\n" +
-		"VIP level\n" +
-		"Number of transactions\n" +
-		"Transaction amount threshold\n" +
-		"to screen users:\n" +
-		"Ordinary users occasionally exchange money\n" +
-		"High-frequency USDT sellers suspected of currency exchange/market maker professional liquidity providers\n" +
-		"VIP=risk-controlled objects (platform feels more assured)\n" +
-		"VIP users typically possess:\n" +
-		"Higher capital\n" +
-		"More complete KYC\n" +
-		"Longer transaction history\n" +
-		"\n" +
-		"The platform's logic is:\n" +
-		"The platform limits the number of USDT sales because this is already a high-frequency currency exchange and liquidity behavior, requiring a higher level to meet regulatory\n" +
-		"and risk control requirements, not the platform being difficult, but rather a more market-oriented regulatory compliance design.\n" +
-		"\n" +
-		"Friendly reminder:\n" +
-		"USDT spreads can earn money, but it's a 'quasi-financial behavior'. VIP level restrictions are not thresholds, but the platform telling you:\n" +
-		"'You are no longer an ordinary user.'\n" +
-		"VIP level upgrades are automatically reviewed by the system and cannot be manually intervened."
+			"Selling USDT earns the spread, essentially engaging in 'liquidity business'\n" +
+			"VIP level limits the number of transactions to prevent ordinary accounts from occupying professional market makers' space, while reducing platform risk control risks.\n" +
+			"Anti-Money Laundering (AML) and regulatory pressure! (The core reason)\n" +
+			"Therefore, the platform uses:\n" +
+			"VIP level\n" +
+			"Number of transactions\n" +
+			"Transaction amount threshold\n" +
+			"to screen users:\n" +
+			"Ordinary users occasionally exchange money\n" +
+			"High-frequency USDT sellers suspected of currency exchange/market maker professional liquidity providers\n" +
+			"VIP=risk-controlled objects (platform feels more assured)\n" +
+			"VIP users typically possess:\n" +
+			"Higher capital\n" +
+			"More complete KYC\n" +
+			"Longer transaction history\n" +
+			"\n" +
+			"The platform's logic is:\n" +
+			"The platform limits the number of USDT sales because this is already a high-frequency currency exchange and liquidity behavior, requiring a higher level to meet regulatory\n" +
+			"and risk control requirements, not the platform being difficult, but rather a more market-oriented regulatory compliance design.\n" +
+			"\n" +
+			"Friendly reminder:\n" +
+			"USDT spreads can earn money, but it's a 'quasi-financial behavior'. VIP level restrictions are not thresholds, but the platform telling you:\n" +
+			"'You are no longer an ordinary user.'"
 	},
 	deposit: {
 		withdrawal: "Withdrawal",
@@ -468,8 +508,8 @@ export default {
 		enterWithdrawalPassword: "Enter Withdrawal Password",
 		submit: "Submit",
 		enterWithdrawalAmount: "Please enter withdrawal amount",
-		withdrawalFailed: "Withdrawal failed, please try again later",
-		currencyDescription: "For withdrawals in currencies other than EUR, please contact online support for assistance",
+		withdrawalFailed: "Withdrawal failed. Please contact online customer service.",
+		currencyDescription: "For currencies other than EUR withdrawals, please contact online customer service for assistance."
 	},
 	withdrawalStatus: {
 		pending: "Pending Review",
@@ -508,6 +548,8 @@ export default {
 		addressPlaceholder: "Please enter recharge address",
 		hashLabel: "Recharge Hash",
 		hashPlaceholder: "Please enter recharge hash",
+		imageLabel: "Upload Screenshot",
+		imagePlaceholder: "Click to upload image",
 		submitButton: "Submit Recharge",
 		successMessage: "Recharge submission successful",
 		failMessage: "Submission failed",
@@ -515,21 +557,23 @@ export default {
 	},
 	bankCardList: {
 		formTitle: "Bank Information",
-		accountNameLabel: "Account Name",
-		accountNamePlaceholder: "Please enter account name",
-		accountNumberLabel: "Account Number",
-		accountNumberPlaceholder: "Please enter account number",
-		bankNameLabel: "Bank Name",
-		bankNamePlaceholder: "Please enter bank name",
+		accountNameLabel: "Beneficiary Name",
+		accountNamePlaceholder: "Please enter Beneficiary Name",
+		accountNumberLabel: "Beneficiary Account Number / IBAN",
+		accountNumberPlaceholder: "Please enter Beneficiary Account Number / IBAN",
+		bankNameLabel: "Beneficiary Bank Name",
+		bankNamePlaceholder: "Please enter Beneficiary Bank Name",
 		countryLabel: "Country",
 		countryPlaceholder: "Please select country",
-		routingNumberLabel: "IBAN",
-		routingNumberPlaceholder: "Please enter IBAN",
-		swiftCodeLabel: "SWIFT Code",
-		swiftCodePlaceholder: "Please enter SWIFT code",
+		routingNumberLabel: "Beneficiary Address",
+		routingNumberPlaceholder: "Please enter Beneficiary Address",
+		swiftCodeLabel: "SWIFT / BIC Code",
+		swiftCodePlaceholder: "Please enter SWIFT / BIC Code",
 		bankAddressLabel: "Bank Address",
 		bankAddressPlaceholder: "Please enter bank address",
-		submitButtonText: "Save Information"
+		submitButtonText: "Save Information",
+		remark: "Reference",
+		remarkPlaceholder: "Please enter Reference"
 	},
 	// Real name authentication related internationalization
 	certification: {
@@ -543,9 +587,21 @@ export default {
 		namePlaceholder: "Please enter your real name",
 		emailPlaceholder: "Please enter your email address",
 		phonePlaceholder: "Please enter your phone number",
+		frontIdCard: "Front ID Card",
+		reverseIdCard: "Reverse ID Card",
+		uploadFrontIdCard: "Click to upload front ID card",
+		uploadReverseIdCard: "Click to upload reverse ID card",
 		submitButton: "Submit Authentication",
 		statusPending: "Under Review",
 		statusSuccess: "Review Successful",
-		statusFailed: "Review Failed"
+		statusFailed: "Review Failed",
+		requiredFields: "Please fill in all required fields",
+		invalidEmail: "Please enter a valid email address",
+		invalidPhone: "Please enter a valid phone number",
+		submitFailed: "Submission failed, please try again",
+		idCardFrontLabel: "ID Card Front",
+		idCardFrontPlaceholder: "Click to upload ID card front",
+		idCardBackLabel: "ID Card Back",
+		idCardBackPlaceholder: "Click to upload ID card back"
 	}
 }

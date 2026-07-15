@@ -322,11 +322,13 @@ export default {
 				all: "Alle",
 				pending: "Ausstehend",
 				completed: "Abgeschlossen",
+				reviewFailed: "Überprüfung fehlgeschlagen",
 				limitOrder: "Limit-Order"
 			},
 			status: {
 				completed: "Abgeschlossen",
 				pending: "Ausstehend",
+				reviewFailed: "Überprüfung fehlgeschlagen",
 				processing: "In Bearbeitung"
 			},
 			details: {
@@ -334,7 +336,8 @@ export default {
 				orderType: "Bestelltyp",
 				exchangeCurrency: "Tauschwährung",
 				exchangeEarnings: "Tauschgewinne",
-				expectedReturn: "Erwartete Rendite"
+				expectedReturn: "Erwartete Rendite",
+				exchangeRate: "Einheit"
 			}
 		},
 		navbar: {
@@ -363,6 +366,12 @@ export default {
 			title: "Kontaktieren Sie uns",
 			serviceTime: "Servicezeiten: Täglich von 10:00 bis 23:00 Uhr",
 			buttonText: "OFX-Support-Team"
+		},
+		modal: {
+			tipTitle: "Tipp",
+			confirmDelete: "Möchten Sie diesen Eintrag wirklich löschen?",
+			cancel: "Abbrechen",
+			confirm: "Bestätigen"
 		}
 	},
 	faqs: {
@@ -500,10 +509,8 @@ export default {
 		formTitle: "Aufladeinformationen",
 		moneyLabel: "Aufladebetrag",
 		moneyPlaceholder: "Bitte geben Sie den Aufladebetrag ein",
-		addressLabel: "Aufladeadresse",
-		addressPlaceholder: "Bitte geben Sie die Aufladeadresse ein",
-		hashLabel: "Auflade-Hash",
-		hashPlaceholder: "Bitte geben Sie den Auflade-Hash ein",
+		imageLabel: "Auflade-Screenshot",
+		imagePlaceholder: "Bitte laden Sie den Auflade-Screenshot hoch",
 		submitButton: "Aufladung senden",
 		successMessage: "Aufladung erfolgreich eingereicht",
 		failMessage: "Einreichung fehlgeschlagen",
@@ -542,7 +549,11 @@ export default {
 		submitButton: "Authentifizierung senden",
 		statusPending: "In Prüfung",
 		statusSuccess: "Prüfung erfolgreich",
-		statusFailed: "Prüfung fehlgeschlagen"
+		statusFailed: "Prüfung fehlgeschlagen",
+		idCardFrontLabel: "Ausweis Vorderseite",
+		idCardFrontPlaceholder: "Klicken Sie, um die Ausweis Vorderseite hochzuladen",
+		idCardBackLabel: "Ausweis Rückseite",
+		idCardBackPlaceholder: "Klicken Sie, um die Ausweis Rückseite hochzuladen"
 	},
 	withdrawalStatus: {
 		pending: "Ausstehende Überprüfung",

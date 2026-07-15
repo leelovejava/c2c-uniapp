@@ -282,22 +282,25 @@ export default {
 		order: {
 			recordsTitle: "Registri",
 			tabs: {
-				all: "Tutti",
-				pending: "In attesa",
-				completed: "Completato",
-				limitOrder: "Ordine limite"
+			all: "Tutti",
+			pending: "In attesa",
+			completed: "Completato",
+			reviewFailed: "Revisione fallita",
+			limitOrder: "Ordine limite"
 			},
 			status: {
-				completed: "Completato",
-				pending: "In attesa",
-				processing: "In elaborazione"
+			completed: "Completato",
+			pending: "In attesa",
+			reviewFailed: "Revisione fallita",
+			processing: "In elaborazione"
 			},
 			details: {
 				orderId: "ID Ordine",
 				orderType: "Tipo di ordine",
 				exchangeCurrency: "Valuta scambiata",
 				exchangeEarnings: "Guadagno dallo scambio",
-				expectedReturn: "Ritorno previsto"
+				expectedReturn: "Ritorno previsto",
+				exchangeRate: "unità"
 			}
 		}
 	},
@@ -415,10 +418,8 @@ export default {
 		formTitle: "Informazioni di ricarica",
 		moneyLabel: "Importo della ricarica",
 		moneyPlaceholder: "Inserisci l'importo della ricarica",
-		addressLabel: "Indirizzo di ricarica",
-		addressPlaceholder: "Inserisci l'indirizzo di ricarica",
-		hashLabel: "Hash della ricarica",
-		hashPlaceholder: "Inserisci l'hash della ricarica",
+		imageLabel: "Screenshot della ricarica",
+		imagePlaceholder: "Carica lo screenshot della ricarica",
 		submitButton: "Invia ricarica",
 		successMessage: "Ricarica inviata con successo",
 		failMessage: "Invio fallito",

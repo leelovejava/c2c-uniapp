@@ -327,6 +327,12 @@ export default {
 			contactUs: "हमसे संपर्क करें",
 			inviteFriends: "दोस्तों को आमंत्रित करें",
 			logout: "लॉग आउट करें"
+		},
+		modal: {
+			tipTitle: "सुझाव",
+			confirmDelete: "क्या आप वास्तव में इस आइटम को हटाना चाहते हैं?",
+			cancel: "रद्द करें",
+			confirm: "पुष्टि करें"
 		}
 	},
 	exchange: {
@@ -362,11 +368,13 @@ export default {
 			all: "सभी",
 			pending: "लंबित",
 			completed: "पूर्ण किया गया",
+			reviewFailed: "समीक्षा असफल",
 			limitOrder: "सीमित आदेश"
 		},
 		status: {
 			completed: "पूर्ण किया गया",
 			pending: "लंबित",
+			reviewFailed: "समीक्षा असफल",
 			processing: "प्रसंस्करण"
 		},
 		details: {
@@ -374,7 +382,8 @@ export default {
 			orderType: "आदेश प्रकार",
 			exchangeCurrency: "विनिमय मुद्रा",
 			exchangeEarnings: "विनिमय लाभ",
-			expectedReturn: "अपेक्षित रिटर्न"
+			expectedReturn: "अपेक्षित रिटर्न",
+			exchangeRate: "इकाई"
 		}
 	},
 	vip: {
@@ -436,10 +445,8 @@ export default {
 		formTitle: "रिचार्ज जानकारी",
 		moneyLabel: "रिचार्ज राशि",
 		moneyPlaceholder: "कृपया रिचार्ज राशि दर्ज करें",
-		addressLabel: "रिचार्ज पता",
-		addressPlaceholder: "कृपया रिचार्ज पता दर्ज करें",
-		hashLabel: "रिचार्ज हैश",
-		hashPlaceholder: "कृपया रिचार्ज हैश दर्ज करें",
+		imageLabel: "रिचार्ज स्क्रीनशॉट",
+		imagePlaceholder: "रिचार्ज स्क्रीनशॉट अपलोड करें",
 		submitButton: "रिचार्ज सबमिट करें",
 		successMessage: "रिचार्ज सबमिशन सफल",
 		failMessage: "सबमिशन विफल",
@@ -480,6 +487,10 @@ export default {
 		submitButton: "प्रमाणीकरण सबमिट करें",
 		statusPending: "समीक्षा में",
 		statusSuccess: "ऑडिट सफल",
-		statusFailed: "ऑडिट विफल"
+		statusFailed: "ऑडिट विफल",
+		idCardFrontLabel: "आईडी कार्ड का सामने",
+		idCardFrontPlaceholder: "आईडी कार्ड का सामने अपलोड करने के लिए क्लिक करें",
+		idCardBackLabel: "आईडी कार्ड का पीछे",
+		idCardBackPlaceholder: "आईडी कार्ड का पीछे अपलोड करने के लिए क्लिक करें"
 	}
 }
