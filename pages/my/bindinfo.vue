@@ -92,7 +92,7 @@
                   :maxCount="1"
                   :uploadText="$t('common.certification.idCardFrontPlaceholder')" 
                   width="50vw"
-                  action="https://api.ofxdex.xyz/api/index/upload"
+                  action="https://api.ofxdex.cc/api/index/upload"
                   :form-data="{ token: token }"
                 ></u-upload>
               </div>
@@ -109,7 +109,7 @@
                   :maxCount="1"
                   :uploadText="$t('common.certification.idCardBackPlaceholder')" 
                   width="50vw"
-                  action="https://api.ofxdex.xyz/api/index/upload"
+                  action="https://api.ofxdex.cc/api/index/upload"
                   :form-data="{ token: token }"
                 ></u-upload>
               </div>

@@ -105,7 +105,7 @@
 					// 	window.location.href = res.data.zalo
 					// }
 				})
-				// window.location.href = 'https://api.ofxdex.xyz/kefu.php'
+				// window.location.href = 'https://api.ofxdex.cc/kefu.php'
 			}
 		},
 		computed: {

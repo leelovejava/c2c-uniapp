@@ -9,8 +9,8 @@ Vue.use(Vuex)
 import Socketio from '@/js_sdk/hyoga-uni-socket_io/uni-socket.io.js';
 const store = new Vuex.Store({
 	state: {
-		baseUrl: process.env.NODE_ENV === 'development' ? 'https://api.ofxdex.xyz/api' : "https://api.ofxdex.xyz/api",
-		baseDomain:"https://api.ofxdex.xyz",
+		baseUrl: process.env.NODE_ENV === 'development' ? 'https://api.ofxdex.cc/api' : "https://api.ofxdex.cc/api",
+		baseDomain:"https://api.ofxdex.cc",
 		lang: uni.getStorageSync('lang') || 'eng',
 		token: uni.getStorageSync('token') || '',
 		user: uni.getStorageSync('user') || {},
