@@ -42,9 +42,10 @@
 		onLoad(options) {
 			const token = uni.getStorageSync('token')
 			this.$u.api.index.getUserinfo(token).then(res => {
-				const fullUrl = window.location.href;
+				const baseUrl = `${window.location.origin}${window.location.pathname}`
+				const inviteCode = encodeURIComponent(res.data.code)
 				this.userinfo = res.data
-				this.fxurl = fullUrl + '?inviteCode='+res.data.code
+				this.fxurl = `${baseUrl}#/pages/my/invite?inviteCode=${inviteCode}`
 			})
 		},
 		onShow() {
