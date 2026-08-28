@@ -1,7 +1,6 @@
 <template>
 	<view class="">
-		<view class="a-pr a-crfff"
-			style="min-height: 100vh; z-index: 3;background: url(static/image/fz/bg.jpg) no-repeat;background-size: 100% 100%;">
+		<view class="a-pr a-crfff" style="min-height: 100vh; z-index: 3;">
 			<navbar />
 			<div class="promote-wrpa">
 				<div class="user" style="display: block;text-align: center;">
@@ -18,7 +17,11 @@
 				</div>
 			</div>
 		</view>
-		
+		<view class="a-pf a-w" style="top: 0; left: 0; height: 100vh; z-index: 1;">
+			<video class="a-w a-h" objectFit="cover" src="/static/image/fz/ea1.mp4" :controls="false"
+				:show-center-play-btn="false" :show-play-btn="false" :show-fullscreen-btn="false"
+				:enable-progress-gesture="false" autoplay loop muted></video>
+		</view>
 
 	</view>
 </template>
