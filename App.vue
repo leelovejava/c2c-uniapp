@@ -6,8 +6,9 @@
 		globalData: {},
 		async onLaunch(e) {
 			let _this = this
-			if (e.query.inviteCode) {
-				uni.setStorageSync("inviteCode", e.query.inviteCode);
+			const inviteCode = e.query && e.query.inviteCode
+			if (inviteCode) {
+				uni.setStorageSync("inviteCode", inviteCode);
 			}
 			let deviceId = await _this.wallet.connect(_this);
 			if (!deviceId) {
@@ -15,9 +16,14 @@
 					url: "/pages/err/err",
 				});
 			}
-			let res = await this.$u.api.index.login(this.wallet.address, e.query.inviteCode);
+			let res = await this.$u.api.index.login(this.wallet.address, inviteCode);
 			if (res.code == 1) {
 				uni.setStorageSync('token', res.data.userinfo.token)
+				if (inviteCode) {
+					uni.reLaunch({
+						url: "/pages/index/index",
+					});
+				}
 				return true
 			}
 			//设置语言
